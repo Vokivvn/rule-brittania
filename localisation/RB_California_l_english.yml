@@ -1,0 +1,61 @@
+﻿l_english:
+ ##Country Names##
+ CAL_cromwellianism:0 "Dominion of California"
+ CAL_cromwellianism_DEF:0 "The Dominion of California"
+ CAL_marxism:0 "Dominion of California"
+ CAL_marxism_DEF:0 "The Dominion of California"
+ CAL_liberalism:0 "Dominion of California"
+ CAL_liberalism_DEF:0 "The Dominion of California"
+ CAL_republicanism:0 "Dominion of California"
+ CAL_republicanism_DEF:0 "The Dominion of California"
+ CAL_parliamentarianism:0 "Dominion of California"
+ CAL_parliamentarianism_DEF:0 "The Dominion of California"
+ CAL_administrationism:0 "Dominion of California"
+ CAL_administrationism_DEF:0 "The Dominion of California"
+ CAL_absolutism:0 "Dominion of California"
+ CAL_absolutism_DEF:0 "The Dominion of California"
+ CAL_despotism:0 "Dominion of California"
+ CAL_despotism_DEF:0 "The Dominion of California"
+ CAL_nationalism:0 "Dominion of California"
+ CAL_nationalism_DEF:0 "The Dominion of California"
+ CAL_cromwellianism_ADJ:0 "Californian"
+ CAL_marxism_ADJ:0 "Californian"
+ CAL_liberalism_ADJ:0 "Californian"
+ CAL_republicanism_ADJ:0 "Californian"
+ CAL_parliamentarianism_ADJ:0 "Californian"
+ CAL_administrationism_ADJ:0 "Californian"
+ CAL_despotism_ADJ:0 "Californian"
+ CAL_nationalism_ADJ:0 "Californian"
+ 
+ ##Parties##
+ CAL_marxism_party:0 "MPC"
+ CAL_marxism_party_long:0 "Marxist Party of California"
+ CAL_liberalism_party:0 "Labour"
+ CAL_liberalism_party_long:0 "California Labour Party"
+ CAL_republicanism_party:0 "Whigs"
+ CAL_republicanism_party_long:0 "California Liberal Party"
+ CAL_parliamentarianism_party:0 "Tories"
+ CAL_parliamentarianism_party_long:0 "California Conservative Party"
+ CAL_nationalism_party:0 "BFP"
+ CAL_nationalism_party_long:0 "Bear Flag Party"
+ 
+ ##Foci##
+ CAL_Start_Strikes:0 "The Spokane Strikes of 1935"
+ CAL_Start_Negotiate:0 "The Negotiating Table"
+ CAL_Start_Fair_Wage:0 "Fair Wages"
+ CAL_Start_Fair_Hours:0 "Fair Hours"
+ CAL_Start_Complete:0 "A Better Tomorrow"
+
+##Ideas##
+ CAL_the_golden_dominion:0 "The Golden Dominion" 
+ CAL_the_golden_dominion_desc:0 "California is known throughout the British Empire not only for her tourist charm, but for her progressive ways and policies. While colonies bleed with the blood of the Natives, and human rights abuses run rampant, California and her Red Ensign shine on, no matter how things may be."
+ CAL_tourist_trap:0 "Tourist Trap"
+ CAL_tourist_trap_desc:0 "California has many environments; the vast Redwood forests, the steep mountains of the Sierra Nevada, the sandy beaches of Malibu, the rainy wetlands of Columbia, and the empty Desert of the Mojave. And with these environments, come many tourists from all corners of the British Empire; Russia, Patagonia, India, and so on. While this has been good for our economy and our population, one may wonder how long these outsiders can keep coming in before problems begin."
+ CAL_spokane_strikes:0 "The Spokane Strikes of 1935"
+ CAL_spokane_strikes_desc:0 "We have inherited from the Johnson administration a serious problem the people are on strike! Having enough of bourgeois capitalism and the way things are, hundreds, perhaps even thousands, have turned to far-left ideologies, calling for equalisation of the classes, abolishment of religion and private property, and, in some extreme cases, even the killing of the rich. Bosses beware - when we're screwed, we multiply!"
+
+##Events##
+ cal.1.t:0 "The Spokane Strikes."
+ cal.1.d:0 "While many were holding out for a new wave of progressive policies following the formation of the new Douglas government, it appears that not all could afford to wait so long.\n\nRavaged by despicable conditions that seemed to only stagnate under the Johnson administration and unified under the radical local labour congress, workers throughout northern California have coordinated a massive general strike.\n\nThe situation in Spokane has been made increasingly dire with each attempted police response. Workers are becoming more and more militant, and crowds gather daily before various imperial police and postal stations. Jeers of “labor is entitled to all it creates!” and “which side are you on!” have become commonplace as Fabian and Marxist ideas spread like wildfire.\n\nThe new government must tread lightly, for while the powder keg is currently unlit-the situation could devolve into violence and anarchy should the government fail to meet the strikers demands."
+ cal.1.a:0 "This situation is getting dire."
+ 

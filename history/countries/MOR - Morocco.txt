@@ -1,0 +1,36 @@
+﻿capital = 461
+
+set_research_slots = 1
+set_stability = 0.5
+set_war_support = 0.5
+
+set_cosmetic_tag = MOR_ENG
+
+set_politics = {
+	ruling_party = absolutism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 0
+    liberalism = 0
+    republicanism = 5
+    parliamentarianism = 29
+    administrationism = 0
+    absolutism = 66
+    despotism = 0
+    nationalism = 0
+}
+
+create_country_leader = {
+    name = "Mohammed V"
+    desc = POLITICS_MOHAMMED_V_DESC
+    picture = "Portrait_MOR_Mohammed_V.dds"
+    expire = "1999.12.12"
+    ideology = absolutism_subtype
+    traits = {
+    }
+}

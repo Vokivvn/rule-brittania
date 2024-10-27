@@ -1,0 +1,147 @@
+add_namespace = cal
+
+country_event = { #STRIKES
+	id = cal.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cal.1"}
+	title = cal.1.t
+	desc = cal.1.d
+	picture = GFX_report_event_petition
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #damn
+		name = cal.1.a
+	}
+}
+
+country_event = { #time to Negotiate
+	id = cal.2
+	title = cal.2.t
+	desc = cal.2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cal.2"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = cal.2.a
+
+		}
+}
+
+country_event = { #Fair wages
+	id = cal.3
+	title = cal.3.t
+	desc = cal.3.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cal.3"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = cal.3.a
+
+		}
+	option = { #DIE COMMIE
+	     name = cal.3.b
+		 country_event = {
+			id = cal.6
+			days = 2
+		}
+	}
+  }
+  
+  country_event = { #Fair hours
+	id = cal.4
+	title = cal.4.t
+	desc = cal.4.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cal.4"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = cal.4.a
+
+		}
+	option = { #DIE COMMIE
+	     name = cal.4.b
+		 country_event = {
+			id = cal.7
+			days = 3
+		}
+	}
+  }
+  
+   country_event = { #complete 
+	id = cal.5
+	title = cal.5.t
+	desc = cal.5.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cal.5"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = cal.5.a
+		if = {
+		        limit = {
+				         has_country_flag = CAL_workers_mad
+						 }
+						 country_event = {
+				         id = cal.8
+				         days = 1
+			             }
+                   }
+	                else = { 
+					     #stuff
+						 }
+						 }
+						 }
+  
+   country_event = { #Workers mald about wages
+	id = cal.6
+	title = cal.6.t
+	desc = cal.6.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cal.6"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #MALD
+		name = cal.6.a
+		set_country_flag = CAL_workers_mad
+		}
+  }
+  
+   country_event = { #Workes mald about hours
+	id = cal.7
+	title = cal.7.t
+	desc = cal.7.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cal.7"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #bruh
+		name = cal.7.a
+        set_country_flag = CAL_workers_mad
+		}
+  }
+  
+     country_event = { #negotiations fail
+	id = cal.8
+	title = cal.8.t
+	desc = cal.8.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cal.8"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #damn brooo
+		name = cal.8.a
+		
+		}
+  }
+  

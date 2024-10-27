@@ -1,0 +1,69 @@
+﻿division_template = {
+	name = "Acadian Militia"
+	division_names_group = CNA_ACA_militia
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	#support = {
+	#	artillery = { x = 0 y = 0 }
+	#}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "10230"
+		division_template = "Acadian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "12221"
+		division_template = "Acadian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "4287"
+		division_template = "Acadian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "4342"
+		division_template = "Acadian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "1338"
+		division_template = "Acadian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+}

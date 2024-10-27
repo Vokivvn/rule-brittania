@@ -1,0 +1,738 @@
+shared_focus = {
+	id = CHA_general_theory
+	icon = GFX_goal_tfv_generic_tech_sharing
+	cost = 2.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	x = 9
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_general_theory"
+		#event
+	}
+}
+
+shared_focus = {
+	id = CHA_employment
+	icon = GFX_goal_generic_production
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_general_theory
+	}
+
+	x = 5
+	y = 2
+
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_general_theory"
+		country_event = { id = cha.10 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = CHA_national_road_system
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_employment
+	}
+
+	x = 2
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_national_road_system"
+		#event
+	}
+}
+
+shared_focus = {
+	id = CHA_east_west
+	icon = GFX_goal_generic_trade
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_national_road_system
+	}
+
+	x = 2
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_east_west"
+		#gain infrastructure in the state that connects capital to east border
+	}
+}
+
+shared_focus = {
+	id = CHA_sudan_road
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_east_west
+	}
+
+	x = 2
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_sudan_road"
+		if = {
+			limit = {
+				NOT = { has_country_flag = CHA_keynes_paper1}
+			}
+			country_event = { id = cha.1 days = 7}
+		}
+		set_country_flag = CHA_cooperation_SUD
+		country_event = { id = cha.13 days = 2}
+	}
+}
+
+shared_focus = {
+	id = CHA_central_region
+	icon = GFX_goal_generic_construct_civilian
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_national_road_system
+	}
+
+	x = 4
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_central_region"
+		subtract_from_variable = { CHA_economy_var = 1 }
+		CHA_ecovar_change = yes
+	}
+}
+
+shared_focus = {
+	id = CHA_to_the_sea
+	icon = GFX_goal_generic_construct_naval_dockyard
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_central_region
+	}
+
+	x = 4
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_to_the_sea"
+		if = {
+			limit = {
+				NOT = { has_country_flag = CHA_keynes_paper1}
+			}
+			country_event = { id = cha.1 days = 7}
+		}
+
+	}
+}
+
+shared_focus = {
+	id = CHA_cotton_farms
+	icon = GFX_goal_generic_construction2
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_employment
+	}
+
+	x = 8
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_cotton_farms"
+		#event
+	}
+}
+
+shared_focus = {
+	id = CHA_safe_workers
+	icon = GFX_goal_generic_consumer_goods
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_cotton_farms
+	}
+
+	x = 6
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_safe_workers"
+		#this is costly and should only be done if good economy exists
+		country_event = { id = cha.11 days = 1}
+	}
+}
+
+shared_focus = {
+	id = CHA_mechanized_agriculture
+	icon = GFX_goal_generic_construct_civilian
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_safe_workers
+	}
+
+	x = 6
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_mechanized_agriculture"
+		if = {
+			limit = {
+				NOT = { has_country_flag = CHA_keynes_paper1}
+			}
+			country_event = { id = cha.1 days = 7}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHA_cotton_breed
+	icon = GFX_goal_generic_position_armies
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_cotton_farms
+	}
+
+	x = 8
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_cotton_breed"
+		#event
+	}
+}
+
+shared_focus = {
+	id = CHA_worlds_best_cotton
+	icon = GFX_goal_generic_scientific_exchange
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_cotton_breed
+	}
+
+	x = 8
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_worlds_best_cotton"
+		if = {
+			limit = {
+				NOT = { has_country_flag = CHA_keynes_paper1}
+			}
+			country_event = { id = cha.1 days = 7}
+		}
+	}
+}
+
+shared_focus = {
+	id = CHA_evidence
+	icon = GFX_focus_research2
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_sudan_road
+	}
+
+	prerequisite = {
+		focus = CHA_worlds_best_cotton
+	}
+
+	prerequisite = {
+		focus = CHA_mechanized_agriculture
+		focus = CHA_to_the_sea
+	}
+
+	x = 5
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_evidence"
+		country_event = { id = cha.3 days = 0}
+	}
+}
+
+shared_focus = {
+	id = CHA_money_interest
+	icon = GFX_focus_mex_privatisation
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_general_theory
+	}
+
+	x = 13
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_money_interest"
+	}
+}
+
+shared_focus = {
+	id = CHA_pay_loans
+	icon = GFX_focus_generic_the_giant_wakes
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_money_interest
+	}
+
+	mutually_exclusive = {
+		focus = CHA_just_interest
+	}
+
+	x = 11
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_pay_loans"
+		add_to_variable = {	CHA_economy_var = -0.5 }
+		add_to_variable = { CHA_trust_var = 0.5 }
+	}
+}
+
+shared_focus = {
+	id = CHA_pay_loans_more
+	icon = GFX_focus_generic_self_management
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_pay_loans
+	}
+
+	mutually_exclusive = {
+		focus = CHA_call_london
+	}
+
+	x = 10
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_pay_loans_more"
+		add_to_variable = {	CHA_economy_var = -0.3 }
+		add_to_variable = { CHA_trust_var = 0.3 }
+	}
+}
+
+shared_focus = {
+	id = CHA_call_london
+	icon = GFX_focus_eng_the_sun_never_sets
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_pay_loans
+	}
+
+	mutually_exclusive = {
+		focus = CHA_pay_loans_more
+	}
+
+	mutually_exclusive = {
+		focus = CHA_this_could_last
+	}
+
+	x = 12
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_call_london"
+	}
+}
+
+shared_focus = {
+	id = CHA_fiscial_honesty
+	icon = GFX_goal_generic_intelligence_exchange
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_call_london
+		focus = CHA_pay_loans_more
+	}
+
+	x = 11
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_fiscial_honesty"
+	}
+}
+
+shared_focus = {
+	id = CHA_just_interest
+	icon = GFX_focus_generic_concessions
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_money_interest
+	}
+
+	mutually_exclusive = {
+		focus = CHA_pay_loans
+	}
+
+	x = 15
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_just_interest"
+		add_to_variable = {	CHA_economy_var = -0.15 }
+		add_to_variable = { CHA_trust_var = 0.1 }
+	}
+}
+
+shared_focus = {
+	id = CHA_this_could_last
+	icon = GFX_goal_continuous_increase_nu
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_just_interest
+	}
+
+	mutually_exclusive = {
+		focus = CHA_call_london
+	}
+
+	mutually_exclusive = {
+		focus = CHA_renegotiate_loans
+	}
+
+	x = 16
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_this_could_last"
+	}
+}
+
+shared_focus = {
+	id = CHA_renegotiate_loans
+	icon = GFX_focus_generic_treaty
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_just_interest
+	}
+
+	mutually_exclusive = {
+		focus = CHA_this_could_last
+	}
+
+	x = 14
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_renegotiate_loans"
+	}
+}
+
+shared_focus = {
+	id = CHA_fancy_tricks
+	icon = GFX_goal_generic_major_alliance
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_renegotiate_loans
+		focus = CHA_this_could_last
+	}
+
+	x = 15
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_fiscial_honesty"
+	}
+}
+
+shared_focus = {
+	id = CHA_more_loans
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_money_interest
+	}
+
+	x = 13
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_more_loans"
+		add_to_variable = {	CHA_economy_var = -0.5 }
+	}
+}
+
+shared_focus = {
+	id = CHA_loans_forever
+	icon = GFX_goal_generic_positive_trade_relations
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_more_loans
+	}
+
+	x = 13
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_loans_forever"
+	}
+}
+
+shared_focus = {
+	id = CHA_healthy_income_posts
+	icon = GFX_goal_generic_neutrality_focus
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_fiscial_honesty
+		focus = CHA_fancy_tricks
+	}
+
+	x = 13
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_healthy_income_posts"
+	}
+}
+
+shared_focus = {
+	id = CHA_theories_proven
+	icon = GFX_focus_research
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = CHA_evidence
+	}
+	prerequisite = {
+		focus = CHA_healthy_income_posts
+	}
+
+	x = 9
+	y = 7
+
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHA_theories_proven"
+	}
+}

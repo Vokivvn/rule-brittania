@@ -1,0 +1,31 @@
+####################################
+### British Far East Territories ###
+####################################
+
+BFE_debug = {
+	picture = GFX_BFE_decision_Eastport
+	
+	allowed = {
+		tag = BFE
+	}
+	
+	visible_when_empty = yes
+	
+	priority = {
+		base = 15
+	}
+}
+
+BFE_Factions_mechanic = {
+	picture = GFX_BFE_decision_Eastport
+	
+	allowed = {
+		tag = BFE
+	}
+	
+	visible_when_empty = yes
+	
+	priority = {
+		base = 10
+	}
+}

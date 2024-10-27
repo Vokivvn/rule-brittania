@@ -1,0 +1,17 @@
+﻿l_english:
+ ### Country Names ###
+ KAR_absolutism:0 "Murmansk Governorate"
+ KAR_absolutism_DEF:0 "Murmansk Governorate"
+ KAR_absolutism_ADJ:0 "Murmanskian"
+ KAR_despotism:0 "Murmansk Governorate"
+ KAR_despotism_DEF:0 "Murmansk Governorate"
+ KAR_despotism_ADJ:0 "Murmanskian"
+
+ KAR_FIN_absolutism:0 "Grand Dutchy of Finland"
+ KAR_FIN_absolutism_DEF:0 "The Grand Dutchy of Finland"
+ KAR_FIN_absolutism_ADJ:0 "Finnish"
+ KAR_FIN_despotism:0 "Grand Dutchy of Finland"
+ KAR_FIN_despotism_DEF:0 "The Grand Dutchy of Finland"
+ KAR_FIN_despotism_ADJ:0 "Finnish"
+ ### Party Names ###
+ KAR_absolutism_party:0 "Ofis Gubernatora"

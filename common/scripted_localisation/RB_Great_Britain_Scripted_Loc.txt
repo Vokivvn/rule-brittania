@@ -1,0 +1,545 @@
+defined_text = {
+	name = ENG_Monarch_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_George_V_flag
+		}
+		localization_key = ENG_George_V
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_Edward_VIII_flag
+		}
+		localization_key = ENG_Edward_VIII
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_Albert_Victor_I_flag
+		}
+		localization_key = ENG_Albert_Victor_I
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_Henry_IX_flag
+		}
+		localization_key = ENG_Henry_IX
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_George_VI_flag
+		}
+		localization_key = ENG_George_VI
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_Mary_III_flag
+		}
+		localization_key = ENG_Mary_III
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_Edward_IX_flag
+		}
+		localization_key = ENG_Edward_IX
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_Nicholas_I_flag
+		}
+		localization_key = ENG_Nicholas_I
+	}
+}
+
+defined_text = {
+	name = ENG_Monarch_Influence_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_punished_edward
+		}
+		localization_key = ENG_Monarch_Supreme
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Monarch_Influence > 80
+			}
+		}
+		localization_key = ENG_Monarch_Dominant
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Monarch_Influence > 60
+			}
+		}
+		localization_key = ENG_Monarch_Influential
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Monarch_Influence > 40
+			}
+		}
+		localization_key = ENG_Monarch_Important
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Monarch_Influence > 20
+			}
+		}
+		localization_key = ENG_Monarch_Unimportant
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Monarch_Influence > 0
+			}
+		}
+		localization_key = ENG_Monarch_Powerless
+	}
+}
+
+defined_text = {
+	name = ENG_Parliament_Party_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_King_Coalition_Gov_flag
+		}
+		localization_key = ENG_King_Coalition
+	}
+}
+
+defined_text = {
+	name = ENG_Monarch_Opinion_Parliament_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_punished_edward
+		}
+		localization_key = ENG_Government_Hated
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Government_Acceptance > 80
+			}
+		}
+		localization_key = ENG_Government_Friendly
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Government_Acceptance > 60
+			}
+		}
+		localization_key = ENG_Government_Accepted
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Government_Acceptance > 40
+			}
+		}
+		localization_key = ENG_Government_Disapproves
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Government_Acceptance > 20
+			}
+		}
+		localization_key = ENG_Government_Unfriendly
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Government_Acceptance > 0
+			}
+		}
+		localization_key = ENG_Government_Opposed
+	}
+}
+
+defined_text = {
+	name = ENG_Coalition_Tory_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_Coalition_Dissolved
+		}
+		localization_key = ENG_Coalition_Key_Dissolved_Tory
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Tory > 49
+			}
+		}
+		localization_key = ENG_Coalition_Key_Almost_All_Tory
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Tory > 39
+			}
+		}
+		localization_key = ENG_Coalition_Key_Majority_Tory
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Tory > 29
+			}
+		}
+		localization_key = ENG_Coalition_Key_Half_Tory
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Tory > 19
+			}
+		}
+		localization_key = ENG_Coalition_Key_Minority_Tory
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Tory > 9
+			}
+		}
+		localization_key = ENG_Coalition_Key_Barely_Any_Tory
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Tory < 1
+			}
+		}
+		localization_key = ENG_Coalition_Key_None_Tory
+	}
+}
+
+defined_text = {
+	name = ENG_Coalition_Whig_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_Coalition_Dissolved
+		}
+		localization_key = ENG_Coalition_Key_Dissolved
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Whig > 49
+			}
+		}
+		localization_key = ENG_Coalition_Key_Almost_All_Whig
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Whig > 39
+			}
+		}
+		localization_key = ENG_Coalition_Key_Majority_Whig
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Whig > 29
+			}
+		}
+		localization_key = ENG_Coalition_Key_Half_Whig
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Whig > 19
+			}
+		}
+		localization_key = ENG_Coalition_Key_Minority_Whig
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Whig > 9
+			}
+		}
+		localization_key = ENG_Coalition_Key_Barely_Any_Whig
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Whig < 1
+			}
+		}
+		localization_key = ENG_Coalition_Key_None_Whig
+	}
+}
+
+defined_text = {
+	name = ENG_Coalition_Labour_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_Coalition_Dissolved
+		}
+		localization_key = ENG_Coalition_Key_Dissolved
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Labour > 49
+			}
+		}
+		localization_key = ENG_Coalition_Key_Almost_All_Labour
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Labour > 39
+			}
+		}
+		localization_key = ENG_Coalition_Key_Majority_Labour
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Labour > 29
+			}
+		}
+		localization_key = ENG_Coalition_Key_Half_Labour
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Labour > 19
+			}
+		}
+		localization_key = ENG_Coalition_Key_Minority_Labour
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Labour > 9
+			}
+		}
+		localization_key = ENG_Coalition_Key_Barely_Any_Labour
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ENG_Coalition_Labour < 1
+			}
+		}
+		localization_key = ENG_Coalition_Key_None_Labour
+	}
+}
+
+defined_text = {
+	name = ENG_YSK_Influence_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_Coalition_Dissolved
+		}
+		localization_key = ENG_Coalition_Key_Dissolved
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					absolutism > 0.5
+					administrationism > 0.5
+					despotism > 0.5
+				}
+				NOT = {
+					OR = {
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 30
+							}
+							check_variable = {
+								ENG_Coalition_Whig < 30
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 30
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 30
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Whig < 30
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 30
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = ENG_YSK_Influence_Extremely_Influencial
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					absolutism > 0.4
+					administrationism > 0.4
+					despotism > 0.4
+				}
+				NOT = {
+					OR = {
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 30
+							}
+							check_variable = {
+								ENG_Coalition_Whig < 30
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 30
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 30
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Whig < 30
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 30
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = ENG_YSK_Influence_Influencial
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					absolutism > 0.3
+					administrationism > 0.3
+					despotism > 0.3
+				}
+				NOT = {
+					OR = {
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 20
+							}
+							check_variable = {
+								ENG_Coalition_Whig < 20
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 20
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 20
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Whig < 20
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 20
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = ENG_YSK_Influence_Mildly_Influencial
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					absolutism > 0.25
+					administrationism > 0.25
+					despotism > 0.25
+				}
+				NOT = {
+					OR = {
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 10
+							}
+							check_variable = {
+								ENG_Coalition_Whig < 10
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 10
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 10
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Whig < 10
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 10
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = ENG_YSK_Influence_Somewhat_Influencial
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					absolutism > 0.0
+					administrationism > 0.0
+					despotism > 0.0
+				}
+				NOT = {
+					OR = {
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 0
+							}
+							check_variable = {
+								ENG_Coalition_Whig < 0
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Labour < 0
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 0
+							}
+						}
+						AND = {
+							check_variable = {
+								ENG_Coalition_Whig < 0
+							}
+							check_variable = {
+								ENG_Coalition_Tory < 0
+							}
+						}
+					}
+				}
+			}
+		}
+		localization_key = ENG_YSK_Influence_Not_Influencial
+	}
+}

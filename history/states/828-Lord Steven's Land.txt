@@ -1,0 +1,27 @@
+
+state={
+	id=828
+	name="STATE_828"
+
+	history={
+		owner = LSL
+		add_core_of = LSL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			12535 3
+		}
+		victory_points = {
+			12651 2
+		}
+	}
+
+	provinces={
+		1789 7688 10672 12561 12651 
+	}
+	manpower=190368
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

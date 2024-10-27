@@ -1,0 +1,32 @@
+BFE_debug = {
+	BFE_spawn_jomsborg = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BFE_spawn_jomsborg"
+			country_event = { id = BFE.1000 }
+		}
+	}
+}
+
+BFE_Factions_mechanic = {
+	BFE_kwantung_intervention = {
+		visible = {
+			KOR = {
+				has_war_with = MAN
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BFE_kwantung_intervention"
+			custom_effect_tooltip = BFE_kwantung_intervention_tt
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+		}
+	}
+}

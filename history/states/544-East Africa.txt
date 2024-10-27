@@ -1,0 +1,23 @@
+
+state={
+	id=544
+	name="STATE_544" #Mozambique
+	manpower = 4125000
+	
+	state_category = rural
+	
+	history={
+		owner = ANG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			2123 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		2120 2123 2180 2216 5155 5164 12908 12935 12950 12971 
+	}
+}

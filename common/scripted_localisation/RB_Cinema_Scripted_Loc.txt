@@ -1,0 +1,30 @@
+defined_text = {
+	name = Get_Cinema_Quote
+	text = {
+		trigger = { has_country_flag = superevent_amrev }
+		localization_key = "amrev_loc"
+	}
+	text = {
+		trigger = { has_country_flag = superevent_george_v_dead }
+		localization_key = "gorge_loc"
+	}
+	text = {
+		trigger = { has_country_flag = superevent_mexican_civil_war }
+		localization_key = RB_Cinema_MexicanCivilWar_loc
+	}
+}
+defined_text = {
+	name = Get_Cinema_Name
+	text = {
+		trigger = { has_country_flag = superevent_amrev }
+		localization_key = "THE AMERICAN REVOLUTION"
+	}
+	text = {
+		trigger = { has_country_flag = superevent_george_v_dead }
+		localization_key = "THE DEATH OF GEORGE V"
+	}
+	text = {
+		trigger = { has_country_flag = superevent_mexican_civil_war }
+		localization_key = RB_Cinema_MexicanCivilWar_title
+	}
+}

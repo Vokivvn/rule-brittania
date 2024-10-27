@@ -1,0 +1,24 @@
+state={
+	id=980
+	name="STATE_980"
+
+	history={
+		owner = UTY
+
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = UTY
+		victory_points = {
+			1827 20
+		}
+		victory_points = {
+			10588 10
+		}
+	}
+	provinces={
+		1827 3869 10588
+	}
+	manpower=275541
+	state_category=town
+}

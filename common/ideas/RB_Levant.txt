@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		LEV_Arab_Kingdom_of_Syria = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LEV_Arab_Kindom_of_Syria"}
+			allowed = { always = no }
+			picture = LEV_Arab_Kingdom_of_Syria
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				surrender_limit = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		LEV_TE_Lawrence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LEV_TE_Lawrence"}
+			allowed = { always = no }
+			picture = GFX_idea_LEV_TE_Lawrence
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				attrition = -0.05
+				army_speed_factor = 0.05
+			}
+		}
+		LEV_Mount_Lebanon_Autonomy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LEV_Mount_Lebanon_Autonomy"}
+			allowed = { always = no }
+			picture = GFX_idea_LEV_Mount_Lebanon_Autonomy
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			stability_factor = 0.05
+			political_power_gain = -0.25
+			consumer_goods_factor = 0.05
+			}
+		}
+	}
+}

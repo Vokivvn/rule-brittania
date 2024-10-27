@@ -1,0 +1,26 @@
+#Freedom haters
+
+focus_tree = {
+	id = CNA_start_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = CNA
+        }
+    }
+	shared_focus = CNA_britains_loyal_commonwealth
+}
+
+focus_tree = {
+	id = CNA_revolution_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = CNA
+        }
+    }
+	shared_focus = CNA_call_to_the_loyalists
+	shared_focus = CNA_call_to_the_empire
+}

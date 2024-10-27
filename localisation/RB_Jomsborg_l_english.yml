@@ -1,0 +1,71 @@
+﻿l_english:
+ ####################################################################################################################
+ ####################################################################################################################
+ ##  _       __        _____ __              __                 __  ___                                            ##
+ ## | |     / /__     / ___// /_  ____ _____/ /___ _      __   /  |/  /___  ________  _____   ____  ____ _      __ ##
+ ## | | /| / / _ \    \__ \/ __ \/ __ `/ __  / __ \ | /| / /  / /|_/ / __ \/ ___/ _ \/ ___/  / __ \/ __ \ | /| / / ##
+ ## | |/ |/ /  __/   ___/ / / / / /_/ / /_/ / /_/ / |/ |/ /  / /  / / /_/ (__  )  __(__  )  / / / / /_/ / |/ |/ /  ##
+ ## |__/|__/\___/   /____/_/ /_/\__,_/\__,_/\____/|__/|__/  /_/  /_/\____/____/\___/____/  /_/ /_/\____/|__/|__/   ##
+ ##                                                                                                                ##
+ ####################################################################################################################
+ ####################################################################################################################
+
+ ### Country Names ###
+ SKH_cromwellianism:0 "Sakhalin SSR"
+ SKH_cromwellianism_DEF:0 "The Sakhalin SSR"
+ SKH_marxism:0 "Sakhalin People's Republic"
+ SKH_marxism_DEF:0 "The Sakhalin People's Republic"
+ SKH_liberalism:0 "Republic of Sakhalin"
+ SKH_liberalism_DEF:0 "The Republic of Sakhalin"
+ SKH_republicanism:0 "Republic of Sakhalin"
+ SKH_republicanism_DEF:0 "The Republic of Sakhalin"
+ SKH_parliamentarianism:0 "Far East Emergency Government"
+ SKH_parliamentarianism_DEF:0 "The Far East Emergency Government"
+ SKH_administrationism:0 "Far East Emergency Government"
+ SKH_administrationism_DEF:0 "The Far East Emergency Government"
+ SKH_absolutism:0 "Far East Emergency Government"
+ SKH_absolutism_DEF:0 "The Far East Emergency Government"
+ SKH_despotism:0 "Free State of Jomsborg"
+ SKH_despotism_DEF:0 "The Free State of Jomsborg"
+ SKH_nationalism:0 "Sakhalin State"
+ SKH_nationalism_DEF:0 "The Sakhalin State"
+ SKH_cromwellianism_ADJ:0 "Sakhalin"
+ SKH_marxism_ADJ:0 "Sakhalin"
+ SKH_liberalism_ADJ:0 "Sakhalin"
+ SKH_republicanism_ADJ:0 "Sakhalin"
+ SKH_parliamentarianism_ADJ:0 "Sakhalin"
+ SKH_administrationism_ADJ:0 "Sakhalin"
+ SKH_despotism_ADJ:0 "Jomsborg"
+ SKH_nationalism_ADJ:0 "Sakhalin"
+ 
+ ### Party Names ###
+ SKH_cromwellianism_party:0 "SCL"
+ SKH_cromwellianism_party_long:0 "Sakhalin Cromwellian League"
+ SKH_marxism_party:0 "NOF"
+ SKH_marxism_party_long:0 "Narodno-Osvoboditel'nyy Front"
+ SKH_liberalism_party:0 "RSDRP"
+ SKH_liberalism_party_long:0 "Rossiyskaya Sotsial-Demokraticheskaya Rabochaya Partiya"
+ SKH_republicanism_party:0 "KONR"
+ SKH_republicanism_party_long:0 "Komitet Osvobozhdeniya Narodov Rossii"
+ SKH_parliamentarianism_party:0 "BFENA"
+ SKH_parliamentarianism_party_long:0 "British Far East Naval Authority"
+ SKH_administrationism_party:0 "BFENA"
+ SKH_administrationism_party_long:0 "British Far East Naval Authority"
+ SKH_absolutism_party:0 "BFENA"
+ SKH_absolutism_party_long:0 "British Far East Naval Authority"
+ SKH_despotism_party:0 "AUG"
+ SKH_despotism_party_long:0 "Armén Utan Gränser"
+ SKH_nationalism_party:0 "RNP"
+ SKH_nationalism_party_long:0 "Russkaya Narodnaya Partiya"
+ 
+ ### Leader Descriptions ###
+ POLITICS_IVOR_THORD_GRAY_DESC:0 "It's Swedish Big Boss"
+ 
+ ### Leader Traits ###
+ the_varyag:0 "The Varyag"
+ 
+ ### Ideas ###
+ 
+ ### Focus Trees ###
+ 
+ ### Events ###

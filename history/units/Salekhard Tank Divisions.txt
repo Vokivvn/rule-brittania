@@ -1,0 +1,53 @@
+﻿division_template = {
+	name = "Salekhardskie Tankisti" 				# Armor Regiment
+	# Note: 2nd regiment created and merged with motorized inf to create Armor Division in 1940
+	division_names_group = SOV_INF_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+}
+units = {
+	######## LAND UNITS ########
+	##### Fortele Terestre Române #####
+	# Corp 1 Armata
+	division = {
+		name = "Salekhardskie Tankisti"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1684
+		division_template = "Salekhardskie Tankisti"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Salekhardskie Tankisti"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1684
+		division_template = "Salekhardskie Tankisti"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Salekhardskie Tankisti"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1684
+		division_template = "Salekhardskie Tankisti"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+}

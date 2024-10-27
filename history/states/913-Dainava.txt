@@ -1,0 +1,22 @@
+state={
+	id=913
+	name="STATE_913"
+	provinces={
+		3366 3393 9274 13248
+	}
+	history={
+		owner = POL
+		add_core_of = POL
+
+		victory_points = { 9221 3 }
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	manpower=989241
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,28 @@
+estates_nobility_mod = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	recruitable_population_factor = 0.15
+}
+estates_clergy_mod = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_resources_factor = 0.15
+}
+estates_burghers_mod = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	production_speed_buildings_factor = 0.15
+}
+estates_nobody_mod = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_building_slots_factor = 0.05
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=809
+	name="STATE_809"
+	provinces={
+		1282 1338 1619 4287 4342 10247 12221 
+	}
+	history={
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			4342 5
+		}
+	}
+	manpower=354420
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

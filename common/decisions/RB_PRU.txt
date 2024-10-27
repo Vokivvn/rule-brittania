@@ -1,0 +1,39 @@
+PRU_influencing = {
+	PRU_DEN_tight_liberals_d = {
+		visible = {
+			date < 1936.01.10
+		}
+		fire_only_once = yes
+		cost = 50
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = CHA_trust_up
+			DEN = { add_to_variable = { DEN_Whig_popularity_var = 2 } }
+			DEN = { add_to_variable = { DEN_Labor_popularity_var = -1 } }
+			DEN = { add_to_variable = { DEN_Tory_popularity_var = -1 } }
+		}
+	}
+	PRU_NOR_tight_agrarians_d = {
+		visible = {
+			date < 1936.01.10
+		}
+		fire_only_once = no
+		cost = 20
+		days_re_enable = 45
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = CHA_trust_up
+			DEN = { add_to_variable = { DEN_NOR_agrarian_popularity = 2 } }
+			DEN = { add_to_variable = { DEN_NOR_liberal_popularity = -1 } }
+			DEN = { add_to_variable = { DEN_NOR_conservative_popularity = -1 } }
+		}
+	}
+}

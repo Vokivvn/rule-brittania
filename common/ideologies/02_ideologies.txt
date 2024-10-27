@@ -1,0 +1,269 @@
+
+ideologies = {
+
+	cromwellianism = {
+		types = {
+			cromwellianism_subtype = {}
+			totalitarianism_subtype = {}
+			national_communism_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_CROMWELLIANISM_1"
+			"FACTION_NAME_CROMWELLIANISM_2"
+			"FACTION_NAME_CROMWELLIANISM_3"
+			"FACTION_NAME_CROMWELLIANISM_4"
+			"FACTION_NAME_CROMWELLIANISM_5"
+			"FACTION_NAME_CROMWELLIANISM_6"
+		}
+		color = { 127 0 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes			
+		can_be_boosted = no
+	}
+	
+	marxism = {
+		types = {
+			marxism_subtype = {}
+			revolutionary_marxism_subtype = {}
+			libertarian_socialism_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_MARXISM_1"
+			"FACTION_NAME_MARXISM_2"
+			"FACTION_NAME_MARXISM_3"
+			"FACTION_NAME_MARXISM_4"
+			"FACTION_NAME_MARXISM_5"
+			"FACTION_NAME_MARXISM_6"
+		}
+		color = { 165 0 0 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}		
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+			ai_get_ally_desire_factor = -500
+		}
+		ai_neutral = yes	
+		can_be_boosted = no
+
+	}
+	
+	liberalism = {
+		types = {
+			liberalism_subtype = {}
+			progressivism_subtype = {}
+			centrism_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_LIBERALISM_1"
+			"FACTION_NAME_LIBERALISM_2"
+			"FACTION_NAME_LIBERALISM_3"
+			"FACTION_NAME_LIBERALISM_4"
+			"FACTION_NAME_LIBERALISM_5"
+			"FACTION_NAME_LIBERALISM_6"
+		}
+		color = { 223 0 53 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.75
+		}
+		ai_neutral = yes	
+		can_be_boosted = no
+	}
+	
+	republicanism = {
+		types = {
+			republicanism_subtype = {}
+			social_liberalism_subtype = {}
+			market_liberalism_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_REPUBLICANISM_1"
+			"FACTION_NAME_REPUBLICANISM_2"
+			"FACTION_NAME_REPUBLICANISM_3"
+			"FACTION_NAME_REPUBLICANISM_4"
+			"FACTION_NAME_REPUBLICANISM_5"
+			"FACTION_NAME_REPUBLICANISM_6"
+		}
+		color = { 217 179 12 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.75
+		}
+		ai_neutral = yes		
+		can_be_boosted = no
+	}
+	
+	parliamentarianism = {
+		types = {
+			parliamentarianism_subtype = {}
+			conservative_democracy_subtype = {}
+			parliamentary_monarchy_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_PARLIAMENTARIANISM_1"
+			"FACTION_NAME_PARLIAMENTARIANISM_2"
+			"FACTION_NAME_PARLIAMENTARIANISM_3"
+			"FACTION_NAME_PARLIAMENTARIANISM_4"
+			"FACTION_NAME_PARLIAMENTARIANISM_5"
+			"FACTION_NAME_PARLIAMENTARIANISM_6"
+		}
+		color = { 0 0 135 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.75
+		}
+		ai_neutral = yes		
+		can_be_boosted = no
+	}
+	
+	administrationism = {
+		types = {
+			administrationism_subtype = {}
+			company_rule_subtype = {}
+			authoritarian_democracy_subtype = {}
+			constitutional_monarchy_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_administrationism_1"
+			"FACTION_NAME_administrationism_2"
+			"FACTION_NAME_administrationism_3"
+			"FACTION_NAME_administrationism_4"
+			"FACTION_NAME_administrationism_5"
+			"FACTION_NAME_administrationism_6"
+		}
+		color = { 130 130 130 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.75
+		}
+		ai_neutral = yes		
+		can_be_boosted = no
+	}
+
+	absolutism = {
+		types = {
+			absolutism_subtype = {}
+			religious_monarchy_subtype = {}
+			absolute_monarchy_subtype = {}
+		}
+	    dynamic_faction_names = {
+		    "FACTION_NAME_ABSOLUTISM_1"
+		    "FACTION_NAME_ABSOLUTISM_2"
+		    "FACTION_NAME_ABSOLUTISM_3"
+		    "FACTION_NAME_ABSOLUTISM_4"
+		    "FACTION_NAME_ABSOLUTISM_5"
+		    "FACTION_NAME_ABSOLUTISM_6"
+	    }
+	    color = { 75 75 75}
+	    rules = {
+	    	can_force_government = no
+	    	can_puppet = no
+	    	can_join_factions = no
+	    	can_send_volunteers = yes
+	    }
+	    modifiers = {
+	    	join_faction_tension = 0.80
+	    	generate_wargoal_tension = 0.25
+	    }
+	    ai_neutral = yes
+	    can_be_boosted = no
+	}
+
+	despotism = {
+		types = {
+			despotism_subtype = {}
+			paternal_autocracy_subtype = {}
+			dictatorship_subtype_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DESPOTISM_1"
+			"FACTION_NAME_DESPOTISM_2"
+			"FACTION_NAME_DESPOTISM_3"
+			"FACTION_NAME_DESPOTISM_4"
+			"FACTION_NAME_DESPOTISM_5"
+			"FACTION_NAME_DESPOTISM_6"
+		}
+		color = { 50 50 50 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes	
+		can_be_boosted = no
+	}
+
+	nationalism = {
+		types = {
+			nationalism_subtype = {}
+			revanchism_subtype = {}
+			corporatism_subtype = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_NATIONALISM_1"
+			"FACTION_NAME_NATIONALISM_2"
+			"FACTION_NAME_NATIONALISM_3"
+			"FACTION_NAME_NATIONALISM_4"
+			"FACTION_NAME_NATIONALISM_5"
+			"FACTION_NAME_NATIONALISM_6"
+		}
+		color = { 25 25 25 }
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.25
+		}
+		ai_neutral = yes	
+		can_be_boosted = no
+	}
+}
+	
+

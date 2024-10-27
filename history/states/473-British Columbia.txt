@@ -1,0 +1,30 @@
+
+state={
+	id=473
+	name="STATE_473"
+	resources={
+		oil=1.000
+	}
+
+	history={
+		owner = HBC
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = HBC
+		victory_points = {
+			12571 5 
+		}
+		victory_points = {
+			1323 2 
+		}
+	}
+
+	provinces={
+		1323 4870 10228 10258 10273 10548 12231 12571 
+	}
+	manpower=291231
+	buildings_max_level_factor=1.000
+	state_category= town
+}

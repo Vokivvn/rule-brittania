@@ -1,0 +1,66 @@
+ideas = {
+	country = {
+	#INITIAL
+		ETH_fire_colony = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ETH_fire_colony"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = fire_ethiopia_country
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.5
+			}
+		}
+		ETH_military_discipline = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_content_conservatives_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = army_flag_country_soldiers_ETH
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				max_planning = 0.15
+				army_org = 5
+				army_attack_factor = 0.1
+			}
+		}
+		ABY_empire_resurgent = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_content_conservatives_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = lion_ETH
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				max_planning = 0.05
+				army_org = 10
+				army_attack_factor = 0.05
+			}
+		}
+	}
+}		

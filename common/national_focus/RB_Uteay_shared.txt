@@ -1,0 +1,602 @@
+shared_focus = {
+	id = UTY_bloods_last_stand
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 4
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_bloods_last_stand"
+		country_event = {
+			id = uteay.1
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_through_the_uintas
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = -1
+	y = 1
+	relative_position_id = UTY_bloods_last_stand
+	prerequisite = {
+		focus = UTY_bloods_last_stand
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_through_the_uintas"
+		country_event = {
+			id = uteay.2
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_beyond_the_wasatch
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 1
+	y = 1
+	relative_position_id = UTY_bloods_last_stand
+	prerequisite = {
+		focus = UTY_bloods_last_stand
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_beyond_the_wasatch"
+		country_event = {
+			id = uteay.3
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_locate_posey
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = UTY_bloods_last_stand
+	prerequisite = {
+		focus = UTY_through_the_uintas
+	}
+	prerequisite = {
+		focus = UTY_beyond_the_wasatch
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_locate_posey"
+		country_event = {
+			id = uteay.4
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_negotiate_with_the_chief
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = UTY_locate_posey
+	}
+	mutually_exclusive = {
+		focus = UTY_the_final_hunt
+	}
+	available = {
+		has_country_flag = UTY_negotiating_with_posey
+	}
+	relative_position_id = UTY_locate_posey
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_negotiate_with_the_chief"
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = UTY_set_up_a_meeting
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = UTY_negotiate_with_the_chief
+	}
+	relative_position_id = UTY_negotiate_with_the_chief
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_set_up_a_meeting"
+		country_event = {
+			id = uteay.5
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_no_tricks
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = -2
+	y = 2
+	prerequisite = {
+		focus = UTY_set_up_a_meeting
+	}
+	relative_position_id = UTY_negotiate_with_the_chief
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_no_tricks"
+		if = {
+			limit = {
+				NOT = { has_completed_focus = UTY_peace_among_peoples }
+			}
+			swap_ideas = {
+				remove_idea = UTY_Poseys_Raids
+				add_idea = UTY_Poseys_Raids_2_1
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = UTY_Poseys_Raids_1_2
+				add_idea = UTY_Poseys_Raids_2_2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_peace_among_peoples
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = UTY_negotiate_with_the_chief
+	}
+	relative_position_id = UTY_negotiate_with_the_chief
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_peace_among_peoples"
+		if = {
+			limit = {
+				NOT = { has_completed_focus = UTY_peace_among_peoples }
+			}
+			swap_ideas = {
+				remove_idea = UTY_Poseys_Raids
+				add_idea = UTY_Poseys_Raids_1_2
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = UTY_Poseys_Raids_2_1
+				add_idea = UTY_Poseys_Raids_2_2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_the_noble_savage
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = UTY_peace_among_peoples
+	}
+	relative_position_id = UTY_negotiate_with_the_chief
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_the_noble_savage"
+		add_ideas = UTY_native_recruitment
+	}
+}
+
+shared_focus = {
+	id = UTY_send_the_delegation
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 3
+	prerequisite = {
+		focus = UTY_no_tricks
+	}
+	prerequisite = {
+		focus = UTY_the_noble_savage
+	}
+	relative_position_id = UTY_negotiate_with_the_chief
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_send_the_delegation"
+		country_event = {
+			id = uteay.6
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_the_treaty_of_the_duchesne_river
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 4
+	prerequisite = {
+		focus = UTY_send_the_delegation
+	}
+	relative_position_id = UTY_negotiate_with_the_chief
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_the_treaty_of_the_duchesne_river"
+		country_event = {
+			id = uteay.7
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_the_final_hunt
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = UTY_locate_posey
+	}
+	mutually_exclusive = {
+		focus = UTY_negotiate_with_the_chief
+	}
+	available = {
+		has_country_flag = UTY_killing_posey
+	}
+	relative_position_id = UTY_locate_posey
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_the_final_hunt"
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = UTY_gather_posses
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = UTY_the_final_hunt
+	}
+	relative_position_id = UTY_the_final_hunt
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_gather_posses"
+		#load_oob = thing
+	}
+}
+
+shared_focus = {
+	id = UTY_bring_your_own_guns
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 2
+	y = 2
+	prerequisite = {
+		focus = UTY_gather_posses
+	}
+	relative_position_id = UTY_the_final_hunt
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_bring_your_own_guns"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 250
+			producer = UTY
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_put_up_posters
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = UTY_the_final_hunt
+	}
+	relative_position_id = UTY_the_final_hunt
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_put_up_posters"
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = UTY_bait_them_out
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = UTY_put_up_posters
+	}
+	relative_position_id = UTY_the_final_hunt
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_bait_them_out"
+		country_event = {
+			id = uteay.11
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_move_out
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 3
+	prerequisite = {
+		focus = UTY_bring_your_own_guns
+	}
+	prerequisite = {
+		focus = UTY_bait_them_out
+	}
+	relative_position_id = UTY_the_final_hunt
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_move_out"
+		country_event = {
+			id = uteay.12
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_the_mirror_lake_massacre
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 4
+	prerequisite = {
+		focus = UTY_move_out
+	}
+	relative_position_id = UTY_the_final_hunt
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_the_mirror_lake_massacre"
+		country_event = {
+			id = uteay.13
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_bloods_retirement
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 6
+	prerequisite = {
+		focus = UTY_the_treaty_of_the_duchesne_river
+		focus = UTY_the_mirror_lake_massacre
+	}
+	relative_position_id = UTY_locate_posey
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_bloods_retirement"
+		country_event = {
+			id = uteay.16
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_declare_the_38_election
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 7
+	prerequisite = {
+		focus = UTY_bloods_retirement
+	}
+	relative_position_id = UTY_locate_posey
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_declare_the_38_election"
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = UTY_the_chosen_successor
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = UTY_declare_the_38_election
+	}
+	relative_position_id = UTY_declare_the_38_election
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_the_chosen_successor"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = UTY_the_churchs_pick
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = UTY_the_chosen_successor
+	}
+	relative_position_id = UTY_the_chosen_successor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_the_chosen_successor"
+		country_event = {
+			id = uteay.17
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_endorse_watkins
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = -1
+	y = 2
+	prerequisite = {
+		focus = UTY_the_churchs_pick
+	}
+	mutually_exclusive = {
+		focus = UTY_endorse_bennett
+	}
+	relative_position_id = UTY_the_chosen_successor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_endorse_watkins"
+		add_political_power = 25
+		custom_effect_tooltip = UTY_watkins_support
+	}
+}
+
+shared_focus = {
+	id = UTY_endorse_bennett
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 1
+	y = 2
+	prerequisite = {
+		focus = UTY_the_churchs_pick
+	}
+	mutually_exclusive = {
+		focus = UTY_endorse_watkins
+	}
+	relative_position_id = UTY_the_chosen_successor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_endorse_bennett"
+		swap_ideas = {
+			remove_idea = UTY_Church_Influence
+			add_idea = UTY_Church_Influence_2
+		}
+		custom_effect_tooltip = UTY_bennett_support
+	}
+}
+
+shared_focus = {
+	id = UTY_meet_with_the_president
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 3
+	prerequisite = {
+		focus = UTY_endorse_watkins
+		focus = UTY_endorse_bennett
+	}
+	relative_position_id = UTY_the_chosen_successor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_meet_with_the_president"
+		country_event = {
+			id = uteay.18
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_discourage_farmer_labor
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = UTY_declare_the_38_election
+	}
+	relative_position_id = UTY_declare_the_38_election
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_discourage_farmer_labor"
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.02
+		}
+		set_variable = { UTY_farmer_labor = 0 }
+	}
+}
+
+shared_focus = {
+	id = UTY_anti_unionism
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = UTY_discourage_farmer_labor
+	}
+	relative_position_id = UTY_discourage_farmer_labor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_anti_unionism"
+		country_event = {
+			id = uteay.19
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_deal_with_strikes
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = UTY_discourage_farmer_labor
+	}
+	relative_position_id = UTY_discourage_farmer_labor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_deal_with_strikes"
+		country_event = {
+			id = uteay.20
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_meet_with_christensen
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = UTY_anti_unionism
+	}
+	prerequisite = {
+		focus = UTY_deal_with_strikes
+	}
+	relative_position_id = UTY_discourage_farmer_labor
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_meet_with_christensen"
+		country_event = {
+			id = uteay.21
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = UTY_voting_day_38
+	icon = GFX_Generic_Judaism
+	cost = 5
+	x = 0
+	y = 5
+	prerequisite = {
+		focus = UTY_meet_with_the_president
+	}
+	prerequisite = {
+		focus = UTY_meet_with_christensen
+	}
+	relative_position_id = UTY_declare_the_38_election
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UTY_voting_day_38"
+		country_event = {
+			id = uteay.22
+			days = 1
+		}
+	}
+}

@@ -1,0 +1,146 @@
+DEN_initialize_election_vars = {
+	set_variable = { DEN_government = 1 }
+	set_variable = { DEN_liberal_party_wing = 1} #Whigs
+	set_variable = { DEN_Tory_popularity_var = 55}
+	set_variable = { DEN_Whig_popularity_var = 25}
+	set_variable = { DEN_Labor_popularity_var = 20}
+
+	set_variable = { DEN_NOR_parliament_wing = 2} #Whigs
+	set_variable = { DEN_NOR_liberal_popularity = 40}
+	set_variable = { DEN_NOR_conservative_popularity = 31}
+	set_variable = { DEN_NOR_agrarian_popularity = 18}
+	set_variable = { DEN_NOR_labor_popularity = 11}
+}
+
+DEN_clear_NOR_election_vars = {
+	clear_variable = DEN_NOR_liberal_popularity
+ 	clear_variable = DEN_NOR_conservative_popularity
+ 	clear_variable = DEN_NOR_agrarian_popularity
+ 	clear_variable = DEN_NOR_labor_popularity
+ 	clear_variable = DEN_NOR_parliament_wing
+}
+
+DEN_hold_election_norway = {
+	set_variable = { DEN_NOR_parliament_wing = 0}
+	set_temp_variable = { DEN_NOR_election_winner = 1}
+	set_temp_variable = { DEN_NOR_election_winner_pop = DEN_NOR_conservative_popularity }
+	#FIND LARGEST PARTY
+	#Conservative v labor
+	if = {
+		limit = { check_variable = {DEN_NOR_election_winner_pop < DEN_NOR_labor_popularity}}
+		set_temp_variable = { DEN_NOR_election_winner = 4}
+		set_temp_variable = { DEN_NOR_election_winner_pop = DEN_NOR_labor_popularity }
+	}
+	##2 v agrarian
+	else_if = {
+		limit = { check_variable = {DEN_NOR_election_winner_pop < DEN_NOR_agrarian_popularity}}
+		set_temp_variable = { DEN_NOR_election_winner = 3}
+		set_temp_variable = { DEN_NOR_election_winner_pop = NOR_agrarian_popularity }
+	}
+	##3 v liberal
+	else_if = {
+		limit = { check_variable = {DEN_NOR_election_winner_pop < DEN_NOR_liberal_popularity}}
+		set_temp_variable = { DEN_NOR_election_winner = 2}
+		set_temp_variable = { DEN_NOR_election_winner_pop = DEN_NOR_liberal_popularity }
+	}
+	#CONCLUDE THE ELECTION
+	if = {
+		limit = { check_variable = { DEN_NOR_election_winner = 1}}#Tories
+		set_variable = {DEN_NOR_parliament_wing = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { DEN_NOR_election_winner = 2}}#Whigs
+		set_variable = {DEN_NOR_parliament_wing = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { DEN_NOR_election_winner = 3}}#Agrarians
+		set_variable = {DEN_NOR_parliament_wing = 3 }
+	}	
+	else_if = {
+		limit = { check_variable = { DEN_NOR_election_winner = 4}}#Labor
+		set_variable = {DEN_NOR_parliament_wing = 4 }
+	}
+	#NORMALIZATION BLOCK
+	set_temp_variable = { total_pop = DEN_NOR_conservative_popularity}
+	add_to_temp_variable = { total_pop = DEN_NOR_liberal_popularity }
+	add_to_temp_variable = { total_pop = DEN_NOR_agrarian_popularity }
+	add_to_temp_variable = { total_pop = DEN_NOR_labor_popularity }
+
+	divide_temp_variable = { DEN_NOR_conservative_popularity = total_pop }
+	divide_temp_variable = { DEN_NOR_liberal_popularity = total_pop }
+	divide_temp_variable = { DEN_NOR_agrarian_popularity = total_pop }
+	divide_temp_variable = { DEN_NOR_labor_popularity = total_pop }
+
+	multiply_temp_variable = { DEN_NOR_liberal_popularity = 1.25 } 
+	multiply_temp_variable = { DEN_NOR_conservative_popularity = 1.25 } 
+	multiply_temp_variable = { DEN_NOR_agrarian_popularity = 1.25 } 
+	multiply_temp_variable = { DEN_NOR_labor_popularity = 1.25 } 
+
+	round_variable = DEN_NOR_liberal_popularity
+	round_variable = DEN_NOR_conservative_popularity
+	round_variable = DEN_NOR_agrarian_popularity
+	round_variable = DEN_NOR_labor_popularity
+}
+DEN_hold_election_denmark = {
+	set_variable = { DEN_government = 0}
+	set_temp_variable = { DEN_election_winner = 1}
+	#FIND LARGEST PARTY
+	#Conservative v liberal
+	if = {
+		limit = { check_variable = { DEN_liberal_party_wing = 1}}
+		set_temp_variable = { LIB_party_pop = DEN_Whig_popularity_var }
+		add_to_temp_variable = { LIB_party_pop = DEN_Labor_popularity_var}
+		if = { 
+			limit = { check_variable = {LIB_party_pop > DEN_Tory_popularity_var}}
+			set_temp_variable = { DEN_election_winner = 2}
+		}
+		else = {set_temp_variable = { DEN_election_winner = 1}}
+	}
+	#tory v labour
+	else_if = {
+		limit = { check_variable = { DEN_liberal_party_wing = 2}}
+		set_temp_variable = { LIB_party_pop = DEN_Labor_popularity_var }
+		set_temp_variable = { whig_split = DEN_Whig_popularity_var}
+		divide_temp_variable = {whig_split = 3}
+		add_to_temp_variable = { LIB_party_pop = whig_split}
+		add_to_temp_variable = { LIB_party_pop = whig_split}
+		add_to_variable = {DEN_Tory_popularity_var = whig_split}
+		if = { 
+			limit = { check_variable = {LIB_party_pop > DEN_Tory_popularity_var}}
+			set_temp_variable = { DEN_election_winner = 3}
+		}
+		else = {set_temp_variable = { DEN_election_winner = 1}}
+	}
+
+
+	#CONCLUDE THE ELECTION
+	if = {
+		limit = { check_variable = { DEN_election_winner = 1}}#Tories
+		set_variable = { DEN_government = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { DEN_election_winner = 2}}#Whigs
+		set_variable = { DEN_government = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { DEN_election_winner = 3}}#Labor
+		set_variable = { DEN_government = 3 }
+	}
+
+	#NORMALIZATION BLOCK
+	set_temp_variable = { total_pop = DEN_Tory_popularity_var}
+	add_to_temp_variable = { total_pop = DEN_Whig_popularity_var }
+	add_to_temp_variable = { total_pop = DEN_Labor_popularity_var }
+
+	divide_temp_variable = { DEN_Tory_popularity_var = total_pop }
+	divide_temp_variable = { DEN_Whig_popularity_var = total_pop }
+	divide_temp_variable = { DEN_Labor_popularity_var = total_pop }
+
+	multiply_temp_variable = { DEN_Whig_popularity_var = 1.25 } 
+	multiply_temp_variable = { DEN_Tory_popularity_var = 1.25 } 
+	multiply_temp_variable = { DEN_Labor_popularity_var = 1.25 } 
+
+	round_variable = DEN_Whig_popularity_var
+	round_variable = DEN_Tory_popularity_var
+	round_variable = DEN_Labor_popularity_var
+}

@@ -1,0 +1,249 @@
+ideas = {
+	country = {
+		SIB_complete_selfreliance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SIB_complete_selfreliance"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SIB_complete_selfreliance
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.15
+			}
+		}
+		SIB_grand_railroad = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SIB_grand_railroad"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SIB_grand_railroad
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				attrition = -0.2
+			}
+		}
+		SIB_zagovor = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SIB_zagovor"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SIB_zagovor
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		SIB_migration_program = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SIB_migration_program"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = hol_the_foundations_of_defense
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+		SIB_wealth_split = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SIB_wealth_split"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SIB_wealth_split
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.3
+			}
+		}
+		RLC_Salekhard_Arsenal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RLC_Salekhard_Arsenal"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = RLC_The_Salekhard_Arsenal
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+		RLC_We_Have_A_Goal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RLC_We_Have_A_Goal"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = RLC_We_Are_Millions
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 250
+				war_support_factor = 0.1
+				offensive_war_stability_factor = 0.75
+				army_core_attack_factor = 0.1
+			}
+		}
+		SSD_Oligarch_For_The_People = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SSD_Oligarch_For_The_People"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SSD_Oligarch_For_The_People
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				republicanism_drift = 0.10
+				min_export = -0.15
+				industrial_capacity_factory = 0.25
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		SSD_Do_We_Need_Them = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SSD_Do_We_Need_Them"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SIB_wealth_split
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.2
+				liberalism_drift = 0.1
+				absolutism_acceptance = -100
+			}
+		}
+		SSD_AA_Division = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SSD_AA_Division"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SSD_AA_Division
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				decryption = 1.5
+				encryption = 1.5
+			}
+		}
+		AAN_International_Anti_Anglo_Capital = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AAN_International_Anti_Anglo_Capital"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = AAN_International_Anti_Anglo_Capital
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1500
+				war_support_factor = 0.3
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -0.25
+				send_volunteer_size = 4
+			}
+		}
+		AAN_The_Common_Enemy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AAN_The_Common_Enemy"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = AAN_The_Common_Enemy
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+	}
+}

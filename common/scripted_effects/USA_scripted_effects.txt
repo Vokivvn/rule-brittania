@@ -1,0 +1,89 @@
+USA_update_devastation = { #update later with checks and make separate CNA one
+	add_to_variable = { USA_devastation_var = USA_devastation_ticker }
+	set_variable = { USA_devastation_var_half = USA_devastation_var }
+	multiply_variable = { USA_devastation_var_half = 0.01 }
+	multiply_variable = { USA_devastation_var_half = 0.5 }
+	set_variable = { USA_devastation_var_negative_half = USA_devastation_var }
+	multiply_variable = { USA_devastation_var_negative_half = 0.01 }
+	multiply_variable = { USA_devastation_var_negative_half = -0.5 }
+	set_variable = { USA_devastation_var_negative = USA_devastation_var }
+	multiply_variable = { USA_devastation_var_negative = 0.01 }
+	multiply_variable = { USA_devastation_var_negative = -1 }
+	set_variable = { USA_devastation_var_negative_third = USA_devastation_var }
+	multiply_variable = { USA_devastation_var_negative_third = 0.01 }
+	multiply_variable = { USA_devastation_var_negative_third = -0.33 }
+	set_variable = { USA_devastation_var_ten = USA_devastation_var }
+	multiply_variable = { USA_devastation_var_ten = 10 }
+	round_variable = USA_devastation_var_ten
+	set_temp_variable = { USA_devastation_var_fifteen_shift_calc = USA_devastation_var }
+	multiply_temp_variable = { USA_devastation_var_fifteen_shift_calc = 0.01 }
+	multiply_temp_variable = { USA_devastation_var_fifteen_shift_calc = .15 }
+	set_variable = { USA_devastation_var_fifteen_shift = 0.15 }
+	subtract_from_variable = { USA_devastation_var_fifteen_shift = USA_devastation_var_fifteen_shift_calc }
+}
+
+USA_raise_popular_support_effect = {
+	set_temp_variable = { USA_CNA_total_population = 0 }
+	set_temp_variable = { CNA_total_population = 0 }
+	USA = {
+		every_owned_state = {
+			add_to_temp_variable = { USA_CNA_total_population = state_population_k }
+			if = {
+				limit = {	
+					controller = { tag = USA }
+				}
+				add_to_temp_variable = { USA_total_population = state_population_k }
+			}
+		}
+	}
+	CNA = {
+		every_owned_state = {
+			add_to_temp_variable = { USA_CNA_total_population = state_population_k }
+			if = {
+				limit = {	
+					controller = { tag = USA }
+				}
+				add_to_temp_variable = { USA_total_population = state_population_k }
+			}
+		}
+	}
+	if = {
+		limit = {
+			SOL = {
+				exists = yes
+			}
+		}
+		SOL = {
+			every_owned_state = {
+				add_to_temp_variable = { USA_CNA_total_population = state_population_k }
+				if = {
+					limit = {	
+						controller = { tag = USA }
+					}
+					add_to_temp_variable = { USA_total_population = state_population_k }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			USM = {
+				exists = yes
+			}
+		}
+		USM = {
+			every_owned_state = {
+				add_to_temp_variable = { USA_CNA_total_population = state_population_k }
+				if = {
+					limit = {	
+						controller = { tag = USA }
+					}
+					add_to_temp_variable = { USA_total_population = state_population_k }
+				}
+			}
+		}
+	}
+	divide_temp_variable = { USA_total_population = USA_CNA_total_population }
+	multiply_temp_variable = { USA_raise_popular_support_var = USA_total_population }
+	add_to_variable = { USA_popular_support = USA_raise_popular_support_var }
+}

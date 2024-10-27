@@ -1,0 +1,87 @@
+﻿l_english:
+ ##Country Names##
+ SLV_cromwellianism:0 "Slovenia"
+ SLV_cromwellianism_DEF:0 "The Republic of Slovenia"
+ SLV_marxism:0 "Slovenia"
+ SLV_marxism_DEF:0 "The Republic of Slovenia"
+ SLV_liberalism:0 "Slovenia"
+ SLV_liberalism_DEF:0 "The Republic of Slovenia"
+ SLV_republicanism:0 "Slovenia"
+ SLV_republicanism_DEF:0 "The Republic of Slovenia"
+ SLV_parliamentarianism:0 "Slovenia"
+ SLV_parliamentarianism_DEF:0 "The Republic of Slovenia" 
+ SLV_administrationism:0 "Slovenia"
+ SLV_administrationism_DEF:0 "The Republic of Slovenia"
+ SLV_absolutism:0 "Slovenia"
+ SLV_absolutism_DEF:0 "The Republic of Slovenia"
+ SLV_despotism:0 "Slovenia"
+ SLV_despotism_DEF:0 "The Republic of Slovenia"
+ SLV_nationalism:0 "Slovenia"
+ SLV_nationalism_DEF:0 "The Republic of Slovenia"
+ SLV_cromwellianism_ADJ:0 "Slovene"
+ SLV_marxism_ADJ:0 "Slovene"
+ SLV_liberalism_ADJ:0 "Slovene"
+ SLV_republicanism_ADJ:0 "Slovene"
+ SLV_parliamentarianism_ADJ:0 "Slovene"
+ SLV_administrationism_ADJ:0 "Slovene"
+ SLV_despotism_ADJ:0 "Slovene"
+ SLV_nationalism_ADJ:0 "Slovene"
+
+ slv.1.t:0 "Slovene National Congress"
+ slv.1.desc:0 "In the Grand Council Chamber of Ljubljana Town Hall, over a hundred men was gathered. From all different sides of the political spectrum, some nobles, some laborers; they were all gathered there, to declare Slovenia, a free, independent and sovereign state. Free from the Austrian hegemony that had dominated their lands for centuries.\n\nSlovenia is finally free, but the work has just begun; there are so many issues that need to be sorted out. Who will lead our nation, where will it be ruled from, how will it be lead, what rights will the former German overlords have? The next days will be exciting and very very important"
+ slv.1.a:0 "Long live Slovenia"
+
+ slv.2.t:0 "The Istrian claim"
+ slv.2.desc:0 "Rjieka, Fiume, Reka. A city with many names"
+ slv.2.a:0 "Reka is coming home"
+ slv.2.b:0 "A bit of a stretch?"
+
+ slv.3.t:0 "The Slovenes in Koroška"
+ slv.3.desc:0 ""
+ slv.3.a:0 "Celovec is Slovene"
+ slv.3.b:0 "A moderate solution could be found"
+
+ slv.4.t:0 "Socialists Protest the Claims"
+ slv.4.desc:0 ""
+ slv.4.a:0 "Traitors"
+ 
+ slv.5.t:0 "Slovenia claims Istria"
+ slv.5.desc:0 ""
+ slv.5.a:0 "Never"
+ slv.5.b:0 "It's just a claim"
+
+ slv.6.t:0 "Slovenes in Klagenfurt"
+ slv.6.desc:0 ""
+ slv.6.a:0 "It was never Slovene"
+ slv.6.b:0 "We have more pressing issues"
+
+ slv.7.t:0 "Order the March on Trieste"
+ slv.7.desc:0 "Trst,"
+ slv.7.a:0 "Slovenia to the coast!"
+ slv.7.b:0 "It can be taken later"
+
+ slv.8.t:0 "Seizure of the Austrian Navy"
+ slv.8.desc:0 ""
+ slv.8.a:0 "ohohohohoh"
+
+ slv.9.t:0 "An Alliance with Hungary?"
+ slv.9.desc:0 ""
+ slv.9.a:0 "yep yep yep"
+ slv.9.b:0 "all alone"
+ 
+ slv.11.t:0 "militarists object"
+ slv.11.desc:0 "TRST IS SLOVENE"
+ slv.11.a:0 "ok then, take it"
+ slv.11.b:0 "nah nah"
+
+ slv.12.t:0 "Slovene soldiers in Trieste"
+ slv.12.desc:0 ""
+ slv.12.a:0 "sad"
+ slv.12.b:0 "A bit of a stretch?"
+
+ slv.13.t:0 "Ljublana-Buda pact"
+ slv.13.desc:0 ""
+ slv.13.a:0 "nice!"
+ slv.13.b:0 "nope"
+
+ 

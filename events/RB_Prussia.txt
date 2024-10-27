@@ -1,0 +1,374 @@
+﻿add_namespace = pru
+add_namespace = thalmann
+
+country_event = { #intro
+	id = pru.1
+	title = pru.1.t
+	desc = pru.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.1"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #crash
+	id = pru.2
+	title = pru.2.t
+	desc = pru.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.2"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.2.a
+		ai_chance = { factor = 1 }
+		country_event = { }
+	}
+}
+
+country_event = { #Audi opens new factory
+	id = pru.3
+	title = pru.3.t
+	desc = pru.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.3"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.3.a
+	}
+}
+
+country_event = { #coup
+	id = pru.4
+	title = pru.4.t
+	desc = pru.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.4"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.4.a
+		ai_chance = { factor = 1 }
+		set_capital = 763
+		remove_state_core = 893
+		remove_state_core = 892
+		remove_state_core = 846
+		remove_state_core = 847
+		remove_state_core = 64
+		remove_state_core = 63
+		remove_state_core = 68
+		remove_state_core = 62
+		KPD = {
+			transfer_state = 893
+			transfer_state = 892
+			transfer_state = 64
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 62
+			transfer_state = 846
+			transfer_state = 847
+			add_state_core = 893
+			add_state_core = 892
+			add_state_core = 64
+			add_state_core = 63
+			add_state_core = 68
+			add_state_core = 62
+			add_state_core = 846
+			add_state_core = 847
+			change_tag_from = ROOT
+			load_focus_tree = KPD_intro
+		}
+		set_global_flag = PRU_socialist
+		set_global_flag = PRU_thalmann
+	}
+}
+
+country_event = { #auwi naenae shot to death
+	id = pru.5
+	title = pru.5.t
+	desc = pru.5.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.5"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #engage coup
+		name = pru.5.a
+		ai_chance = { factor = 1 }
+		create_country_leader = {
+			name = "Karl Höltermann"
+			#desc =
+			picture = "Portrait_PRU_Karl_Höltermann.dds"
+			expire = "1999.12.12"
+			ideology = liberalism_subtype
+			traits = {
+			}
+		}
+		RB_anti_anglo_effects = yes
+		set_cosmetic_tag = PRU_IF
+		kill_country_leader = yes
+		set_politics = { ruling_party = liberalism }
+		create_country_leader = {
+			name = "Alexander I "
+			#desc =
+			picture = "Portrait_PRU_Karl_Höltermann.dds"
+			expire = "1999.12.12"
+			ideology = absolutism_subtype
+			traits = {
+			}
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.1
+		}
+		country_event = { id = pru.6 days = 41}
+	}
+	option = { #Braun's republic
+		name = pru.5.b
+		set_politics = { ruling_party = liberalism }
+	}
+}
+
+country_event = { #despotist
+	id = pru.6
+	title = pru.6.t
+	desc = pru.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.6"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.6.a
+		ai_chance = { factor = 1 }
+		set_country_flag = RB_anglo_loyalist
+		RB_calculate_anglo_control = yes
+		set_politics = { ruling_party = despotism }
+		set_cosmetic_tag = PRU_ENG
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.1
+		}
+	}
+}
+country_event = { #Large demonstrations
+	id = pru.7
+	title = pru.7.t
+	desc = pru.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.7"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.7.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.015
+		}
+		hidden_effect = {
+			country_event = { id = pru.9 days = 14}
+		}
+	}
+}
+country_event = { #Noske declares republic
+	id = pru.8
+	title = pru.8.t
+	desc = pru.8.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.8"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.8.a
+		ai_chance = { factor = 1 }
+		create_country_leader = {
+			name = "Gustav Noske"
+			#desc =
+			picture = "Portrait_PRU_Gustav_Noske.dds"
+			expire = "1999.12.12"
+			ideology = liberalism_subtype
+			traits = {
+			}
+		}
+		set_politics = { ruling_party = liberalism }
+	}
+}
+country_event = { #liberals win election
+	id = pru.9
+	title = pru.9.t
+	desc = pru.9.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.9"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.9.a
+		ai_chance = { factor = 1 }
+		set_politics = { ruling_party = republicanism }
+		hidden_effect = {
+			country_event = { id = pru.4 days = 28}
+		}
+	}
+}
+country_event = { # Britain demands Gold Reserves
+	id = pru.10
+	title = pru.10.t
+	desc = pru.10.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.10"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.10.a
+		ai_chance = { factor = 1 }
+	}
+}
+country_event = { #improve economy
+	id = pru.11
+	title = pru.11.t
+	desc = pru.11.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.11"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.11.a
+		ai_chance = { factor = 1 }
+	}
+}
+country_event = { #Prussia asks for help
+	id = pru.12
+	title = pru.12.t
+	desc = pru.12.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.12"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #yes
+		name = pru.12.a
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = PRU_ENG_helping
+			days = 180
+		}
+		add_political_power = 10
+	}
+	option = { #no
+		name = pru.12.b
+		ai_chance = { factor = 1 }
+		country_event = { id = pru.13 days = 1}
+	}
+
+}
+
+country_event = { #Britain said no
+	id = pru.13
+	title = pru.13.t
+	desc = pru.13.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.13"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #accept it
+		name = pru.13.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.03
+		}
+	}
+	option = { #meet demands
+		name = pru.13.b
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+			remove_idea = PRU_strike_1
+			add_idea = PRU_labor_relations
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.02
+		}
+		add_political_power = -40
+	}
+}
+
+country_event = { #strikes
+	id = pru.14
+	title = pru.14.t
+	desc = pru.14.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pru.14"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pru.14.a
+		ai_chance = { factor = 1 }
+		add_ideas = PRU_strike_2
+	}
+}
+
+country_event = { #Phipps suggest paying
+	id = thalmann.1
+	title = thalmann.1.t
+	desc = thalmann.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event thalmann.1"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #no
+		name = thalmann.1.a
+		ai_chance = { factor = 1 }
+		ENG = { country_event = { id = thalmann.3 days = 2}}
+	}
+	option = { #yes
+		name = thalmann.1.a
+		ai_chance = { factor = 1 }
+		ENG = { country_event = { id = thalmann.2 days = 2}}
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = { #Socialist Prussia pays back
+	id = thalmann.2
+	title = thalmann.2.t
+	desc = thalmann.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event thalmann.2"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #very nice
+		name = thalmann.2.a
+		ai_chance = { factor = 1 }
+	}
+}

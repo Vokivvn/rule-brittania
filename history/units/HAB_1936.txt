@@ -1,0 +1,588 @@
+﻿division_template = {
+	name = "Kaiserliche Infanterie"
+	division_names_group = HAB_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+division_template = {
+	name = "Garnisionstruppe"
+	division_names_group = HAB_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		
+	}
+}
+division_template = {
+	name = "Kaiserliche Marinen"
+	division_names_group = HAB_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+        marine = { x = 1 y = 0 }
+        marine = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kaiserliche Alpenjäger"
+	division_names_group = HAB_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Kaiserliche Kavallerie"  		# Schnelle-Division (cavalry)
+	division_names_group = HAB_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Light tank (tankette) bn
+	}
+}
+
+units = {
+	##### Kaiserliche Armee #####
+	# I Korps
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666  # Vienna
+		division_template = "Kaiserliche Kavallerie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "1. Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11666  # Vienna
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11666  # Vienna
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11651 # St Poelten
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+
+	# II Korps
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9665 # Linz
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 3675 # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 11612  # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 3654   # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 11735    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 3924    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 9660    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 9660    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 11542    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 9570    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 11581    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 11586    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 11584    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 3569    # 
+		division_template = "Kaiserliche Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12228    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10199    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 690    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 6709    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 3665    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 3649    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 6953    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 773    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 9582    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 3585    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 3572    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 11554    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 11536    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 9685    # 
+		division_template = "Garnisionstruppe"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	# "5. Division"			
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 9648  # Graz
+		division_template = "Kaiserliche Alpenjäger"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "6. Division"			
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 673  # Innsbruck
+		division_template = "Kaiserliche Alpenjäger"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	# "7. Division"			
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 688  # Salzburg
+		division_template = "Kaiserliche Alpenjäger"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}		
+		location = 11666  # Vienna
+		division_template = "Kaiserliche Alpenjäger"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}		
+		location = 9598  # Trent
+		division_template = "Kaiserliche Alpenjäger"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}		
+		location = 6626  # IStria
+		division_template = "Kaiserliche Marinen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+}
+
+air_wings = {
+	### Kaiserliche Luftstreitkräfte
+	4 = {
+		fighter_equipment_0 =  {
+			owner = "AUS" 
+			creator = "AUS"
+			amount = 200
+		}		
+		name = "Fliegergruppe 'Österreich'"
+	}
+	66 = {
+		fighter_equipment_0 =  {
+			owner = "AUS" 
+			creator = "SIL"
+			amount = 15
+		}
+		name = "Fliegergruppe 'Silesien'"
+	}
+	107 = {
+		fighter_equipment_0 =  {
+			owner = "AUS" 
+			creator = "SER"
+			amount = 24
+		}
+		name = "Fliegergruppe 'Serbien'"
+	}
+	9 = {
+		fighter_equipment_0 =  {
+			owner = "AUS" 
+			creator = "CZE"
+			amount = 100
+		}
+		name = "Fliegergruppe 'Böhmen'"
+	}
+	43 = {
+		fighter_equipment_0 =  {
+			owner = "AUS" 
+			creator = "HUN"
+			amount = 67
+		}
+		name = "Fliegergruppe 'Ungarn'"
+	}
+	70 = {
+		fighter_equipment_0 =  {
+			owner = "AUS" 
+			creator = "HUN"
+			amount = 40
+		}
+		name = "Fliegergruppe 'Slowakei'"
+	}
+	938 = {
+		tac_bomber_equipment_0 = {	
+			owner = "AUS"
+			creator = "AUS"
+			amount = 120
+		}
+		name = "Bombergruppe 1"
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 3
+		progress = 0.54
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}

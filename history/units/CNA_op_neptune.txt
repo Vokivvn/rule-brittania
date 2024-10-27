@@ -1,0 +1,179 @@
+﻿division_template = {
+	name = "RNAA Coastal Infantry"
+	division_names_group = CNA_RNAA_coastal_inf
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "11975"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "7202"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "1132"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "788"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "3712"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = "6846"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = "6984"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = "9758"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = "6845"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = "11782"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = "6882"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = "9832"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = "12470"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = "3878"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = "6732"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = "3732"
+		division_template = "RNAA Coastal Infantry"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}

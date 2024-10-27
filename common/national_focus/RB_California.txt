@@ -1,0 +1,15 @@
+###########################
+#### California Trees ####
+###########################
+
+focus_tree = {
+	id = CAL_Start
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = CAL
+        }
+    }
+	shared_focus = CAL_Start_Strikes
+}

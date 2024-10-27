@@ -1,0 +1,101 @@
+RB_calculate_anglo_control = {
+	hidden_effect = {
+		random_country = {
+			set_temp_variable = { total_pop = 0 }
+			set_temp_variable = { total_anglo_pop = 0 }
+			set_temp_variable = { total_land = 0 }
+			set_temp_variable = { total_anglo_land = 0 }
+			every_state = {
+				set_temp_variable = { pop_small = state_population_k }
+				multiply_temp_variable = { pop_small = 0.01 }
+				add_to_temp_variable = { total_pop = pop_small }
+				add_to_temp_variable = { total_land = RB_land_area }
+				if = {
+					limit = {
+						controller = {
+							is_pro_anglo = yes
+						}
+					}
+					set_temp_variable = { pop_small_anglo = state_population_k }
+					multiply_temp_variable = { pop_small_anglo = 0.01 }
+					add_to_temp_variable = { total_anglo_pop = pop_small_anglo }
+					add_to_temp_variable = { total_anglo_land = RB_land_area }
+				}
+			}
+			#log="[?total_pop],[?total_anglo_pop]"
+			#log="[?total_land],[?total_anglo_land]"
+			
+			set_variable = { anglo_control_calc = total_anglo_pop }
+			divide_variable = { anglo_control_calc = total_pop }
+			multiply_variable = { anglo_control_calc = 100 }
+			
+			set_variable = { anglo_control_calc_land = total_anglo_land }
+			divide_variable = { anglo_control_calc_land = total_land}
+			multiply_variable = { anglo_control_calc_land = 100 }
+			
+			log = "THIS_IS_ANGLO_DATA,\"[GetDateText]\",[?THIS.anglo_control_calc],[?THIS.anglo_control_calc_land]"
+			every_country = {
+				set_variable = { anglo_control = PREV.anglo_control_calc }
+				set_variable = { anglo_control_land = PREV.anglo_control_calc_land }
+			}
+		}
+		recalculate_anglo_arrays = yes
+	}
+}
+
+RB_calculate_anglo_control_log = {
+	hidden_effect = {
+		random_country = {
+			set_variable = { total_pop = 0 }
+			set_variable = { total_anglo_pop = 0 }
+			every_country = {
+				set_temp_variable = { total_pop_this = 0 }
+				every_owned_state = {
+					add_to_temp_variable = { total_pop_this = state_population_k }
+				}
+				multiply_temp_variable = { total_pop_this = 0.001 }
+				log = "THIS_IS_ANGLO_DATA,\"[GetDateText]\",\"[THIS.GetName]\",[?total_pop_this]"
+				add_to_variable = { PREV.total_pop = total_pop_this }
+				if = {
+					limit = {
+						is_pro_anglo = yes
+					}
+					add_to_variable = { PREV.total_anglo_pop = total_pop_this }
+				}
+			}
+			log = "THIS_IS_ANGLO_DATA_2,\"[GetDateText]\",[?THIS.total_pop],[?THIS.total_anglo_pop]"
+			set_variable = { anglo_control_calc = total_anglo_pop }
+			divide_variable = { anglo_control_calc = total_pop }
+			multiply_variable = { anglo_control_calc = 100 }
+			log = "THIS_IS_ANGLO_DATA_3,\"[GetDateText]\",[?THIS.anglo_control_calc]"
+			every_country = {
+				set_variable = { anglo_control = PREV.anglo_control_calc }
+			}
+		}
+	}
+}
+#add_anti_anglo = {
+#	add_to_array = { prev.rebel_country_array = this } 
+#	add_to_variable = { global.countries_rebel = 1 }
+#}
+recalculate_anglo_arrays = {
+	clear_array = country_array
+	clear_array = rebel_country_array
+	set_variable = { global.countries_rebel = 0 }
+	set_variable = { global.countries_under_brit_control = 0 }
+	hidden_effect = {
+		every_country = {
+			if = {
+				limit = {
+					is_pro_anglo = yes
+				}
+				add_to_array = { PREV.country_array = THIS }
+				add_to_variable = { global.countries_under_brit_control = 1 }
+			}
+			else = {
+				add_to_array = { PREV.rebel_country_array = THIS }
+				add_to_variable = { global.countries_rebel = 1 }
+			}
+		}
+	}
+}

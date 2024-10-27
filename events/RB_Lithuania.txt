@@ -1,0 +1,191 @@
+﻿####################
+##LITHUANIA EVENTS##
+####################
+
+add_namespace = lithuania
+
+# 0-10 is war and intro events
+# 100-199 is LIT
+# 200-299 is LTH
+# 300-399 is MEM
+
+country_event = { #Intro Event
+	id = lithuania.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lithuania.1"}
+	title = lithuania.1.t
+	desc = lithuania.1.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lithuania.1.a
+	}
+}
+country_event = { #Neman River Crisis
+	id = lithuania.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lithuania.2"
+		hidden_effect = {
+			LIT = {
+				delete_unit_template_and_units = {
+					division_template = "Nacionalinė Gvardija"
+				}
+				load_oob = "LIT_ROY"
+				country_event = {
+					id = lithuania.3
+					days = 10
+				}
+			}
+			LTH = {
+				transfer_state = 11
+				if = {
+					limit = {
+						LIT = {
+							has_completed_focus = LIT_LITInfrastructure_Projects
+						}
+					}
+					load_oob = "LIT_REP_weak"
+				}
+				else = {
+					transfer_state = 188
+					load_oob = "LIT_REP"
+				}
+				declare_war_on = {
+					target = LIT
+					type = annex_everything
+				}
+				complete_national_focus = LTH_Independence_Day
+			}
+			11 = {
+				add_core_of = LTH
+			}
+			188 = {
+				add_core_of = LTH
+			}
+			189 = {
+				add_core_of = LTH
+			}
+			784 = {
+				add_core_of = LTH
+			}
+			954 = {
+				add_core_of = LTH
+			}
+		}
+	}
+	title = lithuania.2.t
+	desc = lithuania.2.desc
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lithuania.2.a
+	}
+	option = { #
+		name = lithuania.2.b
+		LTH = {
+			change_tag_from = LIT
+			declare_war_on = {
+				target = LIT
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = { #War with Rosenberg - LIT
+	id = lithuania.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event lithuania.3"
+		hidden_effect = {
+			954 = {
+				add_core_of = MEM
+			}
+			MEM = {
+				declare_war_on = {
+					target = LTH
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LIT
+					type = annex_everything
+				}
+				transfer_state = 954
+				complete_national_focus = MEM_Lithuania_Burns
+				load_oob = "MEM_1936"
+			}
+		}
+	}
+	title = lithuania.3.t
+	desc = lithuania.3.desc
+	picture = GFX_report_event_alfred_rosenberg
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lithuania.3.a
+		LTH = {
+			country_event = {
+				id = lithuania.4
+			}
+		}
+	}
+	option = { #
+		name = lithuania.3.b
+		MEM = {
+			change_tag_from = LIT
+		}
+		LTH = {
+			country_event = {
+				id = lithuania.4
+			}
+		}
+	}
+}
+country_event = { #War with Rosenberg - LTH
+	id = lithuania.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lithuania.4"}
+	title = lithuania.4.t
+	desc = lithuania.4.desc
+	picture = GFX_report_event_alfred_rosenberg
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lithuania.4.a
+	}
+}
+
+##Memel##
+
+country_event = { #War with Rosenberg - LTH
+	id = lithuania.300
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lithuania.300"}
+	title = lithuania.300.t
+	desc = lithuania.300.desc
+	picture = GFX_report_event_alfred_rosenberg
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lithuania.300.a
+	}
+}
+country_event = { #stealing the culture of the regions
+	id = lithuania.301
+	immediate = {log = "[GetDateText]: [Root.GetName]: event lithuania.301"}
+	title = lithuania.301.t
+	desc = lithuania.301.desc
+	picture = GFX_report_event_alfred_rosenberg
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = lithuania.301.a
+	}
+}

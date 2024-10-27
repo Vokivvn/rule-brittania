@@ -1,0 +1,11 @@
+#Prussia and KPD systems
+
+PRU_influencing = {
+	#picture = 
+	allowed = {
+		tag = PRU
+	}
+	visible = {
+		date < 1937.18.01
+	}
+}

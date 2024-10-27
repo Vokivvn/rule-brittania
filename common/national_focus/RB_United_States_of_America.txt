@@ -1,0 +1,13 @@
+#Freedom
+
+focus_tree = {
+	id = USA_revolution_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = USA
+        }
+    }
+	shared_focus = USA_liberty_or_death
+}

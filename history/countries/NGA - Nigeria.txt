@@ -1,0 +1,36 @@
+﻿capital = 558
+
+set_research_slots = 1
+set_stability = 0.5
+set_war_support = 0.5
+
+set_cosmetic_tag = NGA_ENG
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 1
+    marxism = 4
+    liberalism = 10
+    republicanism = 20
+    parliamentarianism = 30
+    administrationism = 20
+    absolutism = 10
+    despotism = 4
+    nationalism = 1
+}
+
+create_country_leader = {
+	name = "D'Arcy Cooper"
+	#desc = 
+	picture = "Portrait_NGA_D'Arcy_Cooper.dds"
+	expire = "1999.12.12"
+	ideology = despotism_subtype
+	traits = {
+	}
+}

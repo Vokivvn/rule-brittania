@@ -1,0 +1,14 @@
+﻿l_english:
+ ##Country Names##
+ SIE_despotism:0 "Pepper Coast Protectorate"
+ SIE_despotism_DEF:0 "The Pepper Coast Protectorate"
+ SIE_despotism_ADJ:0 "West Africa"
+ SIE_administrationism:0 "Pepper Coast Protectorate"
+ SIE_administrationism_DEF:0 "The Pepper Coast Protectorate"
+ SIE_administrationism_ADJ:0 "West Africa"
+
+ ##Party Names##
+ SIE_despotism_party:0 "Pepper Party"
+ SIE_despotism_party_long:0 "Pepper Party"
+ SIE_administrationism_party:0 "Pepper Party"
+ SIE_administrationism_party_long:0 "Pepper Party"

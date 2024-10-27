@@ -1,0 +1,364 @@
+ideas = {
+	country = {
+		FRA_new_approach = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_new_approach"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = paper_flag_fleur_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				despotism_drift = 0.02
+			}
+		}
+		FRA_break_left = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_break_left"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = paper_flag_fleur_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				marxism_drift = -0.02
+				republicanism_drift = -0.02
+				cromwellianism_drift = -0.02
+			}
+		}
+		FRA_break_right = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_break_right"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = paper_flag_fleur_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				nationalism_drift = -0.02
+				absolutism_drift = -0.02
+			}
+		}
+		FRA_London_Loyalty = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_London_Loyalty"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = paper_flag_fleur_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.05
+				war_support_factor = -0.10
+				mobilization_speed = 0.05
+			}
+		}
+		FRA_London_Loyalty_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_London_Loyalty_1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = paper_flag_fleur_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.1
+				war_support_factor = -0.10
+				mobilization_speed = 0.05
+			}
+		}
+		FRA_Ministry_Treachery = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Ministry_Treachery"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.15
+				conscription_factor = 0.02
+				drift_defence_factor = 0.60
+			}
+		}
+		FRA_Ministry_Treachery_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Ministry_Treachery_1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.15
+				conscription = 0.02
+				drift_defence_factor = 0.70
+				#resistance_tick_auto = -2
+			}
+		}
+		FRA_Ministry_Treachery_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Ministry_Treachery_2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.10
+				conscription = 0.02
+				drift_defence_factor = 0.70
+				#resistance_tick_auto = -2
+			}
+		}
+		FRA_Normandy_Garrison = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_Normandy_Garrison"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = british_garrison_in_normandy_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.10
+			}
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = -0.05
+			}
+		}
+		FRA_extreme_measures = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_extreme_measures"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				#enemy_partisan_effect = -0.1
+				stability_factor = -0.15
+			}
+		}
+		FRA_extragavent_court = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_extragavent_court"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_factor = -0.10
+			}
+		}
+		FRA_legalized_corruption = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_legalized_corruption"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_factor = -0.10
+				stability_factor = 0.05
+			}
+		}
+		FRA_legalized_corruption_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_legalized_corruption_1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.15
+				stability_factor = 0.06
+			}
+		}
+		FRA_growing_discontent_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_growing_discontent_1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = FRE
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+		}
+		FRA_growing_discontent_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_growing_discontent_2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = FRE
+				attack_bonus_against = -0.10
+				defense_bonus_against = -0.10
+			}
+		}
+		FRA_growing_discontent_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_growing_discontent_3"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = FRE
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.20
+			}
+		}
+		FRA_growing_discontent_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_growing_discontent_4"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = police_execute_law_country_flag_FRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = FRE
+				attack_bonus_against = -0.40
+				defense_bonus_against = -0.40
+			}
+		}
+	}
+}

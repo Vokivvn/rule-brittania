@@ -1,0 +1,27 @@
+focus_tree = {
+	id = China_starting_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1600 }
+	shared_focus = CHI_New_Year_Address
+}
+
+focus_tree = {
+	id = CHI_BIG_TROUBLE_IN_LITTLE_CHINA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1600 }
+	shared_focus = CHI_Turmoil_In_The_Middle_Kingdom
+}

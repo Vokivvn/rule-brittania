@@ -1,0 +1,29 @@
+
+state={
+	id=1025
+	name="STATE_1025"
+	resources={
+		rubber=6.000
+		oil=2.000
+	}
+	history={
+		owner = OST
+		add_core_of = BOR
+		buildings = {
+			infrastructure = 3
+			10199 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			10199 2
+		}
+	}
+
+	provinces={
+		1335 4282 4338 10143 10199 10212 12171 12186
+	}
+	manpower=215604
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

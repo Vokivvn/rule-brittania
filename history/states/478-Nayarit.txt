@@ -1,0 +1,41 @@
+
+state={
+	id=478
+	name="STATE_478"
+	resources={
+		tungsten=8.000
+	}
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = MEX
+		victory_points = {
+			13267 30 
+		}
+		victory_points = {
+			13265 5 
+		}
+		victory_points = {
+			12746 10
+		}
+		victory_points = {
+			12873 20
+		}
+		victory_points = {
+			8032 5
+		}
+
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		2051 8032 12746 12873 13265 13266 13267 
+	}
+	manpower=2470875
+	buildings_max_level_factor=1.000
+	state_category=town
+}

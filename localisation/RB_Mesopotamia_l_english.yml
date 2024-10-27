@@ -1,0 +1,33 @@
+﻿l_english:
+ ##Country Names##
+ MSP_cromwellianism:0 "Administration of Mesopotamia"
+ MSP_cromwellianism_DEF:0 "The Administration of Mesopotamia"
+ MSP_marxism:0 "Administration of Mesopotamia"
+ MSP_marxism_DEF:0 "The Administration of Mesopotamia"
+ MSP_liberalism:0 "Administration of Mesopotamia"
+ MSP_liberalism_DEF:0 "The Administration of Mesopotamia"
+ MSP_republicanism:0 "Administration of Mesopotamia"
+ MSP_republicanism_DEF:0 "The Administration of Mesopotamia"
+ MSP_parliamentarianism:0 "Administration of Mesopotamia"
+ MSP_parliamentarianism_DEF:0 "The Administration of Mesopotamia"
+ MSP_administrationism:0 "Administration of Mesopotamia"
+ MSP_administrationism_DEF:0 "The Administration of Mesopotamia"
+ MSP_absolutism:0 "Administration of Mesopotamia"
+ MSP_absolutism_DEF:0 "The Administration of Mesopotamia"
+ MSP_despotism:0 "Administration of Mesopotamia"
+ MSP_despotism_DEF:0 "The Administration of Mesopotamia"
+ MSP_nationalism:0 "Administration of Mesopotamia"
+ MSP_nationalism_DEF:0 "The Administration of Mesopotamia"
+ MSP_cromwellianism_ADJ:0 "Mesopotamian"
+ MSP_marxism_ADJ:0 "Mesopotamian"
+ MSP_liberalism_ADJ:0 "Mesopotamian"
+ MSP_republicanism_ADJ:0 "Mesopotamian"
+ MSP_parliamentarianism_ADJ:0 "Mesopotamian"
+ MSP_administrationism_ADJ:0 "Mesopotamian"
+ MSP_despotism_ADJ:0 "Mesopotamian"
+ MSP_nationalism_ADJ:0 "Mesopotamian"
+ 
+ ##Parties##
+ 
+ ##Leader Descriptions##
+ POLITICS_ARNOLD_WILSON_DESC:0 "Colonel Arnold Wilson is the high commissioner of Mesopotamia and London's man in Baghdad– a region rife with nationalist conflict and anti-British sentiment, Wilson is a tall and strong military man who has spent the last number of years working various administration jobs in India and even oversaw the discovery of the first oil site in the Middle East. He was then transferred to Mesopotamia to assist the High Commissioner, Sir Percy Cox, with administrating the region. Sir Percy Cox was killed during an uprising in the 1920s, and an internal power struggle emerged amongst the local Civil Service between those who wished for a more integrated Mesopotamia that is closer to British India and the 'Arabists' such as the late Sir Percy Cox who wished for a more independent and autonomist Mesopotamia separate from the Arab Bureau in Cairo. Arnold Wilson, an ardent opponent of Arab nationalism and supporter of Mesopotamia being a imperial protectorate under direct British rule with closer connections to British India, came out on top.\n\n Courageous, workaholic, and outspokenly patriotic to the Empire, he has also publicly called himself a "left-wing radical Tory" and published papers supporting moderate left wing causes such as workmen's compensation, the costs of funerals, industrial assurance, and old age pensions. He as well plays an active role in both the British Science Guild and the British Eugenics Society. He has spent the last couple of years establishing a more efficient government and administration in Mesopotamia as well as a fair treatment and political representation of the various ethnic and religious communities but he is as pragmatic as he is bureaucratic."

@@ -1,0 +1,75 @@
+annexation_decisions = {
+	# Transylvania
+	annexation_TRA_CONQ = {
+		icon = generic_flags
+		allowed = {
+			NOT = {
+				tag = TRA
+				tag = WAL
+				tag = MOL
+			}
+		}
+		activation = {
+			if ={
+				NOT = {
+					tag = HUN
+				}
+				948 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			76 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			83 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			84 = {
+				is_owned_and_controlled_by = ROOT
+			}
+			is_subject = no
+			NOT = {
+				has_country_flag = TRA_CONQ
+				country_exists = TRA
+			}
+		}
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = freedec?0
+		fire_only_once = no
+		cancel_trigger = {
+			NOT = {
+				76 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			NOT = {
+				83 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			NOT = {
+				84 = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annexation_TRA_CONQ"
+			country_event = {
+				id = annex.1
+			}
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout annexation_TRA_CONQ"
+			set_country_flag = AFG_CONQ
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

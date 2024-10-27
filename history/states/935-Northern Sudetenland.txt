@@ -1,0 +1,19 @@
+state={
+	id=935
+	name="STATE_935"
+	provinces={
+		469 494 11401 11414 
+	}
+	history = {
+		owner = CZE
+		add_core_of = CZE
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+		}
+	}
+	state_category = large_town
+	manpower=1092431
+	buildings_max_level_factor=1.000
+}

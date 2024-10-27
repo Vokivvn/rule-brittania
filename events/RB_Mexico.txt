@@ -1,0 +1,96 @@
+﻿#|=================================================|#
+#| ███╗   ███╗███████╗██╗  ██╗██╗ ██████╗ ██████╗  |# 
+#| ████╗ ████║██╔════╝╚██╗██╔╝██║██╔════╝██╔═══██╗ |# 
+#| ██╔████╔██║█████╗   ╚███╔╝ ██║██║	 ██║   ██║ |# 
+#| ██║╚██╔╝██║██╔══╝   ██╔██╗ ██║██║	 ██║   ██║ |# 
+#| ██║ ╚═╝ ██║███████╗██╔╝ ██╗██║╚██████╗╚██████╔╝ |# 
+#| ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═════╝  |# 
+#|=============|   Country Events   |==============|#
+add_namespace = MEX
+add_namespace = MEX_DBG
+add_namespace = MEX_CW
+
+############### 000 ###############
+##===========| Debug |===========##
+###################################
+
+country_event = {
+	id = MEX.1000
+	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.1000"}
+	title = "Debug: Spawn RMX" #MEX.1000.t
+	desc = ":flushed:" #MEX.1000.desc
+	#picture = GFX_report_event_OST_partisans
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = dbg_mexican_revolution
+
+		MEX = {
+			dismantle_faction = yes
+			MEX_Politics_Init = yes
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = MEX_CW
+
+			475 = { set_demilitarized_zone = no } #
+			984 = { set_demilitarized_zone = no }
+			every_owned_state = {
+				limit = { is_core_of = MEX }
+				RMX = { add_state_core = PREV }
+			}
+			every_owned_state = {
+				limit = { is_demilitarized_zone = yes }
+				set_demilitarized_zone = no
+				RMX = { transfer_state = PREV }
+			}
+		}
+		RMX = {
+			set_cosmetic_tag = RMX_CW
+			inherit_technology = MEX
+			RMX_Politics_Init = yes
+			#load_oob = "RMX_Init"
+			
+			#transfer_state = 985
+			transfer_state = 480
+			transfer_state = 978
+			transfer_state = 979
+		}
+		ARZ = {
+			drop_cosmetic_tag = yes
+			transfer_state = 376
+			add_state_core = 376
+			transfer_state = 377
+			add_state_core = 377
+		}
+		EDS = {
+			transfer_state = 984
+			add_state_core = 984
+			transfer_state = 475
+		}
+	}
+
+	option = { 
+		name = "huh." #MEX.1000.a
+		add_political_power = 50
+	}
+	option = { 
+		name = "become them" #MEX.1000.b
+		RMX = { change_tag_from = ROOT }
+	}
+}
+
+country_event = {
+	id = MEX.1001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.1001"}
+	title = "Debug: MCW Superevent" #MEX.1001.t
+	desc = ":flushed:" #MEX.1001.desc
+	#picture = GFX_report_event_OST_partisans
+	is_triggered_only = yes
+   
+	option = { 
+		name = "huh." #MEX.1000.a
+		ROOT = {
+			set_demilitarized_zone = yes
+			set_variable = { insurgency_power = 50 }
+		}
+	}
+}

@@ -1,0 +1,20 @@
+state={
+	id=786
+	name="STATE_786" # Sudan Snake
+	manpower = 124200
+	
+	state_category = wasteland
+
+	history={
+		owner = SUD
+		add_core_of = SUD
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		4191
+	}
+}

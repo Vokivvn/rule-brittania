@@ -1,0 +1,22 @@
+state={
+	id=965
+	name="STATE_965"
+
+	history={
+		owner = THR
+		victory_points = {
+			11402 3
+		}
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = THR
+
+	}
+	provinces={
+		11402
+	}
+	manpower=240102
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

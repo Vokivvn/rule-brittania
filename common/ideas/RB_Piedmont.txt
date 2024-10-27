@@ -1,0 +1,262 @@
+ideas = {
+	country = {
+		pie_dukes_retinue = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_dukes_retinue"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = generic_army_problems
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 0.50
+				army_org_factor = -0.50
+				army_attack_factor = -0.50
+				army_defence_factor = -0.50
+			}
+		}
+
+		pie_anglo_coop = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_anglo_coop"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_flag_navy_ship
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_navy = 0.05
+				production_speed_dockyard_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+			research_bonus = { naval_doctrine = 0.10 } 
+			research_bonus = { naval_equipment = 0.10 }
+		}
+
+		pie_admiralty_pleased = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_admiralty_pleased"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_admiralty_happy
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.05
+				experience_gain_navy = 0.05
+				production_speed_dockyard_factor = 0.20
+				industrial_capacity_dockyard = 0.10
+			}
+			research_bonus = { naval_doctrine = 0.20 }
+			research_bonus = { naval_equipment = 0.10 }
+		}
+
+		pie_admiralty_content = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_admiralty_content"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_admiralty_content
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				experience_gain_navy = 0.05
+				production_speed_dockyard_factor = 0.10
+				industrial_capacity_dockyard = 0.05
+			}
+			research_bonus = { naval_doctrine = 0.10 }
+		}
+
+		pie_admiralty_annoyed = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_admiralty_annoyed"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_admiralty_annoyed
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				production_speed_dockyard_factor = -0.10
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+
+		pie_admiralty_angered = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_admiralty_angered"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_admiralty_angered
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.10
+				production_speed_dockyard_factor = -0.20
+				industrial_capacity_dockyard = -0.10
+			}
+			research_bonus = { naval_doctrine = -0.10 }
+			research_bonus = { naval_equipment = -0.10 }
+		}
+
+		pie_futurists_dominant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_futurists_dominant"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_la_guerra_della_cultura_1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+
+		pie_futurists_strong = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_futurists_strong"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_la_guerra_della_cultura_2
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+		pie_guerra_cultura = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_guerra_cultura"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_la_guerra_della_cultura_3
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		pie_neo_strong = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_neo_strong"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_la_guerra_della_cultura_4
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+		pie_neo_dominant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_neo_dominant"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PIE_la_guerra_della_cultura_5
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+
+		pie_motorisation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea pie_motorisation"}
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				experience_gain_army = -0.05
+				army_speed_factor = 0.10
+			}
+		}

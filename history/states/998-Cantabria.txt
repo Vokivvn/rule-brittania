@@ -1,0 +1,23 @@
+state={
+	id=998
+	name="STATE_998"
+	history={
+		owner = NAV
+		add_core_of = CAS
+		add_core_of = NAV
+		victory_points = {
+			11688 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+		}
+	}
+	provinces={
+		738 9703 11684 11688 
+	}
+	manpower= 380675
+	state_category = large_town
+	buildings_max_level_factor=1.000
+}

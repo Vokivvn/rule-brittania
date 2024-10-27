@@ -1,0 +1,20 @@
+
+state={
+	id=507
+	name="STATE_507"
+
+	history={
+		owner = PAT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PAT
+	}
+
+	provinces={
+		5209 5215 8218 8913 11009 
+	}
+	manpower=68693
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

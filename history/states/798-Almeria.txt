@@ -1,0 +1,24 @@
+state={
+	id=798
+	name="STATE_798"
+	provinces={
+		747 4065 10063 10024 10109 12038
+	}
+	history={
+		owner = GIB
+		victory_points = {
+			10024 5
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			10024 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = GIB
+	}
+	manpower=632818
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}

@@ -1,0 +1,340 @@
+#TUR_swap_tree = {
+#	if = {
+#		limit = {
+#			has_focus_tree = RB_Turkey_intro
+#		}
+#		hidden_effect = {
+#			load_focus_tree = RB_Turkey_tree_two
+#		}
+#		custom_effect_tooltip = tur_focus_change
+#	}
+#	else_if = {
+#		limit = {
+#			has_focus_tree = RB_Turkey_tree_two
+#		}
+#		hidden_effect = {
+#			load_focus_tree = RB_Turkey_intro
+#		}
+#		custom_effect_tooltip = tur_focus_change
+#	}
+#}
+
+FRA_morale_recovers = {
+	if = {
+		limit = {
+			has_idea = FRA_growing_discontent_1
+		}
+		remove_ideas = FRA_growing_discontent_1
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_growing_discontent_2
+		}
+		remove_ideas = FRA_growing_discontent_2
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_growing_discontent_3
+		}
+		remove_ideas = FRA_growing_discontent_3
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_growing_discontent_4
+		}
+		remove_ideas = FRA_growing_discontent_4
+	}
+}
+
+FRA_set_revolt_flag = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = fra_ongoing_revolt
+			}
+		}
+		set_country_flag = fra_ongoing_revolt
+	}
+	else = {
+		add_political_power = -100
+	}
+}
+
+FRA_raise_unrest = {
+	add_to_variable = {
+		var = FRA_unrest
+		value = 1
+	}
+}
+
+FRA_lower_unrest = {
+	subtract_from_variable = {
+		var = FRA_unrest
+		value = 1
+	}
+}
+
+FRA_raise_anglo_anger = {
+	add_to_variable = {
+		var = FRA_anglo_anger
+		value = 1
+	}
+}
+
+FRA_lower_anglo_anger = {
+	subtract_from_variable = {
+		var = FRA_anglo_anger
+		value = 1
+	}
+}
+
+FRA_Anglos_Rise_Up = {
+	if = {
+		limit = {
+			check_variable = {
+				var = FRA_anglo_anger
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+		hidden_effect = {
+			add_political_power = -200
+			country_event = { id = henri.20 days = 5 }
+		}
+	}
+}
+
+FRA_is_there_a_revolt = {
+	if = {
+		limit = {
+			check_variable = {
+				var = FRA_unrest
+				value = 4
+				compare = equals
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				60 = {}
+				40 = {FRA_tonights_lucky_loser = yes}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = FRA_unrest
+				value = 5
+				compare = equals
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				50 = {}
+				50 = {FRA_tonights_lucky_loser = yes}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = FRA_unrest
+				value = 6
+				compare = equals
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				40 = {}
+				60 = {FRA_tonights_lucky_loser = yes}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = FRA_unrest
+				value = 7
+				compare = equals
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				30 = {}
+				70 = {FRA_tonights_lucky_loser = yes}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = FRA_unrest
+				value = 8
+				compare = equals
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				20 = {}
+				80 = {FRA_tonights_lucky_loser = yes}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = FRA_unrest
+				value = 9
+				compare = equals
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				10 = {}
+				90 = {FRA_tonights_lucky_loser = yes}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = FRA_unrest
+				value = 10
+				compare = equals
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = FRA_King_George
+						has_country_flag = FRA_King_Henri
+					}
+				}
+				country_event = { id = FRA.19 days = 3 }
+			}
+		}
+	}
+}
+
+
+FRA_tonights_lucky_loser = {
+	random_list = {
+		10 = {
+			country_event = FRA.6
+			modifier = {
+				factor = 0
+				has_country_flag = fra_cromwellian_revolt
+			}
+		}
+		15 = { country_event = FRA.7
+			modifier = {
+				factor = 0
+				has_country_flag = fra_marxist_revolt
+			}
+		}
+		15 = { country_event = FRA.8
+			modifier = {
+				factor = 0
+				has_country_flag = fra_socdem_revolt
+			}
+		}
+		15 = { country_event = FRA.9
+			modifier = {
+				factor = 0
+				has_country_flag = fra_liberal_revolt
+			}
+		}
+		15 = { country_event = FRA.10
+			modifier = {
+				factor = 0
+				has_country_flag = fra_degaulle_revolt
+			}
+		}
+		10 = { country_event = FRA.11
+			modifier = {
+				factor = 0
+				has_country_flag = fra_absolutism_revolt
+			}
+		}
+		10 = { country_event = FRA.12
+			modifier = {
+				factor = 0
+				has_country_flag = fra_salan_revolt
+			}
+		}
+		10 = { country_event = FRA.13
+			modifier = {
+				factor = 0
+				has_country_flag = fra_dumbass_revolt
+			}
+		}
+	}
+}
+
+FRA_clear_ideas = {
+	if = {
+		limit = {
+			has_idea = FRA_London_Loyalty
+		}
+		remove_ideas = FRA_London_Loyalty
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_Ministry_Treachery
+		}
+		remove_ideas = FRA_Ministry_Treachery
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_Ministry_Treachery_1
+		}
+		remove_ideas = FRA_Ministry_Treachery_1
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_Normandy_Garrison
+		}
+		remove_ideas = FRA_Normandy_Garrison
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_extreme_measures
+		}
+		remove_ideas = FRA_extreme_measures
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_extragavent_court
+		}
+		remove_ideas = FRA_extragavent_court
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_legalized_corruption
+		}
+		remove_ideas = FRA_legalized_corruption
+	}
+
+	if = {
+		limit = {
+			has_idea = FRA_legalized_corruption_1
+		}
+		remove_ideas = FRA_legalized_corruption_1
+	}
+}

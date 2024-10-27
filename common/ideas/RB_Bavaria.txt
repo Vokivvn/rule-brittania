@@ -1,0 +1,86 @@
+ideas = {
+	country = {
+		BAV_Founder_of_the_AGEI = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BAV_Founder_of_the_AGEI"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BAV_Founder_of_the_AGEI
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				local_building_slots_factor = 0.25
+				stability_factor = -0.05
+			}
+		}
+		BAV_Imperial_Economic_Integration = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BAV_Imperial_Economic_Integration"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BAV_Imperial_Economic_Integration
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				political_power_gain = -0.25
+			}
+		}
+		BAV_Panther_of_the_South = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BAV_Panther_of_the_South"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BAV_The_Panther_of_the_South
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.1
+				war_support_factor = 0.15
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		BAV_Volkskrone = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BAV_Volkskrone"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BAV_Bavarian_Volkskrone
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.2
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+﻿capital = 460
+
+set_research_slots = 1
+set_stability = 0.5
+set_war_support = 0.5
+
+set_cosmetic_tag = ALG_ENG
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 0
+    liberalism = 0
+    republicanism = 8 #moderate arabs
+    parliamentarianism = 5 #moderate frenchs
+    administrationism = 21 #arabs
+    absolutism = 0
+    despotism = 48 #anglo rule
+    nationalism = 18 #pied noirs
+}
+
+create_country_leader = {
+    name = "William Dobbie"
+    desc = POLITICS_WILLIAM_DOBBIE_DESC
+    picture = "Portrait_ALG_William_Dobbie.dds"
+    expire = "1999.12.12"
+    ideology = despotism_subtype
+    traits = {
+    }
+}

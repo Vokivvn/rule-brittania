@@ -1,0 +1,958 @@
+focus_tree = {
+	id = austria
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	default = no
+	focus = {
+		id = AUS_old_man_of_europe
+		text = "The Old Man Of Europe"
+		icon = GFX_unknown
+		cost = 1
+		x = 5
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			always = yes
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_old_man_of_europe"
+		}
+	}
+	focus = {
+		id = AUS_our_german_brethren
+		text = "Our German Brethren"
+		icon = GFX_unknown
+		cost = 1
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_old_man_of_europe
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_our_german_brethren"
+		}
+	}
+	focus = {
+		id = AUS_across_the_alps
+		text = "Across The Alps..."
+		icon = GFX_unknown
+		cost = 1
+		x = -7
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_our_german_brethren
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_across_the_alps"
+			add_opinion_modifier = {
+				target = BAV
+				modifier = AUS_alpine_friendship
+			}
+			reverse_add_opinion_modifier = {
+				target = BAV
+				modifier = AUS_alpine_friendship
+			}
+		}
+	}
+	focus = {
+		id = AUS_bavarian_austrian_friendship
+		text = "Bavarian-Austrian Friendship"
+		icon = GFX_unknown
+		cost = 1
+		x = -7
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_across_the_alps
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_bavarian_austrian_friendship"
+			AUS = {
+				give_guarantee = BAV
+			}
+		}
+	}
+	focus = {
+		id = AUS_treaty_of_regensburg
+		text = "Treaty Of Regensburg"
+		icon = GFX_unknown
+		cost = 1
+		x = -7
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_bavarian_austrian_friendship
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_treaty_of_regensburg"
+			AUS = {
+				diplomatic_relation = {
+					country = BAV
+					relation = non_aggression_pact
+					active = yes
+				}
+				give_military_access = BAV
+			}
+			BAV = {
+				give_military_access = AUS
+			}
+		}
+	}
+	focus = {
+		id = AUS_on_the_oder
+		text = "On The Oder..."
+		icon = GFX_unknown
+		cost = 1
+		x = -4
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_our_german_brethren
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_on_the_oder"
+			add_opinion_modifier = {
+				target = SIL
+				modifier = AUS_silesian_relations
+			}
+			reverse_add_opinion_modifier = {
+				target = SIL
+				modifier = AUS_silesian_relations
+			}
+		}
+	}
+	focus = {
+		id = AUS_future_of_silesia
+		text = "The Future Of Silesia"
+		icon = GFX_unknown
+		cost = 1
+		x = -4
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_on_the_oder
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_future_of_silesia"
+		}
+	}
+	focus = {
+		id = AUS_an_independent_duchy
+		text = "An Independent Duchy..."
+		icon = GFX_unknown
+		cost = 1
+		x = -5
+		y = 4
+		ai_will_do = {
+			factor = 0.75
+		}
+
+		prerequisite = {
+			focus = AUS_future_of_silesia
+		}
+
+		mutually_exclusive = {
+			focus = AUS_a_crownland_of_austria
+		}
+
+		available = {
+			has_country_flag = AUS_silesian_duchy_flag
+		}
+
+		bypass = {
+			has_country_flag = AUS_silesian_duchy_flag
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_an_independent_duchy"
+			AUS = {
+				give_guarantee = SIL
+				diplomatic_relation = {
+					country = SIL
+					relation = non_aggression_pact
+					active = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_a_crownland_of_austria
+		text = "A Crownland Of Austria..."
+		icon = GFX_unknown
+		cost = 1
+		x = -3
+		y = 4
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		prerequisite = {
+			focus = AUS_future_of_silesia
+		}
+
+		mutually_exclusive = {
+			focus = AUS_an_independent_duchy
+		}
+
+		available = {
+			has_country_flag = AUS_silesian_crownland_flag
+		}
+
+		bypass = {
+			has_country_flag = AUS_silesian_crownland_flag
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_a_crownland_of_austria"
+			AUS = {
+				puppet = SIL
+			}
+		}
+	}
+	focus = {
+		id = AUS_and_by_the_rhine
+		text = "...And By The Rhine"
+		icon = GFX_unknown
+		cost = 1
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_our_german_brethren
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_and_by_the_rhine"
+			add_opinion_modifier = {
+				target = HSM
+				modifier = AUS_rhenish_diplomacy
+			}
+			reverse_add_opinion_modifier = {
+				target = HSM
+				modifier = AUS_rhenish_diplomacy
+			}
+			add_opinion_modifier = {
+				target = MUN
+				modifier = AUS_rhenish_diplomacy
+			}
+			reverse_add_opinion_modifier = {
+				target = MUN
+				modifier = AUS_rhenish_diplomacy
+			}
+			add_opinion_modifier = {
+				target = BAD
+				modifier = AUS_rhenish_diplomacy
+			}
+			add_opinion_modifier = {
+				target = WUR
+				modifier = AUS_rhenish_diplomacy
+			}
+			reverse_add_opinion_modifier = {
+				target = BAD
+				modifier = AUS_rhenish_diplomacy
+			}
+			reverse_add_opinion_modifier = {
+				target = WUR
+				modifier = AUS_rhenish_diplomacy
+			}
+		}
+	}
+	focus = {
+		id = AUS_south_german_partners
+		text = "South German Partners"
+		icon = GFX_unknown
+		cost = 1
+		x = -1
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_and_by_the_rhine
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_south_german_partners"
+			AUS = {
+				give_guarantee = WUR
+				give_guarantee = BAD
+			}
+		}
+	}
+	focus = {
+		id = AUS_reaffirm_our_protection
+		text = "Reaffirm Our Alliances"
+		icon = GFX_unknown
+		cost = 1
+		x = -1
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_south_german_partners
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_reaffirm_our_protection"
+			AUS = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 5000
+					target = BAD
+				}
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 5000
+					target = WUR
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_vienna_conference
+		text = "The Vienna Conference"
+		icon = GFX_unknown
+		cost = 1
+		x = -4
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus =  AUS_treaty_of_regensburg
+		}
+		prerequisite = {
+			focus = AUS_reaffirm_our_protection
+		}
+		prerequisite = {
+			focus =  AUS_a_crownland_of_austria
+			focus = AUS_an_independent_duchy
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_vienna_conference"
+			country_event = {
+				id = viennaconference.1
+			}
+		}
+	}
+	focus = {
+		id = AUS_we_are_south_germans
+		text = "Same Tongue, Different Cultures"
+		icon = GFX_unknown
+		cost = 1
+		x = -7
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_vienna_conference
+		}
+
+		available = {
+			has_country_flag = AUS_vienna_conference_autonomous_flag
+		}
+
+		mutually_exclusive = {
+			focus = AUS_germans_under_different_crowns
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_we_are_south_germans"
+		}
+	}
+	focus = {
+		id = AUS_prop_up_the_monarchs
+		text = "Prop Up The Monarchs"
+		icon = GFX_unknown
+		cost = 1
+		x = -9
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_we_are_south_germans
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_prop_up_the_monarchs"
+		}
+	}
+	focus = {
+		id = AUS_suppress_nationalist_sentiments
+		text = "Suppress Nationalist Sentiments"
+		icon = GFX_unknown
+		cost = 1
+		x = -9
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_prop_up_the_monarchs
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_suppress_nationalist_sentiments"
+		}
+	}
+	focus = {
+		id = AUS_invest_in_the_rhine
+		text = "Invest In The Rhineland"
+		icon = GFX_unknown
+		cost = 1
+		x = -9
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_suppress_nationalist_sentiments
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_invest_in_the_rhine"
+		}
+	}
+	focus = {
+		id = AUS_bavarian_investment
+		text = "Investment From Munich"
+		icon = GFX_unknown
+		cost = 1
+		x = -7
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_we_are_south_germans
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_bavarian_investment"
+		}
+	}
+	focus = {
+		id = AUS_share_industrial_methods
+		text = "Share Our Industrial Methods"
+		icon = GFX_unknown
+		cost = 1
+		x = -7
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_bavarian_investment
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_share_industrial_methods"
+		}
+	}
+	focus = {
+		id = AUS_a_modern_economy
+		text = "A Modern Economy"
+		icon = GFX_unknown
+		cost = 1
+		x = -7
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_share_industrial_methods
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_a_modern_economy"
+		}
+	}
+	focus = {
+		id = AUS_a_monetary_union
+		text = "A Monetary Union"
+		icon = GFX_unknown
+		cost = 1
+		x = -4
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_we_are_south_germans
+			focus = AUS_germans_under_different_crowns
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_a_monetary_union"
+		}
+	}
+	focus = {
+		id = AUS_print_the_mark
+		text = "Print The Mark"
+		icon = GFX_unknown
+		cost = 1
+		x = -4
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_a_monetary_union
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_print_the_mark"
+		}
+	}
+	focus = {
+		id = AUS_german_free_trade_area
+		text = "German Free-Trade Area"
+		icon = GFX_unknown
+		cost = 1
+		x = -4
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_print_the_mark
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_german_free_trade_area"
+		}
+	}
+	focus = {
+		id = AUS_germans_under_different_crowns
+		text = "Germans Under Different Crowns"
+		icon = GFX_unknown
+		cost = 1
+		x = -1
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_vienna_conference
+		}
+
+		available = {
+			has_country_flag = AUS_vienna_conference_german_flag
+		}
+
+		mutually_exclusive = {
+			focus = AUS_we_are_south_germans
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_germans_under_different_crowns"
+		}
+	}
+	focus = {
+		id = AUS_investments_across_germany
+		text = "Investments Across Germany"
+		icon = GFX_unknown
+		cost = 1
+		x = -1
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_germans_under_different_crowns
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_investments_across_germany"
+		}
+	}
+	focus = {
+		id = AUS_industrialize_agrarian_areas
+		text = "Industrialize Agrarian Areas"
+		icon = GFX_unknown
+		cost = 1
+		x = -1
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_investments_across_germany
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_industrialize_agrarian_areas"
+		}
+	}
+	focus = {
+		id = AUS_interconnected_central_europe
+		text = "An Interconnected Central Europe"
+		icon = GFX_unknown
+		cost = 1
+		x = -1
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_industrialize_agrarian_areas
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_interconnected_central_europe"
+		}
+	}
+	focus = {
+		id = AUS_reach_out_to_north_germany
+		text = "Reach Out To Northern Germany"
+		icon = GFX_unknown
+		cost = 1
+		x = 1
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_germans_under_different_crowns
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_reach_out_to_north_germany"
+		}
+	}
+	focus = {
+		id = AUS_german_solidarity
+		text = "German Solidarity"
+		icon = GFX_unknown
+		cost = 1
+		x = 1
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_reach_out_to_north_germany
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_german_solidarity"
+		}
+	}
+	focus = {
+		id = AUS_holy_roman_successor
+		text = "A Successor To The Holy Roman Empire"
+		icon = GFX_unknown
+		cost = 1
+		x = 1
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_german_solidarity
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_holy_roman_successor"
+		}
+	}
+	focus = {
+		id = AUS_our_italian_relatives
+		text = "Our Italian Relatives"
+		icon = GFX_unknown
+		cost = 1
+		x = 5
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_old_man_of_europe
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_our_italian_relatives"
+		}
+	}
+	focus = {
+		id = AUS_invest_in_lombardy
+		text = "Invest In Lombardy"
+		icon = GFX_unknown
+		cost = 1
+		x = 3
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_our_italian_relatives
+		}
+
+		mutually_exclusive = {
+			focus = AUS_invest_in_veneto
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_invest_in_lombardy"
+		}
+	}
+	focus = {
+		id = AUS_self_sufficient_lombardy_venetia
+		text = "A Self-Sufficient Grand Duchy"
+		icon = GFX_unknown
+		cost = 3
+		x = 3
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_invest_in_lombardy
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_self_sufficient_lombardy_venetia"
+		}
+	}
+	focus = {
+		id = AUS_encourage_fashion_industries
+		text = "Mechanize Po Valley Agriculture"
+		icon = GFX_unknown
+		cost = 3
+		x = 3
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_self_sufficient_lombardy_venetia
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_encourage_fashion_industries"
+		}
+	}
+	focus = {
+		id = AUS_mechanize_po_agriculture
+		text = "An Italian Army"
+		icon = GFX_unknown
+		cost = 3
+		x = 3
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_encourage_fashion_industries
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_mechanize_po_agriculture"
+		}
+	}
+	focus = {
+		id = AUS_invest_in_veneto
+		text = "Invest In Veneto"
+		icon = GFX_unknown
+		cost = 3
+		x = 7
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_our_italian_relatives
+		}
+
+		mutually_exclusive = {
+			focus = AUS_invest_in_lombardy
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_invest_in_veneto"
+		}
+	}
+	focus = {
+		id = AUS_rival_to_trieste
+		text = "A Rival To Trieste"
+		icon = GFX_unknown
+		cost = 3
+		x = 7
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_invest_in_veneto
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_rival_to_trieste"
+		}
+	}
+	focus = {
+		id = AUS_construction_of_shipyards
+		text = "Construction Of Shipyards"
+		icon = GFX_unknown
+		cost = 3
+		x = 7
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_rival_to_trieste
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_construction_of_shipyards"
+		}
+	}
+	focus = {
+		id = AUS_an_italian_flotilla
+		text = "An Italian Flotilla"
+		icon = GFX_unknown
+		cost = 3
+		x = 7
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_construction_of_shipyards
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_an_italian_flotilla"
+		}
+	}
+	focus = {
+		id = AUS_reinforcing_joseph_francis
+		text = "Reinforcing The Grand Duke"
+		icon = GFX_unknown
+		cost = 2
+		x = 5
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_mechanize_po_agriculture
+			focus = AUS_an_italian_flotilla
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_reinforcing_joseph_francis"
+		}
+	}
+	focus = {
+		id = AUS_root_out_dissent_italy
+		text = "Root Out Anti-Austrianism"
+		icon = GFX_unknown
+		cost = 2
+		x = 5
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_reinforcing_joseph_francis
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_root_out_dissent_italy"
+		}
+	}
+	focus = {
+		id = AUS_clamp_down_trieste_tyrol
+		text = "Clamp Down On Tyrol And Trieste"
+		icon = GFX_unknown
+		cost = 2
+		x = 5
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = AUS_root_out_dissent_italy
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus AUS_clamp_down_trieste_tyrol"
+		}
+	}
+}

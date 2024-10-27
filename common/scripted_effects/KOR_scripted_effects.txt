@@ -1,0 +1,20 @@
+KOR_intro_var_check = {
+	if = {
+		limit = { check_variable = { KOR_dem_influence = 10 } }
+		add_to_variable = { KOR_dem_influence = 100}
+		add_to_variable = { KOR_con_influence = -100}
+		add_to_variable = { KOR_nat_influence = -100}
+	}
+	if = {
+		limit = { check_variable = { KOR_con_influence = 10 } }
+		add_to_variable = { KOR_dem_influence = -100}
+		add_to_variable = { KOR_con_influence = 100}
+		add_to_variable = { KOR_nat_influence = -100}
+	}
+	if = {
+		limit = { check_variable = { KOR_nat_influence = 10 } }
+		add_to_variable = { KOR_dem_influence = -100}
+		add_to_variable = { KOR_con_influence = -100}
+		add_to_variable = { KOR_nat_influence = 100}
+	}
+}

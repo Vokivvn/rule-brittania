@@ -1,0 +1,156 @@
+ideas = {
+	country = {
+		tur_the_janissaries = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tur_the_janissaries"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TUR_the_jannisaries
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = -0.5
+				#enemy_partisan_effect = -0.05
+			}
+		}
+		tur_the_janissaries_weakened = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tur_the_janissaries_weakened"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TUR_the_jannisaries
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.25
+				#enemy_partisan_effect = -0.025
+			}
+		}
+		tur_turkish_intikamcilik = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tur_turkish_intikamcilik"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TUR_turkish_revanchism
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.5
+				war_support_factor = -0.10
+			}
+		}
+		tur_the_young_turk_revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tur_turkish_intikamcilik"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TUR_turkish_revanchism
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				political_power_gain = -0.75
+				war_support_factor = -0.20
+			}
+		}
+		tur_british_corporations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tur_british_corporations"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TUR_British_Industry
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
+				conscription_factor = -0.02
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		tur_economic_revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tur_economic_revolution"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TUR_British_Industry
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				industrial_capacity_factory = 0.01
+				industrial_capacity_dockyard = 0.01
+				conscription_factor = -0.02
+				consumer_goods_factor = -0.01
+			}
+		}
+		tur_depleted_treasury = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea tur_economic_revolution"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TUR_British_Industry
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+}

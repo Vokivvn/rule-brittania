@@ -1,0 +1,857 @@
+﻿add_namespace = tur
+
+country_event = { #Death of the Grand Vizier
+	id = tur.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.1"}
+	title = tur.1.t
+	desc = tur.1.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.1.a
+		add_political_power = -30
+		clr_country_flag = tur_intro
+		country_event = {
+			id = tur.2
+			days = 14
+		}
+		#TUR = {
+		#	drop_cosmetic_tag = yes
+		#}
+	}
+}
+
+country_event = { #the Grand Viziers funeral
+	id = tur.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.2"}
+	title = tur.2.t
+	desc = tur.2.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.2.a
+		add_political_power = 20
+
+		hidden_effect = {
+			country_event = {
+				id = tur.3
+				hours = 1
+			}
+		}
+	}
+}
+
+country_event = { #a shot heard throughout the Levant
+	id = tur.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.3"}
+	title = tur.3.t
+	desc = tur.3.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #note to self make national spirit for this
+		name = tur.3.a
+		hidden_effect = {
+			random_list = {
+				20 = {
+					country_event = {
+						id = tur.4
+						hours = 3
+					}
+				}
+				40 = {
+					country_event = {
+						id = tur.4
+						hours = 5
+					}
+				}
+				30 = {
+					country_event = {
+						id = tur.4
+						hours = 8
+					}
+				}
+				10 = {
+					country_event = {
+						id = tur.4
+						days = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Death of the Sultan
+	id = tur.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.4"}
+	title = tur.4.t
+	desc = tur.4.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #replace previous national spirit with a worse version
+		name = tur.4.a
+		add_political_power = -200
+		kill_country_leader = yes
+		hidden_effect = {
+			country_event = {
+				id = tur.5
+				days = 7
+			}
+
+			create_country_leader = {
+				name = "Regency Council"
+				desc = "POLITICS_REGENCY_COUNCIL_DESC"
+				picture = Portrait_TUR_Regency_Council.dds
+				expire = "1965.1.1"
+				ideology = despotism_subtype
+				traits = {
+				}
+			}
+		}
+	}
+}
+
+country_event = { #the flight of the commissioner
+	id = tur.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.5"}
+	title = tur.5.t
+	desc = tur.5.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.5.a
+		custom_effect_tooltip = the_flight_of_the_commissioner_turkey
+
+		hidden_effect = {
+			country_event = {
+				id = tur.6
+			}
+		}
+	}
+}
+
+country_event = { #cross roads
+	id = tur.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.6"}
+	title = tur.6.t
+	desc = tur.6.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.6.a
+		country_event = {
+			id = tur.7
+		}
+	}
+
+	option = {
+		name = tur.6.b
+		country_event = {
+			id = tur.10
+		}
+	}
+
+	option = {
+		name = tur.6.c
+		country_event = {
+			id = tur.16
+		}
+	}
+}
+
+country_event = { #into the backstreets
+	id = tur.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.7"}
+	title = tur.7.t
+	desc = tur.7.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.7.a
+		hidden_effect = {
+			country_event = {
+				id = tur.8
+			}
+		}
+	}
+}
+
+country_event = { #rumors of approaching guardsmen
+	id = tur.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.8"}
+	title = tur.8.t
+	desc = tur.8.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #hold your ground and find there is no guard
+		name = tur.8.a
+		hidden_effect = {
+			country_event = {
+				id = tur.9
+			}
+		}
+	}
+
+	option = { #run away back to the Bazaar
+		name = tur.8.b
+		country_event = {
+			id = tur.10
+		}
+	}
+}
+
+country_event = { #the guardsmen do not show
+	id = tur.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.9"}
+	title = tur.9.t
+	desc = tur.9.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.9.a
+		country_event = {
+			id = tur.20
+		}
+	}
+}
+
+country_event = { #into the bazaar
+	id = tur.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.10"}
+	title = tur.10.t
+	desc = tur.10.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.10.a
+		hidden_effect = {
+			country_event = {
+				id = tur.11
+			}
+		}
+	}
+}
+
+country_event = { #guards raid bazaar
+	id = tur.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.11"}
+	title = tur.11.t
+	desc = tur.11.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #duck into the old mans shop
+		name = tur.11.a
+		country_event = {
+			id = tur.12
+		}
+	}
+
+	option = { #hold your ground
+		name = tur.11.b
+		hidden_effect = {
+			country_event = {
+				id = tur.19
+			}
+		}
+	}
+}
+
+country_event = { #old mans shop
+	id = tur.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.12"}
+	title = tur.12.t
+	desc = tur.12.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #listen to the old man
+		name = tur.12.a
+		hidden_effect = {
+			country_event = {
+				id = tur.13
+			}
+		}
+	}
+
+	option = { #fuck off boomer
+		name = tur.12.b
+		hidden_effect = {
+			country_event = {
+				id = tur.14
+			}
+		}
+	}
+}
+
+country_event = { #listen to the old mans story
+	id = tur.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.13"}
+	title = tur.13.t
+	desc = tur.13.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.13.a
+		hidden_effect = {
+			country_event = {
+				id = tur.15
+			}
+		}
+	}
+}
+
+country_event = { #leave and ignore story
+	id = tur.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.14"}
+	title = tur.14.t
+	desc = tur.14.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.14.a
+		country_event = {
+			id = tur.20
+		}
+	}
+}
+
+country_event = { #you fucked up
+	id = tur.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.15"}
+	title = tur.15.t
+	desc = tur.15.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.15.a
+		country_event = {
+			id = tur.21
+		}
+	}
+}
+
+country_event = { #main streets
+	id = tur.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.16"}
+	title = tur.16.t
+	desc = tur.16.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.16.a
+		country_event = {
+			id = tur.17
+		}
+	}
+}
+
+country_event = { #Spotted by the Imperial Guard
+	id = tur.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.17"}
+	title = tur.17.t
+	desc = tur.17.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #run into one of the back alleys
+		name = tur.17.a
+		hidden_effect = {
+			country_event = {
+				id = tur.18
+			}
+		}
+	}
+
+	option = { #stand and face them
+		name = tur.17.b
+		hidden_effect = {
+			country_event = {
+				id = tur.19
+			}
+		}
+	}
+}
+
+country_event = { #flee into back alleys
+	id = tur.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.18"}
+	title = tur.18.t
+	desc = tur.18.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.18.a
+		country_event = {
+			id = tur.8
+		}
+	}
+}
+
+country_event = { #captured by the imperial guard
+	id = tur.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.19"}
+	title = tur.19.t
+	desc = tur.19.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.19.a
+		set_country_flag = tur_good_sultan
+		TUR_swap_tree = yes
+		TUR_unlock_military = yes
+	}
+}
+
+country_event = { #successfully reach the commissioners office
+	id = tur.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.20"}
+	title = tur.20.t
+	desc = tur.20.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.20.a
+		country_event = { id = tur.35 hours = 1 }
+	}
+}
+
+country_event = { #captured by the mad sultan
+	id = tur.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.21"}
+	title = tur.21.t
+	desc = tur.21.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.21.a
+		set_country_flag = tur_oh_god_oh_fuck
+		TUR_swap_tree = yes
+	}
+}
+
+country_event = { #Sultan Decides to do Gala, first event
+	id = tur.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.22"}
+	title = tur.22.t
+	desc = tur.22.d
+	picture = GFX_report_event_turkey_sultan_ahmed_iv
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.22.a
+	}
+}
+
+country_event = { #The Imperial Couriers
+	id = tur.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.23"}
+	title = tur.23.t
+	desc = tur.23.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.23.a
+	}
+}
+
+country_event = { #Inviting Faud
+	id = tur.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.24"}
+	title = tur.24.t
+	desc = tur.24.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.24.a
+	}
+}
+
+country_event = { #Inviting Ali
+	id = tur.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.25"}
+	title = tur.25.t
+	desc = tur.25.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.25.a
+	}
+}
+
+country_event = { #Inviting the Commissioner
+	id = tur.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.26"}
+	title = tur.26.t
+	desc = tur.26.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.26.a
+	}
+}
+
+country_event = { #Inviting Ahmet
+	id = tur.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.27"}
+	title = tur.27.t
+	desc = tur.27.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.27.a
+	}
+}
+
+country_event = { #party begins
+	id = tur.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.28"}
+	title = tur.28.t
+	desc = tur.28.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.28.a
+		hidden_effect = { country_event = { id = tur.1 } }
+	}
+}
+
+country_event = { #End of the YTR
+	id = tur.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.29"}
+	title = tur.29.t
+	desc = tur.29.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.29.a
+		set_country_flag = tur_ytr
+		TUR_swap_tree = yes
+	}
+}
+
+country_event = { #meeting the PUP
+	id = tur.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.30"}
+	title = tur.30.t
+	desc = tur.30.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #Turkes takes center stage
+		name = tur.30.a
+		TUR_small_boost_for_turkes = yes
+	}
+
+	option = { #The Three Pashas take center stage
+		name = tur.30.b
+		TUR_small_boost_for_the_PUP = yes
+	}
+}
+
+country_event = { #The End of the Guard
+	id = tur.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.31"}
+	title = tur.31.t
+	desc = tur.31.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #Turkes takes center stage
+		name = tur.31.a
+		TUR_small_boost_for_turkes = yes
+		add_manpower = -20000
+		add_war_support = -10
+	}
+}
+
+country_event = { #The End of the Empire
+	id = tur.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tur.32"}
+	title = tur.32.t
+	desc = tur.32.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = { #House of Osman Flees
+		name = tur.32.a
+		TUR_ytr_the_victor = yes
+		add_political_power = 50
+		add_popularity = {
+			ideology = absolutism
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = administrationism
+			popularity = -0.15
+		}
+		set_country_flag = TUR_house_of_Osman_flees
+	}
+}
+
+country_event = { #People Proclaim Turkes Leader
+	id = tur.33
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event tur.33"
+		create_country_leader = {
+			name = "Alparslan Pasha"
+			desc = "POLITICS_ALPARSLAN_PASHA_DESC"
+			picture = "Portrait_TUR_Alparslan_Turkes.dds"
+			expire = "1965.1.1"
+			ideology = cromwellianism_subtype
+		}
+	}
+
+	title = tur.33.t
+	desc = tur.33.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.33.a
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = cromwellianism
+		}
+		clr_country_flag = tur_the_struggle_for_the_revolution
+		clr_country_flag = tur_ytr
+		set_country_flag = tur_turkes_in_charge
+
+		clear_variable = tur_turkes_popularity
+		clear_variable = tur_pup_popularity
+	}
+}
+
+country_event = { #People Proclaim Talaat Leader
+	id = tur.34
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event tur.34"	}
+
+	title = tur.34.t
+	desc = tur.34.d
+	picture = unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.34.a
+
+		create_country_leader = {
+			name = "Talaat Pasha"
+			desc = "POLITICS_TALAAT_PASHA_DESC"
+			picture = "Portrait_TUR_Talaat_Pasha.dds"
+			expire = "1965.1.1"
+			ideology = despotism_subtype
+		}
+
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = despotism
+		}
+		clr_country_flag = tur_the_struggle_for_the_revolution
+		clr_country_flag = tur_ytr
+		set_country_flag = tur_PUP_in_charge
+
+		clear_variable = tur_turkes_popularity
+		clear_variable = tur_pup_popularity
+	}
+}
+
+country_event = { #Negotiations round 1
+	id = tur.35
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event tur.35"	}
+
+	title = tur.35.t
+	desc = tur.35.d
+	picture = gfx_unknown
+
+	is_triggered_only = yes
+
+	option = { #Its a deal!
+		name = tur.35.a
+		ai_chance = {
+			factor = 4
+		}
+	}
+
+	option = { #Keep negotiating
+		name = tur.35.b
+		ai_chance = {
+			factor = 1
+		}
+		country_event = { id = tur.36 }
+	}
+}
+
+country_event = { #Negotiations round 2
+	id = tur.36
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event tur.36"	}
+
+	title = tur.36.t
+	desc = tur.36.d
+	picture = gfx_unknown
+
+	is_triggered_only = yes
+
+	option = { #Its a deal!
+		name = tur.36.a
+		ai_chance = {
+			factor = 3
+		}
+	}
+
+	option = { #Keep negotiating
+		name = tur.36.b
+		ai_chance = {
+			factor = 2
+		}
+		country_event = { id = tur.37 }
+	}
+}
+
+country_event = { #Turkes has left, path locked in
+	id = tur.37
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event tur.37"	}
+
+	title = tur.37.t
+	desc = tur.37.d
+	picture = gfx_unknown
+
+	is_triggered_only = yes
+
+	option = { #One more thing...
+		name = tur.37.a
+		hidden_effect = {
+			country_event = { id = tur.38 }
+		}
+	}
+}
+
+country_event = { #Inglorious Turks
+	id = tur.38
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event tur.38"	}
+
+	title = tur.38.t
+	desc = tur.38.d
+	picture = gfx_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.38.a
+		country_event = { id = tur.29 days = 1 }
+	}
+}
+
+country_event = { #Bribing Ahmet Pasha
+	id = tur.39
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event tur.39"	}
+
+	title = tur.39.t
+	desc = tur.39.d
+	picture = gfx_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = tur.39.a
+		add_timed_idea = { idea = tur_depleted_treasury days = 90 }
+	}
+}
+
+add_namespace = tcw
+
+country_event = { #March on Bursa
+	id = tcw.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tcw.1"}
+
+	title = tcw.1.t
+	desc = tcw.1.d
+	picture = GFX_report_event_turkish_soldiers
+
+	is_triggered_only = yes
+
+	option = { #Treason it is
+		name = tcw.1.a
+		TUR_tcw_start = yes
+	}
+}
+
+country_event = { #March on Izmir
+	id = tcw.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event tcw.2"}
+
+	title = tcw.2.t
+	desc = tcw.2.d
+	picture = GFX_report_event_orhan_flag
+
+	is_triggered_only = yes
+
+	option = { #Treason it is
+		name = tcw.2.a
+		TUR_tcw_start = yes
+	}
+}

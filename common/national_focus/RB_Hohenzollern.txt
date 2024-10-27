@@ -1,0 +1,409 @@
+focus_tree = {
+	id = hohenzollern_intro_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HOH
+		}
+	}
+	default = no
+	focus = {
+		id = HOH_the_man_in_the_victors_crown
+		icon = GFX_unknown
+		cost = 5
+		x = 6
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_the_man_in_the_victors_crown"
+			add_stability = 0.05
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = HOH_the_future_of_section_11
+		icon = GFX_unknown
+		cost = 5
+		x = 3
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_man_in_the_victors_crown }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_the_future_of_section_11"
+			country_event = { id = hoh.20 days = 3 }
+		}
+	}
+
+	focus = {
+		id = HOH_refocus_section_11
+		icon = GFX_unknown
+		cost = 5
+		x = 2
+		y = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_future_of_section_11 }
+
+		mutually_exclusive = { focus = HOH_expand_section_11 }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_refocus_section_11"
+			set_country_flag = hoh_section_11_military
+			custom_effect_tooltip = hoh_future_consequences
+		}
+	}
+
+	focus = {
+		id = HOH_expand_section_11
+		icon = GFX_unknown
+		cost = 5
+		x = 4
+		y = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_future_of_section_11 }
+
+		mutually_exclusive = { focus = HOH_refocus_section_11 }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_expand_section_11"
+			set_country_flag = hoh_section_11_economy
+			custom_effect_tooltip = hoh_future_consequences
+		}
+	}
+
+	focus = {
+		id = HOH_laying_the_foundation
+		icon = GFX_unknown
+		cost = 5
+		x = 3
+		y = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = HOH_refocus_section_11
+			focus = HOH_expand_section_11
+		}
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_laying_the_foundation"
+			841 = {
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HOH_hail_his_highness
+		icon = GFX_unknown
+		cost = 5
+		x = 3
+		y = 4
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_laying_the_foundation }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_hail_his_highness"
+			add_country_leader_trait = rb_nationalist_symbol
+		}
+	}
+
+	focus = {
+		id = HOH_the_future_of_the_guard
+		icon = GFX_unknown
+		cost = 5
+		x = 8
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_man_in_the_victors_crown }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_the_future_of_the_guard"
+			army_experience = 20
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = HOH_the_schorner_doctrine
+		icon = GFX_unknown
+		cost = 5
+		x = 6
+		y = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_future_of_the_guard }
+
+		mutually_exclusive = { focus = HOH_the_ludendorff_doctrine }
+		mutually_exclusive = { focus = HOH_the_bauer_doctrine }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_the_schorner_doctrine"
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+			add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = HOH_encourage_foreign_enlistment
+		icon = GFX_unknown
+		cost = 5
+		x = 6
+		y = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_schorner_doctrine }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_encourage_foreign_enlistment"
+			add_ideas = HOH_expanded_foreign_recruitment
+		}
+	}
+
+	focus = {
+		id = HOH_the_ludendorff_doctrine
+		icon = GFX_unknown
+		cost = 5
+		x = 8
+		y = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_future_of_the_guard }
+
+		mutually_exclusive = { focus = HOH_the_schorner_doctrine }
+		mutually_exclusive = { focus = HOH_the_bauer_doctrine }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_the_ludendorff_doctrine"
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = HOH_expand_the_general_staff
+		icon = GFX_unknown
+		cost = 5
+		x = 8
+		y = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_ludendorff_doctrine }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_expand_the_general_staff"
+			add_ideas = HOH_expanded_general_staff
+		}
+	}
+
+	focus = {
+		id = HOH_the_bauer_doctrine
+		icon = GFX_unknown
+		cost = 5
+		x = 10
+		y = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_future_of_the_guard }
+
+		mutually_exclusive = { focus = HOH_the_schorner_doctrine }
+		mutually_exclusive = { focus = HOH_the_ludendorff_doctrine }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_the_bauer_doctrine"
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = HOH_connections_with_heavy_industry
+		icon = GFX_unknown
+		cost = 5
+		x = 10
+		y = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_the_bauer_doctrine }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_connections_with_heavy_industry"
+			add_ideas = HOH_military_industrial_cooperation
+		}
+	}
+
+	focus = {
+		id = HOH_a_new_era_of_stratocracy
+		icon = GFX_unknown
+		cost = 5
+		x = 8
+		y = 4
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = HOH_encourage_foreign_enlistment
+			focus = HOH_expand_the_general_staff
+			focus = HOH_connections_with_heavy_industry
+		}
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_a_new_era_of_stratocracy"
+			swap_ideas = {
+				add_idea = HOH_fanatical_stratocracy_1
+				remove_idea = HOH_fanatical_stratocracy
+			}
+		}
+	}
+
+	focus = {
+		id = HOH_turning_outward
+		icon = GFX_unknown
+		cost = 5
+		x = 6
+		y = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = { focus = HOH_hail_his_highness }
+		prerequisite = { focus = HOH_a_new_era_of_stratocracy }
+
+		#bypass = {
+		#	always = yes
+		#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus HOH_turning_outward"
+		}
+	}
+}

@@ -1,0 +1,1757 @@
+###################
+#### Intro Tree ###
+###################
+
+shared_focus = {
+	id = LOU_Oscar_Allen_Governorship
+	icon = GFX_Focus_politics_country_animal_pelican
+	cost = 1000 #cancels out after 28 days lol
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Oscar_Allen_Governorship"
+		custom_effect_tooltip = LOU_Oscar_Allen_Governorship_tt
+		hidden_effect = { #woodrow wilson has a really nice cock a big ol 13 footer the 5 doller footlong
+			#annex_country = {
+			#	target = ENG
+			#	transfer_troops = yes
+			#}
+			#annex_country = {
+			#	target = CNA
+			#	transfer_troops = yes
+			#}
+			#annex_country = {
+			#	target = CHI
+			#	transfer_troops = yes
+			#}
+			#annex_country = {
+			#	target = TEX
+			#	transfer_troops = yes
+			#}
+			#annex_country = {
+			#	target = CAL
+			#	transfer_troops = yes
+			#}
+			#annex_country = {
+			#	target = UTY
+			#	transfer_troops = yes
+			#}
+			#annex_country = {
+			#	target = LSL
+			#	transfer_troops = yes
+			#}
+		}
+	}
+}
+
+#############################
+######Death of Allen##########
+#############################
+
+shared_focus = {
+	id = LOU_Death_Of_Allen
+	icon = GFX_Lessons_From_the_Great_War
+	cost = 0
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Death_Of_Allen"
+		custom_effect_tooltip = LOU_Death_Of_Allen_tt
+		hidden_effect = {
+			add_stability = -0.2
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Bill_Ensuring_Loyalty_To_The_Filthy_Angloids
+	icon = GFX_focus_eng_the_sun_never_sets
+	relative_position_id = LOU_Death_Of_Allen
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Death_Of_Allen
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Bill_Ensuring_Loyalty_To_The_Filthy_Angloids"
+		add_opinion_modifier = {
+			target = ENG
+			modifier = Loyalty_to_the_Crown_opinion
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Loyalty_Among_Natives
+	icon = GFX_Native_American_Focus
+	relative_position_id = LOU_Bill_Ensuring_Loyalty_To_The_Filthy_Angloids
+	x = -1
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Bill_Ensuring_Loyalty_To_The_Filthy_Angloids
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Loyalty_Among_Natives"
+		# load up native decisions
+	}
+}
+
+shared_focus = {
+	id = LOU_Loyalty_Among_Crackers
+	icon = GFX_SP_focus_trade_unions
+	relative_position_id = LOU_Bill_Ensuring_Loyalty_To_The_Filthy_Angloids
+	x = 1
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Bill_Ensuring_Loyalty_To_The_Filthy_Angloids
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Loyalty_Among_Natives"
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = LOU_Restart_The_Government
+	icon = GFX_generic_diplomacy_industrial
+	relative_position_id = LOU_Loyalty_Among_Natives
+	x = 1
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Loyalty_Among_Crackers
+	}
+	prerequisite = {
+		focus = LOU_Loyalty_Among_Natives
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Loyalty_Among_Natives"
+		add_political_power = 25
+	}
+}
+
+shared_focus = {
+	id = LOU_Roads_Bill
+	icon = GFX_RAJ_indian_railways
+	relative_position_id = LOU_Restart_The_Government
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Restart_The_Government
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Roads_Bill"
+		custom_effect_tooltip = LOU_Roads_Bill_tt
+		hidden_effect = {
+			371 = {
+				add_building_construction  = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			373 = {
+				add_building_construction  = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			817 = {
+				add_building_construction  = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			392 = {
+				add_building_construction  = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			820 = {
+				add_building_construction  = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Sedition_And_Treason_Bill
+	icon = GFX_National_Security_Act
+	relative_position_id = LOU_Roads_Bill
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Roads_Bill
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Sedition_And_Treason_Bill"
+		country_event = {
+			id = louisiana.5
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_They_Sign_It
+	icon = GFX_generic_writing
+	relative_position_id = LOU_Sedition_And_Treason_Bill
+	x = -1
+	y = 1
+	cost = 0
+
+	prerequisite = {
+		focus = LOU_Sedition_And_Treason_Bill
+	}
+	mutually_exclusive = {
+		focus = LOU_It_Dies_In_Committee
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_They_Sign_It"
+		add_ideas = LOU_Idea_Sedition_And_Treason_Act
+	}
+}
+
+shared_focus = {
+	id = LOU_It_Dies_In_Committee
+	icon = GFX_generic_authoritarian_constitution
+	relative_position_id = LOU_Sedition_And_Treason_Bill
+	x = 1
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Sedition_And_Treason_Bill
+	}
+	mutually_exclusive = {
+		focus = LOU_They_Sign_It
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_It_Dies_In_Committee"
+	}
+}
+
+shared_focus = {
+	id = LOU_Joseph_France_Speeches
+	icon = GFX_Spy_Programme
+	relative_position_id = LOU_They_Sign_It
+	x = -3
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_They_Sign_It
+	}
+	mutually_exclusive = {
+		focus = LOU_Norris_Strassen_Omnibus
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Joseph_France_Speeches"
+		add_stability = -0.25
+	}
+}
+
+shared_focus = {
+	id = LOU_Browders_Revolutionaries
+	icon = GFX_CPUSA_Logo
+	relative_position_id = LOU_Joseph_France_Speeches
+	x = -1
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Joseph_France_Speeches
+	}
+	mutually_exclusive = {
+		focus = LOU_Afalfa_Bills_Nationalists
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Browders_Revolutionaries"
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Arm_The_Workers
+	icon = GFX_generic_labor
+	relative_position_id = LOU_Browders_Revolutionaries
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Joseph_France_Speeches
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Arm_The_Workers"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = LOU
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Meeting_With_The_Society_Of_Indians
+	icon = GFX_African_Recruits
+	relative_position_id = LOU_Arm_The_Workers
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Arm_The_Workers
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Meeting_With_The_Society_Of_Indians"
+		# country event
+	}
+}
+
+shared_focus = {
+	id = LOU_Popular_Front
+	icon = GFX_RAJ_India_A_Socialist_Society
+	relative_position_id = LOU_Meeting_With_The_Society_Of_Indians
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Meeting_With_The_Society_Of_Indians
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Popular_Front"
+		hidden_effect = {
+			372 = {
+				set_demilitarized_zone = no
+			}
+			374 = {
+				set_demilitarized_zone = no
+			}
+			383 = {
+				set_demilitarized_zone = no
+			}
+			384 = {
+				set_demilitarized_zone = no
+			}
+			388 = {
+				set_demilitarized_zone = no
+			}
+			389 = {
+				set_demilitarized_zone = no
+			}
+			815 = {
+				set_demilitarized_zone = no
+			}
+			816 = {
+				set_demilitarized_zone = no
+			}
+			818 = {
+				set_demilitarized_zone = no
+			}
+			903 = {
+				set_demilitarized_zone = no
+			}
+			GPC = {
+				add_state_core = 372
+				add_state_core = 374
+				add_state_core = 383
+				add_state_core = 384
+				add_state_core = 388
+				add_state_core = 389
+				add_state_core = 815
+				add_state_core = 816
+				add_state_core = 818
+				add_state_core = 903
+			}
+			LOU = {
+				release_puppet = GPC
+				set_politics = {
+					ruling_party = cromwellianism
+					last_election = "1932.10.12"
+					election_frequency = 60
+					elections_allowed = no
+				}
+				RB_anti_anglo_effects = yes
+				set_cosmetic_tag = LOU_Socialism_Is_Based
+			}
+			GPC = {
+				set_politics = {
+					ruling_party = liberalism
+					last_election = "1932.10.12"
+					election_frequency = 60
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Afalfa_Bills_Nationalists
+	icon = GFX_American_Special_Forces
+	relative_position_id = LOU_Joseph_France_Speeches
+	x = 1
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Joseph_France_Speeches
+	}
+	mutually_exclusive = {
+		focus = LOU_Browders_Revolutionaries
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Afalfa_Bills_Nationalists"
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Missouri_Militia
+	icon = GFX_American_Service
+	relative_position_id = LOU_Afalfa_Bills_Nationalists
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Afalfa_Bills_Nationalists
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Missouri_Militia"
+		# add an idea
+	}
+}
+
+shared_focus = {
+	id = LOU_Legacy_Of_HOI_Four_Meme_Man
+	icon = GFX_generic_cultist_inquisitor
+	relative_position_id = LOU_Missouri_Militia
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Missouri_Militia
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Legacy_Of_HOI_Four_Meme_Man"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = LOU_American_Dream
+	icon = GFX_focus_usa_guarantee_the_american_dream
+	relative_position_id = LOU_Legacy_Of_HOI_Four_Meme_Man
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Legacy_Of_HOI_Four_Meme_Man
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_American_Dream"
+		hidden_effect = {
+			372 = {
+				set_demilitarized_zone = no
+			}
+			374 = {
+				set_demilitarized_zone = no
+			}
+			383 = {
+				set_demilitarized_zone = no
+			}
+			384 = {
+				set_demilitarized_zone = no
+			}
+			388 = {
+				set_demilitarized_zone = no
+			}
+			389 = {
+				set_demilitarized_zone = no
+			}
+			815 = {
+				set_demilitarized_zone = no
+			}
+			816 = {
+				set_demilitarized_zone = no
+			}
+			818 = {
+				set_demilitarized_zone = no
+			}
+			903 = {
+				set_demilitarized_zone = no
+			}
+			GPC = {
+				add_state_core = 372
+				add_state_core = 374
+				add_state_core = 383
+				add_state_core = 384
+				add_state_core = 388
+				add_state_core = 389
+				add_state_core = 815
+				add_state_core = 816
+				add_state_core = 818
+				add_state_core = 903
+			}
+			LOU = {
+				release = GPC
+				declare_war_on = {
+					target = GPC
+					type = annex_everything
+				}
+				set_politics = {
+					ruling_party = nationalism
+					last_election = "1932.10.12"
+					election_frequency = 60
+					elections_allowed = no
+				}
+				RB_anti_anglo_effects = yes
+				set_cosmetic_tag = LOU_I_Hate_Minorities
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Norris_Strassen_Omnibus
+	icon = GFX_generic_change_law_welfare
+	relative_position_id = LOU_They_Sign_It
+	x = 4
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_They_Sign_It
+		focus = LOU_It_Dies_In_Committee
+	}
+	mutually_exclusive = {
+		focus = LOU_Joseph_France_Speeches
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Norris_Strassen_Omnibus"
+		country_event = {
+			id = louisiana.15
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Industrialisation_Bills
+	icon = GFX_focus_repairing_factories
+	relative_position_id = LOU_Norris_Strassen_Omnibus
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Norris_Strassen_Omnibus
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Industrialisation_Bills"
+		add_timed_idea = {
+			idea = LOU_Idea_Industrialisation_Bill
+			days = 200
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Election_Of_1937
+	icon = GFX_generic_elections
+	relative_position_id = LOU_Industrialisation_Bills
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Industrialisation_Bills
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Election_Of_1937"
+		add_stability = 0.05
+		add_war_support = -0.25
+		hidden_effect = {
+			set_variable = { Louisiana_Election_Cons = 0 }
+			set_variable = { Louisiana_Election_Libs = 0 }
+			set_variable = { Louisiana_Election_Farmers = 0 }
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Native_Question
+	icon = RAJ_Agricultural_Miracle
+	relative_position_id = LOU_Election_Of_1937
+	x = -2
+	y = 1
+	cost = 2
+
+	prerequisite = {
+		focus = LOU_Election_Of_1937
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Native_Question"
+		country_event = {
+			id = louisiana.16
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Economic_Question
+	icon = GFX_Economic_Collapse
+	relative_position_id = LOU_Election_Of_1937
+	x = 0
+	y = 1
+	cost = 2
+
+	prerequisite = {
+		focus = LOU_Election_Of_1937
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Economic_Question"
+		country_event = {
+			id = louisiana.17
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Farming_Question
+	icon = GFX_focus_HRE_the_new_harvest
+	relative_position_id = LOU_Election_Of_1937
+	x = 2
+	y = 1
+	cost = 2
+
+	prerequisite = {
+		focus = LOU_Election_Of_1937
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Farming_Question"
+		country_event = {
+			id = louisiana.18
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Eastern_Question
+	icon = GFX_Fractured_America
+	relative_position_id = LOU_Economic_Question
+	x = 0
+	y = 1
+	cost = 2
+
+	prerequisite = {
+		focus = LOU_Native_Question
+	}
+	prerequisite = {
+		focus = LOU_Economic_Question
+	}
+	prerequisite = {
+		focus = LOU_Farming_Question
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Eastern_Question"
+		country_event = {
+			id = louisiana.19
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Vote_Conservative
+	icon = GFX_Focus_politics_country_animal_pelican
+	relative_position_id = LOU_Eastern_Question
+	x = -2
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Eastern_Question
+	}
+	mutually_exclusive = {
+		focus = LOU_Vote_Farmers
+	}
+	mutually_exclusive = {
+		focus = LOU_Vote_Liberal
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Vote_Conservative"
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Cons = 3 }
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Vote_Farmers
+	icon = GFX_ROM_liberals
+	relative_position_id = LOU_Eastern_Question
+	x = 0
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Eastern_Question
+	}
+	mutually_exclusive = {
+		focus = LOU_Vote_Conservative
+	}
+	mutually_exclusive = {
+		focus = LOU_Vote_Liberal
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Vote_Farmers"
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Farmers = 3 }
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Vote_Liberal
+	icon = GFX_RB_generic_liberalism_ideology
+	relative_position_id = LOU_Eastern_Question
+	x = 2
+	y = 1
+	cost = 8
+
+	prerequisite = {
+		focus = LOU_Eastern_Question
+	}
+	mutually_exclusive = {
+		focus = LOU_Vote_Farmers
+	}
+	mutually_exclusive = {
+		focus = LOU_Vote_Conservative
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Vote_Liberal"
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Libs = 3 }
+		}
+	}
+}
+
+################
+# Lib War Tree #
+################
+
+shared_focus = {
+	id = LOU_Lib1War_Focusing_On_The_East
+	icon = GFX_LOU_Cracker
+	x = 8
+	y = 0
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Focusing_On_The_East"
+		army_experience = 10
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Our_Place_In_The_International_Machine
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Focusing_On_The_East
+	x = -1
+	y = 1
+	cost = 2
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Focusing_On_The_East
+	}
+	mutually_exclusive = {
+		focus = LOU_Lib1War_Out_To_Seek_Peace
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Our_Place_In_The_International_Machine"
+		add_political_power = 15
+		
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Out_To_Seek_Peace
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Focusing_On_The_East
+	x = 1
+	y = 1
+	cost = 2
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Focusing_On_The_East
+	}
+	mutually_exclusive = {
+		focus = LOU_Lib1War_Our_Place_In_The_International_Machine
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Out_To_Seek_Peace"
+		add_political_power = 15
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Run_The_Louisiana_Maneuvers
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Our_Place_In_The_International_Machine
+	x = -5
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Our_Place_In_The_International_Machine
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Run_The_Louisiana_Maneuvers"
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Expand_The_Airfields
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Run_The_Louisiana_Maneuvers
+	x = -2
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Run_The_Louisiana_Maneuvers
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Expand_The_Airfields"
+		371 = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		373 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		390 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Airborn_Offense
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Expand_The_Airfields
+	x = 0
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Expand_The_Airfields
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Airborn_Offense"
+		add_tech_bonus = {
+			name = air_doc_bonus_LOUSocDem
+			bonus = 0.75
+			uses = 1
+			category = air_doctrine
+		}
+		add_tech_bonus = {
+			name = bomber_bonus_LOUSocDem
+			bonus = 0.75
+			uses = 2
+			technology = strategic_bomber1
+			technology = strategic_bomber2
+			technology = strategic_bomber3
+			category = tactical_bomber
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Purchase_Weapons
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Run_The_Louisiana_Maneuvers
+	x = 0
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Run_The_Louisiana_Maneuvers
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Purchase_Weapons"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 250
+			producer = LOU
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Boot_Up_The_Draft
+	icon = GFX_Recruitment
+	relative_position_id = LOU_Lib1War_Purchase_Weapons
+	x = 0
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Purchase_Weapons
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Boot_Up_The_Draft"
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = limited_conscription
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Shine_The_Crescent_City_Ports
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Run_The_Louisiana_Maneuvers
+	x = 2
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Run_The_Louisiana_Maneuvers
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Shine_The_Crescent_City_Ports"
+		371 = {
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Create_The_Navy
+	icon = GFX_Battleship_Production
+	relative_position_id = LOU_Lib1War_Shine_The_Crescent_City_Ports
+	x = 0
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Shine_The_Crescent_City_Ports
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Create_The_Navy"
+		add_tech_bonus = {
+			name = naval_doc_bonusLOUSocDem
+			bonus = 1.0
+			uses = 1
+			category = naval_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Defend_Our_Freedom
+	icon = GFX_Liberty_Lads
+	relative_position_id = LOU_Lib1War_Our_Place_In_The_International_Machine
+	x = 1
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Our_Place_In_The_International_Machine
+		focus = LOU_Lib1War_Out_To_Seek_Peace
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Defend_Our_Freedom"
+		army_experience = 30
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Work_With_Unions
+	icon = GFX_tblra_union_agreement
+	relative_position_id = LOU_Lib1War_Defend_Our_Freedom
+	x = -1
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Defend_Our_Freedom
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Work_With_Unions"
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.1
+		}
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Expansion_Of_Closed_Shops
+	icon = GFX_State_Control
+	relative_position_id = LOU_Lib1War_Work_With_Unions
+	x = 0
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Work_With_Unions
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Expansion_Of_Closed_Shops"
+		random_owned_state = {
+			if = {
+				limit = {
+					AND = {
+						is_demilitarized_zone = no
+						is_fully_controlled_by = LOU
+					}
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		random_owned_state = {
+			if = {
+				limit = {
+					AND = {
+						is_demilitarized_zone = no
+						is_fully_controlled_by = LOU
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Moniter_The_East
+	icon = GFX_RAJ_mutual_wiretapping
+	relative_position_id = LOU_Lib1War_Defend_Our_Freedom
+	x = 1
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Defend_Our_Freedom
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Moniter_The_East"
+		random_owned_state = {
+			if = {
+				limit = {
+					AND = {
+						is_demilitarized_zone = no
+						is_fully_controlled_by = LOU
+						any_neighbor_state = {
+							is_controlled_by = CNA
+						}
+					}
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Dont_Step_On_Louisiana
+	icon = GFX_Counter_Push
+	relative_position_id = LOU_Lib1War_Moniter_The_East
+	x = 0
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Moniter_The_East
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Dont_Step_On_Louisiana"
+		add_ideas = LOU_Idea_No_Step
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Missouri_Talks
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Out_To_Seek_Peace
+	x = 4
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Out_To_Seek_Peace
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Missouri_Talks"
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Dove_Ignored
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Missouri_Talks
+	x = -2
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Missouri_Talks
+	}
+	mutually_exclusive = {
+		focus = LOU_Lib1War_Dove_Shot
+	}
+	mutually_exclusive = {
+		focus = LOU_Lib1War_Dove_Flies
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Dove_Ignored"
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Dove_Shot
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Missouri_Talks
+	x = 0
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Missouri_Talks
+	}
+	mutually_exclusive = {
+		focus = LOU_Lib1War_Dove_Ignored
+	}
+	mutually_exclusive = {
+		focus = LOU_Lib1War_Dove_Flies
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Dove_Shot"
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Off_To_War_We_Go
+	icon = GFX_Human_tsunami
+	relative_position_id = LOU_Lib1War_Dove_Shot
+	x = -1
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Dove_Shot
+		focus = LOU_Lib1War_Dove_Ignored
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Off_To_War_We_Go"
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Kickstart_The_Draft
+	icon = GFX_Supplement_the_Army_with_National_Guard
+	relative_position_id = LOU_Lib1War_Off_To_War_We_Go
+	x = -1
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Off_To_War_We_Go
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Kickstart_The_Draft"
+		add_political_power = -25
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = limited_conscription
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Improve_Our_Tactics
+	icon = GFX_Upset_the_Balance
+	relative_position_id = LOU_Lib1War_Off_To_War_We_Go
+	x = 1
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Off_To_War_We_Go
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Improve_Our_Tactics"
+		army_experience = 20
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Dove_Flies
+	icon = GFX_generic_diplomacy_peace
+	relative_position_id = LOU_Lib1War_Missouri_Talks
+	x = 3
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Missouri_Talks
+	}
+	mutually_exclusive = {
+		focus = LOU_Lib1War_Dove_Ignored
+	}
+	mutually_exclusive = {
+		focus = LOU_Lib1War_Dove_Shot
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Dove_Flies"
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Friends_On_The_Other_Side
+	icon = GFX_SP_focus_shadow_government
+	relative_position_id = LOU_Lib1War_Dove_Flies
+	x = 0
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Dove_Flies
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Friends_On_The_Other_Side"
+		add_ideas = LOU_Idea_Friends_Other_Side
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_House_Remodeling
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Friends_On_The_Other_Side
+	x = -1
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Friends_On_The_Other_Side
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_House_Remodeling"
+		swap_ideas = {
+			remove_idea = LOU_Idea_Friends_Other_Side
+			add_idea = LOU_Idea_House_Remodeling
+		}
+	}
+}
+
+shared_focus = {
+	id = LOU_Lib1War_Start_Disarmament
+	icon = GFX_LOU_Cracker
+	relative_position_id = LOU_Lib1War_Friends_On_The_Other_Side
+	x = 1
+	y = 1
+	cost = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+	
+	prerequisite = {
+		focus = LOU_Lib1War_Friends_On_The_Other_Side
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: LOU_Lib1War_Start_Disarmament"
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = disarmed_nation
+		}
+	}
+}

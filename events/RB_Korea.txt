@@ -1,0 +1,1123 @@
+﻿add_namespace = kor
+
+country_event = { #intro
+	id = kor.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.1"}
+	title = kor.1.t
+	desc = kor.1.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.1.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = kor.20 days = 375}
+			country_event = { id = kor.2 days = 3}
+		}
+	}
+}
+
+country_event = { #Vickers say to build ships
+	id = kor.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.2"}
+	title = kor.2.t
+	desc = kor.2.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#yup, we building
+		name = kor.2.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.3 days = 3}
+		add_political_power = 10
+	}
+}
+
+country_event = { #they want to sell uss warships
+	id = kor.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.3"}
+	title = kor.3.t
+	desc = kor.3.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#nice, warships are nice
+		name = kor.3.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.4 days = 3}
+		add_political_power = 5
+		add_to_variable = { KOR_dem_influence = -1 }
+		add_to_variable = { KOR_nat_influence = 1 }
+		add_war_support = 0.05
+	}
+	option = {#no, we cant afford that
+		name = kor.3.b
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.16 days = 380}
+		add_political_power = 5
+		add_to_variable = { KOR_dem_influence = 1 }
+		add_to_variable = { KOR_con_influence = -1 }
+	}
+}
+
+country_event = { #We building warships now boyos
+	id = kor.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.4"}
+	title = kor.4.t
+	desc = kor.4.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#large ships for more glory
+		name = kor.4.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			ENG = { country_event = { id = kor.5 days = 7} }
+			add_to_variable = { KOR_con_influence = -1 }
+			add_to_variable = { KOR_nat_influence = 1 }
+		}
+	}
+	option = {#smool one
+		name = kor.4.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = kor.14 days = 290}
+			add_to_variable = { KOR_con_influence = 1 }
+			add_to_variable = { KOR_nat_influence = -1 }
+		}
+	}
+}
+
+country_event = { #Korea are building too large shippos
+	id = kor.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.5"}
+	title = kor.5.t
+	desc = kor.5.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#ok
+		name = kor.5.a
+		ai_chance = { factor = 1 }
+		KOR = { country_event = { id = kor.6 days = 3} }
+	}
+	option = {#not ok
+		name = kor.5.b
+		ai_chance = { factor = 1 }
+		KOR = { country_event = { id = kor.7 days = 3} }
+	}
+}
+
+country_event = { #what kinds of ships do you want?
+	id = kor.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.6"}
+	title = kor.6.t
+	desc = kor.6.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#2 heavy cruisers
+		name = kor.6.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.18 days = 365}
+		set_country_flag = KOR_2_HC
+
+	}
+	option = {#3 light cruisers
+		name = kor.6.b
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.18 days = 365 }
+		set_country_flag = KOR_3_LC
+	}
+}
+country_event = { #braitian said no warships
+	id = kor.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.7"}
+	title = kor.7.t
+	desc = kor.7.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#cite britains refusal
+		name = kor.7.a
+		ai_chance = { factor = 1 }
+		random_list = {
+			50 = {country_event = { id = kor.8 days = 6}}
+			50 = {country_event = { id = kor.9 days = 2}}
+		}
+	}
+	option = {#3 light cruisers
+		name = kor.7.b
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.12 days = 350}
+	}
+}
+
+country_event = { #Vickers back down
+	id = kor.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.8"}
+	title = kor.8.t
+	desc = kor.8.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#yey
+		name = kor.8.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.05
+		}
+		add_to_variable = { KOR_con_influence = 1 }
+		add_to_variable = { KOR_nat_influence = -1 }
+	}
+}
+
+country_event = { #Vickers says we must buy the ships
+	id = kor.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.9"}
+	title = kor.9.t
+	desc = kor.9.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#ok, build the ships
+		name = kor.9.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.6 days = 1}
+		add_to_variable = { KOR_con_influence = -1 }
+		add_to_variable = { KOR_nat_influence = 1 }
+	}
+	option = {#ask Britain for help
+		name = kor.9.b
+		ai_chance = { factor = 1 }
+		ENG = { country_event = { id = kor.10 days = 1} }
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #KOrea is being bullied
+	id = kor.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.10"}
+	title = kor.10.t
+	desc = kor.10.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#replace the board of advisors
+		name = kor.10.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.6 days = 1}
+		KOR = {
+			add_to_variable = { KOR_con_influence = -1 }
+			add_to_variable = { KOR_nat_influence = 1 }
+		}
+	}
+	option = {#they know what they are doing
+		name = kor.10.b
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.11 days = 1}
+		add_to_variable = { KOR_con_influence = 1 }
+		add_to_variable = { KOR_nat_influence = -1 }
+
+	}
+}
+
+country_event = { #The Board is strenghened and they awnt ships
+	id = kor.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.11"}
+	title = kor.11.t
+	desc = kor.11.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.11.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.6 days = 1}
+	}
+}
+
+country_event = { #ship is done
+	id = kor.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.12"}
+	title = kor.12.t
+	desc = kor.12.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.12.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.13 days = 4}
+	}
+}
+
+country_event = { #Britain demands that we remove guns
+	id = kor.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.13"}
+	title = kor.13.t
+	desc = kor.13.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#no
+		name = kor.13.a
+		ai_chance = { factor = 1 }
+	}
+	option = {#yes
+		name = kor.13.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #name
+	id = kor.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.14"}
+	title = kor.14.t
+	desc = kor.14.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.14.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #name
+	id = kor.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.15"}
+	title = kor.15.t
+	desc = kor.15.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.15.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #name
+	id = kor.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.16"}
+	title = kor.16.t
+	desc = kor.16.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.16.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #name
+	id = kor.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.17"}
+	title = kor.17.t
+	desc = kor.17.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.17.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #ships are done
+	id = kor.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.18"}
+	title = kor.18.t
+	desc = kor.18.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.18.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = { has_country_flag = KOR_2_HC }
+		}
+		else_if = {
+			limit = { has_country_flag = KOR_3_LC }
+		}
+	}
+}
+
+
+
+#19 is taken
+
+country_event = { #raids intensify
+	id = kor.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.20"}
+	title = kor.20.t
+	desc = kor.20.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#fack
+		name = kor.20.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.21 days = 7}
+		MAN = { end_puppet = CHI }
+		swap_ideas = {
+			remove_idea = KOR_raids1
+			add_idea = KOR_raids2
+		}
+	}
+}
+
+country_event = { #promote ri
+	id = kor.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.21"}
+	title = kor.21.t
+	desc = kor.21.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#yes
+		name = kor.21.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = administrationism
+			popularity = 0.1
+		}
+		country_event = { id = kor.26 days = 64}
+		add_war_support = 0.05
+	}
+	option = {#no
+		name = kor.21.b
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.07
+		}
+		country_event = { id = kor.22 days = 7 }
+	}
+}
+
+country_event = { #discussion with puyi
+	id = kor.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.22"}
+	title = kor.22.t
+	desc = kor.22.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.22.a
+		ai_chance = { factor = 1 }
+		CHI = {country_event = { id = kor.23 days = 3}}
+	}
+	option  = { #no
+		name = kor.22.b
+		ai_chance = { factor = 1 }
+		add_political_power = -25
+	}
+}
+
+country_event = { #CHIna - korea wamts to stop raids
+	id = kor.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.23"}
+	title = kor.23.t
+	desc = kor.23.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#apply sanctions if they dont
+		name = kor.23.a
+		ai_chance = { factor = 1 }
+		MAN = {
+			country_event = { id = kor.24 days = 7}
+		}
+		set_global_flag = CHI_sanction_MAN
+	}
+	option = {#just a formality
+		name = kor.23.b
+		ai_chance = { factor = 1 }
+		MAN = {country_event = { id = kor.24 days = 7}}
+	}
+}
+
+country_event = { #man -china demands us to stop raids
+	id = kor.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.24"}
+	title = kor.24.t
+	desc = kor.24.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#what raids
+		name = kor.24.a
+		ai_chance = { factor = 7	 }
+		KOR = {country_event = { id = kor.25 days = 3}}
+		if = {
+			limit = { has_global_flag = CHI_sanction_MAN}
+			add_ideas = MAN_chinese_sanctions
+		}
+	}
+	option = {#yes yes, we will look into it
+		name = kor.24.b
+		ai_chance = { factor = 3 }
+		KOR = {country_event = { id = kor.25 days = 3}}
+	}
+}
+
+country_event = { #manchuria wont stop
+	id = kor.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.25"}
+	title = kor.25.t
+	desc = kor.25.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.25.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.19 days = 20}
+	}
+}
+
+country_event = { #break
+	id = kor.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.19"}
+	title = kor.19.t
+	desc = kor.19.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.19.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.19 days = 20}
+	}
+}
+
+country_event = { #demand military control then
+	id = kor.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.26"}
+	title = kor.26.t
+	desc = kor.26.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.26.a
+		ai_chance = { factor = 1 }
+		CHI = { country_event = { id = kor.27 days = 2}}
+	}
+}
+
+country_event = { #china - lol what
+	id = kor.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.20"}
+	title = kor.27.t
+	desc = kor.27.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.27.a
+		ai_chance = { factor = 5 }
+		KOR = { country_event = { id = kor.28 days = 2} }
+	}
+	option = { #ignore
+		name = kor.27.b
+		ai_chance = { factor = 5 }
+		KOR = { country_event = { id = kor.29 days = 7} }
+	}
+}
+
+country_event = { #china said no
+	id = kor.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.20"}
+	title = kor.28.t
+	desc = kor.28.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.28.a
+		ai_chance = { factor = 1 }
+		country_event = { id = kor.29 days = 5}
+
+	}
+}
+
+country_event = { #mobilize
+	id = kor.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.29"}
+	title = kor.29.t
+	desc = kor.29.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.29.a
+		ai_chance = { factor = 8 }
+		add_political_power = -125
+		RB_raise_conscription = yes
+		country_event = { id = kor.30 days = 7}
+	}
+	option = {#we have enough
+		name = kor.29.b
+		ai_chance = { factor = 2 }
+		add_stability = 0.05
+		country_event = { id = kor.30 days = 7}
+	}
+}
+
+country_event = { #declare war
+	id = kor.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.30"}
+	title = kor.30.t
+	desc = kor.30.desc
+	#picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.30.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+			target = MAN
+			type = annex_everything
+		}
+		set_global_flag = KOR_MAN_war_1
+		remove_ideas = KOR_raids2
+		MAN = { load_oob = "MAN_reinforcment1"}
+	}
+}
+
+country_event = { #support from Britain
+	id = kor.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.31"}
+	title = kor.31.t
+	desc = kor.31.desc
+	#picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = kor.31.a
+		ai_chance = { factor = 1 }
+		#add equipment cas fighters??
+	}
+}
+
+
+country_event = { #occupation of Mukden
+	id = kor.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.32"}
+	title = kor.32.t
+	desc = kor.32.desc
+	#picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#keep it tight
+		name = kor.32.a
+		ai_chance = { factor = 1 }
+	}
+	option = {#oofers
+		name = kor.32.a
+		ai_chance = { factor = 1 }
+		#add idea +consumer goods beacue it costs
+	}
+}
+
+country_event = { #peace
+	id = kor.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.33"}
+	title = kor.33.t
+	desc = kor.33.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#just small KOrea
+		name = kor.33.a
+		ai_chance = { factor = 1 }
+		#trigger = { NOT = { has_global_flag = BFE_intervention_MAN }}
+		transfer_state = 955
+		transfer_state = 956
+		transfer_state = 957
+		transfer_state = 958
+	}
+	option = {#partiotion + manjugjug
+		name = kor.33.b
+		ai_chance = { factor = 1 }
+		#trigger = { has_global_flag = BFE_intervention_MAN }
+		hidden_effect = {
+			white_peace = MAN
+			BFE = { white_peace = MAN }
+			transfer_state = 955
+			transfer_state = 956
+			transfer_state = 957
+			transfer_state = 958
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_flag = KOR_stable_coalition}}
+					country_event = { id = kor.55 days = 2}
+					else = { country_event = { id = kor.56 days = 2} }
+				}
+			}
+			BFE = {
+				transfer_state = 408
+				transfer_state = 409
+				transfer_state = 560
+				transfer_state = 561
+				transfer_state = 657
+			}
+			MAN = {
+				transfer_state = 328
+				transfer_state = 714
+				transfer_state = 715
+				transfer_state = 716
+				transfer_state = 717
+				transfer_state = 761
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MAN_KOR_ENG
+				white_peace = MAN
+			}
+			puppet = MAN
+			country_event = { id = kor.34 days = 0}
+			if = {
+				limit = { NOT = { has_country_flag = KOR_stable_coalition}}
+				country_event = { id = kor.55 days = 2}
+				else = { country_event = { id = kor.56 days = 2} }
+			}
+		}
+	}
+}
+
+country_event = { #choose governor of Manjugug
+	id = kor.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.34"}
+	title = kor.34.t
+	desc = kor.34.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#military man
+		name = kor.34.a
+		ai_chance = { factor = 1 }
+		MAN = {
+			set_politics = {
+				ruling_party = despotism
+			}
+			set_popularities = {
+				republicanism = 13
+				parliamentarianism = 58
+				despotism = 29
+			}
+			create_country_leader = {
+				name = "TBD"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+				expire = "1999.1.1"
+				ideology = despotism_subtype
+				traits = {
+				}
+			}
+		}
+	}
+	option = {#liberal
+		name = kor.34.b
+		ai_chance = { factor = 1 }
+		MAN = {
+			set_politics = {
+				ruling_party = republicanism
+			}
+			set_popularities = {
+				republicanism = 49
+				parliamentarianism = 34
+				despotism = 17
+			}
+			create_country_leader = {
+				name = "TBD"
+				desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+				picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+				expire = "1999.1.1"
+				ideology = liberalism_subtype
+				traits = {
+				}
+			}
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.1
+		}
+	}
+}
+
+country_event = { #imperial house yi
+	id = kor.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.18"}
+	title = kor.50.t
+	desc = kor.50.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.50.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = { #discuss with the board
+	id = kor.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.51"}
+	title = kor.51.t
+	desc = kor.51.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#we need you now
+		name = kor.51.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = { has_idea = KOR_advisor_board2}
+			swap_ideas = {
+				add_idea = KOR_advisor_board3
+				remove_idea = KOR_advisor_board2
+			}
+			else = {
+				swap_ideas = {
+					add_idea = KOR_advisor_board2
+					remove_idea = KOR_advisor_board1
+				}
+			}
+		}
+		add_to_variable = { KOR_dem_influence = -1 }
+		add_to_variable = { KOR_con_influence = 1 }
+	}
+	option = {#option
+		name = kor.51.b
+		ai_chance = { factor = 1 }
+		add_political_power = 50
+		add_to_variable = { KOR_nat_influence = 1 }
+		add_to_variable = { KOR_con_influence = -1 }
+	}
+}
+
+country_event = { #discuss with the radicals
+	id = kor.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.52"}
+	title = kor.52.t
+	desc = kor.52.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#we need you now
+		name = kor.52.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = { has_idea = KOR_advisor_board2}
+			swap_ideas = {
+				add_idea = KOR_advisor_board1
+				remove_idea = KOR_advisor_board2
+			}
+			else = {
+				swap_ideas = {
+					add_idea = KOR_advisor_board2
+					remove_idea = KOR_advisor_board3
+				}
+			}
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		add_to_variable = { KOR_dem_influence = 1 }
+		add_to_variable = { KOR_nat_influence = -1 }
+		add_political_power = -100
+	}
+	option = {#option
+		name = kor.52.b
+		ai_chance = { factor = 1 }
+		add_political_power = 50
+		add_to_variable = { KOR_dem_influence = -1 }
+		add_to_variable = { KOR_con_influence = 1 }
+	}
+}
+
+country_event = { #tax pays off
+	id = kor.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.53"}
+	title = kor.53.t
+	desc = kor.53.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.53.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+		add_to_variable = { KOR_dem_influence = -1 }
+		add_to_variable = { KOR_con_influence = 1 }
+	}
+}
+
+country_event = { #coaltion time
+	id = kor.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.54"}
+	title = kor.54.t
+	desc = kor.54.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#anti lib
+		name = kor.54.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+		add_to_variable = { KOR_dem_influence = -2 }
+		add_to_variable = { KOR_con_influence = 1 }
+		add_to_variable = { KOR_nat_influence = 1 }
+	}
+	option = {#anti nat
+		name = kor.54.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+		add_to_variable = { KOR_dem_influence = 1 }
+		add_to_variable = { KOR_con_influence = 1 }
+		add_to_variable = { KOR_nat_influence = -2 }
+	}
+}
+
+country_event = { #Ri Sungman makes a strong move
+	id = kor.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.55"}
+	title = kor.55.t
+	desc = kor.55.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.55.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.05
+		}
+		add_to_variable = { KOR_dem_influence = -1 }
+		add_to_variable = { KOR_con_influence = -2 }
+		add_to_variable = { KOR_nat_influence = 3 }
+		set_temp_variable = { KOR_epic = KOR_dem_influence}
+		add_to_temp_variable = { KOR_epic = KOR_con_influence}
+		hidden_effect = {
+			if = {
+				limit = { check_variable = { KOR_nat_influence> KOR_epic}}
+				add_popularity = {
+					ideology = nationalism
+					popularity = 0.05
+				}
+				set_country_flag = KOR_Ri_epicstyle
+				country_event = { id = kor.57 days = 1}
+			}
+			else = {
+				set_country_flag = KOR_mandate_path_go
+				country_event = { id = kor.58 days = 1}
+			}
+		}
+	}
+}
+
+country_event = { #Ri Sungman makes a move
+	id = kor.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.56"}
+	title = kor.56.t
+	desc = kor.56.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.56.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = { check_variable = { KOR_nat_influence > KOR_epic}}
+			add_to_variable = { KOR_nat_influence = 1 }
+		}
+		set_temp_variable = { KOR_epic = KOR_dem_influence}
+		add_to_temp_variable = { KOR_epic = KOR_con_influence}
+		hidden_effect = {
+			if = {
+				limit = { check_variable = { KOR_nat_influence> KOR_epic}}
+				add_popularity = {
+					ideology = nationalism
+					popularity = 0.05
+				}
+				set_country_flag = KOR_Ri_epicstyle
+				country_event = { id = kor.57 days = 1}
+			}
+			else = {
+				set_country_flag = KOR_mandate_path_go
+				country_event = { id = kor.58 days = 1}
+			}
+		}
+	}
+}
+
+country_event = { #Wopa Singman style
+	id = kor.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.57"}
+	title = kor.57.t
+	desc = kor.57.desc
+	#picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.57.a
+		ai_chance = { factor = 1 }
+		create_country_leader = {
+			name = "Ri Sŭngman"
+			desc = "POLITICS_RI_SUNGMAN_DESC"
+			picture = "Portrait_KOR_Ri_Sungman.dds"
+			expire = "1999.1.1"
+			ideology = nationalism_subtype
+			traits = {
+			}
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = nationalism
+		}
+		load_focus_tree = KOR_sungman_intro
+		hidden_effect = {
+			add_popularity = {
+				ideology = administrationism
+				popularity = -0.5
+			}
+			add_popularity = {
+				ideology = absolutism
+				popularity = -0.2
+			}
+		}
+	}
+}
+
+country_event = { #joseon china untz untz
+	id = kor.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event kor.58"}
+	title = kor.58.t
+	desc = kor.58.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#option
+		name = kor.58.a
+		ai_chance = { factor = 1 }
+		load_focus_tree = KOR_conservative_intro
+		add_popularity = {
+			ideology = administrationism
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = republicanism
+			popularity = -0.1
+		}
+	}
+}

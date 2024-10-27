@@ -1,0 +1,148 @@
+﻿####################
+##PALESTINE EVENTS##
+####################
+
+add_namespace = palestine
+
+country_event = { #intro
+	id = palestine.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event palestine.1"}
+	title = palestine.1.t
+	desc = palestine.1.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = palestine.1.a
+	}
+}
+
+country_event = { #Violence in Tulkarm
+	id = palestine.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event palestine.2"}
+	title = palestine.2.t
+	desc = palestine.2.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PAL
+		date > 1936.4.15
+	}
+
+	option = { #oh no
+		name = palestine.2.a
+	}
+}
+
+country_event = { #Demonstrations in Tel Aviv
+	id = palestine.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event palestine.3"}
+	title = palestine.3.t
+	desc = palestine.3.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PAL
+		date > 1936.4.17
+	}
+
+	option = { #oh no
+		name = palestine.3.a
+	}
+}
+
+country_event = { #The Bloody Day in Jaffa
+	id = palestine.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event palestine.4"}
+	title = palestine.4.t
+	desc = palestine.4.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PAL
+		date > 1936.4.19
+	}
+
+	option = { #oh no
+		name = palestine.4.a
+	}
+}
+
+country_event = { #Mountbatten gave Al-Husayni High Commissioner of Palestine
+	id = palestine.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event palestine.5"}
+	title = palestine.5.t
+	desc = palestine.5.desc
+	picture = GFX_report_event_al_husayni
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #oh no
+		name = palestine.5.a
+		set_politics = {
+			ruling_party = nationalism
+			last_election = "1935.11.14"
+			election_frequency = 12
+			elections_allowed = no
+		}
+		hidden_effect = {
+			country_event = {
+				id = palestine.6
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { #Al-Husayni Declares Independence of Al-Sham
+	id = palestine.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event palestine.6"}
+	title = palestine.6.t
+	desc = palestine.6.desc
+	picture = GFX_report_event_al_husayni
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #oh no
+		name = palestine.6.a
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PAL_SHAM
+		hidden_effect = {
+			ENG = {
+				country_event = {
+					id = palestine.7
+					hours = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #We Boutta Beat the Shit Out of Al-Husayni
+	id = palestine.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event palestine.7"}
+	title = palestine.7.t
+	desc = palestine.7.desc
+	picture = GFX_report_event_al_husayni
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #lets go boys
+		name = palestine.7.a
+		declare_war_on = {
+			target = PAL
+			type = annex_everything
+		}
+	}
+}

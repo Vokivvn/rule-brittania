@@ -1,0 +1,121 @@
+ideas = {
+	country = {
+		DIX_Idea_Rag_Tag_Army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DIX_Idea_Rag_Tag_Army"}
+			allowed = { always = no }
+			picture = chi_army_corruption
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = -0.25
+				mobilization_speed = 0.25
+				army_org_factor = -0.15
+				army_core_defence_factor = 0.05
+			}
+		}
+		CHL_Idea_Interservice_Rivalry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_Idea_Interservice_Rivalry"}
+			allowed = { always = no }
+			picture = jap_interservice_rivalry_balanced
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				naval_hit_chance = 0.05
+				convoy_escort_efficiency = 0.1
+				political_power_factor = -0.5
+			}
+		}
+		CHL_Idea_I_Hatesy_Watesy_Patagonya_Kun = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_Idea_I_Hatesy_Watesy_Patagonya_Kun"}
+			allowed = { always = no }
+			picture = gun_handcuffs_crime
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = PAT
+				attack_bonus_against = 0.25
+			}
+			modifier = {
+				political_power_gain = -0.05
+				war_support_weekly = -0.05
+			}
+		}
+		CHL_Idea_Peasy_Weasy_Keepsy_Weepsy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_Idea_Peasy_Weasy_Keepsy_Weepsy"}
+			allowed = { always = no }
+			picture = gun_handcuffs_crime
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = PAT
+					defense_bonus_against = 0.05
+			}
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+		CHL_Idea_Expansy_Weapansy_Tactisities = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_Idea_Expansy_Weapansy_Tactisities"}
+			allowed = { always = no }
+			picture = gun_handcuffs_crime
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				industry_repair_factor = 0.25
+			}
+		}
+		CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid"}
+			allowed = { always = no }
+			picture = gun_handcuffs_crime
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				production_speed_air_base_factor = 0.2
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dos"}
+			allowed = { always = no }
+			picture = gun_handcuffs_crime
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				production_speed_air_base_factor = 0.2
+				production_speed_infrastructure_factor = 0.05
+				production_speed_radar_station_factor = 0.05
+			}
+		}
+		CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dwes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dwes "}
+			allowed = { always = no }
+			picture = gun_handcuffs_crime
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				production_speed_air_base_factor = 0.2
+				production_speed_infrastructure_factor = 0.05
+				production_speed_radar_station_factor = 0.05
+				air_ace_generation_chance_factor = 0.25
+				experience_gain_air = 0.01
+			}
+		}
+	}
+}

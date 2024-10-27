@@ -1,0 +1,14 @@
+state={
+	id=914
+	name="STATE_914"
+	provinces={
+		3256 3392 6306 6415 6546 9520 11528 
+	}
+	history={
+		owner = POL
+		add_core_of = POL
+	}
+	manpower=1072152
+	state_category = large_town
+	buildings_max_level_factor=1.000
+}

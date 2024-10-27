@@ -1,0 +1,36 @@
+
+state={
+	id=221
+	name="STATE_221"
+	resources={
+		steel=33.000
+	}
+
+	history={
+		owner = KHR
+		victory_points = {
+			418 20
+		}
+		victory_points = {
+			11541 3
+		}
+		victory_points = {
+			11487 2
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			air_base = 5
+
+		}
+		add_core_of = KHR
+
+	}
+
+	provinces={
+		418 523 547 570 3409 3491 6519 6554 9476 9531 9556 11397 11487 11513 11541 
+	}
+	manpower=2227520
+	buildings_max_level_factor=1.000
+	state_category=city
+}

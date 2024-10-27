@@ -1,0 +1,20 @@
+state={
+	id=845
+	name="STATE_845"
+	provinces={
+		11233 11264 
+	}
+	history={
+		owner = MUN
+		add_core_of = MUN
+		victory_points = {
+			11233 5
+		}
+		victory_points = {
+			11264 2
+		}
+	}
+	manpower=110982
+	state_category = city
+	buildings_max_level_factor=1.000
+}

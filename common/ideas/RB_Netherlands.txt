@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		NET_UK_Membership = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NET_UK_Membership"}
+			allowed = { always = no }
+			picture = SWN_Anti_Federation_Government
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.5
+			}
+		}
+		NET_Power_Delegated_to_Assembly = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NET_Power_Delegated_to_Assembly"}
+			allowed = { always = no }
+			picture = SWN_The_Auralian_Seccession
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				autonomy_gain = 0.01
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=871
+	name="STATE_871" #Inhambane
+	manpower = 4125000
+	
+	state_category = rural
+	
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			8245 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			8245 1 
+		}
+	}
+
+	provinces={
+		2193 5177 5212 8245
+	}
+}

@@ -1,0 +1,62 @@
+defined_text = {
+	name = GetHoG_Button_Loc
+	text = {
+		trigger = {
+			ENG = {
+				always = yes
+			}
+		}
+		localization_key = ENG_HoG_Button_Loc
+	}
+}
+defined_text = {
+	name = GetHoG_Party_Loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_CK_Rule_flag
+		}
+		localization_key = ENG_HoG_CK_Rule
+	}
+}
+defined_text = {
+	name = GetPMName
+	text = {
+		trigger = {
+			has_country_flag = ENG_PM_Douglas_Hogg_flag
+		}
+		localization_key = ENG_PM_Douglas_Hogg
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_PM_James_Gascoyne_Cecil_flag
+		}
+		localization_key = ENG_PM_James_Gascoyne_Cecil
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_PM_John_Simon_flag
+		}
+		localization_key = ENG_PM_John_Simon
+	}
+}
+defined_text = {
+	name = GetPMImage
+	text = {
+		trigger = {
+			has_country_flag = ENG_PM_Douglas_Hogg_flag
+		}
+		localization_key = "GFX_Portrait_ENG_Douglas_Hogg"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_PM_James_Gascoyne_Cecil_flag
+		}
+		localization_key = "GFX_Portrait_ENG_Marquess_of_Salisbury"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_PM_John_Simon_flag
+		}
+		localization_key = "GFX_Portrait_ENG_Viscount_Simon"
+	}
+}

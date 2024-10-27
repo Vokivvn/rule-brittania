@@ -1,0 +1,107 @@
+﻿l_english:
+ ##Country Names##
+ UKR_cromwellianism:0 "Ukrainian Protectorate"
+ UKR_cromwellianism_DEF:0 "The Ukrainian Protectorate"
+ UKR_marxism:0 "Ukrainian Protectorate"
+ UKR_marxism_DEF:0 "The Ukrainian Protectorate"
+ UKR_liberalism:0 "Ukrainian Protectorate"
+ UKR_liberalism_DEF:0 "The Ukrainian Protectorate"
+ UKR_republicanism:0 "Ukrainian Protectorate"
+ UKR_republicanism_DEF:0 "The Ukrainian Protectorate"
+ UKR_parliamentarianism:0 "Ukrainian Protectorate"
+ UKR_parliamentarianism_DEF:0 "The Ukrainian Protectorate"
+ UKR_administrationism:0 "Ukrainian Protectorate"
+ UKR_administrationism_DEF:0 "The Ukrainian Protectorate"
+ UKR_absolutism:0 "Ukrainian Protectorate"
+ UKR_absolutism_DEF:0 "The Ukrainian Protectorate"
+ UKR_despotism:0 "Ukrainian Protectorate"
+ UKR_despotism_DEF:0 "The Ukrainian Protectorate"
+ UKR_nationalism:0 "Ukrainian Protectorate"
+ UKR_nationalism_DEF:0 "The Ukrainian Protectorate"
+ UKR_cromwellianism_ADJ:0 "Ukrainian"
+ UKR_marxism_ADJ:0 "Ukrainian"
+ UKR_liberalism_ADJ:0 "Ukrainian"
+ UKR_republicanism_ADJ:0 "Ukrainian"
+ UKR_parliamentarianism_ADJ:0 "Ukrainian"
+ UKR_administrationism_ADJ:0 "Ukrainian"
+ UKR_despotism_ADJ:0 "Ukrainian"
+ UKR_nationalism_ADJ:0 "Ukrainian"
+
+ RUK_cromwellianism:0 "People's Republic of Ukraine"
+ RUK_cromwellianism_DEF:0 "The People's Republic of Ukraine"
+ RUK_marxism:0 "Socialist Republic of Ukraine"
+ RUK_marxism_DEF:0 "The Socialist Republic of Ukraine"
+ RUK_liberalism:0 "Socialist Republic of Ukraine"
+ RUK_liberalism_DEF:0 "The Socialist Republic of Ukraine"
+ RUK_republicanism:0 "Republic of Ukraine"
+ RUK_republicanism_DEF:0 "The Republic of Ukraine"
+
+ NUK_despotism:0 "Ukrainian National Republic"
+ NUK_despotism_DEF:0 "The Ukrainian National Republic"
+ NUK_despotism_ADJ:0 "Ukrainian"
+ NUK_nationalism:0 "National Ukraine"
+ NUK_nationalism_DEF:0 "The Ukrainian State"
+ NUK_nationalism_ADJ:0 "Ukrainian"
+
+ PAU_marxism:0 "Free Territory"
+ PAU_marxism_DEF:0 "The Free Territory of Ukraine"
+ PAU_marxism_ADJ:0 "Anarcho-Ukrainian"
+
+ #Party Names
+ UKR_cromwellianism_party:0 "USDRP-K"
+ UKR_cromwellianism_party_long:0 "Ukray'nsʹka Sotsiál-Demokratýchna Robitnýcha Pártiya - Komunistychna"
+ UKR_marxism_party:0 "RPAU"
+ UKR_marxism_party_long:0 "Revolyutsiyna Povstansʹka Armiya Ukrayiny"
+ UKR_liberalism_party:0 "USDRP-S"
+ UKR_liberalism_party_long:0 "Ukrayíns'ka Sotsiál-Demokratýchna Robitnýcha Pártiya - Sotsialistychni"
+ UKR_republicanism_party:0 "FN"
+ UKR_republicanism_party_long:0 "Fraktsiya Nezalezhnosti"
+ UKR_parliamentarianism_party:0 "FA"
+ UKR_parliamentarianism_party_long:0 "Fraktsiya Avtonomiyi"
+ UKR_administrationism_party:0 "FR"
+ UKR_administrationism_party_long:0 "Fraksiya Reformatsiyna"
+ UKR_absolutism_party:0 "FK"
+ UKR_absolutism_party_long:0 "Fraktsiya Khardlaynera"
+ UKR_despotism_party:0 "OUN-M"
+ UKR_despotism_party_long:0 "Orhanizatsiya Ukrayins'kykh Natsionalistiv - Melnyk"
+ UKR_nationalism_party:0 "OUN-B"
+ UKR_nationalism_party_long:0 "Orhanizatsiya Ukrayins'kykh Natsionalistiv - Bandera"
+
+
+ #Protectorate Ideas
+ UKR_A_Divided_Nation:0 "A Divided Nation"
+ UKR_A_Divided_Nation_desc:0 "The fatherland is broken apart by years of wars and meddling. Our reduced nation is haunted by these borders. In addition, there are many who seek to rejoin the Russian motherland, especially in the east by the Don. A national identity must be forged out of the ashes of Russia’s border territory."
+ UKR_Industry_Agriculture_Balanced:0 "Balanced Industry/Agriculture"
+ UKR_Industry_Agriculture_Balanced_desc:0 "Ukraine boasts both the greatest farmland in Europe and the largest industrial capacity east of the Danube River. However, to reconcile these two sectors will take immense effort, or one could choose to prioritize one over the other in yearly spending and legislation."
+ UKR_Influential_Underminers:0 "Powerful Underminers"
+ UKR_Influential_Underminers_desc:0 "Wilhelm of Austria has been agitating for unilateral Ukrainian independence since his initial discovery. A controversial stance for a Habsburg, he finds some degree of friendship with the Kaiser’s daughter, who believes in national sovereignty for all. In addition, many groups within the Russian Tsar's circle also seek to destabilize the British authority in Ukraine, causing our government many more woes. Needless to say, Ukraine is a prosperous land but an embattled one."
+ UKR_Insurgency_Severity_0:0 "Weak Insurgencies"
+ UKR_Insurgency_Severity_0_desc:0 "While many groups seek to impose their own will on the Ukrainian people, they find little solidarity against the looming British lion. Russian and Ukrainian, Jew and German, all of them are split amongst themselves and lack the cohesive initiative necessary to cast out their foreign rulers."
+
+
+
+
+
+
+
+
+
+ #Red Ukraine
+ RUK_cromwellianism_party:0 "USDRP-K"
+ RUK_cromwellianism_party_long:0 "Ukray'nsʹka Sotsiál-Demokratýchna Robitnýcha Pártiya - Komunist"
+ RUK_marxism_party:0 "USDRP-S"
+ RUK_marxism_party_long:0 "Revolyutsiyna Povstansʹka Armiya Ukrayiny - Sotsialist"
+ RUK_liberalism_party:0 "USDRP-SD"
+ RUK_liberalism_party_long:0 "Ukrayíns'ka Sotsiál-Demokratýchna Robitnýcha Pártiya - Sotsial-Demokrat"
+ RUK_republicanism_party:0 "USDRP-L"
+ RUK_republicanism_party_long:0 "Ukrayíns'ka Sotsiál-Demokratýchna Robitnýcha Pártiya - Liberal"
+
+ #Nationalist Ukraine
+ NUK_despotism_party:0 "OUN-M"
+ NUK_despotism_party_long:0 "Orhanizatsiya Ukrayins'kykh Natsionalistiv - Melnyk"
+ NUK_nationalism_party:0 "OUN-B"
+ NUK_nationalism_party_long:0 "Orhanizatsiya Ukrayins'kykh Natsionalistiv - Bandera"
+
+ #Free Territory
+ PAU_marxism_party:0 "RPAU"
+ PAU_marxism_party_long:0 "Revolyutsiyna Povstansʹka Armiya Ukrayiny"

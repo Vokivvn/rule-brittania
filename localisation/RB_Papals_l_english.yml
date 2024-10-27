@@ -1,0 +1,58 @@
+﻿l_english:
+ ##Leader Descs##
+
+ ##Country Names##
+ PPL_cromwellianism:0 "State of the Church"
+ PPL_cromwellianism_DEF:0 "The State of the Church"
+ PPL_marxism:0 "State of the Church"
+ PPL_marxism_DEF:0 "The State of the Church"
+ PPL_liberalism:0 "State of the Church"
+ PPL_liberalism_DEF:0 "The State of the Church"
+ PPL_republicanism:0 "State of the Church"
+ PPL_republicanism_DEF:0 "The State of the Church"
+ PPL_parliamentarianism:0 "State of the Church"
+ PPL_parliamentarianism_DEF:0 "The State of the Church"
+ PPL_administrationism:0 "State of the Church"
+ PPL_administrationism_DEF:0 "The State of the Church"
+ PPL_absolutism:0 "State of the Church"
+ PPL_absolutism_DEF:0 "The State of the Church"
+ PPL_despotism:0 "State of the Church"
+ PPL_despotism_DEF:0 "The State of the Church"
+ PPL_nationalism:0 "State of the Church"
+ PPL_nationalism_DEF:0 "The State of the Church"
+ PPL_cromwellianism_ADJ:0 "Papal"
+ PPL_marxism_ADJ:0 "Papal"
+ PPL_liberalism_ADJ:0 "Papal"
+ PPL_republicanism_ADJ:0 "Papal"
+ PPL_parliamentarianism_ADJ:0 "Papal"
+ PPL_administrationism_ADJ:0 "Papal"
+ PPL_despotism_ADJ:0 "Papal"
+ PPL_nationalism_ADJ:0 "Papal"
+
+ ##Party Names##
+ PPL_administrationism_party:0 "FdR"
+ PPL_administrationism_party_long:0 "Fazione di Riforma"
+ PPL_absolutism_party:0 "PGh"
+ PPL_absolutism_party_long:0 "Parte Ghibellina"
+ PPL_despotism_party:0 "Curia Romana"
+ PPL_despotism_party_long:0 "Curia Romana"
+ PPL_nationalism_party:0 "FT"
+ PPL_nationalism_party_long:0 "Fazione Tradizionale"
+
+ ##Cosemtic Tags##
+
+
+ ##Tooltips##
+
+
+ ##Ideas##
+ PPL_Church_Embedded_Government:0 "Church-Embedded Government"
+ PPL_Divided_Curia:0 "Divided Curia"
+ PPL_Ghibelline_Rebellion:0 "Ghibelline Rebellion"
+
+ ##Events##
+
+
+ ##Focuses##
+
+ #Starting Tree#

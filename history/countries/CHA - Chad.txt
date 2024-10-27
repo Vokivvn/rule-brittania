@@ -1,0 +1,58 @@
+﻿capital = 774
+
+set_research_slots = 1
+set_stability = 0.5
+set_war_support = 0.5
+set_variable = { CHA_economy_var = 5 }
+set_variable = { CHA_trust_var = 3 }
+
+clamp_variable = {
+    var = CHA_economy_var
+    min = 1
+    max = 10
+}
+clamp_variable = {
+    var = CHA_trust_var
+    min = 1
+    max = 6
+}
+
+add_political_power = 48
+add_ideas = CHA_laboratory
+add_ideas = CHA_loaned_economy
+add_ideas = {
+    british_econ_dominance
+    strong_british_colony
+    british_colonial_force
+}
+
+set_cosmetic_tag = CHA_ENG
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 0
+    liberalism = 23
+    republicanism = 0
+    parliamentarianism = 13
+    administrationism = 59
+    absolutism = 0
+    despotism = 5
+    nationalism = 0
+}
+
+set_politics = {
+    ruling_party = administrationism
+    last_election = "1935.11.14"
+    election_frequency = 12
+    elections_allowed = no
+}
+
+create_country_leader = {
+    name = "John Maynard Keynes"
+    desc = "POLITICS_JOHN_KEYNES_DESC"
+    picture = "Portrait_CHA_John_Maynard_Keynes.dds"
+    expire = "1999.12.12"
+    ideology = administrationism_subtype
+    traits = {
+    }
+}

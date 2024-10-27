@@ -1,0 +1,593 @@
+### Starting tree ###
+shared_focus = {
+	id = RUS_the_clipped_eagle
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 6
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_clipped_eagle"
+		add_political_power = -25
+	}
+}
+
+shared_focus = {
+	id = RUS_the_tsars_reforms
+	icon = GFX_RUS_tsar_hat
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_the_clipped_eagle
+	}
+	x = 6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_tsars_reforms"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_meet_with_the_generals
+	icon = GFX_Military_Government
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_the_tsars_reforms
+	}
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_meet_with_the_generals"
+		country_event = {
+			id = RUS.2
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_meet_with_the_ministers
+	icon = GFX_Maintain_Cabinet_Loyalty
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_the_tsars_reforms
+	}
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_meet_with_the_ministers"
+		country_event = {
+			id = RUS.3
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_meet_with_the_corporations
+	icon = GFX_Cap_and_Cash
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_the_tsars_reforms
+	}
+	x = 8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_meet_with_the_corporations"
+		country_event = {
+			id = RUS.4
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_wrangling_the_governors
+	icon = GFX_Military_Attache
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_meet_with_the_generals
+	}
+	prerequisite = {
+		focus = RUS_meet_with_the_ministers
+	}
+	prerequisite = {
+		focus = RUS_meet_with_the_corporations
+	}
+	x = 5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_wrangling_the_governors"
+		add_political_power = 75
+	}
+}
+
+shared_focus = {
+	id = RUS_proud_russian_industry
+	icon = GFX_Generic_Industrialization
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_meet_with_the_generals
+	}
+	prerequisite = {
+		focus = RUS_meet_with_the_ministers
+	}
+	prerequisite = {
+		focus = RUS_meet_with_the_corporations
+	}
+	x = 7
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_proud_russian_industry"
+		one_random_arms_factory = yes
+		one_random_industrial_complex = yes
+	}
+}
+
+shared_focus = {
+	id = RUS_rally_the_troops
+	icon = GFX_Generic_Imperial_Russian_Soldier
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_wrangling_the_governors
+	}
+	prerequisite = {
+		focus = RUS_proud_russian_industry
+	}
+	x = 6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_rally_the_troops"
+		RB_raise_conscription = yes
+		add_war_support = 0.1
+		add_political_power = -25
+	}
+}
+
+shared_focus = {
+	id = RUS_securing_the_homefront
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		hidden_trigger = {
+			has_country_flag = RUS_belarus_revolt_done
+		}
+	}
+	prerequisite = {
+		focus = RUS_rally_the_troops
+	}
+	x = 6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_securing_the_homefront"
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = RUS_investigate_the_paramilitaries
+	icon = GFX_Generic_Black_Hundreds
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_securing_the_homefront
+	}
+	x = 4
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_investigate_the_paramilitaries"
+		country_event = { id = RUS.5 }
+	}
+}
+
+shared_focus = {
+	id = RUS_let_them_in
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_investigate_the_paramilitaries
+	}
+	mutually_exclusive = {
+		focus = RUS_contain_the_radicals
+	}
+	x = 3
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_let_them_in"
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.03
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_contain_the_radicals
+	icon = GFX_Military_Restrictions
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_investigate_the_paramilitaries
+	}
+	mutually_exclusive = {
+		focus = RUS_let_them_in
+	}
+	x = 5
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_contain_the_radicals"
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.03
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_god_and_country
+	icon = GFX_Generic_Romanov
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_let_them_in
+		focus = RUS_contain_the_radicals
+	}
+	x = 4
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_god_and_country"
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = RUS_the_republican_threat
+	icon = GFX_generic_republican_movement
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_securing_the_homefront
+	}
+	x = 8
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_republican_threat"
+		country_event = { id = RUS.6 }
+	}
+}
+
+shared_focus = {
+	id = RUS_the_long_arm_of_the_okhrana
+	icon = GFX_Generic_Secret_Police
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_the_republican_threat
+	}
+	mutually_exclusive = {
+		focus = RUS_path_to_reform
+	}
+	x = 7
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_long_arm_of_the_okhrana"
+		add_popularity = {
+			ideology = republicanism
+			popularity = -0.03
+		}
+		add_stability = -0.03
+	}
+}
+
+shared_focus = {
+	id = RUS_path_to_reform
+	icon = GFX_Hollow_Democracy
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_the_republican_threat
+	}
+	mutually_exclusive = {
+		focus = RUS_the_long_arm_of_the_okhrana
+	}
+	x = 9
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_path_to_reform"
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.03
+		}
+		add_political_power = -10
+	}
+}
+
+shared_focus = {
+	id = RUS_the_tsars_speech
+	icon = GFX_Generic_Radio_Broadcast
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_the_long_arm_of_the_okhrana
+		focus = RUS_path_to_reform
+	}
+	x = 8
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_tsars_speech"
+		add_stability = 0.1
+	}
+
+}
+
+shared_focus = {
+	id = RUS_the_road_to_kronstadt
+	icon = GFX_Generic_Major_City
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_god_and_country
+	}
+	prerequisite = {
+		focus = RUS_the_tsars_speech
+	}
+	x = 6
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_road_to_kronstadt"
+		country_event = { id = RUS.7 }
+		hidden_effect = {
+			clr_country_flag = RUS_belarus_revolt_done
+		}
+	}
+}
+
+### Belarus revolt war tree ###
+shared_focus = {
+	id = RUS_the_black_cat_revolt
+	icon = GFX_RUS_black_cat_rebellion
+	cost = 2.00
+	bypass = { 
+		always = yes
+	}
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 13
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_black_cat_revolt"
+		custom_effect_tooltip = RUS_the_black_cat_revolt_tt
+	}
+}
+
+shared_focus = {
+	id = RUS_practice_for_whats_to_come
+	icon = GFX_generic_wardec
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_the_black_cat_revolt
+	}
+	x = 13
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_practice_for_whats_to_come"
+		army_experience = 15
+	}
+}
+
+shared_focus = {
+	id = RUS_new_tactics
+	icon = GFX_Generic_Command_Power
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_practice_for_whats_to_come
+	}
+	x = 11
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_new_tactics"
+		add_tech_bonus = {
+			bonus = 0.33
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_smoke_them_out
+	icon = GFX_Generic_Jungle_Insurgency
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_practice_for_whats_to_come
+	}
+	x = 12
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_smoke_them_out"
+		add_timed_idea = {
+			idea = RUS_idea_smoke_them_out
+			days = 90
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_the_smolensk_offensive
+	icon = GFX_Generic_Invasion
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_practice_for_whats_to_come
+	}
+	x = 13
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_smolensk_offensive"
+		add_political_power = 50
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = RUS_look_for_the_loyalists
+	icon = GFX_Generic_Outside_Aid
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_practice_for_whats_to_come
+	}
+	x = 14
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_look_for_the_loyalists"
+		add_manpower = 1500
+	}
+}
+
+shared_focus = {
+	id = RUS_new_guns
+	icon = GFX_Generic_Rearmament
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_practice_for_whats_to_come
+	}
+	x = 15
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_new_guns"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 750
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 350
+			producer = RUS
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_the_imperial_army_marches_on
+	icon = GFX_RUS_Russian_Imperialism
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = RUS_smoke_them_out
+	}
+	prerequisite = {
+		focus = RUS_look_for_the_loyalists
+	}
+	x = 13
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_imperial_army_marches_on"
+		add_stability = 0.15
+	}
+}
+
+### Northern War prep tree ###
+shared_focus = {
+	id = RUS_prepare_for_the_storm
+	icon = GFX_Generic_Major_City
+	cost = 5
+	x = 6
+	y = 0
+	completion_reward = { }
+}

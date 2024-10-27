@@ -1,0 +1,57 @@
+﻿l_english:
+ ##Country Names##
+ ROC_cromwellianism:0 "Democratic People's Republic of Zhongguo"
+ ROC_cromwellianism_DEF:0 "The DPRZ"
+ ROC_marxism:0 "All-Chinese Democratic Republic"
+ ROC_marxism_DEF:0 "The ACDR"
+ ROC_liberalism:0 "Republic of China"
+ ROC_liberalism_DEF:0 "The ROC"
+ ROC_republicanism:0 "Republic of China"
+ ROC_republicanism_DEF:0 "The ROC"
+ ROC_parliamentarianism:0 "Republic of China"
+ ROC_parliamentarianism_DEF:0 "The ROC"
+ ROC_administrationism:0 "Republic of China"
+ ROC_administrationism_DEF:0 "The ROC"
+ ROC_absolutism:0 "Republic of China"
+ ROC_absolutism_DEF:0 "The Republic of China"
+ ROC_despotism:0 "Republic of China"
+ ROC_despotism_DEF:0 "The Republic of China"
+ ROC_nationalism:0 "Han State of Zhongguo"
+ ROC_nationalism_DEF:0 "The Han State"
+ ROC_cromwellianism_ADJ:0 "Chinese"
+ ROC_marxism_ADJ:0 "Chinese"
+ ROC_liberalism_ADJ:0 "Chinese"
+ ROC_republicanism_ADJ:0 "Chinese"
+ ROC_parliamentarianism_ADJ:0 "Chinese"
+ ROC_administrationism_ADJ:0 "Chinese"
+ ROC_despotism_ADJ:0 "Chinese"
+ ROC_nationalism_ADJ:0 "Han"
+
+##Party Names##
+ ROC_cromwellianism_party:0 "CPP"
+ ROC_cromwellianism_party_long:0 "Chinese People's Party - Hsiao Clique"
+ ROC_marxism_party:0 "CPP"
+ ROC_marxism_party_long:0 "Chinese People's Party"
+ ROC_liberalism_party:0 "CUL-L"
+ ROC_liberalism_party_long:0 "Chinese United League - Leftist"
+ ROC_republicanism_party:0 "CUL-D"
+ ROC_republicanism_party_long:0 "Chinese United League - Moderate"
+ ROC_parliamentarianism_party:0 "CUL-R"
+ ROC_parliamentarianism_party_long:0 "Chinese United League - Rightist"
+ ROC_administrationism_party:0 "CUL"
+ ROC_administrationism_party_long:0 "Chinese United League"
+ ROC_absolutism_party:0 "Temporary Government"
+ ROC_absolutism_party_long:0 "Temporary Military Government"
+ ROC_despotism_party:0 "Military Administration"
+ ROC_despotism_party_long:0 "The Military Junta for National Stability"
+ ROC_nationalism_party:0 "BSS"
+ ROC_nationalism_party_long:0 "Blueshirts Society"
+
+##Idea Names##
+
+ #descs
+
+ ##Tooltips##
+
+ ##Focus Names##
+ 

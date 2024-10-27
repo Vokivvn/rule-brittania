@@ -1,0 +1,21 @@
+﻿NEE_militia = {
+	name = "New English Militia"
+
+	for_countries = { USA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. New English Militia"
+
+	ordered = {
+		1 = { "1st New English Militia" }
+		2 = { "2nd New English Militia" }
+		3 = { "3rd New English Militia" }
+		4 = { "4th New English Militia" }
+		5 = { "5th New English Militia" }
+		6 = { "6th New English Militia" }
+		7 = { "7th New English Militia" }
+	}
+}

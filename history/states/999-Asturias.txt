@@ -1,0 +1,24 @@
+state={
+	id=999
+	name="STATE_999"
+	history={
+		owner = CAS
+		add_core_of = CAS
+		buildings = {
+			infrastructure = 5
+			11707 = {
+				naval_base = 2
+
+			}
+		}
+		victory_points = {
+			11707 25
+		}
+	}
+	provinces={
+		3729 3744 6749 9699 9719 11707 
+	}
+	manpower=810500
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

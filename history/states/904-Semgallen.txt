@@ -1,0 +1,26 @@
+
+state={
+	id=904
+	name="STATE_904"
+
+	history={
+		owner = COU
+		add_core_of = COU
+		victory_points = {
+			11358 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		233 265 3255 9246 9374 11226 11358 
+	}
+	manpower=288193
+	buildings_max_level_factor=1.000
+	state_category=town
+}

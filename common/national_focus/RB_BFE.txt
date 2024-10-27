@@ -1,0 +1,17 @@
+############################
+## British Far East Trees ##
+############################
+
+focus_tree = {
+	id = BFE_intro_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BFE
+		}
+	}
+	default = no
+	shared_focus = BFE_the_ruler_of_the_east
+	continuous_focus_position = { x = 50 y = 2000 }
+}

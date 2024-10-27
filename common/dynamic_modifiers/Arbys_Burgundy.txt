@@ -1,0 +1,13 @@
+BRG_Idea_Cracker_Committee = {
+	icon = Icon_Flag_Burgundy_Britain_Soldiers
+	enable = { always = yes }
+	
+	
+	# list of modifiers
+	max_planning =  BRG_committee_max_planning
+	decryption_factor =  BRG_committee_decryption_factor
+	encryption_factor =  BRG_committee_encryption_factor
+	command_power_gain =  BRG_committee_command_power_gain
+	consumer_goods_factor = BRG_committee_consumer_goods_factor
+	conscription_factor = BRG_committee_conscription_factor
+}

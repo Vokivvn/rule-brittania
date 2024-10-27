@@ -1,0 +1,56 @@
+﻿add_namespace = CZE
+
+#################################################
+## The Introduction And The Netwon Tree Events ##
+#################################################
+
+
+
+country_event = { #Introduction to the character of Jan Masaryk, and bried overview over Czechia
+	id = CZE.1
+	title = CZE.1.t
+	desc = CZE.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CZE.1"}
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = CZE.1.a
+	}
+}
+country_event = { #Introductino to the Sedmicka and all lads within it.
+	id = CZE.2
+	title = CZE.2.t
+	desc = CZE.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CZE.2"}
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = CZE.2.a
+	}
+}
+country_event = { #Masaryk Speech to the nation
+	id = CZE.3
+	title = CZE.3.t
+	desc = CZE.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CZE.3"}
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = CZE.3.a
+	}
+}
+country_event = { #Something inspirational I guess. I could use The Good Soldier Švejk quotes if I really wanted to.
+	id = CZE.4
+	title = CZE.4.t
+	desc = CZE.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CZE.4"}
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = CZE.4.a
+	}
+}

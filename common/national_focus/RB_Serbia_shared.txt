@@ -1,0 +1,949 @@
+#######################
+##Starting City Siege##
+#######################
+
+shared_focus = {
+	id = SER_assess_the_threat
+	cost = 1
+
+	x = 8
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_assess_the_threat"
+		country_event = { id = srbija.2 }
+	}
+}
+
+shared_focus = {
+	id = SER_city_under_siege
+	prerequisite = { focus = SER_assess_the_threat }
+	cost = 5
+
+	x = 8
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_city_under_siege"
+	}
+}
+
+shared_focus = {
+	id = SER_intimidate_locals
+	prerequisite = { focus = SER_city_under_siege }
+	cost = 5
+
+	x = 7
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_intimidate_locals"
+	}
+}
+
+shared_focus = {
+	id = SER_execute_captures
+	prerequisite = { focus = SER_city_under_siege }
+	cost = 5
+
+	x = 9
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_execute_captures"
+	}
+}
+
+shared_focus = {
+	id = SER_display_authority
+	prerequisite = { focus = SER_intimidate_locals }
+	prerequisite = { focus = SER_execute_captures }
+	cost = 5
+
+	x = 8
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_display_authority"
+		hidden_effect = {
+			load_focus_tree = {
+				tree = SER_Siege_Tree2
+				keep_completed = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = SER_why_dont_they_care
+	prerequisite = { focus = SER_display_authority }
+	cost = 5
+
+	allow_branch = {
+		has_completed_focus = SER_display_authority
+	}
+
+	x = 8
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_why_dont_they_care"
+	}
+}
+
+shared_focus = {
+	id = SER_the_brits_will_solve_this
+	prerequisite = { focus = SER_why_dont_they_care }
+	cost = 5
+
+	x = 8
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_brits_will_solve_this"
+	}
+}
+
+shared_focus = {
+	id = SER_siege_complete
+	prerequisite = { focus = SER_the_brits_will_solve_this }
+	cost = 5
+
+	x = 8
+	y = 8
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_siege_complete"
+		custom_effect_tooltip = SER_swap
+		hidden_effect = {
+			load_focus_tree = {
+				tree = SER_new_era
+				keep_completed = yes
+			}
+		}	
+	}	
+}
+
+#######################
+## Post-Siege Fix-Up ##
+#######################
+
+shared_focus = {
+	id = SER_shaking_off_the_dust
+	cost = 2
+
+	x = 8
+	y = 2 
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_shaking_off_the_dust"
+	}
+}
+
+shared_focus = {
+	id = SER_colonisation_effort
+	prerequisite = { focus = SER_shaking_off_the_dust }
+	cost = 2
+
+	x = 8
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_colonisation_effort"
+	}
+}
+
+shared_focus = {
+	id = SER_a_fair_hand
+	prerequisite = { focus = SER_colonisation_effort }
+	mutually_exclusive = { focus = SER_deploy_the_gendarme }
+	cost = 2
+
+	x = 7
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_a_fair_hand"
+	}
+}
+
+shared_focus = {
+	id = SER_government_propaganda
+	prerequisite = { focus = SER_a_fair_hand }
+	cost = 2
+
+	x = 7
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_government_propaganda"
+	}
+}
+
+shared_focus ={ 
+	id = SER_improve_the_living_standards
+	prerequisite = { focus = SER_government_propaganda }
+	cost = 2
+
+	x = 7
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_improve_the_living_standards"
+		country_event = { id = srbija.4 }
+	}
+}
+
+shared_focus = {
+	id = SER_deploy_the_gendarme
+	prerequisite = { focus = SER_colonisation_effort }
+	mutually_exclusive = { focus = SER_a_fair_hand }
+	cost = 2
+
+	x = 9
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_deploy_the_gendarme"
+	}
+}
+
+shared_focus = {
+	id = SER_house_by_house_search
+	prerequisite = { focus = SER_deploy_the_gendarme }
+	cost = 2
+
+	x = 9
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_house_by_house_search"
+	}
+}
+
+shared_focus = {
+	id = SER_fear_will_keep_them_in_line
+	prerequisite = { focus = SER_house_by_house_search }
+	cost = 2
+
+	x = 9
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_fear_will_keep_them_in_line"
+		country_event = { id = srbija.4 }
+	}
+}
+
+shared_focus = {
+	id = SER_analyse_our_economy
+	prerequisite = { focus = SER_shaking_off_the_dust }
+	cost = 2
+
+	x = 3
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_analyse_our_economy"
+		country_event = { id = srbija.5 }
+	}
+}
+
+shared_focus = {
+	id = SER_dealing_with_the_inflation
+	prerequisite = { focus = SER_analyse_our_economy }
+	cost = 2
+
+	x = 2
+	y = 4
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_dealing_with_the_inflation"
+	}
+}
+
+shared_focus = {
+	id = SER_demand_budget_rise
+	prerequisite = { focus = SER_dealing_with_the_inflation }
+	cost = 2
+
+	x = 2
+	y = 5
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_demand_budget_rise"
+		AUS = { 
+			country_event = austria_serbia.1
+		}
+	}
+}
+
+shared_focus = { 
+	id = SER_the_serbian_steel
+	prerequisite = { focus = SER_analyse_our_economy }
+	cost = 2
+
+	x = 4
+	y = 4
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_serbian_steel"
+		108 = {
+			add_resource = {
+				type = steel
+				amount = 12
+			}
+		}
+	}
+}
+
+shared_focus = { 
+	id = SER_attract_tourism
+	prerequisite = { focus = SER_the_serbian_steel }
+	cost = 2
+
+	x = 4
+	y = 5
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_attract_tourism"
+	}
+}
+
+shared_focus = {
+	id = SER_the_best_we_got
+	prerequisite = { focus = SER_demand_budget_rise focus = SER_attract_tourism }
+	cost = 2
+
+	x = 3
+	y = 6
+
+	completion_reward = { #serbian rebels becomes less bad
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_best_we_got"
+		country_event = { id = srbija.6 }
+	}
+}
+
+shared_focus = { 
+	id = SER_the_military_report
+	prerequisite = { focus = SER_shaking_off_the_dust }
+	cost = 2
+
+	x = 13
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_military_report"
+		country_event = { id = srbija.7 }
+	}
+}
+
+shared_focus = { 
+	id = SER_promote_the_collaborators
+	prerequisite = { focus = SER_the_military_report }
+	mutually_exclusive = { focus = SER_import_austrian_officers }
+	cost = 2
+
+	x = 12
+	y = 4
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_promote_the_collaborators"
+		country_event = { id = srbija.8 }
+	}
+}
+
+shared_focus = { 
+	id = SER_a_serb_knows_the_serbs_best
+	prerequisite = { focus = SER_promote_the_collaborators }
+	cost = 2
+
+	x = 12
+	y = 5
+
+	completion_reward = { #harsh treatment will become soft treatment
+		log = "[GetDateText]: [Root.GetName]: Focus SER_a_serb_knows_the_serbs_best"
+	}
+}
+
+shared_focus = { 
+	id = SER_a_renewed_command
+	prerequisite = { focus = SER_a_serb_knows_the_serbs_best focus = SER_teutonic_dominance_in_the_military }
+	cost = 2
+
+	x = 13
+	y = 6
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_a_renewed_command"
+		remove_ideas = SER_Incapable_Command
+	}
+}
+
+shared_focus = { 
+	id = SER_import_austrian_officers
+	prerequisite = { focus = SER_the_military_report }
+	mutually_exclusive = { focus = SER_promote_the_collaborators }
+	cost = 2
+
+	x = 14
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_import_austrian_officers"
+		country_event = { id = srbija.9 }
+	}
+}
+
+shared_focus = { 
+	id = SER_teutonic_dominance_in_the_military 
+	prerequisite = { focus = SER_import_austrian_officers }
+	cost = 2
+
+	x = 14
+	y = 5
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_teutonic_dominance_in_military"
+	}
+}
+
+shared_focus = { 
+	id = SER_a_new_era_for_the_colony
+	prerequisite = { focus = SER_the_best_we_got }
+	prerequisite = { focus = SER_fear_will_keep_them_in_line focus = SER_improve_the_living_standards } 
+	prerequisite = { focus = SER_a_renewed_command }
+	cost = 2
+
+	x = 8 
+	y = 7
+
+	available = {
+		has_country_flag = SER_a_new_era_has_begun
+	}
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_a_new_era_for_the_colony"
+		country_event = { id = srbija.10 }
+	}
+}
+
+#######################
+##   Draza's Coup    ##
+#######################
+
+shared_focus = { 
+	id = SER_avenge_nis
+	icon = GFX_SER_avenge_nis
+	cost = 2
+
+	x = 8
+	y = 2
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_avenge_nis"
+		country_event = { id = srbija_draza.1 }
+	}
+}
+
+shared_focus = { 
+	id = SER_burn_symbols_of_oppression
+	icon = GFX_SER_burn_symbols_of_oppression
+	cost = 2
+	prerequisite = { focus = SER_avenge_nis }
+
+	x = 8
+	y = 3
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_burn_symbols_of_oppression"
+		country_event = { id = srbija_draza.2 }
+	}
+}
+
+shared_focus = { 
+	id = SER_save_the_children
+	icon = GFX_SER_save_the_children
+	cost = 2
+	prerequisite = { focus = SER_burn_symbols_of_oppression }
+
+	x = 8
+	y = 4
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_save_the_children"
+		country_event = { id = srbija_draza.3 }
+	}
+}
+
+#######################
+##   Draza's Vote    ##
+#######################
+
+shared_focus = { 
+	id = SER_the_vote
+	cost = 1
+
+	x = 10
+	y = -5
+
+	bypass = {
+		has_country_flag = SER_vote_begin
+	}
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_vote"
+	}
+}
+
+shared_focus = { 
+	id = SER_the_nationalists
+	cost = 1
+	prerequisite = { focus = SER_the_vote }
+
+	x = 13
+	y = -4
+
+	bypass = {
+		has_country_flag = SER_nationalist_vote
+	}
+
+	available = {
+		has_country_flag = SER_nationalist_vote
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_nationalists"
+	}
+}
+
+shared_focus = { 
+	id = SER_the_monarchists
+	cost = 1
+	prerequisite = { focus = SER_the_vote }
+
+	x = 10
+	y = -4
+
+	bypass = {
+		has_country_flag = SER_monarchist_vote
+	}
+
+	available = {
+		has_country_flag = SER_monarchist_vote
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_monarchists"
+	}
+}
+
+shared_focus = { 
+	id = SER_the_marxists
+	cost = 1
+	prerequisite = { focus = SER_the_vote }
+
+	x = 7
+	y = -4
+
+	bypass = {
+		has_country_flag = SER_marxist_vote
+	}
+
+	available = {
+		has_country_flag = SER_marxist_vote
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_marxists"
+	}
+}
+
+####################################
+## The Monarchists Removing Draza ##
+####################################
+
+shared_focus = { 
+	id = SER_freedom_at_last
+	cost = 5
+	prerequisite = { focus = SER_the_monarchists }
+
+	x = 10
+	y = -3
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_freedom_at_last"
+	}
+}
+
+shared_focus = { 
+	id = SER_we_cannot_lose_this
+	cost = 5
+	prerequisite = { focus = SER_freedom_at_last }
+
+	x = 10
+	y = -2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_we_cannot_lose_this"
+	}
+}
+
+shared_focus = { 
+	id = SER_our_borders_secured
+	cost = 5
+	prerequisite = { focus = SER_we_cannot_lose_this }
+
+	x = 10
+	y = -1
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Foucs SER_our_borders_secured"
+		hidden_effect = {
+			load_focus_tree = {
+				tree = SER_draza_vote_mon
+				keep_completed = yes
+			}
+		}	
+	}
+}
+
+shared_focus = { 
+	id = SER_theres_something_wrong
+	cost = 2
+	prerequisite = { focus = SER_our_borders_secured }
+
+	allow_branch = {
+		has_completed_focus = SER_our_borders_secured
+	}
+
+	x = 10
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_theres_something_wrong"
+	}
+}
+
+shared_focus = {
+	id = SER_investigating_our_top_man
+	cost = 2
+	prerequisite = { focus = SER_theres_something_wrong }
+
+	x = 9
+	y = 1
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_investigating_our_top_man"
+	}
+}
+
+shared_focus = { 
+	id = SER_ties_to_his_past
+	cost = 2
+	prerequisite = { focus = SER_investigating_our_top_man }
+
+	x = 9
+	y = 2
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_ties_to_his_past"
+	}
+}
+
+shared_focus = { 
+	id = SER_a_danger_to_others
+	cost = 2
+	prerequisite = { focus = SER_ties_to_his_past }
+
+	x = 9 
+	y = 3
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_a_danger_to_others"
+	}
+}
+
+shared_focus = { 
+	id = SER_a_renewed_nationalism
+	cost = 2
+	prerequisite = { focus = SER_theres_something_wrong }
+
+	x = 11
+	y = 1
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_a_renewed_nationalism"
+	}
+}
+
+shared_focus = { 
+	id = SER_of_an_unpleasant_variety
+	cost = 2
+	prerequisite = { focus = SER_a_renewed_nationalism }
+
+	x = 11
+	y = 2
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_of_an_unpleasant_variety"
+	}
+}
+
+shared_focus = { 
+	id = SER_gather_evidence
+	cost = 2
+	prerequisite = { focus = SER_of_an_unpleasant_variety }
+
+	x = 11
+	y = 3
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_gather_evidence"
+	}
+}
+
+shared_focus = { 
+	id = SER_declare_draza_a_threat
+	cost = 2
+	prerequisite = { focus = SER_a_danger_to_others focus = SER_gather_evidence}
+
+	x = 10
+	y = 4
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_declare_draza_a_threat"
+	}
+}
+
+shared_focus = { 
+	id = SER_for_the_good_of_serbia
+	cost = 2
+	prerequisite = { focus = SER_declare_draza_a_threat }
+
+	x = 10
+	y = 5
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_for_the_good_of_serbia"
+		custom_effect_tooltip = SER_focusgain
+		hidden_effect = { 
+			country_event = srbija_alexconflict.1
+		}
+	}
+}
+
+shared_focus = {
+	id = SER_another_crisis_to_weather
+	cost = 2
+
+	available = {
+		has_country_flag = SER_monnatconflict
+	}
+
+	allow_branch = {
+		has_completed_focus = SER_for_the_good_of_serbia
+	}
+
+	x = 15
+	y = -3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_another_crisis_to_weather"
+	}
+}
+
+shared_focus = { 
+	id = SER_storm_over_serbia
+	cost = 2
+	prerequisite = { focus = SER_another_crisis_to_weather }
+
+	relative_position_id = SER_another_crisis_to_weather
+
+	allow_branch = {
+		has_completed_focus = SER_another_crisis_to_weather
+	}
+
+	x = 15
+	y = -2
+
+	completion_reward = {
+		log = "[GetDateText]: Root.GetName]: Focus SER_storm_over_serbia"
+	}
+}
+
+shared_focus = {
+	id = SER_gunfire_in_the_streets
+	cost = 2
+	prerequisite = { focus = SER_storm_over_serbia }
+
+	relative_position_id = SER_storm_over_serbia
+
+	x = 15
+	y = -1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_gunfire_in_the_cities"
+	}
+}
+
+shared_focus = {
+	id = SER_nationalist_pushback
+	cost = 2
+	prerequisite = { focus = SER_gunfire_in_the_streets }
+	mutually_exclusive = { focus = SER_fulfilling_a_dream }
+
+	relative_position_id = SER_gunfire_in_the_streets
+
+	x = 14
+	y = 0
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_nationalist_pushback"
+		custom_effect_tooltip = SER_natpower
+	}
+}
+
+shared_focus = {
+	id = SER_fulfilling_a_dream
+	cost = 2
+	prerequisite = { focus = SER_gunfire_in_the_streets }
+	mutually_exclusive = { focus = SER_nationalist_pushback }
+
+	relative_position_id = SER_gunfire_in_the_streets
+
+	x = 16
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_fulfilling_a_dream"
+		custom_effect_tooltip = SER_monpower
+	}
+}
+
+shared_focus = {
+	id = SER_bitter_struggle
+	cost = 2
+	prerequisite = { focus = SER_nationalist_pushback focus = SER_fulfilling_a_dream }
+
+	relative_position_id = SER_nationalist_pushback
+	relative_position_id = SER_fulfilling_a_dream
+
+	x = 15
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_bitter_struggle"
+	}
+}
+
+shared_focus = { 
+	id = SER_opportunity_strikes
+	cost = 2
+	prerequisite = { focus = SER_bitter_struggle }
+
+	x = 15
+	y = 2
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_opportunity_strikes"
+	}
+}
+
+shared_focus = {
+	id = SER_blood_of_a_monarch
+	cost = 2
+	prerequisite = { focus = SER_opportunity_strikes }
+	mutually_exclusive = { focus = SER_kicking_in_the_door }
+
+	x = 14
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_blood_of_a_monarch"
+		custom_effect_tooltip = SER_natpower
+	}
+}
+
+shared_focus = {
+	id = SER_rally_for_a_greater_serbia
+	cost = 2
+	prerequisite = { focus = SER_blood_of_a_monarch }
+
+	x = 14
+	y = 4
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_rally_for_a_greater_serbia"
+		custom_effect_tooltip = SER_natpower
+	}
+}
+
+shared_focus = { 
+	id = SER_kicking_in_the_door
+	cost = 2
+	prerequisite = { focus = SER_opportunity_strikes }
+	mutually_exclusive = { focus = SER_blood_of_a_monarch }
+
+	x = 16
+	y = 3
+
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus SER_kicking_in_the_door"
+		custom_effect_tooltip = SER_monpower
+	}
+}
+
+shared_focus = {
+	id = SER_clearing_out_the_countryside
+	cost = 2
+	prerequisite = { focus = SER_kicking_in_the_door }
+
+	x = 16
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_clearing_out_the_countryside"
+		custom_effect_tooltip = SER_monpower
+	}
+}
+
+shared_focus = { 
+	id = SER_the_final_stretch
+	cost = 2
+	prerequisite = { focus = SER_rally_for_a_greater_serbia focus = SER_clearing_out_the_countryside }
+
+	x = 15
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_the_final_stretch"
+		custom_effect_tooltip = SER_natmonend
+	}
+}
+
+shared_focus = {
+	id = SER_home_by_summer
+	cost = 2
+	prerequisite = { focus = SER_the_final_stretch }
+
+	x = 15
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_home_by_summer"
+	}
+}
+
+shared_focus = {  
+	id = SER_lets_try_this_again
+	cost = 2
+	prerequisite = { focus = SER_home_by_summer }
+
+	x = 15
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SER_lets_try_this_again"
+	}
+}

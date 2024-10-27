@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		UGA_mitchell_administration = {	
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UGA_mitchell_administration"}
+			allowed = {
+				always = no
+			}
+			
+			picture = UGA_mitchell_administration
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+			}
+		}
+		
+		UGA_pearl_of_africa_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UGA_pearl_of_africa_idea"}
+			allowed = {	
+				always = no
+			}
+			
+			picture = UGA_pearl_of_africa
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id=730
+	name="STATE_730"
+	manpower=7426
+	state_category = tiny_island
+
+	history={
+		owner = QUE
+		add_core_of = QUE
+		buildings = {
+			infrastructure = 3
+			373 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			373 5
+		}
+	}
+	
+	provinces={ 
+		373 
+	}
+}

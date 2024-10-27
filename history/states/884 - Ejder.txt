@@ -1,0 +1,27 @@
+state= {
+	id=884
+	name="STATE_884"
+	manpower = 3248150 
+	state_category = large_city
+	
+	history={
+		victory_points = {
+			6389 20 
+		}
+		owner = DEN
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			dockyard = 6
+			air_base = 5
+			6389 ={
+				naval_base = 8
+			}
+		}
+		add_core_of = DEN
+	}
+
+	provinces= {
+		3231 6389
+ 	}
+}

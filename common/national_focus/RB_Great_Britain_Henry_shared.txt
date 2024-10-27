@@ -1,0 +1,228 @@
+shared_focus = {
+	id = ENG_Henry_King_Henry_IX
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 8
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_King_Henry_IX"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_Tour_the_Dominions
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 0
+	y = 1
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_King_Henry_IX }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_Tour_the_Dominions"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_Shore_up_the_ranks
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = -2
+	y = 1
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_King_Henry_IX }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_King_Henry_IX"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_strong_arm_the_nobles
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = -1
+	y = 2
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_Shore_up_the_ranks }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_strong_arm_the_nobles"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_Get_on_the_air_waves
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 2
+	y = 1
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_King_Henry_IX }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_Get_on_the_air_waves"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_the_common_man_triumphant
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 1
+	y = 2
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_Get_on_the_air_waves }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_the_common_man_triumphant"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_a_return_to_better_days
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 0
+	y = 3
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_the_common_man_triumphant }
+	prerequisite = { focus = ENG_Henry_strong_arm_the_nobles }
+	prerequisite = { focus = ENG_Henry_Tour_the_Dominions }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_a_return_to_better_days"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_addressing_the_chaos_across_the_pond
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 1
+	y = 4
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_a_return_to_better_days }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_addressing_the_chaos_across_the_pond"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_supplies_for_boston
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 0
+	y = 5
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_addressing_the_chaos_across_the_pond }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_supplies_for_boston"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_good_ol_boys_for_atlanta
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 2
+	y = 5
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_addressing_the_chaos_across_the_pond }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_good_ol_boys_for_atlanta"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_pressure_louisiana
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 1
+	y = 6
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_supplies_for_boston }
+	prerequisite = { focus = ENG_Henry_good_ol_boys_for_atlanta }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_pressure_louisiana"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_addressing_the_slump
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = -1
+	y = 4
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_a_return_to_better_days }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_addressing_the_slump"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_austerity_and_protectionism
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = -1
+	y = 6
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_addressing_the_slump }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_austerity_and_protectionism"
+	}
+}
+
+shared_focus = {
+	id = ENG_Henry_keep_calm_and_carry_on
+	icon = GFX_ENG_Henry_IX
+	cost = 5.00
+
+	x = 0
+	y = 7
+
+	relative_position_id = ENG_Henry_King_Henry_IX
+	prerequisite = { focus = ENG_Henry_austerity_and_protectionism }
+	prerequisite = { focus = ENG_Henry_pressure_louisiana }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Henry_keep_calm_and_carry_on"
+	}
+}
+
+#prerequisite = {
+#		focus = ENG_The_Oldenburg_Claim
+#	}

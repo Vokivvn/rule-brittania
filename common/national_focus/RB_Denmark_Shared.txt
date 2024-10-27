@@ -1,0 +1,137 @@
+shared_focus = {
+	id = DEN_The_Oldenburg
+	#icon =#
+	cost = 1
+	prerequisite = {
+	}
+	x = 9
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_The_Oldenburg"
+		add_political_power = 50
+		add_stability = -0.02
+	}
+}
+
+shared_focus = {
+	id = DEN_Discuss_In_Folketinget
+	#icon =#
+	cost = 1
+	prerequisite = {
+		focus = DEN_The_Oldenburg
+	}
+	x = 9
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_Discuss_In_Folketinget"
+		country_event = { id = den.26 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = DEN_The_Trustworthy_Party
+	#icon =#
+	cost = 1
+	prerequisite = {
+		focus = DEN_Discuss_In_Folketinget
+	}
+	x = 9
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_The_Trustworthy_Party"
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.03
+		}
+	}
+}
+
+shared_focus = {
+	id = DEN_Allocate_Funds
+	#icon =#
+	cost = 1
+	prerequisite = {
+		focus = DEN_The_Trustworthy_Party
+	}
+	x = 9
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_Allocate_Funds"
+		add_timed_idea = { idea = DEN_Allocate_Funds  days = 90 }
+	}
+}
+
+shared_focus = {
+	id = DEN_Toss_Off_Paperwork
+	#icon =#
+	cost = 1
+	prerequisite = {
+		focus = DEN_Allocate_Funds
+	}
+	x = 9
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_Toss_Off_Paperwork"
+		add_political_power = -50
+	}
+}
+
+shared_focus = {
+	id = DEN_The_launch
+	#icon =#
+	cost = 1
+	prerequisite = {
+		focus = DEN_Allocate_Funds
+	}
+	x = 9
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_The_launch"
+		country_event = { id = den.27 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = DEN_The_City_On_Neva
+	#icon =#
+	cost = 1
+	prerequisite = {
+		focus = DEN_The_launch
+	}
+	x = 7
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_The_City_On_Neva"
+		country_event = { id = den.28 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = DEN_The_Northern_Lion
+	#icon =#
+	cost = 1
+	prerequisite = {
+		focus = DEN_The_launch
+	}
+	x = 9
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_The_Northern_Lion"
+		country_event = { id = den.29 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = DEN_Visiting_An_Old_Friend
+	#icon =#
+	cost = 1
+	prerequisite = {
+		focus = DEN_The_launch
+	}
+	x = 11
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEN_Visiting_An_Old_Friend"
+		country_event = { id = den.30 days = 1 }
+	}
+}

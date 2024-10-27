@@ -1,0 +1,23 @@
+state={
+	id=822
+	name="STATE_822"
+	provinces={
+		1854 1857 4860 10593 10624 11712 12572 12676 
+	}
+	history={
+		owner = BLK
+		add_core_of = BLK
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			4860 3
+		}
+		victory_points = {
+			1857 2
+		}
+	}
+	manpower=162612
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

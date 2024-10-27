@@ -1,0 +1,583 @@
+###################
+## Starting Tree ##
+###################
+shared_focus = {
+	id = BFE_the_ruler_of_the_east
+	icon = GFX_BFE_Ruler_of_the_East
+	cost = 4.00
+	x = 11
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_the_ruler_of_the_east"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = BFE_heart_of_oak
+	icon = GFX_Battlefleet
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_the_ruler_of_the_east
+	}
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_heart_of_oak"
+		navy_experience = 25
+	}
+}
+
+shared_focus = {
+	id = BFE_sin_city_blues
+	icon = GFX_generic_rainy_day
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_the_ruler_of_the_east
+	}
+	x = 12
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_sin_city_blues"
+		country_event = {
+			id = BFE.2
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_bolster_the_garrison
+	icon = GFX_Focus_Conscription_Act
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_heart_of_oak
+	}
+	prerequisite = {
+		focus = BFE_sin_city_blues
+	}
+	mutually_exclusive = {
+		focus = BFE_an_elite_force
+		focus = BFE_guns_for_hire
+	}
+	x = 9
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_bolster_the_garrison"
+		add_ideas = BFE_eastport_defence_force
+	}
+}
+
+shared_focus = {
+	id = BFE_an_elite_force
+	icon = GFX_Military_Attache
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_heart_of_oak
+	}
+	prerequisite = {
+		focus = BFE_sin_city_blues
+	}
+	mutually_exclusive = {
+		focus = BFE_bolster_the_garrison
+		focus = BFE_guns_for_hire
+	}
+	x = 11
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_an_elite_force"
+		add_ideas = BFE_royal_marines
+		#also add a unit of marines later maybe
+	}
+}
+
+shared_focus = {
+	id = BFE_guns_for_hire
+	icon = GFX_generic_mercenaries
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_heart_of_oak
+	}
+	prerequisite = {
+		focus = BFE_sin_city_blues
+	}
+	mutually_exclusive = {
+		focus = BFE_bolster_the_garrison
+		focus = BFE_an_elite_force
+	}
+	x = 13
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_guns_for_hire"
+		add_manpower = 2500
+		add_ideas = BFE_mercenary_force
+	}
+}
+
+shared_focus = {
+	id = BFE_meeting_with_the_cabinet
+	icon = GFX_Maintain_Cabinet_Loyalty
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_bolster_the_garrison
+		focus = BFE_an_elite_force
+		focus = BFE_guns_for_hire
+	}
+	x = 11
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_meeting_with_the_cabinet"
+		country_event = {
+			id = BFE.3
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_the_streets_of_eastport
+	icon = GFX_Generic_Major_City
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_meeting_with_the_cabinet
+	}
+	x = 6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_the_streets_of_eastport"
+		country_event = {
+			id = BFE.9
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_the_direct_approach
+	icon = GFX_Crush_Resistance
+	cost = 2.00
+	prerequisite = {
+		focus = BFE_the_streets_of_eastport
+	}
+	mutually_exclusive = {
+		focus = BFE_a_sneaking_mission
+	}
+	x = 4
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_the_direct_approach"
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = BFE_raid_the_opium_dens
+	icon = GFX_Stamp_Out_Corruption
+	cost = 2.00
+	prerequisite = {
+		focus = BFE_the_direct_approach
+	}
+	x = 3
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_raid_the_opium_dens"
+	}
+}
+
+shared_focus = {
+	id = BFE_shake_some_trees
+	icon = GFX_generic_political_chaos
+	cost = 2.00
+	prerequisite = {
+		focus = BFE_the_direct_approach
+	}
+	x = 5
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_shake_some_trees"
+	}
+}
+
+shared_focus = {
+	id = BFE_the_kings_peace
+	icon = GFX_generic_monarchist_constitution
+	cost = 2.00
+	prerequisite = {
+		focus = BFE_raid_the_opium_dens
+	}
+	prerequisite = {
+		focus = BFE_shake_some_trees
+	}
+	x = 4
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_the_kings_peace"
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = BFE_a_sneaking_mission
+	icon = GFX_Espionage
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_the_streets_of_eastport
+	}
+	mutually_exclusive = {
+		focus = BFE_the_direct_approach
+	}
+	x = 8
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_a_sneaking_mission"
+		add_political_power = 75
+	}
+}
+
+shared_focus = {
+	id = BFE_undercover_constables
+	icon = GFX_Generic_Espionage
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_a_sneaking_mission
+	}
+	x = 7
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_undercover_constables"
+	}
+}
+
+shared_focus = {
+	id = BFE_enlist_the_local_sis_branch
+	icon = GFX_Agents_of_the_Empire
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_a_sneaking_mission
+	}
+	x = 9
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_enlist_the_local_sis_branch"
+	}
+}
+
+shared_focus = {
+	id = BFE_a_network_of_informants
+	icon = GFX_Generic_Intelligence_Gathering
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_undercover_constables
+	}
+	prerequisite = {
+		focus = BFE_enlist_the_local_sis_branch
+	}
+	x = 8
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_a_network_of_informants"
+	}
+}
+
+shared_focus = {
+	id = BFE_strength_and_guile
+	icon = GFX_Officers_Command
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_the_kings_peace
+		focus = BFE_a_network_of_informants
+	}
+	x = 6
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_strength_and_guile"
+	}
+}
+
+shared_focus = {
+	id = BFE_rumors_of_rebellion
+	icon = GFX_RAJ_establish_secret_service
+	cost = 2.00
+	prerequisite = {
+		focus = BFE_meeting_with_the_cabinet
+	}
+	x = 11
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_rumors_of_rebellion"
+		country_event = {
+			id = BFE.4
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_investigate_the_vozhd
+	icon = GFX_BFE_Investigate_Vozhd_Matkovsky
+	cost = 1.00
+	prerequisite = {
+		focus = BFE_rumors_of_rebellion
+	}
+	x = 11
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_investigate_the_vozhd"
+		country_event = {
+			id = BFE.5
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_hunting_down_the_red_outlaw
+	icon = GFX_BFE_Hunt_Starinov
+	cost = 1.00
+	prerequisite = {
+		focus = BFE_investigate_the_vozhd
+	}
+	x = 11
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_hunting_down_the_red_outlaw"
+		country_event = {
+			id = BFE.6
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_locate_the_liberator
+	icon = GFX_BFE_Find_Vlasov
+	cost = 1.00
+	prerequisite = {
+		focus = BFE_hunting_down_the_red_outlaw
+	}
+	x = 11
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_locate_the_liberator"
+		country_event = {
+			id = BFE.7
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_keep_an_eye_on_the_varyag
+	icon = GFX_BFE_Ivor_Thord_Gray
+	cost = 1.00
+	prerequisite = {
+		focus = BFE_locate_the_liberator
+	}
+	x = 11
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_keep_an_eye_on_the_varyag"
+		country_event = {
+			id = BFE.8
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_the_wastes_of_siberia
+	icon = GFX_BFE_Siberian_Wastes
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_meeting_with_the_cabinet
+	}
+	x = 16
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_the_wastes_of_siberia"
+		562 = { add_extra_state_shared_building_slots = 1 }
+		563 = { add_extra_state_shared_building_slots = 1 }
+		564 = { add_extra_state_shared_building_slots = 1 }
+		565 = { add_extra_state_shared_building_slots = 1 }
+		566 = { add_extra_state_shared_building_slots = 1 }
+		574 = { add_extra_state_shared_building_slots = 1 }
+	}
+}
+
+shared_focus = {
+	id = BFE_develop_the_coast
+	icon = GFX_Generic_Naval_Industry
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_the_wastes_of_siberia
+	}
+	x = 14
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_develop_the_coast"
+		562 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_trade_deals_with_the_beac
+	icon = GFX_BFE_Trade_Deals_With_The_BEAC
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_develop_the_coast
+	}
+	x = 13
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_trade_deals_with_the_beac"
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_expand_the_ports
+	icon = GFX_Arctic_Fleet
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_develop_the_coast
+	}
+	x = 15
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_expand_the_ports"
+	}
+}
+
+shared_focus = {
+	id = BFE_rule_the_waves
+	icon = GFX_Bluewater_Navy
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_trade_deals_with_the_beac
+	}
+	prerequisite = {
+		focus = BFE_expand_the_ports
+	}
+	x = 14
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_rule_the_waves"
+	}
+}
+
+shared_focus = {
+	id = BFE_once_upon_a_time_in_the_east
+	icon = GFX_Kiss_of_Death
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_the_wastes_of_siberia
+	}
+	x = 18
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_once_upon_a_time_in_the_east"
+		country_event = {
+			id = BFE.10
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_tax_the_settlements
+	icon = GFX_Cap_and_Cash
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_once_upon_a_time_in_the_east
+	}
+	x = 17
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_tax_the_settlements"
+		add_political_power = 100
+		add_stability = -0.075
+	}
+}
+
+shared_focus = {
+	id = BFE_siberian_industry
+	icon = GFX_Generic_Construction
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_once_upon_a_time_in_the_east
+	}
+	x = 19
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_siberian_industry"
+	}
+}
+
+shared_focus = {
+	id = BFE_more_professional_security
+	icon = GFX_Generic_Colonial_Army
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_tax_the_settlements
+	}
+	prerequisite = {
+		focus = BFE_siberian_industry
+	}
+	x = 18
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_more_professional_security"
+		army_experience = 25
+	}
+}
+
+shared_focus = {
+	id = BFE_the_torch_of_civilization
+	icon = GFX_generic_economic_liberty
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_rule_the_waves
+	}
+	prerequisite = {
+		focus = BFE_more_professional_security
+	}
+	x = 16
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_the_torch_of_civilization"
+		add_popularity = {
+			ideology = administrationism
+			popularity = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = BFE_our_sun_will_rise
+	icon = GFX_BFE_Rising_Sun
+	cost = 4.00
+	prerequisite = {
+		focus = BFE_the_torch_of_civilization
+	}
+	prerequisite = {
+		focus = BFE_keep_an_eye_on_the_varyag
+	}
+	prerequisite = {
+		focus = BFE_strength_and_guile
+	}
+	x = 11
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BFE_our_sun_will_rise"
+		add_stability = 0.1
+	}
+}

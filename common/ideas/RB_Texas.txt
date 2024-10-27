@@ -1,0 +1,391 @@
+ideas = {
+	country = {
+		TEX_NTO_dickheads = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_NTO_dickheads"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_growing_NTO
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = 0.10
+				political_power_gain = -0.10
+				training_time_army_factor = -0.1 
+				nationalism_drift = 0.01
+				marxism_drift = 0.01
+			}
+		}
+
+		TEX_NTO_dickheads2 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_NTO_dickheads"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_growing_NTO
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				political_power_gain = -0.08
+				training_time_army_factor = -0.08
+				nationalism_drift = 0.01
+				marxism_drift = 0.01
+			}
+		}
+
+		TEX_NTO_dickheads3 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_NTO_dickheads"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_growing_NTO
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = 0.02
+				political_power_gain = -0.05
+				training_time_army_factor = -0.04
+				nationalism_drift = 0.01
+				marxism_drift = 0.01
+			}
+		}
+
+		TEX_oil_boom = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_boom"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_oil_boom
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = 0.2 
+				fuel_gain_factor_from_states = 0.1
+				weekly_manpower = 1000
+			}
+		}
+
+		TEX_diverse_politics = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_boom"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_fractured_politics
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.10
+				#political_advisor_cost_factor = 0.25 
+				drift_defence_factor = -0.25
+				liberalism_drift = 0.01
+				republicanism_drift = 0.01
+				despotism_drift = 0.01
+			}
+		}
+
+		TEX_public_schooling = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_boom"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_fractured_politics
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+
+		TEX_texan_democracy = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_boom"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_fractured_politics
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10 
+				surrender_limit = 0.4
+			}
+		}
+
+		TEX_attempted_coup = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_attempted_coup"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_fractured_politics
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10 
+				stability_weekly = -0.05
+				war_support_weekly = -0.001
+			}
+		}
+
+		TEX_attempted_coup2 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_attempted_coup2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_fractured_politics
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+
+		TEX_welfare = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_welfare"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_fractured_politics
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.001
+				consumer_goods_factor = 0.03
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+
+		TEX_booming_buisness = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_booming_buisness"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_fractured_politics
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.001
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		TEX_oil_crash1 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_crash1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_oil_boom
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = -0.1 
+				fuel_gain_factor_from_states = -0.1
+				weekly_manpower = -100
+				stability_factor = -0.05
+			}
+		}
+		
+		TEX_oil_crash2 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_crash2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_oil_boom
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = -0.15
+				fuel_gain_factor_from_states = -0.15
+				weekly_manpower = -250
+				stability_factor = -0.1
+			}
+		}
+		
+		TEX_oil_crash3 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_crash3"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_oil_boom
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = -0.2
+				fuel_gain_factor_from_states = -0.2
+				weekly_manpower = -500
+				stability_factor = -0.15
+			}
+		}
+		
+		TEX_oil_crash4 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_oil_crash4"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_oil_boom
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = -0.3
+				fuel_gain_factor_from_states = -0.3
+				weekly_manpower = -1000
+				stability_factor = -0.20 
+			}
+		}
+		
+		TEX_dust_bowl_1 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_dust_bowl_1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_oil_boom
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_building_slots_factor = -0.1
+				consumer_goods_factor = 0.05 
+				stability_factor = -0.10 
+			}
+		}
+		
+		TEX_dust_bowl_2 = {
+		on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEX_dust_bowl_2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TEX_idea_oil_boom
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_building_slots_factor = -0.3
+				consumer_goods_factor = 0.1
+				stability_factor = -0.15
+			}
+		}
+	}
+}

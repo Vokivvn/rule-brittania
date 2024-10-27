@@ -1,0 +1,21 @@
+state={
+	id=818
+	name="STATE_818"
+	provinces={
+		7536 10569 10595 11788 12577 12646
+	}
+	
+	history={
+		owner = LOU
+		victory_points = {
+			10595 5
+		}
+		set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	manpower=290532
+	state_category=town
+	buildings_max_level_factor=1.000
+}

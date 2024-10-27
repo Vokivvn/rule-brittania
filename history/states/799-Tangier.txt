@@ -1,0 +1,16 @@
+state={
+	id=799
+	name="STATE_799"
+	provinces={
+		9945 10113 12087 
+	}
+	history={
+		owner = GIB
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=512421
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}

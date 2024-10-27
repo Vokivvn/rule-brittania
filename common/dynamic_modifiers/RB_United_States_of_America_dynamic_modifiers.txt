@@ -1,0 +1,11 @@
+USA_devastation_dynmod = {
+	army_defence_factor = USA_devastation_var_negative_half
+	MONTHLY_POPULATION = USA_devastation_var_negative_half
+	production_speed_buildings_factor = USA_devastation_var_negative
+	industry_free_repair_factor = USA_devastation_var_negative
+	local_resources_factor = USA_devastation_var_negative
+	stability_factor = USA_devastation_var_negative_half
+	research_speed_factor = USA_devastation_var_negative_half
+	weekly_manpower = USA_devastation_var_ten
+	surrender_limit = USA_devastation_var_fifteen_shift
+}

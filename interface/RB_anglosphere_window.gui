@@ -1,0 +1,246 @@
+
+guiTypes = {
+	
+
+	containerWindowType = {
+		name = "RB_anglosphere_window"
+		position = { x = 0 y = 0}	
+	
+
+		show_position = { x=-600 y =-360 }
+		hide_position = { x = -600 y = 1200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1200	
+
+		size = { width = 1200 height = 630 }
+		
+		#fade_time = 1200
+		#fade_type = linear
+
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+		clipping = no
+		orientation = center
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		
+		instantTextboxType = {
+			name = "title"
+			position = { x = 375 y = 8 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "[Get_BritGrip]"
+			maxWidth = 500
+			maxHeight = 20
+			format = center	
+		}
+		instantTextboxType = {
+			name = "grip_title"
+			position = { x = 300 y = 150 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "[Get_Anglo_Status]"
+			maxWidth = 600
+			maxHeight = 20
+			format = center	
+		}
+		
+		 iconType = {
+				name = "ded_moi_bil_v_sturmgruppe_sv"
+				position = { x = 922 y = 0 }
+				quadTextureSprite = "GFX_army_insignia_selection_bg"
+				scale = 0.71
+		}
+		instantTextboxType = {
+			name = "grips_title"
+			position = { x = 935 y = 30 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "[Get_Rhodes_Quote]"
+			maxWidth = 200
+			maxHeight = 200
+			format = center	
+		}
+		# if you want a scroll bar, you have to add a parent container to your grid
+		containerWindowType = {
+			name = "country_grid_container"
+			position = {x = 0 y = 300}
+			size = {width = 1200 height = 200 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+
+			verticalScrollbar = "right_vertical_slider"
+		#	horizontalScrollbar = "top_vertical_slider"
+
+			# background is necesarry for scrollbars to work
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_plain_bg"
+			}
+			
+			# this grid will be dynamically populated
+			gridboxtype = {
+				name = "country_grid"
+				position = { x = -100	 y = 0 }
+				size = { width = 442 height = 75 }
+				slotsize = { width = 95 height = 100%% } #if width or height is 1, it will use slot element's dimension
+				max_slots_horizontal = 11
+				#max_slots_vertical = 12
+				#add_horizontal = no
+
+			}	
+		}
+		containerWindowType = {
+			name = "rebel_country_grid_container"
+			position = {x = 0 y = 550}
+			size = {width = 1200 height = 200 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+		#	horizontalScrollbar = "top_vertical_slider"
+
+			# background is necesarry for scrollbars to work
+			background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+				}
+			
+			# this grid will be dynamically populated
+			gridboxtype = {
+				name = "rebel_country_grid"
+				position = { x = -100	 y = 0 }
+				size = { width = 442 height = 75 }
+				slotsize = { width = 95 height = 100%% } #if width or height is 1, it will use slot element's dimension
+				max_slots_horizontal = 11
+				#max_slots_vertical = 12
+				#add_horizontal = no
+
+			}	
+		}
+		
+		iconType = {
+				name = "monarch_portrait"
+				position = { x = 120 y = 80 }
+				quadTextureSprite = ""
+				scale = 0.8
+		}
+		iconType = {
+				name = "monarch_frame"
+				position = { x = 115 y = 75 }
+				quadTextureSprite = "GFX_pol_leader_frame"
+				scale = 0.8
+		}
+		instantTextBoxType = {
+			name = "british_help"
+			position = { x = 500 y = 260 }
+			font = "hoi_24header"
+			text = "[Get_Anglo_control]"
+			maxWidth = 470
+			maxHeight = 300
+			Orientation = "UPPER_LEFT"	
+			allwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "non_british_help"
+			position = { x = 425 y = 510 }
+			font = "hoi_24header"
+			text = "[Get_Anglo_Independence]"
+			maxWidth = 470
+			maxHeight = 300
+			Orientation = "UPPER_LEFT"	
+			allwaystransparent = yes
+		}
+	   
+		instantTextBoxType = {
+			name = "monarch"
+			position = { x = 85 y = 40 }
+			font = "hoi_24header"
+			text = "[Get_Anglo_Title]"
+			maxWidth = 470
+			maxHeight = 300
+			Orientation = "UPPER_LEFT"	
+			allwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "monarch_name"
+			position = { x = 125 y = 255}
+			font = "hoi_18mbs"
+			text = "[ENG.GetLeader]"
+			maxWidth = 470
+			maxHeight = 300
+			Orientation = "CENTRE"	
+			allwaystransparent = yes
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -42 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	# this entry will be used to populate country_grid in scripted_gui_example_9
+	containerWindowType = {
+		name = "anglo_country_entry"
+		position = { x = 0 y = 0}	
+		size = { width = 95 height = 90 }
+		
+		
+		#background = {
+		#	name = "Background"		
+		#	quadTextureSprite = "GFX_tiled_plain_bg"
+		#}
+		
+	#	instantTextBoxType = {
+	#		name = "name"
+	#		position = { x = 40 y = 15 }
+	#		font = "hoi_18mbs"
+	#		text = "[?this.GetName]"
+	#		format = left
+	#		maxWidth = 200
+	#		maxHeight = 24
+	#		fixedsize = yes
+	#		tooltip = "SCOPE_TEXT"
+	#	}
+		
+		gridboxtype = {
+			name = "state_grid"
+			position = { x = 0 y = 40 }
+			size = { width = 95 height = 70 }
+			slotsize = { width = 55 height = 30 }
+			max_slots_horizontal = 5
+			max_slots_vertical = 3
+			add_horizontal = yes
+		}
+		
+		buttonType = {
+			name = "flag"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 5 y = 20 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "RB_anglo_control_country_tooltip"
+		}
+		iconType = {
+		name = "flag_frame"
+		position = { x = 0 y = 15 }
+		quadTextureSprite = "GFX_small_flag_frame_thin2"
+		scale = 1.9
+		alwaystransparent = yes
+		}
+	}
+	
+	
+
+	
+}

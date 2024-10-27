@@ -1,0 +1,22 @@
+spriteTypes = {	
+    spriteType = {
+		name = "GFX_decision_aus_clergy"
+		texturefile = "gfx/interface/decisions/decision_aus_clergy.dds"
+	}
+    spriteType = {
+		name = "GFX_decision_aus_imperial"
+		texturefile = "gfx/interface/decisions/decision_aus_imperial.dds"
+	}
+    spriteType = {
+		name = "GFX_decision_aus_nobility"
+		texturefile = "gfx/interface/decisions/decision_aus_nobility.dds"
+	}
+    spriteType = {
+		name = "GFX_decision_aus_burghers"
+		texturefile = "gfx/interface/decisions/decision_aus_burghers.dds"
+	}
+    spriteType = {
+		name = "GFX_decision_aus_nobody"
+		texturefile = "gfx/interface/decisions/decision_aus_nobody.dds"
+	}
+}

@@ -1,0 +1,11 @@
+is_habsburg_state = {
+	OR = {
+		tag = AUS
+		tag = SLV
+		tag = HUN
+		tag = CZE
+		tag = BOS
+		tag = SIL
+		tag = MMV
+	}
+}

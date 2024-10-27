@@ -1,0 +1,75 @@
+﻿add_namespace = hoh
+
+country_event = { #Intro
+	id = hoh.1
+	title = hoh.1.t
+	desc = hoh.1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event hoh.1"}
+	picture = GFX_report_event_german_tavern
+
+	is_triggered_only = yes
+
+	option = {
+		name = hoh.1.a
+		hidden_effect = {
+			country_event = { id = hoh.2 days = 20 }
+		}
+	}
+}
+
+country_event = { #Arrival at Castle Hohenzollern
+	id = hoh.2
+	title = hoh.2.t
+	desc = hoh.2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event hoh.1"}
+	picture = GFX_report_event_german_tavern
+
+	is_triggered_only = yes
+
+	option = {
+		name = hoh.2.a
+	}
+}
+
+country_event = { #Arrival at Castle Hohenzollern
+	id = hoh.3
+	title = hoh.3.t
+	desc = hoh.3.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event hoh.1"}
+	picture = GFX_report_event_german_tavern
+
+	is_triggered_only = yes
+
+	option = {
+		name = hoh.3.a
+	}
+}
+
+country_event = { #Arrival at Castle Hohenzollern
+	id = hoh.4
+	title = hoh.4.t
+	desc = hoh.4.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event hoh.1"}
+	picture = GFX_report_event_german_tavern
+
+	is_triggered_only = yes
+
+	option = {
+		name = hoh.4.a
+	}
+}
+
+country_event = { #The Section 11 Debate
+	id = hoh.20
+	title = hoh.20.t
+	desc = hoh.20.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event hoh.20"}
+	picture = GFX_report_event_german_tavern
+
+	is_triggered_only = yes
+
+	option = { #Interesting
+		name = hoh.20.a
+		add_political_power = -20
+	}
+}

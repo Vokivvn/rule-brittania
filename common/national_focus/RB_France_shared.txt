@@ -1,0 +1,1952 @@
+shared_focus = {
+	id = FRA_the_future_of_the_occupation
+	icon = GFX_RAJ_Question_The_Army
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_future_of_the_occupation"
+		country_event = { id = FRA.1 days = 3 }
+	}
+}
+
+shared_focus = {
+	id = FRA_the_carrot
+	icon = GFX_Franco_British_Treaties
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 3
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+    }
+
+    prerequisite = {	focus = FRA_the_future_of_the_occupation	}
+    mutually_exclusive = { focus = FRA_the_switch }
+
+	x = 6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_carrot"
+		ENG = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = FRA_Followed_orders
+			}
+		}
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = FRA_prepare_for_the_transition
+	icon = GFX_goal_collaborate_local_elites
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_the_carrot	}
+
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_prepare_for_the_transition"
+		add_stability = 0.05
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_interview_the_candidates
+	icon = GFX_generic_writing
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_prepare_for_the_transition	}
+
+	x = 3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_interview_the_candidates"
+		country_event = { id = FRA.2 days = 2 }
+	}
+}
+
+shared_focus = {
+	id = FRA_persecute_the_radicals
+	icon = GFX_Skull_Nomads
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_prepare_for_the_transition	}
+
+	x = 5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_persecute_the_radicals"
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.10
+		}
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = -0.05
+		}
+		add_political_power = -50
+	}
+}
+
+shared_focus = {
+	id = FRA_coerce_the_elites
+	icon = GFX_Gunpoint_Diplomacy
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_prepare_for_the_transition	}
+
+	x = 7
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_coerce_the_elites"
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+		add_political_power = -50
+	}
+}
+
+shared_focus = {
+	id = FRA_the_new_king_of_france
+	icon = GFX_King_Focus
+	cost = 3.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_interview_the_candidates	}
+    prerequisite = {	focus = FRA_coerce_the_elites	}
+    prerequisite = {	focus = FRA_persecute_the_radicals	}
+
+	x = 6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_new_king_of_france"
+		if = {
+			limit = {
+				has_country_flag = FRA_King_George
+			}
+			country_event = { id = FRA.3 days = 1 }
+		}
+
+		else_if = {
+			limit = {
+				has_country_flag = FRA_King_Henri
+			}
+			country_event = { id = FRA.4 days = 1 }
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_the_switch
+	icon = GFX_Crush_Resistance
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+    }
+
+    prerequisite = {	focus = FRA_the_future_of_the_occupation	}
+    mutually_exclusive = { focus = FRA_the_carrot }
+
+	x = 10
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_switch"
+		ENG = {
+			add_opinion_modifier = {
+				target = FRA
+				modifier = FRA_Ignored_Orders
+			}
+		}
+		add_political_power = -20
+	}
+}
+
+shared_focus = {
+	id = FRA_empower_the_ministry_of_truth
+	icon = GFX_Counter_Intelligence
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_the_switch	}
+
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_empower_the_ministry_of_truth"
+		swap_ideas = {
+			remove_idea = FRA_Ministry_Treachery
+			add_idea = FRA_Ministry_Treachery_1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_target_the_republicans
+	icon = GFX_Anti_Democracy
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_empower_the_ministry_of_truth	}
+
+	x = 9
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_target_the_republicans"
+		add_popularity = {
+			ideology = republicanism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.08
+		}
+		add_political_power = -50
+	}
+}
+
+shared_focus = {
+	id = FRA_target_the_monarchists
+	icon = GFX_Crush_the_Monarchy
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_empower_the_ministry_of_truth	}
+
+	x = 11
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_target_the_monarchists"
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = administrationism
+			popularity = -0.05
+		}
+		add_political_power = -50
+	}
+}
+
+shared_focus = {
+	id = FRA_target_the_unions
+	icon = GFX_Anti_Communist
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_empower_the_ministry_of_truth	}
+
+	x = 13
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_target_the_unions"
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.05
+		}
+		add_political_power = -50
+	}
+}
+
+shared_focus = {
+	id = FRA_no_stone_left_unturned
+	icon = Crush_the_Rebellion
+	cost = 3.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {	focus = FRA_target_the_unions	}
+    prerequisite = {	focus = FRA_target_the_republicans	}
+    prerequisite = {	focus = FRA_target_the_monarchists	}
+
+	x = 10
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_no_stone_left_unturned"
+		add_ideas = FRA_extreme_measures
+	}
+}
+
+shared_focus = {
+	id = FRA_a_new_dawn_across_the_channel
+	icon = GFX_a_new_dawn_across_the_channel
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+    prerequisite = {
+    	focus = FRA_the_new_king_of_france
+    	focus = FRA_no_stone_left_unturned
+    	}
+
+
+	x = 8
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_a_new_dawn_across_the_channel"
+		if = {
+			limit = {
+				has_country_flag = FRA_King_George
+			}
+			load_focus_tree = RB_FRA_king_george_tree
+		}
+
+		else_if = {
+			limit = {
+				has_country_flag = FRA_King_Henri
+			}
+			load_focus_tree = RB_FRA_king_henri_tree
+		}
+
+		else_if = {
+			limit = {
+				has_completed_focus = FRA_no_stone_left_unturned
+			}
+			load_focus_tree = RB_FRA_ministry_of_truth_tree
+		}
+	}
+}
+
+###############
+# King George #
+###############
+shared_focus = {
+	id = FRA_a_jersey_anglo_in_king_louis_court
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_a_jersey_anglo_in_king_louis_court"
+		country_event = { id = FRA.14 }
+	}
+}
+
+shared_focus = {
+	id = FRA_work_with_the_elites
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_a_jersey_anglo_in_king_louis_court }
+
+	x = 11
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_work_with_the_elites"
+		add_popularity = { ideology = despotism popularity = 0.05 }
+		add_stability = 0.05
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_ban_unions
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_work_with_the_elites }
+
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_ban_unions"
+		add_political_power = -90
+		add_popularity = { ideology = cromwellianism popularity = -0.03 }
+		add_popularity = { ideology = marxism popularity = -0.05 }
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_his_majesties_most_loyal_corporations
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_work_with_the_elites }
+
+	x = 12
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_his_majesties_most_loyal_corporations"
+		add_ideas = FRA_legalized_corruption
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_kick_backs_for_loyalty
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_ban_unions }
+	prerequisite = { focus = FRA_his_majesties_most_loyal_corporations }
+
+	x = 11
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_kick_backs_for_loyalty"
+		swap_ideas = { add_idea = FRA_legalized_corruption_1 remove_idea = FRA_legalized_corruption }
+		add_popularity = { ideology = despotism popularity = 0.08 }
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_work_with_the_ministry
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_a_jersey_anglo_in_king_louis_court }
+
+	x = 5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_work_with_the_ministry"
+		swap_ideas = {
+			remove_idea = FRA_Ministry_Treachery
+			add_idea = FRA_Ministry_Treachery_1
+		}
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_reinforce_martial_law
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_work_with_the_ministry }
+
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_reinforce_martial_law"
+		add_stability = 0.05
+		add_political_power = -100
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_expand_patrols
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_work_with_the_ministry }
+
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_expand_patrols"
+		add_manpower = 2000
+		add_stability = 0.03
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_across_the_channel_and_far_far_away
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_reinforce_martial_law }
+	prerequisite = { focus = FRA_expand_patrols }
+
+	x = 5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_across_the_channel_and_far_far_away"
+		country_event = { id = FRA.18 }
+	}
+}
+
+shared_focus = {
+	id = FRA_explore_the_Delights_of_france
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_a_jersey_anglo_in_king_louis_court }
+
+	x = 8
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_a_jersey_anglo_in_king_louis_court"
+		country_event = { id = FRA.15 }
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_renovate_versailles
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_explore_the_Delights_of_france }
+
+	x = 8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_renovate_versailles"
+		country_event = { id = FRA.16 }
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_bring_in_a_nobler_noble
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_renovate_versailles }
+
+	x = 8
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_bring_in_a_nobler_noble"
+		country_event = { id = FRA.17 }
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_expand_the_garrisons
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_bring_in_a_nobler_noble }
+	prerequisite = { focus = FRA_across_the_channel_and_far_far_away }
+
+	x = 7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_expand_the_garrisons"
+		hidden_effect = { load_oob = FRA_reinforcements }
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_spies_among_the_upper_crust
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_bring_in_a_nobler_noble }
+	prerequisite = { focus = FRA_kick_backs_for_loyalty }
+
+	x = 9
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_spies_among_the_upper_crust"
+		add_political_power = 60
+		FRA_raise_unrest = yes
+		FRA_is_there_a_revolt = yes
+	}
+}
+
+shared_focus = {
+	id = FRA_his_loyal_highness
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 5.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_expand_the_garrisons }
+	prerequisite = { focus = FRA_spies_among_the_upper_crust }
+
+	x = 8
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_his_loyal_highness"
+		custom_effect_tooltip = FRA_power_consolidated_tt
+	}
+}
+
+#################
+# Ministry Tree #
+#################
+
+shared_focus = {
+	id = FRA_a_new_approach
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_a_new_approach"
+		add_ideas = FRA_new_approach
+	}
+}
+
+shared_focus = {
+	id = FRA_the_blankcheque
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_a_new_approach }
+
+	x = 7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_blankcheque"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = FRA_construct_the_facade
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_a_new_approach }
+
+	x = 9
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_construct_the_facade"
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = FRA_the_reign_of_terror
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_the_blankcheque }
+	prerequisite = { focus = FRA_construct_the_facade }
+
+	x = 8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_reign_of_terror"
+		country_event = {
+			id = FRA.22
+			days = 0
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_break_the_left
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_the_reign_of_terror }
+	mutually_exclusive = { focus = FRA_break_the_right }
+
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_break_the_left"
+		add_ideas = FRA_break_left
+	}
+}
+
+shared_focus = {
+	id = FRA_root_out_the_unions
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_break_the_left }
+
+	x = 6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_root_out_the_unions"
+		add_stability = 0.05
+		add_political_power = -25
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = republicanism
+			popularity = -0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_hunt_down_thorez
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_root_out_the_unions }
+	prerequisite = { focus = FRA_you_are_the_dead }
+
+	x = 7
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_hunt_down_thorez"
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = republicanism
+			popularity = -0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_you_are_the_dead
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = {
+		focus = FRA_break_the_left
+		focus = FRA_break_the_right
+		}
+
+	x = 8
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_you_are_the_dead"
+		swap_ideas = {
+			remove_idea = FRA_Ministry_Treachery_1
+			add_idea = FRA_Ministry_Treachery_2
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_break_the_right
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_the_reign_of_terror }
+	mutually_exclusive = { focus = FRA_break_the_left }
+
+	x = 10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_break_the_right"
+		add_ideas = FRA_break_right
+	}
+}
+
+shared_focus = {
+	id = FRA_root_out_the_cowl
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_break_the_right }
+
+	x = 10
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_root_out_the_cowl"
+		add_stability = 0.05
+		add_political_power = -25
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = absolutism
+			popularity = -0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_hunt_down_darnand
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_root_out_the_cowl }
+	prerequisite = { focus = FRA_you_are_the_dead }
+
+	x = 9
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_hunt_down_darnand"
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = absolutism
+			popularity = -0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_the_place_where_there_is_no_darkness
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = {
+		focus = FRA_hunt_down_darnand
+		focus = FRA_hunt_down_thorez
+		}
+
+	x = 8
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_place_where_there_is_no_darkness"
+		swap_ideas = {
+			remove_idea = FRA_London_Loyalty
+			add_idea = FRA_London_Loyalty_1
+		}
+	}
+}
+
+###################
+# King Henri Tree #
+###################
+
+shared_focus = {
+	id = FRA_the_man_of_the_hour
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_man_of_the_hour"
+
+		set_variable = {
+			var = FRA_anglo_anger
+			value = 1
+		}
+
+		add_political_power = 50
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+
+		custom_effect_tooltip = FRA_man_of_the_hour_tt
+	}
+}
+
+shared_focus = {
+	id = FRA_known_knowns
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_the_man_of_the_hour }
+
+	x = 9
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_known_knowns"
+		country_event = {
+			id = henri.2
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_downsize_the_garrisons
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_known_knowns }
+	mutually_exclusive = { focus = FRA_leave_it_alone }
+
+	x = 8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_downsize_the_garrisons"
+	}
+}
+
+shared_focus = {
+	id = FRA_leave_it_alone
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_known_knowns }
+	mutually_exclusive = { focus = FRA_downsize_the_garrisons }
+
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_leave_it_alone"
+	}
+}
+
+shared_focus = {
+	id = FRA_dissolve_the_ministry
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = {
+		focus = FRA_downsize_the_garrisons
+		focus = FRA_leave_it_alone
+	}
+	mutually_exclusive = { focus = FRA_refocus_the_ministry }
+
+	x = 8
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_dissolve_the_ministry"
+	}
+}
+
+shared_focus = {
+	id = FRA_refocus_the_ministry
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = {
+		focus = FRA_downsize_the_garrisons
+		focus = FRA_leave_it_alone
+	}
+	mutually_exclusive = { focus = FRA_dissolve_the_ministry }
+
+	x = 10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_refocus_the_ministry"
+	}
+}
+
+shared_focus = {
+	id = FRA_arrest_taylor
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = {
+		focus = FRA_dissolve_the_ministry
+		focus = FRA_refocus_the_ministry
+	}
+	mutually_exclusive = { focus = FRA_send_him_home }
+	mutually_exclusive = { focus = FRA_winning_the_peace }
+
+	x = 8
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_arrest_taylor"
+	}
+}
+
+shared_focus = {
+	id = FRA_send_him_home
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = {
+		focus = FRA_dissolve_the_ministry
+		focus = FRA_refocus_the_ministry
+	}
+	mutually_exclusive = { focus = FRA_arrest_taylor }
+
+	x = 10
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_send_him_home"
+	}
+}
+
+shared_focus = {
+	id = FRA_winning_the_peace
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = {
+		focus = FRA_arrest_taylor
+		focus = FRA_send_him_home
+	}
+	mutually_exclusive = { focus = FRA_arrest_taylor }
+
+	x = 9
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_winning_the_peace"
+	}
+}
+
+shared_focus = {
+	id = FRA_known_unknowns
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_the_man_of_the_hour }
+
+	x = 6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_known_unknowns"
+		country_event = {
+			id = henri.1
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = FRA_investigate_the_resistance
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_known_unknowns }
+
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_investigate_the_resistance"
+	}
+}
+
+shared_focus = {
+	id = FRA_pardon_the_innocent
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_investigate_the_resistance }
+
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_pardon_the_innocent"
+	}
+}
+
+shared_focus = {
+	id = FRA_bring_home_the_exiles
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_pardon_the_innocent }
+
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_bring_home_the_exiles"
+	}
+}
+
+shared_focus = {
+	id = FRA_infiltrate_the_radicals
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_investigate_the_resistance }
+
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_infiltrate_the_radicals"
+	}
+}
+
+shared_focus = {
+	id = FRA_lift_the_cowl
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_infiltrate_the_radicals }
+
+	x = 6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_lift_the_cowl"
+	}
+}
+
+shared_focus = {
+	id = FRA_ending_the_war
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_lift_the_cowl }
+	prerequisite = { focus = FRA_bring_home_the_exiles }
+
+	x = 6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_ending_the_war"
+	}
+}
+
+shared_focus = {
+	id = FRA_a_meeting_with_monsieur_blum
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2.00
+
+#	ai_will_do = {
+#        factor = 1
+#        modifier = {
+#            factor = 1
+#            #trigger
+#        }
+#    }
+
+	prerequisite = { focus = FRA_ending_the_war }
+	prerequisite = { focus = FRA_winning_the_peace }
+
+	x = 8
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_a_meeting_with_monsieur_blum"
+	}
+}
+
+#prerequisite = {
+#		focus = ENG_The_Oldenburg_Claim
+#	}
+
+#mutually_exclusive = { focus = TUR_ali_levantine_diplomacy }
+
+#################
+# Republic Tree #
+#################
+
+shared_focus = {
+	id = FRA_the_republic_restored
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_republic_restored"
+	}
+}
+
+shared_focus = {
+	id = FRA_deal_with_collabs
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_the_republic_restored }
+
+	x = 7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_deal_with_collabs"
+	}
+}
+
+shared_focus = {
+	id = FRA_pardon_innocents
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_deal_with_collabs }
+
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_pardon_innocents"
+	}
+}
+
+shared_focus = {
+	id = FRA_reconcile_moderates
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_deal_with_collabs }
+
+	x = 8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_reconcile_moderates"
+	}
+}
+
+shared_focus = {
+	id = FRA_disarm_the_radicals
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_the_republic_restored }
+
+	x = 9
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_disarm_the_radicals"
+	}
+}
+
+shared_focus = {
+	id = FRA_embrace_the_unions
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_disarm_the_radicals }
+
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_embrace_the_unions"
+	}
+}
+
+shared_focus = {
+	id = FRA_the_popular_front
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_pardon_innocents }
+    prerequisite = { focus = FRA_reconcile_moderates }
+    prerequisite = { focus = FRA_embrace_the_unions }
+
+	x = 8
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_popular_front"
+	}
+}
+
+shared_focus = {
+	id = FRA_liberte
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_the_popular_front }
+
+	x = 5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_liberte"
+	}
+}
+
+shared_focus = {
+	id = FRA_restore_national_convention
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_liberte }
+
+	x = 5
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_restore_national_convention"
+	}
+}
+
+shared_focus = {
+	id = FRA_reopen_universities
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_restore_national_convention }
+
+	x = 4
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_reopen_universities"
+	}
+}
+
+shared_focus = {
+	id = FRA_the_upper_house_debate
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_restore_national_convention }
+
+	x = 6
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_upper_house_debate"
+	}
+}
+
+shared_focus = {
+	id = FRA_egalite
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_the_popular_front }
+
+	x = 8
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_egalite"
+	}
+}
+
+shared_focus = {
+	id = FRA_rights_of_man
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_egalite }
+
+	x = 8
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_restore_national_convention"
+	}
+}
+
+shared_focus = {
+	id = FRA_fraternite 
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_the_popular_front }
+
+	x = 11
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_fraternite"
+	}
+}
+
+shared_focus = {
+	id = FRA_reestablish_armed_forces
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_fraternite }
+
+	x = 11
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_reestablish_armed_forces"
+	}
+}
+
+shared_focus = {
+	id = FRA_the_presidential_debate
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_reestablish_armed_forces }
+
+	x = 11
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_the_presidential_debate"
+	}
+}
+
+shared_focus = {
+	id = FRA_call_elections
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_the_presidential_debate }
+    prerequisite = { focus = FRA_heart_of_democracy }
+    prerequisite = { focus = FRA_the_upper_house_debate }
+
+	x = 8
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_call_elections"
+	}
+}
+
+shared_focus = {
+	id = FRA_heart_of_democracy
+	icon = GFX_ENG_Ideology_Liberal
+	cost = 2.00
+
+	ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            #trigger
+        }
+    }
+
+    prerequisite = { focus = FRA_rights_of_man }
+
+	x = 8
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FRA_heart_of_democracy"
+	}
+}

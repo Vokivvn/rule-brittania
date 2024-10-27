@@ -1,0 +1,16 @@
+###########
+#   RAJ   #
+###########
+
+RAJ_Influence_Mechanic = {
+	picture = GFX_BRG_Decision_Darcy_Palace
+	allowed = {
+		tag = RAJ
+	}
+
+	visible = {
+		always = yes
+	}
+	
+	visible_when_empty = yes
+}

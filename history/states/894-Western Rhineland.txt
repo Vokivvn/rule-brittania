@@ -1,0 +1,34 @@
+
+state={
+	id=894
+	name="STATE_894"
+
+	state_category = large_city
+
+	history= {
+		owner = HSM
+		buildings = {
+			infrastructure = 7
+		}
+		victory_points = {
+			587 40
+		}
+		victory_points = {
+			9522 10
+		}
+		victory_points = {
+			3488 3
+		}
+		victory_points = {
+			3547 5
+		}
+		add_core_of = HSM
+	}
+
+	provinces={
+		587 3488 3547 9522 11470 11494 
+	}
+	manpower=318291
+	state_category = city
+	buildings_max_level_factor=1.000
+}

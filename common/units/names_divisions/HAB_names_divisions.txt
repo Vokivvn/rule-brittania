@@ -1,0 +1,375 @@
+﻿
+HAB_INF_01 = {
+	name = "Infantry Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Kaiserliche Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {	#Austrian Noble Families
+		1 = { "%d. Kaiserliche Division 'Schönfeld'" }
+		2 = { "%d. Kaiserliche Division 'Metternich'" }
+		3 = { "%d. Kaiserliche Division 'Mansfeld'" }
+		4 = { "%d. Kaiserliche Division 'Zell'" }
+		5 = { "%d. Kaiserliche Division 'Hohenberg'" }
+		6 = { "%d. Kaiserliche Division 'Öttingen'" }
+		7 = { "%d. Kaiserliche Division 'Englert'" }
+		8 = { "%d. Kaiserliche Division 'Strachwitz'" }
+		9 = { "%d. Kaiserliche Division 'Breithen'" }
+		10 = { "%d. Kaiserliche Division 'Rothschild'" }
+		11 = { "%d. Kaiserliche Division 'Schwarzenberg'" }
+		12 = { "%d. Kaiserliche Division 'Sternberg'" }
+		13 = { "%d. Kaiserliche Division 'Krane'" }
+		14 = { "%d. Kaiserliche Division 'Radetzky'" }
+		15 = { "%d. Kaiserliche Division 'Traun'" }
+		16 = { "%d. Kaiserliche Division 'Dietrichstein'" }
+		17 = { "%d. Kaiserliche Division 'Waldburg'" }
+		18 = { "%d. Kaiserliche Division 'David'" }
+		19 = { "%d. Kaiserliche Division 'Paumgarten'" }
+		20 = { "%d. Kaiserliche Division 'Lamberg'" }
+		21 = { "%d. Kaiserliche Division 'Kazinczy'" }
+		22 = { "%d. Kaiserliche Division 'Zichy'" }
+		23 = { "%d. Kaiserliche Division 'Weiss'" }
+		24 = { "%d. Kaiserliche Division 'Horthy'" }
+		25 = { "%d. Kaiserliche Division 'Kinští'" }
+		26 = { "%d. Kaiserliche Division 'Nosticové'" }
+		27 = { "%d. Kaiserliche Division 'Šlikové'" }
+		28 = { "%d. Kaiserliche Division 'Calogera'" }
+		29 = { "%d. Kaiserliche Division 'Camondo'" }
+		30 = { "%d. Kaiserliche Division 'Loredan'" }
+	}
+}
+HAB_INF_02 = {
+	name = "Militia"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Kaiserliche Miliz"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%d. Kaiserliche Miliz" }
+	}
+}
+MRX_INF_01 = {
+	name = "Marxist Militia"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%. Liberation Militia"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%. Liberation Militia" }
+	}
+}
+
+HAB_CAV_01 = {
+	name = "Cavalry Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Kaiserliche Kavallerie"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kavallerie Division" }
+		2 = { "%d. Kavallerie Division" }
+		3 = { "%d. Kavallerie Division" }
+		4 = { "%d. Kavallerie Division" }
+		5 = { "%d. Kavallerie Division" }
+		6 = { "%d. Kavallerie Division" }
+		7 = { "%d. Kavallerie Division" }
+		8 = { "%d. Kavallerie Division" }
+		9 = { "%d. Kavallerie Division" }
+		10 = { "%d. Kavallerie Division" }
+	}
+}
+
+HAB_MOT_01 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Kraftfahrzeugs-Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kraftfahrzeugs-Division" }
+		2 = { "%d. Kraftfahrzeugs-Division" }
+		3 = { "%d. Kraftfahrzeugs-Division" }
+		4 = { "%d. Kraftfahrzeugs-Division" }
+		5 = { "%d. Kraftfahrzeugs-Division" }
+		6 = { "%d. Kraftfahrzeugs-Division" }
+		7 = { "%d. Kraftfahrzeugs-Division" }
+		8 = { "%d. Kraftfahrzeugs-Division" }
+		9 = { "%d. Kraftfahrzeugs-Division" }
+		10 = { "%d. Kraftfahrzeugs-Division" }
+	}
+}
+
+HAB_MEC_01 = 
+{
+	name = "Mechanized Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { HAB_CAV_01 }
+
+	fallback_name = "%d. Schnelle Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Schnelle Division" }
+		2 = { "%d. Schnelle Division" }
+		3 = { "%d. Schnelle Division" }
+		4 = { "%d. Schnelle Division" }
+		5 = { "%d. Schnelle Division" }
+		6 = { "%d. Schnelle Division" }
+		7 = { "%d. Schnelle Division" }
+		8 = { "%d. Schnelle Division" }
+		9 = { "%d. Schnelle Division" }
+		10 = { "%d. Schnelle Division" }
+	}
+}
+
+HAB_ARM_01 = 
+{
+	name = "Armored Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Panzerwagen-Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Panzerwagen-Division" }
+		2 = { "%d. Panzerwagen-Division" }
+		3 = { "%d. Panzerwagen-Division" }
+		4 = { "%d. Panzerwagen-Division" }
+		5 = { "%d. Panzerwagen-Division" }
+		6 = { "%d. Panzerwagen-Division" }
+		7 = { "%d. Panzerwagen-Division" }
+		8 = { "%d. Panzerwagen-Division" }
+		9 = { "%d. Panzerwagen-Division" }
+		10 = { "%d. Panzerwagen-Division" }
+	}
+}
+
+HAB_PAR_01 = 
+{
+	name = "Paratrooper Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Fallschirmjäger-Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Fallschirmjäger-Division" }
+		2 = { "%d. Fallschirmjäger-Division" }
+		3 = { "%d. Fallschirmjäger-Division" }
+		4 = { "%d. Fallschirmjäger-Division" }
+		5 = { "%d. Fallschirmjäger-Division" }
+		6 = { "%d. Fallschirmjäger-Division" }
+		7 = { "%d. Fallschirmjäger-Division" }
+		8 = { "%d. Fallschirmjäger-Division" }
+		9 = { "%d. Fallschirmjäger-Division" }
+		10 = { "%d. Fallschirmjäger-Division" }
+	}
+}
+
+HAB_MAR_01 = 
+{
+	name = "Marine Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Marine-Stürmdivision"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Marine-Stürmdivision" }
+		2 = { "%d. Marine-Stürmdivision" }
+		3 = { "%d. Marine-Stürmdivision" }
+		4 = { "%d. Marine-Stürmdivision" }
+		5 = { "%d. Marine-Stürmdivision" }
+		6 = { "%d. Marine-Stürmdivision" }
+		7 = { "%d. Marine-Stürmdivision" }
+		8 = { "%d. Marine-Stürmdivision" }
+		9 = { "%d. Marine-Stürmdivision" }
+		10 = { "%d. Marine-Stürmdivision" }
+	}
+}
+
+HAB_MNT_01 = 
+{
+	name = "Mountain Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Alpenjägerdivision"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Alpenjägerdivision 'Großglockner'" }
+		2 = { "%d. Alpenjägerdivision 'Wildspitze'" }
+		3 = { "%d. Alpenjägerdivision 'Weißkugel'" }
+		4 = { "%d. Alpenjägerdivision 'Glocknerwand'" }
+		5 = { "%d. Alpenjägerdivision 'Großvenediger'" }
+		6 = { "%d. Alpenjägerdivision 'Brochkogel'" }
+		7 = { "%d. Alpenjägerdivision 'Rainerhorn'" }
+		8 = { "%d. Alpenjägerdivision 'Schalfkogel'" }
+		9 = { "%d. Alpenjägerdivision 'Kitzsteinhorn'" }
+		10 = { "%d. Alpenjägerdivision 'Schmittenhöhe'" }
+		11 = { "%d. Alpenjägerdivision 'Watzespitze'" }
+		12 = { "%d. Alpenjägerdivision 'Quellspitze'" }
+		13 = { "%d. Alpenjägerdivision 'Dachstein'" }
+		14 = { "%d. Alpenjägerdivision 'Zugspitze'" }
+		15 = { "%d. Alpenjägerdivision 'Hochkönig'" }
+		16 = { "%d. Alpenjägerdivision 'Hohe Warte'" }
+		17 = { "%d. Alpenjägerdivision 'Weißeck'" }
+		18 = { "%d. Alpenjägerdivision 'Birnhorn'" }
+		19 = { "%d. Alpenjägerdivision 'Raucheck'" }
+		20 = { "%d. Alpenjägerdivision 'Hochtor'" }
+	}
+}
+
+HAB_GAR_01 = 
+{
+	name = "Garrison Division"
+
+	for_countries = { AUS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { HAB_INF_01 }
+
+	fallback_name = "%d. Sicherungs-Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Division Franz-Josef-Stadt" }
+		2 = { "Division Rudolfsbucht" }
+		3 = { "Division Untersteiermark" }
+		4 = { "Division Trent" }
+		5 = { "Division Südtirol" }
+		6 = { "Division Innsbruck" }
+		7 = { "Division Klagenfurt" }
+		8 = { "Division Linz" }
+		9 = { "Division Lienz" }
+		10 = { "Division Vorarlberg" }		
+		11 = { "Division Graz" }
+		12 = { "Division Wien" }
+		13 = { "Division Niederösterreich" }
+		14 = { "Division Oberösterreich" }
+		15 = { "Division Steirmark" }
+		16 = { "Division Kärnten" }
+		17 = { "Division Salzburg" }
+		18 = { "Division Tirol" }
+		19 = { "Division Triest" }
+		20 = { "Division Pest" }		
+		21 = { "Division Banat" }
+		22 = { "Division Erzgebirge" }
+		23 = { "Division Oder" }
+		24 = { "Division Isonzo" }
+		25 = { "Division Lombardy" }
+		26 = { "Division Veneto" }
+		27 = { "Division Moravia" }
+		28 = { "Division Bohemia" }
+		29 = { "Division Istria" }
+	}
+}
+

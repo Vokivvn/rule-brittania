@@ -1,0 +1,25 @@
+
+state={
+	id=391
+	name="STATE_391"
+
+	history={
+		owner = HBC
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = HBC
+		victory_points = {
+			3719 5
+		}
+	}
+
+	provinces={
+		1752 3719 10618 12588 12597 
+	}
+	manpower=121763
+	buildings_max_level_factor=1.000
+	state_category= town
+}

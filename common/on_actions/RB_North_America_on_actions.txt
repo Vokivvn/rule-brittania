@@ -1,0 +1,433 @@
+on_actions = {
+	on_startup = {
+	    effect = {
+			LOU = {
+				country_event = {
+					id = louisiana.10
+					days = 7
+				}
+				country_event = {
+					id = louisiana.8
+					days = 10
+				}
+				country_event = {
+					id = louisiana.9
+					days = 21
+				}
+				country_event = {
+					id = louisiana.0
+					days = 28
+				}
+				#else = {
+				country_event = {
+					id = louisiana.20
+					days = 650
+				}
+				#}
+			}
+			#LSL
+			LSL = {
+				country_event = {
+					id = lsl.1
+					days = 730
+				}
+			}
+		    #CNA
+			CNA = {
+				country_event = {
+					id = CNA.75
+					days = 536
+				}
+			}
+			261 = {
+				set_state_flag = USA_rebel_state
+			}
+			276 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = USM_commie_state
+			}
+			357 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = USM_commie_state
+			}
+			358 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = USM_commie_state
+			}
+			359 = {
+				set_state_flag = USA_rebel_state
+			}
+			360 = {
+				set_state_flag = USA_rebel_state
+			}
+			361 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = SOL_SoL_state
+			}
+			362 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = CNA_southern_state
+				set_state_flag = SOL_SoL_state
+			}
+			363 = {
+				set_state_flag = CNA_southern_state
+				set_state_flag = SOL_SoL_state
+			}
+			364 = {
+				set_state_flag = AFC_new_afrika_state
+				set_state_flag = CNA_southern_state
+			}
+			365 = {
+				set_state_flag = DIX_dixieland_state
+				set_state_flag = CNA_southern_state
+			}
+			367 = {
+				set_state_flag = AFC_new_afrika_state
+				set_state_flag = CNA_southern_state
+			}
+			368 = {
+				#set_state_flag = USA_rebel_state
+				set_state_flag = CNA_southern_state
+				set_state_flag = SOL_SoL_state
+			}
+			369 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = CNA_southern_state
+				set_state_flag = SOL_SoL_state
+			}
+			381 = {
+				set_state_flag = NEE_new_england_state
+			}
+			393 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = USM_commie_state
+			}
+			394 = {
+				set_state_flag = USM_commie_state
+			}
+			395 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = USM_commie_state
+			}
+			396 = {
+				set_state_flag = USA_rebel_state
+			}
+			465 = {
+				set_state_flag = ACA_acadia_state
+			}
+			468 = {
+				set_state_flag = ACA_acadia_state
+			}
+			800 = {
+				set_state_flag = USM_commie_state
+			}
+			801 = {
+				set_state_flag = USM_commie_state
+			}
+			802 = {
+				set_state_flag = USM_commie_state
+			}
+			809 = {
+				set_state_flag = ACA_acadia_state
+			}
+			810 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = NEE_new_england_state
+			}
+			811 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = NEE_new_england_state
+			}
+			812 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = NEE_new_england_state
+			}
+			813 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = NEE_new_england_state
+			}
+			823 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = USM_commie_state
+			}
+			824 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = CNA_southern_state
+				set_state_flag = SOL_SoL_state
+			}
+			825 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = CNA_southern_state
+				set_state_flag = SOL_SoL_state
+			}
+			826 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = CNA_southern_state
+				set_state_flag = SOL_SoL_state
+			}
+			926 = {
+				set_state_flag = USA_rebel_state
+			}
+			927 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = USM_commie_state
+			}
+			928 = {
+				set_state_flag = CNA_southern_state
+				set_state_flag = SOL_SoL_state
+			}
+			929 = {
+				set_state_flag = USA_rebel_state
+			}
+			930 = {
+				set_state_flag = USA_rebel_state
+			}
+			931 = {
+				set_state_flag = USA_rebel_state
+				set_state_flag = USM_commie_state
+			}
+			932 = {
+				set_state_flag = USM_commie_state
+			}
+			933 = {
+				set_state_flag = NEE_new_england_state
+				set_state_flag = USA_rebel_state
+			}
+			SHW = {
+				set_variable = { louisiana_influence_shawnee = 2 }
+				set_variable = { CNA_influence_shawnee = 1 }
+				country_event = {
+					id = SHW.15
+					days = 353
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			#if = {
+			#	limit = {
+			#		ROOT = {
+			#			original_tag = ACA
+			#		}
+			#		FROM = {
+			#			OR = {
+			#				original_tag = CNA
+			#				original_tag = USA
+			#				original_tag = USM
+			#			}
+			#		}
+			#		FROM.FROM = { state = 468 }
+			#		ACA = {
+			#			controls_state = 465
+			#			controls_state = 809
+			#		}
+			#	}
+			#	ACA = {
+			#		transfer_state = 468
+			#		white_peace = CNA
+			#		white_peace = USA
+			#		white_peace = USM
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		ROOT = {
+			#			tag = USA
+			#		}
+			#		FROM = {
+			#			tag = LOU
+			#		}
+			#		OR = {
+			#			LOU = {
+			#				surrender_progress > 0.3
+			#			}
+			#			FROM.FROM = { state = 371 }
+			#		}
+			#	}
+			#	ROOT = {
+			#		country_event = {
+			#			id = american_rev.11
+			#			days = 1
+			#		}
+			#	}
+			#}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ACA
+					}
+					FROM = {
+						original_tag = NEE
+					}
+					FROM.FROM = { state = 810 }
+					ACA = {
+						controls_state = 465
+						controls_state = 809
+					}
+				}
+				NEE = {
+					country_event = {
+						id = american_rev.16
+						days = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = NEE
+					}
+					FROM = {
+						original_tag = ACA
+					}
+					FROM.FROM = { state = 809 }
+					NEE = {
+						controls_state = 810
+						controls_state = 813
+					}
+				}
+				NEE = {
+					country_event = {
+						id = american_rev.15
+						days = 1
+					}
+				}
+			}
+		}
+	}
+	#on_capitulation = {
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				ROOT = {
+	#					original_tag = DIX
+	#				}
+	#				FROM = {
+	#					original_tag = AFC
+	#				}
+	#			}
+	#			AFC = {
+	#				annex_country = {
+	#					target = DIX
+	#					transfer_troops = no
+	#				}
+	#				every_owned_state = {
+	#					limit = {
+	#						is_core_of = DIX
+	#					}
+	#					add_core_of = AFC
+	#				}
+	#			}
+	#		}
+	#		if = {
+	#			limit = {
+	#				ROOT = {
+	#					original_tag = AFC
+	#				}
+	#				FROM = {
+	#					original_tag = DIX
+	#				}
+	#			}
+	#			DIX = {
+	#				annex_country = {
+	#					target = AFC
+	#					transfer_troops = no
+	#				}
+	#				every_owned_state = {
+	#					limit = {
+	#						is_core_of = AFC
+	#					}
+	#					add_core_of = DIX
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = DIX
+					}
+					FROM = {
+						original_tag = AFC
+					}
+				}
+				DIX = {
+					every_owned_state = {
+						add_core_of = DIX
+						remove_core_of = AFC
+						add_claim_by = AFC
+					}
+					CNA = {
+						every_owned_state = {
+							limit = {
+								has_state_flag = CNA_southern_state
+							}
+							add_claim_by = DIX
+						}
+					}
+					USA = {
+						every_owned_state = {
+							limit = {
+								has_state_flag = CNA_southern_state
+							}
+							add_claim_by = DIX
+						}
+					}
+					USM = {
+						every_owned_state = {
+							limit = {
+								has_state_flag = CNA_southern_state
+							}
+							add_claim_by = DIX
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AFC
+					}
+					FROM = {
+						original_tag = DIX
+					}
+				}
+				AFC = {
+					every_owned_state = {
+						add_core_of = AFC
+						remove_core_of = DIX
+						add_claim_by = DIX
+					}
+					CNA = {
+						every_owned_state = {
+							limit = {
+								has_state_flag = CNA_southern_state
+							}
+							add_claim_by = AFC
+						}
+					}
+					USA = {
+						every_owned_state = {
+							limit = {
+								has_state_flag = CNA_southern_state
+							}
+							add_claim_by = AFC
+						}
+					}
+					USM = {
+						every_owned_state = {
+							limit = {
+								has_state_flag = CNA_southern_state
+							}
+							add_claim_by = AFC
+						}
+					}
+				}
+			}
+		}
+	}
+}

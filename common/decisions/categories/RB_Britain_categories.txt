@@ -1,0 +1,21 @@
+ENG_Mary_Colonial_Reorganisation = {
+	picture = GFX_ENG_decision_Parliament
+	allowed = {
+		tag = ENG
+	}
+	visible = {
+		has_country_flag = ENG_MColReorg
+	}
+}
+
+ENG_George_Parliament_Mana = {
+	picture = GFX_ENG_decision_Parliament
+	allowed = {
+		tag = ENG
+	}
+	visible = {
+		ENG = {
+			has_country_flag = ENG_Coalition_Dissolved
+		}
+	}
+}

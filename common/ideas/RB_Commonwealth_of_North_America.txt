@@ -1,0 +1,444 @@
+ideas = {
+	country = {
+		CNA_the_continental_parliament = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = CNA_Continental_Parliament
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				political_power_factor = -0.5
+			}
+		}
+		
+		CNA_relative_self_rule = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = flag_CNA_crown
+
+			removal_cost = -1
+
+			modifier = {
+				subjects_autonomy_gain = 0.5
+			}
+		}
+
+		CNA_great_lakes_industry = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = factory_industry_lake_map
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		CNA_great_lakes_industry_2 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = factory_industry_lake_map
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		CNA_building_up_rnaaaf = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = crown_propellor
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				air_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		CNA_econ_crash_idea = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+		}
+		CNA_worker_concessions = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		CNA_crushing_rebels = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				#resistance_tick_auto = -0.5
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+			}
+		}
+		CNA_independent_airforce = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = crown_propellor
+
+			removal_cost = -1
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				experience_gain_air = 0.01
+			}
+		}
+		CNA_independent_airforce_2_1 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce_2_1"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = crown_propellor
+
+			removal_cost = -1
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.1
+				experience_gain_air = 0.01
+			}
+			equipment_bonus = {
+				air_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		CNA_independent_airforce_1_2 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce_1_2"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = crown_propellor
+
+			removal_cost = -1
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.2
+				experience_gain_air = 0.02
+			}
+		}
+		CNA_independent_airforce_2_2 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce_2_2"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = crown_propellor
+
+			removal_cost = -1
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.2
+				experience_gain_air = 0.02
+			}
+			equipment_bonus = {
+				air_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		CNA_independent_airforce_3 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_independent_airforce_3"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = crown_propellor
+
+			removal_cost = -1
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.2
+				experience_gain_air = 0.02
+			}
+			equipment_bonus = {
+				air_equipment = {
+					build_cost_ic = -0.3
+				}
+			}
+		}
+		CNA_ex_militia_recruitment = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_ex_militia_recruitment"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				conscription_factor = 0.25
+				army_org_factor = -0.15
+			}
+		}
+		CNA_new_officer_academy = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_new_officer_academy"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.2
+				army_org_factor = 0.05
+			}
+		}
+		CNA_new_officer_academy_2 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_new_officer_academy_2"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.2
+				army_org_factor = 0.1
+				army_leader_start_attack_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_planning_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+		CNA_modern_army = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_modern_army"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				conscription_factor = 0.1
+				max_planning = 0.2
+				army_org_factor = 0.05
+				army_leader_start_attack_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_planning_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+		CNA_defending_regionalism = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_defending_regionalism"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+			}
+		}
+		CNA_defending_regionalism_2 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_defending_regionalism_2"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.3
+			}
+		}
+		CNA_american_talent = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_american_talent"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.3
+				training_time_factor = -0.1
+				conscription_factor = 0.15
+			}
+		}
+		CNA_marching_on_stomach = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_marching_on_stomach"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.3
+				training_time_factor = -0.1
+				conscription_factor = 0.15
+				supply_consumption_factor = -0.15
+			}
+		}
+		CNA_local_officers = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_local_officers"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				#resistance_tick_auto = -0.5
+			}
+		}
+		CNA_local_officers_2 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_local_officers_2"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				#resistance_tick_auto = -0.5
+				planning_speed = 0.1
+			}
+		}
+		CNA_supply_sabotaged = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: Add idea CNA_supply_sabotaged"
+			}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+			
+			modifier = {
+				supply_consumption_factor = 0.25
+				no_supply_grace = -24
+			}
+		}
+	}
+}

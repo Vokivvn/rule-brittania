@@ -1,0 +1,25 @@
+state={
+	id=855
+	name="STATE_855"
+	manpower = 400000
+	
+	state_category = rural
+	resources={
+		oil=2 # was: 3
+	}
+
+	history={
+		owner = MSP
+		buildings = {
+			infrastructure = 1
+			12702 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = MSP
+	}
+
+	provinces={
+		1955 10791 12702
+	}
+}

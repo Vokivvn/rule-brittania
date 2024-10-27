@@ -1,0 +1,41 @@
+﻿##### NAVAL OOB #####
+
+units= {
+	fleet = { # Baltic Fleet 
+		name = "Rossiyskiy Imperatorskiy Flot"			
+		naval_base = 9097 
+		task_force = {				
+			name = "Balticskiyy Flot"
+			location = 9097 
+			ship = { name = "Imperatritsta Mariya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS version_name = "Imperatritsta Mariya Class" } } }
+			ship = { name = "Svetlana" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Svetlana Class"} } } 		
+			ship = { name = "Admiral Greig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Svetlana Class" } } }		
+			ship = { name = "Izyaslav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Izyaslav Class" } } }			
+			ship = { name = "Prymyslav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Izyaslav Class" } } }	
+			ship = { name = "Bryachislav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Izyaslav Class" } } }			
+		}
+		task_force = { #Submarines
+			name = "Baltiyskiy Podvodnyy Flot"
+			location = 9097
+			ship = { name = "Bars" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS version_name = "Bars Class" } } }
+		}
+	}
+	fleet = { # Black Sea Fleet
+		name = "Chernomorsky Flot"
+		naval_base = 9417
+		task_force = {
+			name = "Chernomorsky Flot"
+			location = 9417
+			ship = { name = "Admirak Nakhimov" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Admiral Nakhimov Class"} } } 		
+			ship = { name = "Admiral Lazarev" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS version_name = "Admiral Nakhimov Class" } } }
+			ship = { name = "Kaliakria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Fidonisy Class" } } }			
+			ship = { name = "Korfu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Fidonisy Class" } } }
+			ship = { name = "Levkas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS version_name = "Fidonisy Class" } } }
+		}
+	    task_force = { #Submarines
+			name = "Chernomorskiy Podvodnyy Flot"
+			location = 9417
+			ship = { name = "Burvestnik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS version_name = "Bars Class" } } }
+		}
+	}
+}

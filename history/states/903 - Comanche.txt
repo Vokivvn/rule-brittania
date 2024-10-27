@@ -1,0 +1,34 @@
+
+state={
+	id=903
+	name="STATE_903"
+	manpower = 795836
+	
+	state_category = rural
+	resources={
+		oil = 1
+	}
+
+	history={
+		owner = LOU
+		victory_points = {
+			9908 5
+		}
+		victory_points = {
+			3972 3
+		}
+		victory_points = {
+			12624 2
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 0
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		1738 2055 2102 3972 4586 9908 12624
+	}
+}

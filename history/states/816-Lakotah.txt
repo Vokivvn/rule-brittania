@@ -1,0 +1,33 @@
+state={
+	id=816
+	name="STATE_816"
+	provinces={
+		1683 1747 1767 1815 1875 3613 3750 3855 4610 4749 4794 4820 4839 6722 7745 7760 7771 7814 7840 7877 10587 10711 12516 12566 
+	}
+	
+	history={
+		owner = LOU
+		victory_points = {
+			1747 3
+		}
+		victory_points = {
+			10711 3
+		}
+		victory_points = {
+			4749 2
+		}
+		victory_points = {
+			7745 5
+		}
+		victory_points = {
+			3750 1
+		}
+		set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	manpower=692525
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

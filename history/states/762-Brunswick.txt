@@ -1,0 +1,36 @@
+
+state={
+	id=762
+	name="STATE_762"
+	resources={
+		steel=19.000
+		aluminium=7.000
+	}
+
+	history={
+		victory_points = {
+			526 15
+		}
+		victory_points = {
+			9375 3
+		}
+		victory_points = {
+			11493 2
+		}
+		owner = BRN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = BRN
+
+	}
+
+	provinces={
+		526 9375 11493 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

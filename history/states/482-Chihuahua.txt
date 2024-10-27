@@ -1,0 +1,33 @@
+
+state={
+	id=482
+	name="STATE_482"
+
+	history={
+		owner = MEX
+		add_core_of = MEX
+		buildings = {
+			infrastructure = 3
+		}
+		set_demilitarized_zone = yes
+		victory_points = {
+			8097 5 
+		}
+		victory_points = {
+			10830 20 
+		}
+		victory_points = {
+			12850 10 
+		}
+		victory_points = {
+			10916 5
+		}
+	}
+
+	provinces={
+		2037 4898 5044 7935 8097 10809 10830 10916 12745 12827 12850 12897 13274 
+	}
+	manpower=520751
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

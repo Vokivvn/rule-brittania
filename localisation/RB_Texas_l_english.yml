@@ -1,0 +1,455 @@
+﻿l_english:
+ ##Country Names##
+ TEX_anglo_hell_cromwellianism:0 "Dominion of Texas"
+ TEX_anglo_hell_cromwellianism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_marxism:0 "Dominion of Texas"
+ TEX_anglo_hell_marxism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_liberalism:0 "Dominion of Texas"
+ TEX_anglo_hell_liberalism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_republicanism:0 "Dominion of Texas"
+ TEX_anglo_hell_republicanism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_parliamentarianism:0 "Dominion of Texas"
+ TEX_anglo_hell_parliamentarianism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_administrationism:0 "Dominion of Texas"
+ TEX_anglo_hell_administrationism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_absolutism:0 "Dominion of Texas"
+ TEX_anglo_hell_absolutism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_despotism:0 "Dominion of Texas"
+ TEX_anglo_hell_despotism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_nationalism:0 "Dominion of Texas"
+ TEX_anglo_hell_nationalism_DEF:0 "The Dominion of Texas"
+ TEX_anglo_hell_cromwellianism_ADJ:0 "Texan"
+ TEX_anglo_hell_marxism_ADJ:0 "Texan"
+ TEX_anglo_hell_liberalism_ADJ:0 "Texan"
+ TEX_anglo_hell_republicanism_ADJ:0 "Texan"
+ TEX_anglo_hell_parliamentarianism_ADJ:0 "Texan"
+ TEX_anglo_hell_administrationism_ADJ:0 "Texan"
+ TEX_anglo_hell_despotism_ADJ:0 "Texan"
+ TEX_anglo_hell_nationalism_ADJ:0 "Texan"
+
+ TEX_cromwellianism:0 "Fredonia"
+ TEX_cromwellianism_DEF:0 "The State of Texas"
+ TEX_marxism:0 "Commune of Texas"
+ TEX_marxism_DEF:0 "The Commune of Texas"
+ TEX_liberalism:0 "Republic of Texas"
+ TEX_liberalism_DEF:0 "The Republic of Texas"
+ TEX_republicanism:0 "Republic of Texas"
+ TEX_republicanism_DEF:0 "The Republic of Texas"
+ TEX_parliamentarianism:0 "Republic of Texas"
+ TEX_parliamentarianism_DEF:0 "The Republic of Texas"
+ TEX_administrationism:0 "Republic of Texas"
+ TEX_administrationism_DEF:0 "The Republic of Texas"
+ TEX_absolutism:0 "State of Texas"
+ TEX_absolutism_DEF:0 "The State of Texas"
+ TEX_despotism:0 "State of Texas"
+ TEX_despotism_DEF:0 "The State of Texas"
+ TEX_nationalism:0 "Fredonia"
+ TEX_nationalism_DEF:0 "The State of Texas"
+ TEX_cromwellianism_ADJ:0 "Texan"
+ TEX_marxism_ADJ:0 "Texan"
+ TEX_liberalism_ADJ:0 "Texan"
+ TEX_republicanism_ADJ:0 "Texan"
+ TEX_parliamentarianism_ADJ:0 "Texan"
+ TEX_administrationism_ADJ:0 "Texan"
+ TEX_despotism_ADJ:0 "Texan"
+ TEX_nationalism_ADJ:0 "Texan"
+ 
+ NTO_TEX_cromwellianism:0 "Fredonia"
+ NTO_TEX_cromwellianism_DEF:0 "Fredonia"
+ NTO_TEX_marxism:0 "Commune of Texas"
+ NTO_TEX_marxism_DEF:0 "The Commune of Texas"
+ NTO_TEX_liberalism:0 "Republic of Texas"
+ NTO_TEX_liberalism_DEF:0 "The Republic of Texas"
+ NTO_TEX_republicanism:0 "Republic of Texas"
+ NTO_TEX_republicanism_DEF:0 "The Republic of Texas"
+ NTO_TEX_parliamentarianism:0 "Republic of Texas"
+ NTO_TEX_parliamentarianism_DEF:0 "The Republic of Texas"
+ NTO_TEX_administrationism:0 "Republic of Texas"
+ NTO_TEX_administrationism_DEF:0 "The Republic of Texas"
+ NTO_TEX_absolutism:0 "State of Texas"
+ NTO_TEX_absolutism_DEF:0 "The State of Texas"
+ NTO_TEX_despotism:0 "State of Texas"
+ NTO_TEX_despotism_DEF:0 "The State of Texas"
+ NTO_TEX_nationalism:0 "Fredonia"
+ NTO_TEX_nationalism_DEF:0 "Fredonia"
+ NTO_TEX_cromwellianism_ADJ:0 "Fredonian"
+ NTO_TEX_marxism_ADJ:0 "Texan"
+ NTO_TEX_liberalism_ADJ:0 "Texan"
+ NTO_TEX_republicanism_ADJ:0 "Texan"
+ NTO_TEX_parliamentarianism_ADJ:0 "Texan"
+ NTO_TEX_administrationism_ADJ:0 "Texan"
+ NTO_TEX_despotism_ADJ:0 "Texan"
+ NTO_TEX_nationalism_ADJ:0 "Fredonian"
+
+ ##Party Names##
+ TEX_cromwellianism_party:0 "NTO-L"
+ TEX_cromwellianism_party_long:0 "Natural Texas Organization - Cromwellian"
+ TEX_marxism_party:0 "NTO-M"
+ TEX_marxism_party_long:0 "Natural Texas Organization - M"
+ TEX_liberalism_party:0 "DPT-L"
+ TEX_liberalism_party_long:0 "Democratic Party of Texas - Left"
+ TEX_republicanism_party:0 "DPT-I"
+ TEX_republicanism_party_long:0 "Democratic Party of Texas - Independent"
+ TEX_parliamentarianism_party:0 "Tories"
+ TEX_parliamentarianism_party_long:0 "Conservative Party"
+ TEX_administrationism_party:0 "DPT-C"
+ TEX_administrationism_party_long:0 "Democratic Party of Texas - Corporate"
+ TEX_absolutism_party:0 "WG-R"
+ TEX_absolutism_party_long:0 "Walker's Government - Royalist"
+ TEX_despotism_party:0 "WG"
+ TEX_despotism_party_long:0 "Walker's Government"
+ TEX_nationalism_party:0 "NTO-R"
+ TEX_nationalism_party_long:0 "Natural Texas Organization - Right"
+
+ TEX_DP_LONG:0 "Texan Democratic Party"
+ TEX_DP:0 "TDP"
+ TEX_DP_H_LONG:0 "Houstonist Party of Texas"
+ TEX_DP_H:0 "Houstonists"
+ TEX_DP_L_LONG:0 "Lamarist Party of Texas"
+ TEX_DP_L:0 "Lamarists"
+
+
+
+ ##ideas
+ TEX_NTO_dickheads:0 "Growing NTO Support"
+ TEX_NTO_dickheads_desc:0 "The Natural Texas Organization was founded months before the Anglo-Mexican War as a paramilitary group to cause disorder within The Mexican Empire. At the end of the war, many departed from the group leading it to be overtaken by radicals sharing a common anti-mexican and anti-immigration sentiment. In recent years, NTO membership has been on the rise alongside immigration, unfortunatley for us, this gives way to the group to ride again."
+ TEX_NTO_dickheads2:0 "Growing NTO Support"
+ TEX_NTO_dickheads2_desc:0 "The Natural Texas Organization was founded months before the Anglo-Mexican War as a paramilitary group to cause disorder within The Mexican Empire. At the end of the war, many departed from the group leading it to be overtaken by radicals sharing a common anti-mexican and anti-immigration sentiment. In recent years, NTO membership has been on the rise alongside immigration, unfortunatley for us, this gives way to the group to ride again."
+ TEX_NTO_dickheads3:0 "Growing NTO Support"
+ TEX_NTO_dickheads3_desc:0 "The Natural Texas Organization was founded months before the Anglo-Mexican War as a paramilitary group to cause disorder within The Mexican Empire. At the end of the war, many departed from the group leading it to be overtaken by radicals sharing a common anti-mexican and anti-immigration sentiment. In recent years, NTO membership has been on the rise alongside immigration, unfortunatley for us, this gives way to the group to ride again."
+
+ TEX_oil_boom:0 "Spindletop's Legacy"
+ TEX_oil_boom_desc:0 "The Texan Oil Boom is among us! Spindletop hit oil in 1901, leading to a growth of immigration to Texas in search of opportunity. "
+
+ TEX_diverse_politics:0 "Political Fractures"
+ TEX_diverse_politics_desc:0 "With British rule growing increasingly unpopular due to Texan nationalism on the rise, many political groups have been formed to claim the support of the Texan people. Though under control, if any unforeseen instability in the Empire were to occur, who knows what would happen."
+
+ TEX_public_schooling:0 "Public Schooling"
+ TEX_public_schooling_desc:0 ""
+
+ TEX_texan_democracy:0 "Texan Democracy"
+ TEX_texan_democracy_desc:0 ""
+
+ TEX_attempted_coup:0 "Attempted Coup"
+ TEX_attempted_coup_desc:0 ""
+
+ TEX_attempted_coup2:0 "Attempted Coup"
+ TEX_attempted_coup2_desc:0 ""
+
+ TEX_welfare:0 "Welfare"
+ TEX_welfare_desc:0 ""
+
+ TEX_booming_buisness:0 "Booming Buisness"
+ TEX_booming_buisness_desc:0 ""
+
+ TEX_oil_dependency:0 "Decisions to lower out dependency on oil will be granted."
+ ##focuses
+
+ TEX_term_of_the_big_boy:0 "Term Of The Big Boy"
+ TEX_term_of_the_big_boy_desc:0 ""
+
+ TEX_develop_inner_country:0 "Develop The Inner North"
+ TEX_develop_inner_country_desc:0 ""
+
+ TEX_danger_trails:0 "Danger Trails"
+ TEX_danger_trails_desc:0 ""
+
+ TEX_riders_of_cedar_valley:0 "Riders Of Cedar Valley"
+ TEX_riders_of_cedar_valley_desc:0 ""
+
+ TEX_everything_big_tex:0 "Everything Is Bigger In Texas"
+ TEX_everything_big_tex_desc:0 ""
+
+ TEX_heavy_industrial_methods:0 "Texan Heavy Industry"
+ TEX_heavy_industrial_methods_Desc:0 ""
+
+ TEX_domestic_means:0 "Domestic Means"
+ TEX_domestic_means_desc:0 ""
+
+ TEX_expand_our_ports:0 "Expand Our Ports"
+ TEX_expand_our_ports_desc:0 ""
+
+ TEX_rule_the_gulf:0 "Rule The Gulf"
+ TEX_rule_the_gulf_desc:0 ""
+
+ TEX_houston_the_gateway:0 "The Gateway Of Houston"
+ TEX_houston_the_gateway_desc:0 ""
+
+ TEX_the_law_of_the_36s:0 "The Law Of The 36's"
+ TEX_the_law_of_the_36s_desc:0 ""
+
+ TEX_real_in_the_oil:0 "Blow Out On Oil"
+ TEX_real_in_the_oil_desc:0 ""
+
+ TEX_exploit_spindletop:0 "Exploit Spindletop"
+ TEX_exploit_spindletop_desc:0 ""
+
+ TEX_bathe_in_the_profits:0 "Reap The Benefits"
+ TEX_bathe_in_the_profits_desc:0 ""
+
+ TEX_thinking_after:0 "Thinking Forward"
+ TEX_thinking_after_desc:0 ""
+
+ TEX_get_to_work:0 "Get To Work"
+ TEX_get_to_work_desc:0 ""
+
+ TEX_the_quest_for_alt:0 "The Quest For An Alternative"
+ TEX_the_quest_for_alt_desc:0 ""
+
+ TEX_williams_resigns:0 "The Big Boy Resigns"
+ TEX_williams_resigns_desc:0 ""
+
+ TEX_laying_the_ground:0 "Laying The Ground"
+ TEX_laying_the_ground_desc:0 ""
+
+ TEX_walton_takes_over:0 "The Transition Begins"
+ TEX_walton_takes_over_desc:0 ""
+
+ TEX_remain_calm:0 "Remain Calm"
+ TEX_remain_calm_desc:0 ""
+
+ TEX_close_the_polls:0 "Close The Polls"
+ TEX_close_the_polls_desc:0 ""
+
+ TEX_protect_the_regime:0 "Protect The Regime"
+ TEX_protect_the_regime_desc:0 ""
+
+ TEX_watch_the_NTO:0 "Watch The NTO"
+ TEX_watch_the_NTO_desc:0 ""
+
+ TEX_ban_extremist_parties:0 "Ban Extremist Parties"
+ TEX_ban_extremist_parties_desc:0 ""
+
+ TEX_protect_the_prosecuted:0 "Protect The Prosecuted"
+ TEX_protect_the_prosecuted_desc:0 ""
+
+ TEX_preserve_certain_elements:0 "Preserve Certain Elements"
+ TEX_preserve_certain_elements_desc:0 ""
+
+ TEX_lessons_from_the_british:0 "Lessons From The Biritish"
+ TEX_lessons_from_the_british_desc:0 ""
+
+ TEX_establish_new_parties:0 "Establish New Parties"
+ TEX_establish_new_parties_desc:0 ""
+
+ TEX_texan_nationalism:0 "Texan Nationalism"
+ TEX_texan_nationalism_desc:0 ""
+
+ #TEX_texan_democracy:0 "Texan Democracy"
+ #TEX_texan_democracy_desc:0 ""
+
+ TEX_long_may_she_wave:0 "Long May She Wave"
+ TEX_long_may_she_wave_desc:0 ""
+
+ TEX_assert_independence:0 "Assert Independence"
+ TEX_assert_independence_desc:0 ""
+
+ TEX_one_small_problem:0 "One Small Problem"
+ TEX_one_small_problem_desc:0 ""
+
+ ##Rep
+
+ TEX_republic_begins:0 "The Republic Begins"
+ TEX_republic_begins_desc:0 ""
+
+ TEX_1937_elections:0 "The 1937 Elections"
+ TEX_1937_elections_desc:0 ""
+
+ TEX_lamarist_victory:0 "Lamarist Victory"
+ TEX_lamarist_victory_desc:0 ""
+
+ TEX_overshadow_the_NTO:0 "Overshadow The NTO"
+ TEX_overshadow_the_NTO_desc:0 ""
+
+ TEX_curb_extremism:0 "Curb Extremism"
+ TEX_curb_extremism_desc:0 ""
+
+ TEX_corporate_connections:0 "Corporate Connections"
+ TEX_corporate_connections_desc:0 ""
+
+ TEX_ally_with_oil_tycoons:0 "Ally With Oil Tycoons"
+ TEX_ally_with_oil_tycoons_desc:0 ""
+
+ TEX_another_way:0 "Another Way"
+ TEX_another_way_desc:0 ""
+
+ TEX_land_of_opprotunity:0 "The Land Of Opprotunity"
+ TEX_land_of_opprotunity_desc:0 ""
+
+ TEX_further_immigration_attractions:0 "Further Immigration Attractions"
+ TEX_further_immigration_attractions_desc:0 ""
+
+ TEX_prosperity_in_houston:0 "Prosperity In Houston"
+ TEX_prosperity_in_houston_desc:0 ""
+
+ TEX_texan_education:0 "Texan Education"
+ TEX_texan_education_desc:0 ""
+
+ TEX_lessons_from_the_british_system:0 "Lessons From The British System"
+ TEX_lessons_from_the_british_system_desc:0 ""
+
+ TEX_establish_the_board_of_education:0 "Establish The Board Of Education"
+ TEX_establish_the_board_of_education_desc:0 ""
+
+ #TEX_public_schooling:0 "Public Schooling"
+ #TEX_public_schooling_desc:0 ""
+
+ TEX_houstonist_victory:0 "Houstonist Victory"
+ TEX_houstonist_victory_desc:0 ""
+
+ TEX_amend_citizen_relations:0 "Amend Citizen Relations"
+ TEX_amend_citizen_relations_desc:0 ""
+
+ TEX_one_small_step:0 "One Small Step"
+ TEX_one_small_step_desc:0 ""
+
+ TEX_jobs_for_the_men:0 "Jobs For The Men"
+ TEX_jobs_for_the_men_desc:0 ""
+
+ TEX_collaborate_with_unions:0 "Collaborate With The Unions"
+ TEX_collaborate_with_unions_desc:0 ""
+
+ TEX_labourers_for_infastructure:0 "Labourers For Infastructure"
+ TEX_labourers_for_infastructure_desc:0 ""
+
+ TEX_hands_of_the_government:0 "Hands Of The Government"
+ TEX_hands_of_the_government_desc:0 ""
+
+ TEX_gracious_givings:0 "Gracious Givings"
+ TEX_gracious_givings_desc:0 ""
+
+ #TEX_welfare:0 "Welfare"
+ #TEX_welfare_desc:0 ""
+
+ TEX_god_bless_democracy:0 "God Bless Democracy"
+ TEX_god_bless_democracy_desc:0 ""
+
+ TEX_the_second_election:0 "The Second Election"
+ TEX_the_second_election_desc:0 ""
+ 
+ ## NTO ##
+
+ TEX_for_a_natural_texas:0 "For A Natural Texas"
+ TEX_for_a_natural_texas_desc:0 ""
+
+ TEX_root_out_republican_elements:0 "Root Out Republican Elements"
+ TEX_root_out_republican_elements_desc:0 ""
+
+ TEX_the_true_rights_of_man:0 "The True Rights Of Man"
+ TEX_the_true_rights_of_man_desc:0 ""
+
+ TEX_jail_eisenhower:0 "Jail Eisenhower"
+ TEX_jail_eisenhower_desc:0 ""
+
+ TEX_remove_undesired_sections:0 "Remove Undesired Sections"
+ TEX_remove_undesired_sections_desc:0 ""
+
+ TEX_clear_resistance_in_the_army:0 "Clear Resistance In The Army"
+ TEX_clear_resistance_in_the_army_desc:0 ""
+
+ TEX_the_natural_council:0 "The Natural Council"
+ TEX_the_natural_council_desc:0 ""
+
+ TEX_cooperate_with_corporatists:0 "Cooperate With Corporatists"
+ TEX_cooperate_with_corporatists_desc:0 ""
+
+ TEX_integrate_large_companies:0 "Integrate Large Companies"
+ TEX_integrate_large_companies_desc:0 ""
+
+ TEX_loosen_regulations:0 "Loosen Regulations"
+ TEX_loosen_regulations_desc:0 ""
+
+ TEX_cooperate_with_the_cromwellians:0 "Cooperate With The Cromwellians"
+ TEX_cooperate_with_the_cromwellians_desc:0 ""
+
+ TEX_an_awkward_relation:0 "An Awkward Relation"
+ TEX_an_awkward_relation_desc:0 ""
+
+ TEX_socialism_for_the_whiteman:0 "Socialism For The White Man"
+ TEX_socialism_for_the_whiteman_desc:0 ""
+
+ TEX_the_corporate_scheme:0 "The Corporate Scheme"
+ TEX_the_corporate_scheme_desc:0 ""
+
+ TEX_revitalize_the_oil_business:0 "Revitalize The Oil Business"
+ TEX_revitalize_the_oil_business_desc:0 ""
+
+ TEX_siphon_oil:0 "Siphon Oil"
+ TEX_siphon_oil_desc:0 ""
+
+ TEX_simple_economics:0 "Simple Economics"
+ TEX_simple_economics_desc:0 ""
+
+ TEX_the_country_of_jobs:0 "The Country Of Jobs"
+ TEX_the_country_of_jobs_desc:0 ""
+
+ TEX_the_new_port_of_america:0 "The New Port Of America"
+ TEX_the_new_port_of_america_desc:0 ""
+
+ TEX_sponsored_union_busters:0 "Government Sponsored Union Busters"
+ TEX_sponsored_union_busters_desc:0 ""
+
+ TEX_they_wont_suspect_a_thing:0 "They Won't Suspect A Thing"
+ TEX_they_wont_suspect_a_thing_desc:0 ""
+
+ TEX_the_society:0 "The Society"
+ TEX_the_society_desc:0 ""
+
+ TEX_nationalize_the_oil:0 "Nationalize The Oil"
+ TEX_nationalize_the_oil_desc:0 ""
+
+ TEX_limit_availability:0 "Limit Availability"
+ TEX_limit_availability_desc:0 ""
+
+ TEX_a_business_without_the_business:0 "Business Without The Business"
+ TEX_a_business_without_the_business_desc:0 ""
+
+ TEX_anti_corrupation_methods:0 "Anti Corruption Methods"
+ TEX_anti_corrupation_methods_desc:0 ""
+
+ TEX_top_to_bottom:0 "Top To Bottom"
+ TEX_top_to_bottom_desc:0 ""
+
+ TEX_destroy_corporate_plots:0 "Destroy Corporate Plots"
+ TEX_destroy_corporate_plots_desc:0 ""
+
+ TEX_we_know_what_theyre_hiding:0 "We Know What They're Hiding"
+ TEX_we_know_what_theyre_hiding_desc:0 ""
+
+ ##decisions
+ TEX_lower_oil_impact:0 "This will lower our dependency on oil."
+ TEX_raise_oil_impact:0 "This will raise our dependency on oil."
+
+ TEX_divert_oil_investments:0 "Divert Oil Investments"
+ TEX_raise_oil_prices:0 "Raise Oil Prices"
+ TEX_invest_in_transportation:0 "Invest In Transportation"
+ TEX_support_oil_unions:0 "Support Oil Unions"
+ TEX_limit_civilian_usage:0 "Limit Civilian Usage"
+ TEX_open_more_oil_jobs:0 "Open More Oil Jobs"
+ TEX_support_humble_oil:0 "Support Humble Oil"
+ TEX_invest_in_beaumont:0 "Invest In Beaumont"
+ TEX_attract_immigration_to_oil_cities:0 "Attract Immigration To Oil Cities"
+
+ TEX_minimal:0 "§Yminimal§!."
+ TEX_tiny:0 "§Yvery low§!."
+ TEX_small:0 "§Ylittle§!."
+ TEX_medium:0 "§Ymoderate§!."
+ TEX_large:0 "§Ylarge§!."
+ TEX_huge:0 "§Ysignificant§!."
+
+ TEX_well_be_fine:0 "§Gfine§!."
+ TEX_minimal_harm:0 "§Ghardly impacted§!."
+ TEX_scaved:0 "§Yscaved§!."
+ TEX_hurt:0 "§Yhurt§!."
+ TEX_significantly_weakened:0 "§Rsignificantly weakened§!."
+ TEX_cripelled:0 "§Rruined§!."
+
+ TEX_oil_dependence:0 "Oil Dependency"
+ TEX_oil_dependence_desc:0 "The white menace\n\nOur oil reliancy is [Get.TEX_oil_loc_rely]\n\nIf oil were to crash we would be [Get.TEX_oil_loc_reality]"
+ 
+ ## Events
+ 
+ NTO.1.t:0 "The Land of the Lone Star"
+ NTO.1.desc:0 "Years and years ago, when Little Texas was but a young nation, the NTO protected it from those who wished to damage it. Protected it from those who wished to extinguish the lone star, those who wished to ruin Texas. First and foremost, were the Mexicans. The Mexicans were and still are but cutthroats savages, seeing their nation as first and foremost as opposed to those of a white man’s. Now, at the time, the anglos helped us, protected us. But they turned out to be turncoats, who trapped Texas in their Imperial claws for years on end.\n\nBut Texas lives for its independence. As untempered farming methods caused giant dust storms, destroying Texan farmlands, and as Spindletop’s grand oil empire stagnated, the weak Texan government faltered, and the Natural Texas Organisation took control. The NTO is not a united system, of course. It has cracks, and factions. But the NTO agrees on one thing. Texas shall be truly free, by hook or by crook. We shall rule the south, and nothing will stand in our way!"
+ NTO.1.a:0 "Texas, Our Texas!"
+ 

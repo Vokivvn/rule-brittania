@@ -1,0 +1,45 @@
+#######################
+#### Louisiana tree ###
+#######################
+
+focus_tree = {
+	id = LOU_Oscar_Allen_Governorship_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LOU
+		}
+	}
+	default = no
+	shared_focus = LOU_Oscar_Allen_Governorship
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = LOU_Death_Of_A_Real_One_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LOU
+		}
+	}
+	default = no
+	shared_focus = LOU_Death_Of_Allen
+	continuous_focus_position = { x = 5000 y = 2000 }
+}
+
+focus_tree = {
+	id = LOU_Lib1War_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LOU
+		}
+	}
+	default = no
+	shared_focus = LOU_Lib1War_Focusing_On_The_East
+	continuous_focus_position = { x = 5000 y = 2000 }
+}

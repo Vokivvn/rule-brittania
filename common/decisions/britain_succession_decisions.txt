@@ -1,0 +1,208 @@
+ENG_parliament_versus_monarch_system = {
+}
+
+ENG_the_investigation = {
+	INV_the_murder_weapon = {
+		available = {
+			NOT = {
+				has_country_flag = ENG_investigating
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.6 days = 8 } 
+				set_country_flag = ENG_investigating
+			}
+		}
+	}
+	INV_the_motive = {
+		available = {
+			NOT = {
+				has_country_flag = ENG_investigating
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.7 days = 8 } 
+				set_country_flag = ENG_investigating
+			}
+		}
+	}
+	INV_the_assassins_day = {
+		available = {
+			NOT = {
+				has_country_flag = ENG_investigating
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.8 days = 8 } 
+				set_country_flag = ENG_investigating
+			}
+		}
+	}
+	INV_the_assassins_associates = {
+		available = {
+			NOT = {
+				has_country_flag = ENG_investigating
+			}
+		}
+		ai_will_do = {
+			factor = 4
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.9 days = 8 } 
+				set_country_flag = ENG_investigating
+			}
+		}
+	}
+	INV_the_kings_day = {
+		available = {
+			NOT = {
+				has_country_flag = ENG_investigating
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.10 days = 8 } 
+				set_country_flag = ENG_investigating
+			}
+		}
+	}
+	INV_the_assassins_work = {
+		available = {
+			NOT = {
+				has_country_flag = ENG_investigating
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.11 days = 8 } 
+				set_country_flag = ENG_investigating
+			}
+		}
+	}
+	INV_the_assassins_invitation = {
+		available = {
+			NOT = {
+				has_country_flag = ENG_investigating
+			}
+		}
+		ai_will_do = {
+			factor = 4
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.12 days = 8 } 
+				set_country_flag = ENG_investigating
+			}
+		}
+	}
+	INV_the_events_security = {
+		available = {
+			NOT = {
+				has_country_flag = ENG_investigating
+			}
+		}
+		ai_will_do = {
+			factor = 4
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.13 days = 8 } 
+				set_country_flag = ENG_investigating
+			}
+		}
+	}
+	INV_end_of_the_investigation = {
+		allowed = {
+			tag = ENG
+		}
+		available = { has_country_flag = ENG_investigation_completed }
+		activation = { has_country_flag = fuck_you_game }
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			ENG = {
+				country_event = { id = eng_inv.30 days = 7 }
+			}
+		}
+	}
+}
+
+ENG_collected_evidence = {
+	Evidence_the_murder_weapon = {
+		visible = {
+			has_country_flag = ENG_evidence_the_murder_weapon
+		}
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.37 }
+			}
+		}
+	}
+	Evidence_the_assassin = {
+		visible = {
+			has_country_flag = ENG_evidence_the_assassins_life
+		}
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.38 }
+			}
+		}
+	}
+	Evidence_the_motive = {
+		visible = {
+			has_country_flag = ENG_evidence_the_motive
+		}
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.39 }
+			}
+		}
+	}
+	Evidence_the_event = {
+		visible = {
+			has_country_flag = ENG_evidence_the_event
+		}
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.40 }
+			}
+		}
+	}
+	Evidence_the_crime = {
+		visible = {
+			has_country_flag = ENG_evidence_the_crime
+		}
+		complete_effect = {
+			ENG = {
+				country_event = { id = eng_inv.41 }
+			}
+		}
+	}
+}

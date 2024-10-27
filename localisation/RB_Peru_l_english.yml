@@ -1,0 +1,12 @@
+﻿l_english:
+ ##Country Names##
+ BOL_despotism:0 "Protectorate of Peru"
+ BOL_despotism_DEF:0 "The Protectorate of Peru"
+ BOL_despotism_ADJ:0 "Peruvian"
+
+ ##Party Names##
+ BOL_despotism_party:0 "Peru Party"
+ BOL_despotism_party_long:0 "Peru Party"
+
+ BOL_mines_work_conditions:0 "Mines Work Conditions"
+ BOL_criminal_organizations:0 "Criminal Organizations"

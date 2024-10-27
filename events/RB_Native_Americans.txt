@@ -1,0 +1,708 @@
+﻿add_namespace = SHW
+add_namespace = deskaheh
+
+country_event = { #idk
+	id = SHW.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.1"}
+	title = SHW.1.t
+	desc = SHW.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #annexation by louisiana/cna
+	id = SHW.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.2"}
+	title = SHW.2.t
+	desc = SHW.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #flee to choctaw
+		name = SHW.2.a
+		ai_chance = { factor = 1 }
+		CCT = { 
+			change_tag_from = SHW
+		}
+		CCT = {
+			add_ideas = SHW_rising_radicalism
+			add_popularity = {
+				ideology = cromwellianism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = marxism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.1
+			}
+			set_party_name = {
+				ideology = cromwellianism
+				name = SHW_cromwellianism_party
+				long_name = SHW_cromwellianism_party_long
+			}
+			set_party_name = {
+				ideology = marxism
+				name = SHW_marxism_party
+				long_name = SHW_marxism_party_long
+			}
+			set_party_name = {
+				ideology = nationalism
+				name = SHW_nationalism_party
+				long_name = SHW_nationalism_party_long
+			}
+		}
+		#CSW = {
+		#	country_event = {
+		#		id = 
+		#		days = 
+		#	}
+		#}
+		if = {
+			limit = {
+				check_variable = {
+					CNA_influence_shawnee > louisiana_influence_shawnee
+				}
+			}
+			CNA = {
+				country_event = {
+					id = SHW.3
+					days = 1
+				}
+			}
+			LOU = {
+				country_event = {
+					id = SHW.4
+					days = 1
+				}
+			}
+		}
+		else = {
+			LOU = {
+				country_event = {
+					id = SHW.3
+					days = 1
+				}
+			}
+			CNA = {
+				country_event = {
+					id = SHW.4
+					days = 1
+				}
+			}
+		}
+	}
+	option = { #flee to chickasaw
+		name = SHW.2.b
+		ai_chance = { factor = 1 }
+		CSW = { 
+			change_tag_from = SHW
+		}
+		CSW = {
+			add_ideas = SHW_rising_radicalism
+			add_popularity = {
+				ideology = cromwellianism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = marxism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.1
+			}
+			set_party_name = {
+				ideology = cromwellianism
+				name = SHW_cromwellianism_party
+				long_name = SHW_cromwellianism_party_long
+			}
+			set_party_name = {
+				ideology = marxism
+				name = SHW_marxism_party
+				long_name = SHW_marxism_party_long
+			}
+			set_party_name = {
+				ideology = nationalism
+				name = SHW_nationalism_party
+				long_name = SHW_nationalism_party_long
+			}
+		}
+		#CCT = {
+		#	country_event = {
+		#		id = 
+		#		days = 
+		#	}
+		#}
+		if = {
+			limit = {
+				check_variable = {
+					CNA_influence_shawnee > louisiana_influence_shawnee
+				}
+			}
+			CNA = {
+				country_event = {
+					id = SHW.3
+					days = 1
+				}
+			}
+			LOU = {
+				country_event = {
+					id = SHW.4
+					days = 1
+				}
+			}
+		}
+		else = {
+			LOU = {
+				country_event = {
+					id = SHW.3
+					days = 1
+				}
+			}
+			CNA = {
+				country_event = {
+					id = SHW.4
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #louisiana/cna annex shawnee
+	id = SHW.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.3"}
+	title = SHW.3.t
+	desc = SHW.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.3.a
+		ai_chance = { factor = 1 }
+		transfer_state = 840
+		add_political_power = 50
+	}
+}
+
+country_event = { #we failed
+	id = SHW.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.4"}
+	title = SHW.4.t
+	desc = SHW.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.4.a
+		ai_chance = { factor = 1 }
+		add_political_power = -50
+		hidden_effect = {
+			country_event = {
+				id = SHW.5
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = { #find deskaheh
+	id = SHW.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.5"}
+	title = SHW.5.t
+	desc = SHW.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.5.a
+		ai_chance = { factor = 1 }
+		add_political_power = -50
+		if = {
+			limit = {
+				CSW = {
+					has_idea = SHW_rising_radicalism
+				}
+			}
+			CCT = {
+				country_event = {
+					id = SHW.6
+					days = 1
+				}
+			}
+		}
+		else = {
+			CSW = {
+				country_event = {
+					id = SHW.6
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #demands to capture deskaheh
+	id = SHW.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.6"}
+	title = SHW.6.t
+	desc = SHW.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #but he's not in our territory
+		name = SHW.6.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				CNA = {
+					owns_state = 840
+				}
+			}
+			LOU = {
+				country_event = {
+					id = SHW.7
+					days = 2
+				}
+			}
+		}
+		else = {
+			CNA = {
+				country_event = {
+					id = SHW.7
+					days = 2
+				}
+			}
+		}
+	}
+}
+
+country_event = { #guess we better march in
+	id = SHW.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.7"}
+	title = SHW.7.t
+	desc = SHW.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #but he's not in our territory
+		name = SHW.7.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				CSW = {
+					has_idea = SHW_rising_radicalism
+				}
+			}
+			transfer_state = 819
+			hidden_effect = {
+				CSW = {
+					country_event = {
+						id = SHW.8
+						days = 1
+					}
+				}
+			}
+		}
+		else = {
+			transfer_state = 370
+			hidden_effect = {
+				CCT = {
+					country_event = {
+						id = SHW.8
+						days = 1
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_stability = -0.03
+		}
+	}
+}
+
+country_event = { #help
+	id = SHW.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.8"}
+	title = SHW.8.t
+	desc = SHW.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.8.a
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+			remove_idea = SHW_rising_radicalism
+			add_idea = SHW_rising_radicalism_2
+		}
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = { #education
+	id = SHW.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.11"}
+	title = SHW.11.t
+	desc = SHW.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.11.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.02
+		}
+	}
+}
+
+country_event = { #roads
+	id = SHW.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.12"}
+	title = SHW.12.t
+	desc = SHW.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.12.a
+		ai_chance = { factor = 1 }
+		840 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.02
+		}
+	}
+}
+
+country_event = { #tobacco deal
+	id = SHW.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.13"}
+	title = SHW.13.t
+	desc = SHW.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.13.a
+		ai_chance = { factor = 1 }
+		840 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #shawnee pls
+	id = SHW.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.14"}
+	title = SHW.14.t
+	desc = SHW.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SHW.14.a
+		ai_chance = { factor = 1 }
+		add_political_power = -25
+		add_manpower = -1500
+	}
+}
+
+country_event = { #omg louisiana pulls ahead
+	id = SHW.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SHW.15"}
+	title = SHW.15.t
+	desc = SHW.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		check_variable = { louisiana_influence_shawnee = CNA_influence_shawnee }
+	}
+	
+	option = { #
+		name = SHW.15.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = SHW_tooltip_plus_louisiana
+		add_to_variable = { louisiana_influence_shawnee = 10 }
+	}
+}
+
+country_event = { #deskaheh launches coup
+	id = deskaheh.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event deskaheh.1"}
+	title = deskaheh.1.t
+	desc = deskaheh.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = deskaheh.1.a
+		ai_chance = { factor = 1 }
+		ROOT = {
+			save_global_event_target_as = deskaheh_tag
+		}
+		swap_ideas = {
+			remove_idea = SHW_rising_radicalism_2
+			add_idea = SHW_deskahehs_takeover
+		}
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = administrationism
+			popularity = -0.5
+		}
+		set_politics = {
+			ruling_party = marxism
+		}
+		if = {
+			limit = {
+				tag = CCT
+			}
+			create_country_leader = {
+				name = "Deskaheh"
+				#desc = 
+				picture = "gfx/leaders/CCT/Portrait_CCT_Deskaheh.dds"
+				expire = "1999.12.12"
+				ideology = marxism_subtype
+				traits = {
+				}
+			}
+		}
+		else = {
+			create_country_leader = {
+				name = "Deskaheh"
+				#desc = 
+				picture = "gfx/leaders/CSW/Portrait_CSW_Deskaheh.dds"
+				expire = "1999.12.12"
+				ideology = marxism_subtype
+				traits = {
+				}
+			}
+		}
+		swap_ideas = {
+			remove_idea = british_econ_dominance
+			add_idea = expelled_british_econ_influence
+		}
+		swap_ideas = {
+			remove_idea = british_pol_dominance
+			add_idea = british_pol_independence
+		}
+		swap_ideas = {
+			remove_idea = british_influenced_forces
+			add_idea = british_independent_forces
+		}
+		RB_anti_anglo_effects = yes
+		set_cosmetic_tag = deskaheh_confederacy
+		country_event = {
+			id = deskaheh.2
+			days = 3
+		}
+	}
+}
+
+country_event = { #unite the reservations
+	id = deskaheh.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event deskaheh.2"}
+	title = deskaheh.2.t
+	desc = deskaheh.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = deskaheh.2.a
+		ai_chance = { factor = 1 }
+		transfer_state = 370
+		add_state_core = 370
+		transfer_state = 819
+		add_state_core = 819
+		transfer_state = 840
+		add_state_core = 840
+		hidden_effect = {
+			every_owned_state = {
+				add_claim_by = USA
+				add_claim_by = CNA
+				add_claim_by = LOU
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+		USA = {
+			country_event = {
+				id = deskaheh.3
+				days = 1
+			}
+		}
+		CNA = {
+			country_event = {
+				id = deskaheh.3
+				days = 1
+			}
+		}
+		if = {
+			limit = {
+				LOU = {
+					NOT = {
+						has_government = cromwellianism
+					}
+				}
+			}
+			LOU = {
+				country_event = {
+					id = deskaheh.3
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #fucking natives
+	id = deskaheh.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event deskaheh.3"}
+	title = deskaheh.3.t
+	desc = deskaheh.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = deskaheh.3.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				country_exists = CCT
+			}
+			declare_war_on = {
+				target = CCT
+				type = annex_everything
+			}
+		}
+		else = {
+			declare_war_on = {
+				target = CSW
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = { #levy makes a deal
+	id = deskaheh.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event deskaheh.4"}
+	title = deskaheh.4.t
+	desc = deskaheh.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = deskaheh.4.a
+		ai_chance = { factor = 1 }
+		white_peace = USA
+		USA = {
+			create_faction = "American Revolutionary Alliance"
+			add_to_faction = event_target:deskaheh_tag
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

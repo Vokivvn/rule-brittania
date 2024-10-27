@@ -1,0 +1,127 @@
+defined_text = {
+	name = TEX_oil_loc_rely
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 0 }
+		}
+		localization_key = TEX_minimal
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY = 0 }
+		}
+		localization_key = TEX_minimal
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 2 }
+			NOT = {
+			check_variable = { TEX_OIL_RELY < 4 }
+			}
+		}
+		localization_key = TEX_tiny
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 4 }
+			NOT = {
+			check_variable = { TEX_OIL_RELY < 6 }
+			}
+		}
+		localization_key = TEX_small
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 6 }
+			NOT = {
+			check_variable = { TEX_OIL_RELY < 8 }
+			}
+		}
+		localization_key = TEX_medium
+	}	
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 8 }
+			NOT = {
+				check_variable = { TEX_OIL_RELY = 10 }
+			}
+		}
+		localization_key = TEX_large
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY = 10 }
+		}
+		localization_key = TEX_huge
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY > 10 }
+		}
+		localization_key = TEX_huge
+	}	
+}
+
+defined_text = {
+	name = TEX_oil_loc_reality
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 0 }
+		}
+		localization_key = TEX_well_be_fine
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY = 0 }
+		}
+		localization_key = TEX_well_be_fine
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 2 }
+			NOT = {
+			check_variable = { TEX_OIL_RELY < 4 }
+			}
+		}
+		localization_key = TEX_minimal_harm
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 4 }
+			NOT = {
+			check_variable = { TEX_OIL_RELY < 6 }
+			}
+		}
+		localization_key = TEX_scaved
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 6 }
+			NOT = {
+			check_variable = { TEX_OIL_RELY < 8 }
+			}
+		}
+		localization_key = TEX_hurt
+	}	
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY < 8 }
+			NOT = {
+				check_variable = { TEX_OIL_RELY = 10 }
+			}
+		}
+		localization_key = TEX_significantly_weakened
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY = 10 }
+		}
+		localization_key = TEX_cripelled
+	}
+	text = {
+		trigger = {
+			check_variable = { TEX_OIL_RELY > 10 }
+		}
+		localization_key = TEX_cripelled
+	}	
+}

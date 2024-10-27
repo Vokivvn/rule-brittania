@@ -1,0 +1,62 @@
+add_namespace = bad
+
+country_event = { #baden revolution
+	id = bad.1
+	title = bad.1.t
+	desc = bad.1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bad.1"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = bad.1.a
+		set_politics = {
+			ruling_party = nationalism		
+			elections_allowed = no
+		}
+		set_cosmetic_tag = BAD_NAT
+		remove_ideas = ger_eng_ger_economic_initiative
+		remove_ideas = BAD_Revolutionary_Hotbed
+		remove_ideas = BAD_Corrupt_Royal_Government
+		remove_ideas = BAD_Down_With_Grand_Duke
+		end_puppet = SWE
+		leave_faction = yes
+		clr_country_flag = RB_anglo_loyalist
+		RB_calculate_anglo_control = yes
+		MUN = {
+			country_event = {
+			id = bad.2
+			days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Munster takes westfalen
+	id = bad.2
+	title = bad.2.t
+	desc = bad.2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bad.2"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		transfer_state = 57
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+}

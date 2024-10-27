@@ -1,0 +1,33 @@
+
+state={
+	id=381
+	name="STATE_381"
+	resources={
+		steel=12.000
+	}
+
+	history={
+		owner = CNA
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 3
+			6732 = {
+				naval_base = 8
+            
+			}
+		}
+		add_core_of = CNA
+		victory_points = {
+			6732 40 
+		}
+	}
+
+	provinces={
+		6732 
+	}
+	manpower=1081188
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

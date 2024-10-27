@@ -1,0 +1,15 @@
+##################################
+##====| Mexican Insurgency |====##
+##===========| Raids |==========##
+##################################
+defined_text = { 
+	name = GetMEX_raid_aar_selection
+	text = {
+		trigger = { NOT = { has_country_flag = MEX_ENG_insurgency_dont_get_raid_aar } }
+		localization_key = GetMEX_raid_aar_selection_no
+	}
+	text = {
+		trigger = { has_country_flag = MEX_ENG_insurgency_dont_get_raid_aar }
+		localization_key = GetMEX_raid_aar_selection_yes
+	}
+}

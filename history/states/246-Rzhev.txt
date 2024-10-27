@@ -1,0 +1,28 @@
+
+state={
+	id=246
+	name="STATE_246"
+	resources={
+		steel=16.000
+	}
+
+	history={
+		owner = RUS
+		victory_points = {
+			11349 1 
+		}
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		187 226 287 333 335 2999 3101 3215 3279 3321 6303 6387 9242 9265 9272 9333 9343 9382 9399 11224 11254 11315 11326 11349 11384 
+	}
+	manpower=1025458
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

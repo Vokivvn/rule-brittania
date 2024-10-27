@@ -1,0 +1,99 @@
+﻿l_english:
+
+ #################################
+ ##======| Country Names |======##
+ ##============|  |=============##
+ #################################
+ EDS_nationalism: "Ejército del Sur"
+ EDS_nationalism_ADJ: "Sureña"
+ EDS_nationalism_DEF: "El Ejército para la Liberación del Sur"
+
+ EDS_despotism: "Ejército del Sur"
+ EDS_despotism_ADJ: "Sureña"
+ EDS_despotism_DEF: "El Ejército para la Liberación del Sur"
+ 
+ EDS_absolutism: "Ejército del Sur"
+ EDS_absolutism_ADJ: "Sureña"
+ EDS_absolutism_DEF: "El Ejército para la Liberación del Sur"
+
+ EDS_administrationism: "Ejército del Sur"
+ EDS_administrationism_ADJ: "Sureña"
+ EDS_administrationism_DEF: "El Ejército para la Liberación del Sur"
+
+ EDS_parliamentarianism: "Ejército del Sur"
+ EDS_parliamentarianism_ADJ: "Sureña"
+ EDS_parliamentarianism_DEF: "El Ejército para la Liberación del Sur"
+
+ EDS_republicanism: "Ejército del Sur"
+ EDS_republicanism_ADJ: "Sureña"
+ EDS_republicanism_DEF: "El Ejército para la Liberación del Sur"
+ 
+ EDS_liberalism: "Ejército del Sur"
+ EDS_liberalism_ADJ: "Sureña"
+ EDS_liberalism_DEF: "El Ejército para la Liberación del Sur"
+
+ EDS_marxism: "Ejército del Sur"
+ EDS_marxism_ADJ: "Sureña"
+ EDS_marxism_DEF: "El Ejército para la Liberación del Sur"
+ 
+ EDS_cromwellianism: "Ejército del Sur"
+ EDS_cromwellianism_ADJ: "Sureña"
+ EDS_cromwellianism_DEF: "El Ejército para la Liberación del Sur"
+
+ #################################
+ ##=======| Party Names |=======##
+ ##===========| :) |============##
+ #################################
+ EDS_cromwellianism_party: "ELS - CR"
+ EDS_cromwellianism_party_long: "Ejército para la Liberación del Sur - Camisas Rojas"
+ EDS_cromwellianism_party_desc: "-"
+
+ EDS_marxism_party: "ELS - MCM"
+ EDS_marxism_party_long: "Ejército para la Liberación del Sur - Milicia Campesina Mapachista"
+ EDS_marxism_party_desc: "-"
+
+ EDS_liberalism_party: "ELS - MAM"
+ EDS_liberalism_party_long: "Ejército para la Liberación del Sur - Movimiento Armado Mapachista"
+ EDS_liberalism_party_desc: "-"
+
+ EDS_republicanism_party: "Camisas Rojas"
+ EDS_republicanism_party_long: "Camisas Rojas"
+ EDS_republicanism_party_desc: "-"
+
+ EDS_parliamentarianism_party: "Camisas Rojas"
+ EDS_parliamentarianism_party_long: "Camisas Rojas"
+ EDS_parliamentarianism_party_desc: "-"
+
+ EDS_administrationism_party: "Camisas Rojas"
+ EDS_administrationism_party_long: "Camisas Rojas"
+ EDS_administrationism_party_desc: "-"
+
+ EDS_absolutism_party: "Camisas Rojas"
+ EDS_absolutism_party_long: "Camisas Rojas"
+ EDS_absolutism_party_desc: "-"
+
+ EDS_despotism_party: "Camisas Rojas"
+ EDS_despotism_party_long: "Camisas Rojas"
+ EDS_despotism_party_desc: "-"
+
+ EDS_nationalism_party: "Camisas Rojas"
+ EDS_nationalism_party_long: "Camisas Rojas"
+ EDS_nationalism_party_desc: "-"
+
+ #################################
+ ##===| Leader Descriptions |===##
+ ##===========| :) |============##
+ #################################
+ LEADER_DESC_EDS_TOMAS_GARRIDO_CANABAL: ""
+ LEADER_DESC_EDS_TIBURCIO_FERNANDEZ_RUIZ: ""
+ LEADER_DESC_EDS_MCM: "El Pueblo de Chiapas"
+
+ #################################
+ ##====| Idea Localization |====##
+ ##===========| :) |============##
+ #################################
+ EDS_Ejercito_de_la_Liberacion: "Ejercito de la Liberación"
+ EDS_Ejercito_de_la_Razon: "Ejercito de la Razón"
+ EDS_Ejercito_de_la_Justicia: "Ejército de la Justicia"
+ EDS_Ejercito_del_Campesinado: "Ejército del Campesinado"
+ EDS_Two_Chiefs_Three_Armies: "Two Chiefs, Three Armies"

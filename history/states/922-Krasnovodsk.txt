@@ -1,0 +1,19 @@
+state={
+	id=922
+	name="STATE_922"
+	
+	history={
+		owner = TCS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TCS
+	}
+	
+	provinces={
+		1593 7477 7563 10359 10406 12359 
+	}
+	manpower=138194
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

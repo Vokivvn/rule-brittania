@@ -1,0 +1,347 @@
+####################
+#Czechia Intro Tree#
+####################
+
+shared_focus = {
+	id = CZE_Intro_Jan_Masaryk
+	icon = GFX_goal_unknown
+	cost = 5
+	x = 4
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Jan_Masaryk"
+		country_event = CZE.1
+	}
+
+}
+shared_focus = {
+	id = CZE_Intro_Sedmicka
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Jan_Masaryk
+	}
+	x = 2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Sedmicka"
+		country_event = CZE.2
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Masaryk_First_Speech
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Jan_Masaryk
+	}
+	x = 6
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Masaryk_First_Speech"
+		country_event = CZE.3
+	}
+}
+shared_focus = {
+	id = CZE_Intro_New_Chapter
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Sedmicka
+	}
+	prerequisite = {
+		focus = CZE_Intro_Masaryk_First_Speech
+	}
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_New_Chapter"
+		country_event = CZE.4
+	}
+}
+shared_focus = {
+	id = CZE_Intro_A_Heavy_Problem
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_New_Chapter
+	}
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_A_Heavy_Problem"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Lobby_Aboard
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_A_Heavy_Problem
+	}
+	x = 1
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Lobby_Aboard"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Lobby_In_London
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Lobby_Aboard
+	}
+	x = 0
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Lobby_In_London"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Convince_British_Elites
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Lobby_In_London
+	}
+	x = 0
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Convince_British_Elites"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Lobby_In_Vienna
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Lobby_Aboard
+	}
+	x = 2
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Lobby_In_Vienna"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Rouse_Austrian_SocDems
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Lobby_In_Vienna
+	}
+	x = 2
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Rouse_Austrian_SocDems"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Sudeten_Popular_Support
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_A_Heavy_Problem
+	}
+	x = 4
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Sudeten_Popular_Support"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Art_Of_Compromise
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Sudeten_Popular_Support
+	}
+	x = 4
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Art_Of_Compromise"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_The_Liberec_Meeting
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Art_Of_Compromise
+	}
+	x = 4
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_The_Liberec_Meeting"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_German_Aristrocracy
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_A_Heavy_Problem
+	}
+	x = 7
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_German_Aristrocracy"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Be_Chill
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_German_Aristrocracy
+	}
+	mutually_exclusive = {
+		focus = CZE_Intro_Be_Not_Chill
+	}
+	x = 6
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Be_Chill"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Sway_Them_To_Our_Side
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Be_Chill
+	}
+	x = 6
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Sway_Them_To_Our_Side"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Be_Not_Chill
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_German_Aristrocracy
+	}
+	mutually_exclusive = {
+		focus = CZE_Intro_Be_Chill
+	}
+	x = 8
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Be_Not_Chill"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Hampl_Idea
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Be_Not_Chill
+	}
+	x = 8
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Hampl_Idea"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Victory
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Convince_British_Elites
+	}
+	prerequisite = {
+		focus = CZE_Intro_Rouse_Austrian_SocDems
+	}
+	prerequisite = {
+		focus = CZE_Intro_The_Liberec_Meeting
+	}
+	prerequisite = {
+		focus = CZE_Intro_Sway_Them_To_Our_Side
+		focus = CZE_Intro_Hampl_Idea
+	}
+	mutually_exclusive = {
+		focus = CZE_Intro_Defeat
+	}
+	x = 2
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Victory"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Do_You_Believe_In_Gravity
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Victory
+	}
+	x = 2
+	y = 8
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Do_You_Believe_In_Gravity"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Defeat
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Convince_British_Elites
+	}
+	prerequisite = {
+		focus = CZE_Intro_Rouse_Austrian_SocDems
+	}
+	prerequisite = {
+		focus = CZE_Intro_The_Liberec_Meeting
+	}
+	prerequisite = {
+		focus = CZE_Intro_Sway_Them_To_Our_Side
+		focus = CZE_Intro_Hampl_Idea
+	}
+	mutually_exclusive = {
+		focus = CZE_Intro_Victory
+	}
+	x = 6
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Defeat"
+	}
+}
+shared_focus = {
+	id = CZE_Intro_Damage_The_Pull
+	icon = GFX_goal_unknown
+	cost = 1
+	prerequisite = {
+		focus = CZE_Intro_Defeat
+	}
+	x = 6
+	y = 8
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZE_Intro_Damage_The_Pull"
+	}
+}

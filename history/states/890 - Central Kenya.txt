@@ -1,0 +1,19 @@
+state={
+	id=890
+	name="STATE_890" #Central Kenya
+	manpower = 459731
+	
+	state_category = rural
+
+	history={
+		owner = KEN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = KEN
+	}
+
+	provinces={
+		10761 10962
+	}
+}

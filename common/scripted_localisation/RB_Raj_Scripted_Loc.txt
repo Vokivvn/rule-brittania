@@ -1,0 +1,27 @@
+defined_text = {
+	name = RAJ_Military_Influence_Loc
+	text = {
+		trigger = {
+			has_country_flag = RAJ_Influence_Mechanic_Active_flag
+		}
+		localization_key = RAJ_Military_Influence
+	}
+}
+defined_text = {
+	name = RAJ_Corporate_Influence_Loc
+	text = {
+		trigger = {
+			has_country_flag = RAJ_Influence_Mechanic_Active_flag
+		}
+		localization_key = RAJ_Corporate_Influence
+	}
+}
+defined_text = {
+	name = RAJ_INC_Influence_Loc
+	text = {
+		trigger = {
+			has_country_flag = RAJ_Influence_Mechanic_Active_flag
+		}
+		localization_key = RAJ_INC_Influence
+	}
+}

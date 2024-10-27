@@ -1,0 +1,197 @@
+﻿l_english:
+
+#####################
+##The Henry IX Tree##
+#####################
+
+ ENG_HenryIX_Kingd_SOminion:0 "The King's Dominion"
+ ENG_HenryIX_Kingd_SOminion_desc:0 ""
+ 
+ ENG_HenryIX_Crown_Colonies:0 "The Territories of the Crown"
+ ENG_HenryIX_Crown_Colonies_desc:0 ""
+
+ ENG_HenryIX_Restore_Netherlands:0 "Restore Order in the Netherlands"
+ ENG_HenryIX_Restore_Netherlands_desc:0 ""
+
+ ENG_HenryIX_Keep_Nikolaus:0 "Keep Nikolaus"
+ ENG_HenryIX_Keep_Nikolaus_desc:0 ""
+
+ ENG_HenryIX_Dutch_Parliament:0 "Increase Power of the Tweede Kamer"
+ ENG_HenryIX_Dutch_Parliament_desc:0 ""
+
+ ENG_HenryIX_Reunite_Flanders:0 "Reunite Flanders"
+ ENG_HenryIX_Reunite_Flanders_desc:0 ""
+
+ ENG_HenryIX_Demand_Abdication:0 "Demand the Abdication"
+ ENG_HenryIX_Demand_Abdication_desc:0 ""
+
+ ENG_HenryIX_Dutch_Assistance:0 "Demand Dutch Assistance"
+ ENG_HenryIX_Dutch_Assistance_desc:0 ""
+
+ ENG_HenryIX_Dutch_Guard:0 "Increase the Royal Dutch Guard"
+ ENG_HenryIX_Dutch_Guard_desc:0 ""
+
+ ENG_HenryIX_East_Indies:0 "Renegotiate the East Indies"
+ ENG_HenryIX_East_Indies_desc:0 ""
+
+ ENG_HenryIX_Ireland_Sucks:0 "The Irish Trouble"
+ ENG_HenryIX_Ireland_Sucks_desc:0 ""
+
+ ENG_HenryIX_Ireland_Craig:0 "Appoint the Viscount Craigavon"
+ ENG_HenryIX_Ireland_Craig_desc:0 ""
+
+ ENG_HenryIX_Ban_Ireland:0 "Hush Ireland"
+ ENG_HenryIX_Ban_Ireland_desc:0 ""
+
+ ENG_HenryIX_Funnel_In_Money:0 "Funnel in Money"
+ ENG_HenryIX_Funnel_In_Money_desc:0 ""
+
+ ENG_HenryIX_Ireland_Hamilton:0 "Keep James Hamilton"
+ ENG_HenryIX_Ireland_Hamilton_desc:0 ""
+
+ ENG_HenryIX_Knights_Loyal_Irish_Guard:0 "The Knight's Loyal Irish Guard"
+ ENG_HenryIX_Knights_Loyal_Irish_Guard_desc:0 ""
+
+ ENG_HenryIX_Protestant_Committee:0 "Establish the Protestant Committee"
+ ENG_HenryIX_Protestant_Committee_desc:0 ""
+
+ ENG_HenryIX_Ireland_Rugby:0 "Appoint the Lord Rugby"
+ ENG_HenryIX_Ireland_Rugby_desc:0 ""
+
+ ENG_HenryIX_Meet_With_Fianna_FAIL:0 "Meet with Fianna Fáil"
+ ENG_HenryIX_Meet_With_Fianna_FAIL_desc:0 ""
+
+ ENG_HenryIX_Irish_Parliament:0 "Establish the Irish Parliament"
+ ENG_HenryIX_Irish_Parliament_desc:0 ""
+
+ ENG_HenryIX_Secure_Ireland:0 "Secure the Emerald Isle"
+ ENG_HenryIX_Secure_Ireland_desc:0 ""
+
+ ENG_HenryIX_Splendors_Colonialism:0 "The Splendors of Colonialism"
+ ENG_HenryIX_Splendors_Colonialism_desc:0 ""
+
+ ENG_HenryIX_Newfoundland_Question:0 "The Newfoundland Question"
+ ENG_HenryIX_Newfoundland_Question_desc:0 ""
+ 
+ ENG_HenryIX_Malta_Question:0 "The Malta Question"
+ ENG_HenryIX_Malta_Question_desc:0 ""
+ 
+ ENG_HenryIX_Iceland_Question:0 "The Iceland Question"
+ ENG_HenryIX_Iceland_Question_desc:0 ""
+ 
+ ENG_HenryIX_Imperial_Research_Institute:0 "The Imperial Research Institute"
+ ENG_HenryIX_Imperial_Research_Institute_desc:0 ""
+ 
+ ENG_HenryIX_Home_Rule_For_Dominions:0 "Home Rule for the Dominions"
+ ENG_HenryIX_Home_Rule_For_Dominions_desc:0 ""
+
+ ENG_HenryIX_Henrys_Bizzare_Adventure:0 "The Imperial Trip"
+ ENG_HenryIX_Henrys_Bizzare_Adventure_desc:0 ""
+
+ ENG_HenryIX_Masters_Of_Trade:0 "The Masters of Trade"
+ ENG_HenryIX_Masters_Of_Trade_desc:0 ""
+
+ ENG_HenryIX_Expand_Trading_Capabilities:0 "Expand Our Trading Capabilities"
+ ENG_HenryIX_Expand_Trading_Capabilities_desc:0 ""
+
+ ENG_HenryIX_EastIndies_Expansion:0 "Expand Batavia"
+ ENG_HenryIX_EastIndies_Expansion_desc:0 ""
+
+ ENG_HenryIX_EastAsia_Expansion:0 "Expand Shanghai"
+ ENG_HenryIX_EastAsia_Expansion_desc:0 ""
+
+ ENG_HenryIX_EastAfrica_Expansion:0 "Expand Mogadishu"
+ ENG_HenryIX_EastAfrica_Expansion_desc:0 ""
+
+ ENG_HenryIX_Constantinople_Expansion:0 "Expand Constantinople"
+ ENG_HenryIX_Constantinople_Expansion_desc:0 ""
+
+ ENG_HenryIX_Gibraltar_Expansion:0 "Expand Gibraltar"
+ ENG_HenryIX_Gibraltar_Expansion_desc:0 ""
+
+ ENG_HenryIX_Canton_Expansion:0 "Expand Canton"
+ ENG_HenryIX_Canton_Expansion_desc:0 "
+
+ ENG_HenryIX_Suez_Expansion:0 "Expand the Suez Canal"
+ ENG_HenryIX_Suez_Expansion_desc:0 ""
+
+ ENG_HenryIX_Nicaragua_Expansion:0 "Expand Nicaragua"
+ ENG_HenryIX_Nicaragua_Expansion_desc:0 ""
+
+ ENG_HenryIX_Singapore_Expansion:0 "Expand Singapore"
+ ENG_HenryIX_Singapore_Expansion_desc:0 ""
+
+ ENG_HenryIX_London_Expansion:0 "The Grand Expansion of London"
+ ENG_HenryIX_London_Expansion_desc:0 ""
+
+ ENG_HenryIX_Initial_Reactions_Great_Slump:0 "Initial Reactions"
+ ENG_HenryIX_Initial_Reactions_Great_Slump_desc:0 ""
+
+ ENG_HenryIX_Balance_Budget:0 "Balance the Budget"
+ ENG_HenryIX_Balance_Budget_desc:0 ""
+
+ ENG_HenryIX_Taxes:0 "Increase Taxes"
+ ENG_HenryIX_Taxes_desc:0 ""
+
+ ENG_HenryIX_Reduce_Interest_Rates:0 "Reduce Interest Rates"
+ ENG_HenryIX_Reduce_Interest_Rates_desc:0 ""
+
+ ENG_HenryIX_Tax_Shipping_Imports:0 "Tax Shipping Imports"
+ ENG_HenryIX_Tax_Shipping_Imports_desc:0 ""
+
+ ENG_HenryIX_Devolve_Colonies:0 "Devolve to the Colonies"
+ ENG_HenryIX_Devolve_Colonies_desc:0 ""
+
+ ENG_HenryIX_German_Aid:0 "Aid from the Germans"
+ ENG_HenryIX_German_Aid_desc:0 ""
+
+ ENG_HenryIX_Slash_Defensive_Budget:0 "Slash the Defensive Budget"
+ ENG_HenryIX_Slash_Defensive_Budget_desc:0 ""
+
+ ENG_HenryIX_Colonial_Commitment:0 "Our Colonial Commitments"
+ ENG_HenryIX_Colonial_Commitment_desc:0 ""
+
+ ENG_HenryIX_HBC_Bailout:0 "Bail Out the Hudson's Bay Company"
+ ENG_HenryIX_HBC_Bailout_desc:0 ""
+
+ ENG_HenryIX_Econ_Coop:0 "Increase Global Cooperation"
+ ENG_HenryIX_Econ_Coop_desc:0 ""
+
+ ENG_HenryIX_Soup_Kitchens:0 "Establish Soup Kitchens"
+ ENG_HenryIX_Soup_Kitchens_desc:0 ""
+
+ ENG_HenryIX_Labour_Reforms:0 "Labour Reforms"
+ ENG_HenryIX_Labour_Reforms_desc:0 ""
+
+ ENG_HenryIX_Educate_Britains_Children:0 "Educate the Children of Britannia"
+ ENG_HenryIX_Educate_Britains_Children_desc:0 ""
+
+ ENG_HenryIX_Checking_Off_The_List:0 "Checking Off the List"
+ ENG_HenryIX_Checking_Off_The_List_desc:0 ""
+
+ ENG_HenryIX_Econ_March:0 "The British Economy Marches On!"
+ ENG_HenryIX_Econ_March_desc:0 ""
+
+ ENG_HenryIX_Help_Counties:0 "Help the Counties"
+ ENG_HenryIX_Help_Counties_desc:0 ""
+
+ ENG_HenryIX_Northern_Industries:0 "The Northern Industries"
+ ENG_HenryIX_Northern_Industries_desc:0 ""
+
+ ENG_HenryIX_Shipping_Support:0 "Support the Shipping Industry"
+ ENG_HenryIX_Shipping_Support_desc:0 ""
+
+ ENG_HenryIX_Coal_Support:0 "Support the Coal Industry"
+ ENG_HenryIX_Coal_Support_desc:0 ""
+
+ ENG_HenryIX_Southern_Industries:0 "The Southern Industries"
+ ENG_HenryIX_Southern_Industries_desc:0 ""
+
+ ENG_HenryIX_Buoying_Home_Counties:0 "Buoying the Home Counties"
+ ENG_HenryIX_Buoying_Home_Counties_desc:0 ""
+
+ ENG_HenryIX_Mass_Production:0 "Mass Production"
+ ENG_HenryIX_Mass_Production_desc:0 ""
+
+ ENG_HenryIX_Increase_Industrialisation:0 "Increase Industrialisation"
+ ENG_HenryIX_Increase_Industrialisation_desc:0 ""

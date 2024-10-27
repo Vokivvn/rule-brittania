@@ -1,0 +1,21 @@
+state={
+	id=976
+	name="STATE_976"
+
+	history={
+		owner = TEX
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = TEX
+		add_core_of = MEX
+
+	}
+	provinces={
+		1927 4884 6798
+	}
+	manpower=62592
+	state_category=rural
+}

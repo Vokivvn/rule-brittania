@@ -1,0 +1,37 @@
+state={
+	id=955
+	name="STATE_955"
+	resources={
+		steel=11.000
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 2
+			964 = {
+				naval_base = 3
+			}	
+		}
+		victory_points = {
+			964 3
+		}
+		victory_points = {
+			6851 3
+		}
+		victory_points = {
+			6981 3
+		}
+	}
+
+	provinces={
+		836 892 964 3783 3839 3895 3970 6804 6851 6860 6910 6918 6981 9854
+	}
+
+	manpower=2164320
+	buildings_max_level_factor=1.000
+	state_category=city
+}

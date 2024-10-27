@@ -1,0 +1,157 @@
+﻿capital = 158
+
+add_ideas = {
+	PIE_dukes_retinue
+	PIE_anglo_coop
+	PIE_admiralty_content
+	PIE_guerra_cultura
+}
+
+set_research_slots = 2
+
+load_focus_tree = PIE_Starting_Tree
+
+set_stability = 0.5
+set_war_support = 0.1
+set_variable = { PIE_boat_launch_prep = 0 }
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 10
+    marxism = 0
+    liberalism = 0
+    republicanism = 0
+    parliamentarianism = 0
+    administrationism = 15
+    absolutism = 15
+    despotism = 50
+    nationalism = 10
+}
+
+set_cosmetic_tag = PIE_ENG
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+create_country_leader = {
+	name = "Ferdinando II"
+	desc = POLITICS_FERDINANDO_II_DESC
+	picture = "Portrait_PIE_Ferdinando_di_Savoia.dds"
+	expire = "1999.12.12"
+	ideology = despotism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Ferdinando II"
+	#desc = 
+	picture = "Portrait_PIE_Ferdinando_di_Savoia.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Ferdinando II"
+	#desc = 
+	picture = "Portrait_PIE_Ferdinando_di_Savoia.dds"
+	expire = "1999.12.12"
+	ideology = administrationism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Gabrielle D'Annunzio"
+	#desc = 
+	picture = "Portrait_PIE_radical_ciano.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Alfredo Fonte"
+	#desc = 
+	picture = "Portrait_PIE_Alfredo_Fonte.dds"
+	expire = "1999.12.12"
+	ideology = cromwellianism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Argo Secondari"
+	#desc = 
+	picture = "Portrait_PIE_radical_ciano.dds"
+	expire = "1999.12.12"
+	ideology = marxism_subtype
+	traits = {
+	}	
+}
+create_country_leader = {
+	name = "Ferrucio Parri"
+	#desc = 
+	picture = "Portrait_PIE_radical_ciano.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = {
+	}	
+}
+create_country_leader = {
+	name = "Oddo Biasini"
+	#desc = 
+	picture = "Portrait_PIE_radical_ciano.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = {
+	}	
+}
+create_country_leader = {
+	name = "Gieuseppe Pella"
+	#desc = 
+	picture = "Portrait_PIE_radical_ciano.dds"
+	expire = "1999.12.12"
+	ideology = parliamentarianism_subtype
+	traits = {
+	}	
+}

@@ -1,0 +1,39 @@
+﻿MEM_CAV_01 = {
+	name = "Einsatzstab Reichsleiter Rosenberg"
+
+	for_countries = { MEM }
+
+	can_use = { 
+		original_tag = MEM
+	}
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%d. Einsatzstab Reichsleiter Rosenberg"
+
+	ordered = {
+		1 = { "Sonderstab 'Ost'" }
+		2 = { "Sonderstab 'Memel'" }
+		3 = { "Sonderstab 'Litauen'" }
+		4 = { "Sonderstab 'Rosenberg'" }
+		5 = { "Sonderstab 'Sibrand'" }
+		6 = { "Sonderstab 'von Tunna'" }
+		8 = { "Sonderstab 'von Salza'" }
+		9 = { "Sonderstab 'von Feuchtwangen'" }
+		10 = { "Sonderstab 'von Jungungen'" }
+		11 = { "Sonderstab 'von Plauen'" }
+		12 = { "Sonderstab 'Culm'" }
+		13 = { "Sonderstab 'Pomesania'" }
+		14 = { "Sonderstab 'Ermland'" }
+		15 = { "Sonderstab 'Samland'" }
+		16 = { "Sonderstab 'Braunsberg'" }
+		17 = { "Sonderstab 'Danzig'" }
+		18 = { "Sonderstab 'Elbing'" }
+		19 = { "Sonderstab 'Twangste'" }
+		20 = { "Sonderstab 'Marienburg'" }
+		21 = { "Sonderstab 'Winrich'" }
+		22 = { "Sonderstab 'von Liebenfels'" }
+		23 = { "Sonderstab 'von List'" }
+		24 = { "Sonderstab 'Thule'" }
+	}
+}

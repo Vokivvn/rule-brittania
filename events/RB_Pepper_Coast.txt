@@ -1,0 +1,32 @@
+﻿add_namespace = sie
+
+country_event = {
+	id = sie.1
+	title = sie.1.t
+	desc = sie.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #let it pass
+		name = sie.1.a
+		ai_chance = { factor = 65 }
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 250
+			target = AFC
+		}
+		add_manpower = -250
+		hidden_effect = {
+			AFC = {
+				add_manpower = 250
+			}
+		}
+	}
+	option = { #no stop it
+		name = sie.1.a
+		ai_chance = { factor = 35 }
+		add_political_power = -50
+		add_stability = -0.01
+	}
+}

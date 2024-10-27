@@ -1,0 +1,71 @@
+focus_tree = {
+	id = TEX_Starting_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TEX
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1600 }
+	shared_focus = TEX_term_of_the_big_boy
+	shared_focus = TEX_an_army_of_nationals
+	shared_focus = TEX_meet_with_the_barniff_brothers
+	shared_focus = TEX_gulf_dominance
+	shared_focus = TEX_go_big
+}
+
+focus_tree = {
+	id = TEX_Transition_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TEX
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1600 }
+	shared_focus = TEX_williams_resigns
+	shared_focus = TEX_an_army_of_nationals
+	shared_focus = TEX_meet_with_the_barniff_brothers
+	shared_focus = TEX_gulf_dominance
+	shared_focus = TEX_go_big
+}
+
+focus_tree = {
+	id = TEX_republic
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TEX
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1600 }
+	shared_focus = TEX_republic_begins
+	shared_focus = TEX_an_army_of_nationals
+	shared_focus = TEX_meet_with_the_barniff_brothers
+	shared_focus = TEX_gulf_dominance
+	shared_focus = TEX_go_big
+}
+
+focus_tree = {
+	id = TEX_NTO_initial
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TEX
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 1600 }
+	shared_focus = TEX_for_a_natural_texas
+	shared_focus = TEX_an_army_of_nationals
+	shared_focus = TEX_meet_with_the_barniff_brothers
+	shared_focus = TEX_gulf_dominance
+	shared_focus = TEX_go_big
+}

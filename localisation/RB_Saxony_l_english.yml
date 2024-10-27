@@ -1,0 +1,41 @@
+﻿l_english:
+ #COUNTRY NAMES#
+ SAX_cromwellianism:0 "Dresden Commune"
+ SAX_cromwellianism_DEF:0 "The Dresden Commune"
+ SAX_marxism:0 "Republic of Saxony"
+ SAX_marxism_DEF:0 "The Republic of Saxony"
+ SAX_liberalism:0 "Kingdom of Saxony"
+ SAX_liberalism_DEF:0 "The Kingdom of Saxony"
+ SAX_republicanism:0 "Kingdom of Saxony"
+ SAX_republicanism_DEF:0 "The Kingdom of Saxony"
+ SAX_parliamentarianism:0 "Kingdom of Saxony"
+ SAX_parliamentarianism_DEF:0 "The Kingdom of Saxony"
+ SAX_administrationism:0 "Kingdom of Saxony"
+ SAX_administrationism_DEF:0 "The Kingdom of Saxony"
+ SAX_absolutism:0 "Kingdom of Saxony"
+ SAX_absolutism_DEF:0 "The Kingdom of Saxony"
+ SAX_despotism:0 "Kingdom of Saxony"
+ SAX_despotism_DEF:0 "The Kingdom of Saxony"
+ SAX_nationalism:0 "German Saxony"
+ SAX_nationalism_DEF:0 "The German State of Saxony"
+ SAX_cromwellianism_ADJ:0 "Saxon"
+ SAX_marxism_ADJ:0 "Saxon"
+ SAX_liberalism_ADJ:0 "Saxon"
+ SAX_republicanism_ADJ:0 "Saxon"
+ SAX_parliamentarianism_ADJ:0 "Saxon"
+ SAX_administrationism_ADJ:0 "Saxon"
+ SAX_despotism_ADJ:0 "Saxon"
+ SAX_nationalism_ADJ:0 "Saxon"
+ ##leaders 
+ DESCRIPTION_LEADER_GEORGE_II:0 "Georg von Wettin - A highly religious man, inspired by politics and philosophy almost as much as he’s inspired by his faith, leads the confederation.\n\nHis rule, along with his wife Marie Amelie of Sweden, saw a large decentralization of the Saxon power. However, many see him as nothing more than the continuation of a corrupt electoral system.\n\nAs a new year dawns upon the collection of fragmented states, it’s unknown wether George’s reforms to the political system will keep the duchies, principalities, and free cities together. If not, then the last Holy Roman legacy may be erased from the map for good. "
+
+
+ ## ideas
+ THR_decentralized_principals:0 "Decentalized Principalities"
+ THR_decentralized_principals_desc:0 "As the defunct, fractured Holy Roman Empire began to dissolve in the mid-1800s, the small states of Central Europe would find themselves overshadowed by their larger, more threatening neighbors.\n\nThe solution was to band together, under the relative might of the Kingdom of Saxony. Many aspects of the old government remained the same under the confederation, such as the fact that a monarch was elected under an assembly of many small principalities. However many problems of the old government had also stuck around, with a House of Wettin member winning every election since the confederation had been founded."
+
+ THR_saxon_supremacy:0 "Saxon Supremacy"
+ THR_saxon_supremacy_desc:0 "It is unquestioned that the Saxons are the true rulers of the confederation. Their size in land area and by extension, their economic and military strength, make them the only force able to stand against outside threats. This has allowed them to take effective economic and military control over other principalities. \n\nThe Saxons also maintain relationships with fellow House of  Wettin members, and thus have been able to sway every electoral vote in their favor, by securing votes from the Ernestine Duchies. This corrupt system has lead to disdain from non-Wettin states, including the Free Cities, as well as the Reuss and Schwarzburg principalities."
+
+ THR_scourge_of_nordhausen:0 "The Scourge of Nordhausen"
+ THR_scourge_of_nordhausen_desc:0 "Nordhausen is one of the two Free Imperial Cities within the confederation. Historically, they had been shoved off into the corner of the country, and with little political influence.\n\nThe status quo had been interrupted however, when in Winter of 1933, during the chaos of the fourth Anglo-French war. Generalleutnant Otto Helwig, commander of the Nordhausen Municipal Police Force and his small group of loyal soldiers, would captured the town hall and dissolve the city council.\n\nEver since, the small city has been operated as a police state. Fear and violence are utilized to keep unrest from the historically peaceful people in check."

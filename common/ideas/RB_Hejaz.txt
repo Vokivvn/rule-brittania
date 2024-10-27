@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		HEJ_Kingdom_of_Hejaz = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HEJ_Kingdom_of_Hejaz"}
+			allowed = { always = no }
+			picture = GFX_idea_HEJ_Kingdom_of_Hejaz
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			political_power_gain = -0.25
+			}
+		}
+		HEJ_Pilgrimage_Company = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HEJ_Pilgrimage_Company"}
+			allowed = { always = no }
+			picture = GFX_idea_HEJ_Pilgrimage_Company
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			stability_factor = -0.2
+			consumer_goods_factor = -0.05
+			war_support_factor = -0.1
+
+			}
+		}
+		HEJ_Hejazi_Opposition = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HEJ_Hejazi_Opposition"}
+			allowed = { always = no }
+			picture = GFX_idea_HEJ_Hejazi_Opposition
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			stability_factor = -0.05
+			}
+		}
+	}
+}

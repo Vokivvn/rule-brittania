@@ -1,0 +1,26 @@
+
+state={
+	id=481
+	name="STATE_481"
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MEX
+		victory_points = {
+			7921 20 
+		}
+		victory_points = {
+			4946 5
+		}
+	}
+
+	provinces={
+		4946 7921 8003 10853 10871 13273 
+	}
+	manpower=1255094
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

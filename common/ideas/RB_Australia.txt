@@ -1,0 +1,88 @@
+ideas = {
+	country = {
+		AST_White_Australia_Policy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AST_White_Australia_Policy"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = AST_White_Australia_Policy
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.2
+				stability_factor = -0.05
+			}
+		}
+		AST_Spirit_Of_Federation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AST_Spirit_Of_Federation"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = AST_Spirit_Of_Federation
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.30
+				surrender_limit = 0.2
+				army_org_factor = 0.05
+			}
+		}
+		AST_End_Of_Gold_Rush = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AST_End_Of_Gold_Rush"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = 0.35
+			}
+		}
+		AST_Remnants_Of_The_Squattocracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AST_Remnants_Of_The_Squattocracy"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = AST_Remnants_Of_The_Squattocracy
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				political_power_factor = -0.25
+			}
+		}
+	}
+}

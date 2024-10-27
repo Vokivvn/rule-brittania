@@ -1,0 +1,57 @@
+﻿l_english:
+ ##Leader Descs##
+
+ ##Country Names##
+ SIC_cromwellianism:0 "Sicilian Protectorate"
+ SIC_cromwellianism_DEF:0 "The Sicilian Protectorate"
+ SIC_marxism:0 "Sicilian Protectorate"
+ SIC_marxism_DEF:0 "The Sicilian Protectorate"
+ SIC_liberalism:0 "Sicilian Protectorate"
+ SIC_liberalism_DEF:0 "The Sicilian Protectorate"
+ SIC_republicanism:0 "Sicilian Protectorate"
+ SIC_republicanism_DEF:0 "The Sicilian Protectorate"
+ SIC_parliamentarianism:0 "Sicilian Protectorate"
+ SIC_parliamentarianism_DEF:0 "The Sicilian Protectorate"
+ SIC_administrationism:0 "Sicilian Protectorate"
+ SIC_administrationism_DEF:0 "The Sicilian Protectorate"
+ SIC_absolutism:0 "Sicilian Protectorate"
+ SIC_absolutism_DEF:0 "The Sicilian Protectorate"
+ SIC_despotism:0 "Sicilian Protectorate"
+ SIC_despotism_DEF:0 "The Sicilian Protectorate"
+ SIC_nationalism:0 "Provisional Sicilian Republic
+ SIC_nationalism_DEF:0 "The Provisional Sicilian Republic"
+ SIC_cromwellianism_ADJ:0 "Sicilian"
+ SIC_marxism_ADJ:0 "Sicilian"
+ SIC_liberalism_ADJ:0 "Sicilian"
+ SIC_republicanism_ADJ:0 "Sicilian"
+ SIC_parliamentarianism_ADJ:0 "Sicilian"
+ SIC_administrationism_ADJ:0 "Sicilian"
+ SIC_despotism_ADJ:0 "Sicilian"
+ SIC_nationalism_ADJ:0 "Sicilian"
+
+ ##Party Names##
+ SIC_administrationism_party:0 "B-SA"
+ SIC_administrationism_party_long:0 "British-Sicilian Administration"
+ SIC_despotism_party:0 "CdP"
+ SIC_despotism_party_long:0 "Consiglio dei Principi"
+ SIC_nationalism_party:0 "NVS"
+ SIC_nationalism_party_long:0 "Nuovi Vespri Siciliani"
+
+ ##Cosmetic Tags##
+
+
+ ##Tooltips##
+ SIC_Peasants_Plight_tt:0 "If things worsen, we may have an issue on our hands."
+
+
+ ##Ideas##
+ SIC_Council_Princes:0 "The Council of Princes"
+ SIC_Royal_Navy_Arsenals:0 "Royal Navy Arsenals"
+ SIC_Peasants_Plight:0 "The Peasant's Plight"
+
+ ##Events##
+
+
+ ##Focuses##
+
+ #Starting Tree#

@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+		MUN_Religious_Division = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MUN_Religious_Division"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		MUN_Descendants_of_Teutonic_Order = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MUN_Descendants_of_Teutonic_Order"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		MUN_Loosened_Habsburg_Ties = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MUN_Loosened_Habsburg_Ties"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}

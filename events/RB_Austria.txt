@@ -1,0 +1,323 @@
+﻿##################
+##AUSTRIA EVENTS##
+##################
+
+add_namespace = austria
+add_namespace = austria_estates
+add_namespace = viennaconference
+add_namespace = austria_serbia
+
+country_event = { #vienna conference
+	id = viennaconference.1
+	title = viennaconference.1.t
+	desc = viennaconference.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event viennaconference.1"}
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = { #vienna conference beginning
+		name = viennaconference.1.a
+		country_event = {
+			id = viennaconference.2
+		}
+	}
+}
+
+country_event = { #Death of the Kaiser
+	id = austria.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event austria.1"}
+	title = austria.1.t
+	desc = austria.1.d
+	picture = GFX_report_event_england_royal_funeral
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = { #F
+		name = "Der Kaiser ist tot, lang lebe die Kaiserin!"
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Elisabeth II"
+			desc = "POLITICS_ELISABETH_II_DESC"
+			picture = "Portrait_AUS_Elisabeth_II.dds"
+			expire = "1999.12.12"
+			ideology = administrationism_subtype
+			traits = {
+			}
+		}
+	}
+}
+country_event = { #Colony is kil
+	id = austria.101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event austria.1"}
+	title = austria.101.t
+	desc = austria.101.d
+	picture = GFX_report_event_england_royal_funeral
+
+	is_triggered_only = yes
+	fire_only_once = no
+	immediate = {
+		hidden_effect = { 
+			OST = {
+				#start_civil_war = {
+				#	ideology = marxism
+				#	ruling_party = absolutism
+				#	size = 0.8
+				#	capital = 1025
+				#	states = { 1025 }
+				#}
+				BOR = {
+					transfer_state = 1025
+					set_stability = 0.6
+					set_war_support = 1
+					load_oob = "OST_Marxists"
+					add_ideas = BOR_death_before_surrender
+					add_ideas = war_economy
+					add_offsite_building = { type = arms_factory level = 2 }
+					add_offsite_building = { type = industrial_complex level = 1 }
+					OST = {
+						set_stability = 0.4
+						set_war_support = 0.3
+						
+						declare_war_on = {
+							target = BOR
+							type = annex_everything
+						}
+					}
+				}
+				1025 = {
+					set_state_name = "Sandakan"
+					set_province_name = {
+						id = 10199
+						name = "Sandakan"
+					}
+				}
+				721 = {
+					set_state_name = "Tawau"
+					set_province_name = {
+						id = 12228
+						name = "Tawau"
+					}
+				}
+				OST = { load_oob = "OST_Loyalists" add_ideas = BOR_death_before_surrender }
+			}
+		}
+	}
+	option = { #no
+		name = "The Governor stands alone"
+		add_political_power = -25
+	}
+}
+
+
+
+country_event = { #austria balk
+	id = austria.5555
+	title = austria.5555.t
+	desc = austria.5555.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event austria.5555"}
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	option = { #magyar squad roll out
+		name = austria.5555.a
+		TRA = {
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 84
+			add_state_core = 76
+			add_state_core = 83
+			add_state_core = 84
+			add_state_core = 948
+			load_oob = "TRA_collapse"
+		}
+		HUN = {
+			transfer_state = 43
+			transfer_state = 945
+			transfer_state = 155
+			transfer_state = 950
+			transfer_state = 664
+			transfer_state = 154
+			transfer_state = 946
+			transfer_state = 948
+			transfer_state = 73
+			transfer_state = 45
+			add_state_core = 43
+			add_state_core = 945
+			add_state_core = 155
+			add_state_core = 950
+			add_state_core = 664
+			add_state_core = 946
+			add_state_core = 154
+			add_state_core = 948
+			set_country_flag = HUN_collapse_flag
+			load_oob = "HUN_collapse"
+			declare_war_on = {
+				target = TRA
+				type = annex_everything
+			}
+		}
+		AUS = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = AUS_NAT
+			set_politics = {
+				ruling_party = nationalism
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.2
+			}
+			create_country_leader = {
+				name = "Arthur Seyss-Inquart"
+				#desc =
+				picture = "Portrait_AUS_Arthur_Seyss_Inquart.dds"
+				expire = "1979.1.1"
+				ideology = nationalism_subtype
+				traits = {
+				}
+			}
+			set_party_name = {
+				ideology = nationalism
+				long_name = AUS_nationalism_party_collapse_long
+				name = AUS_nationalism_party_collapse
+			}
+			set_party_name = {
+				ideology = despotism
+				long_name = AUS_despotism_party_collapse_long
+				name = AUS_despotism_party_collapse
+			}
+			set_party_name = {
+				ideology = absolutism
+				long_name = AUS_absolutism_party_collapse_long
+				name = AUS_absolutism_party_collapse
+			}
+			set_party_name = {
+				ideology = administrationism
+				long_name = AUS_administrationism_party_collapse_long
+				name = AUS_administrationism_party_collapse
+			}
+		}
+		TEM = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = liberalism
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.65
+			}
+			add_popularity = {
+				ideology = republicanism
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = parliamentarianism
+				popularity = 0.25
+			}
+			create_country_leader = {
+				name = "Róth Ottó"
+				#desc =
+				picture = "Portrait_TEM_Otto_Roth.dds"
+				expire = "1956.4.22"
+				ideology = liberalism_subtype
+				traits = {
+				}
+			}
+		}
+		MMV = {
+			drop_cosmetic_tag = yes
+			transfer_state = 937
+			add_state_core = 937
+
+		}
+		CZE = {
+			drop_cosmetic_tag = yes
+			transfer_state = 934
+			transfer_state = 74
+			transfer_state = 75
+			add_state_core = 934
+			add_state_core = 74
+			add_state_core = 75
+		}
+		POL = {
+			transfer_state = 72
+			add_state_core = 72
+		}
+		SLV = {
+			transfer_state = 102
+			transfer_state = 941
+			add_state_core = 102
+			add_state_core = 736
+			add_state_core = 941
+			country_event = { id = slv.1 days = 1}
+		}
+		CRO = {
+			transfer_state = 109
+			transfer_state = 942
+			transfer_state = 943
+			transfer_state = 103
+			add_state_core = 943
+			add_state_core = 109
+			add_state_core = 103
+			add_state_core = 942
+		}
+		SLO = {
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 947
+			add_state_core = 70
+			add_state_core = 71
+			add_state_core = 947
+		}
+	}
+}
+
+country_event = { #Reset Estate Change
+	id = austria_estates.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event austria_estates.1 "}
+	title = austria_estates.1.t
+	desc = austria_estates.1.d
+	picture = GFX_report_event_england_royal_funeral
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = { #gogogo
+		every_owned_state = {
+		    limit = {
+		        has_state_flag = {
+		            flag = AUS_recently_changed_estate
+		            days > 4
+		        }
+		    }
+		    clr_state_flag = AUS_recently_changed_estate
+		}
+	}
+
+	option = {
+	}
+}
+
+country_event = { #serbia wants more money would you believe it
+	id = austria_serbia.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event austria_serbia.1"}
+	title = austria_serbia.1.t
+	desc = austria_serbia.1.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #yes
+		name = austria_serbia.1.a
+		ai_chance = { factor = 60 }
+	}
+
+	option = { #lolno
+		name = austria_serbia.1.b
+		ai_chance = { factor = 40 }
+	}
+}

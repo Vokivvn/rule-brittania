@@ -1,0 +1,15 @@
+##########################
+####### uteay itme #######
+##########################
+
+focus_tree = {
+	id = UTY_start
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = UTY
+        }
+    }
+	shared_focus = UTY_bloods_last_stand
+}

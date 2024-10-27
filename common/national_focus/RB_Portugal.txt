@@ -1,0 +1,42 @@
+
+focus_tree = {
+	id = POR_king_luis
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POR
+		}
+	}
+	default = no
+	shared_focus = POR_L_reign_continue
+	continuous_focus_position = { x = 50 y = 2000}
+}
+
+focus_tree = {
+	id = POR_king_luis2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POR
+		}
+	}
+	default = no
+	shared_focus = POR_L_reign_continue
+	shared_focus = POR_L_not_world
+	continuous_focus_position = { x = 50 y = 2000}
+}
+
+focus_tree = {
+	id = POR_chaos
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2000}
+}

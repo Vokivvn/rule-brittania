@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+		PAT_Factional_Administration = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COS_Factional_Administration"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_COS_His_Majestys_George_The_V_Canal
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		PAT_Violence_In_The_Mountains = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COS_Violence_In_The_Mountains"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_COS_His_Majestys_George_The_V_Canal
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				army_org = -5
+			}
+		}
+
+		PAT_The_Farming_Colony = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COS_Violence_In_The_Mountains"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_COS_His_Majestys_George_The_V_Canal
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.15			
+			}
+		}
+	}
+}

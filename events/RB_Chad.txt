@@ -1,0 +1,170 @@
+﻿###############
+##CHAD EVENTS##
+###############
+
+add_namespace = cha
+
+country_event = { #Keynes writes a paper
+	id = cha.1
+	title = cha.1.t
+	desc = cha.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.1"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = cha.1.a
+		country_event = { id = cha.2 days = 31}
+		set_country_flag = CHA_keynes_paper1
+	}
+}
+
+country_event = { #Keynes writes a paper
+	id = cha.2
+	title = cha.2.t
+	desc = cha.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.2"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = cha.2.a
+	}
+}
+
+#3 - accepted
+#4 - failed
+#5 - failed2
+#6 - sucess in smaller journal
+
+#7 - fuller paper
+#8 - cambridge digs it
+
+#9 - general theory, story of the book
+country_event = { #employment, choose whether to focus on cotton or roads
+	id = cha.10
+	title = cha.10.t
+	desc = cha.10.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.10"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #roads
+		name = cha.10.a
+		set_country_flag = CHA_road_pri
+	}
+	option = { #cotton
+		name = cha.10.a
+		set_country_flag = CHA_cotton_pri
+	}
+}
+
+country_event = { #Chadian National Union
+	id = cha.11
+	title = cha.11.t
+	desc = cha.11.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.11"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = cha.11.a
+		hidden_effect = {
+			country_event = { id = cha.12 days = 60 }
+			add_ideas = CHA_unionizing
+		}
+	}
+}
+
+country_event = { #Chadian National Union
+	id = cha.12
+	title = cha.12.t
+	desc = cha.12.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.12"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = cha.12.a
+		subtract_from_variable = { CHA_economy_var = 0.4}
+		custom_effect_tooltip = CHA_eco_down
+	}
+}
+
+country_event = { #CHA - Ask Sudan for Help
+	id = cha.13
+	title = cha.13.t
+	desc = cha.13.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.13"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = cha.13.a
+		SUD = { country_event = { id = cha.14 days = 2}}
+	}
+}
+country_event = { #SUD - Chad asks for help
+	id = cha.14
+	title = cha.14.t
+	desc = cha.14.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.14"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #no
+		name = cha.14.a
+		country_event = { id = cha.15 days = 2}
+	}
+	option = { #yes
+		name = cha.14.a
+		country_event = { id = cha.16 days = 2}
+	}
+}
+country_event = { #CHA - Sudan said no
+	id = cha.15
+	title = cha.15.t
+	desc = cha.15.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.15"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = cha.15.a
+	}
+}
+country_event = { #CHA - Sudan said yes
+	id = cha.16
+	title = cha.16.t
+	desc = cha.16.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.16"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = cha.16.a
+		SUD = { add_to_variable = { global.symes_eden = -3}}
+	}
+}
+country_event = { #road is done
+	id = cha.17
+	title = cha.17.t
+	desc = cha.17.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cha.17"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = cha.17.a
+	}
+}

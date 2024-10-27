@@ -1,0 +1,118 @@
+﻿capital = 882
+
+
+set_research_slots = 2
+
+set_stability = 0.5
+set_war_support = 0.1
+
+add_ideas = DEN_content_conservatives_i
+add_ideas = DEN_growing_economy_i
+add_ideas = DEN_impatient_norwegians_i
+add_ideas = DEN_unrest_in_mecklenburg_i
+add_ideas = {
+	british_econ_subordination
+	british_pol_dominance
+	british_advised_forces
+}
+
+set_politics = {
+	ruling_party = parliamentarianism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 0
+    liberalism = 14
+    republicanism = 29
+    parliamentarianism = 46
+    administrationism = 0
+    absolutism = 11
+    despotism = 0
+    nationalism = 0
+}
+
+create_country_leader = {
+	name = "Vilhelm Buhl"
+	desc = "POLITICS_VILHELM_BUHL_DESC"
+	picture = "Portrait_DEN_Vilhelm_Buhl.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Carl Theodor Zahle"
+	desc = "POLITICS_KNUD_KRISTENSEN_DESC"
+	picture = "Portrait_DEN_Peter_Munch.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Knud Kristensen"
+	desc = "POLITICS_KNUD_KRISTENSEN_DESC"
+	picture = "Portrait_DEN_Knud_Kristensen.dds"
+	expire = "1999.12.12"
+	ideology = parliamentarianism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Georg III"
+	desc = "POLITICS_GEORGE_V_DESC"
+	picture = "Portrait_DEN_Knud_Kristensen.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = {
+	}
+}
+
+set_cosmetic_tag = ENG_Puppet
+DEN_initialize_election_vars = yes
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+

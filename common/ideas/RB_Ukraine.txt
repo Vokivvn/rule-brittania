@@ -1,0 +1,93 @@
+ideas = {
+	country = {
+		UKR_A_Divided_Nation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_A_Divided_Nation"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture =
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.30
+				war_support_factor = -0.10
+				political_power_gain = -0.10
+			}
+		}
+		UKR_Industry_Agriculture_Balanced = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_Industry_Agriculture_Balanced"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		UKR_Influential_Underminers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_Influential_Underminers"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.005
+			}
+		}
+
+		UKR_Insurgency_Severity_0 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UKR_Insurgency_Severity_0"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = UKR_Weak_Insurgencies
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				nationalism_drift = 0.01
+				despotism_drift = 0.02
+				marxism_drift = 0.01
+				cromwellianism_drift = 0.01
+				liberalism_drift = 0.02
+			}
+		}
+	}
+}

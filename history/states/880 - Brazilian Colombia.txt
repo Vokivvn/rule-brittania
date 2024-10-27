@@ -1,0 +1,20 @@
+
+state={
+	id=880
+	name="STATE_880"
+	manpower = 213160
+	
+	state_category = pastoral
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		2007 8050 10792 12729 12770 12825 
+	}
+}

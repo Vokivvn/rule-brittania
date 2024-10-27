@@ -1,0 +1,44 @@
+state={
+	id=833
+	name="STATE_833"
+	provinces={
+		823 1562 1892 4657 4727 7517 7986 9814 10387 10483 11757 11795 12303 12374 12461 13215 13216 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 8
+			1562 = {
+				naval_base = 10
+            
+			}
+			9814 = {
+				naval_base = 5
+            
+			}
+			1892 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			9814 20
+		}
+		victory_points = {
+			1562 20
+		}
+		victory_points = {
+			12461 5 
+		}
+		victory_points = {
+			11757 5
+		}
+	}
+	manpower=3195652
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

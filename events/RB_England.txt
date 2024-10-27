@@ -1,0 +1,1602 @@
+﻿##################
+##ENGLAND EVENTS##
+##################
+
+add_namespace = england
+add_namespace = edwardswildride
+
+country_event = { #Intro
+	id = england.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.1"}
+	title = england.1.t
+	desc = england.1.desc
+	picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = england.1.a
+	}
+}
+
+country_event = { #Death of George V
+	id = england.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.2"}
+	title = england.2.t
+	desc = eng_gorg_desc
+	picture = GFX_report_event_england_royal_funeral
+	
+	is_triggered_only = yes
+	
+	option = { #F
+		name = "A titan of the modern age has passed away."
+		load_focus_tree = ENG_George_V_Death
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "British Parliament"
+			desc = "POLITICS_PARLIAMENT_DESC"
+			picture = "Portrait_ENG_Big_Building_In_New_London.dds"
+			expire = "1999.12.12"
+			ideology = absolutism_subtype
+			traits = {
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				news_event = {
+					id = world.1
+				#	days = 2
+				}
+			sound_effect = "soundeffect_george_died" 
+			set_country_flag = Super_Event_Visible
+			set_country_flag = superevent_george_v_dead
+			}
+			country_event = { id = engeco.1 days = 1 }
+			remove_ideas = ENG_king_george_v
+			clr_country_flag = ENG_George_V_flag
+			set_country_flag = ENG_Edward_VIII_flag
+		}
+	}
+}
+
+country_event = { #Commemoration of George V
+	id = england.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.3"}
+	title = england.3.t
+	desc = england.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = england.3.a
+	}
+}
+
+country_event = { #The Empire mourns the loss of George V
+	id = england.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.4"}
+	title = england.4.t
+	desc = england.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = england.4.a
+		add_political_power = 25
+	}
+}
+
+country_event = { #THE KING IS FUCKGIN SHOT
+	id = england.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.5"}
+	title = england.5.t
+	desc = england.5.desc
+	picture = GFX_report_event_edwards_assassin
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #AAAAAAAAAAAAAA
+		name = england.5.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "The House of Lords"
+			desc = "POLITICS_PARLIAMENT_DESC"
+			picture = "Portrait_ENG_Interregnum.dds"
+			expire = "1999.12.12"
+			ideology = absolutism_subtype
+			traits = {
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = england.6
+				days = 7
+			}
+			country_event = {
+				id = eng_inv.1
+				hours = 1
+			}
+			country_event = {
+				id = england.7
+				days = 4
+			}
+		}
+	}
+}
+
+country_event = { #eddies condition worsens
+	id = england.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.6"}
+	title = england.6.t
+	desc = england.6.desc
+	picture = GFX_report_event_edward_viii_dead 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #hes dead
+		name = england.6.a
+		hidden_effect = {
+			load_focus_tree = {
+				tree = ENG_Eddie_Dead
+			}
+			complete_national_focus = ENG_The_Regicide_Of_A_Millenium
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	option = { #Try harder please
+		name = england.b.a
+		hidden_effect = {
+			country_event = {
+				id = edwardswildride.1
+				days = 2
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { #assassin shot and killed
+	id = england.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.7"}
+	title = england.7.t
+	desc = england.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #gottem
+		name = england.7.a
+	}
+}
+
+country_event = { #AV returns from India
+	id = england.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.8"}
+	title = england.8.t
+	desc = england.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #https://en.wikipedia.org/wiki/Daddy%27s_Home_(film)
+		name = england.8.a
+	}
+}
+
+country_event = { #Who to assure
+	id = england.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.9"}
+	title = england.9.t
+	desc = england.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #cna
+		name = england.9.a
+		custom_effect_tooltip = england.9.a.tt
+		hidden_effect = {
+			set_country_flag = ENG_Assured_CNA
+		}
+	}
+	option = { #za
+		name = england.9.b
+		custom_effect_tooltip = england.9.b.tt
+		hidden_effect = {
+			set_country_flag = ENG_Assured_KEN
+		}
+	}
+}
+
+country_event = { #speech in ny - uk perspective
+	id = england.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.10"}
+	title = england.10.t
+	desc = england.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = england.10.a
+		add_to_variable = { ENG_Henry_Points = 1 }
+		CNA = {
+			country_event = {
+				id = england.12
+			}
+		}
+	}
+	option = { #no dont
+		name = england.10.b
+	}
+}
+
+country_event = { #royal envoy to kenya - uk perspective
+	id = england.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.11"}
+	title = england.11.t
+	desc = england.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = england.11.a
+		add_to_variable = { ENG_George_Points = 1 }
+		KEN = {
+			country_event = {
+				id = england.13
+			}
+		}
+	}
+	option = { #no dont
+		name = england.10.b
+	}
+}
+
+country_event = { #speech in ny - cna perspective
+	id = england.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.12"}
+	title = england.12.t
+	desc = england.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = england.12.a
+		hidden_effect = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.05
+			}
+		}
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #royal envoy to kenya - kenya perspective
+	id = england.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.13"}
+	title = england.13.t
+	desc = england.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = england.13.a
+		add_stability = 0.1
+	}
+}
+
+country_event = { #mary gives speech to parliament
+	id = england.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.14"}
+	title = england.14.t
+	desc = england.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = england.14.a
+		add_to_variable = { ENG_Mary_Points = 1 }
+	}
+	option = { #SHUT THE FUCK UP (((WOMAN))) GAMERS RISE UP
+		name = england.14.b
+		hidden_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = { ENG_Henry_Points = 1 }
+				}
+				50 = {
+					country_event = {
+						id = england.20
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #nikolaus becomes britain king
+	id = england.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.15"}
+	title = england.15.t
+	desc = england.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = england.15.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Nicholas I"
+			desc = "POLITICS_NICHOLAS_I_DESC"
+			picture = "Portrait_ENG_King_Nicholas_von_Oldenburg.dds"
+			expire = "1999.12.12"
+			ideology = despotism_subtype
+			traits = {
+			}
+		}
+		news_event = { id = england.2005 hours = 12 }
+		hidden_effect = {
+			set_politics = {
+				ruling_party = despotism
+				last_election = "1935.11.14"
+				election_frequency = 12
+				elections_allowed = yes	
+			}
+			set_popularities = {
+				cromwellianism = 0
+				marxism = 0
+				liberalism = 0
+				republicanism = 0
+				parliamentarianism = 0
+				administrationism = 9
+				absolutism = 26
+				despotism = 62
+				nationalism = 0
+			}
+		}
+	}
+}
+
+country_event = { #AV Becomes Britain King
+	id = england.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.16"}
+	title = england.16.t
+	desc = england.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.16.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Albert I"
+			desc = "POLITICS_ALBERT_I_DESC"
+			picture = "Portrait_ENG_Prince_Albert.dds"
+			expire = "1999.12.12"
+			ideology = despotism_subtype
+			traits = {
+			}
+		}
+		news_event = { id = england.2004 hours = 12 }
+		hidden_effect = {
+			set_politics = {
+				ruling_party = despotism
+				last_election = "1935.11.14"
+				election_frequency = 12
+				elections_allowed = yes	
+			}
+			set_popularities = {
+				cromwellianism = 0
+				marxism = 0
+				liberalism = 10
+				republicanism = 0
+				parliamentarianism = 15
+				administrationism = 0
+				absolutism = 20
+				despotism = 47
+				nationalism = 5
+			}
+		}
+	}
+}
+
+country_event = { #henry ix is britain king
+	id = england.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.17"}
+	title = england.17.t
+	desc = england.17.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.17.a
+		news_event = { id = england.2000 hours = 12 }
+		create_country_leader = {
+				name = "Henry IX"
+				desc = "POLITICS_Henry_IX_DESC"
+				picture = "Portrait_ENG_King_Henry.dds"
+				expire = "1999.12.12"
+				ideology = absolutism_subtype
+				traits = {
+			}
+		}
+		load_focus_tree = ENG_Henry_IX_consolidation_tree
+	}
+}
+
+country_event = { #george vi is britain king
+	id = england.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.18"}
+	title = england.18.t
+	desc = england.18.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = england.18.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "George VI"
+			desc = "POLITICS_GEORGE_VI_DESC"
+			picture = "Portrait_ENG_King_George_VI.dds"
+			expire = "1999.12.12"
+			ideology = parliamentarianism_subtype
+			traits = {
+			}
+		}
+		news_event = { id = england.2001 hours = 12 }
+		hidden_effect = {
+			set_politics = {
+				ruling_party = parliamentarianism
+				last_election = "1935.11.14"
+				election_frequency = 12
+				elections_allowed = yes	
+			}
+			set_popularities = {
+				cromwellianism = 0
+				marxism = 4
+				liberalism = 32
+				republicanism = 0
+				parliamentarianism = 48
+				administrationism = 0
+				absolutism = 11
+				despotism = 0
+				nationalism = 5
+			}
+		}
+	}
+}
+
+country_event = { #mary becomes britain queen
+	id = england.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.19"}
+	title = england.19.t
+	desc = england.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = england.19.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Mary III"
+			desc = "POLITICS_MARY_III_DESC"
+			picture = "Portrait_ENG_Mary_of_Teck.dds"
+			expire = "1999.12.12"
+			ideology = marxism_subtype
+			traits = {
+			}
+		}
+		set_party_name = {
+			ideology = marxism
+			long_name = ENG_marxism_mary_party_long
+			name = ENG_marxism_mary_party
+		}
+		news_event = { id = england.2002 hours = 12 }
+		hidden_effect = {
+			create_country_leader = {
+				name = "Louis, Duke of Edinburgh"
+				#desc = 
+				picture = "Portrait_ENG_King_George_VI.dds"
+				expire = "1999.12.12"
+				ideology = despotism_subtype
+				traits = {
+				}
+			}
+			set_politics = {
+				ruling_party = marxism
+				last_election = "1935.11.14"
+				election_frequency = 12
+				elections_allowed = yes	
+			}
+			set_popularities = {
+				cromwellianism = 0
+				marxism = 18
+				liberalism = 8
+				republicanism = 6
+				parliamentarianism = 7
+				administrationism = 0
+				absolutism = 23
+				despotism = 38
+				nationalism = 0
+			}
+		}
+	}
+}
+
+country_event = { #PORTUGAL CARALHO BECOMES KING
+	id = england.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.20"}
+	title = england.20.t
+	desc = england.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #CARALHO
+		name = england.20.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Edward IX"
+			desc = "POLITICS_EDWARD_IX_DESC"
+			picture = "Portrait_ENG_Duarte_Nuno.dds"
+			expire = "1999.12.12"
+			ideology = absolutism_subtype
+			traits = {
+			}
+		}
+		news_event = { id = england.2003 hours = 12 }
+		hidden_effect = {
+			set_politics = {
+				ruling_party = absolutism
+				last_election = "1935.11.14"
+				election_frequency = 12
+				elections_allowed = yes	
+			}
+			set_popularities = {
+				cromwellianism = 0
+				marxism = 0
+				liberalism = 2
+				republicanism = 0
+				parliamentarianism = 15
+				administrationism = 0
+				absolutism = 45
+				despotism = 30
+				nationalism = 8
+			}
+		}
+	}
+}
+
+country_event = { #Mary and George begin positioning themselves for the position
+	id = england.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.21"}
+	title = england.21.t
+	desc = england.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = england.21.a
+	}
+}
+
+country_event = { #Duarte and Nicky show up
+	id = england.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.22"}
+	title = england.22.t
+	desc = england.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = england.22.a
+	}
+}
+
+country_event = { #mary focus tree event
+	id = england.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.23"}
+	title = england.23.t
+	desc = england.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.23.a
+		add_to_variable = {
+			var = eng_mary_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #georgy boy focus tree event
+	id = england.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.24"}
+	title = england.24.t
+	desc = england.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.24.a
+		add_to_variable = {
+			var = eng_george_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #henry focus tree event
+	id = england.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.25"}
+	title = england.25.t
+	desc = england.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.25.a
+		add_to_variable = {
+			var = eng_henry_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #av focus tree event
+	id = england.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.26"}
+	title = england.26.t
+	desc = england.26.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.26.a
+		add_to_variable = {
+			var = eng_av_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #nicky focus tree event
+	id = england.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.27"}
+	title = england.27.t
+	desc = england.27.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.27.a
+		add_to_variable = {
+			var = eng_nicky_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #duarte focus tree event
+	id = england.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.28"}
+	title = england.28.t
+	desc = england.28.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.28.a
+		add_to_variable = {
+			var = eng_duarte_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #henry interview
+	id = england.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.29"}
+	title = england.29.t
+	desc = england.29.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.29.a
+		add_to_variable = {
+			var = eng_henry_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #george interview
+	id = england.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.30"}
+	title = england.30.t
+	desc = england.30.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.30.a
+		add_to_variable = {
+			var = eng_george_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #mary interview
+	id = england.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.31"}
+	title = england.31.t
+	desc = england.31.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.31.a
+		add_to_variable = {
+			var = eng_mary_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #av interview
+	id = england.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.32"}
+	title = england.32.t
+	desc = england.32.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.32.a
+		add_to_variable = {
+			var = eng_av_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #nicky interview
+	id = england.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.33"}
+	title = england.33.t
+	desc = england.33.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.33.a
+		add_to_variable = {
+			var = eng_nicky_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #duarte interview
+	id = england.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.34"}
+	title = england.34.t
+	desc = england.34.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.34.a
+		add_to_variable = {
+			var = eng_mary_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #reformist vacuum event
+	id = england.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.35"}
+	title = england.35.t
+	desc = england.35.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #george seems cool
+	ai_chance = { factor = 3 }
+		name = england.35.a
+		add_to_variable = {
+			var = eng_george_power
+			value = 1
+		}
+	}
+	
+	option = { #haha yes mlady
+	ai_chance = { factor = 1 }
+		name = england.35.b
+		add_to_variable = {
+			var = eng_mary_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #obvious choice event
+	id = england.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.36"}
+	title = england.36.t
+	desc = england.36.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #what a cool and epic guy
+		name = england.36.a
+		add_to_variable = {
+			var = eng_henry_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #long time coming event
+	id = england.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.37"}
+	title = england.37.t
+	desc = england.37.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #what an anglo
+		name = england.37.a
+		add_to_variable = {
+			var = eng_av_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #conservative vacuum event
+	id = england.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.38"}
+	title = england.38.t
+	desc = england.38.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #nikolaus is mildly sane
+		name = england.38.a
+		ai_chance = { factor = 3 }
+		add_to_variable = {
+			var = eng_nicky_power
+			value = 1
+		}
+	}
+	
+	option = { #fuck it. duarte time
+		name = england.38.b
+		ai_chance = { factor = 1 }
+		add_to_variable = {
+			var = eng_duarte_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #henry support from royal family
+	id = england.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.39"}
+	title = england.39.t
+	desc = england.39.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #cool
+		name = england.39.a
+		add_stability = 0.02
+		add_to_variable = {
+			var = eng_henry_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #av support from the colonies
+	id = england.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.40"}
+	title = england.40.t
+	desc = england.40.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #gameing
+		name = england.40.a
+		add_political_power = 20
+		add_to_variable = {
+			var = eng_av_power
+			value = 1
+		}
+	}
+}
+
+country_event = { #Resignation of Douglas Hogg
+	id = england.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.41"}
+	title = england.41.t
+	desc = england.41.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #PM James Gascoyne Cecil
+		name = england.41.a
+		ai_chance = { factor = 3 }
+		add_political_power = 20
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.03
+		}
+		clr_country_flag = ENG_PM_Douglas_Hogg_flag
+		set_country_flag = ENG_PM_James_Gascoyne_Cecil_flag
+	}
+
+	option = { #PM John Simon
+		name = england.41.b
+		ai_chance = { factor = 2 }
+		add_political_power = -20
+		add_popularity = {
+			ideology = administrationism
+			popularity = 0.03
+		}
+		clr_country_flag = ENG_PM_Douglas_Hogg_flag
+		set_country_flag = ENG_PM_John_Simon_flag
+	}
+}
+
+country_event = { #Election of the king
+	id = england.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.42"}
+	title = england.42.t
+	desc = england.42.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #Let the best man win
+		name = england.42.a
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			ENG_election_1 = yes
+		}
+		else = {
+			ENG_election_2 = yes
+		}
+	}
+}
+
+country_event = { #
+	id = england.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.43"}
+	title = england.43.t
+	desc = england.43.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.43.a
+	}
+}
+
+country_event = { #
+	id = england.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.44"}
+	title = england.44.t
+	desc = england.44.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.44.a
+	}
+}
+
+country_event = { #
+	id = england.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.45"}
+	title = england.45.t
+	desc = england.45.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.45.a
+	}
+}
+
+country_event = { #
+	id = england.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.46"}
+	title = england.46.t
+	desc = england.46.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.46.a
+	}
+}
+
+country_event = { #
+	id = england.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.47"}
+	title = england.47.t
+	desc = england.47.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.47.a
+	}
+}
+
+country_event = { #
+	id = england.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.48"}
+	title = england.48.t
+	desc = england.48.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.48.a
+	}
+}
+
+country_event = { #
+	id = england.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.49"}
+	title = england.49.t
+	desc = england.49.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.49.a
+	}
+}
+
+country_event = { #
+	id = england.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.50"}
+	title = england.50.t
+	desc = england.50.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.50.a
+	}
+}
+
+country_event = { # Malta 1 - Intro
+	id = england.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.51"}
+	title = england.51.t
+	desc = england.51.desc
+	picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Mizzi
+		name = england.51.a
+		ai_chance = { factor = 49 }
+		add_to_variable = { MLT_election = -1 }
+	}
+	option = { #Strickland 
+		name = england.51.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { MLT_election = 1 }
+		add_political_power = -15
+	}
+}
+
+country_event = { # Malta 2 - Protests against mega cities
+	id = england.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.52"}
+	title = england.52.t
+	desc = england.52.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #this must go through
+		name = england.52.a
+		ai_chance = { factor = 60 }
+		add_to_variable = { MLT_election = -2}
+	}
+	option = { #tell strickland to agree to smaller cities
+		name = england.52.b
+		ai_chance = { factor = 37 }
+		add_political_power = -15
+		add_to_variable = { MLT_election = 1}
+	}
+	option = { #stop this
+		name = england.52.c
+		ai_chance = { factor = 3 }
+		add_political_power = 20
+		add_to_variable = { MLT_election = -1}
+	}
+}
+
+country_event = { # Malta 3 - Italian language rights
+	id = england.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.53"}
+	title = england.53.t
+	desc = england.53.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Let Strickland decide
+		name = england.53.a
+		ai_chance = { factor = 70 }
+		hidden_effect = {
+			random_list = {
+				10 = {add_to_variable = { MLT_election = 2}}
+				35 = {add_to_variable = { MLT_election = 1}}
+				30 = { }
+				20 = {add_to_variable = { MLT_election = -1}}
+				5 =  {add_to_variable = { MLT_election = -2}}
+			}
+		}
+	}
+	option = { #just english just anglo
+		name = england.53.b
+		ai_chance = { factor = 20 }
+		add_to_variable = { MLT_election = -1}
+	}
+	option = { # okay
+		name = england.53.c
+		ai_chance = { factor = 10 }
+		add_to_variable = { MLT_election = 1}
+		add_political_power = -20
+	}
+}
+
+country_event = { # Malta 4 - sabotage
+	id = england.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.54"}
+	title = england.54.t
+	desc = england.54.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #this must go through
+		name = england.54.a
+		ai_chance = { factor = 50 }
+		add_to_variable = { MLT_election = 1}
+		add_political_power = -30
+		#upgrade port
+	}
+	option = { #crack down
+		name = england.54.a
+		ai_chance = { factor = 50 }
+		add_to_variable = { MLT_election = -1}
+		#remove one level
+	}
+}
+
+country_event = { # Malta 5 - election
+	id = england.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.55"}
+	title = england.55.t
+	desc = england.55.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.55.a
+		hidden_effect = {
+			if = {
+				limit = { check_variable = { MLT_election = 0}}
+				random_list = {
+					80 = { country_event = { id = england.56 days = 1} }
+					20 = { country_event = { id = england.57 days = 1} }
+				}
+			}
+			else_if = {
+				limit = { check_variable = { MLT_election > 0}}
+				country_event = { id = england.56 days = 7}
+				else = { country_event = { id = england.57 days = 1} }
+			}
+		}	
+	}
+}
+
+country_event = { # Malta 6 - strickland wins
+	id = england.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.56"}
+	title = england.56.t
+	desc = england.56.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.56.a
+		ai_chance = { factor = 49 }
+		add_political_power = 40
+	}
+}
+
+country_event = { # Malta 7 - Mizzi wins
+	id = england.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.57"}
+	title = england.57.t
+	desc = england.57.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = england.57.a
+		ai_chance = { factor = 49 }
+		#add_timed_idea = {
+		#	idea = my_idea
+		#	days = 365
+		#}
+		hidden_effect = {
+			random_list = {
+				60 = { country_event = { id = england.58 days = 69}}
+			}
+		}
+	}
+}
+
+country_event = { # Malta 8 - Pisani coup
+	id = england.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.58"}
+	title = england.58.t
+	desc = england.58.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+			
+	option = { #war
+		name = england.58.a
+		ai_chance = { factor = 49 }
+		MLT = {
+			add_state_core = 116
+			transfer_state = 116
+		}
+		declare_war_on = {
+			target = MLT
+			type = annex_everything
+		}
+	}
+}
+
+## Starter Events. Feel free to reintregate backwards ##
+
+country_event = { #New Year's Speech
+	id = england.1936
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.1936"}
+	title = england.1936.t
+	desc = england.1936.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = england.1936.a
+		add_political_power = 25
+		add_stability = 0.05
+	}
+}
+
+country_event = { #Oh man I'm sure this isn't a bubble
+	id = england.1937
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.1937"}
+	title = england.1937.t
+	desc = england.1937.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = england.1937.a
+		add_political_power = 25
+	}
+}
+
+country_event = { #Oh man I'm glad we are capitalist
+	id = england.1938
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.1938"}
+	title = england.1938.t
+	desc = england.1938.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #How could this go wrong?
+		name = england.1938.a
+		add_political_power = 10
+		add_timed_idea = {
+		 	idea = eng_great_profits
+			days = 30
+		}
+	}
+}
+
+country_event = { #Speech to Parliament
+	id = england.1939
+	immediate = {log = "[GetDateText]: [Root.GetName]: event england.1939"}
+	title = england.1939.t 
+	desc = england.1939.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # I like Democracy
+		name = england.1939.a
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+	}
+
+	option = { # I love Democracy
+		name = england.1939.b
+		add_popularity = {
+			ideology = administrationism
+			popularity = 0.05
+		}
+	}
+
+	option = { # I AM THE GOVERNMENT
+		name = england.1939.c
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.05
+		}
+	}
+}
+
+#############
+## EDWARD ###
+#############
+
+country_event = { #Edward stays in his coma, the cabinet is assembled
+	id = edwardswildride.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event edwardswildride.1"}
+	title = edwardswildride.1.t
+	desc = edwardswildride.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = edwardswildride.1.a
+	}
+}
+
+country_event = { #Edward recovers
+	id = edwardswildride.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event edwardswildride.2"}
+	title = edwardswildride.2.t
+	desc = edwardswildride.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = edwardswildride.2.a
+		create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			picture = "Portrait_ENG_Emperor_Edward_VIII.dds"
+			expire = "1965.1.1"
+			ideology = despotism_subtype
+			traits = {
+		
+			}
+		}
+	}
+}
+
+#########################
+## ENGLAND NEWS EVENTS ##
+#########################
+
+news_event = { #henry ix elected king
+	id = england.2000
+	title = england.2000.t
+	desc = england.2000.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #wow, epic!
+		name = england.2000.a
+	}
+}
+
+news_event = { #george vi elected king
+	id = england.2001
+	title = england.2001.t
+	desc = england.2001.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #wow, epic!
+		name = england.2001.a
+	}
+}
+
+news_event = { #mary iii elected queen
+	id = england.2002
+	title = england.2002.t
+	desc = england.2002.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #wow, epic?
+		name = england.2002.a
+	}
+}
+
+news_event = { #duarte elected king
+	id = england.2003
+	title = england.2003.t
+	desc = england.2003.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #wow, epic!!!!!!!
+		name = england.2003.a
+	}
+}
+
+news_event = { #av elected king
+	id = england.2004
+	title = england.2004.t
+	desc = england.2004.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #he's the joker, baby!
+		name = england.2004.a
+	}
+}
+
+news_event = { #nicholas i elected king
+	id = england.2005
+	title = england.2005.t
+	desc = england.2005.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = { #what a loser lol
+		name = england.2005.a
+	}
+}

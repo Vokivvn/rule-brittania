@@ -1,0 +1,28 @@
+
+state={
+	id=357
+	name="STATE_357"
+
+	history={
+		owner = CNA
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = CNA
+		victory_points = {
+			4445 3
+		}
+		victory_points = {
+			11662 2
+		}
+
+	}
+
+	provinces={
+		4445 7345 7629 9675 10381 11662 11665 13158 
+	}
+	manpower=642921
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

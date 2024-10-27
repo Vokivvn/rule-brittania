@@ -1,0 +1,43 @@
+ideas = {
+	country = {
+		CAL_the_golden_dominion = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CAL_the_golden_dominion"}
+			allowed = { always = no }
+			picture = the_golden_dominion
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = +0.05
+			}
+		}
+
+		 CAL_tourist_trap = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CAL_Wrecked_Economy"}
+			allowed = { always = no }
+			picture = tourist_trap
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				MONTHLY_POPULATION = 0.01
+				political_power_gain = -0.1
+			}
+		}
+		
+		CAL_spokane_strikes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CAL_British_Garrison"}
+			allowed = { always = no }
+			picture = the_spokane_strikes
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				production_factory_start_efficiency_factor = -0.05
+			}
+		}
+
+	}
+}	

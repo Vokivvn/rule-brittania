@@ -1,0 +1,41 @@
+﻿l_english:
+ ##Country Names##
+ HEJ_cromwellianism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_cromwellianism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_marxism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_marxism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_liberalism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_liberalism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_republicanism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_republicanism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_parliamentarianism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_parliamentarianism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_administrationism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_administrationism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_absolutism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_absolutism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_despotism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_despotism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_nationalism:0 "Protectorate of the Two Holy Mosques"
+ HEJ_nationalism_DEF:0 "The Protectorate of the Two Holy Mosques"
+ HEJ_cromwellianism_ADJ:0 "Hejazi"
+ HEJ_marxism_ADJ:0 "Hejazi"
+ HEJ_liberalism_ADJ:0 "Hejazi"
+ HEJ_republicanism_ADJ:0 "Hejazi"
+ HEJ_parliamentarianism_ADJ:0 "Hejazi"
+ HEJ_administrationism_ADJ:0 "Hejazi"
+ HEJ_despotism_ADJ:0 "Hejazi"
+ HEJ_nationalism_ADJ:0 "Hejazi"
+
+ ####Ideas####
+
+ HEJ_Kingdom_of_Hejaz:0 "Kingdom of Hejaz"
+ HEJ_Kingdom_of_Hejaz_desc:0 "Despite being ran as a British colonial administration, the Protectorate of the Two Holy Mosques is actually a condominium between the Arab Department of the British Colonial Office and the Sultanate of Nejd. result of a twisted deal between the Saudis and the British during the Hejaz-Nejd War– the British would retract support for the Hashemites in Hejaz, the Saudis would be crowned the King of Hejaz, and the British would have a slice in the pie. The Saudi Sultan is recognized by the British as the King of Hejaz, yet the tenure of his title is only de jure– as long as the condominium continues to prevent the unification of Nejd and Hejaz, the dream of a united Saudi state will never be realized."
+ HEJ_Pilgrimage_Company:0 "The Pilgrimage Company"
+ HEJ_Pilgrimage_Company_desc:0 "Every year, hundreds of thousands of the faithful make the hajj to Mecca, the pilgrimage to the holiest city in the Islamic faith. Ever since the city had been contested by various Sultanates and Empires, the state has always patronized the trip and protected the visitors to the city. The British are no exception.\n\nHowever, they smelled cash as well.\n\nThe Pilgrimage Company is a state-owned venture with one goal– to squeeze as much money out of travelers to Mecca. Taxes to enter the Sacred Mosque are high. The Company has a state-mandated monopoly on travel supplies as well as tents. While it makes the Protectorate a decent profit, the anger from travelers is incredibly apparent."
+ HEJ_Hejazi_Opposition:0 "Hejazi Opposition"
+ HEJ_Hejazi_Opposition_desc:0 "Opposition to the British rule of Hejaz is widespread– after the Hejaz-Nejd War, the Sharif’s familiy fled to the neighboring polities ruled by fellow Hashemites and began an organization known as the League for the Protection of the Hejaz. The organization finds supports from discontent nobles, who mostly hide their sympathy towards the exiled king. Meanwhile, dockworkers and merchants (especially merchants that hail from the Hadhramaut region in southern Arabia) have created a Hejazi Liberation Party in the efforts to create an independent Hejaz state. Any discontent not put down soon could bubble into a crisis."
+
+ ####Leader Bios
+
+ POLITICS_HARRY_ST_JOHN_PHILBY_DESC:0 "Do not let his keffiyeh or bushy beard deceive you– the British-assigned administrator of the Protectorate of the Two Holy Mosques, St John Philby, is a full blooded Westminster and Trinity-educated Anglo. An Arabist who first found work in the Indian Civil Service, he gained fluency in Urdu, Punjabi, Baluchi, Persia, Arabic and even found himself as a convert to the Islamic faith in 1930.\n\nPhilby saw gain for both British and Saudi interests in uniting the Arabian peninsula under one political entity, gains that include the protection of Red Sea shipping lanes and supplanting the Hashemites as the Keepers of the Holy Places (Mecca and Medina). He worked as an advisor to Ibn Said, urging him to begin unification of Arabia– and when that unification was complete, he turned to the British and became the perfect candidate to administer a region that, if not handled by a man of the faith, would fall into popular revolt."

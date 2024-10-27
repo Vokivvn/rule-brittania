@@ -1,0 +1,10 @@
+################
+##### AUS ######
+################
+
+BRG_Constituent_States_Mechanic = {
+	picture = GFX_BRG_decision_Darcy_Palace
+	allowed = {
+		tag = BRG
+	}
+}

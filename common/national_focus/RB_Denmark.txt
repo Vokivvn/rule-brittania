@@ -1,0 +1,13 @@
+focus_tree = {
+	id = DEN_Intro_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+	}
+	default = no
+	shared_focus = DEN_The_Oldenburg
+	continuous_focus_position = { x = 50 y = 2000 }
+}

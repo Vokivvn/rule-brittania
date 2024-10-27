@@ -1,0 +1,13 @@
+focus_tree = {
+	id = RB_KEN
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KEN
+		}
+	}
+	default = no
+	shared_focus = KEN_almost_heaven
+	continuous_focus_position = { x = 50 y = 2000 }
+}

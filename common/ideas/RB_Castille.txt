@@ -1,0 +1,57 @@
+ideas = {
+	country = {
+		CAS_Fragile_Economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CAS_Fragile_Economy"}
+			allowed = { always = no }
+			picture = GFX_idea_Fragile_Economy
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+
+		CAS_Wrecked_Economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CAS_Wrecked_Economy"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				line_change_production_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		CAS_British_Garrison = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CAS_British_Garrison"}
+			allowed = { always = no }
+			picture = GFX_idea_British_Garrison
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.10
+				conscription_factor = -0.15
+			}
+		}
+		CAS_Questionable_Officer_Loyalty = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CAS_Questionable_Officer_Loyalty"}
+			allowed = { always = no }
+			picture = GFX_idea_Questionable_Officer_Loyalty
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				army_org_factor = -0.10
+			}
+		}
+	}
+}	

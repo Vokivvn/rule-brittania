@@ -1,0 +1,42 @@
+focus_tree = {
+	id = RUS_start_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	default = no
+	shared_focus = RUS_the_clipped_eagle
+	continuous_focus_position = { x = 5000 y = 20 }
+}
+
+focus_tree = {
+	id = RUS_belarus_revolt
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	default = no
+	shared_focus = RUS_the_clipped_eagle
+	shared_focus = RUS_the_black_cat_revolt
+	continuous_focus_position = { x = 5000 y = 20 }
+}
+
+focus_tree = {
+	id = RUS_winter_war_prep_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	default = no
+	shared_focus = RUS_prepare_for_the_storm
+	continuous_focus_position = { x = 5000 y = 20 }
+}

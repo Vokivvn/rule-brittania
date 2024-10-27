@@ -1,0 +1,11 @@
+KPD_reichsbanner_dismantling_category = {
+	allowed = {
+		tag = KPD
+	}
+	available = {
+		has_country_flag = KPD_dismantle_reichsbannersw_flag
+	}
+	visible = {
+		has_country_flag = KPD_dismantle_reichsbannersw_flag
+	}
+}

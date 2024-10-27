@@ -1,0 +1,1459 @@
+focus_tree = {
+	id = RB_Siberia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIB
+		}
+	}
+	default = no
+	focus = {
+		id = SIB_day_on_the_frontier
+		#text = "Day On The Frontier"
+		icon = GFX_focus_HRE_Morning_Again_In_Germany
+		cost = 1
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.3
+		}
+	}
+	focus = {
+		id = SIB_the_judge_arrives
+		#text = "The Man Arrives"
+		icon = GFX_goal_Generic_Gunslinger
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SIB_man_ttt
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = SIB_the_interrogations
+		#text = "The Interrogations"
+		icon = GFX_generic_change_law_minorities
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.5
+		}
+		prerequisite = {
+			focus = SIB_day_on_the_frontier
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = SIB_yusupov
+		#text = "The Oligarch"
+		icon = GFX_generic_elections_rigged
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.6
+		}
+		prerequisite = {
+			focus = SIB_the_interrogations
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = SIB_trubetzkoy
+		#text = "The Duke"
+		icon = GFX_focus_HRE_new_labor_laws
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.7
+		}
+		prerequisite = {
+			focus = SIB_the_interrogations
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = SIB_ustryalov
+		#text = "The Rebel"
+		icon = GFX_shadow_government
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.8
+		}
+		prerequisite = {
+			focus = SIB_the_interrogations
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = SIB_gil
+		#text = "The Wolf"
+		icon = GFX_generic_Hell_Hounds
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.9
+		}
+		prerequisite = {
+			focus = SIB_the_interrogations
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = SIB_going_deeper
+		#text = "There's Something Bigger"
+		icon = GFX_RAJ_establish_secret_service
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			has_country_flag = invest_compromised
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+		select_effect = {
+			country_event = {
+				id = sib.13
+				days = 20
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = SIB_deep_ttt
+		}
+
+		prerequisite = {
+			focus = SIB_ustryalov
+		}
+		prerequisite = {
+			focus = SIB_trubetzkoy
+		}
+		prerequisite = {
+			focus = SIB_yusupov
+		}
+		prerequisite = {
+			focus = SIB_gil
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = SIB_four_targets_four_shots
+		#text = "Four Targets, Four Shots"
+		icon = GFX_generic_suspend_constitution
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.11
+		}
+		prerequisite = {
+			focus = SIB_the_judge_arrives
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = SIB_the_zagovor_compromised
+		#text = "The Plot Halted"
+		icon = GFX_focus_ger_strike_at_the_source
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = successfully_not_fucked_up
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SIB_timenow
+		}
+		prerequisite = {
+			focus = SIB_four_targets_four_shots
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = SIB_bring_justice_to_the_frontier
+		#text = "Bring Justice To Frontier"
+		icon = GFX_generic_artillery_warfare
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			remove_ideas = SIB_zagovor
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = SIB_the_zagovor_compromised
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = SIB_god_forgives_i_do_not
+		#text = "God Forgives, I Do Not"
+		icon = GFX_ITA_the_unthinkable
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -500
+			add_command_power = 80
+		}
+		prerequisite = {
+			focus = SIB_bring_justice_to_the_frontier
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = SIB_the_ugly_ones
+		#text = "The Ugly Ones"
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			army_experience = 40
+			air_experience = 10
+		}
+		prerequisite = {
+			focus = SIB_god_forgives_i_do_not
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = SIB_A_Minute_to_Pray_a_Second_to_Die
+		#text = "A Minute To Pray, A Second To Die"
+		icon = GFX_generic_diplomacy_expansion
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -500
+			add_political_power = -100
+			add_war_support = -0.05
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		prerequisite = {
+			focus = SIB_the_ugly_ones
+		}
+		x = 10
+		y = 12
+
+	}
+	focus = {
+		id = SIB_death_rides_a_horse
+		#text = "Death Rides A Horse"
+		icon = GFX_GER_reapers
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			load_oob = "Peacewatcher Militia"
+			add_political_power = 120
+		}
+		prerequisite = {
+			focus = SIB_god_forgives_i_do_not
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = SIB_Dead_Men_Dont_Count
+		#text = "Dead Men Don't Count"
+		icon = GFX_goal_imprison_opposition
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -20000
+			579 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = SIB_death_rides_a_horse
+		}
+		x = 12
+		y = 12
+
+	}
+	focus = {
+		id = SIB_a_fistful_of_pounds
+		#text = "A Fistful Of Pounds"
+		icon = GFX_Hand_reaching_for_money
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = export_focus
+				add_idea = free_trade
+			}
+		}
+		prerequisite = {
+			focus = SIB_bring_justice_to_the_frontier
+		}
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = SIB_any_gun_can_play
+		#text = "Any Gun Can Play"
+		icon = GFX_generic_advanced_weapons
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 2000
+				producer = ENG
+			}
+		}
+		prerequisite = {
+			focus = SIB_a_fistful_of_pounds
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = SIB_The_Specialists
+		#text = "The Specialists"
+		icon = GFX_focus_hol_united_netherlands
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Leo Major"
+				picture = "general_plug.dds"
+				# traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Ernest Smith"
+				picture = "general_plug.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Tom Derrick"
+				picture = "general_plug.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		prerequisite = {
+			focus = SIB_any_gun_can_play
+		}
+		prerequisite = {
+			focus = SIB_any_gun_can_play
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = SIB_payment_in_blood
+		#text = "Payment In Blood"
+		icon = goal_endless_money
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			delete_unit_template_and_units = {
+				division_template = "Ol' Mighty"
+			}
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+		prerequisite = {
+			focus = SIB_a_fistful_of_pounds
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = SIB_vengeance_is_a_dish_served_cold
+		#text = "Vengeance Is A Dish Served Cold"
+		icon = GFX_focus_purge_bureaucracy
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			570 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			remove_ideas = SIB_wealth_split
+		}
+		prerequisite = {
+			focus = SIB_A_Minute_to_Pray_a_Second_to_Die
+		}
+		prerequisite = {
+			focus = SIB_Dead_Men_Dont_Count
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = SIB_face_to_face
+		#text = "Face To Face"
+		icon = GFX_generic_cultist_inquisitor
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.20
+		}
+		prerequisite = {
+			focus = SIB_vengeance_is_a_dish_served_cold
+		}
+		x = 11
+		y = 14
+
+	}
+	focus = {
+		id = SIB_The_Price_Of_Power
+		#text = "The Price Of Power"
+		icon = GFX_focus_eng_imperial_federation
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RB_raise_british_pol_influence = yes
+		}
+		prerequisite = {
+			focus = SIB_payment_in_blood
+		}
+		x = 18
+		y = 12
+
+	}
+	focus = {
+		id = SIB_for_a_few_pounds_more
+		#text = "For A Few Pounds More"
+		icon = VIN_Necessary_Price
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RB_raise_british_econ_influence = yes
+		}
+		prerequisite = {
+			focus = SIB_God_Does_Not_Pay_on_Saturday
+		}
+		x = 17
+		y = 14
+
+	}
+	focus = {
+		id = SIB_God_Does_Not_Pay_on_Saturday
+		#text = "God Does Not Pay On Saturday"
+		icon = GFX_generic_rainy_day
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -80
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = industry
+			}
+		}
+		prerequisite = {
+			focus = SIB_The_Specialists
+		}
+		prerequisite = {
+			focus = SIB_The_Price_Of_Power
+		}
+		x = 17
+		y = 13
+
+	}
+	focus = {
+		id = SIB_all_siberian_improvement
+		#text = "All-Siberian Renewal Programme"
+		icon = GFX_conservatism_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = SIB_for_a_few_pounds_more
+		}
+		prerequisite = {
+			focus = SIB_face_to_face
+		}
+		x = 14
+		y = 15
+
+	}
+	focus = {
+		id = SIB_surgut_oil_rush
+		#text = "Surgut's Oil Rush"
+		icon = GFX_RAJ_India_Diplo_Italy_Oil
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 48
+				state = 577
+			}
+		}
+		prerequisite = {
+			focus = SIB_all_siberian_improvement
+		}
+		x = 16
+		y = 17
+
+	}
+	focus = {
+		id = SIB_novosib_university
+		#text = "Novosibirsk Anglo-Latin-Russian University"
+		icon = GFX_generic_change_law_education
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+		prerequisite = {
+			focus = SIB_all_siberian_improvement
+		}
+		x = 12
+		y = 17
+
+	}
+	focus = {
+		id = SIB_all_siberian_army
+		#text = "Form The All-Siberian Army"
+		icon = GFX_goal_army_guy_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = 150000
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 1000
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 500
+				producer = ENG
+			}
+
+			army_experience = 60
+		}
+		prerequisite = {
+			focus = SIB_all_siberian_improvement
+		}
+		x = 14
+		y = 16
+
+	}
+	focus = {
+		id = SIB_yekaterinburg_air_base
+		#text = "Expand The Air Traffic"
+		icon = GFX_generic_planes
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = SIB_all_siberian_improvement
+		}
+		x = 9
+		y = 16
+
+	}
+	focus = {
+		id = SIB_yekaterinburg_salekhard_railway
+		#text = "Yekaterinburg-Salekhard Railway"
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			653 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					#province = {
+						#	all_provinces = yes
+						#	limit_to_border = yes
+						#}
+				}
+			}
+			580 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			579 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = SIB_all_siberian_improvement
+		}
+		x = 19
+		y = 16
+
+	}
+	focus = {
+		id = SIB_appeal_to_eastport
+		#text = "An Appeal To Eastport"
+		icon = GFX_goal_secret_agents
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			BFE = { country_event = sib.23 }
+		}
+		prerequisite = {
+			focus = SIB_ural_stonewall
+		}
+		prerequisite = {
+			focus = SIB_cossack_cowboys
+		}
+		prerequisite = {
+			focus = SIB_siberia_migration_program
+		}
+		x = 14
+		y = 19
+
+	}
+	focus = {
+		id = SIB_masters_of_the_copper_mountain
+		#text = "Masters Of The Copper Mountain"
+		icon = GFX_focus_eng_decolonization
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = sib.26
+		}
+		prerequisite = {
+			focus = SIB_appeal_to_eastport
+		}
+		x = 14
+		y = 20
+
+	}
+	focus = {
+		id = SIB_cossack_cowboys
+		#text = "Cossack Cowboys"
+		icon = GFX_generic_wardec
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			load_oob = "Siberian Cowboy Troops"
+		}
+		prerequisite = {
+			focus = SIB_all_siberian_army
+		}
+		x = 14
+		y = 18
+
+	}
+	focus = {
+		id = SIB_ural_stonewall
+		#text = "Ural's Great Wall"
+		icon = GFX_goal_generic_construct_military
+		cost = 15
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SIB_tt_wall
+			hidden_effect = {
+				581 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+				582 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+				573 = {
+					add_building_construction = {
+						type = bunker
+						level = 4
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			}
+
+		}
+		prerequisite = {
+			focus = SIB_yekaterinburg_salekhard_railway
+		}
+		x = 19
+		y = 18
+
+	}
+	focus = {
+		id = SIB_siberia_migration_program
+		#text = "Siberian Migration Programme"
+		icon = GFX_focus_HRE_sailing_along_the_river #idea_hol_the_foundations_of_defense
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = SIB_migration_program
+		}
+		prerequisite = {
+			focus = SIB_yekaterinburg_air_base
+		}
+		x = 9
+		y = 18
+
+	}
+}

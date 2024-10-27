@@ -1,0 +1,789 @@
+﻿add_namespace = bra
+
+country_event = { #tea type
+	id = bra.1
+	title = bra.1.t
+	desc = bra.1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.1"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #white tea
+		name = bra.1.a
+		BRA = {
+			set_country_flag = white_tea
+		}
+		custom_effect_tooltip = BRA_white_tea
+	}
+	option = { #green tea
+		name = bra.1.b
+		BRA = {
+			set_country_flag = green_tea
+		}
+		custom_effect_tooltip = BRA_green_tea
+	}
+	option = { #black tea
+		name = bra.1.c
+		BRA = {
+			set_country_flag = black_tea
+		}
+		custom_effect_tooltip = BRA_black_tea
+	}
+}
+
+country_event = { #land survey
+	id = bra.2
+	title = bra.2.t
+	desc = bra.2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.2"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #pro-tea
+		name = bra.2.a
+		custom_effect_tooltip = BRA_anglo
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = 1
+		}
+	}
+	option = { #pro-coffee
+		name = bra.2.b
+		custom_effect_tooltip = BRA_portugal
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = -1
+		}
+	}
+}
+
+country_event = { #cultivation testing
+	id = bra.3
+	title = bra.3.t
+	desc = bra.3.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.3"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #pro-tea
+		name = bra.3.a
+		custom_effect_tooltip = BRA_anglo
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = 1
+		}
+	}
+	option = { #pro-coffee
+		name = bra.3.b
+		custom_effect_tooltip = BRA_portugal
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = -1
+		}
+	}
+}
+
+country_event = { #look for markets
+	id = bra.4
+	title = bra.4.t
+	desc = bra.4.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.4"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #pro-tea
+		name = bra.4.a
+		custom_effect_tooltip = BRA_anglo
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = 1
+		}
+	}
+	option = { #pro-coffee
+		name = bra.4.b
+		custom_effect_tooltip = BRA_portugal
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = -1
+		}
+	}
+}
+
+country_event = { #coffee baron chat
+	id = bra.5
+	title = bra.5.t
+	desc = bra.5.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.5"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #pro-tea
+		name = bra.5.a
+		custom_effect_tooltip = BRA_anglo
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = 1
+		}
+	}
+	option = { #pro-coffee
+		name = bra.5.b
+		custom_effect_tooltip = BRA_portugal
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = -1
+		}
+	}
+}
+
+country_event = { #talk with london
+	id = bra.6
+	title = bra.6.t
+	desc = bra.6.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.6"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #pro-tea
+		name = bra.6.a
+		custom_effect_tooltip = BRA_anglo
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = 1
+		}
+	}
+	option = { #pro-coffee
+		name = bra.6.b
+		custom_effect_tooltip = BRA_portugal
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = -1
+		}
+	}
+}
+
+country_event = { #look for investors
+	id = bra.7
+	title = bra.7.t
+	desc = bra.7.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.7"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #pro-tea
+		name = bra.7.a
+		custom_effect_tooltip = BRA_anglo
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = 1
+		}
+	}
+	option = { #pro-coffee
+		name = bra.7.b
+		custom_effect_tooltip = BRA_portugal
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = -1
+		}
+	}
+}
+
+country_event = { #last few points
+	id = bra.8
+	title = bra.8.t
+	desc = bra.8.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.8"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #pro-tea
+		name = bra.8.a
+		custom_effect_tooltip = BRA_anglo
+		ai_chance = { factor = 100 }
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = 1
+		}
+	}
+	option = { #pro-coffee
+		name = bra.8.b
+		custom_effect_tooltip = BRA_portugal
+		add_to_variable = {
+			var = bra_tea_or_coffee
+			value = -1
+		}
+	}
+}
+
+country_event = { #pro-coffee portugal gains dominance
+	id = bra.9
+	title = bra.9.t
+	desc = bra.9.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.9"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = bra.9.a
+		set_country_flag = BRA_Coffee_victory
+		clear_variable = bra_tea_or_coffee
+	}
+}
+
+country_event = { #pro-tea anglos gain dominance
+	id = bra.10
+	title = bra.10.t
+	desc = bra.10.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.10"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #what cursed shit have you brought upon this land
+		name = bra.10.a
+		clear_variable = bra_tea_or_coffee
+		set_country_flag = BRA_Tea_victory
+		set_country_flag = bra_machado_resigns_brazil
+		country_event = { id = bra.11 days = 20 }
+		POR = { country_event = { id = bra.12 days = 20 } }
+
+	}
+}
+
+country_event = { #BRA - Machado resigns
+	id = bra.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.11"}
+	title = bra.11.t
+	desc = bra.11.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#o7
+		name = bra.11.a
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = { #POR - Machado resigns
+	id = bra.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.12"}
+	title = bra.12.t
+	desc = bra.12.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#o7
+		name = bra.12.a
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { #REVOLUTION TIME
+	id = bra.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bra.13"
+		hidden_effect = {
+			RB_anti_anglo_effects = yes
+			clr_country_flag = BRA_Tea_Program
+			set_politics = {
+				ruling_party = republicanism
+			}
+			add_popularity = {
+				ideology = republicanism
+				popularity = 0.30
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = marxism
+				popularity = 0.10
+			}
+		}
+	}
+	title = bra.13.t
+	desc = bra.13.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = bra.13.a
+		496 = { set_demilitarized_zone = no }
+		500 = { set_demilitarized_zone = no }
+		501 = { set_demilitarized_zone = no }
+		502 = { set_demilitarized_zone = no }
+		load_focus_tree = { tree = BRA_Revolution_tree keep_completed = yes }
+	}
+}
+
+country_event = { #MARKET CRASH OH GOD OH FUCK
+	id = bra.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bra.14"
+		hidden_effect = {
+
+		}
+	}
+	title = bra.14.t
+	desc = bra.14.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = bra.14.a
+		add_ideas = bra_Economic_Crisis
+		clr_country_flag = intro_tree
+		set_country_flag = BRA_London_Crash
+		load_focus_tree = { tree = BRA_London_Crash_tree keep_completed = yes }
+	}
+}
+
+country_event = { #illegal slavery
+	id = bra.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bra.15"
+	}
+	title = bra.15.t
+	desc = bra.15.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = bra.15.a
+		add_political_power = -50
+		add_stability = 0.08
+	}
+	option = {
+		name = bra.15.b
+		add_stability = -0.08
+	}
+}
+
+country_event = { #Protect Rural Workers
+	id = bra.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bra.16"
+	}
+	title = bra.16.t
+	desc = bra.16.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = bra.16.a
+	}
+}
+
+country_event = { #Investiments
+	id = bra.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bra.17"
+	}
+	title = bra.17.t
+	desc = bra.17.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = bra.17.a
+	}
+}
+
+country_event = { #More Unrest
+	id = bra.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bra.18"
+	}
+	title = bra.18.t
+	desc = bra.18.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = bra.18.a
+		add_to_variable = {
+			bra_unrest = 2
+			tooltip = BRA_unrest_worsen
+		}
+	}
+}
+
+country_event = { #Army Status
+	id = bra.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.19"}
+	title = bra.19.t
+	desc = bra.19.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.19.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_demo = 1 }
+		add_to_variable = { BRA_commie = 1 }
+		add_to_variable = { BRA_vargas = -1 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.05
+		}
+	}
+	option = { #
+		name = bra.19.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_vargas = 1 }
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.10
+		}
+	}
+}
+
+country_event = { #Coffee Barons Status
+	id = bra.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.20"}
+	title = bra.20.t
+	desc = bra.20.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.20.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_commie = 1 }
+		add_to_variable = { BRA_vargas = 1 }
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+	}
+	option = { #
+		name = bra.20.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_demo = 1 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #British Issue
+	id = bra.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.21"}
+	title = bra.21.t
+	desc = bra.21.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.21.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_commie = 1 }
+		add_to_variable = { BRA_vargas = 1 }
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+	}
+	option = { #
+		name = bra.21.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_demo = 1 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #Fate of the Trade Unions
+	id = bra.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.22"}
+	title = bra.22.t
+	desc = bra.22.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.22.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_demo = 1 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+	}
+	option = { #
+		name = bra.22.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_commie = 1 }
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+	}
+	option = { #
+		name = bra.22.c
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_vargas = 1 }
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #About our Neighbors
+	id = bra.23
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bra.23"
+		country_event = {
+			id = bra.24
+			days = 10
+		}
+	}
+	title = bra.23.t
+	desc = bra.23.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.23.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_demo = 1 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+	}
+	option = { #
+		name = bra.23.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_commie = 1 }
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+	}
+	option = { #
+		name = bra.23.c
+		ai_chance = { factor = 1 }
+		add_to_variable = { BRA_vargas = 1 }
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #
+	id = bra.24
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bra.24"
+		if = {
+			limit = {
+				check_variable = { BRA_demo = BRA_commie }
+			}
+			random_list = {
+				1 = {
+					add_to_variable = { BRA_demo = 1 }
+				}
+				1 = {
+					add_to_variable = { BRA_commie = 1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { BRA_vargas = BRA_commie }
+			}
+			random_list = {
+				1 = {
+					add_to_variable = { BRA_vargas = 1 }
+				}
+				1 = {
+					add_to_variable = { BRA_commie = 1 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { BRA_demo = BRA_vargas }
+			}
+			random_list = {
+				1 = {
+					add_to_variable = { BRA_vargas = 1 }
+				}
+				1 = {
+					add_to_variable = { BRA_demo = 1 }
+				}
+			}
+		}
+		###
+		if = {
+			limit = {
+				check_variable = { BRA_commie > BRA_vargas }
+				check_variable = { BRA_commie > BRA_demo }
+			}
+			country_event = {
+				id = bra.25
+				days = 1
+				random = 200
+			}
+			#break = yes #fuck paradox
+		}
+		if = {
+			limit = {
+				check_variable = { BRA_vargas > BRA_commie }
+				check_variable = { BRA_vargas > BRA_demo }
+			}
+			country_event = {
+				id = bra.26
+				days = 1
+				random = 200
+			}
+			#break = yes
+		}
+	}
+	hidden = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.24.a
+	}
+}
+
+country_event = { #
+	id = bra.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.25"}
+	title = bra.25.t
+	desc = bra.25.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.25.a
+		ai_chance = { factor = 1 }
+		set_politics = {
+			ruling_party = marxism
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #
+	id = bra.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.26"}
+	title = bra.26.t
+	desc = bra.26.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.26.a
+		ai_chance = { factor = 1 }
+		set_politics = {
+			ruling_party = nationalism
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #
+	id = bra.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event bra.27"}
+	title = bra.27.t
+	desc = bra.27.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = bra.27.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.8
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.10
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.10
+		}
+	}
+}
+
+

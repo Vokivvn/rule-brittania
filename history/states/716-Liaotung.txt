@@ -1,0 +1,29 @@
+
+state={
+	id=716
+	name="STATE_716"
+	resources={
+		steel=16.000
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+
+		}
+		victory_points = {
+			9835 3 
+		}
+
+	}
+
+	provinces={
+		846 987 3849 6951 9781 9788 9835 9885 11764 11771 11808 11815 
+	}
+	manpower=5264620
+	buildings_max_level_factor=1.000
+	state_category=city
+}

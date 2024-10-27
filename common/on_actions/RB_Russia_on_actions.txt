@@ -1,0 +1,10 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			BLR = {
+				country_event = { id = RUS.8 days = 280 }
+				country_event = { id = RUS.12 days = 320 }
+			}
+		}
+	}
+}

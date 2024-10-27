@@ -1,0 +1,1762 @@
+focus_tree = {
+	id = sibir
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SSD
+		}
+	}
+	default = no
+	focus = {
+		id = SSD_the_great_petition
+		#text = "The Great Petition"
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 1
+		x = 18
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = SIB_War_Won
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			ENG = {country_event = ssd.1}
+		}
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = SSD_petition_not_passed
+		#text = "Petition Failed..."
+		icon = GFX_focus_cze_german_puppet
+		cost = 1
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = SSD_refused
+		}
+
+		bypass = {
+			has_country_flag = SSD_refused
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_pet_tt
+		}
+		prerequisite = {
+			focus = SSD_the_great_petition
+		}
+		mutually_exclusive = {
+			focus = SSD_petition_passed
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = SSD_war_it_is
+		#text = "...War It Is!"
+		icon = GFX_generic_wardec
+		cost = 1
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = ssd.6
+		}
+		prerequisite = {
+			focus = SSD_petition_not_passed
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = SSD_employ_grey_wolves
+		#text = "Employ The Grey Wolves"
+		icon = GFX_generic_Hell_Hounds
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Sergey Bunyachenko"
+				picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+				# traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Fyodor Trukhin"
+				picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Anton Turkul"
+				picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		prerequisite = {
+			focus = SSD_war_it_is
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = SSD_calling_black_hundreds
+		#text = "Call The Black Hundreds"
+		icon = GFX_VIN_New_Militarism
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			load_oob = "Sibcartel Private Armies"
+		}
+		prerequisite = {
+			focus = SSD_employ_grey_wolves
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = SSD_reappropriate_anglo_industries
+		#text = "Reappropriate The English Industry"
+		icon = GFX_focus_rom_parties_end
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			four_random_arms_factory = yes
+			four_random_industrial_complex = yes
+			one_random_infrastructure = yes
+		}
+		prerequisite = {
+			focus = SSD_war_it_is
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = SSD_call_down_anti_atlants
+		#text = "Recruit Anti-Atlanticists"
+		icon = GFX_goal_ENG_shady_dealings
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = SSD_AA_Division
+		}
+		prerequisite = {
+			focus = SSD_reappropriate_anglo_industries
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = SSD_siberian_national_unity
+		#text = "Siberian National Unity"
+		icon = GFX_focus_generic_little_entente
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_war_support = 0.15
+			add_stability = 0.15
+			army_experience = 40
+		}
+		prerequisite = {
+			focus = SSD_calling_black_hundreds
+		}
+		prerequisite = {
+			focus = SSD_call_down_anti_atlants
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = SSD_capture_anglo_airforce
+		#text = "Capture The Airforce"
+		icon = GFX_focus_chi_flying_tigers
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 170
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 30
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 120
+				producer = ENG
+			}
+		}
+		prerequisite = {
+			focus = SSD_siberian_national_unity
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = SSD_melt_into_cannons
+		#text = "The Canonade Of Liberty"
+		icon = GFX_focus_generic_air_defense
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 1000
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 1000
+				producer = ENG
+			}
+		}
+		prerequisite = {
+			focus = SSD_capture_anglo_airforce
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = SSD_petition_passed
+		#text = "Petition Passed!"
+		icon = GFX_goal_civil_service
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = SSD_accepted
+		}
+
+		bypass = {
+			has_country_flag = SSD_accepted
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ssd_pot_tt
+		}
+		prerequisite = {
+			focus = SSD_the_great_petition
+		}
+		mutually_exclusive = {
+			focus = SSD_petition_not_passed
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = SSD_republic_of_siberia
+		#text = "The Republic Of Siberia"
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = REPSIB
+			add_stability = 0.1
+		}
+		prerequisite = {
+			focus = SSD_petition_passed
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = SSD_the_presidential_elections
+		#text = "The First Elections"
+		icon = GFX_goal_continuous_increase_nu
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = ssd.5
+		}
+		prerequisite = {
+			focus = SSD_republic_of_siberia
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = SSD_president_yusupov
+		#text = "President Yusupov"
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = ssd_yus_won
+		}
+
+		bypass = {
+			has_country_flag = ssd_yus_won
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ssd_yus_tt
+		}
+		prerequisite = {
+			focus = SSD_the_presidential_elections
+		}
+		mutually_exclusive = {
+			focus = SSD_president_spiridonova
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = SSD_world_trade_opens
+		#text = "Open The World Trade"
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RB_lower_trade_law = yes
+		}
+		prerequisite = {
+			focus = SSD_president_yusupov
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = SSD_no_limit_rule
+		#text = "Cancel The Wealth Limits"
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_ntr_tt #hahaha
+			add_to_variable = { SSD_pp_factor = -0.05 }
+			add_to_variable = { SSD_invest = 0.05 }
+		}
+		prerequisite = {
+			focus = SSD_president_yusupov
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = SSD_president_spiridonova
+		#text = "First Minister Spiridonova"
+		icon = GFX_focus_RAJ_Roses_Are_Red
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = ssd_spid_won
+		}
+
+		bypass = {
+			has_country_flag = ssd_spid_won #haha spid
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = ssd_spid_tt
+		}
+		prerequisite = {
+			focus = SSD_the_presidential_elections
+		}
+		mutually_exclusive = {
+			focus = SSD_president_yusupov
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = SSD_expand_the_wealth_limits
+		#text = "Expand The Wealth Limits"
+		icon = GFX_focus_RAJ_Radical_treatment
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_etwl_tt #hahaha
+			add_to_variable = { SSD_pp_factor = 0.05 }
+			add_to_variable = { SSD_invest = -0.05 }
+		}
+		prerequisite = {
+			focus = SSD_president_spiridonova
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = SSD_siberian_protectionism
+		#text = "Siberian Protectionism"
+		icon = GFX_focus_HRE_the_eastern_boom
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RB_raise_trade_law = yes
+		}
+		prerequisite = {
+			focus = SSD_president_spiridonova
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = SSD_siberia_for_the_people
+		#text = "Siberia For The People"
+		icon = GFX_focus_GFX_generic_socdem_constitution
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_sftp_tt #hahaha
+			add_to_variable = { SSD_drift_defence_factor = 0.25 }
+			add_to_variable = { SSD_pp_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = SSD_siberian_protectionism
+		}
+		prerequisite = {
+			focus = SSD_expand_the_wealth_limits
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = SSD_the_bill_of_rights
+		#text = "The Bill Of Rights"
+		icon = GFX_generic_liberal_constitution
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_tbor_tt #hahaha
+			add_to_variable = { SSD_foreign_subversive_activites = -0.3 }
+			add_to_variable = { SSD_pp_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = SSD_siberia_for_the_people
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = SSD_siberian_duma
+		#text = "The Siberian Duma"
+		icon = GFX_generic_constitution
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_sd_tt #hahaha
+			add_to_variable = { SSD_cons_goods = -0.1 }
+			add_to_variable = { SSD_pp_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = SSD_the_bill_of_rights
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = SSD_liberate_the_women
+		#text = "Women Liberation Act"
+		icon = GFX_generic_change_law_women
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_ltw_tt #hahaha
+			add_to_variable = { SSD_MONTHLY_POPULATION = -0.1 }
+			add_to_variable = { SSD_invest = 0.05 }
+			add_to_variable = { SSD_pp_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = SSD_siberia_for_the_people
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = SSD_contain_the_anglo
+		#text = "Contain The Anglo"
+		icon = GFX_generic_authoritarian_constitution
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RB_lower_british_econ_influence = yes
+		}
+		prerequisite = {
+			focus = SSD_liberate_the_women
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = SSD_refuge_for_all
+		#text = "Refuge For All"
+		icon = GFX_focus_refugee_management
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_rfa_tt #hahaha
+			add_to_variable = { SSD_MONTHLY_POPULATION = 0.2 }
+			add_to_variable = { SSD_pp_factor = -0.1 }
+		}
+		prerequisite = {
+			focus = SSD_siberian_duma
+		}
+		prerequisite = {
+			focus = SSD_contain_the_anglo
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = SSD_the_ural_wall
+		#text = "Ural's Great Wall"
+		icon = GFX_goal_generic_construct_military
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_ural_tt
+			hidden_effect = {
+				every_owned_state = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = SSD_siberian_national_unity
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = SSD_mobilisation
+		#text = "All-Siberian Mobilisation"
+		icon = GFX_focus_generic_military_academy
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = 500000
+		}
+		prerequisite = {
+			focus = SSD_the_ural_wall
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = SSD_come_at_me_cunt
+		#text = "Come Out You Anglo"
+		icon = GFX_VIN_New_Colossus
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			ENG = {country_event = ssd.7}
+		}
+		prerequisite = {
+			focus = SSD_melt_into_cannons
+		}
+		prerequisite = {
+			focus = SSD_mobilisation
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = SSD_lure_in_the_investors
+		#text = "Lure In The Investors"
+		icon = GFX_VIN_Optional_Wages
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_liti_tt #hahaha
+			add_to_variable = { SSD_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { SSD_var_resource_gain = -0.05 }
+		}
+		prerequisite = {
+			focus = SSD_no_limit_rule
+		}
+		prerequisite = {
+			focus = SSD_world_trade_opens
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = SSD_siberian_regional_army
+		#text = "The Siberian Regional Army"
+		icon = GFX_goal_RUS_Wrangel_plan
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_sra_tt #hahaha
+			add_to_variable = { SSD_conscription_factor = 0.15 }
+			add_to_variable = { SSD_var_prod_eff_cap = -0.05 }
+		}
+		prerequisite = {
+			focus = SSD_lure_in_the_investors
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = SSD_expand_the_railroads
+		#text = "Expand The Train Systems"
+		icon = GFX_goal_Old_Train
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = SSD_lure_in_the_investors
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = SSD_russo_siberian_road
+		#text = "Russo-Siberian Railroad"
+		icon = GFX_goal_RAJ_indian_railways
+		cost = 10
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_rsr_tt #hahaha
+			add_to_variable = { industrial_capacity_factory = 0.05 }
+			add_to_variable = { SSD_cons_goods = -0.1 }
+			398 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			399 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			256 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			252 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			253 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			219 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = SSD_expand_the_railroads
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = SSD_people_for_hire
+		#text = "Guns For Hire"
+		icon = GFX_goal_Mercenary_Forces
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_pfh_tt #hahaha
+			add_to_variable = { SSD_send_volunteer_size = 4 }
+			add_to_variable = { SSD_send_volunteer_divisions_required = -0.20 }
+			add_to_variable = { send_volunteers_tension = -0.25 }
+		}
+		prerequisite = {
+			focus = SSD_siberian_regional_army
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = SSD_new_industrial_standard
+		#text = "The Industrial Armada"
+		icon = GFX_goal_Industrial_Tanks
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_nis_tt #hahaha
+			add_to_variable = { SSD_var_prod_eff_cap = 0.1 }
+			add_to_variable = { SSD_industry_free_repair_factor = 0.20 }
+			two_random_arms_factory = yes
+			two_random_industrial_complex = yes
+		}
+		prerequisite = {
+			focus = SSD_people_for_hire
+		}
+		prerequisite = {
+			focus = SSD_russo_siberian_road
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = SSD_oil_rush
+		#text = "The Oil Rush"
+		icon = GFX_goal_Oil
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_or_tt
+			add_to_variable = { SSD_MONTHLY_POPULATION = 0.1 }
+			577 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = SSD_new_industrial_standard
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = SSD_feel_like_a_millionaire
+		#text = "The Emerald Field"
+		icon = GFX_goal_focus_arg_university
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_ef_tt
+			add_to_variable = { SSD_speed_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = SSD_oil_rush
+		}
+		prerequisite = {
+			focus = SSD_buy_siberian
+		}
+		x = 12
+		y = 11
+
+	}
+	focus = {
+		id = SSD_buy_siberian
+		#text = "Buy Siberian!"
+		icon = GFX_goal_DAH_Topke
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RB_lower_british_econ_influence = yes
+		}
+		prerequisite = {
+			focus = SSD_new_industrial_standard
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = SSD_the_emerald_ifeld
+		#text = "Feel Like A Millionaire"
+		icon = GFX_Extravagance
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.15
+			add_political_power = 200
+		}
+		prerequisite = {
+			focus = SSD_feel_like_a_millionaire
+		}
+		x = 12
+		y = 12
+
+	}
+	focus = {
+		id = SSD_liberty_corps
+		#text = "The National Liberty Corps"
+		icon = GFX_Advised_Military
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_war_support = 0.05
+			load_oob = "Siberian Liberty Corps"
+		}
+		prerequisite = {
+			focus = SSD_refuge_for_all
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = SSD_worker_rights
+		#text = "Worker Rights Bill"
+		icon = GFX_generic_change_law_labor
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SSD_wr_tt #hahaha
+			add_to_variable = { SSD_var_prod_eff_cap = 0.15 }
+			add_to_variable = { SSD_local_resources_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = SSD_refuge_for_all
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = SSD_the_land_of_the_free
+		#text = "Land Of The Free"
+		icon = GFX_generic_economic_liberty
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+			two_random_industrial_complex = yes
+		}
+		prerequisite = {
+			focus = SSD_worker_rights
+		}
+		prerequisite = {
+			focus = SSD_liberty_corps
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = SSD_home_of_the_brave
+		#text = "Home Of The Brave"
+		icon = GFX_goal_army_guy_2
+		cost = 8
+		x = 14
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_war_support = 0.15
+			custom_effect_tooltip = SSD_hofb_tt #hahaha
+			add_to_variable = { SSD_army_core_defence_factor = 0.1 }
+			two_random_arms_factory = yes
+		}
+		prerequisite = {
+			focus = SSD_the_land_of_the_free
+		}
+		x = 21
+		y = 12
+
+	}
+}

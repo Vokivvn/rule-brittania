@@ -1,0 +1,1259 @@
+focus_tree = {
+	id = rb_austria
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = AUS
+		}
+	}
+	default = no
+	focus = {
+		id = AUS_Realm_wide_Development
+		icon = GFX_goal_unknown
+		cost = 5.00
+		mutually_exclusive = {
+			focus = AUS_Western_Development
+		}
+		x = 22
+		y = 0
+
+	}
+	focus = {
+		id = AUS_Western_Development
+		icon = GFX_goal_AUS_Western_Development
+		cost = 5.00
+		mutually_exclusive = {
+			focus = AUS_Realm_wide_Development
+		}
+		x = 20
+		y = 0
+
+	}
+	focus = {
+		id = AUS_Kaiserliche_Armee
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 34
+		y = 0
+		completion_reward = {
+			army_experience = 10
+		}
+
+	}
+	focus = {
+		id = AUS_The_Old_Man_Of_Europe
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = AUS_Administrational_Issues
+		icon = GFX_generic_writing
+		cost = 1.00
+		prerequisite = {
+			focus = AUS_The_Old_Man_Of_Europe
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = "Adressing Issues of our Administration will go a long way to mend our Empire"
+		}	
+
+	}
+	focus = {
+		id = AUS_The_Southern_Frontier
+		icon = GFX_Italy_Must_Die
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Administrational_Issues
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = AUS_The_Bosnia_Question
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_The_Southern_Frontier
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = AUS_Call_the_Reichsrat
+		icon = GFX_generic_judicial_opinion
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Administrational_Issues
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			#Calls Event
+		}
+
+	}
+	focus = {
+		id = AUS_Reaffirm_Religious_Freedom
+		icon = GFX_generic_diplomacy_peace
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Call_the_Reichsrat
+		}
+		mutually_exclusive = {
+			focus = AUS_Reinforce_The_Catholic_Church
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = AUS_Centralise_Administration
+		icon = GFX_generic_judicial_opinion
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Reaffirm_Religious_Freedom
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = AUS_Reinforce_The_Catholic_Church
+		icon = GFX_focus_BEL_Improve_Catholic_Relations
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Call_the_Reichsrat
+		}
+		mutually_exclusive = {
+			focus = AUS_Reaffirm_Religious_Freedom
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = AUS_Decentralise_Administration
+		icon = GFX_focus_HRE_the_streets_of_dortmund
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Reinforce_The_Catholic_Church
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = AUS_The_Heartland
+		icon = GFX_focus_HRE_return_the_economy
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Administrational_Issues
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = AUS_Bohemias_Position
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_The_Heartland
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = AUS_Hungarian_Position
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Bohemias_Position
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = AUS_Looking_Westwards
+		icon = GFX_focus_AUS_Looking_Westwards
+		cost = 1.00
+		prerequisite = {
+			focus = AUS_The_Old_Man_Of_Europe
+		}
+		x = 12
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = "Central Europe is in dire need for a Leader, we are in a position to take that position"
+		}
+
+	}
+	focus = {
+		id = AUS_Our_German_Brethren
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Looking_Westwards
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = AUS_Up_the_Danube
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Our_German_Brethren
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = AUS_On_The_Oder
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Our_German_Brethren
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = AUS_Further_Our_Reach
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_On_The_Oder
+		}
+		prerequisite = {
+			focus = AUS_Up_the_Danube
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = AUS_Enough_Problems_at_home
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Further_Our_Reach
+		}
+		mutually_exclusive = {
+			focus = AUS_Bind_Them_Closer
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = AUS_Across_The_Alps
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Looking_Westwards
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = AUS_Invest_in_Lombardy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Across_The_Alps
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = AUS_A_Rival_To_Prag
+		icon = GFX_focus_HRE_return_the_economy
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Invest_in_Lombardy
+		}
+		mutually_exclusive = {
+			focus = AUS_A_Rival_To_Trieste
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = AUS_Invest_in_Veneto
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Across_The_Alps
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = AUS_A_Rival_To_Trieste
+		icon = GFX_Naval_Supplies
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Invest_in_Veneto
+		}
+		mutually_exclusive = {
+			focus = AUS_A_Rival_To_Prag
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = AUS_Protect_Our_Frontier
+		icon = GFX_Generic_Invasion
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Rival_To_Trieste
+			focus = AUS_A_Rival_To_Prag
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = AUS_Upper_Austrian_Factory_Expansions
+		icon = GFX_RAJ_India_Nurture_Heavy_Industry
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Western_Development
+		}
+		x = 18
+		y = 1
+		completion_reward = {
+			152 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+						level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Expand_Bohemian_Iron_Mines
+		icon = GFX_Southern_Steel
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Upper_Austrian_Factory_Expansions
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 16
+				state = 69
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Expand_Tyrolean_Gold_Mines
+		icon = GFX_Gold
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Expand_Bohemian_Iron_Mines
+		}
+		x = 18
+		y = 3
+		completion_reward = {
+			153 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+						level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Urban_Infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 7.00
+		prerequisite = {
+			focus = AUS_Western_Development
+			focus = AUS_Realm_wide_Development
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 4
+						state = 9
+						state = 43
+						state = 160
+						state = 159
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+						level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Wien_Prag_Highway
+		icon = GFX_goal_generic_construction2
+		cost = 4.00
+		prerequisite = {
+			focus = AUS_Urban_Infrastructure
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			934 = {
+				add_building_construction = {
+					type = infrastructure
+						level = 3
+					instant_build = yes
+				}
+			}	
+		}
+
+	}
+	focus = {
+		id = AUS_Workers_from_the_east
+		icon = GFX_focus_HRE_the_imperial_worker
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Expand_Bohemian_Iron_Mines
+		}
+		prerequisite = {
+			focus = AUS_Wien_Prag_Highway
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = AUS_Industrialised_Economy
+		icon = GFX_focus_HRE_return_the_economy
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Expand_Tyrolean_Gold_Mines
+		}
+		prerequisite = {
+			focus = AUS_Workers_from_the_east
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = AUS_Rural_Infrastructure
+		icon = GFX_goal_generic_construction
+		cost = 7.00
+		prerequisite = {
+			focus = AUS_Realm_wide_Development
+			focus = AUS_Western_Development
+		}
+		x = 22
+		y = 1
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 947
+						state = 73
+						state = 84
+						state = 82
+						state = 74
+						state = 153
+						state = 937
+						state = 942
+						state = 45
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+						level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Cross_Country_Railways
+		icon = GFX_Old_Train
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Rural_Infrastructure
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 936
+						state = 950
+						state = 945
+						state = 154
+						state = 949
+						state = 75
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+						level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Strengthen_Domestic_Trade
+		icon = GFX_RAJ_India_The_Trade
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Realm_wide_Development
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_subject_of = AUS
+				}
+				add_ideas = AUS_Strengthened_Domestic_Trade
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Our_Long_reach_down_the_Danube
+		icon = GFX_focus_HRE_sailing_along_the_river
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_Strengthen_Domestic_Trade
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+			950 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+					instant_build = yes
+				}
+			}	
+			945 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+					instant_build = yes
+				}
+			}	
+			115 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+					instant_build = yes
+				}
+			}	
+			45 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+					instant_build = yes
+				}
+			}
+			764 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+					instant_build = yes
+				}
+			}			
+		}
+
+	}
+	focus = {
+		id = AUS_Balkan_Development
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Our_Long_reach_down_the_Danube
+		}
+		prerequisite = {
+			focus = AUS_Cross_Country_Railways
+		}
+		x = 22
+		y = 3
+		completion_reward = {
+			103 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+						level = 2
+					instant_build = yes
+				}
+			}
+			104 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+					instant_build = yes
+				}
+			}	
+		}
+
+	}
+	focus = {
+		id = AUS_Galician_Industry	#actually silesian
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Our_Long_reach_down_the_Danube
+		}
+		x = 24
+		y = 3
+		completion_reward = {
+			66 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+						level = 2
+					instant_build = yes
+				}
+			}
+			67 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+					instant_build = yes
+				}
+			}	
+		}
+
+	}
+	focus = {
+		id = AUS_Balanced_Economy
+		icon = GFX_focus_HRE_a_peacetime_economy
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Galician_Industry
+		}
+		prerequisite = {
+			focus = AUS_Balkan_Development
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = AUS_To_Wrench_Worker
+		icon = GFX_Soldiers_for_Workers
+		cost = 3.00
+		prerequisite = {
+			focus = AUS_Kaiserliche_Armee
+		}
+		x = 30
+		y = 1
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+						level = 1
+					instant_build = yes
+				}
+			}
+		}	
+
+	}
+	focus = {
+		id = AUS_Josef_Panzer
+		icon = GFX_doctrine_tank_warfare
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_To_Wrench_Worker
+		}
+		x = 27
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Infantry_Research
+		icon = GFX_RAJ_rifles_guns_cannons
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Josef_Panzer
+		}
+		x = 26
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = AUS_Support_Research
+		icon = GFX_goal_generic_army_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Josef_Panzer
+		}
+		x = 28
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = support_tech
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Miltiary_Production
+		icon = GFX_Focus_Military_Mobilisation
+		cost = 7.00
+		prerequisite = {
+			focus = AUS_Support_Research
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+						level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+						level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Steyr_St28
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_To_Wrench_Worker
+		}
+		x = 30
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Expand_The_Wiener_Flughafen
+		icon = GFX_goal_generic_build_airforce
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Steyr_St28
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+			4 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Expand_Aviation_Facilities
+		icon = GFX_Livonian_Airforce
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Expand_The_Wiener_Flughafen
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+						level = 1
+					instant_build = yes
+				}
+			}
+			4 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Radetzy_Class
+		icon = GFX_Bluewater_Navy
+		cost = 5.00
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+				controller = {
+					tag = AUS
+				}
+			}
+		}
+		prerequisite = {
+			focus = AUS_To_Wrench_Worker
+		}
+		x = 32
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_equipment
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Expand_Trieste
+		icon = GFX_Naval_Operations
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Radetzy_Class
+		}
+		available = {
+			736 = {
+				is_controlled_by = AUS
+			}
+		}
+		x = 32
+		y = 3
+		completion_reward = {
+			736 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Expand_Naval_Facilities
+		icon = GFX_Naval_Supplies
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Expand_Trieste
+		}
+		available = {
+			736 = {
+				is_controlled_by = AUS
+			}
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+			736 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					province = 6626
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_To_Arms_Soldier
+		icon = GFX_goal_army_guy_2
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Kaiserliche_Armee
+		}
+		x = 38
+		y = 1
+		completion_reward = {
+			add_manpower = 20000
+		}
+
+	}
+	focus = {
+		id = AUS_Adriatic_Fortifications
+		icon = GFX_focus_generic_coastal_fort
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_To_Arms_Soldier
+		}
+		bypass = {
+			any_country = {
+				NOT = { 
+					OR = {
+						tag = AUS
+						is_subject_of = AUS
+					}
+				}
+				controls_state = 103
+				controls_state = 106
+				controls_state = 736
+			}	
+		}
+		x = 36
+		y = 2
+		completion_reward = {
+			103 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 6889
+					}
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 3924
+					}
+				}
+			}
+			736 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 6626
+					}
+				}
+			}
+			106 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 11584
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Fortify_Carpathia
+		icon = GFX_goal_generic_construct_military
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Adriatic_Fortifications
+		}
+		bypass = {
+			any_country = {
+				NOT = { 
+					OR = {
+						tag = AUS
+						is_subject_of = AUS
+					}
+				}
+				controls_state = 76
+				controls_state = 711
+			}	
+		}
+		x = 35
+		y = 3
+		completion_reward = {
+			76 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 9704
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 727
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 9685
+					}
+				}
+			}
+			948 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 711
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						id = 3689
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Fortify_Erzgebirge
+		icon = GFX_goal_generic_construct_military
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Adriatic_Fortifications
+		}
+		bypass = {
+			any_country = {
+				NOT = { 
+					OR = {
+						tag = AUS
+						is_subject_of = AUS
+					}
+				}
+				controls_state = 69
+			}	
+		}
+		x = 37
+		y = 3
+		completion_reward = {
+			69 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Minority_Volunteer_Program
+		icon = GFX_Generic_Colonial_Army
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_To_Arms_Soldier
+		}
+		x = 40
+		y = 2
+		completion_reward = {
+			add_timed_idea = {
+				days = 365
+				idea = AUS_Minority_Volunteer_Program
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Prepare_Alpine_Tactics
+		icon = GFX_Generic_Command_Power
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Minority_Volunteer_Program
+		}
+		x = 39
+		y = 3
+		completion_reward = {
+			unlock_decision_tooltip = AUS_Alpine_Defense_Plan_des
+		}
+
+	}
+	focus = {
+		id = AUS_Reinforce_Ostend_Garrisons
+		icon = GFX_Army_Purge
+		cost = 5.00
+		bypass = {
+			NOT = {
+				OST = {
+					is_subject_of = AUS
+					controls_state = 721
+				}
+			}
+		}
+		prerequisite = {
+			focus = AUS_Minority_Volunteer_Program
+		}
+		x = 41
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = "Reduces the troops requirement for the Ostend Garrison from 30000 to 15000."
+			set_country_flag = ostend_reinforced
+		}
+
+	}
+	focus = {
+		id = AUS_Broader_the_Conscription
+		icon = GFX_goal_army_guy_2
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Prepare_Alpine_Tactics
+		}
+		prerequisite = {
+			focus = AUS_Reinforce_Ostend_Garrisons
+		}
+		prerequisite = {
+			focus = AUS_Fortify_Erzgebirge
+		}
+		prerequisite = {
+			focus = AUS_Fortify_Carpathia
+		}
+		x = 38
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = available_conscription
+			show_ideas_tooltip = limited_conscription
+		}
+	}
+	focus = {
+		id = AUS_Artillery_Research
+		icon = GFX_generic_artillery_warfare
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Infantry_Research
+		}
+		x = 26
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 2
+				category = artillery
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Expand_Dockyards
+		icon = GFX_RAJ_The_Navy
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Rival_To_Trieste
+		}
+		prerequisite = {
+			focus = AUS_Protect_Our_Frontier
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = AUS_Expand_Civlian_Industry
+		icon = GFX_focus_generic_industry_3
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Rival_To_Prag
+		}
+		prerequisite = {
+			focus = AUS_Protect_Our_Frontier
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = AUS_Bind_Them_Closer
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Further_Our_Reach
+		}
+		mutually_exclusive = {
+			focus = AUS_Enough_Problems_at_home
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = AUS_The_Serbia_Question
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_The_Bosnia_Question
+		}
+		x = 1
+		y = 4
+
+	}
+}

@@ -1,0 +1,94 @@
+ideas = {
+	country = {
+	#INITIAL
+		KEN_white_highlands_i = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_content_conservatives_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = DEN_content_conservatives_ip
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+		KEN_mombasa_port_i = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_content_conservatives_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = navy_port_money_economy
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = -0.1
+				MONTHLY_POPULATION = 0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.8
+			}
+		}
+		KEN_native_resistance_i = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_content_conservatives_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = fire_hand_native_resistance
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+			}
+		}
+	#INTRO TREA
+	#FAST AND EASY
+	KEN_clean_operation_i = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_content_conservatives_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_fire_hand_native_resistance
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				planning_speed = 0.25
+				army_morale_factor = 0.1
+			}
+		}
+	}
+}		

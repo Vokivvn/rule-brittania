@@ -1,0 +1,348 @@
+shared_focus = {
+	id = ETH_an_empire_crushed
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_an_empire_crushed"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ETH_fortify_key_positions
+	icon = GFX_goal_generic_construct_military
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_an_empire_crushed
+	}
+
+	x = 7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_fortify_key_positions"
+	}
+}
+
+shared_focus = {
+	id = ETH_root_out_opposition
+	icon = GFX_goal_generic_major_war
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_an_empire_crushed
+	}
+
+	x = 9
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_root_out_opposition"
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.02
+		}
+	}
+}
+
+shared_focus = {
+	id = ETH_finally_control
+	icon = GFX_goal_support_democracy
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_fortify_key_positions
+	}
+
+	prerequisite = {
+		focus = ETH_root_out_opposition
+	}
+
+	x = 8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_finally_control"
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = ETH_not_fully_control
+	icon = GFX_goal_generic_dangerous_deal
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_finally_control
+	}
+
+	x = 8
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_not_fully_control"
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+
+shared_focus = {
+	id = ETH_the_rewards
+	icon = GFX_goal_generic_defence
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	prerequisite = {
+		focus = ETH_not_fully_control
+	}
+
+	mutually_exclusive = {
+		focus = ETH_call_reinforcements
+	}
+
+	x = 5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_the_rewards"
+		country_event = { id = eth.12 days = 2 }
+	}
+}
+
+shared_focus = {
+	id = ETH_a_tougher_enemy
+	icon = GFX_goal_generic_attack_allies
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_the_rewards
+	}
+
+	x = 4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_a_tougher_enemy"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ETH_fortify_position
+	icon = GFX_goal_generic_fortify_city
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_the_rewards
+	}
+
+	x = 6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_fortify_position"
+		#add defense to idea
+	}
+}
+
+shared_focus = {
+	id = ETH_recruit_more_men
+	icon = GFX_focus_generic_little_entente
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_fortify_position
+	}
+
+	prerequisite = {
+		focus = ETH_a_tougher_enemy
+	}
+
+	x = 3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_recruit_more_men"
+		add_manpower = 35000
+	}
+}
+
+shared_focus = {
+	id = ETH_Makeshift_walls
+	icon = GFX_goal_generic_defence
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_fortify_position
+	}
+
+	prerequisite = {
+		focus = ETH_a_tougher_enemy
+	}
+
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_Makeshift_walls"
+		#fort construction up
+	}
+}
+
+shared_focus = {
+	id = ETH_Map_out_plans
+	icon = GFX_goal_generic_position_armies
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_fortify_position
+	}
+
+	prerequisite = {
+		focus = ETH_a_tougher_enemy
+	}
+
+	x = 7
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_Map_out_plans"
+		#max planning up
+	}
+}
+
+shared_focus = {
+	id = ETH_Time_to_strike
+	icon = GFX_goal_generic_major_war
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = ETH_recruit_more_men
+	}
+
+	prerequisite = {
+		focus = ETH_Makeshift_walls
+	}
+
+	prerequisite = {
+		focus = ETH_Map_out_plans
+	}
+
+	x = 5
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_Time_to_strike"
+	}
+}
+
+
+
+shared_focus = {
+	id = ETH_call_reinforcements
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	cost = 1.00
+
+	ai_will_do = {
+		factor = 4
+	}
+
+	prerequisite = {
+		focus = ETH_not_fully_control
+	}
+
+	mutually_exclusive = {
+		focus = ETH_the_rewards
+	}
+
+	x = 12
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ETH_call_reinforcements"
+	}
+}

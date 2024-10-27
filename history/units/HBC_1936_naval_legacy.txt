@@ -1,0 +1,37 @@
+﻿##### NAVAL OOB #####
+
+units= {
+	fleet = { # Pacific Fleet
+		name = "Pacific Fleet"			
+		naval_base = 13091
+		task_force = {				
+			name = "Alaska Flotilla"
+			location = 13091	
+			ship = { name = "Radisson" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HBC version_name = "Radisson Class" } } }		
+			ship = { name = "Kodiak" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HBC version_name = "Kodiak Class" } } }			
+			ship = { name = "Glacier Bay" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HBC version_name = "Kodiak Class" } } }	
+			ship = { name = "Chichagof" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HBC version_name = "Kodiak Class" } } }			
+		}
+		
+	    task_force = { #Submarines
+			name = "Pacific Submarine Flotilla"
+			location = 1869
+			ship = { name = "A-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HBC version_name = "Arctic Class" } } }
+			ship = { name = "A-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HBC version_name = "Arctic Class" } } }
+		}
+	}
+	fleet = { # Atlantic Fleet
+		name = "Atlantic Fleet"
+		naval_base = 761
+		task_force = {
+			name = "Hudson Bay Flotilla"
+			location = 761
+			ship = { name = "Winnipeg" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HBC version_name = "Winnipeg Class" } } }
+			ship = { name = "Frobisher" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HBC version_name = "Radisson Class"} } } 		
+			ship = { name = "McTavish" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HBC version_name = "Radisson Class" } } }
+			ship = { name = "Baffin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HBC version_name = "Kodiak Class" } } }			
+			ship = { name = "Southhampton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HBC version_name = "Kodiak Class" } } }
+			ship = { name = "Akimski" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HBC version_name = "Kodiak Class" } } }
+		}
+	}
+}

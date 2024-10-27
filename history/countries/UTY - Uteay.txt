@@ -1,0 +1,121 @@
+﻿capital = 380
+
+set_research_slots = 2
+
+set_stability = 0.5
+set_war_support = 0.1
+
+add_ideas = {
+	UTY_Church_Influence
+	UTY_Poseys_Raids
+	UTY_Desperados
+}
+
+set_politics = {
+	ruling_party = parliamentarianism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 4
+    liberalism = 18
+    republicanism = 9
+    parliamentarianism = 61
+    administrationism = 7
+    absolutism = 0
+    despotism = 0
+    nationalism = 1
+}
+
+set_cosmetic_tag = UTY_ENG
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+create_country_leader = {
+	name = "Henry H. Blood"
+	#desc = 
+	picture = "Portrait_UTY_Spencer_W._Kimball.dds"
+	expire = "1999.12.12"
+	ideology = parliamentarianism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Parley P. Christensen"
+	#desc = 
+	picture = "Portrait_UTY_Spencer_W._Kimball.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Parley P. Christensen"
+	#desc = 
+	picture = "Portrait_UTY_Spencer_W._Kimball.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "J. Reuben Clark"
+	#desc = 
+	picture = "Portrait_UTY_J._Reuben_Clark.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Posey"
+	#desc = 
+	picture = "Portrait_UTY_Posey.dds"
+	expire = "1999.12.12"
+	ideology = marxism_subtype
+	traits = {
+	}
+}

@@ -1,0 +1,64 @@
+defined_text = {
+	name = BRA_tea_progress
+	text = {
+		trigger = {
+			check_variable = { bra_tea_introduction > 4 }
+		}
+		localization_key = BRA_good_progress
+	}	
+	text = {
+		trigger = {
+			check_variable = { bra_tea_introduction > 0 }
+		}
+		localization_key = BRA_some_progress
+	}
+	text = {
+		trigger = {
+			check_variable = { bra_tea_introduction = 0 }
+		}
+		localization_key = BRA_no_progress
+	}
+	text = {
+		trigger = {
+			check_variable = { bra_tea_introduction < 0 }
+		}
+		localization_key = BRA_bad_progress
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { bra_tea_introduction < -2 }
+		}
+		localization_key = BRA_abysmal_progress
+	}	
+}
+defined_text = {
+	name = BRA_anti_anglo
+	text = {
+		trigger = {
+			check_variable = { bra_unrest > 8 }
+		}
+		localization_key = BRA_breaking_point
+	}
+	text = {
+		trigger = {
+			check_variable = { bra_unrest > 4 }
+		}
+		localization_key = BRA_pissed
+	}
+	text = {
+		trigger = {
+			check_variable = { bra_unrest > 0 }
+		}
+		localization_key = BRA_angry
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { bra_unrest = 0 }
+				check_variable = { bra_unrest < 0 }
+			}
+		}
+		localization_key = BRA_content
+	}
+}

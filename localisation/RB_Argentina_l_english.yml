@@ -1,0 +1,9 @@
+﻿l_english:
+ ##Country Names##
+ ARG_despotism:0 "Republic of the River Plate"
+ ARG_despotism_DEF:0 "The Republic of the River Plate"
+ ARG_despotism_ADJ:0 "Argentinian"
+
+ ##Party Names##
+ ARG_despotism_party:0 "Argentina Party"
+ ARG_despotism_party_long:0 "Argentina Party"

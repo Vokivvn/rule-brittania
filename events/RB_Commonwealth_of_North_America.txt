@@ -1,0 +1,4627 @@
+﻿add_namespace = CNA
+
+country_event = { #Starting event
+	id = CNA.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.1"}
+	title = CNA.1.t
+	desc = CNA.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.1.a
+		ai_chance = { factor = 1 }
+		add_political_power = 50
+	}
+}
+
+country_event = { #Atlantic peacekeepers
+	id = CNA.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.2"}
+	title = CNA.2.t
+	desc = CNA.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.2.a
+		ai_chance = { factor = 1 }
+		army_experience = 20
+	}
+}
+
+country_event = { #Anglo Mexicans
+	id = CNA.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.3"}
+	title = CNA.3.t
+	desc = CNA.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.3.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Merchants
+	id = CNA.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.4"}
+	title = CNA.4.t
+	desc = CNA.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.4.a
+		ai_chance = { factor = 1 }
+		381 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #Expedition against the SoL
+	id = CNA.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.5"}
+	title = CNA.5.t
+	desc = CNA.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Go after Asheville (manpower)
+		name = CNA.5.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = CNA.6
+			days = 7
+		}
+	}
+	option = { #Go after Kanawha (guns)
+		name = CNA.5.b
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = CNA.8
+			days = 7
+		}
+	}
+}
+
+country_event = { #RNAA troops arrive in Asheville
+	id = CNA.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.6"}
+	title = CNA.6.t
+	desc = CNA.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.6.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				has_country_flag = CNA_RNAA_SoL_expedition
+			}
+			country_event = {
+				id = CNA.7
+				days = 1
+			}
+		}
+		else = {
+			hidden_effect = {
+				random_list = {
+					50 = {
+						country_event = {
+							id = CNA.7
+							days = 1
+						}
+					}
+					50 = {
+						country_event = {
+							id = CNA.12
+							days = 1
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #SoL members arrested!
+	id = CNA.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.7"}
+	title = CNA.7.t
+	desc = CNA.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.7.a
+		ai_chance = { factor = 1 }
+		set_country_flag = CNA_asheville_sol_arrested
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				id = CNA.10
+				days = 28
+			}
+		}
+	}
+}
+
+country_event = { #RNAA troops search Kanawha
+	id = CNA.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.8"}
+	title = CNA.8.t
+	desc = CNA.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.8.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				has_country_flag = CNA_RNAA_SoL_expedition
+			}
+			country_event = {
+				id = CNA.9
+				days = 1
+			}
+		}
+		else = {
+			hidden_effect = {
+				random_list = {
+					50 = {
+						country_event = {
+							id = CNA.9
+							days = 1
+						}
+					}
+					50 = {
+						country_event = {
+							id = CNA.12
+							days = 1
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #SoL arms cache found!
+	id = CNA.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.9"}
+	title = CNA.9.t
+	desc = CNA.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.9.a
+		ai_chance = { factor = 1 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+		}
+		set_country_flag = CNA_kanawha_sol_arms_taken
+		hidden_effect = {
+			country_event = {
+				id = CNA.10
+				days = 28
+			}
+		}
+	}
+}
+
+country_event = { #More infra without SoL terrorism yay
+	id = CNA.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.10"}
+	title = CNA.10.t
+	desc = CNA.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.10.a
+		ai_chance = { factor = 1 }
+		824 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		825 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #RNAA or militias?
+	id = CNA.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.11"}
+	title = CNA.11.t
+	desc = CNA.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #RNAA
+		name = CNA.11.a
+		ai_chance = { factor = 1 }
+		add_manpower = -1000
+		set_country_flag = CNA_RNAA_SoL_expedition
+		country_event = {
+			id = CNA.5
+			days = 1
+		}
+	}
+	option = { #Militias
+		name = CNA.11.b
+		ai_chance = { factor = 1 }
+		add_political_power = 10
+		set_country_flag = CNA_militias_SoL_expedition
+		country_event = {
+			id = CNA.5
+			days = 1
+		}
+	}
+}
+
+country_event = { #Militias fail
+	id = CNA.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.12"}
+	title = CNA.12.t
+	desc = CNA.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.12.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.03
+		set_country_flag = CNA_sol_expedition_failed
+	}
+}
+
+country_event = { #Economic development of Minnesota w/ Louisiana
+	id = CNA.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.13"}
+	title = CNA.13.t
+	desc = CNA.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.13.a
+		ai_chance = { factor = 1 }
+		820 = {
+			add_extra_state_shared_building_slots = yes
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		CNA = {
+			country_event = {
+				id = CNA.14
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Above
+	id = CNA.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.14"}
+	title = CNA.14.t
+	desc = CNA.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.14.a
+		ai_chance = { factor = 1 }
+		802 = {
+			add_extra_state_shared_building_slots = yes
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #
+	id = CNA.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.15"}
+	title = CNA.15.t
+	desc = CNA.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.15.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.15.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.16"}
+	title = CNA.16.t
+	desc = CNA.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.16.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.16.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.17"}
+	title = CNA.17.t
+	desc = CNA.17.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.17.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.17.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.18"}
+	title = CNA.18.t
+	desc = CNA.18.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.18.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.18.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.19"}
+	title = CNA.19.t
+	desc = CNA.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.19.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.19.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Elections
+	id = CNA.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.20"}
+	title = CNA.20.t
+	desc = CNA.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Tories maintain power
+		name = CNA.20.a
+		ai_chance = { factor = 6 }
+		set_country_flag = CNA_1936_tory_victory
+		set_country_flag = CNA_1936_elections_done
+	}
+	option = { #Whigs pull ahead
+		name = CNA.20.b
+		ai_chance = { factor = 3 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = republicanism
+		}
+		set_country_flag = CNA_1936_whig_victory
+		set_country_flag = CNA_1936_elections_done
+	}
+	option = { #Labour upset
+		name = CNA.20.c
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = liberalism
+		}
+		set_country_flag = CNA_1936_labour_victory
+		set_country_flag = CNA_1936_elections_done
+	}
+}
+
+country_event = { #
+	id = CNA.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.21"}
+	title = CNA.21.t
+	desc = CNA.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.21.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.21.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.22"}
+	title = CNA.22.t
+	desc = CNA.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.22.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.22.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.23"}
+	title = CNA.23.t
+	desc = CNA.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.23.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.23.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.24"}
+	title = CNA.24.t
+	desc = CNA.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.24.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.24.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.25"}
+	title = CNA.25.t
+	desc = CNA.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.25.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.25.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.26"}
+	title = CNA.26.t
+	desc = CNA.26.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.26.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.26.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.27"}
+	title = CNA.27.t
+	desc = CNA.27.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.27.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.27.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.28"}
+	title = CNA.28.t
+	desc = CNA.28.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.28.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.28.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.29"}
+	title = CNA.29.t
+	desc = CNA.29.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.29.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.29.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #The Economic Crash
+	id = CNA.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.30"}
+	title = CNA.30.t
+	desc = CNA.30.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.30.a
+		ai_chance = { factor = 1 }
+		remove_ideas = CNA_great_lakes_industry_2
+		add_stability = -0.05
+		add_political_power = -50
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = CNA_econ_crash_dynmod
+			}
+			add_ideas = CNA_econ_crash_idea
+		}
+		set_variable = { CNA_var_construction_speed = -.5 }
+		set_variable = { CNA_var_prod_eff_cap = -.25 }
+		set_variable = { CNA_var_factory_output = -.4 }
+		set_variable = { CNA_var_consumer_goods = .25 }
+		set_variable = { CNA_var_resource_gain = -.5 }
+	}
+}
+
+country_event = { #britain pls help
+	id = CNA.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.31"}
+	title = CNA.31.t
+	desc = CNA.31.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Ok
+		name = CNA.31.a
+		ai_chance = { factor = 10 }
+		add_political_power = -100
+		CNA = {
+			country_event = {
+				id = CNA.32
+				days = 3
+			}
+		}
+	}
+	option = { #No
+		name = CNA.31.b
+		ai_chance = { factor = 7 }
+		CNA = {
+			country_event = {
+				id = CNA.33
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = { #Britain helped
+	id = CNA.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.32"}
+	title = CNA.32.t
+	desc = CNA.32.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.32.a
+		ai_chance = { factor = 1 }
+		RB_raise_british_econ_influence = yes
+		add_to_variable = { CNA_var_factory_output = 0.3 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_factory_output_30
+	}
+}
+
+country_event = { #No help
+	id = CNA.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.33"}
+	title = CNA.33.t
+	desc = CNA.33.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.33.a
+		ai_chance = { factor = 1 }
+		add_political_power = -100
+	}
+}
+
+country_event = { #
+	id = CNA.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.34"}
+	title = CNA.34.t
+	desc = CNA.34.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.34.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.34.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.35"}
+	title = CNA.35.t
+	desc = CNA.35.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.35.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.35.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.36"}
+	title = CNA.36.t
+	desc = CNA.36.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.36.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.36.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.37"}
+	title = CNA.37.t
+	desc = CNA.37.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.37.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.37.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.38"}
+	title = CNA.38.t
+	desc = CNA.38.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.38.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.38.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.39"}
+	title = CNA.39.t
+	desc = CNA.39.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.39.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.39.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.40"}
+	title = CNA.40.t
+	desc = CNA.40.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.40.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.40.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.41"}
+	title = CNA.41.t
+	desc = CNA.41.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.41.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.41.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.42"}
+	title = CNA.42.t
+	desc = CNA.42.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.42.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.42.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.43"}
+	title = CNA.43.t
+	desc = CNA.43.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.43.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.43.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.44"}
+	title = CNA.44.t
+	desc = CNA.44.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.44.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.44.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.45"}
+	title = CNA.45.t
+	desc = CNA.45.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.45.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.45.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.46"}
+	title = CNA.46.t
+	desc = CNA.46.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.46.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.46.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.47"}
+	title = CNA.47.t
+	desc = CNA.47.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.47.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.47.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.48"}
+	title = CNA.48.t
+	desc = CNA.48.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.48.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.48.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.49"}
+	title = CNA.49.t
+	desc = CNA.49.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.49.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.49.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.50"}
+	title = CNA.50.t
+	desc = CNA.50.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.50.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.50.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Beginning of chain leading to revolution
+	id = CNA.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.51"}
+	title = CNA.51.t
+	desc = CNA.51.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.51.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.51.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.52"}
+	title = CNA.52.t
+	desc = CNA.52.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.52.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.52.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.53"}
+	title = CNA.53.t
+	desc = CNA.53.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.53.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.53.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.54"}
+	title = CNA.54.t
+	desc = CNA.54.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.54.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.54.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.55"}
+	title = CNA.55.t
+	desc = CNA.55.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.55.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.55.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.56"}
+	title = CNA.56.t
+	desc = CNA.56.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.56.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.56.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.57"}
+	title = CNA.57.t
+	desc = CNA.57.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.57.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.57.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.58"}
+	title = CNA.58.t
+	desc = CNA.58.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.58.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.58.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.59
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.59"}
+	title = CNA.59.t
+	desc = CNA.59.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.59.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.59.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.60
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.60"}
+	title = CNA.60.t
+	desc = CNA.60.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.60.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.60.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.61
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.61"}
+	title = CNA.61.t
+	desc = CNA.61.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.61.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.61.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.62
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.62"}
+	title = CNA.62.t
+	desc = CNA.62.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.62.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.62.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.63
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.63"}
+	title = CNA.63.t
+	desc = CNA.63.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.63.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.63.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.64
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.64"}
+	title = CNA.64.t
+	desc = CNA.64.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.64.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.64.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.65
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.65"}
+	title = CNA.65.t
+	desc = CNA.65.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.65.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.65.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.66
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.66"}
+	title = CNA.66.t
+	desc = CNA.66.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.66.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.66.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.67
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.67"}
+	title = CNA.67.t
+	desc = CNA.67.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.67.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.67.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.68
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.68"}
+	title = CNA.68.t
+	desc = CNA.68.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.68.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.68.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.69
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.69"}
+	title = CNA.69.t
+	desc = CNA.69.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.69.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.69.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.70"}
+	title = CNA.70.t
+	desc = CNA.70.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.70.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.70.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.71
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.71"}
+	title = CNA.71.t
+	desc = CNA.71.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.71.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.71.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.72
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.72"}
+	title = CNA.72.t
+	desc = CNA.72.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.72.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.72.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.73
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.73"}
+	title = CNA.73.t
+	desc = CNA.73.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.73.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.73.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.74
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.74"}
+	title = CNA.74.t
+	desc = CNA.74.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.74.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.74.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Rioting breaks out across the CNA
+	id = CNA.75
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.75"}
+	title = CNA.75.t
+	desc = CNA.75.desc
+	#picture = 
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = USA_rebel_state
+				}
+				set_demilitarized_zone = yes
+			}
+			country_event = {
+				id = american_rev.1
+				days = 13
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.75.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.05
+	}
+}
+
+country_event = { #
+	id = CNA.76
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.76"}
+	title = CNA.76.t
+	desc = CNA.76.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.76.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.76.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.77"}
+	title = CNA.77.t
+	desc = CNA.77.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.77.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.77.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.78
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.78"}
+	title = CNA.78.t
+	desc = CNA.78.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.78.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.78.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.79
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.79"}
+	title = CNA.79.t
+	desc = CNA.79.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.79.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.79.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.80
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.80"}
+	title = CNA.80.t
+	desc = CNA.80.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.80.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.80.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.81
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.81"}
+	title = CNA.81.t
+	desc = CNA.81.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.81.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.81.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.82
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.82"}
+	title = CNA.82.t
+	desc = CNA.82.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.82.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.82.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.83
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.83"}
+	title = CNA.83.t
+	desc = CNA.83.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.83.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.83.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.84
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.84"}
+	title = CNA.84.t
+	desc = CNA.84.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.84.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.84.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.85
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.85"}
+	title = CNA.85.t
+	desc = CNA.85.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.85.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.85.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.86
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.86"}
+	title = CNA.86.t
+	desc = CNA.86.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.86.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.86.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.87
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.87"}
+	title = CNA.87.t
+	desc = CNA.87.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.87.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.87.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.88
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.88"}
+	title = CNA.88.t
+	desc = CNA.88.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.88.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.88.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.89
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.89"}
+	title = CNA.89.t
+	desc = CNA.89.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.89.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.89.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.90
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.90"}
+	title = CNA.90.t
+	desc = CNA.90.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.90.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.90.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.91
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.91"}
+	title = CNA.91.t
+	desc = CNA.91.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.91.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.91.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.92
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.92"}
+	title = CNA.92.t
+	desc = CNA.92.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.92.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.92.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.93
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.93"}
+	title = CNA.93.t
+	desc = CNA.93.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.93.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.93.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.94
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.94"}
+	title = CNA.94.t
+	desc = CNA.94.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.94.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.94.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.95
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.95"}
+	title = CNA.95.t
+	desc = CNA.95.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.95.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.95.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.96
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.96"}
+	title = CNA.96.t
+	desc = CNA.96.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.96.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.96.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.97
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.97"}
+	title = CNA.97.t
+	desc = CNA.97.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.97.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.97.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.98
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.98"}
+	title = CNA.98.t
+	desc = CNA.98.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.98.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.98.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.99
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.99"}
+	title = CNA.99.t
+	desc = CNA.99.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.99.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.99.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+#REVOLUTION STUFF STARTS HERE
+country_event = { #OOB
+	id = CNA.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.100"}
+	title = CNA.100.t
+	desc = CNA.100.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.100.a
+		ai_chance = { factor = 1 }
+		#load_oob = "CNA_revolution"
+	}
+}
+
+country_event = { #louisiana please help
+	id = CNA.101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.101"}
+	title = CNA.101.t
+	desc = CNA.101.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = RB_anglo_loyalist
+	}
+	
+	option = { #
+		name = CNA.101.a
+		ai_chance = { factor = 1 }
+		add_to_war = {
+			targeted_alliance = CNA
+			enemy = USA
+			hostility_reason = asked_to_join
+		}
+	}
+}
+
+country_event = { #Defensive plan
+	id = CNA.102
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.102"}
+	title = CNA.102.t
+	desc = CNA.102.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Fortify the South
+		name = CNA.102.a
+		ai_chance = { factor = 1 }
+		set_country_flag = CNA_south_defensive_plan
+		381 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 6732
+			}
+		}
+		925 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 3878
+			}
+		}
+		928 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 788
+			}
+		}
+	}
+	option = { #Fortify the Maritimes
+		name = CNA.102.b
+		ai_chance = { factor = 1 }
+		set_country_flag = CNA_maritimes_defensive_plan
+		381 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 6732
+			}
+		}
+		925 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 3878
+			}
+		}
+		928 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 788
+			}
+		}
+	}
+	option = { #Fortify the Northwest
+		name = CNA.102.c
+		ai_chance = { factor = 1 }
+		set_country_flag = CNA_northwest_defensive_plan
+		381 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 6732
+			}
+		}
+		925 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 3878
+			}
+		}
+		928 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 788
+			}
+		}
+	}
+}
+
+country_event = { #
+	id = CNA.103
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.103"}
+	title = CNA.103.t
+	desc = CNA.103.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.103.a
+		ai_chance = { factor = 1 }
+		USA = {	
+			country_event = {
+				id = CNA.104
+				days = 1
+			}
+		}
+		add_political_power = -100
+	}
+	option = { #
+		name = CNA.103.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.104
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.104"}
+	title = CNA.104.t
+	desc = CNA.104.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.104.a
+		ai_chance = { factor = 1 }
+		add_ideas = USA_british_blockade
+	}
+}
+
+country_event = { #
+	id = CNA.105
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.105"}
+	title = CNA.105.t
+	desc = CNA.105.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = CNA.105.a
+		ai_chance = { factor = 1 }
+		USA = {
+			country_event = {
+				id = CNA.106
+				days = 1
+			}
+		}
+	}
+	option = { #
+		name = CNA.105.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Got blockaded
+	id = CNA.106
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.106"}
+	title = CNA.106.t
+	desc = CNA.106.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = CNA.106.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Asking Brits for guns
+	id = CNA.107
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.107"}
+	title = CNA.107.t
+	desc = CNA.107.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Yes
+		name = CNA.107.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		CNA = {
+			country_event = {
+				id = CNA.108
+				days = 1
+			}
+		}
+	}
+	option = { #
+		name = CNA.107.b
+		ai_chance = { factor = 5 }
+		
+	}
+}
+
+country_event = { #Guns
+	id = CNA.108
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.108"}
+	title = CNA.108.t
+	desc = CNA.108.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.108.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				CNA_has_100_percent_cities = yes
+			}
+			ENG = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 1000
+					target = CNA
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				CNA_has_66_percent_cities = yes
+			}
+			ENG = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 600
+					target = CNA
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				CNA_has_33_percent_cities = yes
+			}
+			ENG = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 300
+					target = CNA
+				}
+			}
+		}
+	}
+}
+
+country_event = { #
+	id = CNA.109
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.109"}
+	title = CNA.109.t
+	desc = CNA.109.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.109.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.109.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.110
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.110"}
+	title = CNA.110.t
+	desc = CNA.110.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.110.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.110.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.111
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.111"}
+	title = CNA.111.t
+	desc = CNA.111.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.111.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.111.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.112
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.112"}
+	title = CNA.112.t
+	desc = CNA.112.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.112.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.112.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.113
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.113"}
+	title = CNA.113.t
+	desc = CNA.113.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.113.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.113.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.114
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.114"}
+	title = CNA.114.t
+	desc = CNA.114.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.114.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.114.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.115
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.115"}
+	title = CNA.115.t
+	desc = CNA.115.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.115.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.115.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.116
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.116"}
+	title = CNA.116.t
+	desc = CNA.116.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.116.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.116.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.117
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.117"}
+	title = CNA.117.t
+	desc = CNA.117.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.117.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.117.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.118
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.118"}
+	title = CNA.118.t
+	desc = CNA.118.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.118.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.118.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.119
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.119"}
+	title = CNA.119.t
+	desc = CNA.119.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.119.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.119.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.120
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.120"}
+	title = CNA.120.t
+	desc = CNA.120.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.120.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.120.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Ask Britain to greenlight Operation Neptune
+	id = CNA.121
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.121"}
+	title = CNA.121.t
+	desc = CNA.121.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Yes
+		name = CNA.121.a
+		ai_chance = { factor = 1 }
+		add_manpower = -50000
+		CNA = {
+			country_event = {
+				id = CNA.122
+				days = 1
+			}
+		}
+	}
+	option = { #No
+		name = CNA.121.b
+		ai_chance = { factor = 0 }
+		CNA = {
+			country_event = {
+				id = CNA.123
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Operation Neptune greenlit
+	id = CNA.122
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.122"}
+	title = CNA.122.t
+	desc = CNA.122.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.122.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CNA_operation_neptune_greenlight_tooltip
+		set_country_flag = CNA_op_neptune_greenlight
+	}
+}
+
+country_event = { #No Operation Neptune
+	id = CNA.123
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.123"}
+	title = CNA.123.t
+	desc = CNA.123.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #fuck
+		name = CNA.123.a
+		ai_chance = { factor = 1 }
+		add_political_power = -50
+	}
+}
+
+country_event = { #Op Neptune for USA
+	id = CNA.124
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.124"}
+	title = CNA.124.t
+	desc = CNA.124.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #help
+		name = CNA.124.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.01
+	}
+}
+
+country_event = { #Op Neptune fails
+	id = CNA.125
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.125"}
+	title = CNA.125.t
+	desc = CNA.125.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok fuck this
+		name = CNA.125.a
+		ai_chance = { factor = 20 }
+		CNA = {
+			country_event = {
+				id = CNA.126
+				days = 1
+			}
+		}
+		add_manpower = 25000
+	}
+	option = { #don't fail again
+		name = CNA.125.b
+		ai_chance = { factor = 10 }
+		
+	}
+}
+
+country_event = { #Britain pulls all support
+	id = CNA.126
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.126"}
+	title = CNA.126.t
+	desc = CNA.126.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #fuuuuuuuuck
+		name = CNA.126.a
+		ai_chance = { factor = 1 }
+		add_war_support = -0.2
+		set_country_flag = CNA_ENG_pulled_support
+	}
+}
+
+country_event = { #
+	id = CNA.127
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.127"}
+	title = CNA.127.t
+	desc = CNA.127.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.127.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.127.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.128
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.128"}
+	title = CNA.128.t
+	desc = CNA.128.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.128.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.128.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.129
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.129"}
+	title = CNA.129.t
+	desc = CNA.129.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.129.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.129.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.130
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.130"}
+	title = CNA.130.t
+	desc = CNA.130.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.130.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.130.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #britain king pls speak
+	id = CNA.131
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.131"}
+	title = CNA.131.t
+	desc = CNA.131.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Sure
+		name = CNA.131.a
+		ai_chance = { factor = 20 }
+		CNA = {
+			country_event = {
+				id = CNA.132
+				days = 3
+			}
+		}
+	}
+	option = { #Too dangerous
+		name = CNA.131.b
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { #Speech from britan king
+	id = CNA.132
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.132"}
+	title = CNA.132.t
+	desc = CNA.132.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.132.a
+		ai_chance = { factor = 1 }
+		add_political_power = 100
+		add_war_support = 0.1
+	}
+}
+
+country_event = { #vive acadia libre
+	id = CNA.133
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.133"}
+	title = CNA.133.t
+	desc = CNA.133.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.133.a
+		ai_chance = { factor = 1 }
+		load_oob = "CNA_ACA"
+		465 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #
+	id = CNA.134
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.134"}
+	title = CNA.134.t
+	desc = CNA.134.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.134.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.134.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.135
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.135"}
+	title = CNA.135.t
+	desc = CNA.135.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.135.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.135.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.136
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.136"}
+	title = CNA.136.t
+	desc = CNA.136.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.136.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.136.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.137
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.137"}
+	title = CNA.137.t
+	desc = CNA.137.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.137.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.137.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.138
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.138"}
+	title = CNA.138.t
+	desc = CNA.138.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.138.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.138.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.139
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.139"}
+	title = CNA.139.t
+	desc = CNA.139.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.139.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.139.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.140
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.140"}
+	title = CNA.140.t
+	desc = CNA.140.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.140.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.140.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.141
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.141"}
+	title = CNA.141.t
+	desc = CNA.141.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.141.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.141.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.142
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.142"}
+	title = CNA.142.t
+	desc = CNA.142.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.142.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.142.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.143
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.143"}
+	title = CNA.143.t
+	desc = CNA.143.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.143.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.143.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.144
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.144"}
+	title = CNA.144.t
+	desc = CNA.144.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.144.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.144.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.145
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.145"}
+	title = CNA.145.t
+	desc = CNA.145.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.145.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.145.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.146
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.146"}
+	title = CNA.146.t
+	desc = CNA.146.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.146.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.146.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.147
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.147"}
+	title = CNA.147.t
+	desc = CNA.147.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.147.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.147.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.148
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.148"}
+	title = CNA.148.t
+	desc = CNA.148.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.148.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.148.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.149
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.149"}
+	title = CNA.149.t
+	desc = CNA.149.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.149.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.149.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.150
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.150"}
+	title = CNA.150.t
+	desc = CNA.150.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.150.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.150.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.151
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.151"}
+	title = CNA.151.t
+	desc = CNA.151.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.151.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.151.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.152
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.152"}
+	title = CNA.152.t
+	desc = CNA.152.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.152.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.152.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.153
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.153"}
+	title = CNA.153.t
+	desc = CNA.153.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.153.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.153.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.154
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.154"}
+	title = CNA.154.t
+	desc = CNA.154.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.154.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.154.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.155
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.155"}
+	title = CNA.155.t
+	desc = CNA.155.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.155.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.155.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.156
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.156"}
+	title = CNA.156.t
+	desc = CNA.156.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.156.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.156.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.157
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.157"}
+	title = CNA.157.t
+	desc = CNA.157.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.157.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.157.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.158
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.158"}
+	title = CNA.158.t
+	desc = CNA.158.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.158.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.158.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.159
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.159"}
+	title = CNA.159.t
+	desc = CNA.159.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.159.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.159.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.160
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.160"}
+	title = CNA.160.t
+	desc = CNA.160.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.160.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.160.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.161
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.161"}
+	title = CNA.161.t
+	desc = CNA.161.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.161.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.161.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.162
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.162"}
+	title = CNA.162.t
+	desc = CNA.162.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.162.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.162.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.163
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.163"}
+	title = CNA.163.t
+	desc = CNA.163.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.163.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.163.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.164
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.164"}
+	title = CNA.164.t
+	desc = CNA.164.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.164.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.164.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.165
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.165"}
+	title = CNA.165.t
+	desc = CNA.165.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.165.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.165.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.166
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.166"}
+	title = CNA.166.t
+	desc = CNA.166.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.166.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.166.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.167
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.167"}
+	title = CNA.167.t
+	desc = CNA.167.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.167.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.167.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.168
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.168"}
+	title = CNA.168.t
+	desc = CNA.168.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.168.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.168.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.169
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.169"}
+	title = CNA.169.t
+	desc = CNA.169.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.169.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.169.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.170
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.170"}
+	title = CNA.170.t
+	desc = CNA.170.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.170.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.170.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.171
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.171"}
+	title = CNA.171.t
+	desc = CNA.171.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.171.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.171.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.172
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.172"}
+	title = CNA.172.t
+	desc = CNA.172.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.172.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.172.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.173
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.173"}
+	title = CNA.173.t
+	desc = CNA.173.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.173.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.173.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.174
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.174"}
+	title = CNA.174.t
+	desc = CNA.174.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.174.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.174.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.175
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.175"}
+	title = CNA.175.t
+	desc = CNA.175.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.175.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.175.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.176
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.176"}
+	title = CNA.176.t
+	desc = CNA.176.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.176.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.176.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.177
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.177"}
+	title = CNA.177.t
+	desc = CNA.177.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.177.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.177.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.178
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.178"}
+	title = CNA.178.t
+	desc = CNA.178.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.178.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.178.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.179
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.179"}
+	title = CNA.179.t
+	desc = CNA.179.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.179.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.179.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.180
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.180"}
+	title = CNA.180.t
+	desc = CNA.180.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.180.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.180.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.181
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.181"}
+	title = CNA.181.t
+	desc = CNA.181.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.181.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.181.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.182
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.182"}
+	title = CNA.182.t
+	desc = CNA.182.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.182.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.182.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.183
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.183"}
+	title = CNA.183.t
+	desc = CNA.183.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.183.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.183.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.184
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.184"}
+	title = CNA.184.t
+	desc = CNA.184.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.184.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.184.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.185
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.185"}
+	title = CNA.185.t
+	desc = CNA.185.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.185.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.185.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.186
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.186"}
+	title = CNA.186.t
+	desc = CNA.186.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.186.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.186.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.187
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.187"}
+	title = CNA.187.t
+	desc = CNA.187.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.187.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.187.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.188
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.188"}
+	title = CNA.188.t
+	desc = CNA.188.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.188.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.188.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.189
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.189"}
+	title = CNA.189.t
+	desc = CNA.189.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.189.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.189.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.190
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.190"}
+	title = CNA.190.t
+	desc = CNA.190.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.190.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.190.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.191
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.191"}
+	title = CNA.191.t
+	desc = CNA.191.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.191.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.191.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.192
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.192"}
+	title = CNA.192.t
+	desc = CNA.192.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.192.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.192.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.193
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.193"}
+	title = CNA.193.t
+	desc = CNA.193.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.193.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.193.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.194
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.194"}
+	title = CNA.194.t
+	desc = CNA.194.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.194.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.194.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.195
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.195"}
+	title = CNA.195.t
+	desc = CNA.195.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.195.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.195.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.196
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.196"}
+	title = CNA.196.t
+	desc = CNA.196.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.196.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.196.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.197
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.197"}
+	title = CNA.197.t
+	desc = CNA.197.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.197.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.197.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.198
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.198"}
+	title = CNA.198.t
+	desc = CNA.198.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.198.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.198.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.199
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.199"}
+	title = CNA.199.t
+	desc = CNA.199.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.199.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.199.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = CNA.200
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CNA.200"}
+	title = CNA.200.t
+	desc = CNA.200.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = CNA.200.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = CNA.200.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+

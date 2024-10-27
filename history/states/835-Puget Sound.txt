@@ -1,0 +1,45 @@
+
+state={
+	id=835
+	name="STATE_835"
+
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			7315 = {
+				naval_base = 3
+			}
+			1408 = {
+				naval_base = 5
+            
+			}
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+		}
+		victory_points = {
+			7315 25 
+		}
+		victory_points = {
+			1408 20
+		}
+		victory_points = {
+			7386 10
+		}
+		victory_points = {
+			10157 5
+		}
+		victory_points = {
+			4428 10
+		}
+	}
+
+	provinces={
+		1393 1408 1858 4296 4385 4398 4413 4428 7315 7386 10157 10242 
+	}
+	manpower=1312801
+	state_category=city
+	buildings_max_level_factor=1.000
+}

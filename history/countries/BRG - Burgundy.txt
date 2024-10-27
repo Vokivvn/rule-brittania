@@ -1,0 +1,213 @@
+﻿capital = 27
+
+
+set_research_slots = 2
+
+load_focus_tree = BRG_Intro_Tree
+
+add_ideas = {
+	BRG_Idea_No_Ones_A_Burgundian
+	BRG_Idea_Constituent_Countries
+}
+add_dynamic_modifier = {
+	modifier = BRG_Idea_Cracker_Committee
+}
+set_variable = { BRG_committee_max_planning = 0 }
+set_variable = { BRG_committee_decryption_factor = 0.1 }
+set_variable = { BRG_committee_encryption_factor = 0.1 }
+set_variable = { BRG_committee_command_power_gain = 0.1 }
+set_variable = { BRG_committee_consumer_goods_factor = 0 }
+set_variable = { BRG_committee_conscription_factor = 0 }
+
+set_stability = 0.75
+set_war_support = 0.5
+
+oob = "BRG_1936"
+
+set_politics = {
+	ruling_party = absolutism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 0
+    liberalism = 6
+    republicanism = 0
+    parliamentarianism = 18
+    administrationism = 0
+    absolutism = 41
+    despotism = 11
+    nationalism = 24
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+create_country_leader = {
+	name = "Alexandre I"
+	desc = "POLITICS_ALEXANDRE_TECK_DESC"
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexandre I"
+	#desc = 
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = administrationism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexandre I"
+	#desc = 
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = despotism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Marie II"
+	#desc = 
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Jean Monnet"
+	#desc = 
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = parliamentarianism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sir Robert Vansittart"
+	#desc = 
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Georges Mandel"
+	#desc = 
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Thorez"
+	#desc = 
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = marxism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Thorez"
+	#desc = 
+	picture = "Portrait_BRG_Alexander_Cambridge.dds"
+	expire = "1999.12.12"
+	ideology = cromwellianism_subtype
+	traits = {
+	}
+}
+
+set_variable = {
+	var = BRG_Flanders_Loyalty
+	value = 50
+}
+set_variable = {
+	var = BRG_Hainaut_Loyalty
+	value = 50
+}
+set_variable = {
+	var = BRG_Palatine_Loyalty
+	value = 50
+}
+set_variable = {
+	var = BRG_Luxembourg_Loyalty
+	value = 50
+}
+set_variable = {
+	var = BRG_Champagne_Loyalty
+	value = 50
+}
+set_variable = {
+	var = BRG_Lorraine_Loyalty
+	value = 50
+}
+set_variable = {
+	var = BRG_Artois_Loyalty
+	value = 50
+}
+set_variable = {
+	var = BRG_Picardy_Loyalty
+	value = 50
+}
+set_variable = {
+	var = BRG_Alsace_Loyalty
+	value = 30
+}
+set_variable = {
+	var = BRG_Alsace_Ethnicity
+	value = 3
+}

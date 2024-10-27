@@ -1,0 +1,18 @@
+state={
+	id=941
+	name="STATE_941"
+	provinces={
+		599 11595 
+	}
+	history = {
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+		}
+	}
+	state_category = town
+	manpower=1024215
+	buildings_max_level_factor=1.000
+}

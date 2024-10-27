@@ -1,0 +1,218 @@
+﻿add_namespace = HBC
+
+country_event = { #British Bailout
+	id = HBC.1
+	title = HBC.1.t
+	desc = HBC.1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event HBC.1"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = { #no cree
+		name = HBC.1.a
+		QUE = {
+			transfer_state = 842
+			transfer_state = 806
+			transfer_state = 682
+			add_state_core = 842
+			add_state_core = 806
+			add_state_core = 682
+		}
+		LOU = {
+			transfer_state = 391
+			add_state_core = 391
+		}
+		BFE = {
+			transfer_state = 463
+			add_state_core = 463
+		}
+		LAU = {
+			transfer_state = 467
+			transfer_state = 469
+			transfer_state = 470
+			transfer_state = 473
+			transfer_state = 739
+			transfer_state = 1004
+			transfer_state = 1005
+			transfer_state = 1006
+			transfer_state = 1007
+			add_state_core = 467
+			add_state_core = 469
+			add_state_core = 470
+			add_state_core = 473
+			add_state_core = 739
+			add_state_core = 1004
+			add_state_core = 1005
+			add_state_core = 1006
+			add_state_core = 1007
+		}
+		NWC = {
+			transfer_state = 683
+			transfer_state = 471
+			transfer_state = 472
+			add_state_core = 683
+			add_state_core = 471
+			add_state_core = 472
+		}
+	}
+	option = {
+		name = HBC.1.b
+		QUE = {
+			transfer_state = 842
+			add_state_core = 842
+		}
+		LOU = {
+			transfer_state = 391
+			add_state_core = 391
+		}
+		BFE = {
+			transfer_state = 463
+			add_state_core = 463
+		}
+		LAU = {
+			transfer_state = 467
+			transfer_state = 469
+			transfer_state = 470
+			transfer_state = 473
+			transfer_state = 739
+			transfer_state = 1004
+			transfer_state = 1005
+			transfer_state = 1006
+			add_state_core = 467
+			add_state_core = 469
+			add_state_core = 470
+			add_state_core = 473
+			add_state_core = 739
+			add_state_core = 1004
+			add_state_core = 1005
+			add_state_core = 1006
+		}
+		NWC = {
+			transfer_state = 683
+			transfer_state = 471
+			transfer_state = 472
+			add_state_core = 683
+			add_state_core = 471
+			add_state_core = 472
+		}
+		CRE = {
+			transfer_state = 682
+			transfer_state = 806
+			transfer_state = 1007
+			add_state_core = 682
+			add_state_core = 806
+			add_state_core = 1007
+		}
+	}
+}
+
+country_event = { #Collapse
+	id = HBC.2
+	title = HBC.2.t
+	desc = HBC.2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event HBC.2"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = HBC.2.a
+		QUE = {
+			transfer_state = 806
+			transfer_state = 842
+			add_state_core = 806
+			add_state_core = 842
+		}
+		LOU = {
+			transfer_state = 391
+			add_state_core = 391
+		}
+		LAU = {
+			set_cosmetic_tag = LAU_NATIVE
+			transfer_state = 682
+			transfer_state = 1007
+			add_state_core = 682
+			add_state_core = 1007
+			transfer_state = 683
+			transfer_state = 471
+			transfer_state = 472
+			add_state_core = 683
+			add_state_core = 471
+			add_state_core = 472
+			transfer_state = 467
+			transfer_state = 469
+			transfer_state = 470
+			transfer_state = 473
+			transfer_state = 739
+			transfer_state = 1004
+			transfer_state = 1005
+			transfer_state = 1006
+			add_state_core = 467
+			add_state_core = 469
+			add_state_core = 470
+			add_state_core = 473
+			add_state_core = 739
+			add_state_core = 1004
+			add_state_core = 1005
+			add_state_core = 1006
+			transfer_state = 463
+			add_state_core = 463
+		}
+	}
+	option = {
+		name = HBC.2.b
+		QUE = {
+			transfer_state = 806
+			transfer_state = 842
+			add_state_core = 806
+			add_state_core = 842
+		}
+		LOU = {
+			transfer_state = 391
+			add_state_core = 391
+		}
+		BFE = {
+			transfer_state = 463
+			add_state_core = 463
+		}
+		LAU = {
+			transfer_state = 467
+			transfer_state = 469
+			transfer_state = 470
+			add_state_core = 467
+			add_state_core = 469
+			add_state_core = 470
+		}
+		YEL = {
+			transfer_state = 472
+			transfer_state = 1005
+			transfer_state = 1006
+			add_state_core = 472
+			add_state_core = 1005
+			add_state_core = 1006
+		}
+		YUK = {
+			transfer_state = 471
+			transfer_state = 739
+			transfer_state = 1004
+			add_state_core = 471
+			add_state_core = 739
+			add_state_core = 1004
+		}
+		CAL = {
+			transfer_state = 473
+			add_state_core = 473
+		}
+		INI = {
+			transfer_state = 683
+			add_state_core = 683
+		}
+		CRE = {
+			transfer_state = 682
+			transfer_state = 1007
+			add_state_core = 682
+			add_state_core = 1007
+		}
+	}
+}

@@ -1,0 +1,91 @@
+defined_text = {
+    name = UGA_London_Trust_Loc
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { UGA_London_Trust = 1 }
+                check_variable = { UGA_London_Trust < 1 }
+            }
+        }
+        localization_key = UGA_London_Trust_Non_Existent
+    }
+    text = {
+        trigger = {
+            check_variable = { UGA_London_Trust = 2 }
+        }
+        localization_key = UGA_London_Trust_Low
+    }
+    text = {
+        trigger = {
+            check_variable = { UGA_London_Trust = 3 }
+        }
+        localization_key = UGA_London_Trust_Neutral
+    }
+    text = {
+        trigger = {
+            check_variable = { UGA_London_Trust = 4 }
+        }
+        localization_key = UGA_London_Trust_High
+    }
+    text = {
+        trigger = {
+            check_variable = { UGA_London_Trust = 5 }
+        }
+        localization_key = UGA_London_Trust_Significant
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { UGA_London_Trust = 6 }
+                check_variable = { UGA_London_Trust > 6 }
+            }
+        }
+        localization_key = UGA_London_Trust_Immense
+    }
+}
+
+defined_text = {
+    name = UGA_King_Contentedness_Loc
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { UGA_King_Contentedness = 1 }
+                check_variable = { UGA_King_Contentedness < 1 }
+            }
+        }
+        localization_key = UGA_King_Contentedness_Non_Existent
+    }
+    text = {
+        trigger = {
+            check_variable = { UGA_King_Contentedness = 2 }
+        }
+        localization_key = UGA_King_Contentedness_Trust_Low
+    }
+    text = {
+        trigger = {
+            check_variable = { UGA_King_Contentedness = 3 }
+        }
+        localization_key = UGA_King_Contentedness_Trust_Neutral
+    }
+    text = {
+        trigger = {
+            check_variable = { UGA_King_Contentedness = 4 }
+        }
+        localization_key = UGA_King_Contentedness_Trust_High
+    }
+    text = {
+        trigger = {
+            check_variable = { UGA_King_Contentedness = 5 }
+        }
+        localization_key = UGA_King_Contentedness_Significant
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { UGA_King_Contentedness = 6 }
+                check_variable = { UGA_King_Contentedness > 6 }
+            }
+        }
+        localization_key = UGA_King_Contentedness_Trust_Immense
+    }
+}

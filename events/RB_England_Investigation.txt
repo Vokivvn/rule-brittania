@@ -1,0 +1,1028 @@
+﻿add_namespace = eng_inv
+
+country_event = { #investigators arrive on the scene
+	id = eng_inv.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.1"}
+	title = eng_inv.1.t
+	desc = eng_inv.1.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = eng_inv.1.a
+		hidden_effect = {
+			country_event = { id = eng_inv.2 hours = 3 }
+			country_event = { id = eng_inv.4 days = 3 }
+		}
+	}
+}
+
+country_event = { #Examining the dining room
+	id = eng_inv.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.2"}
+	title = eng_inv.2.t
+	desc = eng_inv.2.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = eng_inv.2.a
+		hidden_effect = {
+			country_event = { id = eng_inv.3 hours = 4 }
+		}
+	}
+}
+
+country_event = { #One last clue
+	id = eng_inv.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.3"}
+	title = eng_inv.3.t
+	desc = eng_inv.3.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = eng_inv.3.a
+	}
+}
+
+country_event = { #The initial arrest
+	id = eng_inv.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.4"}
+	title = eng_inv.4.t
+	desc = eng_inv.4.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #its Henry
+		name = eng_inv.4.a
+		ai_chance = { factor = 4 }
+		set_country_flag = ENG_henry_discredited
+		country_event = { id = england.21 days = 1 }
+		news_event = { id = eng_inv.200 hours = 3 }
+	}
+
+	option = { #its AV
+		name = eng_inv.4.b
+		ai_chance = { factor = 5 }
+		set_country_flag = ENG_AV_discredited
+		country_event = { id = england.22 days = 1 }
+		news_event = { id = eng_inv.201 hours = 3 }
+	}
+}
+
+country_event = { #Officers Arrive to Begin the Official Investigation 
+	id = eng_inv.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.5"}
+	title = eng_inv.5.t
+	desc = eng_inv.5.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.5.a
+		set_country_flag = ENG_the_investigation_begins
+		activate_mission = INV_end_of_the_investigation
+		set_country_flag = ENG_evidence_the_crime
+		custom_effect_tooltip = ENG_gained_evidence_tt
+	}
+}
+
+country_event = { #Investigating the murder weapon
+	id = eng_inv.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.6"}
+	title = eng_inv.6.t
+	desc = eng_inv.6.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.6.a
+		country_event = { id = eng_inv.14 days = 7 }
+	}
+}
+
+country_event = { #Talking with Walther
+	id = eng_inv.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.14"}
+	title = eng_inv.14.t
+	desc = eng_inv.14.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.14.a
+		country_event = { id = eng_inv.15 days = 5 }
+		set_country_flag = ENG_evidence_the_murder_weapon
+		custom_effect_tooltip = ENG_gained_evidence_tt
+	}
+}
+
+country_event = { #Conclusions - Weapon
+	id = eng_inv.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.15"}
+	title = eng_inv.15.t
+	desc = eng_inv.15.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #Must have been one of the continentals 
+		name = eng_inv.15.a
+		ai_chance = { factor = 3 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_mary_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_nicky_power value = -1 }
+			add_to_variable = { var = eng_duarte_power value = -1 }
+		}
+	}
+
+	option = { #Must have been one of the colonials
+		name = eng_inv.15.b
+		ai_chance = { factor = 2 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = -1 }
+		}
+	}
+}
+
+country_event = { #Investigating the motive
+	id = eng_inv.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.7"}
+	title = eng_inv.7.t
+	desc = eng_inv.7.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.7.a
+		country_event = { id = eng_inv.16 days = 7 }
+	}
+}
+
+country_event = { #Meeting with his widow
+	id = eng_inv.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.16"}
+	title = eng_inv.16.t
+	desc = eng_inv.16.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.16.a
+		country_event = { id = eng_inv.17 days = 5 }
+		set_country_flag = ENG_evidence_the_motive
+		custom_effect_tooltip = ENG_gained_evidence_tt
+	}
+}
+
+country_event = { #Conclusions - Motive
+	id = eng_inv.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.17"}
+	title = eng_inv.17.t
+	desc = eng_inv.17.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #He was a socialist radical
+		name = eng_inv.17.a
+		ai_chance = { factor = 5 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = 1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_nicky_power value = 1 }
+			add_to_variable = { var = eng_duarte_power value = 1 }
+		}
+	}
+
+	option = { #We don't have a clear motive
+		name = eng_inv.17.b
+		ai_chance = { factor = 1 }
+		clr_country_flag = ENG_investigating
+		add_political_power = -50
+	}
+}
+
+country_event = { #The Assassin's Day
+	id = eng_inv.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.8"}
+	title = eng_inv.8.t
+	desc = eng_inv.8.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.8.a
+		country_event = { id = eng_inv.18 days = 7 }
+	}
+}
+
+country_event = { #meeting his associates
+	id = eng_inv.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.18"}
+	title = eng_inv.18.t
+	desc = eng_inv.18.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.18.a
+		country_event = { id = eng_inv.19 days = 5 }
+		set_country_flag = ENG_evidence_the_assassins_life
+		custom_effect_tooltip = ENG_gained_evidence_tt
+	}
+}
+
+country_event = { #Conclusions - Actions
+	id = eng_inv.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.19"}
+	title = eng_inv.19.t
+	desc = eng_inv.19.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #He was in contact with people within the government
+		name = eng_inv.19.a
+		ai_chance = { factor = 3 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_mary_power value = -1 }
+			add_to_variable = { var = eng_george_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = -1 }
+		}
+	}
+
+	option = { #He was in contact with people within the military
+		name = eng_inv.19.b
+		ai_chance = { factor = 4 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = -1 }
+			add_to_variable = { var = eng_nicky_power value = -1 }
+		}
+	}
+}
+
+country_event = { #Assassin's Friends
+	id = eng_inv.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.9"}
+	title = eng_inv.9.t
+	desc = eng_inv.9.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.9.a
+		country_event = { id = eng_inv.20 days = 7 }
+	}
+}
+
+country_event = { #Several house calls
+	id = eng_inv.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.20"}
+	title = eng_inv.20.t
+	desc = eng_inv.20.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.20.a
+		country_event = { id = eng_inv.21 days = 5 }
+		set_country_flag = ENG_evidence_the_assassins_life
+		custom_effect_tooltip = ENG_gained_evidence_tt
+	}
+}
+
+country_event = { #Conclusions - Friends
+	id = eng_inv.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.21"}
+	title = eng_inv.21.t
+	desc = eng_inv.21.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #He was anti-Empire
+		name = eng_inv.21.a
+		ai_chance = { factor = 5 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_george_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_duarte_power value = -1 }
+			add_to_variable = { var = eng_nicky_power value = -1 }
+		}
+	}
+
+	option = { #He was an Imperial fanatic!
+		name = eng_inv.21.b
+		ai_chance = { factor = 2 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = -1 }
+			add_to_variable = { var = eng_mary_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = -1 }
+		}
+	}
+}
+
+country_event = { #A Day in the Life
+	id = eng_inv.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.10"}
+	title = eng_inv.10.t
+	desc = eng_inv.10.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.10.a
+		country_event = { id = eng_inv.22 days = 7 }
+	}
+}
+
+country_event = { #Hunting down the Dancer
+	id = eng_inv.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.22"}
+	title = eng_inv.22.t
+	desc = eng_inv.22.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.22.a
+		country_event = { id = eng_inv.23 days = 5 }
+	}
+}
+
+country_event = { #Conclusions - Edwards Day
+	id = eng_inv.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.23"}
+	title = eng_inv.23.t
+	desc = eng_inv.23.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #This really doesn't tell us anything GET FUCKED
+		name = eng_inv.23.a
+		clr_country_flag = ENG_investigating
+		add_political_power = -30
+	}
+}
+
+country_event = { #Journalists work
+	id = eng_inv.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.11"}
+	title = eng_inv.11.t
+	desc = eng_inv.11.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.11.a
+		country_event = { id = eng_inv.24 days = 7 }
+	}
+}
+
+country_event = { #Searching his foreign spotlights
+	id = eng_inv.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.24"}
+	title = eng_inv.24.t
+	desc = eng_inv.24.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.24.a
+		country_event = { id = eng_inv.25 days = 5 }
+	}
+}
+
+country_event = { #Conclusions - Journalist Work
+	id = eng_inv.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.25"}
+	title = eng_inv.25.t
+	desc = eng_inv.25.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #Domestic
+		name = eng_inv.25.a
+		ai_chance = { factor = 3 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_mary_power value = -1 }
+			add_to_variable = { var = eng_george_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = -1 }
+		}
+	}
+
+	option = { #Foreign Policy
+		name = eng_inv.25.b
+		ai_chance = { factor = 3 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_nicky_power value = -1 }
+		}
+	}
+}
+
+country_event = { #The Invitation
+	id = eng_inv.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.12"}
+	title = eng_inv.12.t
+	desc = eng_inv.12.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.12.a
+		country_event = { id = eng_inv.26 days = 7 }
+	}
+}
+
+country_event = { #The search for Mr. Ripper
+	id = eng_inv.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.26"}
+	title = eng_inv.26.t
+	desc = eng_inv.26.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.26.a
+		country_event = { id = eng_inv.27 days = 5 }
+		set_country_flag = ENG_evidence_the_event
+		custom_effect_tooltip = ENG_gained_evidence_tt
+	}
+}
+
+country_event = { #Conclusions - the Invitation
+	id = eng_inv.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.27"}
+	title = eng_inv.27.t
+	desc = eng_inv.27.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #Royal
+		name = eng_inv.27.a
+		ai_chance = { factor = 2 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = -1 }
+			add_to_variable = { var = eng_mary_power value = -1 }
+			add_to_variable = { var = eng_george_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = -1 }
+		}
+	}
+
+	option = { #Everyone but Duarte
+		name = eng_inv.27.b
+		ai_chance = { factor = 3 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = -1 }
+			add_to_variable = { var = eng_mary_power value = -1 }
+			add_to_variable = { var = eng_george_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = -1 }
+			add_to_variable = { var = eng_nicky_power value = -1 }
+		}
+	}
+}
+
+country_event = { #The Security
+	id = eng_inv.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.13"}
+	title = eng_inv.13.t
+	desc = eng_inv.13.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.13.a
+		country_event = { id = eng_inv.28 days = 7 }
+	}
+}
+
+country_event = { #Interviewing the former soldiers
+	id = eng_inv.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.28"}
+	title = eng_inv.28.t
+	desc = eng_inv.28.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = eng_inv.28.a
+		country_event = { id = eng_inv.29 days = 5 }
+		set_country_flag = ENG_evidence_the_event
+		custom_effect_tooltip = ENG_gained_evidence_tt
+	}
+}
+
+country_event = { #Conclusions - Security
+	id = eng_inv.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.29"}
+	title = eng_inv.29.t
+	desc = eng_inv.29.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #Must have been the royal guardsmen
+		name = eng_inv.29.a
+		ai_chance = { factor = 2 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_mary_power value = -1 }
+			add_to_variable = { var = eng_george_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = -1 }
+		}
+	}
+
+	option = { #Must have been the former soldiers
+		name = eng_inv.29.b
+		ai_chance = { factor = 4 }
+		clr_country_flag = ENG_investigating
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = -1 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = -1 }
+			add_to_variable = { var = eng_nicky_power value = -1 }
+		}
+	}
+}
+
+country_event = { #End of the Investigation
+	id = eng_inv.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.30"}
+	title = eng_inv.30.t
+	desc = eng_inv.30.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #we stand by our previous arrest
+		name = eng_inv.30.a
+		ai_chance = { factor = 4 }
+		hidden_effect = {
+			country_event = { id = eng_inv.32 hours = 2 }
+			if = { 
+				limit = {
+					has_country_flag = ENG_AV_discredited
+				}
+				set_country_flag = ENG_inv_AV_accused
+			}
+			else = {
+				set_country_flag = ENG_inv_Henry_accused
+			}
+		}
+	}
+	option = { #no wait it was someone else
+		name = eng_inv.30.c
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = eng_inv.31 hours = 1 }
+		}
+	}
+}
+
+country_event = { #it was someone else
+	id = eng_inv.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.31"}
+	title = eng_inv.31.t
+	desc = eng_inv.31.desc
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #Henry
+		name = eng_inv.31.a
+		ai_chance = { factor = 3 }
+		trigger = {
+			has_country_flag = ENG_AV_discredited
+		}
+		hidden_effect = {
+			set_country_flag = ENG_inv_Henry_accused
+			clear_variable = eng_henry_power
+			set_variable = { var = eng_henry_power value = 0 }
+			country_event = { id = eng_inv.32 hours = 1 }
+		}
+	}
+
+	option = { #Nicky
+		name = eng_inv.31.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = ENG_AV_discredited
+		}
+		hidden_effect = {
+			set_country_flag = ENG_inv_Nicky_accused
+			clear_variable = eng_nicky_power
+			set_variable = { var = eng_nicky_power value = 0 }
+			country_event = { id = eng_inv.32 hours = 1 }
+		}
+	}
+
+	option = { #Duarte
+		name = eng_inv.31.c
+		ai_chance = { factor = 0 }
+		trigger = {
+			has_country_flag = ENG_AV_discredited
+		}
+		hidden_effect = {
+			set_country_flag = ENG_inv_Duarte_accused
+			clear_variable = eng_duarte_power
+			set_variable = { var = eng_duarte_power value = 0 }
+			country_event = { id = eng_inv.36 hours = 4 }
+		}
+	}
+
+	option = { #AV
+		name = eng_inv.31.d
+		ai_chance = { factor = 2 }
+		trigger = {
+			has_country_flag = ENG_henry_discredited
+		}
+		hidden_effect = {
+			set_country_flag = ENG_inv_AV_accused
+			clear_variable = eng_av_power
+			set_variable = { var = eng_av_power value = 0 }
+			country_event = { id = eng_inv.32 hours = 1 }
+		}
+	}
+
+	option = { #George
+		name = eng_inv.31.e
+		ai_chance = { factor = 2 }
+		trigger = {
+			has_country_flag = ENG_henry_discredited
+		}
+		hidden_effect = {
+			set_country_flag = ENG_inv_George_accused
+			clear_variable = eng_george_power
+			set_variable = { var = eng_george_power value = 0 }
+			country_event = { id = eng_inv.32 hours = 1 }
+		}
+	}
+
+	option = { #Mary
+		name = eng_inv.31.f
+		ai_chance = { factor = 0 }
+		trigger = {
+			has_country_flag = ENG_henry_discredited
+		}
+		hidden_effect = {
+			set_country_flag = ENG_inv_Mary_accused
+			clear_variable = eng_mary_power
+			set_variable = { var = eng_mary_power value = 0 }
+			country_event = { id = eng_inv.32 hours = 1 }
+		}
+	}
+}
+
+country_event = { #Matter of the Assassin
+	id = eng_inv.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.32"}
+	title = eng_inv.32.t
+	desc = eng_inv.32.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #Right Choice (placeholder)
+		name = eng_inv.32.a
+		hidden_effect = {
+			country_event = { id = eng_inv.33 hours = 1 }
+		}
+	}
+	option = { #Wrong Choice (Placeholder)
+		name = eng_inv.32.b
+		hidden_effect = {
+			country_event = { id = eng_inv.36 hours = 3 }
+		}
+	}
+}
+
+country_event = { #Matter of the Weapon
+	id = eng_inv.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.33"}
+	title = eng_inv.33.t
+	desc = eng_inv.33.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #Right Choice (placeholder)
+		name = eng_inv.33.a
+		hidden_effect = {
+			country_event = { id = eng_inv.34 hours = 1 }
+		}
+	}
+	option = { #Wrong Choice (Placeholder)
+		name = eng_inv.33.b
+		hidden_effect = {
+			country_event = { id = eng_inv.36 hours = 2 }
+		}
+	}
+}
+
+country_event = { #Matter of the Motive
+	id = eng_inv.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.34"}
+	title = eng_inv.34.t
+	desc = eng_inv.34.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = { #Right Choice (placeholder)
+		name = eng_inv.34.a
+		hidden_effect = {
+			country_event = { id = eng_inv.35 hours = 1 }
+		}
+	}
+	option = { #Wrong Choice (Placeholder)
+		name = eng_inv.34.b
+		hidden_effect = {
+			country_event = { id = eng_inv.36 hours = 1 }
+		}
+	}
+}
+
+country_event = { #You cracked the case
+	id = eng_inv.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.35"}
+	title = eng_inv.35.t
+	desc = eng_inv.35.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.35.a
+		hidden_effect = {
+			country_event = { id = england.42 hours = 1 }
+		}
+		add_political_power = 100
+	}
+}
+
+country_event = { #Nice work, screw up
+	id = eng_inv.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.36"}
+	title = eng_inv.36.t
+	desc = {
+		text = eng_inv_duarte_accused
+		trigger = {
+			has_country_flag = ENG_inv_Duarte_accused
+		}
+	}
+	desc = {
+		text = eng_inv.36.d
+		trigger = {
+			NOt = {
+				has_country_flag = ENG_inv_Duarte_accused
+			}
+		}
+	}
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.36.a
+		hidden_effect = {
+			country_event = { id = england.42 hours = 1 }
+		}
+		add_political_power = -100
+	}
+}
+
+##Evidence Collected##
+country_event = { #Evidence Murder Weapon
+	id = eng_inv.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.37"}
+	title = eng_inv.37.t
+	desc = eng_inv.37.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.37.a
+	}
+}
+
+country_event = { #Evidence the Assassin
+	id = eng_inv.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.38"}
+	title = eng_inv.38.t
+	desc = eng_inv.38.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.38.a
+	}
+}
+
+country_event = { #Evidence the Motive
+	id = eng_inv.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.39"}
+	title = eng_inv.39.t
+	desc = eng_inv.39.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.39.a
+	}
+}
+
+country_event = { #Evidence the Event
+	id = eng_inv.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.40"}
+	title = eng_inv.40.t
+	desc = eng_inv.40.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.40.a
+	}
+}
+
+country_event = { #Evidence the Crime Itself
+	id = eng_inv.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event eng_inv.41"}
+	title = eng_inv.41.t
+	desc = eng_inv.41.d
+	#picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.41.a
+	}
+}
+
+##investigation news events
+
+news_event = { #henry arrested
+	id = eng_inv.200
+	title = eng_inv.200.t
+	desc = eng_inv.200.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.200.a
+	}
+}
+
+news_event = { #av arrested
+	id = eng_inv.201
+	title = eng_inv.201.t
+	desc = eng_inv.201.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eng_inv.201.a
+	}
+}

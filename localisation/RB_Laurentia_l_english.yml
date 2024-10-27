@@ -1,0 +1,18 @@
+﻿l_english:
+LAU_parliamentarianism:0 "Dominion of Laurentia"
+LAU_parliamentarianism_DEF:0 "The Dominion of Laurentia"
+LAU_parliamentarianism_ADJ:0 "Laurentian"
+LAU_republicanism:0 "Dominion of Laurentia"
+LAU_republicanism_DEF:0 "The Dominion of Laurentia"
+LAU_republicanism_ADJ:0 "Laurentian"
+LAU_liberalism:0 "Dominion of Laurentia"
+LAU_liberalism_DEF:0 "The Dominion of Laurentia"
+LAU_liberalism_ADJ:0 "Laurentian"
+
+#PARTIES#
+LAU_parliamentarianism_party:0 "Tories"
+LAU_parliamentarianism_party_long:0 "Conservative Party of Laurentia"
+LAU_republicanism_party:0 "Liberals"
+LAU_republicanism_party_long:0 "Liberal Party of Laurentia"
+LAU_liberalism_party:0 "F-LP"
+LAU_liberalism_party_long:0 "Farmer-Labour Party of Laurentia"

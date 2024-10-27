@@ -1,0 +1,40 @@
+
+state={
+	id=61
+	name="STATE_61"
+
+	history={
+		owner = DEN
+		victory_points = {
+			321 10
+		}
+		victory_points = {
+			11305 5
+		}
+		victory_points = {
+			268 2
+		}
+		victory_points = {
+			11276 3
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			321 = {
+				naval_base = 6
+
+			}
+			air_base = 3
+
+		}
+		add_core_of = DEN
+
+	}
+
+	provinces={
+		268 293 321 3258 9294 11276 11305 
+	}
+	manpower=836353
+	buildings_max_level_factor=1.000
+	state_category=town
+}

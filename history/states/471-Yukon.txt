@@ -1,0 +1,28 @@
+
+state={
+	id=471
+	name="STATE_471"
+
+	history={
+		owner = HBC
+		buildings = {
+			infrastructure = 1
+			#10548 = {
+			#	naval_base = 1
+            #
+			#}
+
+		}
+		add_core_of = HBC
+		victory_points = {
+			7869 5
+		}
+	}
+
+	provinces={
+		3606 7869 7891 
+	}
+	manpower=27681
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,22 @@
+state={
+	id=912
+	name="STATE_912"
+	provinces={
+		308 6381 11291 13244 
+	}
+	history={
+		owner = LIV
+		add_core_of = LIV
+
+		victory_points = { 308 2 }
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			#912 = { naval_base = 1 }
+		}
+	}
+	manpower=101468
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

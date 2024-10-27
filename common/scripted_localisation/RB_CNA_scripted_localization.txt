@@ -1,0 +1,201 @@
+defined_text = {
+	name = CNA_get_1936_econ_focus_name
+	text = {
+		trigger = {
+			has_global_flag = RB_econ_crash
+		}
+		localization_key = CNA_1936_econ_crash_focus_name_text
+	}
+	text = {
+		localization_key = CNA_1936_econ_reform_focus_name_text
+	}
+}
+
+defined_text = {
+	name = CNA_get_1936_econ_focus_desc
+	text = {
+		trigger = {
+			has_global_flag = RB_econ_crash
+		}
+		localization_key = CNA_1936_econ_crash_focus_desc_text
+	}
+	text = {
+		localization_key = CNA_1936_econ_reform_focus_desc_text
+	}
+}
+
+defined_text = {
+	name = CNA_get_econ_crash_tooltip
+	text = {
+		trigger = {
+			has_global_flag = RB_econ_crash
+		}
+		localization_key = CNA_econ_crash_tooltip_real
+	}
+	text = {
+		localization_key = CNA_econ_crash_tooltip_fake
+	}
+}
+
+defined_text = {
+	name = CNA_get_held_cities
+	text = {
+		trigger = {
+			AND = {
+				controls_state = 381
+				controls_state = 925
+				controls_state = 928
+			}
+		}
+		localization_key = CNA_held_cities_all_3
+	}
+	text = {
+		trigger = {
+			AND = {
+				controls_state = 381
+				controls_state = 925
+				NOT = { controls_state = 928 }
+			}
+		}
+		localization_key = CNA_held_cities_boston_nyc
+	}
+	text = {
+		trigger = {
+			AND = {
+				controls_state = 381
+				NOT = { controls_state = 925 }
+				controls_state = 928
+			}
+		}
+		localization_key = CNA_held_cities_boston_norfolk
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = { controls_state = 381 }
+				controls_state = 925
+				controls_state = 928
+			}
+		}
+		localization_key = CNA_held_cities_nyc_norfolk
+	}
+	text = {
+		trigger = {
+			AND = {
+				controls_state = 381
+				NOT = { controls_state = 925 }
+				NOT = { controls_state = 928 }
+			}
+		}
+		localization_key = CNA_held_cities_boston
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = { controls_state = 381 }
+				controls_state = 925
+				NOT = { controls_state = 928 }
+			}
+		}
+		localization_key = CNA_held_cities_nyc
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = { controls_state = 381 }
+				NOT = { controls_state = 925 }
+				controls_state = 928
+			}
+		}
+		localization_key = CNA_held_cities_norfolk
+	}
+	text = {
+		localization_key = CNA_held_cities_none
+	}
+}
+
+defined_text = {
+	name = CNA_get_held_cities_percent
+	text = {
+		trigger = {
+			AND = {
+				controls_state = 381
+				controls_state = 925
+				controls_state = 928
+			}
+		}
+		localization_key = CNA_held_cities_100_percent
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					controls_state = 381
+					controls_state = 925
+					NOT = { controls_state = 928 }
+				}
+				AND = {
+					controls_state = 381
+					NOT = { controls_state = 925 }
+					controls_state = 928
+				}
+				AND = {
+					controls_state = 381
+					controls_state = 925
+					NOT = { controls_state = 928 }
+				}
+			}
+		}
+		localization_key = CNA_held_cities_66_percent
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					controls_state = 381
+					NOT = { controls_state = 925 }
+					NOT = { controls_state = 928 }
+				}
+				AND = {
+					NOT = { controls_state = 381 }
+					controls_state = 925
+					NOT = { controls_state = 928 }
+				}
+				AND = {
+					NOT = { controls_state = 381 }
+					NOT = { controls_state = 925 }
+					controls_state = 928
+				}
+			}
+		}
+		localization_key = CNA_held_cities_33_percent
+	}
+	text = {
+		localization_key = CNA_held_cities_0_percent
+	}
+}
+
+defined_text = {
+	name = CNA_get_pop_support_percent
+	text = {
+		trigger = {
+			check_variable = { CNA.CNA_popular_support > .69 }
+		}
+		localization_key = CNA_pop_support_green
+	}
+	text = {
+		trigger = {
+			check_variable = { CNA.CNA_popular_support > .49 }
+		}
+		localization_key = CNA_pop_support_yellow
+	}
+	text = {
+		trigger = {
+			check_variable = { CNA.CNA_popular_support > .29 }
+		}
+		localization_key = CNA_pop_support_orange
+	}
+	text = {
+		localization_key = CNA_pop_support_red
+	}
+}

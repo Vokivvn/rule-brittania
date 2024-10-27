@@ -1,0 +1,2139 @@
+
+
+shared_focus = {
+	id = USA_liberty_or_death
+	icon = GFX_USA_liberty_or_death
+	cost = 0.1
+	x = 3
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_liberty_or_death"
+		load_oob = "USA_revolution"
+	}
+}
+
+shared_focus = {
+	id = USA_the_american_continental_army
+	icon = GFX_RAJ_Question_The_Army
+	cost = 1
+	x = 10
+	y = 1
+	prerequisite = {
+		focus = USA_liberty_or_death
+	}
+	relative_position_id = USA_liberty_or_death
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_american_continental_army"
+	}
+}
+
+shared_focus = {
+	id = USA_levys_unconventional_warfare
+	icon = GFX_Yank_Levy
+	cost = 1
+	x = -8
+	y = 1
+	available = {
+		NOT = { has_country_flag = USA_working_with_sol }
+	}
+	prerequisite = {
+		focus = USA_the_american_continental_army
+	}
+	mutually_exclusive = {
+		focus = USA_marshalls_moderation
+	}
+	mutually_exclusive = {
+		focus = USA_macarthurs_aggression
+	}
+	relative_position_id = USA_the_american_continental_army
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_levys_unconventional_warfare"
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.1
+		}
+		custom_effect_tooltip = USA_levy_cic
+	}
+}
+
+shared_focus = {
+	id = USA_a_popular_struggle
+	icon = GFX_generic_socialist_constitution
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = USA_levys_unconventional_warfare
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_popular_struggle"
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.1 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = USA_solidarity_against_london
+	icon = GFX_USA_solidarity_against_london
+	cost = 5
+	x = -2
+	y = 2
+	prerequisite = {
+		focus = USA_a_popular_struggle
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_solidarity_against_london"
+		add_ideas = USA_solidarity_against_london_1
+	}
+}
+
+shared_focus = {
+	id = USA_freedom_for_louisianans
+	icon = GFX_VIN_New_Colossus
+	cost = 5
+	x = -3
+	y = 3
+	prerequisite = {
+		focus = USA_solidarity_against_london
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_freedom_for_louisianans"
+		add_ideas = USA_solidarity_against_louisiana
+	}
+}
+
+shared_focus = {
+	id = USA_a_treaty_with_deskaheh
+	icon = GFX_USA_a_treaty_with_deskaheh
+	cost = 5
+	x = -1
+	y = 3
+	prerequisite = {
+		focus = USA_solidarity_against_london
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_treaty_with_deskaheh"
+		event_target:deskaheh_tag = {
+			country_event = {
+				id = deskaheh.4
+				hours = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_oppressed_of_america_unite
+	icon = GFX_generic_red_flag
+	cost = 5
+	x = -2
+	y = 4
+	prerequisite = {
+		focus = USA_freedom_for_louisianans
+	}
+	prerequisite = {
+		focus = USA_a_treaty_with_deskaheh
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_oppressed_of_america_unite"
+		swap_ideas = {
+			remove_idea = USA_solidarity_against_london_1
+			add_idea = USA_solidarity_against_london_2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_the_theory_of_guerilla_warfare
+	icon = GFX_RAJ_reform_the_milita
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = USA_levys_unconventional_warfare
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_theory_of_guerilla_warfare"
+		add_war_support = 0.05
+		add_ideas = USA_guerilla_warfare
+	}
+}
+
+shared_focus = {
+	id = USA_sabotage_the_supply_lines
+	icon = GFX_Junta_Youth
+	cost = 5
+	x = 2
+	y = 2
+	prerequisite = {
+		focus = USA_the_theory_of_guerilla_warfare
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_sabotage_the_supply_lines"
+		CNA = {
+			add_timed_idea = {
+				idea = CNA_supply_sabotaged
+				days = 240
+			}
+			add_to_variable = { USA_devastation_var = 4.367 }
+			USA_update_devastation = yes
+			custom_effect_tooltip = USA_increase_devastation_5
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_fight_in_the_forests
+	icon = GFX_Generic_Jungle_Insurgency
+	cost = 5
+	x = 3
+	y = 3
+	prerequisite = {
+		focus = USA_sabotage_the_supply_lines
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_fight_in_the_forests"
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.04
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_liberate_the_cities
+	icon = GFX_focus_HRE_replacing_the_machinery
+	cost = 5
+	x = 1
+	y = 3
+	prerequisite = {
+		focus = USA_sabotage_the_supply_lines
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_liberate_the_cities"
+		381 = {
+			damage_building = {
+				type = bunker
+				damage = 5
+			}
+		}
+		925 = {
+			damage_building = {
+				type = bunker
+				damage = 5
+			}
+		}
+		928 = {
+			damage_building = {
+				type = bunker
+				damage = 5
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_throw_out_the_british
+	icon = GFX_VIN_Chaotic_Opportunism
+	cost = 5
+	x = 2
+	y = 4
+	prerequisite = {
+		focus = USA_fight_in_the_forests
+	}
+	prerequisite = {
+		focus = USA_liberate_the_cities
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_throw_out_the_british"
+		add_ideas = USA_down_with_the_british
+	}
+}
+
+shared_focus = {
+	id = USA_a_gun_in_every_hand
+	icon = GFX_goal_army_guy_2
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_levys_unconventional_warfare
+	}
+	prerequisite = {
+		focus = USA_a_popular_struggle
+		focus = USA_the_theory_of_guerilla_warfare
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_gun_in_every_hand"
+		add_ideas = USA_gun_in_every_hand
+	}
+}
+
+shared_focus = {
+	id = USA_blunt_their_actions
+	icon = GFX_RAJ_Cut_Military_Spending
+	cost = 5
+	x = 0
+	y = 4
+	prerequisite = {
+		focus = USA_a_gun_in_every_hand
+	}
+	prerequisite = {
+		focus = USA_a_treaty_with_deskaheh
+	}
+	prerequisite = {
+		focus = USA_liberate_the_cities
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_blunt_their_actions"
+		add_ideas = USA_blunt_the_british
+	}
+}
+
+shared_focus = {
+	id = USA_his_truth_is_marching_on
+	icon = GFX_generic_socialist_revolution
+	cost = 5
+	x = 0
+	y = 5
+	prerequisite = {
+		focus = USA_oppressed_of_america_unite
+	}
+	prerequisite = {
+		focus = USA_blunt_their_actions
+	}
+	prerequisite = {
+		focus = USA_throw_out_the_british
+	}
+	relative_position_id = USA_levys_unconventional_warfare
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_his_truth_is_marching_on"
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.15
+		}
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.15 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support
+	}
+}
+
+shared_focus = {
+	id = USA_marshalls_moderation
+	icon = GFX_George_Marshall
+	cost = 1
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_the_american_continental_army
+	}
+	mutually_exclusive = {
+		focus = USA_macarthurs_aggression
+	}
+	mutually_exclusive = {
+		focus = USA_levys_unconventional_warfare
+	}
+	relative_position_id = USA_the_american_continental_army
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_marshalls_moderation"
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = USA_marshall_cic
+	}
+}
+
+shared_focus = {
+	id = USA_the_carrot_and_the_stick
+	icon = GFX_VIN_New_Militarism
+	cost = 5
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = USA_marshalls_moderation
+	}
+	relative_position_id = USA_marshalls_moderation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_carrot_and_the_stick"
+		add_popularity = {
+			ideology = administrationism
+			popularity = -0.03
+		}
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.03 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support_slight
+	}
+}
+
+shared_focus = {
+	id = USA_convince_the_common_american
+	icon = GFX_American_Dream
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = USA_the_carrot_and_the_stick
+	}
+	relative_position_id = USA_the_carrot_and_the_stick
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_convince_the_common_american"
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.05 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support_slight
+	}
+}
+
+shared_focus = {
+	id = USA_scour_for_spies
+	icon = GFX_Generic_Espionage
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = USA_the_carrot_and_the_stick
+	}
+	relative_position_id = USA_the_carrot_and_the_stick
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_scour_for_spies"
+		add_ideas = USA_counterespionage_revolution
+	}
+}
+
+shared_focus = {
+	id = USA_mass_propaganda_campaigns
+	icon = GFX_generic_writing
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_convince_the_common_american
+	}
+	prerequisite = {
+		focus = USA_scour_for_spies
+	}
+	relative_position_id = USA_the_carrot_and_the_stick
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mass_propaganda_campaigns"
+		add_political_power = 20
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.125 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support
+	}
+}
+
+shared_focus = {
+	id = USA_the_fight_for_freedom
+	icon = GFX_generic_republican_movement
+	cost = 5
+	x = -1
+	y = 3
+	prerequisite = {
+		focus = USA_mass_propaganda_campaigns
+	}
+	relative_position_id = USA_the_carrot_and_the_stick
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_fight_for_freedom"
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.1 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support
+	}
+}
+
+shared_focus = {
+	id = USA_align_with_the_unions
+	icon = GFX_SP_focus_trade_unions
+	cost = 5
+	x = 1
+	y = 3
+	prerequisite = {
+		focus = USA_mass_propaganda_campaigns
+	}
+	relative_position_id = USA_the_carrot_and_the_stick
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_fight_for_freedom"
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.05
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_a_reformed_american_military
+	icon = goal_break_rifle
+	cost = 5
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = USA_marshalls_moderation
+	}
+	relative_position_id = USA_marshalls_moderation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_reformed_american_military"
+		army_experience = 100
+	}
+}
+
+shared_focus = {
+	id = USA_begin_mass_recruitment
+	icon = GFX_Military_Attache
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = USA_a_reformed_american_military
+	}
+	relative_position_id = USA_a_reformed_american_military
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_begin_mass_recruitment"
+		add_ideas = USA_mass_recruitment
+	}
+}
+
+shared_focus = {
+	id = USA_discover_new_talent
+	icon = GFX_Recruitment_Drive
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = USA_a_reformed_american_military
+	}
+	relative_position_id = USA_a_reformed_american_military
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_discover_new_talent"
+		add_ideas = USA_new_talent
+	}
+}
+
+shared_focus = {
+	id = USA_improved_officer_education
+	icon = GFX_Officers_Command
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_begin_mass_recruitment
+	}
+	prerequisite = {
+		focus = USA_discover_new_talent
+	}
+	relative_position_id = USA_a_reformed_american_military
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_improved_officer_education"
+		swap_ideas = {
+			remove_idea = USA_new_talent
+			add_idea = USA_new_talent_2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_the_military_industrial_complex
+	icon = GFX_Renewed_Arms
+	cost = 5
+	x = -1
+	y = 3
+	prerequisite = {
+		focus = USA_improved_officer_education
+	}
+	relative_position_id = USA_a_reformed_american_military
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_military_industrial_complex"
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			PREV = {
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = PREV.PREV }
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_reorganize_the_military_structure
+	icon = GFX_Soldiers_of_The_Struggle
+	cost = 5
+	x = 1
+	y = 3
+	prerequisite = {
+		focus = USA_improved_officer_education
+	}
+	relative_position_id = USA_a_reformed_american_military
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reorganize_the_military_structure"
+		army_experience = 25
+		navy_experience = 25
+		air_experience = 25
+	}
+}
+
+shared_focus = {
+	id = USA_extensive_industrial_expansion
+	icon = GFX_Generic_Industrialization
+	cost = 5
+	x = 0
+	y = 3
+	prerequisite = {
+		focus = USA_marshalls_moderation
+	}
+	prerequisite = {
+		focus = USA_scour_for_spies
+	}
+	prerequisite = {
+		focus = USA_begin_mass_recruitment
+	}
+	relative_position_id = USA_marshalls_moderation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_extensive_industrial_expansion"
+		add_ideas = USA_wartime_industrialization
+	}
+}
+
+shared_focus = {
+	id = USA_the_soul_of_americas_soldiers
+	icon = GFX_Soldiers_for_Workers
+	cost = 5
+	x = 0
+	y = 5
+	prerequisite = {
+		focus = USA_the_fight_for_freedom
+	}
+	prerequisite = {
+		focus = USA_align_with_the_unions
+	}
+	prerequisite = {
+		focus = USA_the_military_industrial_complex
+	}
+	prerequisite = {
+		focus = USA_reorganize_the_military_structure
+	}
+	relative_position_id = USA_marshalls_moderation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_soul_of_americas_soldiers"
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.15 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support
+	}
+}
+
+shared_focus = {
+	id = USA_macarthurs_aggression
+	icon = GFX_MacArthur
+	cost = 1
+	x = 8
+	y = 1
+	prerequisite = {
+		focus = USA_the_american_continental_army
+	}
+	mutually_exclusive = {
+		focus = USA_marshalls_moderation
+	}
+	mutually_exclusive = {
+		focus = USA_levys_unconventional_warfare
+	}
+	relative_position_id = USA_the_american_continental_army
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_macarthurs_aggression"
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.1
+		}
+		custom_effect_tooltip = USA_macarthur_cic
+	}
+}
+
+shared_focus = {
+	id = USA_crush_the_loyalists
+	icon = GFX_goal_ENG_Foreign_Assistance
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = USA_macarthurs_aggression
+	}
+	relative_position_id = USA_macarthurs_aggression
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_crush_the_loyalists"
+		add_ideas = USA_macarthur_force
+	}
+}
+
+shared_focus = {
+	id = USA_overwhelming_force
+	icon = GFX_generic_artillery_warfare
+	cost = 5
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = USA_crush_the_loyalists
+	}
+	relative_position_id = USA_crush_the_loyalists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_overwhelming_force"
+		swap_ideas = {
+			remove_idea = USA_macarthur_force
+			add_idea = USA_macarthur_force_2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_a_free_america
+	icon = GFX_generic_north_america
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_crush_the_loyalists
+	}
+	relative_position_id = USA_crush_the_loyalists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_free_america"
+		add_political_power = 20
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.05 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support_slight
+	}
+}
+
+shared_focus = {
+	id = USA_plan_and_destroy
+	icon = GFX_focus_purge_bureaucracy
+	cost = 5
+	x = -2
+	y = 2
+	prerequisite = {
+		focus = USA_overwhelming_force
+	}
+	prerequisite = {
+		focus = USA_a_free_america
+	}
+	relative_position_id = USA_crush_the_loyalists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_plan_and_destroy"
+		add_tech_bonus = {
+			category = cat_grand_battle_plan
+			bonus = 0.5
+			uses = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_aim_for_strategic_objectives
+	icon = GFX_RUS_Markov_plan
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_overwhelming_force
+	}
+	prerequisite = {
+		focus = USA_a_free_america
+	}
+	relative_position_id = USA_crush_the_loyalists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_aim_for_strategic_objectives"
+		every_owned_state = {
+			limit = {
+				controller = {
+					tag = USA
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_jack_up_production
+	icon = GFX_generic_economic_liberty
+	cost = 5
+	x = -1
+	y = 3
+	prerequisite = {
+		focus = USA_plan_and_destroy
+	}
+	prerequisite = {
+		focus = USA_aim_for_strategic_objectives
+	}
+	relative_position_id = USA_crush_the_loyalists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jack_up_production"
+		add_offsite_building = {
+			type = arms_factory
+			level = 3
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_destroy_the_enemy
+	icon = GFX_generic_wardec
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = USA_macarthurs_aggression
+	}
+	relative_position_id = USA_macarthurs_aggression
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_destroy_the_enemy"
+		custom_effect_tooltip = USA_lower_popular_support_slight
+		hidden_effect = {
+			set_temp_variable = { CNA_raise_popular_support_var = -0.1 }
+			CNA_raise_popular_support_effect = yes
+			set_temp_variable = { USA_raise_popular_support_var = -0.05 }
+			USA_raise_popular_support_effect = yes
+		}
+		CNA = {
+			custom_effect_tooltip = CNA_lower_popular_support
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_a_strong_america
+	icon = GFX_RAJ_rifles_guns_cannons
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_destroy_the_enemy
+	}
+	relative_position_id = USA_destroy_the_enemy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_strong_america"
+		add_ideas = USA_strong_america_idea
+	}
+}
+
+shared_focus = {
+	id = USA_the_red_scare
+	icon = GFX_goal_ENG_reign_of_terror
+	cost = 5
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = USA_destroy_the_enemy
+	}
+	relative_position_id = USA_destroy_the_enemy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_red_scare"
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = -0.05
+		}
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.1 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support
+	}
+}
+
+shared_focus = {
+	id = USA_purge_the_socialists
+	icon = GFX_generic_execute_communists
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_a_strong_america
+	}
+	prerequisite = {
+		focus = USA_the_red_scare
+	}
+	relative_position_id = USA_destroy_the_enemy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_purge_the_socialists"
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.05
+		}
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = -0.05 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_lower_popular_support_slight
+		add_to_variable = { USA_devastation_var = 4.367 }
+		USA_update_devastation = yes
+		custom_effect_tooltip = USA_increase_devastation_5
+	}
+}
+
+shared_focus = {
+	id = USA_hunt_the_loyal_tories
+	icon = GFX_Generic_Invasion
+	cost = 5
+	x = 2
+	y = 2
+	prerequisite = {
+		focus = USA_a_strong_america
+	}
+	prerequisite = {
+		focus = USA_the_red_scare
+	}
+	relative_position_id = USA_destroy_the_enemy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_hunt_the_loyal_tories"
+		add_popularity = {
+			ideology = administrationism
+			popularity = -0.05
+		}
+		hidden_effect = {
+			set_temp_variable = { CNA_raise_popular_support_var = -0.1 }
+			CNA_raise_popular_support_effect = yes
+		}
+		CNA = {
+			custom_effect_tooltip = CNA_lower_popular_support
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_america_impenetrable
+	icon = GFX_goal_laicism
+	cost = 5
+	x = 1
+	y = 3
+	prerequisite = {
+		focus = USA_purge_the_socialists
+	}
+	prerequisite = {
+		focus = USA_hunt_the_loyal_tories
+	}
+	relative_position_id = USA_destroy_the_enemy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_america_impenetrable"
+		swap_ideas = {
+			remove_idea = USA_strong_america_idea
+			add_idea = USA_strong_america_idea_2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mass_offensives
+	icon = goal_GEA_guerilla_warfare
+	cost = 5
+	x = 0
+	y = 4
+	prerequisite = {
+		focus = USA_aim_for_strategic_objectives
+	}
+	prerequisite = {
+		focus = USA_purge_the_socialists
+	}
+	relative_position_id = USA_macarthurs_aggression
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mass_offensives"
+		add_timed_idea = {
+			idea = USA_mass_offensives_idea
+			days = 120
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_duty_honor_country
+	icon = GFX_Triumphant_Will
+	cost = 5
+	x = 0
+	y = 5
+	prerequisite = {
+		focus = USA_jack_up_production
+	}
+	prerequisite = {
+		focus = USA_mass_offensives
+	}
+	prerequisite = {
+		focus = USA_america_impenetrable
+	}
+	relative_position_id = USA_macarthurs_aggression
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_duty_honor_country"
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.15
+		}
+		hidden_effect = {
+			set_temp_variable = { USA_raise_popular_support_var = 0.15 }
+			USA_raise_popular_support_effect = yes
+		}
+		custom_effect_tooltip = USA_raise_popular_support
+	}
+}
+
+shared_focus = {
+	id = USA_the_engine_of_freedom
+	icon = GFX_generic_economic_liberty
+	cost = 1
+	x = -10
+	y = 1
+	prerequisite = {
+		focus = USA_liberty_or_death
+	}
+	relative_position_id = USA_liberty_or_death
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_engine_of_freedom"
+		add_political_power = 25
+	}
+}
+
+shared_focus = {
+	id = USA_oil_import_substitution
+	icon = GFX_Generic_Oil_Concern
+	cost = 5
+	x = -5
+	y = 1
+	prerequisite = {
+		focus = USA_the_engine_of_freedom
+	}
+	relative_position_id = USA_the_engine_of_freedom
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_oil_import_substitution"
+		custom_effect_tooltip = USA_oil_war_tooltip
+		if = {
+			limit = {
+				controls_state = 393
+			}
+			add_resource = {
+				state = 393
+				type = oil
+				amount = 6
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 465
+			}
+			add_resource = {
+				state = 465
+				type = oil
+				amount = 4
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_synthetic_oil_advancements
+	icon = GFX_Generic_Oil_Production
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_oil_import_substitution
+	}
+	relative_position_id = USA_oil_import_substitution
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_synthetic_oil_advancements"
+		add_tech_bonus = {
+			category = synth_resources
+			bonus = 0.5
+			uses = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_improved_fuel_storage
+	icon = GFX_RAJ_India_Diplo_Italy_Oil
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_synthetic_oil_advancements
+	}
+	relative_position_id = USA_oil_import_substitution
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_improved_fuel_storage"
+		random_owned_state = {
+			limit = {
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = fuel_silo
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_steel_of_the_great_lakes
+	icon = GFX_Steel
+	cost = 5
+	x = -3
+	y = 1
+	prerequisite = {
+		focus = USA_the_engine_of_freedom
+	}
+	relative_position_id = USA_the_engine_of_freedom
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_steel_of_the_great_lakes"
+		custom_effect_tooltip = USA_steel_war_tooltip
+		if = {
+			limit = {
+				controls_state = 358 #Buffalo
+			}
+			add_resource = {
+				state = 358
+				type = steel
+				amount = 5
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 929 #Pittsburgh
+			}
+			add_resource = {
+				state = 929
+				type = steel
+				amount = 3
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 261 #Ohio
+			}
+			add_resource = {
+				state = 261
+				type = steel
+				amount = 5
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 393 #Michigan
+			}
+			add_resource = {
+				state = 393
+				type = steel
+				amount = 2
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 931 #Erie
+			}
+			add_resource = {
+				state = 931
+				type = steel
+				amount = 6
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 823 #Chicago
+			}
+			add_resource = {
+				state = 823
+				type = steel
+				amount = 4
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 395 #Illinois
+			}
+			add_resource = {
+				state = 395
+				type = steel
+				amount = 6
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 802 #Duluth
+			}
+			add_resource = {
+				state = 802
+				type = steel
+				amount = 3
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_expand_aluminum_production
+	icon = GFX_Aluminium
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_steel_of_the_great_lakes
+	}
+	relative_position_id = USA_steel_of_the_great_lakes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_expand_aluminum_production"
+		custom_effect_tooltip = USA_aluminum_war_tooltip
+		if = {
+			limit = {
+				controls_state = 468
+			}
+			add_resource = {
+				state = 468
+				type = aluminium
+				amount = 7
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 261
+			}
+			add_resource = {
+				state = 261
+				type = aluminium
+				amount = 12
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_resume_steel_exports
+	icon = GFX_generic_diplomacy_trade
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_expand_aluminum_production
+	}
+	relative_position_id = USA_steel_of_the_great_lakes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_resume_steel_exports"
+		custom_effect_tooltip = USA_steel2_war_tooltip
+		if = {
+			limit = {
+				controls_state = 381 #Boston
+			}
+			add_resource = {
+				state = 381
+				type = steel
+				amount = 10
+			}
+			381 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 925 #NYC
+			}
+			add_resource = {
+				state = 925
+				type = steel
+				amount = 8
+			}
+			925 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 930 #Philadelphia
+			}
+			add_resource = {
+				state = 930
+				type = steel
+				amount = 10
+			}
+			930 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_militarize_the_industrial_centers
+	icon = GFX_Generic_Industrialization
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = USA_the_engine_of_freedom
+	}
+	mutually_exclusive = {
+		focus = USA_expand_the_industrial_centers
+	}
+	relative_position_id = USA_the_engine_of_freedom
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_militarize_the_industrial_centers"
+		random_owned_state = {
+			limit = {
+				is_controlled_by = USA
+				industrial_complex > 2
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 2
+			}
+			PREV = {
+				random_owned_state = {
+					limit = {
+						NOT = { state = PREV.PREV }
+						is_controlled_by = USA
+						industrial_complex > 2
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_focus_on_the_lakes
+	icon = GFX_CNA_made_in_the_great_lakes
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_expand_the_industrial_centers
+		focus = USA_militarize_the_industrial_centers
+	}
+	mutually_exclusive = {
+		focus = USA_focus_on_the_coast
+	}
+	relative_position_id = USA_militarize_the_industrial_centers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_focus_on_the_lakes"
+		random_owned_state = {
+			limit = {
+				is_controlled_by = USA
+				OR = {
+					state = 261
+					state = 276
+					state = 358
+					state = 393
+					state = 395
+					state = 823
+					state = 929
+					state = 931
+				}
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			PREV = {
+				random_owned_state = {
+					limit = {
+						NOT = { state = PREV.PREV }
+						is_controlled_by = USA
+						OR = {
+							state = 261
+							state = 276
+							state = 358
+							state = 393
+							state = 395
+							state = 823
+							state = 929
+							state = 931
+						}
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_wartime_measures
+	icon = GFX_Generic_Rearmament
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_focus_on_the_lakes
+		focus = USA_focus_on_the_coast
+	}
+	mutually_exclusive = {
+		focus = USA_permanent_development
+	}
+	relative_position_id = USA_militarize_the_industrial_centers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_wartime_measures"
+		set_country_flag = USA_temp_wartime_factories
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_expand_the_industrial_centers
+	icon = GFX_Generic_Construction
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = USA_the_engine_of_freedom
+	}
+	mutually_exclusive = {
+		focus = USA_militarize_the_industrial_centers
+	}
+	relative_position_id = USA_the_engine_of_freedom
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_militarize_the_industrial_centers"
+		random_owned_state = {
+			limit = {
+				is_controlled_by = USA
+				industrial_complex > 2
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			PREV = {
+				random_owned_state = {
+					limit = {
+						NOT = { state = PREV.PREV }
+						is_controlled_by = USA
+						industrial_complex > 2
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_focus_on_the_coast
+	icon = GFX_generic_north_america
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_militarize_the_industrial_centers
+		focus = USA_expand_the_industrial_centers
+	}
+	mutually_exclusive = {
+		focus = USA_focus_on_the_lakes
+	}
+	relative_position_id = USA_expand_the_industrial_centers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_focus_on_the_coast"
+		random_owned_state = {
+			limit = {
+				is_controlled_by = USA
+				OR = {
+					state = 359
+					state = 361
+					state = 362
+					state = 811
+					state = 812
+					state = 926
+					state = 930
+					state = 933
+				}
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			PREV = {
+				random_owned_state = {
+					limit = {
+						NOT = { state = PREV.PREV }
+						is_controlled_by = USA
+						OR = {
+							state = 359
+							state = 361
+							state = 362
+							state = 811
+							state = 812
+							state = 926
+							state = 930
+							state = 933
+						}
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_permanent_development
+	icon = GFX_focus_HRE_a_peacetime_economy
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_focus_on_the_lakes
+		focus = USA_focus_on_the_coast
+	}
+	mutually_exclusive = {
+		focus = USA_wartime_measures
+	}
+	relative_position_id = USA_expand_the_industrial_centers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_permanent_development"
+		random_owned_state = {
+			limit = {
+				is_controlled_by = USA
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			category = industry
+			bonus = 0.5
+			uses = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_railroad_development
+	icon = GFX_Generic_Railroads
+	cost = 5
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = USA_the_engine_of_freedom
+	}
+	relative_position_id = USA_the_engine_of_freedom
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_railroad_development"
+		custom_effect_tooltip = USA_infra_war_tooltip
+		if = {
+			limit = {
+				controls_state = 381 #Boston
+			}
+			381 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 811 #Hudson Valley
+			}
+			811 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 926 #Buffalo
+			}
+			926 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 276 #Ontario
+			}
+			929 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 393 #Michigan
+			}
+			261 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 931 #Erie
+			}
+			931 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 823 #Chicago
+			}
+			823 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_extend_the_supply_lines
+	icon = GFX_Fix_Shitty_Rails
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_railroad_development
+	}
+	relative_position_id = USA_railroad_development
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_extend_the_supply_lines"
+		custom_effect_tooltip = USA_infra2_war_tooltip
+		if = {
+			limit = {
+				controls_state = 360 #Pennsylvania
+			}
+			360 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 824 #Kanawha
+			}
+			824 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 825 #Asheville
+			}
+			825 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 826 #Vandalia
+			}
+			826 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 801 #St. Mary's Falls
+			}
+			801 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 932 #Upper Peninsula
+			}
+			932 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 394 #Wisconsin
+			}
+			394 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_the_flow_of_commerce
+	icon = GFX_focus_HRE_sailing_along_the_river
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_extend_the_supply_lines
+	}
+	relative_position_id = USA_railroad_development
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_flow_of_commerce"
+		custom_effect_tooltip = USA_infra3_war_tooltip
+		if = {
+			limit = {
+				controls_state = 802 #Duluth
+			}
+			802 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 395 #Illinois
+			}
+			395 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 840 #Shawnee
+			}
+			840 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 368 #Memphis
+			}
+			368 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 370 #Chickasaw
+			}
+			370 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 819 #Choctaw
+			}
+			819 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 396 #Indiana
+			}
+			396 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 369 #Transylvania
+			}
+			369 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 261 #Ohio
+			}
+			261 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_state = 929 #Pittsburgh
+			}
+			929 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_ports_of_the_east_coast
+	icon = GFX_Naval_Supplies
+	cost = 5
+	x = 5
+	y = 1
+	prerequisite = {
+		focus = USA_the_engine_of_freedom
+	}
+	relative_position_id = USA_the_engine_of_freedom
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_ports_of_the_east_coast"
+		custom_effect_tooltip = USA_port_war_tooltip
+		if = {
+			limit = {
+				controls_province = 7361 #Halifax
+			}
+			464 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 7361
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_province = 6732 #Boston
+			}
+			381 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 6732
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_province = 3878 #NYC
+			}
+			925 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 3878
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_province = 6845 #Philly
+			}
+			930 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 6845
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_province = 788 #Norfolk
+			}
+			928 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 788
+				}
+			}
+		}
+		if = {
+			limit = {
+				controls_province = 7202 #Charleston
+			}
+			364 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 7202
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_fortify_the_coasts
+	icon = GFX_City_Forts
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = USA_ports_of_the_east_coast
+	}
+	relative_position_id = USA_ports_of_the_east_coast
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_fortify_the_coasts"
+		every_owned_state = {
+			limit = {
+				controller = {
+					tag = USA
+				}
+				is_coastal = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_naval_base = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_develop_naval_industries
+	icon = GFX_Generic_Naval_Industry
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = USA_fortify_the_coasts
+	}
+	relative_position_id = USA_ports_of_the_east_coast
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_develop_naval_industries"
+		random_owned_state = {
+			limit = {
+				controller = {
+					tag = USA
+				}
+				is_coastal = yes
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+			PREV = {
+				random_owned_state = {
+					limit = {
+						NOT = { state = PREV.PREV }
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

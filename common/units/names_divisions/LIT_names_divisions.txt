@@ -1,0 +1,36 @@
+﻿LIT_INF_01 = {
+	name = "Nacionalinė Gvardija"
+
+	for_countries = { LIT }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Nacionalinė Gvardija"
+}
+
+LIT_INF_02 = {
+	name = "Karališkoji Pėstininkų Divizija"
+
+	for_countries = { LIT }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Karališkoji Pėstininkų Divizija"
+}
+
+LIT_INF_03 = {
+	name = "Motorizuota Pėstininkų Divizija"
+
+	for_countries = { LIT }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Motorizuota Pėstininkų Divizija"
+}
+

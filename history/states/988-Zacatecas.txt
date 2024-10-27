@@ -1,0 +1,21 @@
+state={
+	id=988
+	name="STATE_988"
+	provinces={
+		10172 10738 12804 13272 
+	}
+	history = {
+		owner = MEX
+		add_core_of = MEX
+		victory_points = {
+			10172 10
+		}
+		victory_points = {
+			13272 5
+		}
+		set_demilitarized_zone = yes
+	}
+	manpower=467047
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

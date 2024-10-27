@@ -1,0 +1,17 @@
+
+state={
+	id=916
+	name="STATE_916"
+
+	history={
+		owner = KOR
+		add_core_of = KOR
+	}
+
+	provinces={
+		852 898 906 959 3803 3852 3860 3904 3981 6822 6922 6928 6944 9899 11878 
+	}
+	manpower=1103756
+	buildings_max_level_factor=1.000
+	state_category= city
+}

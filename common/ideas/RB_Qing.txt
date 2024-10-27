@@ -1,0 +1,118 @@
+ideas = {
+	country = {
+		CHI_nominally_dependent = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHI_nominally_dependent"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_CHI_nominally_dependent
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = -0.15
+				army_attack_factor = -0.15
+				#industrial_capacity_factory = -0.2
+				industrial_capacity_factory = -0.25
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_start_efficiency_factor = -0.2
+			}
+		}
+
+		CHI_shattered_empire = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHI_shattered_empire"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_CHI_shattered_empire
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.10
+				extra_trade_to_target_factor = -0.15
+				master_ideology_drift = -0.01
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		CHI_forbidden_city = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHI_forbidden_city"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_CHI_forbidden_city
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.10
+				research_speed_factor = -0.04
+			}
+		}
+
+		CHI_legacy_of_treaties = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHI_legacy_of_treaties"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = CHI_unequal_treaties
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.50
+				political_power_gain = -0.50
+				consumer_goods_factor = 0.15
+				min_export = 0.50
+				license_purchase_cost = -0.10
+			}
+		}
+
+		CHI_mandate_of_heaven = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHI_mandate_of_heaven"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = CHI_mandate_heaven
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+			}
+		}
+	}
+}

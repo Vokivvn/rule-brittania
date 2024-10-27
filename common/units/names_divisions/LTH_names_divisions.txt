@@ -1,0 +1,36 @@
+﻿LTH_INF_01 = {
+	name = "Pėstininkų Skyrius"
+
+	for_countries = { LTH }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Pėstininkų Skyrius"
+}
+
+LTH_INF_02 = {
+	name = "Lietuvos Nacionalinė Milicija"
+
+	for_countries = { LTH }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Lietuvos Nacionalinė Milicija"
+}
+
+LIT_INF_03 = {
+	name = "Motorizuota Pėstininkų Divizija"
+
+	for_countries = { LIT }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Motorizuota Pėstininkų Divizija"
+}
+

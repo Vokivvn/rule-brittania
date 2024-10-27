@@ -1,0 +1,24 @@
+
+state={
+	id=677
+	name="STATE_677"
+	manpower = 1325594
+	
+	state_category = town
+	
+	history={
+		owner = LEV
+		
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = LEV
+
+	}
+
+	
+	provinces={
+		1088 10087 12029 
+	}
+}

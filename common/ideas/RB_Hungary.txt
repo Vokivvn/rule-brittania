@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+		HUN_End_of_the_Boom = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Anglo_Austrian_Alliance"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = anglo_austrian_alliance_AUS
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		HUN_Rule_of_Nobles = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Anglo_Austrian_Alliance"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = anglo_austrian_alliance_AUS
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		HUN_Inequal_Union = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Anglo_Austrian_Alliance"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = anglo_austrian_alliance_AUS
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}

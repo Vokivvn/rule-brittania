@@ -1,0 +1,65 @@
+CNA_raise_popular_support_effect = {
+	set_temp_variable = { CNA_USA_total_population = 0 }
+	set_temp_variable = { CNA_total_population = 0 }
+	CNA = {
+		every_owned_state = {
+			add_to_temp_variable = { CNA_USA_total_population = state_population_k }
+			if = {
+				limit = {	
+					controller = { tag = CNA }
+				}
+				add_to_temp_variable = { CNA_total_population = state_population_k }
+			}
+		}
+	}
+	USA = {
+		every_owned_state = {
+			add_to_temp_variable = { CNA_USA_total_population = state_population_k }
+			if = {
+				limit = {	
+					controller = { tag = CNA }
+				}
+				add_to_temp_variable = { CNA_total_population = state_population_k }
+			}
+		}
+	}
+	if = {
+		limit = {
+			SOL = {
+				exists = yes
+			}
+		}
+		SOL = {
+			every_owned_state = {
+				add_to_temp_variable = { CNA_USA_total_population = state_population_k }
+				if = {
+					limit = {	
+						controller = { tag = CNA }
+					}
+					add_to_temp_variable = { CNA_total_population = state_population_k }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			USM = {
+				exists = yes
+			}
+		}
+		USM = {
+			every_owned_state = {
+				add_to_temp_variable = { CNA_USA_total_population = state_population_k }
+				if = {
+					limit = {	
+						controller = { tag = CNA }
+					}
+					add_to_temp_variable = { CNA_total_population = state_population_k }
+				}
+			}
+		}
+	}
+	divide_temp_variable = { CNA_total_population = CNA_USA_total_population }
+	multiply_temp_variable = { CNA_raise_popular_support_var = CNA_total_population }
+	add_to_variable = { CNA_popular_support = CNA_raise_popular_support_var }
+}

@@ -1,0 +1,35 @@
+scripted_gui = {
+	RB_head_of_government_button = {
+    	context_type = player_context
+    	parent_window_token = politics_tab
+   		window_name = "button_open_political_head_of_government"
+    	visible = {
+        	tag = ENG #or whatever
+    	}
+		effects = {
+            open_button_click = {
+                if = {
+                    limit = { NOT = { has_country_flag = RB_show_head_of_government_window } }
+                    set_country_flag =  RB_show_head_of_government_window
+                }
+                else_if = {
+                    limit = { has_country_flag = RB_show_head_of_government_window }
+                    clr_country_flag = RB_show_head_of_government_window
+                }
+            }
+		}
+	}
+    
+    RB_head_of_government_window = {
+        context_type = player_context
+        window_name = "political_head_of_government_bg"
+        visible = {
+            has_country_flag = RB_show_head_of_government_window
+        }
+   		properties = {
+        	hog_gui_portrait = {
+            	image = "[GetPMImage]"
+        	}
+    	}
+	}
+}

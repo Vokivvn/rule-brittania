@@ -1,0 +1,69 @@
+focus_tree = {
+	id = RB_FRA_intro_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_the_future_of_the_occupation
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = RB_FRA_king_george_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_a_jersey_anglo_in_king_louis_court
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = RB_FRA_ministry_of_truth_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_a_new_approach
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = RB_FRA_king_henri_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_the_man_of_the_hour
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = RB_FRA_republic_starting_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_the_republic_restored
+	continuous_focus_position = { x = 50 y = 2000 }
+}

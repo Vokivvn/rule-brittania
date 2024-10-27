@@ -1,0 +1,813 @@
+﻿add_namespace = NTO
+
+country_event = { # the NTO coups
+	id = NTO.1
+	title = NTO.1.t
+	desc = NTO.1.desc
+	picture = GFX_report_event_houston_view
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NTO.1"}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = NTO.1.a
+		create_country_leader = {
+			name = "William Graves"
+			desc = "POLITICS_William_Graves_DESC"
+			picture = "Portrait_TEX_William_Graves.dds"
+			expire = "1965.1.1"
+			ideology = nationalism_subtype
+			traits = {
+		
+			}
+		}
+		set_politics = {
+			ruling_party = nationalism
+		}
+		set_popularities = {
+			nationalism = 50
+			administrationism = 15
+			cromwellianism = 30
+			marxism = 5
+		}
+		set_cosmetic_tag = NTO_TEX
+		#load_focus_tree = TEX_NTO_initial
+	}
+}
+
+add_namespace = TEX
+
+country_event = { #party pop
+	id = TEX.1
+	title = TEX.1.t
+	desc = TEX.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.1"}
+	picture = GFX_report_event_texas_mango_in_undertale
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.1.a
+		set_popularities = {
+			cromwellianism = 2
+			marxism = 2
+			liberalism = 14
+			republicanism = 20
+			parliamentarianism = 29
+			administrationism = 10
+			absolutism = 5
+			despotism = 6
+			nationalism = 12
+		}
+	}
+}
+
+country_event = { #
+	id = TEX.2
+	title = TEX.2.t
+	desc = TEX.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.2"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.2.a
+	}
+}
+
+country_event = { #
+	id = TEX.3
+	title = TEX.3.t
+	desc = TEX.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.3"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.3.a
+	}
+}
+
+country_event = { #Guinn Resigns
+	id = TEX.4
+	title = TEX.4.t
+	desc = TEX.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.4"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.4.a
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = despotism
+		}
+		create_country_leader = {
+			name = "Walton Walker"
+			desc = "POLITICS_Walton_Walker_DESC"
+			picture = "Portrait_TEX_Walton_Walker.dds"
+			expire = "1965.1.1"
+			ideology = despotism_subtype
+			traits = {
+
+			}
+		}
+		load_focus_tree = TEX_Transition_Tree
+	}
+}
+
+country_event = { #indepdence
+	id = TEX.5
+	title = TEX.5.t
+	desc = TEX.5.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.5"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.5.a
+		RB_anti_anglo_effects = yes
+	}
+}
+
+country_event = { #wank
+	id = TEX.6
+	title = TEX.6.t
+	desc = TEX.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.6"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.6.a
+		RB_anti_anglo_effects = yes
+		set_politics = {
+			ruling_party = liberalism
+		}
+		TEX = {
+			transfer_state = 371
+			add_state_core = 371
+			transfer_state = 981
+			add_state_core = 981
+			transfer_state = 804
+			add_state_core = 804
+			transfer_state = 978
+			add_state_core = 978
+			transfer_state = 803
+			add_state_core = 803
+			transfer_state = 979
+			add_state_core = 979
+			transfer_state = 382
+			add_state_core = 382
+			transfer_state = 903
+			add_state_core = 903
+			transfer_state = 990
+			add_state_core = 990
+		}
+	}
+}
+
+country_event = { #walton doesnt step down
+	id = TEX.7
+	title = TEX.7.t
+	desc = TEX.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.7"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.7.a
+		country_event = {
+			id = TEX.8
+			days = 2
+		}
+	}
+}
+
+country_event = { #Ike doesnt take action
+	id = TEX.8
+	title = TEX.8.t
+	desc = TEX.8.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.8"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.8.a
+		country_event = {
+			id = TEX.9
+			days = 2
+		}
+	}
+}
+
+country_event = { #the army is sent in
+	id = TEX.9
+	title = TEX.9.t
+	desc = TEX.9.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.9"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = TEX.9.a
+		country_event = {
+			id = TEX.12
+			days = 2
+		}
+	}
+
+	option = { #
+		name = TEX.9.b
+		country_event = {
+			id = TEX.10
+			days = 2
+		}
+	}
+}
+
+country_event = { #the army defects
+	id = TEX.10
+	title = TEX.10.t
+	desc = TEX.10.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.10"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #the dream of democracy ends
+		name = TEX.10.a
+		country_event = {
+			id = TEX.15
+			days = 2
+		}
+	}
+
+	option = { #the army fights itself
+		name = TEX.10.b
+		country_event = {
+			id = TEX.11
+			days = 2
+		}
+	}
+}
+
+country_event = { #the army fights itself
+	id = TEX.11
+	title = TEX.11.t
+	desc = TEX.11.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.11"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Ike takes action
+		name = TEX.11.a
+		country_event = {
+			id = TEX.12
+			days = 2
+		}
+	}
+}
+
+country_event = { #Ike takes action and deposes Walton easy way
+	id = TEX.12
+	title = TEX.12.t
+	desc = TEX.12.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.12"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #election time
+		name = TEX.12.a
+		country_event = {
+			id = TEX.13
+			days = 2
+		}
+		add_timed_idea = {
+			idea = TEX_attempted_coup
+			days = 1460
+		}
+	}
+}
+
+country_event = { #Ike takes action and deposes Walton hard way
+	id = TEX.13
+	title = TEX.13.t
+	desc = TEX.13.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.13"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #election time, walton is killed later on
+		name = TEX.13.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Dwight Eisenhower"
+			desc = "POLITICS_DESC_Dwight_Eisenhower"
+			picture = "Portrait_TEX_Dwight_Eisenhower.dds"
+			expire = "1965.1.1"
+			ideology = despotism_subtype
+			traits = {
+
+			}
+		}
+		country_event = {
+			id = TEX.14
+			days = 2
+		}
+		country_event = {
+			id = TEX.16
+			days = 40
+		}
+		add_timed_idea = {
+			idea = TEX_attempted_coup
+			days = 1460
+		}
+	}
+}
+
+country_event = { #election 1937
+	id = TEX.14
+	title = TEX.14.t
+	desc = TEX.14.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.14"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #lamarists win
+		name = TEX.14.a
+		create_country_leader = {
+			name = "Ross S. Sterling"
+			desc = "LEADER_DESCRIPTION_Ross_S_Sterling"
+			picture = "Portrait_TEX_Ross_Sterling.dds"
+			expire = "1965.1.1"
+			ideology = republicanism_subtype
+			traits = {
+
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = republicanism
+			}
+			add_popularity = {
+				ideology = republicanism
+				popularity = 0.35
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.25
+			}
+		}
+		load_focus_tree = TEX_republic
+	}
+
+	option = { #houstinists win
+		name = TEX.14.b
+		create_country_leader = {
+			name = "Albert Thomas"
+			desc = "LEADER_DESCRIPTION_Albert_Thomas"
+			picture = "Portrait_TEX_Albert_Thomas.dds"
+			expire = "1965.1.1"
+			ideology = liberalism_subtype
+			traits = {
+
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = liberalism
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.35
+			}
+			add_popularity = {
+				ideology = republicanism
+				popularity = 0.25
+			}
+		}
+		load_focus_tree = TEX_republic
+	}
+}
+
+country_event = { #walton secures power
+	id = TEX.15
+	title = TEX.15.t
+	desc = TEX.15.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.15"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #thanks Ike!
+		name = TEX.15.a
+
+	}
+}
+
+country_event = { #walton is executed
+	id = TEX.16
+	title = TEX.16.t
+	desc = TEX.16.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TEX.16"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #thanks Ike!
+		name = TEX.16.a
+
+	}
+}
+
+add_namespace = oilcrash
+
+country_event = { #oil profits fall
+	id = oilcrash.1
+	title = oilcrash.1.t
+	desc = oilcrash.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.1"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.1.a
+		remove_ideas = TEX_oil_boom
+		hidden_effect = {
+			country_event = { id = oilcrash.2 days = 13 }
+		}
+	}
+}
+
+country_event = { #threat of crash looms
+	id = oilcrash.2
+	title = oilcrash.2.t
+	desc = oilcrash.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.2"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.2.a
+		hidden_effect = {
+			country_event = { id = oilcrash.3 days = 4 }
+		}
+	}
+}
+
+country_event = { #market protections!
+	id = oilcrash.3
+	title = oilcrash.3.t
+	desc = oilcrash.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.3"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Take precaution for a hit!
+		name = oilcrash.3.a
+		hidden_effect = {
+			country_event = { id = oilcrash.4 days = 4 }
+		}
+	}
+	option = { # Follow down the steady road.
+		name = oilcrash.3.b
+		hidden_effect = {
+			country_event = { id = oilcrash.6 days = 4 }
+		}
+	}
+}
+
+country_event = { #Investments have been closed
+	id = oilcrash.4
+	title = oilcrash.4.t
+	desc = oilcrash.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.4"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.4.a
+		hidden_effect = {
+			country_event = { id = oilcrash.3 days = 4 }
+		}
+	}
+}
+
+country_event = { #Light hit on oil
+	id = oilcrash.5
+	title = oilcrash.5.t
+	desc = oilcrash.5.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.5"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.5.a
+		add_ideas = TEX_oil_crash1
+	}
+}
+
+country_event = { #Investors pull out!
+	id = oilcrash.6
+	title = oilcrash.6.t
+	desc = oilcrash.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.6"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # place limits on civil usage!
+		name = oilcrash.3.a
+		hidden_effect = {
+			country_event = { id = oilcrash.7 days = 4 }
+		}
+	}
+	option = { # Follow down the steady road......
+		name = oilcrash.3.b
+		hidden_effect = {
+			country_event = { id = oilcrash.9 days = 4 }
+		}
+	}
+}
+
+country_event = { #Civilian usage has been limited
+	id = oilcrash.7
+	title = oilcrash.7.t
+	desc = oilcrash.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.7"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.7.a
+		hidden_effect = {
+			country_event = { id = oilcrash.8 days = 4 }
+		}
+	}
+}
+
+country_event = { #Moderate hit on oil
+	id = oilcrash.8
+	title = oilcrash.8.t
+	desc = oilcrash.8.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.8"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.8.a
+		add_ideas = TEX_oil_crash2
+	}
+}
+
+country_event = { #The market is frozen
+	id = oilcrash.9
+	title = oilcrash.9.t
+	desc = oilcrash.9.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.9"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Bail out the companies
+		name = oilcrash.9.a
+		hidden_effect = {
+			country_event = { id = oilcrash.10 days = 4 }
+		}
+	}
+	option = { # We will wait this out.
+		name = oilcrash.9.b
+		hidden_effect = {
+			country_event = { id = oilcrash.12 days = 4 }
+		}
+	}
+}
+
+country_event = { #Bails given to comapnies
+	id = oilcrash.10
+	title = oilcrash.10.t
+	desc = oilcrash.10.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.10"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.10.a
+		hidden_effect = {
+			country_event = { id = oilcrash.11 days = 4 }
+		}
+	}
+}
+
+country_event = { #Bad hit on oil
+	id = oilcrash.11
+	title = oilcrash.11.t
+	desc = oilcrash.11.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.11"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.11.a
+		add_ideas = TEX_oil_crash3
+	}
+}
+
+country_event = { #Complete collapse of oil industry
+	id = oilcrash.12
+	title = oilcrash.12.t
+	desc = oilcrash.12.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event oilcrash.12"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = oilcrash.12.a
+		add_ideas = TEX_oil_crash4
+		if = {
+			limit = {
+				NOT = {	
+					has_government = despotism
+				}
+			}
+			set_country_flag = TEX_NTO_OIL
+		}
+	}
+}
+
+add_namespace = dustbowl
+
+country_event = { # the status of agriculture in 1936, slowing down
+	id = dustbowl.1
+	title = dustbowl.1.t
+	desc = dustbowl.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event dustbowl.1"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dustbowl.1.a
+		hidden_effect = {
+			country_event = { id = dustbowl.2 days = 100 }
+		}
+	}
+}
+
+country_event = { # methods used in agriculture do not aid texas in the slightest
+	id = dustbowl.2
+	title = dustbowl.2.t
+	desc = dustbowl.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event dustbowl.2"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = dustbowl.2.a
+		hidden_effect = {
+			country_event = { id = dustbowl.3 days = 13 }
+		}
+	}
+}
+
+country_event = { # agriculutral proces rise
+	id = dustbowl.3
+	title = dustbowl.3.t
+	desc = dustbowl.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event dustbowl.3"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # government says to change your ways
+		name = dustbowl.3.a
+		hidden_effect = {
+			country_event = { id = dustbowl.4 days = 5 }
+		}
+	}
+	option = { # continue on.
+		name = dustbowl.3.b
+		hidden_effect = {
+			country_event = { id = dustbowl.5 days = 5 }
+		}
+	}
+}
+
+country_event = { # minor protests, but people changing
+	id = dustbowl.4
+	title = dustbowl.4.t
+	desc = dustbowl.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event dustbowl.4"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # government says to change your ways
+		name = dustbowl.4.a
+		hidden_effect = {
+			country_event = { id = dustbowl.4 days = 5 }
+		}
+	}
+}
+
+country_event = { # soil dies
+	id = dustbowl.5
+	title = dustbowl.5.t
+	desc = dustbowl.5.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event dustbowl.5"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # send reflief
+		name = dustbowl.5.a
+		hidden_effect = {
+			country_event = { id = dustbowl.4 days = 5 }
+		}
+	}
+	option = { # continue on.
+		name = dustbowl.5.b
+		hidden_effect = {
+			country_event = { id = dustbowl.7 days = 5 }
+		}
+	}
+}
+
+country_event = { # The Dust Bowl picks up (minor)
+	id = dustbowl.6
+	title = dustbowl.6.t
+	desc = dustbowl.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event dustbowl.6"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # 
+		name = dustbowl.6.a
+		add_ideas = TEX_dust_bowl_1
+	}
+}
+
+country_event = { # complete agricultural collapse
+	id = dustbowl.7
+	title = dustbowl.7.t
+	desc = dustbowl.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event dustbowl.7"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # oh no
+		name = dustbowl.7.a
+		hidden_effect = {
+			country_event = { id = dustbowl.8 days = 5 }
+		}
+	}
+}
+
+country_event = { # hard dust bowl
+	id = dustbowl.8
+	title = dustbowl.8.t
+	desc = dustbowl.8.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event dustbowl.8"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # 
+		name = dustbowl.8.a
+		add_ideas = TEX_dust_bowl_2
+		if = {
+			limit = {
+				has_country_flag = TEX_NTO_OIL
+			}
+			hidden_effect = {
+				country_event = { id = NTO.1 days = 20 }
+			}
+		}
+	}
+}

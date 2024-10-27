@@ -1,0 +1,209 @@
+CNA_battle_for_pemiscot_category = {
+	CNA_educate_shawnee_children = {
+		available = {
+			always = yes
+		}
+		cost = 50
+		days_remove = 50
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_educate_shawnee_children"
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_educate_shawnee_children"
+			add_to_variable = { SHW.CNA_influence_shawnee = -1 }
+			custom_effect_tooltip = SHW_tooltip_plus_CNA
+			SHW = {
+				country_event = {
+					id = SHW.11
+					days = 1
+				}
+			}
+		}
+	}
+	CNA_shawnee_road_development = {
+		available = {
+			SHW = { NOT = { has_country_flag = SHW_road_development } }
+		}
+		cost = 50
+		days_remove = 125
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_shawnee_road_development"
+			SHW = { set_country_flag = SHW_road_development }
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_shawnee_road_development"
+			add_to_variable = { SHW.CNA_influence_shawnee = -1 }
+			custom_effect_tooltip = SHW_tooltip_plus_CNA
+			SHW = {
+				country_event = {
+					id = SHW.12
+					days = 1
+				}
+				clr_country_flag = SHW_road_development
+			}
+		}
+	}
+	CNA_shawnee_tobacco_deal = {
+		available = {
+			SHW = { NOT = { has_country_flag = SHW_tobacco_deal } }
+		}
+		cost = 75
+		days_remove = 25
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_shawnee_tobacco_deal"
+			SHW = { set_country_flag = SHW_tobacco_deal }
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_shawnee_tobacco_deal"
+			add_to_variable = { SHW.CNA_influence_shawnee = -1 }
+			custom_effect_tooltip = SHW_tooltip_plus_CNA
+			SHW = {
+				country_event = {
+					id = SHW.13
+					days = 1
+				}
+				clr_country_flag = SHW_tobacco_deal
+			}
+		}
+	}
+}
+
+LOU_battle_for_pemiscot_category = {
+	LOU_educate_shawnee_children = {
+		available = {
+			always = yes
+		}
+		cost = 50
+		days_remove = 50
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision LOU_educate_shawnee_children"
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove LOU_educate_shawnee_children"
+			add_to_variable = { SHW.louisiana_influence_shawnee = -1 }
+			custom_effect_tooltip = SHW_tooltip_plus_louisiana
+			SHW = {
+				country_event = {
+					id = SHW.11
+					days = 1
+				}
+			}
+		}
+	}
+	LOU_shawnee_road_development = {
+		available = {
+			SHW = { NOT = { has_country_flag = SHW_road_development } }
+		}
+		cost = 50
+		days_remove = 125
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision LOU_shawnee_road_development"
+			SHW = { set_country_flag = SHW_road_development }
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove LOU_shawnee_road_development"
+			add_to_variable = { SHW.louisiana_influence_shawnee = -1 }
+			custom_effect_tooltip = SHW_tooltip_plus_louisiana
+			SHW = {
+				country_event = {
+					id = SHW.12
+					days = 1
+				}
+				clr_country_flag = SHW_road_development
+			}
+		}
+	}
+	LOU_shawnee_tobacco_deal = {
+		available = {
+			SHW = { NOT = { has_country_flag = SHW_tobacco_deal } }
+		}
+		cost = 75
+		days_remove = 25
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision LOU_shawnee_tobacco_deal"
+			SHW = { set_country_flag = SHW_tobacco_deal }
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove LOU_shawnee_tobacco_deal"
+			add_to_variable = { SHW.louisiana_influence_shawnee = -1 }
+			custom_effect_tooltip = SHW_tooltip_plus_louisiana
+			SHW = {
+				country_event = {
+					id = SHW.13
+					days = 1
+				}
+				clr_country_flag = SHW_tobacco_deal
+			}
+		}
+	}
+}
+
+SHW_battle_for_pemiscot_category = {
+	SHW_investigate_CNA_citizens = {
+		available = {
+			always = yes
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision SHW_investigate_CNA_citizens"
+			add_to_variable = { CNA_influence_shawnee = -1 }
+			custom_effect_tooltip = SHW_tooltip_minus_CNA
+			add_popularity = {
+				ideology = administrationism
+				popularity = 0.02
+			}
+			CNA = {
+				country_event = {
+					id = SHW.14
+					days = 1
+				}
+			}
+		}
+	}
+	
+	SHW_investigate_louisiana_citizens = {
+		available = {
+			always = yes
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision SHW_investigate_louisiana_citizens"
+			add_to_variable = { louisiana_influence_shawnee = -1 }
+			custom_effect_tooltip = SHW_tooltip_minus_louisiana
+			add_popularity = {
+				ideology = administrationism
+				popularity = 0.02
+			}
+			LOU = {
+				country_event = {
+					id = SHW.14
+					days = 1
+				}
+			}
+		}
+	}
+}

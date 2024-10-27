@@ -1,0 +1,24 @@
+state={
+	id=849
+	name="STATE_849"
+	provinces={
+		957 
+	}
+	history={
+		owner = BFE
+		add_core_of = BFE
+		buildings = {
+		    infrastructure = 4
+		    957 = {
+		    	naval_base = 4
+		    
+		    }
+	    }
+	    victory_points = {
+	    	957 20
+	    }
+	}
+	state_category = city
+	manpower=340750
+	buildings_max_level_factor=1.000
+}

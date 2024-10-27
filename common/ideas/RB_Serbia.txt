@@ -1,0 +1,62 @@
+ideas = {
+	country = {
+		SER_Serbian_Rebels = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_Serbian_Rebels"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SER_Serbian_Rebels
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -0.15
+			}
+		}
+		SER_Incapable_Command = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_Incapable_Command"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SER_Incompetent_Command
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -0.15
+			}
+		}
+		SER_Harsh_Treatment = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_Serbian_Rebels"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SER_Harsh_Treatment
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}

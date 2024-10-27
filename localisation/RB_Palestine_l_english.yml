@@ -1,0 +1,118 @@
+﻿l_english:
+ ##Country Names##
+ PAL_cromwellianism:0 "Viceroyalty of Palestine"
+ PAL_cromwellianism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_marxism:0 "Viceroyalty of Palestine"
+ PAL_marxism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_liberalism:0 "Viceroyalty of Palestine"
+ PAL_liberalism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_republicanism:0 "Viceroyalty of Palestine"
+ PAL_republicanism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_parliamentarianism:0 "Viceroyalty of Palestine"
+ PAL_parliamentarianism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_administrationism:0 "Viceroyalty of Palestine"
+ PAL_administrationism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_absolutism:0 "Viceroyalty of Palestine"
+ PAL_absolutism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_despotism:0 "Viceroyalty of Palestine"
+ PAL_despotism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_nationalism:0 "Viceroyalty of Palestine"
+ PAL_nationalism_DEF:0 "The Viceroyalty of Palestine"
+ PAL_cromwellianism_ADJ:0 "Palestinian"
+ PAL_marxism_ADJ:0 "Palestinian"
+ PAL_liberalism_ADJ:0 "Palestinian"
+ PAL_republicanism_ADJ:0 "Palestinian"
+ PAL_parliamentarianism_ADJ:0 "Palestinian"
+ PAL_administrationism_ADJ:0 "Palestinian"
+ PAL_despotism_ADJ:0 "Palestinian"
+ PAL_nationalism_ADJ:0 "Palestinian"
+
+ ##Party Names##
+ PAL_marxism_party:0 "Mapai"
+ PAL_marxism_party_long:0 "Mifleget Poalei Eretz Yisrael"
+ PAL_liberalism_party:0 "General Zionists"
+ PAL_liberalism_party_long:0 "The General Zionists"
+ PAL_republicanism_party:0 "HFW"
+ PAL_republicanism_party_long:0 "Hizb al-Fida al-Watani"
+ PAL_parliamentarianism_party:0 "al-Istiqlal"
+ PAL_parliamentarianism_party_long:0 "Hizb al-Istiqlal"
+ PAL_administrationism_party:0 "British Viceroyalty"
+ PAL_administrationism_party_long:0 "British Viceroyalty of Palestine"
+ PAL_despotism_party:0 "HaTzohar"
+ PAL_despotism_party_long:0 "Brit HaTzionim HaRevizionistim"
+ PAL_nationalism_party:0 "al-Husayni"
+ PAL_nationalism_party_long:0 "al-Husayni Clan"
+
+ ##Cosmetic Tags##
+ ##AL-SHAM##
+ PAL_SHAM_administrationism:0 "Al-Sham"
+ PAL_SHAM_administrationism_DEF:0 "Al-Sham"
+ PAL_SHAM_nationalism:0 "Al-Sham"
+ PAL_SHAM_nationalism_DEF:0 "Al-Sham"
+ ##REPUBLIC OF PALESTINE##
+ PAL_REP_republicanism:0 "Republic of Palestine"
+ PAL_REP_republicanism_DEF:0 "The Republic of Palestine"
+ PAL_REP_parliamentarianism:0 "Republic of Palestine"
+ PAL_REP_parliamentarianism_DEF:0 "The Republic of Palestine"
+ PAL_REP_administrationism:0 "Republic of Palestine"
+ PAL_REP_administrationism_DEF:0 "The Republic of Palestine"
+ ##SYRIA-PALESTINE##
+ PAL_SYRIA_administrationism:0 "Republic of Syria-Palestine"
+ PAL_SYRIA_administrationism_DEF:0 "The Republic of Syria-Palestine"
+ ##STATE OF ISRAEL##
+ PAL_ISRSTATE_liberalism:0 "State of Yisrael"
+ PAL_ISRSTATE_liberalionism_DEF:0 "The State of Yisrael"
+ PAL_ISRSTATE_administrationism:0 "State of Yisrael"
+ PAL_ISRSTATE_administrationism_DEF:0 "The State of Yisrael"
+ ##PEOPLE'S REPUBLIC OF ISRAEL##
+ PAL_ISRPRI_marxism:0 "People's Republic of Yisrael"
+ PAL_ISRPRI_marxism_DEF:0 "The People's Republic of Yisrael"
+ PAL_ISRPRI_administrationism:0 "People's Republic of Yisrael"
+ PAL_ISRPRI_administrationism_DEF:0 "The People's Republic of Yisrael"
+ 
+ ##DOMINION OF ISRAEL
+ PAL_ISRDOMINION_despotism:0 "Dominion of Yisrael"
+ PAL_ISRDOMINION_despotism_DEF:0 "the Dominion of Yisrael"
+ PAL_ISRDOMINION_administrationism:0 "Dominion of Yisrael"
+ PAL_ISRDOMINION_administrationism_DEF:0 "the Dominion of Yisrael"
+
+
+ ##Ideas##
+ PAL_Jewish_Settlement_Banned:0 "Jewish Settlement - Banned"
+ PAL_Jewish_Settlement_Discouraged:0 "Jewish Settlement - Discouraged"
+ PAL_Jewish_Settlement_Medium:0 "Jewish Settlement - Medium"
+ PAL_Jewish_Settlement_Encouraged:0 "Jewish Settlement - Encouraged"
+ PAL_Jewish_Settlement_Mandatory:0 "Jewish Settlement - Mandatory"
+ PAL_Jewish_Settlement_Mandatory_desc:0 "In accordance with decrees from London, it has been mandated that all Jews across the British Empire are be moved to the land of Israel. This pro-Jewish standing will eventually lead to the replacement of Arabs as a majority in the area, and a fully Jewish state of Israel."
+ PAL_Zionist_Strength_Nonexistant:0 "Zionist Strength - Nonexistant"
+ PAL_Zionist_Strength_Nonexistant_desc:0 "The Palestinian Arabs have achieved victory. Unified Zionist resistance in Palestine is no more, and those few who dare to persist are isolated from their social groups, completely alone. The Jews have been taught their place, and they will learn to know it well."
+ PAL_Zionist_Strength_Weak:0 "Zionist Strength - Weak"
+ PAL_Zionist_Strength_Medium:0 "Zionist Strength - Medium"
+ PAL_Zionist_Strength_Strong:0 "Zionist Strength - Strong"
+ PAL_Zionist_Strength_Dominant:0 "Zionist Strength - Dominant"
+ PAL_Arab_Strength_Powerless:0 "Arab Strength - Powerless"
+ PAL_Arab_Strength_Disunified:0 "Arab Strength - Disunified"
+ PAL_Arab_Strength_Medium:0 "Arab Strength - Medium"
+ PAL_Arab_Strength_Unified:0 "Arab Strength - Unified"
+ PAL_Arab_Strength_Dominant:0 "Arab Strength - Dominant"
+ 
+ ##Events##
+ palestine.2.t:0 "Violence in Tulkarm"
+ palestine.2.desc:0 "On the evening of April 15th, 1936, two Arabs constructed a roadblock on the road between Nablus and Tulkarm and began to stop cars and demand money and weapons. They told drivers they were gathering weapons and money for the Ilkwan al-Qassam, followers of the late Muslim preacher Izz ad-Din al-Qassam under the leadership of Farhan al-Sa'di. Two Jewish drivers and a Jewish passenger were separated from the rest of the drivers and shot. Two victims died and one survived.\n\nThe following night, two Arab laborers were killed near Petah Tikva, reportedly by members of the Jewish Irgun paramilitary, in an act of retaliation."
+ palestine.2.a:0 "Nothing but violent zealots!"
+
+ palestine.3.t:0 "Violence in Tulkarm"
+ palestine.3.desc:0 "The funeral of Israel Hazan in Tel Aviv, one of the Jewish victims of the recent shootings, was not a quiet one. The city was full of demonstrations and protestors, with their numbers in the thousands, marching against the British government of Palestine and against the Arab attacks on Jews. All shops and factories have closed down in an act of solidarity with the Jews.\n\nThere have been reports of Arabs and Arab-owned property being assaulted by Jews in the city of Tel Aviv during this tumultuous day."
+ palestine.3.a:0 "It seems that everyone in Palestine is angry."
+
+ palestine.4.t:0 "The Bloody Day in Jaffa"
+ palestine.4.desc:0 "April 19th started with rumors. Rumors that there was violence had broken out on the streets of Jaffa, that Arabs had been killed by Jews and that Jews have been killed by Arabs. In retaliation to these rumors, an Arab mob marched on to the Jewish-owned Anglo-Palestine Bank in Jaffa. The defending Viceroyalty police begun to fire into the crowd, inciting a fury that resulted in the murder of Jews on the streets.\n\n Two Arabs and Nine Jews were killed in the riots, with many of others injured and thousands of Jews fleeing the city as refugees. Finally, the local garrison marched on the city and ended the riots."
+ palestine.4.a:0 "We are slowly losing control of Palestine!"
+
+ #palestine.5.t:0 "The Arab General Strike"
+ #palestine.5.desc:0 "The recent intercommunal violence and the seemingly preference towards Jews over Arabs by the British government in Palestine has resulted in the beginning of an Arab General Strike throughout Palestine. The strike begun in Nablus in April 19th, starting with the formation of the Arab National Committee. Today, leaders of the Arab National Committee called for a general strike of all Arabs engaged in labour, transport, and shopkeeping until further notice.\n\nThe strike is spreading throughout the country as Arabs participate in noncooperation as a form of protest. Already our economy has begun to take a toll."
+ #palestine.5.a:0 "Can things get any worse?!"
+
+ #palestine.6.t:0 "Arab Revolt!"
+ #palestine.6.desc:0 "The Arab general strike has been occurring for multiple days now with no signs of stopping. Religious leaders, influential families, and political leaders that have been assisting in its coordination have recently announced that they have created a new initiative known as the Arab Higher Committee. The Arab Higher Committee has set a list of demands towards the British viceroyalty, including,\n\n1) The prohibition of Jewish immigration\n\n2) The prohibition of the transfer of Arab land to Jews\n\n3) The establishment of a National Government responsible to a representative council.\n\nThe list of individuals involved in the Arab Higher Committee is impressive, including Jamal Husayin al-Kalidi, National Defense Party leader and clan patriarch Raghib al-Nashashibi, as well as several members of the prominent of the radicalized Husayni clan including its patriarch and the founder and chairman of the initiative itself, Amin Husayni."
+ #palestine.6.a:0 "Violence rules the streeet!"

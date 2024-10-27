@@ -1,0 +1,22 @@
+state={
+	id= 888
+	name="STATE_888" #East Kenya
+	manpower = 1215436
+	
+	state_category = rural
+
+	history={
+		owner = KEN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10860 10
+		}
+		add_core_of = KEN
+	}
+
+	provinces={
+		5160 5196 10860
+	}
+}

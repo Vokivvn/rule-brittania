@@ -1,0 +1,709 @@
+###the austrian decisions file has grown so large that it's taken on a life of its own. i've been stuck here for weeks. if you are reading this please send help - mop
+operations = {
+	AUS_Alpine_Defense_Plan_des = {
+		icon = generic_prepare_civil_war
+		cost = 25
+		available = {
+			has_war = yes
+			OR = {
+				controls_state = 153
+				controls_state = 938
+				controls_state = 39
+				controls_state = 939
+				controls_state = 937
+				controls_state = 940
+			}
+		}
+		days_remove = 140
+		visible = {
+			has_completed_focus = AUS_Prepare_Alpine_Tactics
+		}
+		allowed = {
+			tag = AUS
+		}
+		fire_only_once = yes
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 153
+						state = 938
+						state = 39
+						state = 939
+						state = 937
+						state = 940
+					}
+				}
+				remove_province_modifier = {
+					static_modifiers = { planned_defense }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+		complete_effect = {
+			hidden_effect = { AUS_recalculate_estates = yes }
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 153
+						state = 938
+						state = 39
+						state = 939
+						state = 937
+						state = 940
+					}
+				}
+				add_province_modifier = {
+					static_modifiers = { planned_defense }
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+}
+estates_austria = {
+
+	estates_nobility = {
+
+		icon = aus_nobility
+		on_map_mode = map_only
+		available = {
+			has_country_flag = expropriate_noble_lands
+			FROM = {
+				NOT = { 
+					has_state_flag = {
+						flag = recently_given
+						days < 100
+					}
+				}
+			}
+		}
+		state_target = yes
+		visible = {
+			FROM = {
+				has_state_flag = AUS_nobility_control
+			}
+			any_country = {
+				OR = {
+					tag = AUS
+					is_subject_of = AUS
+				}
+				has_full_control_of_state = FROM
+			}
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_owned_by = AUS
+					any_country = {
+						is_subject_of = AUS
+						owns_state = FROM
+					}
+				}
+			}
+		}
+
+
+		fire_only_once = yes
+
+		cost = 0
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			FROM = {
+				clr_state_flag = AUS_nobility_control
+				set_state_flag = AUS_nobody_control
+			}
+			hidden_effect = { AUS_recalculate_estates = yes }
+		}
+	}
+	estates_clergy = {
+
+		icon = aus_clergy
+		on_map_mode = map_only
+		available = {
+			has_country_flag = secularize_church_lands
+			FROM = {
+				NOT = { 
+					has_state_flag = {
+						flag = recently_given
+						days < 100
+					}
+				}
+			}
+		}
+		state_target = yes
+		visible = {
+			FROM = {
+				has_state_flag = AUS_clergy_control
+			}
+			any_country = {
+				OR = {
+					tag = AUS
+					is_subject_of = AUS
+				}
+				has_full_control_of_state = FROM
+			}
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_owned_by = AUS
+					any_country = {
+						is_subject_of = AUS
+						owns_state = FROM
+						NOT = { tag = OST }
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			FROM = { 
+				clr_state_flag = AUS_nobility_control
+				set_state_flag = AUS_nobody_control
+			}
+			hidden_effect = { AUS_recalculate_estates = yes }
+		}
+	}
+	estates_burghers = {
+
+		icon = aus_burghers
+		on_map_mode = map_only
+		available = {
+			has_country_flag = confiscate_burgher_lands
+			FROM = {
+				NOT = { 
+					has_state_flag = {
+						flag = recently_given
+						days < 100
+					}
+				}
+			}
+		}
+		state_target = yes
+		visible = {
+			FROM = {
+				has_state_flag = AUS_burghers_control
+			}
+			any_country = {
+				OR = {
+					tag = AUS
+					is_subject_of = AUS
+				}
+				has_full_control_of_state = FROM
+			}
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_owned_by = AUS
+					AND = { 
+						any_country = {
+							is_subject_of = AUS
+							owns_state = FROM
+						}
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			FROM = {
+				clr_state_flag = AUS_burghers_control
+				set_state_flag = AUS_nobody_control
+			}
+			hidden_effect = { AUS_recalculate_estates = yes }
+		}
+	}
+	estates_nobody = {
+
+		icon = aus_nobody
+		on_map_mode = map_only
+		available = {
+			OR = {
+				has_country_flag = AUS_land_to_nobility
+				has_country_flag = AUS_land_to_clergy
+				has_country_flag = AUS_land_to_burghers
+				has_country_flag = AUS_federalise_states
+			}
+		}
+		state_target = yes
+		visible = {
+			FROM = {
+				OR = {
+					NOT = { 
+						has_state_flag = AUS_burghers_control
+						has_state_flag = AUS_clergy_control
+						has_state_flag = AUS_nobility_control
+						state = 4
+					}
+					has_state_flag = AUS_nobody_control
+				}
+			}
+			any_country = {
+				OR = {
+					tag = AUS
+					is_subject_of = AUS
+				}
+				has_full_control_of_state = FROM
+			}
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_owned_by = AUS
+					any_country = {
+						is_subject_of = AUS
+						owns_state = FROM
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+			FROM = { 
+				if = {
+					limit = { AUS = { has_country_flag = AUS_land_to_burghers } }
+					set_state_flag = AUS_burghers_control
+					clr_state_flag = AUS_nobody_control
+					set_state_flag = recently_given
+				}
+				if = {
+					limit = { AUS = { has_country_flag = AUS_land_to_nobility } }
+					set_state_flag = AUS_nobility_control
+					clr_state_flag = AUS_nobody_control
+					set_state_flag = recently_given
+				}
+				if = {
+					limit = { AUS = { has_country_flag = AUS_land_to_clergy } }
+					set_state_flag = AUS_clergy_control
+					clr_state_flag = AUS_nobody_control
+					set_state_flag = recently_given
+				}
+				if = {
+					limit = { AUS = { has_country_flag = AUS_federalise_states } }
+					custom_effect_tooltip = "WIP"
+					clr_state_flag = AUS_nobody_control
+					set_state_flag = recently_given
+				}
+			}
+			hidden_effect = { AUS_recalculate_estates = yes }
+		}
+	}
+
+
+	
+
+
+
+	AUS_vienna_belongs_to_the_emperor = {
+
+		icon = aus_imperial
+
+		available = {
+			has_government = marxism
+		}
+
+		highlight_states = { state = 4 }
+
+		on_map_mode = map_only
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			AUS = {
+				has_full_control_of_state = 4
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			hidden_effect = { AUS_recalculate_estates = yes }
+		}
+	}	
+	AUS_secularize_church_lands = {
+		visible = {
+			tag = AUS
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = expropriate_noble_lands
+					has_country_flag = confiscate_burgher_lands
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30 #Can secularize for 30 days
+		days_re_enable = 45
+		complete_effect = {
+			set_country_flag = secularize_church_lands
+		}
+		remove_effect = {
+			clr_country_flag = secularize_church_lands
+		}
+	}
+	AUS_expropriate_noble_lands = {
+		visible = {
+			tag = AUS
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = confiscate_burgher_lands
+					has_country_flag = secularize_church_lands
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30 #Can expropriate for 30 days
+		days_re_enable = 45
+		complete_effect = {
+			set_country_flag = expropriate_noble_lands
+		}
+		remove_effect = {
+			clr_country_flag = expropriate_noble_lands
+		}
+	}
+	AUS_confiscate_burgher_lands = {
+		visible = {
+			tag = AUS
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = expropriate_noble_lands
+					has_country_flag = secularize_church_lands
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30 #Can confiscate for 30 days
+		days_re_enable = 45
+		complete_effect = {
+			set_country_flag = confiscate_burgher_lands
+		}
+		remove_effect = {
+			clr_country_flag = confiscate_burgher_lands
+		}
+	}
+	
+	
+	AUS_federalise_states = {
+		visible = {
+			tag = AUS
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = AUS_land_to_nobility
+					has_country_flag = AUS_land_to_clergy
+					has_country_flag = AUS_land_to_burghers
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30 #Can federalise for 30 days
+		days_re_enable = 45
+		complete_effect = {
+			set_country_flag = AUS_federalise_states
+		}
+		remove_effect = {
+			clr_country_flag = AUS_federalise_states
+		}
+	}
+	AUS_estates_land_to_burghers = {
+		visible = {
+			tag = AUS
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = AUS_land_to_nobility
+					has_country_flag = AUS_land_to_clergy
+					has_country_flag = AUS_federalise_states
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30 #Can grant for 30 days
+		days_re_enable = 45
+		complete_effect = {
+			set_country_flag = AUS_land_to_burghers
+		}
+		remove_effect = {
+			clr_country_flag = AUS_land_to_burghers
+		}
+	}
+	AUS_estates_land_to_nobility = {
+		allowed = {
+			tag = AUS
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = AUS_land_to_clergy
+					has_country_flag = AUS_land_to_burghers
+					has_country_flag = AUS_federalise_states
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30 #Can grant for 30 days
+		days_re_enable = 45
+		complete_effect = {
+			set_country_flag = AUS_land_to_nobility
+		}
+		remove_effect = {
+			clr_country_flag = AUS_land_to_nobility
+		}
+	}
+	AUS_estates_land_to_clergy = {
+		allowed = {
+			tag = AUS
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_country_flag = AUS_land_to_nobility
+					has_country_flag = AUS_land_to_burghers
+					has_country_flag = AUS_federalise_states
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30 #Can grant for 30 days
+		days_re_enable = 45
+
+		complete_effect = {
+			set_country_flag = AUS_land_to_clergy
+		}
+		remove_effect = {
+			clr_country_flag = AUS_land_to_clergy
+		}
+	}
+}
+
+ostend_austria = {
+	
+	HOL_ENG_Purchase_Ostend = {	#UNFINISHED
+		icon = ger_mefo_bills
+		visible = {
+			OR = {
+				tag = NET
+				tag = ENG
+			}
+			OR = {
+				AND = {
+					OST = {
+						exists = yes
+						is_subject_of = AUS
+						controls_state = 721
+					}
+				}
+				AND = {
+					AUS = {
+						controls_state = 721
+						owns_state = 721
+					}
+				}
+			}
+		}
+		available = {
+			NOT = {
+				has_war_with = AUS
+				has_war_with = OST
+				has_war_with = VOC
+			}
+			VOC = {
+				has_civil_war = no
+				OR = {
+					controls_state = 333
+					controls_state = 334
+				}
+			}
+		}	
+		complete_effect = {
+			#Too lazy to make an event
+			OST = {
+				every_unit_leader = {
+					random_list = {
+						50 = {
+							set_nationality = AUS
+						}
+						50 = {
+							set_nationality = HUN
+						}
+					}
+				}
+			}
+			VOC = {
+				annex_country = {
+					target = OST
+					transfer_troops = no
+				}	
+			}
+			#FOR EVENT USE FROM
+			ROOT = {
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 1
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			AUS = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+		cost = 25
+	}
+	AUS_Garrison = {
+
+		icon = generic_civil_support
+		available = {
+			OR = {
+				AND = {
+					if = {
+						limit = { NOT = { has_completed_focus = AUS_Reinforce_Ostend_Garrisons } }
+						NOT = { army_manpower_in_state = { state = 721 amount < 30000 } }
+					}
+					if = {
+						limit = { has_completed_focus = AUS_Reinforce_Ostend_Garrisons }
+						NOT = { army_manpower_in_state = { state = 721 amount < 15000 } }
+					}
+				}
+				hidden_trigger = {
+					AND = {
+						has_completed_focus = AUS_Reinforce_Ostend_Garrisons 
+						has_country_flag = {
+							flag = ostend_reinforced
+						}
+					}
+				}
+			}
+		}
+
+		days_mission_timeout = 140
+
+		fire_only_once = no
+
+		activation = {
+			721 = { is_fully_controlled_by = OST }
+			1025 = { is_fully_controlled_by = OST }
+			if = {
+				limit = { 
+					NOT = { has_completed_focus = AUS_Reinforce_Ostend_Garrisons }
+				}
+				OR = {
+					army_manpower_in_state = { state = 721 amount < 30000 }
+				}
+			}
+			if = {
+				limit = { 
+					has_completed_focus = AUS_Reinforce_Ostend_Garrisons
+				}
+				army_manpower_in_state = { state = 721 amount < 15000 }
+			}
+		}
+
+		visible = {
+			OST = {
+				is_subject_of = AUS
+				controls_state = 721
+			}
+			tag = AUS
+		}
+		
+		allowed = {
+			tag = AUS
+		}
+		
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		complete_effect = {
+			custom_effect_tooltip = "The Revolution has been stopped. For now at least."
+			clr_country_flag = ostend_reinforced
+		}
+
+		timeout_effect = {
+			country_event = austria.101
+		}
+	}
+	BOR_Retake_Borneo = {
+		visible = {
+			tag = BOR
+		}
+		available = {
+			strength_ratio = {
+				tag = VOC
+				ratio > 0.25
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+		fire_only_once = yes
+		cost = 100
+
+		complete_effect = {
+			334 = {
+				add_core_of = BOR
+			}
+			333 = {
+				add_core_of = BOR
+			}
+			declare_war_on = {
+				target = VOC
+				type = annex_everything
+			}
+		}
+	}
+}

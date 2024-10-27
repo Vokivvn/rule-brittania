@@ -1,0 +1,678 @@
+on_actions = {
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = fra_ongoing_revolt
+						tag = FRA
+					}
+				}
+				 ROOT = { 
+				 	clr_country_flag = fra_ongoing_revolt
+				 	FRA_morale_recovers = yes
+				 }
+			}
+		}
+	}
+	on_startup = {
+	    effect = {
+	    	#France
+	    	FRA = {
+	    		load_focus_tree = RB_FRA_intro_tree
+	    		set_variable = { var = FRA_unrest value = 2 }
+	    	}
+		    #DENMARK
+		    DEN = {
+		    	country_event = { id = den.1 days = 1 }		#intro events
+		    	country_event = { id = den.4 days = 12 }	#after newyears banquet
+		    	country_event = { id = den.5 days = 16 }	#new governor general for norway
+		    	country_event = { id = den.10 days = 27 }	#symbolic funeral for George V
+		    	country_event = { id = den.11 days = 38 }	#new leader of the liberal party
+		    	country_event = { id = den.14 days = 80 }	#Knut Hamsun publishes his latest book
+		    	country_event = { id = den.15 days = 100 }	#German officer arrested during protest in Kiel
+		    	country_event = { id = den.16 days = 138 }	#debates begin
+		    	country_event = { id = den.21 days = 169 }	#Duke of Mecklenburgs birthday
+		    	country_event = { id = den.22 days = 224 }	#400 celebration of the reformation in Denmark-Norway
+		    	country_event = { id = den.23 days = 238 }	#election
+		    
+		    }
+		    #BRITAIN
+		    ENG = {
+		        country_event = { id = england.1 days = 1 } #Intro event
+		    	country_event = { id = england.2 days = 19 } #Death of George V
+		    	country_event = { id = engeco.4 days = 373 } #Economic crash
+		    	set_country_flag = ENG_George_V_flag
+		    	set_country_flag = ENG_King_Coalition_Gov_flag
+			set_country_flag = ENG_CK_Rule_flag
+		    	set_variable = {
+		    		var = ENG_Monarch_Influence
+		    		value = 85
+		    	}
+		    	set_variable = {
+		    		var = ENG_Government_Acceptance
+		    		value = 90
+		    	}
+		    }
+			#LITHUANIA
+			LIT = {
+				country_event = { id = lithuania.2 days = 1290 }
+			}
+			BRG = {
+				hidden_effect = { #used to not fuck up the division experience levels
+					swap_ideas = {
+						remove_idea = BRG_Idea_No_Ones_A_Burgundian
+						add_idea = BRG_Idea_No_Ones_A_Burgundian_real
+					}
+				}
+				country_event = { id = burgundy.14 days = 76 } #liberal congress
+			}
+		    #RUSSIA
+			RUS = {
+				country_event = { id = RUS.1 days = 1 } #Intro Event
+			}
+		    SIB = {
+				every_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 10 #y tho
+				}
+				four_random_industrial_complex = yes
+				four_random_industrial_complex = yes
+				four_random_industrial_complex = yes
+				four_random_industrial_complex = yes
+				four_random_arms_factory = yes
+				four_random_arms_factory = yes
+				country_event = { id = sib.27 days = 40 } #First Auction
+				country_event = { id = sib.28 days = 370 } #Second Auction
+				country_event = { id = sib.29 days = 650 } #Third Auction
+				country_event = { id = sib.30 days = 840 } #High Commissioneer Goes To Bass Pro Shop
+				country_event = { id = sib.31 days = 1000 } #woop woop air police		
+			}
+			#SERBIA
+			SER = {
+				country_event = { id = srbija.1 days = 1 } #introevent
+			}
+			#SWEDEN
+			SWE = {
+				country_event = { id = SWE.1 days = 1 } #Intro Event
+			}
+			#PRUSSIA
+			PRU = {
+				country_event = { id = pru.1 days = 1} #introevent
+				country_event = { id = pru.3 days = 192} #audi factory
+				country_event = { id = pru.2 days = 372} #crash in Berlin
+				country_event = { id = pru.5 days = 383} #anniversery
+			}
+			#Hohenzollern 
+			HOH = {
+				country_event = { id = hoh.1 days = 1 }
+			}
+			#BAVARIA
+			BAV = {
+				country_event = { #AGEI
+					id = enggereco.1
+					days = 3
+				}
+			}	
+		}
+	}
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			#SLOVENIA
+			if = {
+				limit = { ROOT = { original_tag = SLV }}
+				if = { #Klagenfurt
+					limit = { FROM.FROM = { state = 949 } }
+					FROM.FROM = {
+						set_state_name = "Koroška"
+					}
+					set_province_name = {
+					    id = 3673
+					    name = "Celovec"
+					}
+				}
+				if = { #Trieste
+					limit = { FROM.FROM = { state = 736 } }
+					FROM.FROM = {
+						set_state_name = "Trst"
+					}
+					set_province_name = {
+					    id = 6626
+					    name = "Trst"
+					}
+				}
+				if = { #Ljubljana
+					limit = { FROM.FROM = { state = 102 } }
+					set_province_name = {
+					    id = 9627
+					    name = "Ljubljana"
+					}
+				}
+				if = { #Istria
+					limit = { FROM.FROM = { state = 943 } }
+					set_province_name = {
+					    id = 11735
+					    name = "Pulj"
+					}
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			IF = {
+				limit = {
+					NOT = {
+						ENG = {
+							has_country_flag = ENG_Coalition_Dissolved
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							parliamentarianism > 0.9
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .9 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								parliamentarianism > 0.8
+								parliamentarianism < 0.9
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .8 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								parliamentarianism > 0.7
+								parliamentarianism < 0.8
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .7 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								parliamentarianism > 0.6
+								parliamentarianism < 0.7
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .6 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								parliamentarianism > 0.5
+								parliamentarianism < 0.6
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .5 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								parliamentarianism > 0.4
+								parliamentarianism < 0.5
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .4 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								parliamentarianism > 0.3
+								parliamentarianism < 0.4
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .3 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								parliamentarianism > 0.2
+								parliamentarianism < 0.3
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .2 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								parliamentarianism > 0.1
+								parliamentarianism < 0.2
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Tory_Power = .1 }
+				clamp_variable = {
+					var = ENG_Tory_Power
+					max = 100
+				}
+			}
+			IF = {
+				limit = {
+					NOT = {
+						ENG = {
+							has_country_flag = ENG_Coalition_Dissolved
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.9
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .9 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.8
+								republicanism < 0.9
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .8 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.7
+								republicanism < 0.8
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .7 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.6
+								republicanism < 0.7
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .6 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.5
+								republicanism < 0.6
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .5 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.4
+								republicanism < 0.5
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .4 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.3
+								republicanism < 0.4
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .3 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.2
+								republicanism < 0.3
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .2 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								republicanism > 0.1
+								republicanism < 0.2
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Whig_Power = .1 }
+				clamp_variable = {
+					var = ENG_Whig_Power
+					max = 100
+				}
+			}
+			IF = {
+				limit = {
+					NOT = {
+						ENG = {
+							has_country_flag = ENG_Coalition_Dissolved
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.9
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .9 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.8
+								liberalism < 0.9
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .8 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.7
+								liberalism < 0.8
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .7 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.6
+								liberalism < 0.7
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .6 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.5
+								liberalism < 0.6
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .5 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.4
+								liberalism < 0.5
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .4 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.3
+								liberalism < 0.4
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .3 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.2
+								liberalism < 0.3
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .2 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						AND = {
+							has_country_flag = ENG_Coalition_Dissolved
+							AND = {
+								liberalism > 0.1
+								liberalism < 0.2
+							}
+						}
+					}
+				}
+				add_to_variable = { ENG_Fabian_Power = .1 }
+				clamp_variable = {
+					var = ENG_Fabian_Power
+					max = 100
+				}
+			}
+		}
+	}
+}

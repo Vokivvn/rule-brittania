@@ -1,0 +1,28 @@
+
+state={
+	id=370
+	name="STATE_370"
+
+	history={
+		owner = CSW
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 3
+		}
+		add_core_of = CSW
+		victory_points = {
+			11717 3
+		}
+		victory_points = {
+			10410 2
+		}
+	}
+
+	provinces={
+		4510 7464 10410 10753 11717 12328 
+	}
+	manpower=365962
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

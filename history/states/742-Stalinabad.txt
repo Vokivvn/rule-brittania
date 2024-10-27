@@ -1,0 +1,22 @@
+state={
+	id=742
+	name="STATE_742"
+
+	history={
+		owner = BKH
+		victory_points = {
+			1384 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BKH
+	}
+
+	provinces={
+		1216 1384 4467 4542 4923 7224 8027 10417 12218 12250 12430 
+	}
+	manpower=230000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

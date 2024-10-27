@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		MLT_avanti_italia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_avanti_italia"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = eagle_britain_fire
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				max_dig_in = 2
+				encryption_factor = 0.15
+				army_core_defence_factor = 0.1
+				ai_focus_defense_factor = 0.5
+			}
+		}
+	}
+}		

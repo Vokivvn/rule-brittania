@@ -1,0 +1,27 @@
+focus_tree = {
+	id = MLT_war_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MLT
+		}
+	}
+	default = no
+	shared_focus = MLT_Eagle_rising
+	continuous_focus_position = { x = 50 y = 2000}
+}
+
+shared_focus = {
+	id = MLT_Eagle_rising
+	icon = GFX_Crush_Resistance
+	cost = 10
+
+	x = 8
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus MLT_Eagle_rising"
+		add_war_support = 0.2
+	}
+}

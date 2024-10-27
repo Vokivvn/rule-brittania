@@ -1,0 +1,14 @@
+state={
+	id=961
+	name="STATE_961"
+	provinces={
+		1544 4440 
+	}
+	history = {
+		owner = LEV
+		add_core_of = LEV
+	}
+	manpower= 236014
+	state_category = town
+	buildings_max_level_factor=1.000
+}

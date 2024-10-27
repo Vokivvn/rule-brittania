@@ -1,0 +1,25 @@
+##### NAVAL OOB #####
+units= {
+	fleet = { # Adriatic
+		name = "Adria Kommando"			
+		naval_base = 6626 
+		task_force = {				
+			name = "Adria Flotte"
+			location = 6626
+			ship = { name = "SMS Babenberg" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Habsburg-Klasse" } } }
+			ship = { name = "SMS Arpad" definition = battleship equipment start_experience_factor = 0.5 = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Habsburg-Klasse" } } }
+			ship = { name = "SMS Habsburg" definition = battleship start_experience_factor = 0.7 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Habsburg-Klasse" } } }
+			ship = { name = "SMS Prinz Eugen" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Tegetthoff-Klasse" } } }
+			ship = { name = "SMS Leopard" definition = light_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AUS version_name = "Panther-Klasse"} } } 		
+			ship = { name = "SMS Panther" definition = light_cruiser start_experience_factor = 0.4 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AUS version_name = "Panther-Klasse" } } }		
+			ship = { name = "SMS Wildfang" definition = destroyer start_experience_factor = 0.4 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Streiter-Klasse" } } }	
+			ship = { name = "SMS Komet" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Streiter-Klasse" } } }	
+			ship = { name = "SMS Scharfschütze" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Streiter-Klasse" } } }		
+		}
+		task_force = { #Submarines
+			name = "U-Boot Flotte"
+			location = 6626
+			ship = { name = "SM Wolf" definition = submarine start_experience_factor = 0.7 equipment = { ship_hull_submarine_1 = { amount = 3 owner = AUS version_name = "Wolf-Klasse" } } }
+		}
+	}
+}

@@ -1,0 +1,13 @@
+TUR_young_turk_revolution = {
+	TUR_ytr_popularity = {
+		visible = {
+			TUR = {
+				has_country_flag = tur_the_struggle_for_the_revolution
+			}
+		}
+		available = { always = no }
+		fire_only_once = no
+		complete_effect = {
+		}
+	}
+}

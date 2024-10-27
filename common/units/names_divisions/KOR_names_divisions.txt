@@ -1,0 +1,21 @@
+﻿KOR_inf = {
+	name = "Royal Korean Infantry Division"
+
+	for_countries = { KOR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Royal Korean Infantry"
+
+	ordered = {
+		1 = { "Royal Korean Infantry 'Sejong'" }
+		2 = { "2nd Royal Korean Infantry Divison" }
+		3 = { "Royal Korean Infantry 'Baekje'" }
+		4 = { "Royal Korean Infantry 'Queen Victoria'" }
+		5 = { "5th Royal Korean Division" }
+		6 = { "Royal Korean Infantry 'Rolls Royce'" }
+		7 = { "Royal Korean Infantry 'Joseon'" }
+	}
+}

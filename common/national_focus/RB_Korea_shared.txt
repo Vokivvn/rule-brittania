@@ -1,0 +1,452 @@
+shared_focus = {
+	id = KOR_imperial_yi
+	icon = GFX_RB_generic_absolutism_ideology
+	cost = 4
+
+	x = 10
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_imperial_yi"
+		add_political_power = 25
+		hidden_effect = {
+			country_event = { id = kor.50 days = 0}
+		}
+	}
+}
+
+shared_focus = {
+	id = KOR_tax_reform
+	icon = GFX_goal_endless_money
+	cost = 4
+
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_imperial_yi
+	}
+	relative_position_id = KOR_imperial_yi
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_tax_reform"
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.05
+		}
+		country_event = { id = kor.53 days = 365 }
+	}
+}
+
+shared_focus = {
+	id = KOR_meet_the_radicals
+	icon = GFX_social_democrat_focus
+	cost = 4
+
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = KOR_imperial_yi
+	}
+	relative_position_id = KOR_imperial_yi
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_meet_the_radicals"
+		country_event = { id = kor.52 days = 1}
+	}
+}
+
+shared_focus = {
+	id = KOR_discuss_with_the_board
+	icon = GFX_Maintain_Cabinet_Loyalty
+	cost = 4
+
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = KOR_imperial_yi
+	}
+	relative_position_id = KOR_imperial_yi
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_discuss_with_the_board"
+		country_event = { id = kor.51 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = KOR_ambitious_minister
+	icon = GFX_Puppet_President
+	cost = 4
+
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_discuss_with_the_board
+	}
+	relative_position_id = KOR_discuss_with_the_board
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_ambitious_minister"
+		country_event = { id = kor.59 days = 1}
+		add_popularity = {
+			ideology = administrationism
+			popularity = 0.01
+		}
+	}
+}
+
+shared_focus = {
+	id = KOR_the_old_ways
+	icon = GFX_RAJ_India_Revitalize_Farming
+	cost = 4
+
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_tax_reform
+	}
+	prerequisite = {
+		focus = KOR_discuss_with_the_board
+	}
+	mutually_exclusive = {
+		focus = KOR_reach_a_compromise
+	}
+	relative_position_id = KOR_tax_reform
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_the_old_ways"
+		add_ideas = KOR_old_ways
+	}
+}
+
+shared_focus = {
+	id = KOR_reach_a_compromise
+	icon = GFX_tblra_union_agreement
+	cost = 4
+
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_tax_reform
+	}
+	prerequisite = {
+		focus = KOR_meet_the_radicals
+	}
+	mutually_exclusive = {
+		focus = KOR_the_old_ways
+	}
+	relative_position_id = KOR_tax_reform
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_reach_a_compromise"
+		add_ideas = KOR_labor_rights
+	}
+}
+
+shared_focus = {
+	id = KOR_stabilize_our_coaltion
+	icon = GFX_RB_generic_parliamentarianism_ideology
+	cost = 4
+
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_reach_a_compromise
+		focus = KOR_the_old_ways
+	}
+	relative_position_id = KOR_tax_reform
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_stabilize_our_coaltion"
+		country_event = { id = kor.54 days = 1}
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.01
+		}
+		set_country_flag = KOR_stable_coalition
+	}
+}
+#######################################################################################################################
+#######################################################################################################################
+#######################################################################################################################
+#######################################################################################################################
+shared_focus = {
+	id = KOR_rolls_royce
+	icon = GFX_RB_generic_parliamentarianism_ideology
+	cost = 4
+
+	x = -8
+	y = 1
+	prerequisite = {
+		focus = KOR_imperial_yi
+	}
+	mutually_exclusive = {
+		focus = KOR_gun_gun
+	}
+	relative_position_id = KOR_imperial_yi
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_rolls_royce"
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = motorized_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = KOR_gun_gun
+	icon = GFX_A_Stronger_Military
+	cost = 4
+
+	x = -6
+	y = 1
+	prerequisite = {
+		focus = KOR_imperial_yi
+	}
+	mutually_exclusive = {
+		focus = KOR_rolls_royce
+	}
+	relative_position_id = KOR_imperial_yi
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_gun_gun"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+}
+
+shared_focus = {
+	id = KOR_small_efficient
+	icon = GFX_Generic_Colonial_Army
+	cost = 4
+
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_rolls_royce
+	}
+	relative_position_id = KOR_rolls_royce
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_gun_gun"
+		add_ideas = KOR_small_efficient
+	}
+}
+shared_focus = {
+	id = KOR_support_companies
+	icon = GFX_Army_March
+	cost = 4
+
+	x = -1
+	y = 2
+	prerequisite = {
+		focus = KOR_small_efficient
+	}
+	relative_position_id = KOR_rolls_royce
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_support_companies"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = support_tech
+		}
+		army_experience = 10
+	}
+}
+
+shared_focus = {
+	id = KOR_special_forces
+	icon = GFX_Junta_Youth
+	cost = 4
+
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_rolls_royce
+		focus = KOR_gun_gun
+	}
+	relative_position_id = KOR_rolls_royce
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_gun_gun"
+		army_experience = 10
+		add_ideas = KOR_special_force_centric
+	}
+}
+shared_focus = {
+	id = KOR_british_artillery
+	icon = GFX_generic_artillery_warfare
+	cost = 4
+
+	x = 1
+	y = 2
+	prerequisite = {
+		focus = KOR_special_forces
+	}
+	relative_position_id = KOR_rolls_royce
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_british_artillery"
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = artillery
+		}
+		#add_equipment_to_stockpile = {
+		#	type = interwar_artillery
+		#	amount = 100
+		#	producer = ENG
+		#}
+	}
+}
+
+shared_focus = {
+	id = KOR_plane_designs
+	icon = GFX_RAJ_The_Airforce
+	cost = 4
+
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_support_companies
+		focus = KOR_british_artillery
+	}
+	relative_position_id = KOR_british_artillery
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_gun_gun"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = medium_air
+		}
+	}
+}
+
+shared_focus = {
+	id = KOR_mass_army
+	icon = GFX_Focus_Conscription_Act
+	cost = 4
+
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_gun_gun
+	}
+	relative_position_id = KOR_gun_gun
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_mass_army"
+		add_manpower = 50000
+		army_experience = 20
+	}
+}
+
+shared_focus = {
+	id = KOR_training_regime
+	icon = GFX_Generic_Rearmament
+	cost = 4
+
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_mass_army
+	}
+	relative_position_id = KOR_mass_army
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_training_regime"
+		army_experience = 5
+		add_ideas = KOR_mass_trained_army
+	}
+}
+
+shared_focus = {
+	id = KOR_some_destroyer
+	icon = GFX_USA_goal_liberty_ships
+	cost = 4
+
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_british_artillery
+		focus = KOR_training_regime
+	}
+	relative_position_id = KOR_training_regime
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_training_regime"
+		add_tech_bonus = {
+			bonus = 0.33
+			uses = 1
+			category = dd_tech
+		}
+	}
+}
+shared_focus = {
+	id = KOR_war_cart
+	icon = GFX_RUS_Markov_plan
+	cost = 4
+
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_some_destroyer
+		focus = KOR_plane_designs
+	}
+	relative_position_id = KOR_british_artillery
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_war_cart"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+	}
+}
+
+shared_focus = {
+	id = KOR_british_chapter
+	icon = GFX_British_Soldiers
+	cost = 4
+
+	x = 0
+	y = 3
+	prerequisite = {
+		focus = KOR_training_regime
+	}
+	prerequisite = {
+		focus = KOR_the_old_ways
+		focus = KOR_ambitious_minister
+	}
+	relative_position_id = KOR_discuss_with_the_board
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_british_chapter"
+		load_oob = "KOR_ENG_detachment"
+	}
+}
+
+#######################################################################################################################
+#######################################################################################################################
+#######################################################################################################################
+#######################################################################################################################
+
+shared_focus = {
+	id = KOR_premier_sungman
+	icon = GFX_British_Soldiers
+	cost = 4
+
+	x = 10
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_premier_sungm"
+	}
+}
+
+#######################################################################################################################
+#######################################################################################################################
+#######################################################################################################################
+#######################################################################################################################
+
+shared_focus = {
+	id = KOR_a_military_might
+	icon = GFX_British_Soldiers
+	cost = 4
+
+	x = 10
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KOR_a_military_might"
+	}
+}

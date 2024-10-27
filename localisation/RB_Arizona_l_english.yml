@@ -1,0 +1,87 @@
+﻿l_english:
+
+ #################################
+ ##======| Country Names |======##
+ ##============|  |=============##
+ #################################
+ ARZ_nationalism:0 "Arizona Authority"
+ ARZ_nationalism_ADJ:0 "Arizonan"
+ ARZ_nationalism_DEF:0 "The Provisional Authority in Arizona"
+
+ ARZ_despotism:0 "Arizona Authority"
+ ARZ_despotism_ADJ:0 "Arizonan"
+ ARZ_despotism_DEF:0 "The Provisional Authority in Arizona"
+ 
+ ARZ_absolutism:0 "Arizona Authority"
+ ARZ_absolutism_ADJ:0 "Arizonan"
+ ARZ_absolutism_DEF:0 "The Provisional Authority in Arizona"
+
+ ARZ_administrationism:0 "Arizona Authority"
+ ARZ_administrationism_ADJ:0 "Arizonan"
+ ARZ_administrationism_DEF:0 "The Provisional Authority in Arizona"
+
+ ARZ_parliamentarianism:0 "Arizona Authority"
+ ARZ_parliamentarianism_ADJ:0 "Arizonan"
+ ARZ_parliamentarianism_DEF:0 "The Provisional Authority in Arizona"
+
+ ARZ_republicanism:0 "Arizona Authority"
+ ARZ_republicanism_ADJ:0 "Arizonan"
+ ARZ_republicanism_DEF:0 "The Provisional Authority in Arizona"
+ 
+ ARZ_liberalism:0 "Arizona Authority"
+ ARZ_liberalism_ADJ:0 "Arizonan"
+ ARZ_liberalism_DEF:0 "The Provisional Authority in Arizona"
+
+ ARZ_marxism:0 "Arizona Authority"
+ ARZ_marxism_ADJ:0 "Arizonan"
+ ARZ_marxism_DEF:0 "The Provisional Authority in Arizona"
+ 
+ ARZ_cromwellianism:0 "Arizona Authority"
+ ARZ_cromwellianism_ADJ:0 "Arizonan"
+ ARZ_cromwellianism_DEF:0 "The Provisional Authority in Arizona"
+
+ #################################
+ ##=======| Party Names |=======##
+ ##===========| :) |============##
+ #################################
+ ARZ_cromwellianism_party:0 "Arizona Authority"
+ ARZ_cromwellianism_party_long:0 "Arizona Authority"
+ ARZ_cromwellianism_party_desc:0 "-"
+
+ ARZ_marxism_party:0 "Arizona Authority"
+ ARZ_marxism_party_long:0 "Arizona Authority"
+ ARZ_marxism_party_desc:0 "-"
+
+ ARZ_liberalism_party:0 "Arizona Authority"
+ ARZ_liberalism_party_long:0 "Arizona Authority"
+ ARZ_liberalism_party_desc:0 "-"
+
+ ARZ_republicanism_party:0 "Arizona Authority"
+ ARZ_republicanism_party_long:0 "Arizona Authority"
+ ARZ_republicanism_party_desc:0 "-"
+
+ ARZ_parliamentarianism_party:0 "Arizona Authority"
+ ARZ_parliamentarianism_party_long:0 "Arizona Authority"
+ ARZ_parliamentarianism_party_desc:0 "-"
+
+ ARZ_administrationism_party:0 "Arizona Authority"
+ ARZ_administrationism_party_long:0 "Arizona Authority"
+ ARZ_administrationism_party_desc:0 "-"
+
+ ARZ_absolutism_party:0 "Arizona Authority"
+ ARZ_absolutism_party_long:0 "Arizona Authority"
+ ARZ_absolutism_party_desc:0 "-"
+
+ ARZ_despotism_party:0 "Arizona Authority"
+ ARZ_despotism_party_long:0 "Arizona Authority"
+ ARZ_despotism_party_desc:0 "-"
+
+ ARZ_nationalism_party:0 "Arizona Authority"
+ ARZ_nationalism_party_long:0 "Arizona Authority"
+ ARZ_nationalism_party_desc:0 "-"
+
+ #################################
+ ##===| Leader Descriptions |===##
+ ##===========| :) |============##
+ #################################
+ LEADER_DESC_ARZ_HENRY_FOUNTAIN_ASHURST:0 ""

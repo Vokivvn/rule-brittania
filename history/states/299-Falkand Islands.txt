@@ -1,0 +1,22 @@
+state= {
+	id=299
+	name="STATE_299"
+	manpower=2463
+	
+	state_category = rural
+	
+	history= 	{
+		owner = PAT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			12960 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = PAT
+	}
+	provinces= { 
+		12960 
+	}
+}

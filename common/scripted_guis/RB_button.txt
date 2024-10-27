@@ -1,0 +1,25 @@
+scripted_gui = {
+    open_anglo_button = {
+        context_type = player_context
+		#parent_window_token = politics_tab
+		window_name = "button_open_anglosphere"
+		
+		effects = {
+			open_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = RB_show_anglo_gui } }
+					set_country_flag =  RB_show_anglo_gui
+				}
+				else_if = {
+					limit = { has_country_flag = RB_show_anglo_gui }
+					clr_country_flag = RB_show_anglo_gui
+				}
+				recalculate_anglo_arrays = yes
+			}
+		}
+		triggers = {
+        }
+    }
+}
+
+#placeholder text

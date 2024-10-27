@@ -1,0 +1,492 @@
+defined_text = {
+	name = BRG_Flanders_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Flanders_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Flanders_Loyalty > 59 }
+				check_variable = { BRG_Flanders_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Flanders_Loyalty > 39 }
+				check_variable = { BRG_Flanders_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Flanders_Loyalty > 19 }
+				check_variable = { BRG_Flanders_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Flanders_Loyalty > 0 }
+				check_variable = { BRG_Flanders_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Flanders_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Hainaut_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Hainaut_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Hainaut_Loyalty > 59 }
+				check_variable = { BRG_Hainaut_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Hainaut_Loyalty > 39 }
+				check_variable = { BRG_Hainaut_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Hainaut_Loyalty > 19 }
+				check_variable = { BRG_Hainaut_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Hainaut_Loyalty > 0 }
+				check_variable = { BRG_Hainaut_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Hainaut_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Palatine_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Palatine_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Palatine_Loyalty > 59 }
+				check_variable = { BRG_Palatine_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Palatine_Loyalty > 39 }
+				check_variable = { BRG_Palatine_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Palatine_Loyalty > 19 }
+				check_variable = { BRG_Palatine_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Palatine_Loyalty > 0 }
+				check_variable = { BRG_Palatine_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Palatine_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Luxembourg_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Luxembourg_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Luxembourg_Loyalty > 59 }
+				check_variable = { BRG_Luxembourg_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Luxembourg_Loyalty > 39 }
+				check_variable = { BRG_Luxembourg_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Luxembourg_Loyalty > 19 }
+				check_variable = { BRG_Luxembourg_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Luxembourg_Loyalty > 0 }
+				check_variable = { BRG_Luxembourg_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Luxembourg_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Champagne_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Champagne_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Champagne_Loyalty > 59 }
+				check_variable = { BRG_Champagne_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Champagne_Loyalty > 39 }
+				check_variable = { BRG_Champagne_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Champagne_Loyalty > 19 }
+				check_variable = { BRG_Champagne_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Champagne_Loyalty > 0 }
+				check_variable = { BRG_Champagne_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Champagne_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Lorraine_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Lorraine_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Lorraine_Loyalty > 59 }
+				check_variable = { BRG_Lorraine_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Lorraine_Loyalty > 39 }
+				check_variable = { BRG_Lorraine_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Lorraine_Loyalty > 19 }
+				check_variable = { BRG_Lorraine_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Lorraine_Loyalty > 0 }
+				check_variable = { BRG_Lorraine_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Lorraine_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Artois_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Artois_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Artois_Loyalty > 59 }
+				check_variable = { BRG_Artois_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Artois_Loyalty > 39 }
+				check_variable = { BRG_Artois_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Artois_Loyalty > 19 }
+				check_variable = { BRG_Artois_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Artois_Loyalty > 0 }
+				check_variable = { BRG_Artois_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Artois_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Picardy_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Picardy_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Picardy_Loyalty > 59 }
+				check_variable = { BRG_Picardy_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Picardy_Loyalty > 39 }
+				check_variable = { BRG_Picardy_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Picardy_Loyalty > 19 }
+				check_variable = { BRG_Picardy_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Picardy_Loyalty > 0 }
+				check_variable = { BRG_Picardy_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Picardy_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Alsace_Loyalty_Loc
+	text = {
+		trigger = {
+				check_variable = { BRG_Alsace_Loyalty > 79 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Alsace_Loyalty > 59 }
+				check_variable = { BRG_Alsace_Loyalty < 80 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Alsace_Loyalty > 39 }
+				check_variable = { BRG_Alsace_Loyalty < 60 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Noticiable
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Alsace_Loyalty > 19 }
+				check_variable = { BRG_Alsace_Loyalty < 40 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { BRG_Alsace_Loyalty > 0 }
+				check_variable = { BRG_Alsace_Loyalty < 20 }
+			}
+		}
+		localization_key = BRG_Alsace_Loyalty_Very_Low
+	}
+	text = {
+		trigger = {
+				check_variable = { BRG_Alsace_Loyalty < 1 }
+		}
+		localization_key = BRG_Alsace_Loyalty_Non_Existant
+	}
+}
+defined_text = {
+	name = BRG_Alsace_Ethnicity_Loc
+	text = {
+		trigger = {
+			check_variable = { BRG_Alsace_Ethnicity = 4 }
+		}
+		localization_key = BRG_Alsace_Ethnicity_French
+	}
+	text = {
+		trigger = {
+			check_variable = { BRG_Alsace_Ethnicity = 3 }
+		}
+		localization_key = BRG_Alsace_Ethnicity_Slight_French
+	}
+	text = {
+		trigger = {
+			check_variable = { BRG_Alsace_Ethnicity = 2 }
+		}
+		localization_key = BRG_Alsace_Ethnicity_No_Bias
+	}
+	text = {
+		trigger = {
+			check_variable = { BRG_Alsace_Ethnicity = 1 }
+		}
+		localization_key = BRG_Alsace_Ethnicity_Slight_Alemannic
+	}
+	text = {
+		trigger = {
+			check_variable = { BRG_Alsace_Ethnicity = 0 }
+		}
+		localization_key = BRG_Alsace_Ethnicity_Alemannic
+	}
+}

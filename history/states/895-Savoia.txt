@@ -1,0 +1,33 @@
+state={
+	id=895
+	name="STATE_895"
+
+	state_category = town
+
+	history= {
+		owner = PIE
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 
+			8062 1 
+		}
+		victory_points = {
+			11573 5
+		}
+		victory_points = {
+			778 3
+		}
+		victory_points = {
+			9603 2
+		}
+		add_core_of = PIE
+	}
+
+	provinces={
+		778 6609 9603 9745 11573 
+	}
+	manpower=478214
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

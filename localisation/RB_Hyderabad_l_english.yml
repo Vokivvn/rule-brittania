@@ -1,0 +1,13 @@
+﻿l_english:
+ ##Country Names##
+ HYD_absolutism:0 "State of Hyderabad"
+ HYD_absolutism_DEF:0 "The State of Hyderabad"
+ HYD_despotism:0 "State of Hyderabad"
+ HYD_despotism_DEF:0 "The State of Hyderabad"
+ HYD_absolutism_ADJ:0 "Hyderabadi"
+ HYD_despotism_ADJ:0 "Hyderabadi"
+
+ ##Party Names##
+ HYD_liberalism_party:0 "INC"
+ HYD_liberalism_party_long:0 "Indian National Congress"
+ HYD_absolutism_party:0 "Nizam of Hyderabad"

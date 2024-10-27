@@ -1,0 +1,25 @@
+
+state={
+	id=791
+	name="STATE_791"
+	manpower = 198105
+	
+	state_category = large_town
+
+	history={
+		owner = ENG
+		victory_points = { 3422 10 } 
+		buildings = {
+			infrastructure = 5
+			dockyard = 2
+			3422 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = ENG
+	}
+
+	provinces={
+		3463 3422
+	}
+}

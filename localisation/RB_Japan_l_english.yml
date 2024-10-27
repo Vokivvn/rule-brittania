@@ -1,0 +1,207 @@
+﻿l_english:
+ ### Starting Screen Desc ###
+ #JAP_RULEBRITANNIA_DESC_OLD:0 "Though the sun may never set on the British Empire, it still shines first above the Land of the Rising Sun. Japan is a nation robbed of its pride, subjugated like the other powers of the world rather than taking its place among them, as it had so desperately hoped. Its old guard samurai have fought in vain to reclaim Japan's glory both in the court and on the battlefield, crushing reformists in the Boshin rebellion. Can Iemasa Tokugawa balance memories of Japan's past glory with visions of a brighter, modern future?"
+ POLITICS_HIROHITO_DESC:0 "Hirohito, or the Shōwa Emperor, reigns as one of the most powerful leaders in the world, with his government granting him many powers often left checked in the West. However, he has no pretenses of centralizing the government or tossing out the Diet, but rather advancing his father’s style of governance of tolerated liberalism and continued abstention from intervention.\n\nHirohito had the pleasure of ruling before he was even considered the Emperor, as he was designated Sesshō-regent-for the Taishō Emperor. This experience carried over into his own reign, which began in 1926 to great avail. Now in his tenth year, Hirohito continues to reign over a prosperous and growing economy and a modern country, which is something many of his monarch peers could not attest to. Needless to say, he would not shirk from responsibility if the situation required it; this statement of conscience may become necessary as Japan’s future is molded and its relationship with Britain evolves."
+ 
+ ### Country Names ###
+ JAP_cromwellianism:0 "People's Republic of Japan"
+ JAP_cromwellianism_DEF:0 "The People's Repubic of Japan"
+ JAP_marxism:0 "Empire of Japan"
+ JAP_marxism_DEF:0 "The Empire of Japan"
+ JAP_liberalism:0 "Empire of Japan"
+ JAP_liberalism_DEF:0 "The Empire of Japan"
+ JAP_republicanism:0 "Empire of Japan"
+ JAP_republicanism_DEF:0 "The Empire of Japan"
+ JAP_parliamentarianism:0 "Empire of Japan"
+ JAP_parliamentarianism_DEF:0 "The Empire of Japan"
+ JAP_administrationism:0 "Empire of Japan"
+ JAP_administrationism_DEF:0 "The Empire of Japan"
+ JAP_absolutism:0 "Empire of Japan"
+ JAP_absolutism_DEF:0 "The Empire of Japan"
+ JAP_despotism:0 "Empire of Japan"
+ JAP_despotism_DEF:0 "The Empire of Japan"
+ JAP_nationalism:0 "Empire of Japan"
+ JAP_nationalism_DEF:0 "The Empire of Japan"
+ JAP_cromwellianism_ADJ:0 "Japanese"
+ JAP_marxism_ADJ:0 "Japanese"
+ JAP_liberalism_ADJ:0 "Japanese"
+ JAP_republicanism_ADJ:0 "Japanese"
+ JAP_parliamentarianism_ADJ:0 "Japanese"
+ JAP_administrationism_ADJ:0 "Japanese"
+ JAP_despotism_ADJ:0 "Japanese"
+ JAP_nationalism_ADJ:0 "Japanese"
+
+ ### Party Names ###
+ JAP_cromwellianism_party:0 "NK-KU"
+ JAP_cromwellianism_party_long:0 "Nihon Kyōsan-tō - Kakumei-ha"
+ JAP_marxism_party:0 "NK-KI"
+ JAP_marxism_party_long:0 "Nihon Kyōsan-tō - Kaikaku-ha"
+ JAP_liberalism_party:0 "SM"
+ JAP_liberalism_party_long:0 "Shakai Minshu-tō"
+ JAP_republicanism_party:0 "S-J"
+ JAP_republicanism_party_long:0 "Seiyukai - Jiyūtō-ha"
+ JAP_parliamentarianism_party:0 "S-H"
+ JAP_parliamentarianism_party_long:0 "Seiyukai - Hoshuha"
+ JAP_administrationism_party:0 "ROA-KSK"
+ JAP_administrationism_party_long:0 "Royal Occupational Authorities-Kōkina Shokugyō Kengen"
+ JAP_absolutism_party:0 "Sūmitsu-in"
+ JAP_absolutism_party_long:0 "Sūmitsu-in"
+ JAP_despotism_party:0 "Sūmitsu-in"
+ JAP_despotism_party_long:0 "Sūmitsu-in"
+ JAP_nationalism_party:0 "SN"
+ JAP_nationalism_party_long:0 "Shin Nihon-sha"
+
+ ### Ideas ###
+ JAP_Occupational_Committee:0 "Occupational Committee"
+ JAP_Occupational_Committee_desc:0 "The British Forces in Japan Occupational Committee, or more commonly referred to as the “Occupational Committee”, decides much of Japan’s politics. Formed shortly after the Anglo-Japanese war, its goal was to ensure the subordination of the Japanese government and to ensure the safety of its treaty ports. However, as time went on, it evolved into more or less a lobbying group which the Diet and Emperor had to respect, lest they face further punishment.\n\nOfficially only sending delegates to the government, maintaining the stipulations of the Hiroshima Treaty, and protecting the British East Asia Company's interests, in reality, they bribe officials in exchange for legal protections and manipulate elections in order to avoid a renegotiation of the Hiroshima Treaty.\n\nHowever, with a growing commitment to normalizing Anglo-Japanese relations bilaterally, the BFJOC is in jeopardy, leaving many in Japan wondering what they might do in order to maintain their stature."
+
+ JAP_Anti_English_Sentiment:0 "Anti-English Sentiment"
+ JAP_Anti_English_Sentiment_desc:0 ""The Englishman continues to pillage our nation and deflate our wages! He must be expelled!"" -a longshoremen's strike leader in Nagasaki\n\nWhile not an uncommon sentiment, recently, hatred for the British has been so strong in Japan that riots frequently break out amongst nationalist circles and strikes calling for an end to collaboration with the hegemon. On the contrary, many intellectuals and politicians find cooperation the best route, much to the dismay of some citizens."
+
+ JAP_Britain_Of_The_East:0 "Britain Of The East"
+ JAP_Britain_Of_The_East_desc:0 "Japan stands as one of the most advanced nations on Earth, and especially as an Asian nation. Readily adopting the British form of governance and embracing modernization, the restored Empire is poised to be an important player in global politics. Building up industry, establishing and cultivating a large merchant-marine fleet, and striving for constitutionalism, Japan clearly shines in an otherwise dim setting.\n\nIt should be noted that the Japanese are also quite aware of what its equivalence to Britain means: an island nation with naval aspirations and the ability to grow its power. With recent military reforms and drives for further industrialization, Japan very much so has the potential to wrest itself free of foreign domination."
+
+ ### Focus Trees ###
+ JAP_showa_10:0 "Shōwa 10"
+ JAP_showa_10_desc:0 ""
+ 
+ JAP_consult_the_privy_council:0 "Consult the Privy Council"
+ JAP_consult_the_privy_council_desc:0 ""
+ 
+ JAP_convene_the_diet:0 "Convene the Diet"
+ JAP_convene_the_diet_desc:0 ""
+ 
+ JAP_establishing_a_budget:0 "Establishing a Budget"
+ JAP_establishing_a_budget_desc:0 ""
+ 
+ JAP_fund_domestic_militarization:0 "Fund Domestic Militarization"
+ JAP_fund_domestic_militarization_desc:0 ""
+ 
+ JAP_consecrate_a_modern_ijn:0 "Consecrate a Modern IJN"
+ JAP_consecrate_a_modern_ijn_desc:0 ""
+ 
+ JAP_darthmouth_fleet_in_being_doctrine:0 "Darthmouth Fleet-in-Being Doctrine"
+ JAP_darthmouth_fleet_in_being_doctrine_desc:0 ""
+ 
+ JAP_etajima_power_projection_doctrine:0 "Etajima Power Projection Doctrine"
+ JAP_etajima_power_projection_doctrine_desc:0 ""
+ 
+ JAP_hire_british_advisors:0 "Hire British Advisors"
+ JAP_hire_british_advisors_desc:0 ""
+ 
+ JAP_seek_investors_for_drydocks:0 "Seek Investors for Drydocks"
+ JAP_seek_investors_for_drydocks_desc:0 ""
+ 
+ JAP_purchase_destroyers:0 "Purchase Destroyers"
+ JAP_purchase_destroyers_desc:0 ""
+ 
+ JAP_purchase_cruisers:0 "Purchase Cruisers"
+ JAP_purchase_cruisers_desc:0 ""
+ 
+ JAP_purchase_submarines:0 "Purchase Submarines"
+ JAP_purchase_submarines_desc:0 ""
+ 
+ JAP_begin_plan_1943:0 "Begin Plan 1943"
+ JAP_begin_plan_1943_desc:0 ""
+ 
+ JAP_allocate_additional_naval_funds:0 "Allocate Additional Naval Funds"
+ JAP_allocate_additional_naval_funds_desc:0 ""
+ 
+ JAP_private_industry_development:0 "Private Industry Development"
+ JAP_private_industry_development_desc:0 ""
+ 
+ JAP_niigata_joint_naval_exercises:0 "Niigata Joint Naval Exercises"
+ JAP_niigata_joint_naval_exercises_desc:0 ""
+ 
+ JAP_coordinated_warplanning_initiatives:0 "Coordinated War Planning Initiatives"
+ JAP_coordinated_warplanning_initiatives_desc:0 ""
+ 
+ JAP_invite_korean_naval_staff:0 "Invite Korean Naval Staff"
+ JAP_invite_korean_naval_staff_desc:0 ""
+ 
+ JAP_the_tokyo_naval_conference:0 "The Tokyo Naval Conference"
+ JAP_the_tokyo_naval_conference_desc:0 ""
+ 
+ JAP_proceed_with_modernization_efforts:0 "Proceed with Modernization Efforts"
+ JAP_proceed_with_modernization_efforts_desc:0 ""
+ 
+ JAP_homegrown_naval_staff:0 "Homegrown Naval Staff"
+ JAP_homegrown_naval_staff_desc:0 ""
+ 
+ JAP_tetsutaros_proven_worth:0 "Tetsutaro's Proven Worth"
+ JAP_tetsutaros_proven_worth_desc:0 ""
+ 
+ JAP_more_powerful_engines:0 "More Powerful Engines"
+ JAP_more_powerful_engines_desc:0 ""
+ 
+ JAP_to_power_the_guns:0 "To Power the Guns"
+ JAP_to_power_the_guns_desc:0 ""
+ 
+ JAP_thicken_armor_belts:0 "Thicken Armor Belts"
+ JAP_thicken_armor_belts_desc:0 ""
+ 
+ JAP_battleship_supremacy:0 "Battleship Supremacy"
+ JAP_battleship_supremacy_desc:0 ""
+ 
+ JAP_intensify_seaplane_testing:0 "Intensify Seaplane Testing"
+ JAP_intensify_seaplane_testing_desc:0 ""
+ 
+ JAP_invest_in_screens:0 "Invest in Screens"
+ JAP_invest_in_screens_desc:0 ""
+ 
+ JAP_upgrade_submarines:0 "Upgrade Submarines"
+ JAP_upgrade_submarines_desc:0 ""
+ 
+ JAP_the_yamato_project:0 "The Yamato Project"
+ JAP_the_yamato_project_desc:0 ""
+ 
+ JAP_south_honshu_drydocks:0 "South Honshu Drydocks"
+ JAP_south_honshu_drydocks_desc:0 ""
+ 
+ JAP_new_port_facilities:0 "New Port Facilities"
+ JAP_new_port_facilities_desc:0 ""
+ 
+ JAP_renovate_pre_existing_facilities:0 "Renovate Pre-Existing Facilities"
+ JAP_renovate_pre_existing_facilities_desc:0 ""
+ 
+ JAP_naval_recruitment_drive:0 "Naval Recruitment Drive"
+ JAP_naval_recruitment_drive_desc:0 ""
+ 
+ JAP_japanese_teachers_for_the_japanese_navy:0 "Japanese Teachers for the Japanese Navy"
+ JAP_japanese_teachers_for_the_japanese_navy_desc:0 ""
+ 
+ JAP_abandon_kantai_kessen:0 "Abandon Kantai Kessen"
+ JAP_abandon_kantai_kessen_desc:0 ""
+ 
+ JAP_convert_surface_ships_to_carriers:0 "Convert Surface Ships to Carriers"
+ JAP_convert_surface_ships_to_carriers_desc:0 ""
+ 
+ JAP_monoplane_carrier_aircraft:0 "Monoplane Carrier Aircraft"
+ JAP_monoplane_carrier_aircraft_desc:0 ""
+ 
+ JAP_increase_flight_deck_capacity:0 "Increase Flight Deck Capacity"
+ JAP_increase_flight_deck_capacity_desc:0 ""
+ 
+ JAP_invest_in_new_designs:0 "Invest in New Designs"
+ JAP_invest_in_new_designs_desc:0 ""
+ 
+ JAP_land_based_torpedo_bombers:0 "Land Based Torpedo Bombers"
+ JAP_land_based_torpedo_bombers_desc:0 ""
+ 
+ JAP_investigate_oxygen_fueled_torpedos:0 "Investigate Oxygen Fueled Torpedoes"
+ JAP_investigate_oxygen_fueled_torpedos_desc:0 ""
+ 
+ JAP_train_officers_in_carrier_tactics:0 "Train Officers in Carrier Tactics"
+ JAP_train_officers_in_carrier_tactics_desc:0 ""
+ 
+ JAP_fighter_torpedo_bomb_doctrine:0 "Fighter Torpedo Bomb Doctrine"
+ JAP_fighter_torpedo_bomb_doctrine_desc:0 ""
+ 
+ JAP_6_carriers_in_6_years:0 "6 Carriers in 6 Years"
+ JAP_6_carriers_in_6_years_desc:0 ""
+ 
+ JAP_build_up_the_ija:0 "Build Up the IJA"
+ JAP_build_up_the_ija_desc:0 ""
+ 
+ JAP_imperial_infrastructure_initiative:0 "Imperial Infrastructure Initiative"
+ JAP_imperial_infrastructure_initiative_desc:0 ""

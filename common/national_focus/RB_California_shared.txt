@@ -1,0 +1,89 @@
+shared_focus = {
+	id = CAL_Start_Strikes
+	icon = GFX_The_Spokane_Strikes_of_1935
+	cost = 5
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CAL_Start_Strikes"
+		country_event = {
+			id = cal.1
+			hours = 1
+	}
+}
+}
+
+shared_focus = {
+	id = CAL_Start_Negotiate
+	icon = GFX_The_Negotiation_Table
+	cost = 5
+	x = 8
+	y = 1
+	prerequisite = {
+		focus = CAL_Start_Strikes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CAL_Start_Negotiate"
+		country_event = {
+			id = cal.2
+			hours = 1
+	}
+}
+}
+
+shared_focus = {
+	id = CAL_Start_Fair_Wage
+	icon = GFX_Fair_Wages
+	cost = 5
+	x = 7
+	y = 2
+	prerequisite = {
+		focus = CAL_Start_Negotiate
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CAL_Start_Fair_Wage"
+		country_event = {
+			id = cal.3
+			hours = 1
+	}
+}
+}
+
+shared_focus = {
+	id = CAL_Start_Fair_Hours
+	icon = GFX_Fair_Hours
+	cost = 5
+	x = 9
+	y = 2
+	prerequisite = {
+		focus = CAL_Start_Negotiate
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CAL_Start_Fair_Hours"
+		country_event = {
+			id = cal.4
+			hours = 1
+	}
+}
+}
+
+shared_focus = {
+	id = CAL_Start_Complete
+	icon = GFX_A_Better_Tommorow
+	cost = 5
+	x = 8
+	y = 3
+	prerequisite = {
+		focus = CAL_Start_Fair_Wage
+	}
+	prerequisite = {
+		focus = CAL_Start_Fair_Hours
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CAL_Start_Complete"
+		country_event = {
+			id = cal.5
+			hours = 1
+	}
+}
+}

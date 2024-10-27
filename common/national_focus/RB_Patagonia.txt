@@ -1,0 +1,13 @@
+focus_tree = {
+    id = PAT_Starting_Tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PAT
+        }
+    }
+    default = no
+    shared_focus = PAT_on_the_rocky_frontier
+    continuous_focus_position = { x = 50 y = 2000}
+}

@@ -1,0 +1,46 @@
+ideas = {
+	country = {
+		DUC_4Duchies_4Economies = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DUC_4Duchies_4Economies"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				political_power_factor = -0.20
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		DUC_Savoia_Scare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DUC_Savoia_Scare"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {				
+			}
+			targeted_modifier = {
+				tag = PIE
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.15
+			}
+		}
+		
+		DUC_Silent_War = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DUC_Silent_War"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				
+			}
+		}
+	}
+}	

@@ -1,0 +1,119 @@
+﻿BRG_artesian_infantry = {
+	name = "Division d'Infanterie Artesienne"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Division d'Infanterie"
+}
+
+BRG_picard_infantry = {
+	name = "Division d'Infanterie Picarde"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Division d'Infanterie"
+}
+
+BRG_champagne_infantry = {
+	name = "Division d'Infanterie de Champagne"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Division d'Infanterie"
+}
+
+BRG_burgundian_infantry = {
+	name = "Division d'Infanterie Bourguignonne"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Division d'Infanterie"
+}
+
+BRG_lorrains_infantry = {
+	name = "Division d'Infanterie de Lorrains"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Division d'Infanterie"
+}
+
+BRG_alsatian_infantry = {
+	name = "Elsaessische Infanteriedivision"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Infanteriedivision"
+}
+
+BRG_rhenish_infantry = {
+	name = "Rheinische Infanteriedivision"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Infanteriedivision"
+}
+
+BRG_luxembourger_infantry = {
+	name = "Leetzebuerger Infanteriedivisioun"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Infanteriedivisioun"
+}
+
+BRG_walloon_infantry = {
+	name = "Division d'Infanterie Wallonne"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Division d'Infanterie"
+}
+
+BRG_flemish_infantry = {
+	name = "Vlaamse Infanteriedivisie"
+
+	for_countries = { BRG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Infanteriedivisie"
+}

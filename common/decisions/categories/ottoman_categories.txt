@@ -1,0 +1,10 @@
+################
+##### TUR ######
+################
+
+TUR_young_turk_revolution = {
+	picture = GFX_TUR_decision_YTR
+	allowed = {
+		tag = TUR
+	}
+}

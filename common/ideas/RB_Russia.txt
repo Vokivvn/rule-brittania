@@ -1,0 +1,150 @@
+ideas = {
+	country = {
+		RUS_Defeated_Nation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Defeated_Nation"}
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = RUS_Defeated_Nation
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -1
+				political_power_gain = -0.3
+			}
+		}
+		RUS_European_Backwater = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_European_Backwater"}
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = RUS_European_Backwater
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}
+		RUS_Republican_Agitation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Republican_Agitation"}
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = RUS_Republican_Agitation
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.25
+				industrial_capacity_factory = -0.1
+			}
+		}
+		RUS_Rukonomika = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Rukonomika"}
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = RUS_Rukonomika
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+			}
+		}
+		RUS_Five_Military_Modernisations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Five_Military_Modernisations"}
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = RUS_Five_Military_Modernisations
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		RUS_Chernosotentsi = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_Chernosotentsi"}
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = RUS_Chernosotensi
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				political_power_gain = 0.15
+			}
+		}
+		RUS_idea_smoke_them_out = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_idea_smoke_them_out"}
+			
+			allowed = {
+				always = no
+			}
+			
+			#picture = 
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = BLR
+				attack_bonus_against = 0.1
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+	}
+}

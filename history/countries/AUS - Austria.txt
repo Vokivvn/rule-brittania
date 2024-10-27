@@ -1,0 +1,359 @@
+﻿capital = 4
+
+add_ideas = {
+	AUS_Anglo_Austrian_Alliance
+	AUS_Old_Man_Of_Europe
+	AUS_Ethnic_Tensions
+	AUS_Western_Industry
+}
+oob = "HAB_1936"
+WAL = { load_focus_tree = austria }
+
+complete_national_focus = AUS_old_man_of_europe
+complete_national_focus = AUS_our_german_brethren
+complete_national_focus = AUS_our_italian_relatives
+
+set_research_slots = 3
+set_convoys = 300
+set_stability = 0.5
+set_war_support = 0.5
+
+#if = {
+#	limit = {
+#		has_dlc = "Man the Guns"
+#	}
+#	load_oob = "RB_AUS_1936_naval_mtg"
+#	else = {
+#		load_oob = "RB_AUS_1936_naval_legacy"
+#	}
+#}
+
+set_politics = {
+	ruling_party = administrationism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+add_opinion_modifier = { modifier = generic_historical_ties target = ENG }
+ENG = { add_opinion_modifier = { modifier = generic_historical_ties target = AUS } }
+
+add_opinion_modifier = { modifier = generic_historical_ties target = BAV }
+BAV = { add_opinion_modifier = { modifier = generic_historical_ties target = AUS } }
+
+add_opinion_modifier = { modifier = generic_historical_ties target = ALB }
+ALB = { add_opinion_modifier = { modifier = generic_historical_ties target = AUS } }
+
+set_popularities = {
+    cromwellianism = 1
+    marxism = 2
+    liberalism = 7
+    republicanism = 12
+    parliamentarianism = 25
+    administrationism = 30
+    absolutism = 9
+    despotism = 11
+    nationalism = 3
+}
+
+set_cosmetic_tag = AUS_ENG
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "László Markos"
+		GFX = GFX_portrait_dusko_popov
+		traits = { operative_escape_artist }
+		bypass_recruitment = yes
+		available_to_spy_master = yes
+		nationalities = { AUS HUN }
+	}
+
+	create_operative_leader = {
+		name = "Alexander Hausler"
+		GFX = GFX_portrait_juan_pujol
+		traits = { }
+		bypass_recruitment = yes
+		available_to_spy_master = yes
+		nationalities = { AUS ENG }
+	}
+
+	create_operative_leader = {
+		name = "Hermann Erben"
+		GFX = GFX_portrait_nikolaus_ritter
+		traits = { }
+		bypass_recruitment = yes
+		available_to_spy_master = yes
+		nationalities = { AUS }
+	}
+	create_operative_leader = {
+		name = "Heinz Schwarzenberg"
+		GFX = GFX_portrait_eleysa_bazna
+		traits = {  }
+		bypass_recruitment = yes
+		available_to_spy_master = yes
+		nationalities = { AUS CZE SIL}
+	}
+	create_operative_leader = {
+		name = "Franz Hochberger"
+		GFX = GFX_portrait_otto_skorenzy
+		traits = {  }
+		bypass_recruitment = yes
+		available_to_spy_master = yes
+		nationalities = { AUS }
+	}
+}
+AUS = {
+	create_faction = "Habsburg Possessions"
+	add_to_faction = HUN
+	add_to_faction = CZE
+	add_to_faction = MMV
+	add_to_faction = SER
+	add_to_faction = BOS
+	add_to_faction = SIL
+	add_to_faction = TUS
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = MMV
+		autonomous_state = autonomy_RB_crown_land
+	}
+	set_autonomy = {
+		target = SIL
+		autonomous_state = autonomy_RB_crown_land
+	}
+	set_autonomy = {
+		target = HUN
+		autonomous_state = autonomy_RB_crown_land
+	}
+	set_autonomy = {
+		target = CZE
+		autonomous_state = autonomy_RB_crown_land
+	}
+	set_autonomy = {
+		target = BOS
+		autonomous_state = autonomy_RB_crown_land
+	}
+	set_autonomy = {
+		target = SER
+		autonomous_state = autonomy_RB_military_frontier
+	}
+	else = {
+		puppet = MMV
+		puppet = SIL
+		puppet = CZE
+		puppet = BOS
+		puppet = HUN
+		puppet = SER
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Seyss-Inquart"
+	#desc =
+	picture = "Portrait_AUS_Arthur_Seyss_Inquart.dds"
+	expire = "1979.1.1"
+	ideology = nationalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf VI"
+	desc = Austria_Rudolf_VI
+	picture = "Portrait_AUS_Rudolf_VI.dds"
+	expire = "1999.12.12"
+	ideology = paternal_autocracy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf VI"
+	desc = Austria_Rudolf_VI
+	picture = "Portrait_AUS_Rudolf_VI.dds"
+	expire = "1999.12.12"
+	ideology = absolute_monarchy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf VI"
+	desc = Austria_Rudolf_VI
+	picture = "Portrait_AUS_Rudolf_VI.dds"
+	expire = "1999.12.12"
+	ideology = constitutional_monarchy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf VI"
+	desc = Austria_Rudolf_VI
+	picture = "Portrait_AUS_Rudolf_VI.dds"
+	expire = "1999.12.12"
+	ideology = parliamentary_monarchy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf VI"
+	desc = Austria_Rudolf_VI
+	picture = "Portrait_AUS_Rudolf_VI.dds"
+	expire = "1999.12.12"
+	ideology = social_liberalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf VI"
+	desc = Austria_Rudolf_VI
+	picture = "Portrait_AUS_Rudolf_VI.dds"
+	expire = "1999.12.12"
+	ideology = progressivism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Karl Renner"
+	desc = Austria_Karl_Renner
+	picture = "Portrait_AUS_Karl_Renner.dds"
+	expire = "1999.12.12"
+	ideology = marxism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Franz Koritschoner"
+	desc = Austria_Karl_Renner
+	picture = "Portrait_AUS_Karl_Renner.dds"
+	expire = "1999.12.12"
+	ideology = cromwellianism_subtype
+	traits = {
+	}
+}
+create_field_marshal = {
+	name = "Johann Friedländer"
+	picture = ""
+	traits = { old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Alfred Jansa"
+	picture = ""
+	traits = { defensive_doctrine trait_cautious career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Karl von Kirchbach auf Lauterbach"
+	picture = ""
+	traits = { inflexible_strategist old_guard }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Joseph August von Österreich"
+	picture = ""
+	traits = { politically_connected old_guard }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Eduard Konrad Fürst von Schönburg-Hartenstein"
+	picture = ""
+	traits = { inflexible_strategist old_guard infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Joseph Ferdinand von Österreich-Toskana"
+	picture = ""
+	traits = { old_guard }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Stephan Freiherr Sarkotić von Lovćen"
+	picture = ""
+	traits = { old_guard }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+ ##Country Names##
+ TMS_despotism:0 "Turkmenistan"
+ TMS_despotism_DEF:0 "The Turkmenistan"
+ TMS_despotism_ADJ:0 "Turkic"
+
+ ##Party Names##
+ TMS_despotism_party:0 "Turk Party"
+ TMS_despotism_party_long:0 "Turk Party"

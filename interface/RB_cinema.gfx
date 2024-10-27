@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_cinema"
+		texturefile = "gfx/super_events/cinema.dds"
+	}
+   spriteType = {
+		name = "GFX_kuzmich"
+		texturefile = "gfx/super_events/kuzmich.dds"
+	}
+	FrameAnimatedSpriteType = { 
+		name = "GFX_amrevlight"
+		texturefile = "gfx/super_events/realtimessuka.dds"
+	  	noOfFrames = 39.5
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = { 
+		name = "GFX_georgeisgone"
+		texturefile = "gfx/super_events/george_v_death.dds"
+		noOfFrames = 49
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	FrameAnimatedSpriteType = { 
+		name = "GFX_Cinema_MexicanCivilWar"
+		texturefile = "gfx/super_events/Cinema_MexicanCivilWar.dds"
+	  	noOfFrames = 61
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+}

@@ -1,0 +1,40 @@
+state={
+	id=794
+	name="STATE_794"
+	history={
+		owner = FLO
+		add_core_of = FLO
+		victory_points = {
+			4464 5
+		}
+		victory_points = {
+			7480 15
+		}
+		victory_points = {
+			10352 10
+		}
+		victory_points = {
+			10380 5
+		}
+		buildings = {
+			infrastructure = 4
+			10352 = {
+				naval_base = 1
+			}
+			4464 = {
+				naval_base = 4
+			}
+			7480 = {
+				naval_base = 3
+            
+			}
+
+		}
+	}
+	provinces={
+		1453 4464 7480 7524 7668 10352 10380 10520 
+	}
+	manpower=362151 #107284 for parts part of OTL florida
+	state_category=town
+	buildings_max_level_factor=1.000
+}

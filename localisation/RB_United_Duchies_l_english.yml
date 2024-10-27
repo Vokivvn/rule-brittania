@@ -1,0 +1,56 @@
+﻿l_english:
+ ##Leader Descs##
+
+ ##Country Names##
+ DUC_cromwellianism:0 "United Duchies"
+ DUC_cromwellianism_DEF:0 "The United Duchies"
+ DUC_marxism:0 "United Duchies"
+ DUC_marxism_DEF:0 "The United Duchies"
+ DUC_liberalism:0 "United Duchies"
+ DUC_liberalism_DEF:0 "The United Duchies"
+ DUC_republicanism:0 "United Duchies"
+ DUC_republicanism_DEF:0 "The United Duchies"
+ DUC_parliamentarianism:0 "United Duchies"
+ DUC_parliamentarianism_DEF:0 "The United Duchies"
+ DUC_administrationism:0 "United Duchies"
+ DUC_administrationism_DEF:0 "The United Duchies"
+ DUC_absolutism:0 "United Duchies"
+ DUC_absolutism_DEF:0 "The United Duchies"
+ DUC_despotism:0 "United Duchies"
+ DUC_despotism_DEF:0 "The United Duchies"
+ DUC_nationalism:0 "United Duchies"
+ DUC_nationalism_DEF:0 "The United Duchies"
+ DUC_cromwellianism_ADJ:0 "North Italian"
+ DUC_marxism_ADJ:0 "North Italian"
+ DUC_liberalism_ADJ:0 "North Italian"
+ DUC_republicanism_ADJ:0 "North Italian"
+ DUC_parliamentarianism_ADJ:0 "North Italian"
+ DUC_administrationism_ADJ:0 "North Italian"
+ DUC_despotism_ADJ:0 "North Italian"
+ DUC_nationalism_ADJ:0 "North Italian"
+
+ ##Party Names##
+ DUC_administrationism_party:0 "Corte Parmense"
+ DUC_administrationism_party_long:0 "Corte Parmense"
+ DUC_absolutism_party:0 "PGh"
+ DUC_absolutism_party_long:0 "Parte Ghibellina"
+ DUC_despotism_party:0 "PGf"
+ DUC_despotism_party_long:0 "Parte Guelfa"
+
+ ##Cosemtic Tags##
+
+
+ ##Tooltips##
+
+
+ ##Ideas##
+ DUC_4Duchies_4Economies:0 "Four Duchies, Four Economies"
+ DUC_Savoia_Scare:0 "Savoia Scare"
+ DUC_Silent_War:0 "The Silent War"
+
+ ##Events##
+
+
+ ##Focuses##
+
+ #Starting Tree#

@@ -1,0 +1,88 @@
+focus_tree = {
+	id = COU_starting
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COU
+		}
+	}
+	default = no
+	shared_focus = COU_modernise_militia
+	shared_focus = COU_economic_reconstruction
+	shared_focus = COU_beyond_cropdusters
+	shared_focus = COU_expand_coastguard
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = COU_death_of_wilhelm
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COU
+		}
+	}
+	default = no
+	shared_focus = COU_modernise_militia
+	shared_focus = COU_economic_reconstruction
+	shared_focus = COU_beyond_cropdusters
+	shared_focus = COU_expand_coastguard
+	shared_focus = COU_wilhelm_dead
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = COU_the_birons_are_back
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COU
+		}
+	}
+	default = no
+	shared_focus = COU_modernise_militia
+	shared_focus = COU_economic_reconstruction
+	shared_focus = COU_beyond_cropdusters
+	shared_focus = COU_expand_coastguard
+	shared_focus = COU_birons_back
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = COU_wittelsbach_in_business
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COU
+		}
+	}
+	default = no
+	shared_focus = COU_modernise_militia
+	shared_focus = COU_economic_reconstruction
+	shared_focus = COU_beyond_cropdusters
+	shared_focus = COU_expand_coastguard
+	shared_focus = COU_albert_ascends
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = COU_galland_destroys_minorities
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COU
+		}
+	}
+	default = no
+	shared_focus = COU_modernise_militia
+	shared_focus = COU_economic_reconstruction
+	shared_focus = COU_beyond_cropdusters
+	shared_focus = COU_expand_coastguard
+	shared_focus = COU_gallands_coup
+	continuous_focus_position = { x = 50 y = 2000 }
+}

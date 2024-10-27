@@ -1,0 +1,90 @@
+ideas = {
+	country = {
+		SHW_ohio_mississippi_confluence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHW_ohio_mississippi_confluence"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWN_Tiny_Population
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SHW_rising_radicalism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHW_rising_radicalism"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = eagle_britain_fire
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				marxism_drift = 0.01
+				cromwellianism_drift = 0.01
+				nationalism_drift = 0.01
+				political_power_gain = -0.25
+			}
+		}
+		SHW_rising_radicalism_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHW_rising_radicalism_2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = eagle_britain_fire
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				marxism_drift = 0.02
+				cromwellianism_drift = 0.02
+				nationalism_drift = 0.02
+				political_power_gain = -0.5
+			}
+		}
+		SHW_deskahehs_takeover = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SHW_deskahehs_takeover"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWN_Tiny_Population
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				marxism_drift = 0.03
+				cromwellianism_drift = 0.03
+				nationalism_drift = 0.03
+				political_power_gain = 0.5
+			}
+		}
+	}
+}

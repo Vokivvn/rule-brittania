@@ -1,0 +1,743 @@
+#######################
+## Death of George V ##
+#######################
+
+shared_focus = {
+	id = ENG_The_Ruler_Of_Everything
+	icon = GFX_ENG_George_V_Death
+	cost = 5.00
+	bypass = {
+		always = yes
+	}
+	x = 8
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_The_Ruler_Of_Everything"
+		custom_effect_tooltip = ENG_The_Ruler_Of_Everything_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_Prepare_The_Successor
+	icon = GFX_ENG_Edward_VIII
+	cost = 2.00
+	prerequisite = {
+		focus = ENG_The_Ruler_Of_Everything
+	}
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Prepare_The_Successor"
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = ENG_Commemorate_The_Late_King
+	icon = GFX_ENG_focus_Conmemorate_the_late_king
+	cost = 2.00
+	prerequisite = {
+		focus = ENG_The_Ruler_Of_Everything
+	}
+	x = 8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Commemorate_The_Late_King"
+		country_event = {
+			id = england.3
+			days = 1
+		}
+		country_event = {
+			id = england.8
+			days = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_Begin_The_Mourning_Period
+	icon = GFX_ENG_focus_A_period_of_mourning
+	cost = 2.00
+	prerequisite = {
+		focus = ENG_The_Ruler_Of_Everything
+	}
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_Begin_The_Mourning_Period"
+		custom_effect_tooltip = ENG_Begin_The_Mourning_Period_tt
+		hidden_effect = {
+			country_event = {
+				id = england.4
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_The_Coronation
+	icon = GFX_ENG_focus_the_coronation
+	cost = 1.00
+	prerequisite = {
+		focus = ENG_Prepare_The_Successor
+	}
+	prerequisite = {
+		focus = ENG_Commemorate_The_Late_King
+	}
+	prerequisite = {
+		focus = ENG_Begin_The_Mourning_Period
+	}
+	x = 8
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_The_Coronation"
+		create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_VIII_DESC"
+			picture = "Portrait_ENG_King_Edward_VIII.dds"
+			expire = "1999.12.12"
+			ideology = absolutism_subtype
+			traits = {
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = england.5
+			}
+		}
+	}
+}
+
+########################################################
+## Assassination of Edward VIII and Succession Crisis ##
+########################################################
+
+shared_focus = {
+	id = ENG_The_Regicide_Of_A_Millenium
+	icon = GFX_ENG_Edward_VIII
+	cost = 5.00
+
+	x = 8
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_The_Regicide_Of_A_Millenium"
+	}
+}
+
+shared_focus = {
+	id = ENG_call_on_the_yards_finest
+	icon = GFX_ENG_focus_call_on_the_yards_finest
+	cost = 1.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 8
+	y = 1
+
+	prerequisite = { focus = ENG_The_Regicide_Of_A_Millenium }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_call_on_the_yards_finest"
+		country_event = { id = eng_inv.5 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = ENG_the_succession_crisis
+	icon = GFX_ENG_A_Succession_Crisis
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 8
+	y = 2
+
+	prerequisite = { focus = ENG_call_on_the_yards_finest }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_the_succession_crisis"
+		add_political_power = -50
+		custom_effect_tooltip = ENG_SC_tt
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			set_variable = { var = eng_av_power value = 5 }
+			set_variable = { var = eng_mary_power value = 2 }
+			set_variable = { var = eng_george_power value = 4 }
+		}
+
+		else_if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			set_variable = { var = eng_henry_power value = 5 }
+			set_variable = { var = eng_nicky_power value = 3 }
+			set_variable = { var = eng_duarte_power value = 1 }
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_the_resignation_of_douglas_hogg
+	icon = GFX_ENG_focus_the_resignation_of_douglas_hogg
+	cost = 2.00
+	ai_will_do = {
+		factor = 4
+	}
+
+	x = 8
+	y = 3
+
+	prerequisite = { focus = ENG_the_succession_crisis }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_the_resignation_of_douglas_hogg"
+		country_event = { id = england.41 hours = 1 }
+	}
+}
+
+shared_focus = {
+	id = ENG_a_shot_of_reform
+	icon = GFX_liberalism_focus
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 7
+	y = 4
+
+	prerequisite = { focus = ENG_the_resignation_of_douglas_hogg }
+	mutually_exclusive = { focus = ENG_the_tried_and_tested }
+
+	available = { has_country_flag = ENG_PM_John_Simon_flag }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_a_shot_of_reform"
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_recommend_the_able_minded
+	icon = GFX_focus_generic_support_the_left_right
+	cost = 5.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 7
+	y = 5
+
+	prerequisite = { focus = ENG_a_shot_of_reform }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_recommend_the_able_minded"
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_mary_power value = 1 }
+			add_to_variable = { var = eng_george_power value = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_henry_power value = 1 }
+		}
+		custom_effect_tooltip = ENG_reformers_influence_up
+	}
+}
+
+shared_focus = {
+	id = ENG_the_tried_and_tested
+	icon = GFX_conservatism_focus
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 9
+	y = 4
+
+	prerequisite = { focus = ENG_the_resignation_of_douglas_hogg }
+	mutually_exclusive = { focus = ENG_a_shot_of_reform }
+
+	available = { has_country_flag = ENG_PM_James_Gascoyne_Cecil_flag }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_the_tried_and_tested"
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_endorse_the_strong
+	icon = GFX_goal_demand_sudetenland
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 9
+	y = 5
+
+	prerequisite = { focus = ENG_the_tried_and_tested }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_endorse_the_strong"
+		if = {
+			limit = {
+				has_country_flag = ENG_AV_discredited
+			}
+			add_to_variable = { var = eng_nicky_power value = 1 }
+			add_to_variable = { var = eng_duarte_power value = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_henry_discredited
+			}
+			add_to_variable = { var = eng_av_power value = 1 }
+		}
+		custom_effect_tooltip = ENG_hardliners_influence_up
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_duke_of_glouchester
+	icon = GFX_ENG_Henry_IX
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 6
+	y = 3
+
+	prerequisite = { focus = ENG_the_succession_crisis }
+
+	bypass = { has_country_flag = ENG_henry_discredited }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_duke_of_glouchester"
+		country_event = {
+			id = england.29
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_obvious_choice
+	icon = GFX_BRG_Support_British_Companies
+	cost = 2.00
+	ai_will_do = {
+		factor = 3
+	}
+
+	x = 5
+	y = 4
+
+	available = { 
+		NOT = { 
+			has_country_flag = ENG_henry_discredited 
+		}
+		has_completed_focus = ENG_the_resignation_of_douglas_hogg
+	}
+
+	prerequisite = { focus = ENG_sc_the_duke_of_glouchester }
+	mutually_exclusive = { focus = ENG_sc_the_reformist_vacuum }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_obvious_choice"
+		country_event = {
+			id = england.36
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_support_from_the_royal_family
+	icon = GFX_generic_monarchist_constitution
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 5
+	y = 5
+
+	prerequisite = { focus = ENG_sc_the_obvious_choice }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_support_from_the_royal_family"
+		country_event = {
+			id = england.39
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_britains_second_favorite_son
+	icon = GFX_British_Soldiers
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 5
+	y = 6
+
+	prerequisite = { focus = ENG_sc_support_from_the_royal_family }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_britains_second_favorite_son"
+		country_event = {
+			id = england.25
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_reformist_vacuum
+	icon = GFX_ENG_focus_reformist_vacuum
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 3
+	y = 4
+
+	available = { 
+		has_country_flag = ENG_henry_discredited 
+		has_completed_focus = ENG_the_resignation_of_douglas_hogg
+	}
+
+	prerequisite = { focus = ENG_sc_the_duke_of_glouchester }
+	mutually_exclusive = { focus = ENG_sc_the_obvious_choice }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_reformist_vacuum"
+		country_event = {
+			id = england.35
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_duke_of_kent
+	icon = GFX_ENG_George_VI
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 3
+	y = 5
+
+	prerequisite = { focus = ENG_sc_the_reformist_vacuum }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_duke_of_kent"
+		country_event = {
+			id = england.30
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_sincerity_and_smiles
+	icon = GFX_goal_collaborate_local_elites
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 3
+	y = 6
+
+	prerequisite = { focus = ENG_sc_the_duke_of_kent }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_sincerity_and_smiles"
+		country_event = {
+			id = england.24
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_countess_of_harewood
+	icon = GFX_ENG_Queen_Mary
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 1
+	y = 5
+
+	prerequisite = { focus = ENG_sc_the_reformist_vacuum }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_countess_of_harewood"
+		country_event = {
+			id = england.31
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_a_reformer_in_name_only
+	icon = GFX_generic_elections_rigged
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 1
+	y = 6
+
+	prerequisite = { focus = ENG_sc_the_countess_of_harewood }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_a_reformer_in_name_only"
+		country_event = {
+			id = england.23
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_prince_of_india
+	icon = GFX_ENG_Albert_Victor
+	cost = 2.00
+	ai_will_do = {
+		factor = 3
+	}
+
+	x = 10
+	y = 3
+
+	prerequisite = { focus = ENG_the_succession_crisis }
+
+	bypass = { has_country_flag = ENG_AV_discredited }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_prince_of_india"
+		country_event = {
+			id = england.32
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_a_long_time_coming
+	icon = GFX_Focus_Clock
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 11
+	y = 4
+
+	available = {
+		NOT = { has_country_flag = ENG_AV_discredited }
+		has_completed_focus = ENG_the_resignation_of_douglas_hogg
+		}
+
+	prerequisite = { focus = ENG_sc_the_prince_of_india }
+	mutually_exclusive = { focus = ENG_sc_the_conservative_vacuum }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_a_long_time_coming"
+		country_event = {
+			id = england.37
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_support_from_the_colonies
+	icon = GFX_Generic_Colonial_Army
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 11
+	y = 5
+
+	prerequisite = { focus = ENG_sc_a_long_time_coming }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_support_from_the_colonies"
+		country_event = {
+			id = england.40
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_britains_most_loyal_defender
+	icon = GFX_Generic_Rule_Britannia
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 11
+	y = 6
+
+	prerequisite = { focus = ENG_sc_support_from_the_colonies }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_britains_most_loyal_defender"
+		country_event = {
+			id = england.26
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_conservative_vacuum
+	icon = GFX_ENG_focus_conservative_vacuum
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 13
+	y = 4
+
+	available = {
+		has_country_flag = ENG_AV_discredited 
+		has_completed_focus = ENG_the_resignation_of_douglas_hogg
+	}
+
+	prerequisite = { focus = ENG_sc_the_prince_of_india }
+	mutually_exclusive = { focus = ENG_sc_a_long_time_coming }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_conservative_vacuum"
+		country_event = {
+			id = england.38
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_grand_duke_of_oldenburg
+	icon = GFX_ENG_Nikolaus
+	cost = 2.00
+	ai_will_do = {
+		factor = 2
+	}
+
+	x = 13
+	y = 5
+
+	prerequisite = { focus = ENG_sc_the_conservative_vacuum }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_grand_duke_of_oldenburg"
+		country_event = {
+			id = england.33
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_posture_and_pomp
+	icon = GFX_focus_ger_return_of_the_kaiser
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 13
+	y = 6
+
+	prerequisite = { focus = ENG_sc_the_grand_duke_of_oldenburg }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_posture_and_pomp"
+		country_event = {
+			id = england.27
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_the_duke_of_braganza
+	icon = GFX_ENG_Duarte_Nuno
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 15
+	y = 5
+
+	prerequisite = { focus = ENG_sc_the_conservative_vacuum }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_the_duke_of_braganza"
+		country_event = {
+			id = england.34
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_sc_an_utterly_bizarre_charade
+	icon = GFX_ENG_focus_a_truly_bizarre_charade
+	cost = 2.00
+	ai_will_do = {
+		factor = 1
+	}
+	
+	x = 15
+	y = 6
+
+	prerequisite = { focus = ENG_sc_the_duke_of_braganza }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_sc_an_utterly_bizarre_charade"
+		country_event = {
+			id = england.28
+			hours = 6
+		}
+	}
+}

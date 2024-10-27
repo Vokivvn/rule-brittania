@@ -1,0 +1,81 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+
+SSD_Program = {
+	icon = "GFX_SSD_The_Program"
+	industrial_capacity_factory = SSD_invest
+	consumer_goods_factor = SSD_cons_goods
+	political_power_factor = SSD_pp_factor
+	research_speed_factor = SSD_speed_factor
+	stability_factor = SSD_stability 
+	army_org_factor = SSD_org
+	land_reinforce_rate = SSD_reinforce
+	army_defence_factor = SSD_army_defence_factor
+	MONTHLY_POPULATION = SSD_MONTHLY_POPULATION
+	production_speed_buildings_factor = SSD_production_speed_buildings_factor
+	industry_free_repair_factor = SSD_industry_free_repair_factor
+	local_resources_factor = SSD_local_resources_factor
+	weekly_manpower = SSD_weekly_manpower
+	local_resources_factor = SSD_var_resource_gain
+	production_factory_max_efficiency_factor = SSD_var_prod_eff_cap
+	conscription_factor = SSD_conscription_factor
+	send_volunteer_size = SSD_send_volunteer_size 
+	send_volunteer_divisions_required = SSD_send_volunteer_divisions_required
+	send_volunteers_tension = SSD_send_volunteers_tension
+	drift_defence_factor = SSD_drift_defence_factor
+	foreign_subversive_activites = SSD_foreign_subversive_activites 
+	army_core_defence_factor = SSD_army_core_defence_factor
+}
+
+RLC_Iron_Flag = {
+	icon = "GFX_RLC_Iron_Flag"
+	conscription = RLC_cons
+	industrial_capacity_factory = RLC_invest
+	consumer_goods_factor = RLC_cons_goods
+	political_power_factor = RLC_pp_factor
+	research_speed_factor = RLC_speed_factor
+	stability_factor = RLC_stability 
+	army_org_factor = RLC_org
+	land_reinforce_rate = RLC_reinforce
+	army_defence_factor = RLC_army_defence_factor
+	MONTHLY_POPULATION = RLC_MONTHLY_POPULATION
+	production_speed_buildings_factor = RLC_production_speed_buildings_factor
+	industry_free_repair_factor = RLC_industry_free_repair_factor
+	local_resources_factor = RLC_local_resources_factor
+	weekly_manpower = RLC_weekly_manpower
+	local_resources_factor = RLC_var_resource_gain
+	production_factory_max_efficiency_factor = RLC_var_prod_eff_cap
+	conscription_factor = RLC_conscription_factor
+	send_volunteer_size = RLC_send_volunteer_size 
+	send_volunteer_divisions_required = RLC_send_volunteer_divisions_required
+	send_volunteers_tension = RLC_send_volunteers_tension
+	drift_defence_factor = RLC_drift_defence_factor
+	foreign_subversive_activites = RLC_foreign_subversive_activites 
+	army_core_defence_factor = RLC_army_core_defence_factor
+	army_core_attack_factor = RLC_army_core_attack_factor
+	army_speed_factor = RLC_army_speed_factor
+}

@@ -1,0 +1,628 @@
+ideas = {
+	country = {
+		eng_irish_unrest = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_irish_unrest"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Irish_Unrest
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.10
+			}
+		}
+
+		eng_second_anglo_mexican_war = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_second_anglo_mexican_war"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.10
+			}
+		}
+
+		eng_britannia_rules_the_waves = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_britannia_rules_the_waves"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Rule_Britannia
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.30
+			}
+		}
+
+		eng_sidelined_parliament = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_sidelined_parliament"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Sidelined_Parliament
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				absolutism_drift = 0.001
+				political_power_gain = -0.50
+			}
+		}
+
+		eng_king_george_v = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_king_george_v"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_george_icon
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				political_power_gain = 0.15
+			}
+		}
+
+		eng_great_profits = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_great_profits"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = DEN_growing_economy_ip
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		eng_limited_concessions_to_trade_unions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_limited_concessions_to_trade_unions"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = limited_concessions_to_the_trade_unions
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				line_change_production_efficiency_factor = 0.2
+			}
+		}
+
+		eng_protect_consumers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_protect_consumers"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = protect_civillian_industry_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		eng_increase_individual_political_power = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_increase_individual_political_power"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+
+		eng_increased_nhs_funding = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_increased_nhs_funding"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = increased_nhs_funding_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		eng_found_social_organisations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_found_social_organisations"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.002
+			}
+		}
+		eng_ensure_equal_opportunity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_ensure_equal_opportunity"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		eng_allow_catholics_in_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_allow_catholics_in_government"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = catholics_in_the_government
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				republicanism_drift = 0.01
+			}
+		}
+
+		eng_bridge_the_gap = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_bridge_the_gap"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		eng_expand_unemployment_insurance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_expand_unemployment_insurance"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		eng_soup_kitchens = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_soup_kitchens"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 50
+			}
+		}
+		eng_homeless_shelters = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_homeless_shelters"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		eng_expanded_special_forces = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_expanded_special_forces"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = expanded_special_forces_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				special_forces_cap = 0.2
+			}
+		}
+		eng_increased_recruitment_efforts = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_increased_recruitment_efforts"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = increase_recruitment_efforts_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		eng_new_pilots = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_new_pilots"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = new_pilots_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_air = 0.05
+			}
+		}
+		eng_recognise_exceptional_pilots = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_recognise_exceptional_pilots"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = recognising_exceptional_pilots_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+			}
+		}
+		eng_protect_our_skies = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_protect_our_skies"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = protecting_our_skies_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_anti_air_building_factor = 0.3
+			}
+		}
+		eng_constructing_coastal_forts = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_constructing_coastal_forts"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.5
+			}
+		}
+		eng_building_ships_faster = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_building_ships_faster"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = naval_effort_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+		eng_building_up_civilian_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_building_up_civilian_industry"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = TUR_British_Industry
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		eng_maximise_production = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_maximise_production"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_start_efficiency_factor = 0.10
+			}
+		}
+		eng_expand_infrastructure = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_expand_infrastructure"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		eng_increase_fuel_reserves = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_increase_fuel_reserves"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_fuel_silo_factor = 0.05
+			}
+		}
+		eng_constructing_forts = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_constructing_forts"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = constructing_new_forts_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.3
+			}
+		}
+		eng_synthetic_oil = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_synthetic_oil"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = synthetic_oil_effort_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.3
+			}
+		}
+		eng_building_up_military_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_building_up_military_industry"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ENG_Anglo_Mexican_War
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		eng_reform_construction_methods = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea eng_reform_construction_methods"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = reform_contruction_methods_ENG
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}

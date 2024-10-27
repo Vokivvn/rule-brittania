@@ -1,0 +1,16 @@
+state={
+	id=990
+	name="STATE_990"
+	provinces={
+		10642 12627 12684 
+	}
+	history = {
+		owner = MEX
+		add_core_of = MEX
+
+		set_demilitarized_zone = yes
+	}
+	manpower=48053
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

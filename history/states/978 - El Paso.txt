@@ -1,0 +1,25 @@
+state={
+	id=978
+	name="STATE_978"
+	resources={
+		aluminium=10.000
+	}
+
+	history={
+		owner = MEX
+
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = MEX
+		add_core_of = TEX
+		victory_points ={
+			10740 10
+		}
+	}
+	provinces={
+		1954 5038 10740 10894
+	}
+	manpower=60357
+	state_category=rural
+}

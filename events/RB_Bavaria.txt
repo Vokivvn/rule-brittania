@@ -1,0 +1,448 @@
+﻿add_namespace = BAV
+
+#Anglo-German Economic Initiative Conference
+
+add_namespace = enggereco
+
+country_event = { #send out the invitations
+	id = enggereco.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco.1"}
+	title = enggereco.1.t
+	desc = enggereco.1.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = enggereco.1.a
+		country_event = {
+			id = enggereco.2
+			days = 3
+		}
+		BRN = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+		HSM = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+		BAD = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+		WUR = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+		MUN = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+		THR = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+		HAN = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+		SIL = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+		ENG = {
+			country_event = {
+				id = enggereco.2
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = { #conference begins in Brunswick
+	id = enggereco.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco.2"}
+	title = enggereco.2.t
+	desc = enggereco.2.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = enggereco.2.a
+		country_event = {
+			id = enggereco.3
+			days = 1
+		}
+	}
+}
+
+country_event = { #british guest speaks
+	id = enggereco.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco.3"}
+	title = enggereco.3.t
+	desc = enggereco.3.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = enggereco.3.a
+		country_event = {
+			id = enggereco.4
+			days = 1
+		}
+	}
+}
+
+country_event = { #duke of brunswick delivers a speech
+	id = enggereco.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco.4"}
+	title = enggereco.4.t
+	desc = enggereco.4.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = enggereco.4.a
+		country_event = {
+			id = enggereco.5
+			days = 1
+		}
+		hidden_effect = {
+			set_variable = {
+				var = AGEI_vote_prussia
+				value = 0
+			}
+			set_variable = {
+				var = AGEI_vote_burgundy
+				value = 0
+			}
+			set_variable = {
+				var = AGEI_vote_customs
+				value = 0
+			}
+			set_variable = {
+				var = AGEI_vote_investment
+				value = 0
+			}
+			set_variable = {
+				var = AGEI_vote_mark
+				value = 0
+			}
+		}
+	}
+}
+
+## THE AGEI HAS 11 TOTAL VOTES: 2 FROM BRITAIN AND 1 FOR EACH GERMAN STATE IN IT
+
+country_event = { #first matter-invite prussia into the AGEI
+	id = enggereco.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco.5"}
+	title = enggereco.5.t
+	desc = enggereco.5.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = { #yes
+		name = enggereco.5.a
+		country_event = {
+			id = enggereco.6
+			days = 3
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = ENG
+				}
+				add_to_variable = {
+					var = AGEI_vote_prussia
+					value = 2
+				}
+			}
+			else = {
+			add_to_variable = {
+				var = AGEI_vote_prussia
+				value = 1
+			}
+		}
+		}
+	}
+
+	option = { #no
+		name = enggereco.5.b
+		country_event = {
+			id = enggereco.6
+			days = 3
+		}
+	}
+}
+
+country_event = { #invite burgundy into the AGEI
+	id = enggereco.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco.6"}
+	title = enggereco.6.t
+	desc = enggereco.6.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = { #yes
+		name = enggereco.6.a
+		country_event = {
+			id = enggereco.7
+			days = 3
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = ENG
+				}
+				add_to_variable = {
+					var = AGEI_vote_burgundy
+					value = 2
+				}
+			}
+			add_to_variable = {
+				var = AGEI_vote_burgundy
+				value = 1
+			}
+		}
+	}
+	
+	option = { #no
+		name = enggereco.6.b
+		country_event = {
+			id = enggereco.7
+			days = 3
+		}
+	}
+}
+
+country_event = { #get rid of customs checks
+	id = enggereco.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco.7"}
+	title = enggereco.7.t
+	desc = enggereco.7.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = { #yes
+		name = enggereco.7.a
+		country_event = {
+			id = enggereco.8
+			days = 3
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = ENG
+				}
+				add_to_variable = {
+					var = AGEI_vote_customs
+					value = 2
+				}
+			}
+			add_to_variable = {
+				var = AGEI_vote_customs
+				value = 1
+			}
+		}
+	}
+
+	option = { #no
+		name = enggereco.7.b
+		country_event = {
+			id = enggereco.8
+			days = 3
+		}
+	}
+}
+
+country_event = { #bavarian investment plan
+	id = enggereco.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco."}
+	title = enggereco.8.t
+	desc = enggereco.8.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = { #yes
+		name = enggereco.8.a
+		country_event = {
+			id = enggereco.9
+			days = 3
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = ENG
+				}
+				add_to_variable = {
+					var = AGEI_vote_investment
+					value = 2
+				}
+			}
+			add_to_variable = {
+				var = AGEI_vote_investment
+				value = 1
+			}
+		}
+	}
+
+	option = { #no
+		name = enggereco.8.b
+		country_event = {
+			id = enggereco.9
+			days = 3
+		}
+	}
+}
+
+country_event = { #peg the mark to the pound - most likely first event after the recession
+	id = enggereco.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco.9"}
+	title = enggereco.9.t
+	desc = enggereco.9.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = { #yes
+		name = enggereco.9.a
+		country_event = {
+			id = enggereco.10
+			days = 2
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = ENG
+				}
+				add_to_variable = {
+					var = AGEI_vote_mark
+					value = 2
+				}
+			}
+			add_to_variable = {
+				var = AGEI_vote_mark
+				value = 1
+			}
+		}
+	}
+
+	option = { #no
+		name = enggereco.9.b
+		country_event = {
+			id = enggereco.10
+			days = 2
+		}
+	}
+}
+
+country_event = { #british delegate gives a statement-econ, unity etc
+	id = enggereco.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco."}
+	title = enggereco.10.t
+	desc = enggereco.10.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = enggereco.10.a
+		country_event = {
+			id = enggereco.11
+			days = 1
+		}
+	}
+}
+
+country_event = { #conference concludes
+	id = enggereco.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event enggereco."}
+	title = enggereco.11.t
+	desc = enggereco.11.desc
+	#picture = 
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = enggereco.11.a
+		hidden_effect = {
+			country_event = {
+				id = THR_collapse.1
+				days = 150
+			}
+		}
+	}
+}
+
+#country_event = { #KILL ALL SINOS
+#	id = BAV.1
+#	title = BAV.1.t
+#	desc = BAV.1.desc
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = BAV.1.a
+#
+#		607 = {
+#			add_province_modifier = {
+#				static_modifiers = { flooded }
+#				province = {
+#					id = 7656
+#					id = 4066
+#					id = 10098
+#					id = 7085
+#					id = 9995
+#				}
+#			}
+#			damage_building = {
+#				type = infrastructure
+#				damage = 3
+#			}
+#			damage_building = {
+#				type = industrial_complex
+#				damage = 1.5
+#			}
+#			damage_building = {
+#				type = arms_factory
+#				damage = 1.5
+#			}
+#		}
+#	}
+#}

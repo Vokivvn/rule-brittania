@@ -1,0 +1,262 @@
+﻿l_english:
+ ##Country Names##
+ SER_cromwellianism:0 "Serbia"
+ SER_cromwellianism_DEF:0 "The Serbia"
+ SER_marxism:0 "Serbia"
+ SER_marxism_DEF:0 "The Serbia"
+ SER_liberalism:0 "Serbia"
+ SER_liberalism_DEF:0 "The Serbia"
+ SER_republicanism:0 "Serbia"
+ SER_republicanism_DEF:0 "The Serbia"
+ SER_parliamentarianism:0 "Kingdom of Serbia"
+ SER_parliamentarianism_DEF:0 "The Serbian Kingdom"
+ SER_administrationism:0 "Kingdom of Serbia"
+ SER_administrationism_DEF:0 "The Serbian Kingdom"
+ SER_absolutism:0 "Kingdom of Serbia"
+ SER_absolutism_DEF:0 "The Serbian Kingdom"
+ SER_despotism:0 "Serbian Military Government"
+ SER_despotism_DEF:0 "The Serbian Military Government"
+ SER_nationalism:0 "Serbia"
+ SER_nationalism_DEF:0 "The Serbia"
+ SER_cromwellianism_ADJ:0 "Serbian"
+ SER_marxism_ADJ:0 "Serbian"
+ SER_liberalism_ADJ:0 "Serbian"
+ SER_republicanism_ADJ:0 "Serbian"
+ SER_parliamentarianism_ADJ:0 "Serbian"
+ SER_administrationism_ADJ:0 "Serbian"
+ SER_despotism_ADJ:0 "Serbian"
+ SER_nationalism_ADJ:0 "Serbian"
+ 
+
+ ##Yugoslavia##
+ YUG_parliamentarianism:0 "Yugoslavia"
+ YUG_parliamentarianism_ADJ:0 "Yugoslavian"
+ YUG_parliamentarianism_DEF:0 "The Yugoslavia"
+ YUG_administrationism:0 "Yugoslavia"
+ YUG_administrationism_ADJ:0 "Yugoslavian"
+ YUG_administrationism_DEF:0 "The Yugoslavia"
+ YUG_absolutism:0 "Yugoslavia"
+ YUG_absolutism_ADJ:0 "Yugoslavian"
+ YUG_absolutism_DEF:0 "The Yugoslavia"
+
+ ##Greater Serbia##
+
+ SERGREAT_nationalism:0 "Greater Serbia"
+ SERGREAT_nationalism_ADJ:0 "Serbian"
+ SERGERAT_nationalism_DEF:0 "The Greater Serbia"
+
+ #Ideas
+ SER_Serbian_Rebels:0 "Serbian Rebels"
+ SER_Serbian_Rebels_desc:0 "Ever since Serbia was first occupied, the local military government has had nothing less than disloyalty and treason from a vast majority of the population. Due to the prevalence of Serbian freedom fighters in most population groups, the recruitment of new administration has been very difficult. This has led to the government occasionally entering a state of paralysis as any new officials either need to be very carefully vetted or from abroad.\n\nCompounding the problem is the capability of insurgents to infiltrate nearly every aspect of society in some way or another, forcing the administration into situations where retribution and retaliation are often inaccurate and misplaced. This leads to more hard feelings and only throws more fuel to the insurgent fire.\n\nIf something isn't done about these so-called 'freedom fighters', their threat will only grow exponentially until there's nothing left that can be done. But, how do you predict and counter an enemy that can strike from anywhere, at any time?"
+ SER_Incapable_Command:0 "Incapable Command"
+ SER_Incapable_Command_desc:0 "When General Johann first marched into Serbia and planted the Austrian flag in the center of Belgrade, he was considered by many - and especially within his forces - to be at the prime of his aptitude, and a truly inspiring commander to which any man could follow.\n\nAs the years carried on, and time worked her magic, they worked it solely to harm the General. At seventy-four years old, Johann is… a pitiful shell of his old (but slightly less so) self. As old age slowly rots away the bright spark that flared from the General's eyes his aptitude rots away with it. While initially he had much control over the functions of the military government, power has been delegated to his lower-in-command, mostly consisting of British "advisors" and bought-off bureaucrats. When you first look at it this isn't much of an issue, but these lower men lack the virtue of Johann. Rather, they care more about their own wealth and power, and have been more focused on stuffing their pockets than properly quelling resistance."
+ SER_Harsh_Treatment:0 "Harsh Treatment"
+ SER_Harsh_Treatment_desc:0 "As control increasingly slips to the British advisors below Johann, the government has increasingly drifted to using their strategies for suppressing rebellious activity. These strategies consist of draconian punishments for even the most meagre offenses, harsh conditions for offenders, and making sure to make all this as public as possible. The intent is to create a pervasive atmosphere of fear, to make rebellion as unappealing as possible. Ultimately the goal is to lower the workload to such a point that not even the soldiers will have to bother too often, and the focus can be shifted to 'producing' wealth as opposed to more dirtying preoccupations such as judgement and vigilance.\n\nMuch like anyone could expect, none of this is working. The enforced public gatherings for punishments have been prime ground for the spreading of plans, and the extended nature of these humiliations only amplify this potential. They do not make people scared, it only makes them angry. No man enjoys seeing it inflicted upon their fellow countrymen, and as the days continue on the draconian punishments become more commonplace, and an attitude of 'freedom or death' has proven very popular. After all, is it not better to die free than live treated like animals?"
+
+ #Events
+ srbija.1.t:0 "State of Serbia"
+ srbija.1.desc:0 "For years now, the Serbian people have been stuck under the Austrian boot, but they are still not deterred, despite the constant defeat of their rebellions. They seem to refuse to accept their annexation into the Austrian Empire, requiring a constant military garrison to control and keep the Serbians in check.\n\nHowever for the past few years, the leadership of the garrison has been waning, Johann becoming too old to properly instruct and control his generals, too incapable to rule properly, and the Serbians have ramped up their attempts at rebellion, even managing to kill an Austrian general, who had to be replaced with a loyal Serbian, due to a lack of any promising Austrian officers willing to come down to troubled Serbia.\n\nThe generals are worried about a potential complete revolt across Serbia, which has been advocated for by all the Serbian rebellious fronts, from the Nationalists to the Marxists."
+ srbija.1.a:0 "Hopefully we can quell this mess."
+
+ srbija.2.t:0 "Threat Assessment"
+ srbija.2.desc:0 "Our administrative capacity is currently being tied up in finding out the groups responsible for the riots, but our army - weak as it is - has only been sitting around in Belgrade, wasting time and precious resources that could be used elsewhere. British advisors have convinced Johann that the army must be deployed to Niš immediately, before, God willing, anything terrible happens."
+ srbija.2.a:0 "Why did it take this long?! Deploy the garrison!"
+
+ srbija.4.t:0 "Tensions Loosened"
+ srbija.4.desc:0 "The streets of Belgrade are quiet and sullen, with Austrian flags hoisted around almost every street corner, signifying that their sovereignty had, for a while now, been lost to the sands of time. Though the people of Serbia have a fighting spirit that can never truly be contained, a time has come where there is no longer an Austrian car bombed every morning, or an Austrian official dragged and beaten to death in the trees. Whatever resistance groups rally a banner of freedom against the government now sit in the shadows, mulling over plans and ill-afforded opportunities.\nEven with the display of brutality shown in Niš, an awkward peace stands, with civilians actively avoiding the presence of Austrian soldiers, avoiding eye contact and pep-talk wherever they can. The fear of extreme reprisal if another show of resistance appears has made it so that, even if plagued with doubt, unhappiness and general melancholy, life will go on in the city of Niš.\nAnd as for the rest of Serbia, lightly populated as it is, there continues to be bands of bandits, so called ‘freedom fighters’, still working in the countryside and villages. Yet their spirit has been temporarily broken. The question, then, is will it truly remain broken, or will the people of Serbia fight again in the future?"
+ srbija.4.a:0 "So long as the wheel remains unturned, we will live on."
+
+ srbija.5.t:0 "Situation Report: The Economy"
+ srbija.5.desc:0 "We are not in a good position. Though there is mild potential in minerals - namely the copper mine in Bor and the steel in Morava, our rural economy consists mainly of food exports to Austria, with limited exports to Britain. We have multiple opportunities to industrialize, but they are limited in scope, with our largest option being to expand the food industry, as well as capitalize on the most obvious mineral deposits available in the nation."
+ srbija.5.a:0 "With the help of Austria, we should be fine."
+
+ srbija.6.t:0 "Tensions Loosened"
+ srbija.6.desc:0 "The streets of Belgrade are quiet and sullen, with Austrian flags hoisted around almost every street corner, signifying that their sovereignty had, for a while now, been lost to the sands of time. Though the people of Serbia have a fighting spirit that can never truly be contained, a time has come where there is no longer an Austrian car bombed every morning, or an Austrian official dragged and beaten to death in the trees. Whatever resistance groups rally a banner of freedom against the government now sit in the shadows, mulling over plans and ill-afforded opportunities.\nEven with the display of brutality shown in Niš, an awkward peace stands, with civilians actively avoiding the presence of Austrian soldiers, avoiding eye contact and pep-talk wherever they can. The fear of extreme reprisal if another show of resistance appears has made it so that, even if plagued with doubt, unhappiness and general melancholy, life will go on in the city of Niš.\nAnd as for the rest of Serbia, lightly populated as it is, there continues to be bands of bandits, so called ‘freedom fighters’, still working in the countryside and villages. Yet their spirit has been temporarily broken. The question, then, is will it truly remain broken, or will the people of Serbia fight again in the future?"
+ srbija.6.a:0 "So long as the wheel remains unturned; we will live on."
+
+ srbija.7.t:0 "Situation Report: The Military"
+ srbija.7.desc:0 "It starts at the top.\nJohann Ulrich von Salis-Seewis is a bleeding, old, senile idiot, and everyone knows it. As a result of Austrian culture and a system of employment that relies more on how long your noble title is rather than your accomplishments, he enjoys his position as the head of the military and state by doing nothing productive and effectively delegating all roles to his subordinates, regardless of if they are loyal or not. The Military Governor gives unreasonable, outrageous, and sometimes borderline incoherent orders that are only rarely ever carried out, and even if they are, only to the lightest degree possible to avoid any cruel and unusual punishment that he may give out.\nWhat has arisen from this can be effectively described as “fear and loathing in Belgrade”, where military officers of all ranks brew disputes, old and new, every single day, forming camps of thought that serve to blame each other, rather than themselves or the Governor. Paradoxically, the majority of High Command is terrified of losing their positions, and by extension their honor, but do little to uphold their duties, instead running around like headless chickens."
+ srbija.7.a:0 "In a moment of clarity, Johann calls a meeting."
+
+ srbija.77.t:0 "The Gang Gets Their Comeuppance"
+ srbija.77.desc:0 "Despair was the aura present in the ramshackle capitol building of Belgrade where practically all of High Command gathered to meet with their superior, the Military Governor of Serbia, Johann Ulrich von Salis-Seewis. In equal parts seething fury and unfocused confusion, a palpable sense of dread was felt in practically every officer present. They could understand, clear as day, what the Governor wanted out of them, even if he had to occasionally readjust the slurring of his words."
+ srbija.77.a:0 "I want you to get the hell out! You’re all FIRED!"
+
+ srbija.8.t:0 "Brotherly Hiring"
+ srbija.8.desc:0 "Nikola Pavlić was nervous. Fidgeting, even, as he waited for his employer to arrive. Was he really going to work for the Švaba? He had long since graduated from the academy, versed in traditional army structure akin to what it was like during the Great War. If he put his skills to the test, then he would at least try to make it so that he could prevent further blood from being spilled. Serbian blood. He hadn’t a care for what the Austrian would do or feel, so long as they wouldn’t sack him.\nWhen he met a familiar face - it was Draža Mihailović! - he smiled, and the old man smiled back as well. Nikola’s nerves relaxed almost immediately. With the Governorate pursuing a path of collaboration, it was obvious that he would be interviewed by a fellow Serb! And so they began discussing, with Mihailović making fast friends with the young-blooded military man who hadn’t yet truly experienced what it was like to command. It was obvious from the get-go that Pavlić would be hired, considering that the recent High Command was in drastically short supply, so the interview was more of a formality than anything.\nUpon conducting the final part of their talk, Draža patted Nikola on the back and gave him some short pointers on what he should expect to come in the near future. With all said and done, the now-officer exited the building with his spirits lifted just a little bit higher."
+ srbija.8.a:0 "Respect your fellow man, and he will do the same for you."
+ 
+ srbija.9.t:0 "The Old Go, the Young Arrive"
+ srbija.9.desc:0 "Tobias Wolf found himself dressed in full military uniform, awaiting an interview with a representative from the Serbian Military Government. He had found the prospect of entering a foreign land to show the might of Austria and its Kaiser enticing, but the letter he received seemed oddly warming, as if he had already been invited, accepted and welcomed into visiting Belgrade to receive his first assignment. Stepping into the brightly-lit and well-maintained room, he made eye contact with a middle-aged man wearing a suit and tie, affixing a pair of reading glasses while looking over a piece of paper.\nIt had gone smoothly enough, with Tobias being commended for his performance at the academy, showing rigorous discipline in his training regimen, and commanding a powerful voice that he had full capability of using. The initially enticing idea of working in the cities of Serbia, however, had slowly phased itself out while the man in front of him talked about its conditions. It sounded like a mess over there - did he really want to commit himself to such a risky business? Under a Governor who barely knew what he was doing? After the previous High Command had been fired en masse, as if facing a firing squad?\nThen the interviewer put a hand under the table to reach for something, and before the young cadet could ask what in God’s name he was doing, he saw a brown bag being placed on the table, and a distinct noise of coins shaking inside.\n“This report also states that your Opa and Oma are pensioners, and that they both suffice off of a weak income,” the man with the glasses said, a smile ever-present as he pushed the bag of coins forward. “If you agree to join us, we can resolve this issue of yours.”\nIt didn’t take long for Tobias Wolf to make his decision."
+ srbija.9.a:0 "Another one joins the fray."
+
+ srbija.10.t:0 "Sunrise over Serbia"
+ srbija.10.desc:0 "if ur reading this, u r a cheeter :)"
+ srbija.10.a:0 "haha smileyface"
+
+ srbija.11.t:0 "A Spark is Lit, a Fuse is Blown"
+ srbija.11.desc:0 "The economic crisis has turned Serbia upside down. Johann does not know what to do, and neither does the High Command. Austrian funding has ceased almost entirely, and trade to Serbia’s neighbouring countries, as meager as it was, has fizzled out completely, leaving the country stranded. With another crisis looming almost immediately after dealing with Niš, the army has found itself paralyzed… except for one man.\n\nDraža Mihailović is a vulture and a serpent. While Johann sees him as a key figure in maintaining stability within the Governorate, everyone else sees him as a potentially dangerous figure. And not for no reason. On a dusk-filled morning, gunfire was heard across the major cities of Serbia, mostly concentrated in the capital. Explosions rocked the houses of officials while shell casings littered the streets, emptied out into popular gatherings of Austrians as well as government buildings. The capitol building itself - the mark of Austrian’s iron fist, went up in flames, with little in the way of people making it out of the building alive. Spearheaded by Draža, a sudden paramilitary has sprung up around the country, catching the disoriented and demoralized garrisons by surprise.\n\nWith almost fanatical morale and immediate support from the local populace, bolstered by the immense hatred of the Austrian menace, militias planted in the cities and reinforcements coming from the countryside poured in and practically dismantled whatever remnants of a government struggled to fight. Practically hours afterwards the battle for Serbia was over, and in the blood-covered streets of Belgrade, a new nation was proclaimed."
+ srbija.11.a:0 "Živela Srbija!"
+
+ srbija_draza.1.t:0 "Avenge Niš!"
+ srbija_draza.1.desc:0 ""
+ srbija_draza.1.a:0 "Show them what we are made of!"
+
+ srbija_draza.2.t:0 "Hoist the Tricolour!"
+ srbija_draza.2.desc:0 ""
+ srbija_draza.2.a:0 "We are free!"
+
+ srbija_draza.3.t:0 "Sudden Inspiration"
+ srbija_draza.3.desc:0 ""
+ srbija_draza.3.a:0 "This will surely allow us to strengthen our internal resolve."
+
+
+ #Leaders
+ POLITICS_JOHANN_ULRICH_DESC:0 "Born in Croatia, Johann is an Austrian military officer from the prestigious 'von Salis-Seewis' family, of which originated in Switzerland.\n\nJohann was the third child of his family, and was made a half-orphan at just the age of ten when his father died in 1873. He personally assisted his mother with the education of his younger brothers, and later graduated from the Benedictine monastery of Kremsmünster, and then proceeded to enter a military career, as per family tradition. He graduated directly from Vienna and oversaw the annexation of Serbia into the Austrian Empire, later being put in charge of the military garrison due to his skills at suppressing the Balkan forces.\n\nHis rule has been relatively stable until some years ago, able to put down any attempts at Serbian rebellion, but in recent years, his age has begun to affect his mental cognition, and his ability to lead has waned, to the disdain of his generals. The Serbian rebellions grow more frequent and more dangerous, and Johann is in no state to fight back, instead opting entirely to rely on his generals through delegated tasks, from mis-read maps and mis-heard reports. Could Johann's newfound incompetence decide the fate of Serbia..?"
+ POLITICS_DRAZA_MIHAILOVIC_DESC:0 "Draža Mihailović, born Dragoljub Mihailović, was the 'loyal' Serbian general employed by Johann Ulrich in his attempts to solve the Serbian problem. To Johann, Draža was fiercely loyal to the Austrian state, saying such things like 'Serbia will be stronger under the guidance of the Austrian emperor.', but of course, that was not truly who Draža was. In reality, Draža Mihailović is completely loyal to Serbia, and is in fact, the very leader of the Nationalistic Serbian movement itself.\n\nHe was born in the town of Ivanjica, and had himself educated in the ways of the armed forces, due to being inspired by his military uncles. He had been exceptionally good in the Serbian Military Academy, ranking 6th place consistently. However, he was never able to graduate, due to the Austrian invasion, but this provided him an opportunity.\n\nAs Draža was not part of the Serbian army, he had not been able to fight against the Austrians, and thus he was able to pass as a loyal figure to Johann Ulrich, and managed to convince Johann that he should be part of the military garrison. He used his position to place and arm patriotic Nationalist Serbs in strategic positions around Serbia, knowing exactly when would be the greatest time to attack. He was able to decide when and where each riot and rebellion should take place, distracting and thinning out the Austrian ranks, and now, after all his efforts, he has come to free Serbia from the vice-like grip of imperialism, and perhaps go even further beyond."
+ POLITICS_ALEXANDER_II_DESC:0 "Alexander, despite being the king of Serbia, was actually born in Montenegro, not Serbia, to the surprise of some. His father, Peter II, had reigned as the previous king of Serbia, before being shot and killed in the Battle of Loznica against the Austrians, and Alexander vowed to avenge his death, whereas his mother died when Alexander was merely two years old, due to complications in giving birth to his brother, Andrija, who had also then died just twenty-three days later. Alexander was a very quiet child, and rarely showed emotion, thought of as far too analytical and much more serious than a child should be, although he never let rumours get to him.\n\nNow the rightful king of the Serbs, Alexander II is a popular figure amongst the people, having constantly been advocating for Serbs to fight against the Austrian invaders and free Serbia, after having seen the death of his father at Austrian hands. Perhaps it is by luck that Alexander was spared the bullet, as a full execution of the royal family may’ve sparked further outrage amongst the Serbs and become a situation the army was not prepared to handle, but regardless, he has returned by popular demand to lead the Serbian people into the next era of their freedom from oppressors and imperialists.\n\nHowever, he is not here to merely defend Serbian freedoms, no no. He intends to accomplish the final goals of the Serbian nobility, and free the western Balkans completely and finally, and form the Kingdom of Serbs, Croats and Slovenes, and unite the three for once and for all! It is his God given right as the king, after all, and Serbia will follow him every step of the way."
+ POLITICS_MOSA_PIJADE_DESC:0 "Born to a family of sephardic jews in Belgrade, Comrade Pijade is one of the vanguards of Marxism in the region, having first become known with his translation of Das Kapital to Serbo-Croatian. His thought and teachings added up to and set the standard of not only Serbian Marxism, but of all the Western Balkans. Comrade Pijade is seen as the “Uncle Janko” of Marxists all around the Yugoslavian region.\n\nWith the freeing of Serbia from Austrian Imperialism, Comrade Pijade has seen the opportunity for him and the Serbian proletariat. Taking over with a storm of united workers behind him, he took over the government he rightfully should've had with the election, and now that Marxism has an established foothold in the Western Balkans, Comrade Pijade sees it’s not only his duty but also his responsibility to liberate the rest of the region from Capitalist oppression. To his south, west and east, Marxists and Socialists look up to our comrade for the red dawn, and he will not stop, will not fold, will not rest until it has come!"
+
+ #Parties
+ SER_cromwellianism_party:0 "SRPS - K"
+ SER_cromwellianism_party_long:0 "Socijalistička Radnička Partija Srbije - Kromvelisti"
+ SER_marxism_party:0 "SRPS - M"
+ SER_marxism_party_long:0 "Socijalistička Radnička Partija Srbije - Marksisti"
+ SER_liberalism_party:0 "SSDP"
+ SER_liberalism_party_long:0 "Srpska Socijaldemokratska Partija"
+ SER_republicanism_party:0 "DS"
+ SER_republicanism_party_long:0 "Demokratska Stranka"
+ SER_parliamentarianism_party:0 "SNS"
+ SER_parliamentarianism_party_long:0 "Srpska Napredna Stranka"
+ SER_administrationism_party:0 "NRS"
+ SER_administrationism_party_long:0 "Narodna Radikalna Stranka"
+ SER_absolutism_party:0 "SNS"
+ SER_absolutism_party_long:0 "Srpska Narodna Stranka"
+ SER_despotism_party:0 "Austrian Occupation Government"
+ SER_nationalism_party:0 "SNP"
+ SER_nationalism_party_long:0 "Srpski Narodni Pokret"
+
+ #Foci
+
+ ##STARTING SIEGE TREE##
+ SER_assess_the_threat:0 "Assess Our Situation"
+ SER_assess_the_threat_desc:0 "There is an emergency that must be dealt with immediately. Niš is under fire - from who? We cannot say. It is an issue which will require detailed yet swift examination. We will interrogate suspected leaders and track down the largest nuisances in hopes that we can quell the fires of Niš before they engulf the city… and our nation."
+
+ SER_city_under_siege:0 "City Under Siege"
+ SER_city_under_siege_desc:0 "We are managing to avert a disaster, so far. The presence of armed soldiers, loyal not to the Serbs, but to the government, has calmed down the worst. Rioting, looting and harassment against local police and military units continues, but it is a far cry from the lawless banditry that infested Niš just days before."
+
+ SER_intimidate_locals:0 "Intimidate the Locals"
+ SER_intimidate_locals_desc:0 "The deployed military forces have been ordered to crack down on the city, bringing in martial law, a mandatory curfew, and at-will raids. The local populace may not be happy with it, but they must learn that they cannot simply lash out like wild animals."
+
+ SER_execute_captures:0 "Execute Captures"
+ SER_execute_captures_desc:0 "A controversial, but ultimately necessary decision has been made. We have finally tracked down a number of important figures that have been orchestrating these riots, and executions will be promptly held for them in King Milan’s Square via firing squad."
+
+ SER_display_authority:0 "Display Authority"
+ SER_display_authority_desc:0 "This is Austrian territory - not Serbian! If they cannot understand this, then we will make it so, by forcibly tearing down the flags and the symbols of the Serbian people, and flying them with the colors of the Habsburgs."
+
+ SER_why_dont_they_care:0 "Why Don’t They Care?"
+ SER_why_dont_they_care_desc:0 "A conquered people must know their place. That is why we have found ourselves supremely puzzled when the rioters, in a blatant disrespect of authority, cut down our own flags and hoisted their tricolour! Our army has been nervous as of recent, and if we don’t do something soon, chaos may flare up again."
+
+ SER_the_brits_will_solve_this:0 "The Brits Will Solve This"
+ SER_the_brits_will_solve_this_desc:0 "The Empire is the master of the world. As much as we may not want to admit it, their experience at subjugating lesser nations has propelled them into the world’s greatest. The question stands, then, how do we invite their help without humiliating ourselves in the process?"
+
+ SER_siege_complete:0 "Siege Complete"
+ SER_siege_complete_desc:0 "Thank God and Kaiser - the city of Niš has now fallen quiet during daytime and night time. The curfews have been loosened, but an aura of fear looms over the Serbs. After an excruciating period of uncertainty, we have spirited away the fires of rebellion. Perhaps we could learn a thing or two from the Anglo?" 
+
+ ##Pre-Coup Johann Tree##
+
+ SER_shaking_off_the_dust:0 "Shaking Off the Dust"
+ SER_shaking_off_the_dust_desc:0 "Now that peace reigns and our administrative capacity has been freed up, we can finally turn to more important internal matters. There are many issues to tend to currently, but we cannot deal with all of them. From managing our rural and undeveloped economy, to bolstering the colonisation effort, and reorganizing our ineffective High Command, we must start somewhere."
+
+ SER_colonisation_effort:0 "Colonisation Effort"
+ SER_colonisation_effort_desc:0 "Eventually, this land will be rid of Slavic influence, as our blood will outgrow and replace the decadent blood of the Serbs and their brethren. To do this, there can be no pause to the growth of Austrians in the cities and villages of Serbia. The Empire will grow to cover this territory as well, in the end, and it will be all the richer for it."
+
+ SER_a_fair_hand:0 "A Fair Hand"
+ SER_a_fair_hand_desc:0 "It is folly to assume that we can replace the Serbs and their ilk in a matter of years. Such a thing would be impossibly expensive and would stir endless rebellions. Instead, the government shall deal with them like they would our own kin, starting with the displaced Serbian nobility. They will be treated favourably, in exchange for their help in pacifying and co-operating with locally important figures."
+
+ SER_government_propaganda:0 "Government Propaganda"
+ SER_government_propaganda_desc:0 "There can be no other Empire to control these territories that would be beneficial to them as we would be. Though we cannot directly tell them that we are simply more capable of rulership, we can assert the idea that they will collectively prosper with their Austrian brethren, so long as they follow the German way of life and respect German traditions."
+
+ SER_improve_the_living_standards:0 "Improve the Living Standards"
+ SER_improve_the_living_standards_desc:0 "Convincing a conquered people to surrender their freedom to you is no easy task, and must be done through blood, sweat, and tears. An effort will be made to make sure that they will receive proper food, clothing, and that most cities begin constructing proper sanitation. Those that actively cooperate with us will, naturally, receive the most benefits from our benevolence."
+
+ SER_deploy_the_gendarme:0 "Deploy the Gendarmerie"
+ SER_deploy_the_gendarme_desc:0 "Our men will patrol the streets day and night to make sure that compliance is kept high. The Serbians will know their place, regardless of how they reacted to the Siege of Niš. We must drill it into their heads that they have lost as a people, and that we have won. Austriae est imperare orbi universo."
+
+ SER_house_by_house_search:0 "House-by-House Search"
+ SER_house_by_house_search_desc:0 "It matters not if they are willing to allow us the sanctity of “their” homes. Resistance prowls in the homes of the brave and the foolish, and they will be rooted and burned out like a plague. Both the military and police will have full authority to, without questioning, enter Serbian households and businesses, on account of suspected terrorist activities and hiding contraband."
+
+ SER_fear_will_keep_them_in_line:0 "Fear Will Keep Them in Line"
+ SER_fear_will_keep_them_in_line_desc:0 "If you cannot be loved, then you must be respected and feared. If God wills it, the decree of the Kaiser shall be known to all of the government’s secondary citizens. They will stay in line and accept what is to come, or they will face punishment. Austria has conquered this land, and will forever more remain conquered."
+
+ SER_analyse_our_economy:0 "Analyse our Economy"
+ SER_analyse_our_economy_desc:0 "Relying on Austrian financial experts means that we aren’t wholly familiar with how the backbone of our economy functions, which is why we will launch a program to examine every industry, current and potential."
+
+ SER_dealing_with_the_inflation:0 "Standardize The Krone"
+ SER_dealing_with_the_inflation_desc:0 "A basis of currency must be set-up if we want to establish trade relations with the countries nearby, as well as streamlining internal matters. There is a wide variety of currency used in Serbia, primarily the dinar, but as monetary transactions are mainly done in the few larger cities that we have control over, switching over the krone should not be difficult."
+
+ SER_demand_budget_rise:0 "Petition Budget Increase"
+ SER_demand_budget_rise_desc:0 "Austria is a nation of riches - riches that they could easily use to elevate their loyal subjects. If they are to follow the principles of A.E.I.O.U, it is only wise to help their fellow man. Our top economist has proposed a significant rise of budget in order to breathe life into what is effectively a husk of an economy. We can only hope that they accept, otherwise we may run into issues."
+
+ SER_the_serbian_steel:0 "Serbian Steel"
+ SER_the_serbian_steel_desc:0 "The first steps are being taken, finally. The government has narrowed its scope to Morava, whereupon steel is available to be exploited for the good of the Empire. An incentive will be given to local Austrian and secondary citizens to work in government-funded mines and industrialised mills."
+
+ SER_attract_tourism:0 "Modernize the Agriculture Sector"
+ SER_attract_tourism_desc:0 "Food is, as it stands, the heartland of the Serbian economy. It is our main export, and will remain so, and it would be foolish not to further our investments into it. Agricultural experts from our homeland will be brought in, as well as importing modern equipment and industrial tools. This should, more than anything, benefit our economy significantly."
+
+ SER_the_best_we_got:0 "The Best We Got"
+ SER_the_best_we_got_desc:0 "It’s not great. It’s not bad, either-- but as it stands, our economy will remain mediocre. Though we have done what we can, we can be proud of the fact that we have, and continue to, give it our all. With the situation stabilised, it can be said for certain that we have managed to dig ourselves out of a ditch. For now."
+
+ SER_the_military_report:0 "Military Report" 
+ SER_the_military_report_desc:0 "From the top to the bottom, it can be realistically said that the military of our government is in shambles. Officers squabble in petty cliques to carve out their own personal sphere of interests in Serbia, while the roads, forests and mountains remain as breeding grounds for rebels, and nobody wishes to speak about the clear incompetence of Johann."
+
+ SER_promote_the_collaborators:0 "Promote the Collaborators"
+ SER_promote_the_collaborators_desc:0 "Perhaps they are not fit for rulership, or anything in particular, but the High Command is still in desperate need of staffing crucial positions, and that brings them around to the Serbians. They were, and annoyingly enough remain, stubborn and tenacious fighters. There are a plentiful many Serbian commanders, generals and officers that have long since retired, and even though most of them bitterly despise the current government, we could attempt to find a few that are more willing to be turncoat."
+
+ SER_a_serb_knows_the_serbs_best:0 "A Serb Knows the Serbs Best"
+ SER_a_serb_knows_the_serbs_best_desc:0 "One of their own blood will know each other best, as history has proven time and time again. As the old High Command shudders into nothingness, another one will arise, more capable, and potentially more loyal. Newly promoted Serbians will be given the keys to most military assignments, making sure that they will prevent any rowdiness and stepping out of line as the situation rapidly changes."
+
+ SER_a_renewed_command:0 "A Renewed Command"
+ SER_a_renewed_command_desc:0 "Time has passed, and Johann has observed the new High Command with a strange sense of subtlety and perceptiveness. Whatever reports that have come from the Military Governor have been deathly silent recently, but any new recruits can breathe a sigh of relief, as it seems like their jobs are not at stake, as the military branch of Serbia slowly, but surely, recovers."
+
+ SER_import_austrian_officers:0 "Import Austrian Officers"
+ SER_import_austrian_officers_desc:0 "Who would turn down employment in an Austrian colony? After all, if not in active war, one of the best ways to show your skill as a man of military capacity would be to display an eager willingness to lead and command. Thus, we will look for bright, young cadets in the Austrian army back home, with promises of fame, respect… and primarily a lot of krone."
+
+ SER_teutonic_dominance_in_the_military:0 "Teutonic Dominance in the Military"
+ SER_teutonic_dominance_in_the_military_desc:0 "While the budget has felt the strain recently, we have pulled through with repopulating the military branch, filling it with the capacity and capability of pure-blooded Austrians, loyal to the Kaiser and the Governor, even if they also cannot afford to confront Johann about his many, many flaws. Hopefully it doesn’t lead into a repeat of the same situation."
+
+ SER_a_new_era_for_the_colony:0 "A New Era for the Colony"
+ SER_a_new_era_for_the_colony_desc:0 "Praise God! We have miraculously managed to avoid disaster, and Austrian dominance has begun to creep back into Serbian society once more. The reformed army now efficiently patrols the cities, keeping a watchful gaze on potential mutineers while new construction sites are being made almost every day. Though there is no booming economy or prospering society, it’s hoped that by the end of this year, we will finally turn a profit for ourselves and Austria. May we reign long."
+
+ ##Draza Coup##
+
+ SER_avenge_nis:0 "Avenge Niš"
+
+ SER_burn_symbols_of_oppression:0 "Burn Symbols of Oppression"
+
+ SER_save_the_children:0 "Save the Children"
+
+ ##The Vote##
+
+ SER_the_vote:0 "The Vote"
+
+ ##Custom Tool-Tips##
+ 
+ SER_swap:0 "You will gain a new focus tree."
+ SER_focusgain:0 "You will gain new foci in your current tree."
+ 1_SER_tv:0 "§YThe vote to decide the fate of Serbia will begin in 7 days.§!\nYou will gain a new focus tree."
+ 2_SER_tv:0 "§GThe Nationalists under Draža Mihailović will win the vote.§!"
+ 3_SER_tv:0 "§GThe Serbian monarchy is voted to be restored under Alexander Karađorđević.§!"
+ 4_SER_tv:0 "§GMoša Pijade's Marxists will win the vote.§!"
+ SER_natpower:0 "This will cause the Nationalists to get more power."
+ SER_monpower:0 "This will cause the Monarchists to get more power."
+ SER_natmonend:0 "Depending on which side has the most power, your government will swap."
+
+ ##Country Flags##
+
+ SER_a_new_era_has_begun:0 "A new era for Serbia under Austrian rule has dawned."
+ SER_vote_begin:0 "The vote has begun."
+ SER_nationalist_vote:0 "The Nationalists have won the vote."
+ SER_monarchist_vote:0 "The Monarchists have won the vote."
+ SER_marxist_vote:0 "The Marxists have won the vote."
+ SER_monnatconflict:0 "A crisis has begun."

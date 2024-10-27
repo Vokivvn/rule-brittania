@@ -1,0 +1,1285 @@
+### Thälmann intro tree ###
+shared_focus = {
+	id = KPD_the_red_flag_flutters
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_the_red_flag_flutters"
+	}
+}
+
+shared_focus = {
+	id = KPD_uprooting_tradition
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_the_red_flag_flutters
+	}
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_uprooting_tradition"
+		add_timed_idea = { #add event that appears at same time as this ends
+			idea = KPD_Uprooting_Tradition
+			days = 180
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_execute_the_remaining_nobles
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_uprooting_tradition
+	}
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_execute_the_remaining_nobles"
+		add_manpower = -2000
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = KPD_confiscate_royal_assets
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_execute_the_remaining_nobles
+	}
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_confiscate_royal_assets"
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_the_prussian_church_no_more
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_uprooting_tradition
+	}
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_the_prussian_church_no_more"
+		add_political_power = 50
+		add_war_support = -0.05
+		add_stability = -0.05
+	}
+}
+
+shared_focus = {
+	id = KPD_declare_state_atheism
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_the_prussian_church_no_more
+	}
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_declare_state_atheism"
+		add_ideas = KPD_State_Atheism
+	}
+}
+
+shared_focus = {
+	id = KPD_put_reactionaries_on_trial
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_uprooting_tradition
+	}
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_put_reactionaries_on_trial"
+		country_event = {
+			id = KPD.2
+			days = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_stomp_out_the_meinsteiners
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_put_reactionaries_on_trial
+	}
+	x = 6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_stomp_out_the_meinsteiners"
+		country_event = {
+			id = KPD.7
+			days = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_uprooting_capitalism
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_the_red_flag_flutters
+	}
+	x = 12
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_uprooting_capitalism"
+		add_timed_idea = { #add event that appears at same time as this ends
+			idea = KPD_Uprooting_Capitalism
+			days = 180
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_establish_workers_councils
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_uprooting_capitalism
+	}
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_establish_workers_councils"
+		add_ideas = KPD_Workers_Councils
+	}
+}
+
+shared_focus = {
+	id = KPD_worker_oriented_factories
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_establish_workers_councils
+	}
+	x = 10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_worker_oriented_factories"
+		swap_ideas = {
+			remove_idea = KPD_Workers_Councils
+			add_idea = KPD_Workers_Councils_Empowered
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_redistribute_junker_estates
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_uprooting_capitalism
+	}
+	x = 12
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_redistribute_junker_estates"
+		62 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		63 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		68 = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_initiate_collectivization
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_redistribute_junker_estates
+	}
+	x = 12
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_initiate_collectivization"
+		custom_effect_tooltip = KPD_success_var_tt
+		add_to_variable = {
+    		var = KPD_success_var
+    		value = 0.02
+		}
+		set_country_flag = KPD_initiate_collectivization_flag
+		#do decision sets later
+	}
+}
+
+shared_focus = {
+	id = KPD_expel_british_parasites
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_uprooting_capitalism
+	}
+	x = 14
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_expel_british_parasites"
+		custom_effect_tooltip = KPD_expel_british_parasites_tt
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = british_econ_subordination
+				add_idea = expelled_british_econ_influence
+			}
+			swap_ideas = {
+				remove_idea = british_pol_kingmaking
+				add_idea = british_pol_independence
+			}
+			swap_ideas = {
+				remove_idea = british_advised_forces
+				add_idea = british_independent_forces
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_establish_the_berlin_comintern
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_expel_british_parasites
+	}
+	x = 14
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_establish_the_berlin_comintern"
+		create_faction = "Berlin International"
+		KPD = {
+			add_to_faction = KPD
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_the_spp_question
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_worker_oriented_factories
+	}
+	prerequisite = {
+		focus = KPD_initiate_collectivization
+	}
+	prerequisite = {
+		focus = KPD_establish_the_berlin_comintern
+	}
+	prerequisite = {
+		focus = KPD_stomp_out_the_meinsteiners
+	}
+	prerequisite = {
+		focus = KPD_declare_state_atheism
+	}
+	prerequisite = {
+		focus = KPD_confiscate_royal_assets
+	}
+	x = 8
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_the_spp_question"
+		custom_effect_tooltip = KPD_spp_question_tt
+		country_event = {
+			id = KPD.8
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_counter_revolutionary_agents
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_the_spp_question
+	}
+	mutually_exclusive = {
+		focus = KPD_misguided_by_capitalism
+	}
+	available = {
+		has_country_flag = KPD_SPP_HATED_flag
+	}
+	bypass = {
+		has_country_flag = KPD_SPP_HATED_flag
+	}
+	x = 6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_counter_revolutionary_agents"
+	}
+}
+
+shared_focus = {
+	id = KPD_form_the_kpd
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_counter_revolutionary_agents
+	}
+	x = 4
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_form_the_kpd"
+		set_party_name = {
+			ideology = cromwellianism
+			long_name = KPD_cromwellianism_party_kpd_long
+			name = KPD_cromwellianism_party_kpd
+		}
+		set_party_name = {
+			ideology = marxism
+			long_name = KPD_marxism_party_kpd_long
+			name = KPD_marxism_party_kpd
+		}
+		set_party_name = {
+			ideology = liberalism
+			long_name = KPD_liberalism_party_kpd_long
+			name = KPD_liberalism_party_kpd
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_the_birth_of_party_democracy
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_form_the_kpd
+	}
+	x = 4
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_the_birth_of_party_democracy"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = KPD_arrest_spp_leadership
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_counter_revolutionary_agents
+	}
+	x = 6
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_arrest_spp_leadership"
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.20
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_dismantle_the_reichsbanner_s_w
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_arrest_spp_leadership
+	}
+	x = 6
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_dismantle_the_reichsbanner_s_w"
+		custom_effect_tooltip = KPD_dismantle_reichsbanner_tt
+		set_country_flag = KPD_dismantle_reichsbannersw_flag
+	}
+}
+
+shared_focus = {
+	id = KPD_declare_the_socialist_republic_of_germany
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_dismantle_the_reichsbanner_s_w
+	}
+	prerequisite = {
+		focus = KPD_the_birth_of_party_democracy
+	}
+	x = 5
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_declare_the_socialist_republic_of_germany"
+		custom_effect_tooltip = KPD_german_government_declared_tt
+		hidden_effect = {
+			set_cosmetic_tag = KPD_SRG
+			load_focus_tree = {
+				tree = KPD_expansion
+				keep_completed = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_misguided_by_capitalism
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_the_spp_question
+	}
+	mutually_exclusive = {
+		focus = KPD_counter_revolutionary_agents
+	}
+	available = {
+		has_country_flag = KPD_SPP_TOLERATED_flag
+	}
+	bypass = {
+		has_country_flag = KPD_SPP_TOLERATED_flag
+	}
+	x = 10
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_misguided_by_capitalism"
+	}
+}
+
+shared_focus = {
+	id = KPD_integrate_radical_social_democrats
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_misguided_by_capitalism
+	}
+	x = 10
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_integrate_radical_social_democrats"
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = -0.10
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_a_red_alliance_to_block_reaction
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_integrate_radical_social_democrats
+	}
+	x = 10
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_a_red_alliance_to_block_reaction"
+		add_political_power = 50
+		add_war_support = 0.05
+		custom_effect_tooltip = KPD_unity_var_tt
+		add_to_variable = {
+			var = KPD_unity_var
+			value = 0.02
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_form_the_sed
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_misguided_by_capitalism
+	}
+	x = 12
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_form_the_sed"
+		set_party_name = {
+			ideology = cromwellianism
+			long_name = KPD_cromwellianism_party_sed_long
+			name = KPD_cromwellianism_party_sed
+		}
+		set_party_name = {
+			ideology = marxism
+			long_name = KPD_marxism_party_sed_long
+			name = KPD_marxism_party_sed
+		}
+		set_party_name = {
+			ideology = liberalism
+			long_name = KPD_liberalism_party_sed_long
+			name = KPD_liberalism_party_sed
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_forming_a_unity_government
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_form_the_sed
+	}
+	x = 12
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_forming_a_unity_government"
+		custom_effect_tooltip = KPD_unity_var_tt
+		add_to_variable = {
+			var = KPD_unity_var
+			value = 0.03
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_declare_the_german_republic
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_a_red_alliance_to_block_reaction
+	}
+	prerequisite = {
+		focus = KPD_forming_a_unity_government
+	}
+	x = 11
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_declare_the_german_republic"
+		custom_effect_tooltip = KPD_german_government_declared_tt
+		hidden_effect = {
+			set_cosmetic_tag = KPD_SED
+			load_focus_tree = {
+				tree = KPD_expansion
+				keep_completed = yes
+			}
+		}
+	}
+}
+
+### KPD expansion tree ###
+shared_focus = {
+	id = KPD_the_german_red_army
+	icon = GFX_KPD_Elections
+	cost = 1.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	x = 22
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_the_german_red_army"
+		add_political_power = 10
+		hidden_effect = {
+			load_oob = "KPD_beginning_red_army"
+		}
+		custom_effect_tooltip = KPD_the_german_red_army_tt
+	}
+}
+
+shared_focus = {
+	id = KPD_repairing_the_prussian_military
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_the_german_red_army
+	}
+	x = 20
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_repairing_the_prussian_military"
+		add_ideas = KPD_Repairing_The_Prussian_Military
+	}
+}
+
+shared_focus = {
+	id = KPD_instate_conscription
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_repairing_the_prussian_military
+	}
+	x = 18
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_instate_conscription"
+		swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = limited_conscription
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_no_more_to_the_prussian_eagle
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_repairing_the_prussian_military
+	}
+	x = 20
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_no_more_to_the_prussian_eagle"
+		country_event = {
+			id = KPD.9
+			days = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_an_army_of_merit
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_instate_conscription
+	}
+	prerequisite = {
+		focus = KPD_no_more_to_the_prussian_eagle
+	}
+	x = 20
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_an_army_of_merit"
+		swap_ideas = {
+			remove_idea = KPD_Shattered_Military
+			add_idea = KPD_End_Prussian_Discipline
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_end_prussian_discipline
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_an_army_of_merit
+	}
+	x = 18
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_end_prussian_discipline"
+		swap_ideas = {
+			remove_idea = KPD_Repairing_The_Prussian_Military
+			add_idea = KPD_Prussian_Military_I
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_incorporate_political_commissars
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_an_army_of_merit
+	}
+	x = 20
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_incorporate_political_commissars"
+		add_to_variable = {
+			var = KPD_unity_var
+			value = 0.10
+		}
+		custom_effect_tooltip = KPD_unity_var_tt
+	}
+}
+
+shared_focus = {
+	id = KPD_a_rifle_in_every_hand
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_end_prussian_discipline
+	}
+	prerequisite = {
+		focus = KPD_incorporate_political_commissars
+	}
+	x = 20
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_a_rifle_in_every_hand"
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 5000
+    		producer = KPD
+		}
+		add_equipment_to_stockpile = {
+    		type = support_equipment
+    		amount = 2500
+    		producer = KPD
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_preserving_our_gains
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_the_german_red_army
+	}
+	x = 24
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_preserving_our_gains"
+		add_political_power = 20
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = KPD_deploy_rotfront_paramilitaries
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_preserving_our_gains
+	}
+	x = 24
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_deploy_rotfront_paramilitaries"
+		load_oob = "KPD_militia"
+	}
+}
+
+shared_focus = {
+	id = KPD_reform_orders_of_battle
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_deploy_rotfront_paramilitaries
+	}
+	x = 24
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_reform_orders_of_battle"
+		add_to_variable = {
+			var = KPD_success_var
+			value = 0.02
+		}
+		custom_effect_tooltip = KPD_success_var_tt
+	}
+}
+
+shared_focus = {
+	id = KPD_womens_auxiliary_units
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_reform_orders_of_battle
+	}
+	x = 24
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_womens_auxiliary_units"
+		add_ideas = KPD_Women_In_Auxiliary_Roles
+		#set_technology = {
+    	#	field_hospital = 1 #TODO fix
+		#}
+	}
+}
+
+shared_focus = {
+	id = KPD_confiscate_domestic_weapons
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_preserving_our_gains
+	}
+	x = 26
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_confiscate_domestic_weapons"
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 3000
+    		producer = KPD
+		}
+		add_stability = -0.03
+	}
+}
+
+shared_focus = {
+	id = KPD_utilize_deactivated_arsenals
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_confiscate_domestic_weapons
+	}
+	x = 26
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_utilize_deactivated_arsenals"
+		64 = {
+			set_building_level = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		892 = {
+			set_building_level = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_commandeer_vehicles
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_utilize_deactivated_arsenals
+	}
+	x = 26
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_commandeer_vehicles"
+		#add_equipment_to_stockpile = {
+    	#	type = motorised_equipment
+    	#	amount = 250
+    	#	producer = KPD
+		#}
+		add_stability = -0.02
+	}
+}
+
+shared_focus = {
+	id = KPD_a_man_at_every_front
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_womens_auxiliary_units
+	}
+	prerequisite = {
+		focus = KPD_commandeer_vehicles
+	}
+	x = 24
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_a_man_at_every_front"
+		add_manpower = 20000
+	}
+}
+
+shared_focus = {
+	id = KPD_preparing_the_liberation
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_a_rifle_in_every_hand
+	}
+	prerequisite = {
+		focus = KPD_a_man_at_every_front
+	}
+	x = 22
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_preparing_the_liberation"
+		swap_ideas = {
+			remove_idea = civilian_economy
+			add_idea = partial_economic_mobilisation
+		}
+		add_to_variable = {
+			var = KPD_success_var
+			value = 0.05
+		}
+		custom_effect_tooltip = KPD_success_var_tt
+	}
+}
+
+shared_focus = {
+	id = KPD_forward_to_erfurt
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_preparing_the_liberation
+	}
+	x = 22
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_forward_to_erfurt"
+		KPD = {
+			add_to_faction = ERF
+			transfer_state = 964
+			add_state_core = 964
+		}
+		hidden_effect = {
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = SWM
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = SON
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = SEN
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = MHL
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = RGE
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = RGR
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = NRD
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			#ERF = {
+			#	KPD = {
+			#		add_to_war = { 
+			#			targeted_alliance = PREV 
+			#			enemy = 
+			#			hostility_reason = asked_to_join
+			#		}
+			#	}
+			#}
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = RDL
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+			ERF = {
+				KPD = {
+					add_to_war = { 
+						targeted_alliance = PREV 
+						enemy = SAL
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_save_muenzenburgs_experiment
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_forward_to_erfurt
+	}
+	x = 20
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_save_muenzenburgs_experiment"
+		KPD = {
+			puppet = ERF
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_capture_the_reactionaries_and_nobles
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_save_muenzenburgs_experiment
+	}
+	x = 20
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_capture_the_reactionaries_and_nobles"
+		#country_event = {
+		#	id = KPD.10
+		#	days = 7
+		#}
+	}
+}
+
+shared_focus = {
+	id = KPD_train_for_urban_warfare
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_forward_to_erfurt
+	}
+	x = 24
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_train_for_urban_warfare"
+		army_experience = 20
+		swap_ideas = {
+			remove_idea = KPD_Prussian_Military_I
+			add_idea = KPD_Prussian_Military_II
+		}
+	}
+}
+
+shared_focus = {
+	id = KPD_look_out_for_foreign_investment
+	icon = GFX_KPD_Elections
+	cost = 2.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = KPD_train_for_urban_warfare
+	}
+	x = 24
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KPD_look_out_for_foreign_investment"
+		#country_event = {
+		#	id = KPD.11
+		#	days = 5
+		#}
+	}
+}

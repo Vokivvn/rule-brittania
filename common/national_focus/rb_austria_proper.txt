@@ -1,0 +1,433 @@
+focus_tree = {
+	id = RB_Austria_Proper
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOS
+		}
+	}
+	default = no
+	focus = {
+		id = AUS_A_Nation_At_Last
+		cost = 5.00
+		x = 6
+		y = 0
+		completion_reward = {
+			
+		}	
+
+	}
+	focus = {
+		id = AUS_Economic_Restructuring
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Nation_At_Last
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = AUS_Guest_Workers
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Economic_Restructuring
+		}
+		x = 2
+		y = 2
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_Curtail_Noble_Priviliges
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Guest_Workers
+		}
+		x = 1
+		y = 3
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = AUS_Encourage_Farming
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Curtail_Noble_Priviliges
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = AUS_The_City_Up_The_Danube	#Salzburg
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Guest_Workers
+		}
+		x = 3
+		y = 3
+		completion_reward = {
+			938 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_The_City_Down_South #Graz
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_The_City_Up_The_Danube
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			940 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_A_Reformed_Economy
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_The_City_Down_South
+		}
+		prerequisite = {
+			focus = AUS_Encourage_Farming
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_Post_Habsburg_Restructuring
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Nation_At_Last
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = AUS_A_Modern_Model
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Post_Habsburg_Restructuring
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			add_political_power = 75
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = parliamentarianism 
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = liberalism 
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = republicanism 
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = AUS_Propaganda_Effort
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Modern_Model
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalism 
+				popularity = 0.1
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Reshuffle_Our_Cabinet
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Modern_Model
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = AUS_Administrative_Effort
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Modern_Model
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = AUS_Local_Elections
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Administrative_Effort
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = AUS_A_Restructured_State
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Local_Elections
+		}
+		prerequisite = {
+			focus = AUS_Reshuffle_Our_Cabinet
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = AUS_Austria_anew
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Reformed_Economy
+		}
+		prerequisite = {
+			focus = AUS_A_Restructured_State
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = AUS_Establish_Foreign_Ministry
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Nation_At_Last
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = AUS_Recognize_Post_Habsburgs_States
+		cost = 5.00
+		icon = GFX_focus_AUS_recognize_post_habsburg_states
+		prerequisite = {
+			focus = AUS_Establish_Foreign_Ministry
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			add_stability = -0.02
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = CZE
+						original_tag = HUN
+						original_tag = SIL
+						original_tag = BOS
+						original_tag = MMV
+						original_tag = SER
+					}
+				}
+				add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = AUS }
+				AUS = { add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = PREV } }
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_Diplomats_in_London
+		available = {
+			
+		}
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Recognize_Post_Habsburgs_States
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = ENG }
+			ENG = { add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = AUS } }
+		}
+
+	}
+	focus = {
+		id = AUS_Ties_with_the_Pope
+		cost = 5.00
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_Diplomats_in_London
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = PPL }
+			PPL = { add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = AUS } }
+		}
+
+	}
+	focus = {
+		id = AUS_Diplomats_in_Berlin
+		cost = 5.00
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_Recognize_Post_Habsburgs_States
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = PRU }
+			PRU = { add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = AUS } }
+		}
+	
+	}
+	focus = {
+		id = AUS_Reaffirm_Treaty_Of_Regensburg
+		cost = 5.00
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_Diplomats_in_Berlin
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+			AUS = {
+				diplomatic_relation = {
+					country = BAV
+					relation = non_aggression_pact
+					active = yes
+				}
+				give_military_access = BAV
+			}
+			BAV = {
+				give_military_access = AUS
+			}
+
+		}
+
+	}
+	focus = {
+		id = AUS_International_Relations
+		cost = 5.00
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_Ties_with_the_Pope
+		}
+		prerequisite = {
+			focus = AUS_Reaffirm_Treaty_Of_Regensburg
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						is_major = yes
+						is_neighbor_of = AUS
+					}
+				}
+				add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = AUS }
+				AUS = { add_opinion_modifier = { modifier = ger_tur_diplomacy_focus target = PREV } }
+			}
+		}
+
+	}
+	focus = {
+		id = AUS_The_Diplomatic_Force_of_Central_Europe
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_A_Restructured_State
+		}
+		prerequisite = {
+			focus = AUS_International_Relations
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = AUS_True_Birth_Of_A_Naiton
+		cost = 5.00
+		prerequisite = {
+			focus = AUS_Austria_anew
+		}
+		prerequisite = {
+			focus = AUS_The_Diplomatic_Force_of_Central_Europe
+		}
+		x = 6
+		y = 7
+
+	}
+}
+
+
+

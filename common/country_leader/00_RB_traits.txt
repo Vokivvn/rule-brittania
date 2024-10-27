@@ -1,0 +1,237 @@
+leader_traits = {	
+	the_red_outlaw = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_liberator = {
+		random = no
+		political_power_factor = 0.10
+		war_support_factor = 0.05
+		army_org_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_commodore = {
+		random = no
+		experience_gain_navy_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_kingpin = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_varyag = {
+		random = no
+		experience_gain_army_factor = 0.1
+		out_of_supply_factor = -0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_vozhd = {
+		random = no
+		political_power_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	loyal_administrator = {
+		random = no
+
+		political_power_factor = 0.05
+		stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_judge = {
+		random = no
+
+		political_power_factor = 0.1
+		stability_factor = 0.05
+		#enemy_partisan_effect = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_sheriff = {
+		random = no
+		political_power_factor = 0.1
+		drift_defence_factor = 0.25
+		command_power_gain_mult = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	martyr_of_the_revolution = {
+		random = no
+		political_power_factor = 0.1
+		war_support_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_man = {
+		random = no
+		political_power_factor = 0.1
+		mobilization_speed = 0.1
+		weekly_manpower = 100
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_duke_of_eurasia = {
+		random = no
+
+		political_power_factor = 0.1
+		liberalism_acceptance = -50
+		republicanism_acceptance = -50
+		parliamentarianism_acceptance = -50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_emperor_of_eurasia = {
+		random = no
+
+		political_power_factor = 0.2
+		liberalism_acceptance = -100
+		republicanism_acceptance = -100
+		parliamentarianism_acceptance = -100
+		nationalism_acceptance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	old_wolf = {
+		random = no
+
+		mobilization_speed = 0.1
+		equipment_capture = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hot_head = {
+		random = no
+
+		stability_factor = -0.1
+		war_support_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	soldier_tsar = {
+		random = no
+		war_support_factor = 0.1
+		planning_speed = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	charismatic_despot = {
+		random = no
+		war_support_factor = 0.05
+		political_power_factor = 0.05
+		stability_factor = -0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	man_in_gold = {
+		random = no
+
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dedicated_reformer = {
+		random = no
+
+		political_power_factor = 0.025
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gossiper = {
+		random = no
+
+		political_power_factor = -0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	progressive_duke = {
+		random = no
+
+		political_power_factor = -0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_conqueror = {
+		random = no
+
+		war_support_factor = 0.025
+		political_power_gain = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	foreign_monarch = {
+		random = no
+
+		stability_factor = -0.1
+		political_power_gain = -0.05
+		absolutism_drift = -0.02
+		despotism_drift = -0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rb_nationalist_symbol = {
+		random = no
+
+		stability_factor = 0.05
+		political_power_gain = 0.25
+		nationalism_drift = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	experienced_diplomat = {
+		random = no
+		ai_focus_peaceful_factor = 0.25
+		trade_opinion_factor = 0.30
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

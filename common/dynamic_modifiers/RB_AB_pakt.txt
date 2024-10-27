@@ -1,0 +1,46 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+
+
+
+AB_Pakt = {
+	icon = "GFX_AB_Pakt"
+#	conscription = ab_pakt_strength
+	industrial_capacity_factory = ab_pakt_strength
+#	consumer_goods_factor = ABP_cons_goods
+	political_power_factor = ab_pakt_strength
+#	research_speed_factor = ab_pakt_strength
+	war_support_factor = ab_pakt_strength 
+	MONTHLY_POPULATION = ab_pakt_strength
+	production_speed_buildings_factor = ab_pakt_strength
+	industry_free_repair_factor = ab_pakt_strength
+	#local_resources_factor = ab_pakt_strength
+	#local_resources_factor = ab_pakt_strength
+	production_factory_max_efficiency_factor = ab_pakt_strength
+	drift_defence_factor = ab_pakt_strength
+	send_volunteer_size = ab_send_volunteer_size 
+}

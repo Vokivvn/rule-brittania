@@ -1,0 +1,103 @@
+﻿################
+##WORLD EVENTS##
+################
+
+add_namespace = world
+news_event = { #george v dead
+	id = world.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event world.1"}
+	title = world.1.t
+	desc = world.1.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #f
+		name = world.1.a
+	}
+}
+news_event = { #uprisings in Siberia
+	id = world.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event world.2"}
+	title = world.2.t
+	desc = world.2.desc
+	picture = GFX_news_event_siberia_uprising
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #WOOP WOOP
+		trigger = {
+			is_pro_anglo = yes
+		}
+		name = world.2.a
+	}
+	option = { #WOOP WOOP
+		trigger = {
+			is_anti_anglo = yes
+		}
+		name = world.2.b
+	}
+}
+news_event = { #DETONATION!
+	id = world.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event world.3"}
+	title = world.3.t
+	desc = world.3.desc
+	picture = GFX_news_event_nuclear_detonation
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #WOOP WOOP
+		trigger = {
+			tag = RLC
+		}
+		name = world.3.c
+		set_technology = {
+			nukes = 1
+		}
+	}
+	option = { #WOOP WOOP
+		trigger = {
+			is_pro_anglo = yes
+		}
+		name = world.3.a
+	}
+	option = { #WOOP WOOP
+		trigger = {
+			not = { tag = RLC }
+			is_anti_anglo = yes
+		}
+		name = world.3.b
+	}
+}
+news_event = { #uprisings in Siberia
+	id = world.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event world.4"}
+	title = world.4.t
+	desc = world.4.desc
+	picture = GFX_news_event_announcement
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #WOOP WOOP
+		trigger = {
+			is_pro_anglo = yes
+		}
+		name = world.4.a
+	}
+	option = { #WOOP WOOP
+		trigger = {
+			not = { tag = RLC }
+			is_anti_anglo = yes
+		}
+		name = world.4.b
+	}
+	option = { #WOOP WOOP
+		trigger = {
+			tag = RLC
+		}
+		name = world.4.c
+	}
+}

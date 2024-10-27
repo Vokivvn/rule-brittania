@@ -1,0 +1,13 @@
+KPD_revolutionary_fervor_modifier = {
+	enable = {
+		has_global_flag = PRU_socialist
+	}
+	icon = GFX_idea_unknown
+	army_org_factor = KPD_unity_var
+	political_power_gain = KPD_unity_var
+	army_morale_factor = KPD_success_var
+	conscription = KPD_success_var
+	army_core_attack_factor = KPD_success_var
+	army_core_defence_factor = KPD_success_var
+	training_time_factor = KPD_success_var
+}

@@ -1,0 +1,157 @@
+ideas = {
+	country = {
+		##JEWISH SETTLEMENT##
+		PAL_Jewish_Settlement_Banned = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Jewish_Settlement_Banned"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Jewish_Settlement_Discouraged = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Jewish_Settlement_Discouraged"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Jewish_Settlement_Medium = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Jewish_Settlement_Medium"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Jewish_Settlement_Encouraged = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Jewish_Settlement_Encouraged"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Jewish_Settlement_Mandatory = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Jewish_Settlement_Mandatory"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		##ZIONIST STRENGTH##
+		PAL_Zionist_Strength_Nonexistant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Zionist_Strength_Nonexistant"}
+			allowed = { always = no }
+			picture = GFX_idea_PAL_zionist_strength_nonexistant
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Zionist_Strength_Weak = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Zionist_Strength_Weak"}
+			allowed = { always = no }
+			picture = GFX_idea_PAL_zionist_strength_weak
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Zionist_Strength_Medium = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Zionist_Strength_Medium"}
+			allowed = { always = no }
+			picture = GFX_idea_PAL_zionist_strength_medium
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Zionist_Strength_Strong = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Zionist_Strength_Strong"}
+			allowed = { always = no }
+			picture = GFX_idea_PAL_zionist_strength_strong
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Zionist_Strength_Dominant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Zionist_Strength_Dominant"}
+			allowed = { always = no }
+			picture = GFX_idea_PAL_zionist_strength_dominant
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		##ARAB STRENGTH##
+		PAL_Arab_Strength_Powerless = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Arab_Strength_Powerless"}
+			allowed = { always = no }
+			#picture = 
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Arab_Strength_Disunified = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Arab_Strength_Disunified"}
+			allowed = { always = no }
+			#picture = 
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Arab_Strength_Medium = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Arab_Strength_Medium"}
+			allowed = { always = no }
+			#picture = 
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Arab_Strength_Unified = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Arab_Strength_Unified"}
+			allowed = { always = no }
+			#picture = 
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		PAL_Arab_Strength_Dominant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Arab_Strength_Dominant"}
+			allowed = { always = no }
+			#picture = 
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}

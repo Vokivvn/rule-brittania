@@ -1,0 +1,342 @@
+﻿##################
+##SERBIA  EVENTS##
+##################
+
+add_namespace = srbija
+add_namespace = srbija_draza
+add_namespace = srbija_alexconflict
+
+country_event = { #Intro
+	id = srbija.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.1"}
+	title = srbija.1.t
+	desc = srbija.1.desc
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = srbija.1.a
+	}
+}
+
+country_event = { #threatassessment
+	id = srbija.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.2"}
+	title = srbija.2.t
+	desc = srbija.2.desc
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #DEPLOY THE GARRISON!!!
+		name = srbija.2.a
+	}
+}
+
+
+## V no longer used in normal play, just using for skipping the siege tree for testing now 
+
+country_event = { #siegecomplete
+	id = srbija.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.3"}
+	title = srbija.3.t
+	desc = srbija.3.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #finally this shit is over
+		name = srbija.3.a
+		load_focus_tree = {
+			tree = SER_new_era
+			keep_completed = yes
+		}
+	}
+}
+
+## ^ no longer used in normal play, just using for skipping the siege tree for testing now 
+
+
+country_event = { #first step to a model colony
+	id = srbija.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.4"}
+	title = srbija.4.t
+	desc = srbija.4.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #i love being part of an oppressive monarchist regime haha
+		name = srbija.4.a
+	}
+}
+
+country_event = { #economy analysed (it is not good)
+	id = srbija.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.5"}
+	title = srbija.5.t
+	desc = srbija.5.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #it must be I M P R O V E D 
+		name = srbija.5.a
+	}
+}
+
+country_event = { #look this is all we can do with the economy alright
+	id = srbija.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.6"}
+	title = srbija.6.t
+	desc = srbija.6.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ive never heard of someone rioting on a full stomach
+		name = srbija.6.a
+	}
+}
+
+country_event = { #the officers are completely failing to do their job and nobody is telling salis that its his fault because theyre scared of losing their job
+	id = srbija.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.7"}
+	title = srbija.7.t
+	desc = srbija.7.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #looks like theyre going to lose their jobs regardless because salis doesnt like their failure to succeed
+		name = srbija.7.a
+	}
+}
+
+country_event = { #officers are now F I R E D
+	id = srbija.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.77"}
+	title = srbija.77.t
+	desc = srbija.77.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #bye bye
+		name = srbija.77.a
+	}
+}
+
+country_event = { #promoting collaborative serbs into the military command
+	id = srbija.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.8"}
+	title = srbija.8.t
+	desc = srbija.8.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #this wont go badly
+		name = srbija.8.a
+	}
+}
+
+country_event = { #sneakily bribe upcoming new austrian officers into working for serbia rather than for austria proper
+	id = srbija.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.9"}
+	title = srbija.9.t
+	desc = srbija.9.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #i love monmey :) 
+		name = srbija.9.a
+	}
+}
+
+country_event = { #everything is getting nice the situation is improving yay!!!
+	id = srbija.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.10"}
+	title = srbija.10.t
+	desc = srbija.10.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #hamppy
+		name = srbija.10.a
+	}
+}
+
+country_event = { #oh god draza is couping me in the face of global economic collapse please nNO
+	id = srbija.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija.11"}
+	title = srbija.11.t
+	desc = srbija.11.desc
+	picture = GFX_report_event_serbian_nationalist_sign
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = srbija.11.a
+		clr_country_flag = RB_anglo_loyalist
+		RB_calculate_anglo_control = yes
+		set_politics = {
+			ruling_party = nationalism
+			elections_allowed = no
+		}
+		set_cosmetic_tag = SER
+		AUS = { remove_from_faction = SER }
+		AUS = { 
+			set_autonomy = {
+				target = SER
+				autonomy_state = autonomy_free
+			}
+		}
+		hidden_effect = {
+			load_focus_tree = {
+				tree = SER_draza_coup
+				keep_completed = yes
+			}
+		}
+		custom_effect_tooltip = SER_swap
+	}
+}
+
+country_event = { #avenge nis
+	id = srbija_draza.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija_draza.1"}
+	title = srbija_draza.1.t
+	desc = srbija_draza.1.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srbija_draza.1.a
+		add_war_support = 0.2
+	}
+}
+
+country_event = { #burn symbols of oppression
+	id = srbija_draza.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija_draza.2"}
+	title = srbija_draza.2.t
+	desc = srbija_draza.2.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srbija_draza.2.a
+		add_war_support = 0.2
+	}
+}
+
+country_event = { #votestart
+	id = srbija_draza.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija_draza.3"}
+	title = srbija_draza.3.t
+	desc = srbija_draza.3.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = srbija_draza.3.a
+		add_stability = 0.2
+		custom_effect_tooltip = 1_SER_tv
+		hidden_effect = {
+			SER = {
+				country_event = {
+					id = srbija_draza.4
+					days = 7
+				}
+			}
+			load_focus_tree = {
+				tree = SER_draza_vote
+				keep_completed = yes	
+			}
+			set_country_flag = SER_vote_begin
+		}
+	}
+}
+
+country_event = { 
+	id = srbija_draza.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija_draza.4"}
+	title = srbija_draza.4.t
+	desc = srbija_draza.4.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = srbija_draza.4.a
+		custom_effect_tooltip = 2_SER_tv
+
+		hidden_effect = {
+			SER = {
+				country_event = {
+					id = srbija_draza.5
+					days = 7
+				}
+			}
+			set_country_flag = SER_nationalist_vote
+		}
+	}
+
+	option = { 
+		name = srbija_draza.4.b
+		custom_effect_tooltip = 3_SER_tv
+		hidden_effect = {
+			SER = {
+				country_event = {
+					id = srbija_alex.1
+					days = 7
+				}
+			}
+			set_country_flag = SER_monarchist_vote
+		}
+	}
+
+	option = { 
+		name = srbija_draza.4.c
+		custom_effect_tooltip = 4_SER_tv
+		hidden_effect = {
+			SER = {
+				country_event = {
+					id = srbija_mosa.1
+					days = 7
+				}
+			}
+			set_country_flag = SER_marxist_vote
+		}
+	}
+}
+
+country_event = { 
+	id = srbija_alexconflict.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event srbija_alexconflict.1"}
+	title = srbija_alexconflict.1.t
+	desc = srbija_alexconflict.1.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = srbija_alexconflict.1.a
+		hidden_effect = { 
+			load_focus_tree = {
+				tree = SER_alexconflict
+				keep_completed = yes
+			}
+		}
+		custom_effect_tooltip = SER_focusgain
+	}
+}

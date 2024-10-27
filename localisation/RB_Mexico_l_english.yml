@@ -1,0 +1,351 @@
+﻿#|=================================================|#
+#| ███╗   ███╗███████╗██╗  ██╗██╗ ██████╗ ██████╗  |# 
+#| ████╗ ████║██╔════╝╚██╗██╔╝██║██╔════╝██╔═══██╗ |# 
+#| ██╔████╔██║█████╗   ╚███╔╝ ██║██║     ██║   ██║ |# 
+#| ██║╚██╔╝██║██╔══╝   ██╔██╗ ██║██║     ██║   ██║ |# 
+#| ██║ ╚═╝ ██║███████╗██╔╝ ██╗██║╚██████╗╚██████╔╝ |# 
+#| ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═════╝  |# 
+#|==========|   Country Localization   |===========|#
+l_english:
+
+ #Bookmark
+ MEX_RULEBRITANNIA_DESC: "meeexico : )))"
+ #Super Event
+ RB_Cinema_MexicanCivilWar_title: "THE 3RD MEXICAN REVOLUTION"
+ RB_Cinema_MexicanCivilWar_loc: "I am not an educated man. I never had an opportunity to learn anything except how to fight. — Pancho Villa"
+
+ #################################
+ ##======| Country Names |======##
+ ##============|  |=============##
+ #################################
+ #|===========================|#
+ #|      ANGLOID  MEXICO      |#
+ #|===========================|#
+ MEX_ENG_nationalism: "Protectorate of Mexico"
+ MEX_ENG_nationalism_ADJ: "Mexican"
+ MEX_ENG_nationalism_DEF: "The Protectorate of Mexico"
+
+ MEX_ENG_despotism: "Protectorate of Mexico"
+ MEX_ENG_despotism_ADJ: "Mexican"
+ MEX_ENG_despotism_DEF: "The Protectorate of Mexico"
+ 
+ MEX_ENG_absolutism: "Protectorate of Mexico"
+ MEX_ENG_absolutism_ADJ: "Mexican"
+ MEX_ENG_absolutism_DEF: "The Protectorate of Mexico"
+
+ MEX_ENG_administrationism: "Protectorate of Mexico"
+ MEX_ENG_administrationism_ADJ: "Mexican"
+ MEX_ENG_administrationism_DEF: "The Protectorate of Mexico"
+
+ MEX_ENG_parliamentarianism: "Protectorate of Mexico"
+ MEX_ENG_parliamentarianism_ADJ: "Mexican"
+ MEX_ENG_parliamentarianism_DEF: "The Protectorate of Mexico"
+
+ MEX_ENG_republicanism: "Protectorate of Mexico"
+ MEX_ENG_republicanism_ADJ: "Mexican"
+ MEX_ENG_republicanism_DEF: "The Protectorate of Mexico"
+ 
+ MEX_ENG_liberalism: "Protectorate of Mexico"
+ MEX_ENG_liberalism_ADJ: "Mexican"
+ MEX_ENG_liberalism_DEF: "The Protectorate of Mexico"
+
+ MEX_ENG_marxism: "Protectorate of Mexico"
+ MEX_ENG_marxism_ADJ: "Mexican"
+ MEX_ENG_marxism_DEF: "The Protectorate of Mexico"
+ 
+ MEX_ENG_cromwellianism: "Protectorate of Mexico"
+ MEX_ENG_cromwellianism_ADJ: "Mexican"
+ MEX_ENG_cromwellianism_DEF: "The Protectorate of Mexico"
+
+ #|===========================|#
+ #|    VERACRUCISTA MEXICO    |#
+ #|===========================|#
+
+ #|====[ Post-Civil War ]=====|#
+ MEX_nationalism: "Mexico"
+ MEX_nationalism_ADJ: "Mexican"
+ MEX_nationalism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_despotism: "Mexico"
+ MEX_despotism_ADJ: "Mexican"
+ MEX_despotism_DEF: "Los Estados Unidos Mexicanos"
+ 
+ MEX_absolutism: "Mexico"
+ MEX_absolutism_ADJ: "Mexican"
+ MEX_absolutism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_administrationism: "Mexico"
+ MEX_administrationism_ADJ: "Mexican"
+ MEX_administrationism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_parliamentarianism: "Mexico"
+ MEX_parliamentarianism_ADJ: "Mexican"
+ MEX_parliamentarianism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_republicanism: "Mexico"
+ MEX_republicanism_ADJ: "Mexican"
+ MEX_republicanism_DEF: "Los Estados Unidos Mexicanos"
+ 
+ MEX_liberalism: "Mexico"
+ MEX_liberalism_ADJ: "Mexican"
+ MEX_liberalism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_marxism: "Mexico"
+ MEX_marxism_ADJ: "Mexican"
+ MEX_marxism_DEF: "Los Estados Unidos Mexicanos"
+ 
+ MEX_cromwellianism: "Mexico"
+ MEX_cromwellianism_ADJ: "Mexican"
+ MEX_cromwellianism_DEF: "Los Estados Unidos Mexicanos"
+
+ #|=======[ Civil War ]=======|#
+ MEX_CW_nationalism: "Veracrucistas"
+ MEX_CW_nationalism_ADJ: "Veracrucistan"
+ MEX_CW_nationalism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_CW_despotism: "Veracrucistas"
+ MEX_CW_despotism_ADJ: "Veracrucistan"
+ MEX_CW_despotism_DEF: "Los Estados Unidos Mexicanos"
+ 
+ MEX_CW_absolutism: "Veracrucistas"
+ MEX_CW_absolutism_ADJ: "Veracrucistan"
+ MEX_CW_absolutism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_CW_administrationism: "Veracrucistas"
+ MEX_CW_administrationism_ADJ: "Veracrucistan"
+ MEX_CW_administrationism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_CW_parliamentarianism: "Veracrucistas"
+ MEX_CW_parliamentarianism_ADJ: "Veracrucistan"
+ MEX_CW_parliamentarianism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_CW_republicanism: "Veracrucistas"
+ MEX_CW_republicanism_ADJ: "Veracrucistan"
+ MEX_CW_republicanism_DEF: "Los Estados Unidos Mexicanos"
+ 
+ MEX_CW_liberalism: "Veracrucistas"
+ MEX_CW_liberalism_ADJ: "Veracrucistan"
+ MEX_CW_liberalism_DEF: "Los Estados Unidos Mexicanos"
+
+ MEX_CW_marxism: "Veracrucistas"
+ MEX_CW_marxism_ADJ: "Veracrucistan"
+ MEX_CW_marxism_DEF: "Los Estados Unidos Mexicanos"
+ 
+ MEX_CW_cromwellianism: "Veracrucistas"
+ MEX_CW_cromwellianism_ADJ: "Veracrucistan"
+ MEX_CW_cromwellianism_DEF: "Los Estados Unidos Mexicanos"
+
+ #|===========================|#
+ #| CONVENCIONALISTAS MEXICO  |#
+ #|===========================|#
+ 
+ #|====[ Post-Civil War ]=====|#
+ RMX_nationalism: "Mexico"
+ RMX_nationalism_ADJ: "Mexican"
+ RMX_nationalism_DEF: "La República de Mexico"
+
+ RMX_despotism: "Mexico"
+ RMX_despotism_ADJ: "Mexican"
+ RMX_despotism_DEF: "La República de Mexico"
+ 
+ RMX_absolutism: "Mexico"
+ RMX_absolutism_ADJ: "Mexican"
+ RMX_absolutism_DEF: "La República de Mexico"
+
+ RMX_administrationism: "Mexico"
+ RMX_administrationism_ADJ: "Mexican"
+ RMX_administrationism_DEF: "La República de Mexico"
+
+ RMX_parliamentarianism: "Mexico"
+ RMX_parliamentarianism_ADJ: "Mexican"
+ RMX_parliamentarianism_DEF: "La República de Mexico"
+
+ RMX_republicanism: "Mexico"
+ RMX_republicanism_ADJ: "Mexican"
+ RMX_republicanism_DEF: "La República de Mexico"
+ 
+ RMX_liberalism: "Mexico"
+ RMX_liberalism_ADJ: "Mexican"
+ RMX_liberalism_DEF: "La República de Mexico"
+
+ RMX_marxism: "Mexico"
+ RMX_marxism_ADJ: "Mexican"
+ RMX_marxism_DEF: "La República de Mexico"
+ 
+ RMX_cromwellianism: "Mexico"
+ RMX_cromwellianism_ADJ: "Mexican"
+ RMX_cromwellianism_DEF: "La República de Mexico"
+
+ #|=======[ Civil War ]=======|#
+ RMX_CW_nationalism: "Convencionistas"
+ RMX_CW_nationalism_ADJ: "Convencionistan"
+ RMX_CW_nationalism_DEF: "La República de Mexico"
+
+ RMX_CW_despotism: "Convencionistas"
+ RMX_CW_despotism_ADJ: "Convencionistan"
+ RMX_CW_despotism_DEF: "La República de Mexico"
+ 
+ RMX_CW_absolutism: "Convencionistas"
+ RMX_CW_absolutism_ADJ: "Convencionistan"
+ RMX_CW_absolutism_DEF: "La República de Mexico"
+
+ RMX_CW_administrationism: "Convencionistas"
+ RMX_CW_administrationism_ADJ: "Convencionistan"
+ RMX_CW_administrationism_DEF: "La República de Mexico"
+
+ RMX_CW_parliamentarianism: "Convencionistas"
+ RMX_CW_parliamentarianism_ADJ: "Convencionistan"
+ RMX_CW_parliamentarianism_DEF: "La República de Mexico"
+
+ RMX_CW_republicanism: "Convencionistas"
+ RMX_CW_republicanism_ADJ: "Convencionistan"
+ RMX_CW_republicanism_DEF: "La República de Mexico"
+ 
+ RMX_CW_liberalism: "Convencionistas"
+ RMX_CW_liberalism_ADJ: "Convencionistan"
+ RMX_CW_liberalism_DEF: "La República de Mexico"
+
+ RMX_CW_marxism: "Convencionistas"
+ RMX_CW_marxism_ADJ: "Convencionistan"
+ RMX_CW_marxism_DEF: "La República de Mexico"
+ 
+ RMX_CW_cromwellianism: "Convencionistas"
+ RMX_CW_cromwellianism_ADJ: "Convencionistan"
+ RMX_CW_cromwellianism_DEF: "La República de Mexico"
+
+ #################################
+ ##=======| Party Names |=======##
+ ##===========| :) |============##
+ #################################
+
+ #|===========================|#
+ #|    VERACRUCISTA MEXICO    |#
+ #|===========================|#
+ MEX_cromwellianism_party: "PdlR- Izquierda"
+ MEX_cromwellianism_party_long: "Partido de la Revolución- Izquierda"
+ MEX_cromwellianism_party_desc: "-"
+
+ MEX_marxism_party: "PCM"
+ MEX_marxism_party_long: "Partido Comunista Mexicano"
+ MEX_marxism_party_desc: "-"
+
+ MEX_liberalism_party: "PdlR- Centrar"
+ MEX_liberalism_party_long: "Partido de la Revolución- Centrar"
+ MEX_liberalism_party_desc: "-"
+
+ MEX_republicanism_party: "PdlR- Derecha"
+ MEX_republicanism_party_long: "Partido de la Revolución- Derecha"
+ MEX_republicanism_party_desc: "-"
+
+ MEX_parliamentarianism_party: "PAN"
+ MEX_parliamentarianism_party_long: "Partido Acción Nacional"
+ MEX_parliamentarianism_party_desc: "-"
+
+ MEX_administrationism_party: "High Commission"
+ MEX_administrationism_party_long: "the High Commission of the Protectorate of Mexico"
+ MEX_administrationism_party_desc: "-"
+
+ MEX_absolutism_party: "High Commission"
+ MEX_absolutism_party_long: "the High Commission of the Protectorate of Mexico"
+ MEX_absolutism_party_desc: "-"
+
+ MEX_despotism_party: "High Commission"
+ MEX_despotism_party_long: "the High Commission of the Protectorate of Mexico"
+ MEX_despotism_party_desc: "-"
+
+ MEX_nationalism_party: "UNS"
+ MEX_nationalism_party_long: "Unión Nacional Sinarquista"
+ MEX_nationalism_party_desc: "-"
+
+ #|===========================|#
+ #| CONVENCIONALISTAS MEXICO  |#
+ #|===========================|#
+ RMX_cromwellianism_party: "PdlR- Izquierda"
+ RMX_cromwellianism_party_long: "Partido de la Revolución- Izquierda"
+ RMX_cromwellianism_party_desc: "-"
+
+ RMX_marxism_party: "PCM"
+ RMX_marxism_party_long: "Partido Comunista Mexicano"
+ RMX_marxism_party_desc: "-"
+
+ RMX_liberalism_party: "PdlR- Centrar"
+ RMX_liberalism_party_long: "Partido de la Revolución- Centrar"
+ RMX_liberalism_party_desc: "-"
+
+ RMX_republicanism_party: "PdlR- Derecha"
+ RMX_republicanism_party_long: "Partido de la Revolución- Derecha"
+ RMX_republicanism_party_desc: "-"
+
+ RMX_parliamentarianism_party: "PAN"
+ RMX_parliamentarianism_party_long: "Partido Acción Nacional"
+ RMX_parliamentarianism_party_desc: "-"
+
+ RMX_administrationism_party: "High Commission"
+ RMX_administrationism_party_long: "the High Commission of the Protectorate of Mexico"
+ RMX_administrationism_party_desc: "-"
+
+ RMX_absolutism_party: "High Commission"
+ RMX_absolutism_party_long: "the High Commission of the Protectorate of Mexico"
+ RMX_absolutism_party_desc: "-"
+
+ RMX_despotism_party: "High Commission"
+ RMX_despotism_party_long: "the High Commission of the Protectorate of Mexico"
+ RMX_despotism_party_desc: "-"
+
+ RMX_nationalism_party: "UNS"
+ RMX_nationalism_party_long: "Unión Nacional Sinarquista"
+ RMX_nationalism_party_desc: "-"
+
+ #################################
+ ##===| Leader Descriptions |===##
+ ##===========| :) |============##
+ #################################
+
+ #|===========================|#
+ #|      ANGLOID  MEXICO      |#
+ #|===========================|#
+ LEADER_DESC_MEX_WILLIAM_SHOLTO_DOUGLAS: "Noone really asked for Douglas, a known hotheaded aviator with little experience in administration nor care for the affairs of ants some miles below. However, upon the sudden and tragic death of the late Sir General Theodesius Burnett-Stuart, there were few other choices. Either Britain would brave the controversy of this particularly imperial member of the British Staff, or they would gamble with some colonial. They did not prefer to gamble.\n\nFor Douglas, however, this was the greatest opportunity he had ever seen. Overshadowed by the work of the late Burnett-Stuart, Douglas's efforts in organizing the Joint Forces' Airwing, probably the least sorry portion of the Force, went wholly unnoticed. But now? Here, as the face, the forefront of the operations? Why, his work would be everywhere, at the foot of every home in the world, at least that of it which mattered. From Beijing to Boston his deeds would be heard, his great work in the conquest of Mexico.\n\nHis great work never quite manifested. His condescension and controversy found himself at odds with the quite American Joint Forces Staff, and his wings, ever unsorry, wasted gas in expensive show runs of what an air patrol in wartime ought to look like. The lines where never truly secure and what few airports had existed in Mexico where patched in dense grass on a good day and had the appearance of a dense swiss on an average one. However, in 1935, after some grueling 5 years as the Commander of the Joint Commonwealth Forces in Mexico, \"peace had come\".\n\nAnd so Douglas continued as always. Bickering with the ever dwindling Joint Forces, being prevented from exploding at the increasingly asinine demands of the Veracrucistas, and then-\nbeginning to not care.\n\nMexico will always be at war, that is merely what it is, to try to change that is futile exercise-\nOne could not bring God to Hell."
+
+ #################################
+ ##====| Idea Localization |====##
+ ##===========| :) |============##
+ #################################
+
+ #|===========================|#
+ #|      ANGLOID  MEXICO      |#
+ #|===========================|#
+ MEX_Plan_of_Veracruz: "The Plan of Veracruz"
+ MEX_Plan_of_Veracruz_desc: "The flimsy justification for the intervention and occupation of Mexico all lies within the document popularly known as the Plan of Veracruz. Written on August 3rd, 1925, and signed by Pablo Gonzalez Garza, Francisco Luis Urquizo, Pascual Orozco, Bernardo Reyes, and Félix Díaz Prieto, the document outlines multiple points on which the group would establish a unified, stable, and liberal Mexican Republic (and one inevitably under the thumb of British influence). However, such plans were not so cleanly brought to fruition. The days of October where Following the assasination of Bernardo Reyes in October, 1926 and the rise of the Revolutionary Plutarco Elias Calles the British used this document as justification for their invasion of Mexico the following year.\n\nHowever, the establishment of the Protectorate was hardly the end for this document. The Veracrucistas occupy many critical positions throughout the Protectorate, and continue to maintain their armies and militias in much of Mexico. They are sated for now, what with the endless kickbacks and promises, but if the Protectorate does not swiftly reestablish its position they will soon be wanting for much more than merely the occasional concession."
+ 
+ MEX_Glorified_Mine: "The Glorified Mine"
+ MEX_Glorified_Mine_desc: "For some time into the old days of the Porfiriato, the Mexican state sought to take measures to industrialize its country, and to enrich its own self. The obvious solution, then, was for Mexico to prostate itself, not to Britain, nor even to British interests; but instead the great hand of the market. God's will manifest is what brought industry to Mexico, which so industrialized it. And it is thus God's will manifest that this industry is now in decline, in disuse, and more recently being moved to other, more holy, activites.\n\nSilver, Copper, Oil, Iron, whatever it is, if it exists in these god given soils then it shall be torn from the earth drawn to the coast and brought to Britain. Dishonest minds might claim the Protectorate exists to protect Mexican democracy- to defend the people of Mexico from the threat of Revolution; More honest ones would openly proclaim: \"It is nothing more than a glorified mine, a great land ripe with spoil. It is for this purpose, and this purpose alone, that the Protectorate exists.\""
+ 
+ MEX_Joint_Staff_Dependence: "Joint Staff Dependence"
+ MEX_Joint_Staff_Dependence_desc: "The actual military forces of the Protectorate are small, and wholly insufficient for the issues Mexico faces. As such, Mexico has grown reliant on the stay of forces originating from other sections of the Empire, specifically America and California, just to continue its petty existence.\n\nMexico has been put into a game of desperately trying to satisfy and butter up the governments of America and California just to extend the Joint Force's stay long enough for the Protectorate to stabilize, and as such has opened itself up to a system of corruption, bribes and kickbacks. This has resulted in incredible amounts of wealth passing from Mexico into America and California completely outside of the framework of the British Empire.  If this system were  ever to collapse, the Protectorate would soon follow."
+ 
+ MEX_Unending_Insurgency: "A Peace at War"
+ MEX_Unending_Insurgency_desc: "The great peace of our time, the Peace of New Orleans, signed in 1935 by various leaders of the British Empire and an exact two representatives of the vanquished revolution, was to be the greatest triumph for Britain, and for the world over. Great Parades in London hailed the heroic deeds of Britain's young sons, their scars from a war they hardly saw paved over in the exuberant pride. The Peace of New Orleans, for all of its grandeur, was a mockery. A grand show for the world, to dress up a disappointing status quo.\n\nThere was no peace in those lands coveted, violence persisted on the very week of the celebrations. A thousand Brookwood graves were dug, yet no son died that week. They had died last week, or next in some unexpected accident, or they had been missing. But not a single son of Britain died that week."
+
+ #################################
+ ##==| Decision Localization |==##
+ ##===========| :) |============##
+ #################################
+ ##Category
+ MEX_ENG_insurgency_category: "Dealing with the Insurgency"
+ #MEX_ENG_insurgency_category_desc: "§G[?|%2]"
+ 
+ #Raid Decisions
+ MEX_ENG_insurgency_dont_get_aars: "You will [GetMEX_raid_aar_selection] updates on your raids."
+ MEX_ENG_insurgency_dont_get_aars_desc: "If you have selected to not recieve updates any equipment gained shall be silently put into your stockpile."
+ #GetKOV_raid_aar_selection
+ GetMEX_raid_aar_selection_yes: "§Yrecieve§!"
+ GetMEX_raid_aar_selection_no: "§Ynot recieve§!"
+
+ #MEX_ENG_insurgency_803
+ MEX_ENG_insurgency_803: "Raid [803.GetName]"
+ MEX_ENG_insurgency_803_desc: "Rebel Power: [803.?MEX_rebel_power]"
+
+ #################################
+ ##===| Focus Localization |====##
+ ##===========| :) |============##
+ #################################

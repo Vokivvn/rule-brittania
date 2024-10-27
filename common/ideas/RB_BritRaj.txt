@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		RAJ_Crown_Jewel = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RAJ_Crown_Jewel"}
+			allowed = { always = no }
+			picture = SWN_Anti_Federation_Government
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.3
+				political_power_gain = 0.1
+			}
+		}
+		RAJ_Indian_Resistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RAJ_Indian_Resistance"}
+			allowed = { always = no }
+			picture = SWN_The_Auralian_Seccession
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+		RAJ_Corrupt_Administration = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RAJ_Corrupt_Administration"}
+			allowed = { always = no }
+			picture = SWN_The_Auralian_Seccession
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				consumer_goods_factor = 0.05
+			}
+		}
+		RAJ_Indian_Military_Academy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RAJ_Indian_Military_Academy"}
+			allowed = { always = no }
+			picture = SWN_The_Auralian_Seccession
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = -0.15
+				planning_speed = 0.2
+				army_org_factor = 0.15
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=522
+	name="STATE_522"
+
+	history={
+		owner = SWN
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 1
+			#1652 = {
+			#	naval_base = 1
+			#	coastal_bunker = 1
+            #
+			#}
+
+		}
+		victory_points = {
+			1652 3 
+		}
+		add_core_of = SWN
+
+	}
+
+	provinces={
+		1498 2177 2186 2201 4645 5125 5170 5207 7579 7608 8134 8152 8155 8209 8247 10937 10950 10958 10971 11016 12323 12904 12912 12993 
+	}
+	manpower=367200
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

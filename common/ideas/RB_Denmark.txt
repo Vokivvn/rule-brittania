@@ -1,0 +1,102 @@
+ideas = {
+	country = {
+		DEN_content_conservatives_i = {
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_content_conservatives_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = DEN_content_conservatives_ip
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.25
+				political_power_factor = -0.25
+			}
+		}
+		DEN_growing_economy_i = {
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_growing_economy_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = DEN_growing_economy_ip
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+		DEN_impatient_norwegians_i = {
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_impatient_norwegians_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = DEN_impatient_norwegians_ip
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+		DEN_unrest_in_mecklenburg_i = {
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_unrest_in_mecklenburg_i"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = DEN_unrest_in_mecklenburg_ip
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+			}
+		}
+		DEN_Allocate_Funds = {
+		    on_add = {log = "[GetDateText]: [Root.GetName]: add idea DEN_Allocate_Funds"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = DEN_unrest_in_mecklenburg_ip
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+}

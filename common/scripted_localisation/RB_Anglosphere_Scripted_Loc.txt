@@ -1,0 +1,239 @@
+defined_text = {
+	name = Get_Anglo_Portrait
+	text = {
+		trigger = {
+			ENG = {	
+				has_country_leader = {
+					name = "George V"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_george_leader"
+	}
+	text = {
+		trigger = {
+			ENG = {	
+				has_country_leader = {
+					name = "Henry IX"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_henry_leader"
+	}
+	text = {
+		trigger = {
+			ENG = {	
+				has_country_leader = {
+					name = "British Parliament"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_big_leader"
+	}
+	text = {
+		trigger = {
+			ENG = {	
+				has_country_leader = {
+					name = "Henry IX Windsor"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_henry_leader"
+	}
+	text = {
+		trigger = {
+			ENG = {	
+				has_country_leader = {
+					name = "Edward VIII"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_eddy_leader"
+	}
+}
+defined_text = {
+	name = Get_Anglo_Title
+	text = {
+		trigger = {
+			AND = {
+				is_anti_anglo = yes
+				tag = RLC
+			}
+		}
+		localization_key = TheGreatSatan
+	}
+	text = {
+		trigger = {
+			is_anti_anglo = yes
+		}
+		localization_key = ScumOfTheEarth
+	}
+	text = {
+		trigger = {
+			is_pro_anglo = yes
+		}
+		localization_key = EmperorOfTheWorld
+	}
+}
+defined_text = {
+	name = Get_Doppleganger_Portrait
+	text = {
+		trigger = {
+			ENG = {	
+				has_country_leader = {
+					name = "George V"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_george_leader"
+	}
+}
+
+
+defined_text = {
+	name = Get_Remember_Quote
+	text = {
+		#	is_in_array = rebel_country_array
+		localization_key = "Remember What You Fight For."
+	}
+	text = {
+		trigger = {
+			tag = RLC
+		}
+		localization_key = "Remember: Russia Never Dies."
+	}
+}
+defined_text = {
+	name = Get_Rhodes_Quote
+	text = {
+		#is_in_array = rebel_country_array
+		trigger = {
+			is_pro_anglo = yes
+		}
+		localization_key = rhodes_said_that
+	}
+	text = {
+		trigger = {
+			AND = {
+				is_anti_anglo = yes
+				tag = AAN
+			}
+		}
+		localization_key = trubetzkoy_said_that
+	}
+	text = {
+		trigger = {
+			is_anti_anglo = yes
+		}
+		localization_key = satan_said_that
+	}	
+}
+defined_text = {
+	name = Get_Anglo_Status
+	text = {
+		#is_in_array = rebel_country_array
+		trigger = {
+			is_pro_anglo = yes
+		}
+		localization_key = RB_anglo_control_text
+	}
+	text = {
+		trigger = {
+			is_anti_anglo = yes
+		}
+		localization_key = RB_anglo_control_text_negative
+	}	
+}
+defined_text = {
+	name = Get_Anglo_control
+	text = {
+		#is_in_array = rebel_country_array
+		trigger = {
+			is_pro_anglo = yes
+		}
+		localization_key = UnderBritishControl
+	}
+	text = {
+		trigger = {
+			is_anti_anglo = yes 
+		}
+		localization_key = UnderAngloYoke
+	}	
+}
+defined_text = {
+	name = Get_Anglo_Independence
+	text = {
+		#is_in_array = rebel_country_array
+		trigger = {
+			is_pro_anglo = yes
+		}
+		localization_key = NotUnderBritishControl
+	}
+	text = {
+		trigger = {
+			is_anti_anglo = yes 
+		}
+		localization_key = NotUnderAngloYoke
+	}	
+}
+defined_text = {
+	name = Get_BritGrip
+	text = {
+		#is_in_array = rebel_country_array
+		trigger = {
+			is_pro_anglo = yes
+		}
+		localization_key = Get_BritGripAnglo
+	}
+	text = {
+		trigger = {
+			is_anti_anglo = yes
+		}
+		localization_key = Get_BritGripRebel
+	}	
+}
+defined_text = {
+	name = Get_Wallpaper
+	text = {
+		trigger = {
+			AND = {
+				is_anti_anglo = yes
+				tag = AAN
+			}
+		}
+		localization_key = "GFX_aaworld"
+	}
+	text = {
+		trigger = {
+			is_anti_anglo = yes
+		}
+		localization_key = "GFX_hellworld"
+	}	
+	text = {
+		#is_in_array = rebel_country_array
+		trigger = {
+			is_pro_anglo = yes
+		}
+		localization_key = "GFX_angloworld"
+	}
+}
+defined_text = {
+	name = Get_Doppleganger_Portrait
+	text = {
+		trigger = {
+			ENG = {	
+				has_country_leader = {
+					name = "George V"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_george_leader"
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id=991
+	name="STATE_991"
+
+	history={
+		owner = BLZ
+		add_core_of = BLZ
+		set_demilitarized_zone = yes
+		victory_points = {
+			4991 5
+		}
+		buildings = {
+			infrastructure = 1
+		}
+			
+	}
+	
+	provinces={
+		4991 
+	}
+	manpower=9500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

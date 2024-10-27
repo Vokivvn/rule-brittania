@@ -1,0 +1,506 @@
+﻿division_template = {
+	name = "Commonwealth Militia"
+	division_names_group = CNA_militia
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	#support = {
+	#	artillery = { x = 0 y = 0 }
+	#}
+}
+
+division_template = {
+	name = "Urban Defense Militia"
+	division_names_group = CNA_militia_urban
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	#support = {
+	#	artillery = { x = 0 y = 0 }
+	#}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "7797"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "7797"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "10909"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "11509"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "12735"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = "12735"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = "10192"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = "12384"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = "12384"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = "12384"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = "7118"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = "11975"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = "10492"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = "7527"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = "7138"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = "7012"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = "7045"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = "12445"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = "4168"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = "1132"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = "10230"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = "10230"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = "7433"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = "4342"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = "1338"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = "12289"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = "1424"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = "7361"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = "7361"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = "4360"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = "9657"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = "4854"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = "10341"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = "1719"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = "7899"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = "9467"
+		division_template = "Commonwealth Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "788"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "788"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "788"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "3878"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "3878"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = "3878"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = "3878"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = "6732"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = "6732"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = "6732"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = "6732"
+		division_template = "Urban Defense Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}

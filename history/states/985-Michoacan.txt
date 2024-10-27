@@ -1,0 +1,26 @@
+state={
+	id=985
+	name="STATE_985"
+	provinces={
+		2008 2011 4887 13264 13278 
+	}
+	history = {
+		owner = MEX
+		add_core_of = MEX
+		victory_points = {
+			13278 25
+		}
+		victory_points = {
+			13264 15
+		}
+		victory_points = {
+			2008 30
+		}
+		victory_points = {
+			2011 25
+		}
+	}
+	manpower=2102804
+	state_category=city
+	buildings_max_level_factor=1.000
+}

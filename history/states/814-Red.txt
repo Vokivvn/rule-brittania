@@ -1,0 +1,24 @@
+
+state={
+	id=814
+	name="STATE_814"
+	provinces={
+		1503 4522 5103 7485 7945 8025 11743
+	}
+	history={
+		owner = LOU
+		add_core_of = LOU
+		victory_points = {
+			7485 3
+		}
+		victory_points = {
+			8025 5
+		}
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	state_category = town
+	manpower=1902482
+	buildings_max_level_factor=1.000
+}

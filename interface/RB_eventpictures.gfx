@@ -1,0 +1,520 @@
+spriteTypes = {
+
+	#############
+	## Generic ##
+	#############
+	
+	spriteType = {
+		name = "GFX_report_event_generic_treaty"
+		texturefile = "gfx/event_pictures/report_event_generic_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_horseback_officer"
+		texturefile = "gfx/event_pictures/report_event_horseback_officer.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_rider"
+		texturefile = "gfx/event_pictures/report_event_rider.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_soldiers_training"
+		texturefile = "gfx/event_pictures/report_event_soldiers_training.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tank_crewman"
+		texturefile = "gfx/event_pictures/report_event_tank_crewman.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_city"
+		texturefile = "gfx/event_pictures/report_event_city.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mountain"
+		texturefile = "gfx/event_pictures/report_event_mountain.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mountain_expedition"
+		texturefile = "gfx/event_pictures/report_event_mountain_expedition.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_mountain_outpost"
+		texturefile = "gfx/event_pictures/report_event_mountain_outpost.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_city_street"
+		texturefile = "gfx/event_pictures/report_event_city_street.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_deer_warzone"
+		texturefile = "gfx/event_pictures/report_event_deer_warzone.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_lone_soldier"
+		texturefile = "gfx/event_pictures/report_event_lone_soldier.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_river_pirates"
+		texturefile = "gfx/event_pictures/report_event_river_pirates.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_nuclear_detonation"
+		texturefile = "gfx/event_pictures/news_event_nuclear_detonation.dds"
+	}
+	
+	###########
+	## Texas ##
+	###########
+	
+	spriteType = {
+		name = "GFX_report_event_houston_view"
+		texturefile = "gfx/event_pictures/report_event_houston_view.dds"
+	}
+	
+	#############
+	## Balkans ##
+	#############
+	
+	spriteType = {
+		name = "GFX_report_event_balkan_rebels"
+		texturefile = "gfx/event_pictures/report_event_balkan_rebels.dds"
+	}
+	
+	###################
+	## Great Britain ##
+	###################
+	
+	spriteType = {
+		name = "GFX_report_event_england_edward_viii_parliament"
+		texturefile = "gfx/event_pictures/report_event_england_edward_viii_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_england_royal_funeral"
+		texturefile = "gfx/event_pictures/report_event_england_royal_funeral.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_england_royal_funeral_2"
+		texturefile = "gfx/event_pictures/report_event_england_royal_funeral_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_england_rule_britannia"
+		texturefile = "gfx/event_pictures/report_event_england_rule_britannia.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_edwards_assassin"
+		texturefile = "gfx/event_pictures/report_event_edwards_assassin.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_henry_portrait"
+		texturefile = "gfx/event_pictures/report_event_henry_portrait.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_edward_viii_dead"
+		texturefile = "gfx/event_pictures/report_event_edward_viii_dead.dds"
+	}
+
+	##########
+	# France #
+	##########
+
+	spriteType = {
+		name = "GFX_report_event_france_French_Resistance"
+		texturefile = "gfx/event_pictures/report_event_france_French_Resistance.dds"
+	}
+	
+	############
+	## Africa ##
+	############
+	
+	spriteType = {
+		name = "GFX_report_event_philip_mitchell"
+		texturefile = "gfx/event_pictures/report_event_philip_mitchell.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_uganda_map"
+		texturefile = "gfx/event_pictures/report_event_uganda_map.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_cyril_radcliffe"
+		texturefile = "gfx/event_pictures/report_event_cyril_radcliffe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_cyril_radcliffe_2"
+		texturefile = "gfx/event_pictures/report_event_cyril_radcliffe_2.dds"
+	}
+	
+	###########
+	## China ##
+	###########
+	
+	spriteType = {
+		name = "GFX_report_event_china_death_of_an_empress"
+		texturefile = "gfx/event_pictures/report_event_china_death_of_an_empress.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_china_the_vacant_throne"
+		texturefile = "gfx/event_pictures/report_event_china_the_vacant_throne.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chinese_building"
+		texturefile = "gfx/event_pictures/report_event_chinese_building.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_siberia_uprising"
+		texturefile = "gfx/event_pictures/news_event_siberia_uprising.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_announcement"
+		texturefile = "gfx/event_pictures/news_event_announcement.dds"
+	}
+	
+	##############
+	## Far East ##
+	##############
+	
+	spriteType = {
+		name = "GFX_report_event_cooksville"
+		texturefile = "gfx/event_pictures/report_event_cooksville.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cooksville_2"
+		texturefile = "gfx/event_pictures/report_event_cooksville_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_eastport"
+		texturefile = "gfx/event_pictures/report_event_eastport.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_far_east_mercenary"
+		texturefile = "gfx/event_pictures/report_event_far_east_mercenary.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_frontiersmen"
+		texturefile = "gfx/event_pictures/report_event_frontiersmen.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_gulag_prisoners"
+		texturefile = "gfx/event_pictures/report_event_gulag_prisoners.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_orthodox_church"
+		texturefile = "gfx/event_pictures/report_event_orthodox_church.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_partisans"
+		texturefile = "gfx/event_pictures/report_event_partisans.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_port"
+		texturefile = "gfx/event_pictures/report_event_port.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_russian_far_east"
+		texturefile = "gfx/event_pictures/report_event_russian_far_east.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_vlasov"
+		texturefile = "gfx/event_pictures/report_event_vlasov.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_vlasov_troops"
+		texturefile = "gfx/event_pictures/report_event_vlasov_troops.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_siberian_cossacks"
+		texturefile = "gfx/event_pictures/report_event_siberian_cossacks.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_vespa_gang"
+		texturefile = "gfx/event_pictures/report_event_vespa_gang.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_matkovsky"
+		texturefile = "gfx/event_pictures/report_event_matkovsky.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ivor_thord_gray"
+		texturefile = "gfx/event_pictures/report_event_ivor_thord_gray.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_petition"
+		texturefile = "gfx/event_pictures/report_event_petition.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_soldiers_march"
+		texturefile = "gfx/event_pictures/report_event_soldiers_march.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tea_party"
+		texturefile = "gfx/event_pictures/report_event_tea_party.dds"
+	}
+	
+	#############
+	## Germany ##
+	#############
+	
+	spriteType = {
+		name = "GFX_report_event_german_propaganda"
+		texturefile = "gfx/event_pictures/report_event_german_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_germany_freikorps"
+		texturefile = "gfx/event_pictures/report_event_germany_freikorps.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_germany_freikorps_2"
+		texturefile = "gfx/event_pictures/report_event_germany_freikorps_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_germany_republican_schutzbund"
+		texturefile = "gfx/event_pictures/report_event_germany_republican_schutzbund.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_germany_rotfront_march"
+		texturefile = "gfx/event_pictures/report_event_germany_rotfront_march.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kpd_victory"
+		texturefile = "gfx/event_pictures/report_event_kpd_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sed_founding"
+		texturefile = "gfx/event_pictures/report_event_sed_founding.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kpd_founding"
+		texturefile = "gfx/event_pictures/report_event_kpd_founding.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kpd_vote"
+		texturefile = "gfx/event_pictures/report_event_kpd_vote.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_german_tavern"
+		texturefile = "gfx/event_pictures/report_event_german_tavern.dds"
+	}
+	
+	####################
+	## Eastern Europe ##
+	####################
+	
+	spriteType = {
+		name = "GFX_report_event_alfred_rosenberg"
+		texturefile = "gfx/event_pictures/report_event_alfred_rosenberg.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_pack_of_docs"
+		texturefile = "gfx/event_pictures/report_event_pack_of_docs.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fishing"
+		texturefile = "gfx/event_pictures/report_event_fishing.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_pilots"
+		texturefile = "gfx/event_pictures/report_event_pilots.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_pilots_two"
+		texturefile = "gfx/event_pictures/report_event_pilots_two.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_WOOP_WOOP"
+		texturefile = "gfx/event_pictures/report_event_WOOP_WOOP.dds"
+	}
+	
+	############
+	## Iberia ##
+	############
+	
+	spriteType = {
+		name = "GFX_report_event_spain_guardia_civil"
+		texturefile = "gfx/event_pictures/report_event_spain_guardia_civil.dds"
+	}
+	
+	###########
+	## Italy ##
+	###########
+	
+	spriteType = {
+		name = "GFX_report_event_italy_black_brigades"
+		texturefile = "gfx/event_pictures/report_event_italy_black_brigades.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_italy_milan"
+		texturefile = "gfx/event_pictures/report_event_italy_milan.dds"
+	}
+	
+	#################
+	## Middle East ##
+	#################
+	
+	spriteType = {
+		name = "GFX_report_event_pontic_soldiers"
+		texturefile = "gfx/event_pictures/report_event_pontic_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_turkey_spooky_shit"
+		texturefile = "gfx/event_pictures/report_event_turkey_spooky_shit.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_turkey_sultan_ahmed_iv"
+		texturefile = "gfx/event_pictures/report_event_turkey_sultan_ahmed_iv.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_orhan_flag"
+		texturefile = "gfx/event_pictures/report_event_orhan_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_turkish_soldiers"
+		texturefile = "gfx/event_pictures/report_event_turkish_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ottoman_parliament"
+		texturefile = "gfx/event_pictures/report_event_ottoman_parliament.dds"
+	}
+	
+	############
+	## Russia ##
+	############
+	
+	spriteType = {
+		name = "GFX_report_event_russian_nationalist_sign"
+		texturefile = "gfx/event_pictures/report_event_russian_nationalist_sign.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_russian_soldiers_dancing"
+		texturefile = "gfx/event_pictures/report_event_russian_soldiers_dancing.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_blood_splatter"
+		texturefile = "gfx/event_pictures/report_event_blood_splatter.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_hunt"
+		texturefile = "gfx/event_pictures/report_event_hunt.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_the_duel"
+		texturefile = "gfx/event_pictures/report_event_the_duel.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_copper_mistress"
+		texturefile = "gfx/event_pictures/report_event_copper_mistress.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_carl_hayden_two"
+		texturefile = "gfx/event_pictures/report_event_carl_hayden_two.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_carl_hayden"
+		texturefile = "gfx/event_pictures/report_event_carl_hayden.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_the_auction"
+		texturefile = "gfx/event_pictures/report_event_the_auction.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chairs"
+		texturefile = "gfx/event_pictures/report_event_chairs.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_policemen_at_the_doors"
+		texturefile = "gfx/event_pictures/report_event_policemen_at_the_doors.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_russian_eagles"
+		texturefile = "gfx/event_pictures/report_event_russian_eagles.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cossack_painting"
+		texturefile = "gfx/event_pictures/report_event_cossack_painting.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_russia_speech"
+		texturefile = "gfx/event_pictures/report_event_russia_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_siberian_rider"
+		texturefile = "gfx/event_pictures/report_event_siberian_rider.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_black_hundreds"
+		texturefile = "gfx/event_pictures/report_event_black_hundreds.dds"
+	}
+
+	###########
+	## Japan ##
+	###########
+	
+	spriteType = {
+		name = "GFX_report_event_japan_samurai"
+		texturefile = "gfx/event_pictures/report_event_japan_samurai.dds"
+	}
+	
+	##################################
+	## France and the Low COuntries ##
+	##################################
+	
+	spriteType = {
+		name = "GFX_report_event_burgundy_leon_degrelle"
+		texturefile = "gfx/event_pictures/report_event_burgundy_leon_degrelle.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_burgundy_luxembourg_palace"
+		texturefile = "gfx/event_pictures/report_event_burgundy_luxembourg_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_burgundy_ducal_palace"
+		texturefile = "gfx/event_pictures/report_event_burgundy_ducal_palace.dds"
+	}
+	
+	###########################
+	## Louisiana and the CNA ##
+	###########################
+	
+	spriteType = {
+		name = "GFX_report_event_louisiana_seal"
+		texturefile = "gfx/event_pictures/report_event_louisiana_seal.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_louisiana_basketball"
+		texturefile = "gfx/event_pictures/report_event_louisiana_basketball.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_louisiana_nellie_tayloe_ross"
+		texturefile = "gfx/event_pictures/report_event_louisiana_nellie_tayloe_ross.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_louisiana_george_w_norris"
+		texturefile = "gfx/event_pictures/report_event_louisiana_george_w_norris.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_louisiana_radio_event"
+		texturefile = "gfx/event_pictures/report_event_louisiana_radio_event.dds"
+	}
+	
+	#################
+	## Scandinavia ##
+	#################
+	
+	spriteType = {
+		name = "GFX_report_event_stockholm"
+		texturefile = "gfx/event_pictures/report_event_stockholm.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sweden_lion"
+		texturefile = "gfx/event_pictures/report_event_sweden_lion.dds"
+	}
+
+	############
+	## Serbia ##
+	############
+
+	spriteType = {
+		name = "GFX_report_event_serbian_nationalist_sign"
+		texturefile = "gfx/event_pictures/report_event_serbian_nationalist_sign.dds"
+	}
+}

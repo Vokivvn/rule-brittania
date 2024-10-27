@@ -1,0 +1,836 @@
+﻿ add_namespace = FRA
+
+country_event = { #Future of the Occupation
+	id = FRA.1
+	title = FRA.1.t
+	desc = FRA.1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.1"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.1.a
+		add_political_power = 10
+	}
+}
+
+country_event = { #Choose your Monarch
+	id = FRA.2
+	title = FRA.2.t
+	desc = FRA.2.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.2"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.2.a
+		ai_chance = {
+        	factor = 4
+    	}
+
+		add_political_power = -20
+		set_country_flag = FRA_King_George
+	}
+
+	option = {
+		name = FRA.2.b
+		ai_chance = {
+        	factor = 1
+    	}
+
+		add_political_power = 10
+		set_country_flag = FRA_King_Henri
+	}
+}
+
+country_event = { #Coronation of King George 
+	id = FRA.3
+	title = FRA.3.t
+	desc = FRA.3.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.3"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.3.a
+		retire_country_leader = yes
+
+		create_country_leader = {
+			name = "George I"
+			desc = "POLITICS_KING_GEORGE_DESC"
+			picture = "Portrait_FRA_George_Villiers.dds"
+			expire = "1999.12.12"
+			ideology = despotism_subtype
+			traits = {
+				foreign_monarch
+			}
+		}
+		set_cosmetic_tag = FRA_ENG_monarchy
+		ENG = { country_event = { id = FRA.5 days = 6 } }
+	}
+}
+
+country_event = { #Coronation of King Henri 
+	id = FRA.4
+	title = FRA.4.t
+	desc = FRA.4.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.4"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.4.a
+		retire_country_leader = yes
+
+		create_country_leader = {
+			name = "Henri VI"
+			desc = "POLITICS_KING_HENRI_DESC"
+			picture = "Portrait_FRA_Henri_Wellesley.dds"
+			expire = "1999.12.12"
+			ideology = absolutism_subtype
+			traits = {
+				foreign_monarch
+			}
+		}
+
+		set_politics = {
+			ruling_party = absolutism
+		}
+		set_cosmetic_tag = FRA_ENG_monarchy
+		ENG = { country_event = { id = FRA.5 days = 6 } }
+	}
+}
+
+country_event = { #Montgomery Returns
+	id = FRA.5
+	title = FRA.5.t
+	desc = FRA.5.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.5"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.5.a
+		create_field_marshal = {
+			name = "Bernard Montgomery"
+			picture = "Portrait_FRA_Bernard_Montgomery.dds"
+   			traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+}
+
+country_event = { #Cromwellianist Revolt
+	id = FRA.6
+	title = FRA.6.t
+	desc = FRA.6.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.6"}
+	picture = GFX_Unknown
+
+	immediate = {
+		hidden_effect = {
+			FRE = {
+				transfer_state = 22
+				if = {
+					limit = {
+						NOT = { FRA = { has_country_flag = fra_ongoing_revolt } }
+					}
+					create_country_leader = {
+					name = "Pierre Brossolette"
+					desc = "POLITICS_PIERRE_BROSSOLETTE_DESC"
+					picture = "Portrait_FRE_Pierre_Brossolette.dds"
+					expire = "1999.12.12"
+					ideology = cromwellianism_subtype
+					traits = {
+						}
+					}
+					set_politics = { ruling_party = cromwellianism }
+					set_capital = 22
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { 
+		name = FRA.6.a
+		if = {
+			limit = {
+				NOT = {has_country_flag = fra_ongoing_revolt}
+				}
+				FRA = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+				add_ideas = FRA_growing_discontent_1
+				activate_mission = FRA_growing_revolts_1
+			}
+		}
+			
+		set_country_flag = fra_cromwellian_revolt
+		FRA_set_revolt_flag = yes
+		FRE = { load_oob = "FRE_cromwellian" }
+	}
+}
+
+country_event = { #Marxist Revolt
+	id = FRA.7
+	title = FRA.7.t
+	desc = FRA.7.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.7"}
+	picture = GFX_Unknown
+
+	immediate = {
+		hidden_effect = { 
+			FRE = {
+				transfer_state = 26
+				if = {
+					limit = {
+						NOT = { FRA = { has_country_flag = fra_ongoing_revolt } }
+							}
+					set_capital = 26
+					set_politics = { ruling_party = marxism }
+					create_country_leader = {
+					name = "Eugene Thomas"
+					desc = "POLITICS_EUGENE_THOMAS_DESC"
+					picture = "Portrait_FRE_Eugene_Thomas.dds"
+					expire = "1999.12.12"
+					ideology = marxism_subtype
+					traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.7.a
+		if = {
+			limit = {
+				NOT = {has_country_flag = fra_ongoing_revolt}
+				}
+				FRA = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			add_ideas = FRA_growing_discontent_1
+			activate_mission = FRA_growing_revolts_1
+		}
+		set_country_flag = fra_marxist_revolt
+		FRA_set_revolt_flag = yes
+		FRE = { load_oob = "FRE_marxism" }
+	}
+}
+
+country_event = { #Social Democrat Revolt
+	id = FRA.8
+	title = FRA.8.t
+	desc = FRA.8.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.8"}
+	picture = GFX_Unknown
+
+	immediate = {
+		hidden_effect = {
+			FRE = {
+				transfer_state = 23
+				if = {
+					limit = {
+						NOT = { FRA = { has_country_flag = fra_ongoing_revolt } }
+					}
+					set_politics = { ruling_party = liberalism }
+					set_capital = 23
+					create_country_leader = {
+						name = "Gilbert Renault"
+						desc = "POLITICS_GILBERT_RENAULT_DESC"
+						picture = "Portrait_FRE_Gilbert_Renault.dds"
+						expire = "1999.12.12"
+						ideology = liberalism_subtype
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.8.a
+		if = {
+			limit = {
+				NOT = {has_country_flag = fra_ongoing_revolt}
+				}
+				FRA = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			add_ideas = FRA_growing_discontent_1
+			activate_mission = FRA_growing_revolts_1
+		}
+		set_country_flag = fra_socdem_revolt
+		FRA_set_revolt_flag = yes
+		FRE = { load_oob = "FRE_SocDem" }
+	}
+}
+
+country_event = { #Liberals Revolt
+	id = FRA.9
+	title = FRA.9.t
+	desc = FRA.9.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.9"}
+	picture = GFX_Unknown
+
+	immediate = {
+		hidden_effect = {
+			FRE = {
+				transfer_state = 24
+				if = {
+					limit = {
+						NOT = { FRA = { has_country_flag = fra_ongoing_revolt } }
+					}
+					set_politics = { ruling_party = republicanism }
+					set_capital = 24
+					create_country_leader = {
+						name = "Philippe Leclerc de Hauteclocque"
+						desc = "POLITICS_PHILIPPE_HAUTECLOCQUE_DESC"
+						picture = "Portrait_FRE_Philippe_Leclerc_de_Hauteclocque.dds"
+						expire = "1999.12.12"
+						ideology = republicanism_subtype
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.9.a
+		if = {
+			limit = {
+				NOT = {has_country_flag = fra_ongoing_revolt}
+				}
+				FRA = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			add_ideas = FRA_growing_discontent_1
+			activate_mission = FRA_growing_revolts_1
+		}
+		set_country_flag = fra_liberal_revolt
+		FRA_set_revolt_flag = yes
+		FRE = { load_oob = "FRE_liberals" }
+	}
+}
+
+country_event = { #De Gaulle Revolt
+	id = FRA.10
+	title = FRA.10.t
+	desc = FRA.10.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.10"}
+	picture = GFX_Unknown
+
+	immediate = {
+		hidden_effect = {
+			FRE = {
+				transfer_state = 30
+				if = {
+					limit = {
+						NOT = { FRA = { has_country_flag = fra_ongoing_revolt } }
+					}
+					set_politics = { ruling_party = parliamentarianism }
+					set_capital = 30
+					create_country_leader = {
+						name = "Charles De Gaulle"
+						desc = "POLITICS_CHARLES_DEGAULLE_DESC"
+						picture = "Portrait_FRE_Charles_de_Gaulle_emperor.dds"
+						expire = "1999.12.12"
+						ideology = parliamentarianism_subtype
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.10.a
+		if = {
+			limit = {
+				NOT = {has_country_flag = fra_ongoing_revolt}
+				}
+				FRA = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			add_ideas = FRA_growing_discontent_1
+			activate_mission = FRA_growing_revolts_1
+		}
+		set_country_flag = fra_degaulle_revolt
+		FRA_set_revolt_flag = yes
+		FRE = { load_oob = "FRE_de_gaulle" }
+	}
+}
+
+country_event = { #Orleanists Revolt
+	id = FRA.11
+	title = FRA.11.t
+	desc = FRA.11.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.11"}
+	picture = GFX_Unknown
+
+	immediate = {
+		hidden_effect = {
+			FRE = {
+				transfer_state = 33
+				if = {
+					limit = {
+						NOT = { FRA = { has_country_flag = fra_ongoing_revolt } }
+					}
+					set_politics = { ruling_party = absolutism }
+					set_capital = 33
+					create_country_leader = {
+						name = "Henri VI"
+						desc = "POLITICS_FAKE_HENRI_VI_DESC"
+						picture = "Portrait_FRE_Henri_Louis_Philippe.dds"
+						expire = "1999.12.12"
+						ideology = absolutism_subtype
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.11.a
+		if = {
+			limit = {
+				NOT = {has_country_flag = fra_ongoing_revolt}
+				}
+				FRA = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			add_ideas = FRA_growing_discontent_1
+			activate_mission = FRA_growing_revolts_1
+		}
+		set_country_flag = fra_absolutism_revolt
+		FRA_set_revolt_flag = yes
+		FRE = { load_oob = "FRE_absolutists" }
+	}
+}
+
+country_event = { #Salan Revolt
+	id = FRA.12
+	title = FRA.12.t
+	desc = FRA.12.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.12"}
+	picture = GFX_report_event_france_French_Resistance
+
+	immediate = {
+		hidden_effect = {
+			FRE = {
+				transfer_state = 20
+				if = {
+					limit = {
+						NOT = { FRA = { has_country_flag = fra_ongoing_revolt } }
+					}
+					set_politics = { ruling_party = despotism }
+					set_capital = 20
+					create_country_leader = {
+						name = "Raoul Salan"
+						desc = "POLITICS_RAOUL_SALAN_DESC"
+						picture = "Portrait_FRE_Raoul_Salan.dds"
+						expire = "1999.12.12"
+						ideology = despotism_subtype
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.12.a
+		if = {
+			limit = {
+				NOT = {has_country_flag = fra_ongoing_revolt}
+				}
+				FRA = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			add_ideas = FRA_growing_discontent_1
+			activate_mission = FRA_growing_revolts_1
+		}
+		set_country_flag = fra_salan_revolt
+		FRA_set_revolt_flag = yes
+		FRE = { load_oob = "FRE_despotists" }
+	}
+}
+
+country_event = { #Dumbass revolt
+	id = FRA.13
+	title = FRA.13.t
+	desc = FRA.13.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.13"}
+	picture = GFX_Unknown
+
+	immediate = {
+		hidden_effect = {
+				FRE = {
+				transfer_state = 19
+				if = {
+					limit = {
+						NOT = { FRA = { has_country_flag = fra_ongoing_revolt } }
+					}
+					set_politics = { ruling_party = nationalism }
+					set_capital = 19
+					create_country_leader = {
+						name = "Maxime Blocq-Mascart"
+						desc = "POLITICS_MAXIME_MASCART_DESC"
+						picture = "Portrait_FRA_Bernard_Montgomery.dds"
+						expire = "1999.12.12"
+						ideology = nationalism_subtype
+						traits = {
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.13.a
+		if = {
+			limit = {
+				NOT = {has_country_flag = fra_ongoing_revolt}
+				}
+				FRA = {
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			add_ideas = FRA_growing_discontent_1
+			activate_mission = FRA_growing_revolts_1
+		}
+		set_country_flag = fra_dumbass_revolt
+		FRA_set_revolt_flag = yes
+		FRE = { load_oob = "FRE_who_cares" }
+	}
+}
+
+country_event = { #King George introduction
+	id = FRA.14
+	title = FRA.14.t
+	desc = FRA.14.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.14"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.14.a
+		add_political_power = -30
+		FRA_raise_unrest = yes
+	}
+}
+
+country_event = { #King goes on shopping spree in Paris
+	id = FRA.15
+	title = FRA.15.t
+	desc = FRA.15.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.15"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.15.a
+		add_political_power = -60
+		FRA_raise_unrest = yes
+	}
+}
+
+country_event = { #King rips up Versailles
+	id = FRA.16
+	title = FRA.16.t
+	desc = FRA.16.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.16"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.16.a
+		add_political_power = -60
+		add_stability = -0.05
+		FRA_raise_unrest = yes
+	}
+}
+
+country_event = { #Broke English nobles flood France
+	id = FRA.17
+	title = FRA.17.t
+	desc = FRA.17.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.17"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.17.a
+		add_political_power = -100
+		add_ideas = FRA_extragavent_court
+		FRA_raise_unrest = yes
+	}
+}
+
+country_event = { #Growing number of Dissappearences
+	id = FRA.18
+	title = FRA.18.t
+	desc = FRA.18.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.18"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.18.a
+		add_political_power = -100
+		add_stability = 0.05
+		add_ideas = FRA_extragavent_court
+		FRA_raise_unrest = yes
+	}
+}
+
+country_event = { #Democratic revolution starts
+	id = FRA.19
+	title = FRA.19.t
+	desc = FRA.19.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.19"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.19.a
+		add_political_power = -100
+		add_stability = -0.10
+		country_event = { id = FRA.20 days = 4 }
+	}
+}
+
+country_event = { #Garrison pulls back to Normandy
+	id = FRA.20
+	title = FRA.20.t
+	desc = FRA.20.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.19"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.20.a
+		add_political_power = -100
+		add_stability = -0.10
+		country_event = { id = FRA.21 days = 4 }
+		NOA = {
+			transfer_state = 15
+		}
+		ENG = {
+			puppet = NOA
+		}
+		NOA = {
+			set_politics = {
+				ruling_party = nationalism
+			}
+		}
+	}
+}
+
+country_event = { #King flees country, rebels proclaim republic
+	id = FRA.21
+	title = FRA.21.t
+	desc = FRA.21.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.19"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.21.a
+		retire_country_leader = yes
+		drop_cosmetic_tag = yes
+                leave_faction = yes
+		create_country_leader = {
+			name = "Leon Blum"
+			desc = "POLITICS_LEON_BLUM_DESC"
+			picture = "Portrait_FRA_Leon_Blum.dds"
+			expire = "1999.12.12"
+			ideology = liberalism_subtype
+			traits = {
+			}
+		}
+		set_politics = { ruling_party = liberalism }
+                load_focus_tree = RB_FRA_republic_starting_tree
+		add_political_power = 100
+		add_stability = 0.30
+		FRA_clear_ideas = yes
+		swap_ideas = {
+			remove_idea = british_econ_dominance
+			add_idea = british_econ_influence_idea
+		}
+		swap_ideas = {
+			remove_idea = strong_british_colony
+			add_idea = british_pol_independence
+		}
+		swap_ideas = {
+			remove_idea = british_colonial_force
+			add_idea = british_influenced_forces
+		}
+	}
+}
+
+country_event = { 
+	id = FRA.22
+	title = FRA.22.t
+	desc = FRA.22.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA.22"}
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA.22.a
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = republicanism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = absolutism
+			popularity = -0.05
+		}
+	}
+}
+
+
+add_namespace = henri
+
+country_event = { #Dealing with the Resistance
+	id = henri.1
+	title = henri.1.t
+	desc = henri.1.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event henri.1"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = henri.1.a
+		add_political_power = -10
+	}
+}
+
+country_event = { #Dealing with the British
+	id = henri.2
+	title = henri.2.t
+	desc = henri.2.d
+	immediate = { log = "[GetDateText]: [Root.GetName]: event henri.2" }
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = henri.2.a
+		add_political_power = -15
+	}
+}
+
+#country_event = {
+#	id = henri.3
+#	title = henri.3.t
+#	desc = henri.3.d
+#
+#	immediate = { log = "[GetDateText]: [Root.GetName]: event henri.2" }
+#	picture = GFX_Unknown
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = henri.3.a
+#		trigger = { has_country_flag = FRA_ministry_disbanded }
+#	}
+#
+#	option = {
+#
+#	}
+#}
+
+country_event = { #Anglo's depose Henri
+	id = henri.20
+	title = henri.20.t
+	desc = henri.20.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event henri.20"}
+	picture = GFX_Unknown
+
+	is_triggered_only = yes
+
+	option = {
+		name = henri.20.a
+	}
+}

@@ -1,0 +1,29 @@
+debug_category = {
+	ENG_succession_tree = {
+		visible = {
+			ENG = {
+				always = yes
+			}
+			original_tag = ENG
+		}
+		available = { always = yes }
+		fire_only_once = no
+		complete_effect = {
+			load_focus_tree = ENG_Eddie_Dead
+			complete_national_focus = ENG_The_Regicide_Of_A_Millenium
+		}
+	}
+	ENG_Henry_consolidation_tree = {
+		visible = {
+			ENG = {
+				always = yes
+			}
+			original_tag = ENG
+		}
+		available = { always = yes }
+		fire_only_once = no
+		complete_effect = {
+			load_focus_tree = ENG_Henry_IX_consolidation_tree
+		}
+	}
+}

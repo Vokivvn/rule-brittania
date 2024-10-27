@@ -1,0 +1,679 @@
+focus_tree = {
+	id = BLZ_intro_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BLZ
+		}
+	}
+	default = no
+
+	focus = {
+		id = BLZ_belize_defence_forces
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 8
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_belize_defence_forces"
+		}
+	}
+	focus = {
+		id = BLZ_conventional_development
+		icon = GFX_Generic_Rearmament
+		cost = 1
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_belize_defence_forces
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_conventional_development"
+		}
+	}
+	focus = {
+		id = BLZ_acquire_modern_rifles
+		icon = GFX_generic_advanced_weapons
+		cost = 1
+		x = 2
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_conventional_development
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_acquire_modern_rifles"
+		}
+	}
+	focus = {
+		id = BLZ_improve_logistics_companies
+		icon = GFX_Fix_Shitty_Rails
+		cost = 1
+		x = 1
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_acquire_modern_rifles
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_improve_logistics_companies"
+		}
+	}
+	focus = {
+		id = BLZ_train_engineer_companies
+		icon = GFX_Generic_Construction
+		cost = 1
+		x = 1
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_improve_logistics_companies
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_train_engineer_companies"
+		}
+	}
+	focus = {
+		id = BLZ_establish_maintenance_companies
+		icon = GFX_Soldiers_for_Workers
+		cost = 1
+		x = 1
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_train_engineer_companies
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_establish_maintenance_companies"
+		}
+	}
+	focus = {
+		id = BLZ_designate_radio_companies
+		icon = GFX_Generic_Radio_Broadcast
+		cost = 1
+		x = 1
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_establish_maintenance_companies
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_designate_radio_companies"
+		}
+	}
+	focus = {
+		id = BLZ_jungle_warfare
+		icon = GFX_VIN_Modern_Counterinsurgency
+		cost = 1
+		x = 2
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_designate_radio_companies
+			focus = BLZ_establish_hospitals
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_jungle_warfare"
+		}
+	}
+	focus = {
+		id = BLZ_introduce_radios
+		icon = GFX_goal_generic_radar
+		cost = 1
+		x = 3
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_acquire_modern_rifles
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_introduce_radios"
+		}
+	}
+	focus = {
+		id = BLZ_buy_new_artillery
+		icon = GFX_generic_artillery_warfare
+		cost = 1
+		x = 3
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_introduce_radios
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_buy_new_artillery"
+		}
+	}
+	focus = {
+		id = BLZ_motorize_troops
+		icon = GFX_goal_generic_army_motorized
+		cost = 1
+		x = 3
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_buy_new_artillery
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_motorize_troops"
+		}
+	}
+	focus = {
+		id = BLZ_establish_hospitals
+		icon = GFX_BEL_caritas
+		cost = 1
+		x = 3
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_motorize_troops
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_establish_hospitals"
+		}
+	}
+	focus = {
+		id = BLZ_outpost_initiative
+		icon = GFX_Through_the_Jungle
+		cost = 1
+		x = 5
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_overwhelming_firepower
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_outpost_initiative"
+		}
+	}
+	focus = {
+		id = BLZ_fortify_belize
+		icon = GFX_City_Forts
+		cost = 1
+		x = 5
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_outpost_initiative
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_fortify_belize"
+		}
+	}
+	focus = {
+		id = BLZ_fire_suport_bases
+		icon = GFX_doctrine_fire_superiority
+		cost = 1
+		x = 5
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_fortify_belize
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_fire_suport_bases"
+		}
+	}
+	focus = {
+		id = BLZ_overwhelming_firepower
+		icon = GFX_RAJ_rifles_guns_cannons
+		cost = 1
+		x = 6
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_conventional_development
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_overwhelming_firepower"
+		}
+	}
+	focus = {
+		id = BLZ_special_forces_initiative
+		icon = GFX_Into_the_Flames_of_Glory
+		cost = 1
+		x = 7
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_overwhelming_firepower
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_special_forces_initiative"
+		}
+	}
+	focus = {
+		id = BLZ_rapid_response_teams
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 7
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_special_forces_initiative
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_rapid_response_teams"
+		}
+	}
+	focus = {
+		id = BLZ_extreme_enviorment_training
+		icon = GFX_Generic_Mountain_Warfare
+		cost = 1
+		x = 7
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_rapid_response_teams
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_extreme_enviorment_training"
+		}
+	}
+	focus = {
+		id = BLZ_refine_our_doctrine
+		icon = GFX_A_Stronger_Military
+		cost = 1
+		x = 6
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_extreme_enviorment_training
+			focus = BLZ_fire_suport_bases
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_refine_our_doctrine"
+		}
+	}
+	focus = {
+		id = BLZ_incendiary_warfare
+		icon = GFX_Focus_belize_science_fire_equipment
+		cost = 1
+		x = 9
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_hire_livens
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_incendiary_warfare"
+		}
+	}
+	focus = {
+		id = BLZ_firebomb_jungle
+		icon = GFX_VIN_Napalm_Runs
+		cost = 1
+		x = 9
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_incendiary_warfare
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_firebomb_jungle"
+		}
+	}
+	focus = {
+		id = BLZ_introduce_napalm
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 9
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_firebomb_jungle
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_introduce_napalm"
+		}
+	}
+	focus = {
+		id = BLZ_introduce_agent_orange
+		icon = GFX_Focus_belize_science_plant_kill
+		cost = 1
+		x = 10
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_introduce_napalm
+			focus = BLZ_utilize_defoliants
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_introduce_napalm"
+		}
+	}
+	focus = {
+		id = BLZ_hire_livens
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 10
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_shoestring_counterinsurgency
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_hire_livens"
+		}
+	}
+	focus = {
+		id = BLZ_belizean_z_company
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 11
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_hire_livens
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_belizean_z_company"
+		}
+	}
+	focus = {
+		id = BLZ_improve_livens_projector
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 11
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_belizean_z_company
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_improve_livens_projector"
+		}
+	}
+	focus = {
+		id = BLZ_utilize_defoliants
+		icon = GFX_Focus_belize_science_plant_poison
+		cost = 1
+		x = 11
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_improve_livens_projector
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_utilize_defoliants"
+		}
+	}
+	focus = {
+		id = BLZ_shoestring_counterinsurgency
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 12
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_belize_defence_forces
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_shoestring_counterinsurgency"
+		}
+	}
+	focus = {
+		id = BLZ_directorate_psychological_warfare
+		icon = GFX_Generic_Intelligence_Gathering
+		cost = 1
+		x = 13
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_protected_villages_scheme
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_directorate_psychological_warfare"
+		}
+	}
+	focus = {
+		id = BLZ_agar_group
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 13
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_directorate_psychological_warfare
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_agar_group"
+		}
+	}
+	focus = {
+		id = BLZ_acquire_indigenous_approval
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 13
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_agar_group
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_acquire_indigenous_approval"
+		}
+	}
+	focus = {
+		id = BLZ_protected_villages_scheme
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 14
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_shoestring_counterinsurgency
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_protected_villages_scheme"
+		}
+	}
+	focus = {
+		id = BLZ_create_defence_force_auxilaries
+		icon = GFX_Generic_Colonial_Army
+		cost = 1
+		x = 14
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_develop_trust_territories
+			focus = BLZ_acquire_indigenous_approval
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_create_defence_force_auxilaries"
+		}
+	}
+	focus = {
+		id = BLZ_establish_cordon_sanitaire
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 15
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_protected_villages_scheme
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_establish_cordon_sanitaire"
+		}
+	}
+
+	focus = {
+		id = BLZ_cross_border_raids
+		icon = GFX_Jungle_Warfare
+		cost = 1
+		x = 15
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_establish_cordon_sanitaire
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_cross_border_raids"
+		}
+	}
+	focus = {
+		id = BLZ_develop_trust_territories
+		icon = GFX_RAJ_Establish_Village_Schools
+		cost = 1
+		x = 15
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = BLZ_cross_border_raids
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: BLZ_develop_trust_territories"
+		}
+	}
+}

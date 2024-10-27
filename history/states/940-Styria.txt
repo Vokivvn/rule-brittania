@@ -1,0 +1,22 @@
+
+state={
+	id=940
+	name="STATE_940"
+
+	history={
+		owner = AUS
+		add_core_of = AUS
+		buildings = {
+			infrastructure = 7
+
+		}
+
+	}
+
+	provinces={
+		6687 6691 9648 9650 9679 
+	}
+	manpower=1402952
+	buildings_max_level_factor=1.000
+	state_category=city
+}

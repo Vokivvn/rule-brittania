@@ -1,0 +1,22 @@
+##################
+#1700 SEA SHANTIES#
+##################
+
+sound =
+{
+	name = "horn_blast"
+	file = "horn_blast.wav"
+
+}
+sound =
+{
+	name = "jackass"
+	file = "jackass.wav"
+
+}
+sound =
+{
+	name = "george_died"
+	file = "george_jackass.wav"
+
+}

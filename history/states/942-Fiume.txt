@@ -1,0 +1,18 @@
+
+state={
+	id=942
+	name="STATE_942"
+	provinces={
+		591 984 3601 6611 11564 11901 
+	}
+	history = {
+		owner = HUN
+		add_core_of = HUN
+		buildings = {
+			infrastructure = 7
+		}
+	}
+	state_category = city
+	manpower=69666
+	buildings_max_level_factor=1.000
+}

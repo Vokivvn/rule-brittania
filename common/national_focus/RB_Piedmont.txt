@@ -1,0 +1,15 @@
+## Piedmont-by-the-sea ##
+
+focus_tree = {
+    id = PIE_Starting_Tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PIE
+        }
+    }
+    default = no
+    shared_focus = PIE_ocean_blue
+    continuous_focus_position = { x = 50 y = 2000}
+}

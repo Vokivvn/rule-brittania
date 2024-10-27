@@ -1,0 +1,23 @@
+
+state={
+	id=556
+	name="STATE_556" # Mali (previously French West Africa)
+	manpower = 3324782
+	
+	state_category = rural
+
+	history={
+		owner = SIE
+		add_core_of = SIE
+		victory_points = {
+			4927 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		4927 5045 7983 12751 12794
+	}
+}

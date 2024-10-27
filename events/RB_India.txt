@@ -1,0 +1,56 @@
+﻿################
+##INDIA EVENTS##
+################
+
+add_namespace = india
+
+country_event = { #intro
+	id = india.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event india.1"}
+	title = india.1.t
+	desc = india.1.desc
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = india.1.a
+	}
+}
+
+country_event = { #av missing
+	id = india.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event india.2"}
+	title = india.2.t
+	desc = india.2.desc
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = india.2.a
+		hidden_effect = {
+			load_focus_tree = RAJ_AV_Gone
+			complete_national_focus = RAJ_The_Viceroy_of_India_is_Missing
+		}
+	}
+}
+
+country_event = { #india office is screaming at each other
+	id = india.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event india.3"}
+	title = india.3.t
+	desc = india.3.desc
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = india.3.a
+		add_stability = -0.15
+		add_political_power = -50
+	}
+}

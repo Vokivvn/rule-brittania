@@ -1,0 +1,33 @@
+
+state={
+	id=366
+	name="STATE_366"
+	manpower = 752516
+	
+	state_category = large_town
+
+	history={
+		owner = FLO
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			air_base = 8
+			1572 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = FLO
+		victory_points = {
+			10407 5
+		}
+		victory_points = {
+			12381 10
+		}
+
+	}
+
+	provinces={
+		1556 1572 1584 10407 12353 12381 12439 
+	}
+	
+}

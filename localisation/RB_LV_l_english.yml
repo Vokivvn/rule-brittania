@@ -1,0 +1,64 @@
+﻿l_english:
+ ##Leader Descs##
+
+ ##Country Names##
+ MMV_cromwellianism:0 "Lombard-Venetian Kingdom"
+ MMV_cromwellianism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_marxism:0 "Lombard-Venetian Kingdom"
+ MMV_marxism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_liberalism:0 "Lombard-Venetian Kingdom"
+ MMV_liberalism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_republicanism:0 "Lombard-Venetian Kingdom"
+ MMV_republicanism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_parliamentarianism:0 "Lombard-Venetian Kingdom"
+ MMV_parliamentarianism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_administrationism:0 "Lombard-Venetian Kingdom"
+ MMV_administrationism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_absolutism:0 "Lombard-Venetian Kingdom"
+ MMV_absolutism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_despotism:0 "Lombard-Venetian Kingdom"
+ MMV_despotism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_nationalism:0 "Lombard-Venetian Kingdom"
+ MMV_nationalism_DEF:0 "The Lombard-Venetian Kingdom"
+ MMV_cromwellianism_ADJ:0 "Lombard-Venetian"
+ MMV_marxism_ADJ:0 "Lombard-Venetian"
+ MMV_liberalism_ADJ:0 "Lombard-Venetian"
+ MMV_republicanism_ADJ:0 "Lombard-Venetian"
+ MMV_parliamentarianism_ADJ:0 "Lombard-Venetian"
+ MMV_administrationism_ADJ:0 "Lombard-Venetian"
+ MMV_despotism_ADJ:0 "Lombard-Venetian"
+ MMV_nationalism_ADJ:0 "Lombard-Venetian"
+
+ ##Party Names##
+ MMV_liberalism_party:0 "AdCV"
+ MMV_liberalism_party_long:0 "Assemblea della Città Veneto"
+ MMV_republicanism_party:0 "AdV"
+ MMV_republicanism_party_long:0 "Assemblea di Venezia"
+ MMV_parliamentarianism_party:0 "AdM"
+ MMV_parliamentarianism_party_long:0 "Assemblea di Milano"
+ MMV_administrationism_party:0 "AR"
+ MMV_administrationism_party_long:0 "Assemblea Riformista"
+ MMV_absolutism_party:0 "Dieta Italiana"
+ MMV_absolutism_party_long:0 "Dieta Italiana"
+ MMV_despotism_party:0 "PGf"
+ MMV_despotism_party_long:0 "Parte Guelfa"
+ MMV_nationalism_party:0 "AdCL"
+ MMV_nationalism_party_long:0 "Assemblea della Città Lombarde"
+
+ ##Cosemtic Tags##
+
+
+ ##Tooltips##
+
+
+ ##Ideas##
+ MMV_Kingdom_Under_Austria:0 "The Kingdom Under Austria"
+ MMV_Crown_Comuni:0 "The Crown and the Comuni"
+ MMV_Guelph_Rebellion:0 "Guelph Rebellion"
+
+ ##Events##
+
+
+ ##Focuses##
+
+ #Starting Tree#

@@ -1,0 +1,68 @@
+ideas = {
+	country = {
+		TEM_Military_With_A_State = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEM_Military_With_A_State"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture =
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		TEM_Multicultural_Hub = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEM_Multicultural_Hub"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture =
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.30
+				war_support_factor = 0.20
+			}
+		}
+		TEM_Legacies_Of_Serbian_War = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TEM_Legacies_Of_Serbian_War"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture =
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.25
+				production_factory_max_efficiency_factor = -0.25
+				consumer_goods_factor = 0.20
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		ANG_portugese_colony = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ANG_portugese_colony"}
+			allowed = { always = no }
+			picture = GFX_idea_ANG_portugese_colony
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+			}	
+			targeted_modifier = {
+				tag = POR
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+				cic_to_target_factor = 0.5
+			}
+		}
+	}
+}

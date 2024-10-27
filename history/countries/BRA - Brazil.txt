@@ -1,0 +1,129 @@
+﻿capital = 500
+
+set_research_slots = 1
+
+set_stability = 0.5
+set_war_support = 0.2
+
+add_ideas = {
+	bra_king_coffee
+	bra_labour_unrest
+	bra_none_dominant
+}
+
+set_cosmetic_tag = BRA_ENG
+set_country_flag = intro_tree
+
+set_politics = {
+	ruling_party = despotism
+	election_frequency = 24
+	elections_allowed = no	
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 20
+    liberalism = 0
+    republicanism = 21
+    parliamentarianism = 0
+    administrationism = 27
+    absolutism = 0
+    despotism = 19
+    nationalism = 13
+}
+
+create_country_leader = {
+	name = "William Seeds"
+	desc = "POLITICS_WILLIAM_SEEDS_DESC"
+	picture = "Portrait_BRA_William_Seeds.dds"
+	expire = "1973.11.2"
+	ideology = despotism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Bernadino Machado"
+	desc = "POLITICS_BERNADINO_MACHADO_DESC"
+	picture = "Portrait_BRA_Bernardino_Machado.dds"
+	expire = "1973.11.2"
+	ideology = administrationism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ademar de Barros"
+	desc = "POLITICS_ADEMAR_BARROS_DESC"
+	#picture = "Portrait_BRA_Ademar_Barros.dds"
+	expire = "1973.11.2"
+	ideology = progressivism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Armando de Sales"
+	desc = "POLITICS_ARMANDO_SALES_DESC"
+	#picture = "Portrait_BRA_Armando_Sales.dds"
+	expire = "1973.11.2"
+	ideology = republicanism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Luís Carlos Prestes"
+	desc = "POLITICS_LUIZ_CARLOS_PRESTES_DESC"
+	picture = "Portrait_BRA_Luiz_Prestes.dds"
+	expire = "1973.11.2"
+	ideology = marxism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Getúlio Vargas"
+	desc = "POLITICS_GETULIO_VARGAS_DESC"
+	picture = "Portrait_BRA_Getulio_Vargas.dds"
+	expire = "1973.11.2"
+	ideology = nationalism_subtype
+	traits = {
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}

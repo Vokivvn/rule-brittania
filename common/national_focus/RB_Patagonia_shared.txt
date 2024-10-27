@@ -1,0 +1,184 @@
+################
+##OPENING TREE##
+################
+shared_focus = {
+	id = PAT_on_the_rocky_frontier
+	icon = GFX_BFE_Rising_Sun
+	cost = 2
+
+    x = 7
+    y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_on_the_rocky_frontier"
+		country_event = { id = pat.4 }
+	}
+}
+shared_focus = {
+	id = PAT_the_scottish_calm
+	icon = GFX_BFE_Rising_Sun
+	prerequisite = { focus = PAT_on_the_rocky_frontier }
+	cost = 2
+
+	x = 0
+	y = 1
+	relative_position_id = PAT_on_the_rocky_frontier
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_the_scottish_calm"
+		country_event = { id = pat.5 }
+	}
+}
+shared_focus = {
+	id = PAT_the_angry_welshman
+	icon = GFX_BFE_Rising_Sun
+	prerequisite = { focus = PAT_the_scottish_calm }
+	cost = 2
+
+	x = -3
+	y = 1
+	relative_position_id = PAT_the_scottish_calm
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_the_angry_welshman"
+		country_event = { id = pat.6 }
+	}
+}
+shared_focus = {
+	id = PAT_the_proud_german
+	icon = GFX_BFE_Rising_Sun
+	prerequisite = { focus = PAT_the_scottish_calm }
+	cost = 2
+
+	x = -1
+	y = 1
+	relative_position_id = PAT_the_scottish_calm
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_the_proud_german"
+		country_event = { id = pat.7 }
+	}
+}
+shared_focus = {
+	id = PAT_the_violent_irish
+	icon = GFX_BFE_Rising_Sun
+	prerequisite = { focus = PAT_the_scottish_calm }
+	cost = 2
+
+	x = 1
+	y = 1
+	relative_position_id = PAT_the_scottish_calm
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_the_violent_irish"
+		country_event = { id = pat.8 }
+	}
+}
+shared_focus = {
+	id = PAT_the_peaceful_savages
+	icon = GFX_BFE_Rising_Sun
+	prerequisite = { focus = PAT_the_scottish_calm }
+	cost = 2
+
+	x = 3
+	y = 1
+	relative_position_id = PAT_the_scottish_calm
+
+	completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PAT_the_angry_welshman"
+		country_event = { id = pat.9 }
+	}
+}
+shared_focus = {
+	id = PAT_the_agenda
+	icon = GFX_BFE_Rising_Sun
+	prerequisite = { focus = PAT_the_angry_welshman }
+	cost = 2
+
+	x = 1
+	y = 1
+	relative_position_id = PAT_the_angry_welshman
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_the_agenda"
+		country_event = { id = pat.10 }
+	}
+}
+shared_focus = {
+	id = PAT_terror_and_apathy
+	icon = GFX_BFE_Rising_Sun
+	prerequisite = { focus = PAT_the_proud_german }
+	prerequisite = { focus = PAT_the_violent_irish }
+	cost = 2
+
+	x = 1
+	y = 1
+	relative_position_id = PAT_the_proud_german
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_terror_and_apathy"
+		country_event = { id = pat.11}
+	}
+}
+shared_focus = {
+	id = PAT_not_so_peaceful
+	prerequisite = { focus = PAT_the_peaceful_savages}
+	icon = GFX_BFE_Rising_Sun
+	cost = 2
+
+	x = -1
+	y = 1
+	relative_position_id = PAT_the_peaceful_savages
+	completion_reward = { 
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_the_angry_welshman"
+		country_event = { id = pat.12 }
+	}
+}
+shared_focus = {
+	id = PAT_all_alone
+	prerequisite = { focus = PAT_not_so_peaceful }
+	prerequisite = { focus = PAT_terror_and_apathy }
+	prerequisite = { focus = PAT_the_agenda }
+	icon = GFX_BFE_Rising_Sun
+	cost = 2
+	
+	x = 1
+	y = 1
+	relative_position_id = PAT_the_agenda
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_all_alone"
+		country_event = { id = pat.13 }
+	 }
+}
+shared_focus = {
+	id = PAT_at_the_end_of_the_world
+	prerequisite = { focus = PAT_not_so_peaceful }
+	prerequisite = { focus = PAT_terror_and_apathy }
+	prerequisite = { focus = PAT_the_agenda }
+	icon = GFX_BFE_Rising_Sun
+	cost = 2
+	
+	x = -1
+	y = 1
+	relative_position_id = PAT_not_so_peaceful
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_at_the_end_of_the_world"
+		country_event = { id = pat.14 }
+	 }
+}
+shared_focus = {
+	id = PAT_no_unity
+	prerequisite = { focus = PAT_all_alone }
+	prerequisite = { focus = PAT_at_the_end_of_the_world }
+	icon = GFX_BFE_Rising_Sun
+	cost = 2
+	
+	x = 1
+	y = 1
+	relative_position_id = PAT_all_alone
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PAT_no_unity"
+		country_event = { id = pat.15 }
+	 }
+}
+ 	

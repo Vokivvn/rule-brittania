@@ -1,0 +1,29 @@
+state={
+	id=906
+	name="STATE_906"
+	provinces={
+		6222 9240 9317 9340 
+	}
+	resources={ steel=1.000 }
+	
+
+	history={
+		owner = RIG
+		add_core_of = RIG
+
+		victory_points = { 9340 5 }
+
+		buildings = {
+			9340 = { naval_base = 3 }
+
+			air_base = 1
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+
+	manpower=675464
+	buildings_max_level_factor=1.000
+	state_category=city
+}

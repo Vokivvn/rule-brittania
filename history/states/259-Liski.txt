@@ -1,0 +1,34 @@
+
+state={
+	id=259
+	name="STATE_259"
+
+	history={
+		victory_points = {
+			11504 10
+		}
+		victory_points = {
+			6495 5
+		}
+		victory_points = {
+			9519 2
+		}
+		victory_points = {
+			11530 3
+		}
+		owner = UKR
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = UKR
+
+	}
+
+	provinces={
+		511 559 3508 3531 3557 6495 6507 6578 6605 9413 9463 9479 9491 9519 11452 11504 11530
+	}
+	manpower=1442584
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

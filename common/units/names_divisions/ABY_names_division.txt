@@ -1,0 +1,21 @@
+﻿ABY_INF_01 = {
+	name = "Royal Abysinnian Infantry Division"
+
+	for_countries = { ABY ETH }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Royal Abyssinian Infantry"
+
+	ordered = {
+		1 = { "Royal Abyssinian Infantry" }
+		2 = { "2nd Royal Abyssinian Infantry Divison" }
+		3 = { "Royal Abyssinian Infantry" }
+		4 = { "Royal Abyssinian Infantry" }
+		5 = { "5th Royal Abyssinian Division" }
+		6 = { "Royal Abyssinian Infantry" }
+		7 = { "Royal Abyssinian Infantry" }
+	}
+}

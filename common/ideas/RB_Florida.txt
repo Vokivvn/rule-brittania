@@ -1,0 +1,45 @@
+ideas = {
+	country = {
+		FLO_Backwater_Colony = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FLO_Backwater_Colony"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = ENG
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+				cic_to_target_factor = 0.5
+			}
+		}
+		FLO_Citrus_Based_Economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FLO_Citrus_Based_Economy"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				conscription_factor = -0.05
+				production_speed_arms_factory_factor = -0.25
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_dockyard_factor = -0.25
+			}
+		}
+		FLO_Home_Of_The_Seminoles = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FLO_Home_Of_The_Seminoles"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				heat_attrition_factor = 0.10
+			}
+		}
+	}
+}

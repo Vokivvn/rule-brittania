@@ -1,0 +1,30 @@
+#########################
+### Tsardom of Russia ###
+#########################
+RUS_debug = {
+	picture = GFX_RUS_decision_Tsardom
+	
+	allowed = {
+		original_tag = RUS
+	}
+	
+	visible_when_empty = yes
+	
+	priority = {
+		base = 15
+	}
+}
+
+RUS_tsardom_category = {	
+	picture = GFX_RUS_decision_Tsardom
+	
+	allowed = {
+		original_tag = RUS
+	}
+	
+	visible_when_empty = yes
+	
+	priority = {
+		base = 10
+	}
+}

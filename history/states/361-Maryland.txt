@@ -1,0 +1,32 @@
+
+state={
+	id=361
+	name="STATE_361"
+
+	history={
+		owner = CNA
+		victory_points = {
+			6984 20 
+		}
+		victory_points = {
+			9758 5
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+			dockyard = 1
+			air_base = 6
+			6984 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = CNA
+	}
+
+	provinces={
+		3917 3957 6892 6929 6984 9758 9786 11892 
+	}
+	manpower=2118394
+	buildings_max_level_factor=1.000
+	state_category=city
+}

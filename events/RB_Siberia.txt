@@ -1,0 +1,934 @@
+﻿###############
+##SIBERIAN EVENTS##
+###############
+
+add_namespace = sib
+
+
+
+country_event = { #Keynes writes a paper
+	id = sib.1
+	title = sib.1.t
+	desc = sib.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.1"}
+	picture = GFX_report_event_carl_hayden_two
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.1.a
+		create_country_leader = {
+			name = "Carl Hayden"
+			desc = "HAYDEN_DESC"
+			picture = "Portrait_SIB_The_Judge.dds"
+			expire = "1999.12.12"
+			ideology = despotism_subtype
+			traits = {
+				the_judge
+			}
+		}
+		set_country_flag = the_judge_arrived
+	}
+}
+
+country_event = { #Keynes writes a paper
+	id = sib.2
+	title = sib.2.t
+	desc = sib.2.desc
+	picture = GFX_report_event_hunt
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.2"
+
+		hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 30
+				producer = SIB
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 10
+				producer = SIB
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 60
+				producer = SIB
+			}
+			AAN = {
+				transfer_state = 653
+				transfer_state = 573
+				transfer_state = 572
+				transfer_state = 582
+				transfer_state = 583
+				add_state_core = 653
+				add_state_core = 573
+				add_state_core = 572
+				add_state_core = 582
+				add_state_core = 583
+				add_state_core = 568
+				add_state_core = 567
+				add_state_core = 576
+				add_state_core = 569
+				add_state_core = 579
+				add_state_core = 516
+				add_state_core = 581
+				add_state_core = 580
+				add_state_core = 403
+				add_state_core = 571
+				add_state_core = 590
+				add_state_core = 40
+				add_state_core = 578
+				add_state_core = 570
+				add_state_core = 577
+				add_state_core = 654
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_1
+					amount = 30
+					producer = AAN
+				}
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment_0
+					amount = 10
+					producer = AAN
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 60
+					producer = AAN
+				}
+
+				load_oob = SIB_eurasian_divs
+			}
+			SSD = {
+				transfer_state = 568
+				transfer_state = 567
+				transfer_state = 576
+				transfer_state = 569
+				transfer_state = 654
+				add_state_core = 653
+				add_state_core = 573
+				add_state_core = 572
+				add_state_core = 582
+				add_state_core = 583
+				add_state_core = 568
+				add_state_core = 567
+				add_state_core = 576
+				add_state_core = 569
+				add_state_core = 579
+				add_state_core = 516
+				add_state_core = 581
+				add_state_core = 580
+				add_state_core = 403
+				add_state_core = 571
+				add_state_core = 590
+				add_state_core = 40
+				add_state_core = 578
+				add_state_core = 570
+				add_state_core = 577
+				add_state_core = 654
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_1
+					amount = 30
+					producer = SSD
+				}
+				add_equipment_to_stockpile = {
+					type = tac_bomber_equipment_0
+					amount = 10
+					producer = SSD
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 60
+					producer = SSD
+				}
+				hidden_effect = {
+					load_oob = SIB_green_divs
+					add_manpower = 100000
+				}
+			}
+			RLC = {
+				transfer_state = 579
+				transfer_state = 516
+				transfer_state = 581
+				transfer_state = 580
+				transfer_state = 577
+				hidden_effect = {
+					add_state_core = 653
+					add_state_core = 573
+					add_state_core = 572
+					add_state_core = 582
+					add_state_core = 583
+					add_state_core = 568
+					add_state_core = 567
+					add_state_core = 576
+					add_state_core = 569
+					add_state_core = 579
+					add_state_core = 516
+					add_state_core = 581
+					add_state_core = 580
+					add_state_core = 403
+					add_state_core = 571
+					add_state_core = 590
+					add_state_core = 40
+					add_state_core = 578
+					add_state_core = 570
+					add_state_core = 577
+					add_state_core = 654
+					add_manpower = 100000
+					country_event = {
+						id = sib.19
+						days = 365
+					}
+					add_equipment_to_stockpile = {
+						type = CAS_equipment_1
+						amount = 30
+						producer = RLC
+					}
+					add_equipment_to_stockpile = {
+						type = tac_bomber_equipment_0
+						amount = 10
+						producer = RLC
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = 60
+						producer = RLC
+					}
+				}
+				declare_war_on = {
+					target = SIB
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = AAN
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SSD
+					type = annex_everything
+				}
+				load_oob = SIB_grey_divs
+				load_oob = SIB_grey_divs
+				SSD = {
+					declare_war_on = {
+						target = SIB
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = AAN
+						type = annex_everything
+					}
+				}
+				AAN = {
+					declare_war_on = {
+						target = SIB
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.2.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = { #epic
+		name = sib.2.b
+		AAN = { change_tag_from = ROOT }
+	}
+	option = { #epic
+		name = sib.2.c
+		RLC = { change_tag_from = ROOT }
+
+	}
+	option = { #epic
+		name = sib.2.d
+		SSD = { change_tag_from = ROOT }
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.3
+	title = sib.3.t
+	desc = sib.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.3"}
+	picture = GFX_report_event_england_rule_britannia
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.3.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.4
+	title = sib.4.t
+	desc = sib.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.4"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.4.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.5
+	title = sib.5.t
+	desc = sib.5.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.5"}
+	picture = GFX_report_event_pack_of_docs
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.5.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.6
+	title = sib.6.t
+	desc = sib.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.6"}
+	picture = GFX_report_event_pack_of_docs
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.6.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.7
+	title = sib.7.t
+	desc = sib.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.7"}
+	picture = GFX_report_event_pack_of_docs
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.7.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.8
+	title = sib.8.t
+	desc = sib.8.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.8"}
+	picture = GFX_report_event_pack_of_docs
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.8.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.9
+	title = sib.9.t
+	desc = sib.9.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.9"}
+	picture = GFX_report_event_pack_of_docs
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.9.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.10
+	title = sib.10.t
+	desc = sib.10.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.10"}
+	picture = GFX_report_event_pack_of_docs
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.10.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.11
+	title = sib.11.t
+	desc = sib.11.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.11"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.11.a
+		country_event = {
+			id = sib.14
+			days = 3
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.12
+	title = sib.12.t
+	desc = sib.12.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.12"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.12.a
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.13
+	title = sib.13.t
+	desc = sib.13.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.13"}
+	picture = GFX_report_event_blood_splatter
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.13.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Provisional Authority"
+			#desc =
+			picture = "Portrait_ENG_Interregnum.dds"
+			expire = "1999.12.12"
+			ideology = despotism_subtype
+			traits = {
+
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = sib.1
+				days = 7
+			}
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.14
+	title = sib.14.t
+	desc = sib.14.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.14"}
+	picture = GFX_report_event_hunt
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sib.15
+				days = 3
+			}
+		}
+	}
+
+	option = { #epic
+		name = "Just send him to Moscow. We don't need to spend extra money."
+		set_country_flag = youdonefuckedup
+		ai_chance = {
+			factor = 40
+		}
+	}
+	option = { #epic
+		name = "Send him to Austria. It should be pretty far from us."
+		ai_chance = {
+			factor = 70
+		}
+		add_political_power = -30
+	}
+	option = { #epic
+		name = "If he wants to study French culture, just send him to Paris."
+		ai_chance = {
+			factor = 70
+		}
+		add_political_power = -60
+	}
+	option = { #epic
+		name = "America. I don't want to hear anything from him anymore."
+		ai_chance = {
+			factor = 70
+		}
+		add_political_power = -90
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.15
+	title = "Getting Rid Of The Oligarch"
+	desc = "Felix Yusupov still possesses a gigantic threat us. Recently, his men proposed us to make some economic and political concessions in order to stabilise the country. The High Comission stays silent."
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.15"}
+	picture = GFX_report_event_hunt
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sib.16
+				days = 3
+			}
+		}
+	}
+
+	option = { #epic
+		name = "Alright, why shouldn't we make some concessions?"
+		set_country_flag = youdonefuckedup
+		ai_chance = {
+			factor = 40
+		}
+		add_stability = 0.05
+		custom_effect_tooltip = sibyutt
+	}
+	option = { #epic
+		name = "We don't need any Ruskie oligarchs intefering in our buisness."
+		ai_chance = {
+			factor = 70
+		}
+		add_stability = -0.1
+		add_war_support = -0.2
+	}
+
+
+}
+country_event = { #Keynes writes a paper
+	id = sib.16
+	title = "A Free Ticket To Freedom"
+	desc = "Fortunately for us, Ustryalov is heard to be running to Magadan. We don't know what he wants to do there, but now we don't even have to bother with him, as he has no actual power to actually do something."
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.16"}
+	picture = GFX_report_event_hunt
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sib.17
+				days = 3
+			}
+		}
+	}
+	option = { #epic
+		name = "We didn't need him anyway."
+		add_political_power = 10
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+
+country_event = { #Keynes writes a paper
+	id = sib.17
+	title = "The Last Deal"
+	desc = "We still have Gil, rotting in the prison. He doesn't confess to anything, and it's actually better to just get rid of him to show other people that treason will not be tolerated. The High Commission- hell, why do even need the High Commission for this?"
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.17"}
+	picture = GFX_report_event_hunt
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = sib.18
+				days = 3
+			}
+		}
+	}
+	option = { #epic
+		name = "Execute him immediately."
+		ai_chance = {
+			factor = 70
+		}
+		add_political_power = 100
+	}
+	option = { #epic
+		name = "Let him stay in prison for further interrogation. He might be useful."
+		ai_chance = {
+			factor = 40
+		}
+		set_country_flag = youdonefuckedup
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.18
+	title = "Our Mission Completed"
+	desc = "Now, with most of our issues being resolved, it's now time to reap the fruits we put..."
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.18"}
+	picture = GFX_report_event_hunt
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "Hurray to the Sheriff!"
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.5
+		}
+		trigger = {
+			NOT = {
+				has_country_flag = youdonefuckedup
+			}
+		}
+		set_country_flag = successfully_not_fucked_up
+	}
+	option = { #epic
+		name = "...Wait a second, I heard something-"
+		trigger = {
+			has_country_flag = youdonefuckedup
+		}
+		hidden_effect = {
+			country_event = sib.2
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.19
+	title = sib.19.t
+	desc = sib.19.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.19"}
+	picture = GFX_report_event_hunt
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.19.a
+		remove_ideas = RLC_Salekhard_Arsenal
+		add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 2000
+			producer = SSD
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 2000
+			producer = SSD
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 5000
+			producer = SSD
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 500
+			producer = SSD
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_1
+			amount = 2500
+			producer = SSD
+		}
+		add_equipment_to_stockpile = {
+			type = CAS_equipment_1
+			amount = 300
+			producer = SSD
+		}
+		add_equipment_to_stockpile = {
+			type = tac_bomber_equipment_0
+			amount = 50
+			producer = SSD
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 300
+			producer = SSD
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.20
+	title = sib.20.t
+	desc = sib.20.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.20"}
+	picture = GFX_report_event_hunt
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.20.a
+		hidden_effect = {
+			country_event = {
+				id = sib.21
+				days = 3
+			}
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.21
+	title = sib.21.t
+	desc = sib.21.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.21"}
+	picture = GFX_report_event_the_duel
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.21.a
+		hidden_effect = {
+			country_event = {
+				id = sib.22
+				days = 3
+			}
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.22
+	title = sib.22.t
+	desc = sib.22.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.22"}
+	picture = GFX_report_event_the_duel
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "With one swift stroke, Siberia's future is secured once and for all."
+		add_country_leader_trait = the_sheriff
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.23
+	title = "Siberian Land Exchange Proposal"
+	desc = "Siberian officials have come to a proposal to your governments. They want to take lands north of former Viceroyality of Kwantung and help with bandirty ravaging these lands."
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.23"}
+	picture = GFX_report_event_the_duel
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "Yes, initiate the discussion."
+		country_event = {
+			id = sib.24
+			days = 3
+		}
+		ai_chance = {
+			factor = 65
+		}
+	}
+	option = { #epic
+		name = "We don't need Siberians in our lands."
+		country_event = {
+			id = sib.25
+			days = 3
+		}
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.24
+	title = "Eastport Accepts Proposal!"
+	desc = "The administration of Eastport has accepted our ofter. Territory exchange will begin soon."
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.24"}
+	picture = GFX_report_event_the_duel
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "We knew that they would be rational."
+		transfer_state = 566
+		transfer_state = 575
+		transfer_state = 644
+		transfer_state = 565
+		transfer_state = 568
+		transfer_state = 564
+		transfer_state = 563
+		transfer_state = 574
+		transfer_state = 562
+		transfer_state = 637
+		transfer_state = 655
+		transfer_state = 537
+
+		add_state_core = 566
+		add_state_core = 575
+		add_state_core = 644
+		add_state_core = 565
+		add_state_core = 568
+		add_state_core = 564
+		add_state_core = 563
+		add_state_core = 574
+		add_state_core = 562
+		add_state_core = 637
+		add_state_core = 655
+		add_state_core = 537
+
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.25
+	title = "Easport Rejects Proposal!"
+	desc = "The administration of Eastport has rejected our generous ofter."
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.25"}
+	picture = GFX_report_event_the_duel
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "Their problems, their choice."
+		add_political_power = -20
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.26
+	title = sib.26.t
+	desc = sib.26.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.26"}
+	picture = GFX_report_event_copper_mistress
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = sib.26.a
+		add_stability = 0.15
+		add_war_support = 0.15
+		add_political_power = 200
+		add_country_leader_trait = the_man
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.27
+	title = sib.27.t
+	desc = sib.27.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.27"}
+	picture = GFX_report_event_the_auction
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "It may be not fair, but at least we have the results."
+		653 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.28
+	title = sib.28.t
+	desc = sib.28.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.28"}
+	picture = GFX_report_event_chairs
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "It wasn't our factory anyway."
+
+		add_political_power = -1
+	}
+}
+country_event = { #Keynes writes a paper
+	id = sib.29
+	title = sib.29.t
+	desc = sib.29.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.29"}
+	picture = GFX_report_event_policemen_at_the_doors
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "Thank you for your service, Vasiliy."
+
+		add_political_power = 120
+		add_stability = 0.05
+	}
+
+}
+country_event = { #Keynes writes a paper
+	id = sib.30
+	title = sib.30.t
+	desc = sib.30.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.30"}
+	picture = GFX_report_event_fishing
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "Come back soon, High Commissioner!"
+
+		add_political_power = 20
+	}
+
+}
+country_event = { #Keynes writes a paper
+	id = sib.31
+	title = sib.31.t
+	desc = sib.31.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.31"}
+	picture = GFX_report_event_pilots
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "Godspeed, brave pilots!"
+
+		air_experience = 30
+	}
+
+}
+country_event = { #Keynes writes a paper
+	id = sib.32
+	title = sib.32.t
+	desc = sib.32.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event sib.32"}
+	picture = GFX_report_event_russian_far_east
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "What?!"
+		set_equipment_fraction = 0.85
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

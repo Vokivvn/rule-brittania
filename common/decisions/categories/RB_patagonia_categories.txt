@@ -1,0 +1,16 @@
+###########
+#patagonia#
+###########
+PAT_debug = {
+	picture = GFX_BFE_decision_Eastport
+	
+	allowed = {
+		tag = PAT
+	}
+	
+	visible_when_empty = yes
+	
+	priority = {
+		base = 15
+	}
+}

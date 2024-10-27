@@ -1,0 +1,24 @@
+defined_text = {
+	name = USA_get_pop_support_percent
+	text = {
+		trigger = {
+			check_variable = { USA.USA_popular_support > .69 }
+		}
+		localization_key = USA_pop_support_green
+	}
+	text = {
+		trigger = {
+			check_variable = { USA.USA_popular_support > .49 }
+		}
+		localization_key = USA_pop_support_yellow
+	}
+	text = {
+		trigger = {
+			check_variable = { USA.USA_popular_support > .29 }
+		}
+		localization_key = USA_pop_support_orange
+	}
+	text = {
+		localization_key = USA_pop_support_red
+	}
+}

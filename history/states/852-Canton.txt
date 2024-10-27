@@ -1,0 +1,14 @@
+state={
+	id=852
+	name="STATE_852"
+	history = {
+		owner = CTC
+		add_core_of = CTC
+	}
+	provinces={
+		1047 
+	}
+	manpower=1821542
+	state_category = megalopolis
+	buildings_max_level_factor=1.000
+}

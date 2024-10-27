@@ -1,0 +1,65 @@
+ideas = {
+	country = {
+		BAD_Revolutionary_Hotbed = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BAD_Revolutionary_Hotbed"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BAD_country_rifles_map
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.3 
+				stability_factor = -0.25	   
+			}
+		}
+		BAD_Corrupt_Royal_Government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BAD_Corrupt_Royal_Government"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BAD_puppet_corruption_flag_hand
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+				industrial_capacity_factory = -0.25 
+				consumer_goods_factor = 0.1   
+			}
+		}
+		BAD_Down_With_Grand_Duke = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BAD_Down_With_Grand_Duke"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BAD_down_with_the_viceroy
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = -0.15  
+				war_support_factor = -0.10 				
+			}
+		}
+	}
+}

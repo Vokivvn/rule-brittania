@@ -1,0 +1,61 @@
+scripted_gui = {
+	RB_anglosphere_window = {
+	
+		context_type = player_context
+		
+		window_name = "RB_anglosphere_window"
+		
+		visible = {
+			has_country_flag = RB_show_anglo_gui
+		}
+		
+		
+		# we have two dynamic lists for this scripted gui
+		dynamic_lists = {
+			# this is the main grid that contains added countries
+			country_grid = {
+				array = country_array #the array that will be used for populating the array
+				change_scope = yes # since our array contains scope objects (countries) we can set change_scope to yes, which will chance current scope to array element while displaying the lists
+				# index = i current index and value is also stored as temp variables and can be used in effects/triggers if wanted. You can rename them to another temp variables
+				# value = v
+				
+				entry_container = anglo_country_entry # gui container name of the entry (this is actually scripted localization. you can have different containers depending on scope)
+			}
+			rebel_country_grid = {
+				array = rebel_country_array #the array that will be used for populating the array
+				change_scope = yes # since our array contains scope objects (countries) we can set change_scope to yes, which will chance current scope to array element while displaying the lists
+				# index = i current index and value is also stored as temp variables and can be used in effects/triggers if wanted. You can rename them to another temp variables
+				# value = v
+				
+				entry_container = anglo_country_entry # gui container name of the entry (this is actually scripted localization. you can have different containers depending on scope)
+			}
+		}
+		
+		
+		
+		effects = {
+			# add button adds a random country to country_array, which is used for populating country_grid
+			
+			close_button_click = {
+				clr_country_flag = RB_show_anglo_gui
+			}
+			# this button is a member of state entry and will be scoped the current state in owned_states array
+			# from is country in country_array
+		}
+		
+		triggers = {
+			
+		}
+		
+		properties = {
+			#change flag textures to actual flag texture
+			flag = {
+				image = "[This.GetFlag]"
+			}
+			monarch_portrait = {
+			image = "[Get_Anglo_Portrait]"
+			}
+		}
+	}
+}
+

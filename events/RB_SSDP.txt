@@ -1,0 +1,157 @@
+﻿###############
+##ANGLOS MAD ##
+###############
+
+add_namespace = ssd
+
+
+
+country_event = { #Keynes writes a paper
+	id = ssd.1
+	title = ssd.1.t
+	desc = ssd.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ssd.1"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = ssd.1.a
+		SSD = { country_event = ssd.2 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = { #epic
+		name = "We must come to a compromise for the safety of our people."
+		SSD = { country_event = ssd.3 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = ssd.2
+	title = "British Empire Refuses Petition!"
+	desc = ssd.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ssd.2"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "...Except war."
+		set_country_flag = SSD_refused
+	}
+}
+
+country_event = { #Keynes writes a paper
+	id = ssd.3
+	title = "British Empire Accepts The Petition"
+	desc = ssd.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ssd.3"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = ssd.3.a
+		set_country_flag = SSD_accepted
+		set_country_flag = RB_anglo_loyalist
+		RB_raise_british_econ_influence = yes
+		RB_raise_british_mil_influence = yes
+		hidden_effect = {
+			ENG = {
+				hidden_Effect = {
+					add_to_faction = SSD
+				}
+				give_guarantee = SSD
+			}
+			RB_calculate_anglo_control = yes
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = ssd.4
+	title = ssd.4.t
+	desc = ssd.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ssd.4"}
+	picture = GFX_report_event_petition
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			NOT = { country_exists = SIB }
+			NOT = { country_exists = AAN }
+			NOT = { country_exists = RLC }
+			tag = SSD
+		}
+	}
+
+
+	option = { #epic
+		name = ssd.4.a
+		set_country_flag = SIB_War_Won
+	}
+}
+country_event = { #Keynes writes a paper
+	id = ssd.5
+	title = ssd.5.t
+	desc = ssd.5.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ssd.5"
+		hidden_effect = {
+			SSD = {
+				add_dynamic_modifier = {
+					modifier = SSD_Program
+					scope = SSD
+				}
+			}
+		}
+	}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+
+	option = { #epic
+		name = "Felix Yusupov maintains his position!"
+		set_country_flag = ssd_yus_won
+	}
+	option = { #epic
+		name = "Maria Spiridonova emerges victorious!"
+		set_country_flag = ssd_spid_won
+		set_politics = {
+			ruling_party = liberalism
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.25
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = ssd.6
+	title = ssd.6.t
+	desc = ssd.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ssd.6"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #epic
+		add_political_power = 120
+		set_cosmetic_tag = REPSIB
+		name = "Buckle up, gentlemen!"
+	}
+}
+country_event = { #Keynes writes a paper
+	id = ssd.7
+	title = "A Letter From Siberia"
+	desc = ssd.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ssd.7"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #epic
+		name = "..."
+	}
+}

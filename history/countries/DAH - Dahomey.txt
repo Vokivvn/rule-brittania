@@ -1,0 +1,78 @@
+﻿#===============================================================#
+#'||''|.           '||                                          #
+# ||   ||   ....    || ..     ...   .. .. ..     ....  .... ... #
+# ||    || '' .||   ||' ||  .|  '|.  || || ||  .|...||  '|.  |  #
+# ||    || .|' ||   ||  ||  ||   ||  || || ||  ||        '|.|   #
+#.||...|'  '|..'|' .||. ||.  '|..|' .|| || ||.  '|...'    '|    #
+#  COUNTRY FILE                                        .. |     #
+#=======================================================''======#
+
+capital = 776
+set_research_slots = 1
+set_stability = 0.6
+set_war_support = 0.4
+set_cosmetic_tag = DAH_ENG
+
+#add_ideas = { }
+
+#==================#
+#===| POLITICS |===#
+#==================#
+set_politics = {
+	ruling_party = administrationism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 0
+    liberalism = 2
+    republicanism = 5
+    parliamentarianism = 19
+    administrationism = 44
+    absolutism = 24
+    despotism = 0
+    nationalism = 6
+}
+
+#=================#
+#===| LEADERS |===#
+#=================#
+
+create_country_leader = {
+	name = "Koulery Ouibro I"
+	desc = LEADER_DESC_KOULERY_OUIBRO
+	picture = "Portrait_DAH_Koulery_Ouibro.dds"
+	expire = "1999.12.12"
+	ideology = parliamentarianism_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "King Koulery Ouibro"
+	desc = LEADER_DESC_KOULERY_OUIBRO
+	picture = "Portrait_DAH_Koulery_Ouibro.dds"
+	expire = "1999.12.12"
+	ideology = administrationism_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "King Koulery Ouibro"
+	desc = LEADER_DESC_KOULERY_OUIBRO
+	picture = "Portrait_DAH_Koulery_Ouibro.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "King Koulery Ouibro"
+	desc = LEADER_DESC_KOULERY_OUIBRO
+	picture = "Portrait_DAH_Koulery_Ouibro.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {}
+}

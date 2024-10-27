@@ -1,0 +1,30 @@
+
+state={
+	id=1004
+	name="STATE_1004"
+
+	state_category = pastoral
+
+	history={
+		owner = HBC
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			13203 3 
+		}
+		victory_points = {
+			13202 2 
+		}
+		victory_points = {
+			1799 3 
+		}
+		add_core_of = HBC
+	}
+	
+	provinces={
+		917 1799 1872 4678 5403 12508 13202 13203 
+	}
+	manpower= 25000
+	buildings_max_level_factor=1.000
+}

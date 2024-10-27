@@ -1,0 +1,105 @@
+## rebel time ##
+
+focus_tree = {
+	id = SER_Siege_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	default = no
+	shared_focus = SER_assess_the_threat
+	continuous_focus_position = { x = 50 y = 2000}
+}
+
+focus_tree = {
+	id = SER_Siege_Tree2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	default = no
+	shared_focus = SER_assess_the_threat
+	continuous_focus_position = { x = 50 y = 2000}
+}
+
+## build time ##
+
+focus_tree = {
+	id = SER_new_era
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	default = no
+	shared_focus = SER_shaking_off_the_dust
+	continuous_focus_position = { x = 50 y = 2000}
+}
+
+## draza coup time ##
+
+focus_tree = {
+ 	id = SER_draza_coup
+ 	country = {
+ 		factor = 0
+ 		modifier = {
+ 			add = 10
+ 			tag = SER
+ 		}
+ 	}
+ 	default = no
+ 	shared_focus = SER_avenge_nis
+ 	continuous_focus_position = { x = 50 y = 2000}
+}
+
+## draza vote time ## 
+
+focus_tree = {
+ 	id = SER_draza_vote
+ 	country = {
+ 		factor = 0
+ 		modifier = {
+ 			add = 10
+ 			tag = SER
+ 		}
+ 	}
+ 	default = no
+ 	shared_focus = SER_the_vote
+ 	continuous_focus_position = { x = 50 y = 2000}
+}
+
+focus_tree = {
+	id = SER_draza_vote_mon
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	default = no
+	shared_focus = SER_the_vote
+	continuous_focus_position = { x = 50 y = 2000}
+}
+
+focus_tree = {
+	id = SER_alexconflict
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	default = no
+	shared_focus = SER_another_crisis_to_weather
+	continuous_focus_position = { x = 50 y = 2000}	
+}

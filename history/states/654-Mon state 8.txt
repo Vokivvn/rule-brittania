@@ -1,0 +1,20 @@
+
+state={
+	id=654
+	name="STATE_654" # Gorno-Altaysk
+	manpower = 153510
+	
+	state_category = pastoral
+
+	history={
+		owner = CHI
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MON
+	}
+
+	provinces={
+		1702 1779 4781 4800 7822 10531 10713 12509 12528
+	}
+}

@@ -1,0 +1,32 @@
+state={
+	id=1024
+	name="STATE_1024"
+
+	history={
+		owner = SWE
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			9100 = {
+				bunker = 2
+
+			}
+			9206 = {
+				coastal_bunker = 1
+
+			}
+		}
+		add_core_of = SWE
+		victory_points = {
+			9206 3 
+		}
+	}
+
+	state_category = town
+
+	provinces={
+		9206 9100 3060 9150 3151 149 2332
+	}
+	manpower=194132
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,23 @@
+state={
+	id=821
+	name="STATE_821"
+	provinces={
+		1736 3781 4741 6742 7779 7845 10602 
+	}
+	history={
+		owner = FLT
+		add_core_of = FLT
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			6742 3
+		}
+		victory_points = {
+			4741 2
+		}
+	}
+	manpower=72709
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,20 @@
+state={
+	id=867
+	name="STATE_867"
+	manpower = 106527
+
+
+	state_category = town
+
+	history={
+		owner = BSP
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BSP
+	}
+
+	provinces={
+		3786 3851 6871 11811 11829
+	}
+}

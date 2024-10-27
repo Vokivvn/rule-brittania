@@ -1,0 +1,33 @@
+﻿ l_english:
+  ##England News Events##
+  eng_inv.200.t:0 "Henry Arrested in Edward Investigation"
+  eng_inv.200.desc:0 "In a rather surprising announcement, Scotland Yard have announced today the arrest of Henry on conspiracy to murder and first degree murder in relation to the case of Edward VIII.\n\nThe announcement comes as a shock to many, with the Royal Family themselves saying that they cannot believe the charges, and most of British society balking at it.\n\n Whether they are true or not, it all but rules him out of the line of succession and further destabilised the already chaotic British situation."
+  eng_inv.200.a:0 "What a disaster!"
+  
+  eng_inv.201.t:0 "Albert Victor Arrested in Edward Investigation"
+  eng_inv.201.desc:0 "In a rather surprising announcement, Scotland Yard have announced today the arrest of Albert Victor on conspiracy to murder and first degree murder in relation to the case of Edward VIII.\n\nThis announcement has angered many of the leaders of the colonies, calling it an unjust arrest of an entirely innocent plan, and once again a way to force Albert Victor out of the line of succession for the Crown.\n\nWhether these allegations are true or not, the British situation at home is once again looking ever more chaotic."
+  eng_inv.201.a:0 "He always did strike me as a bit odd..."
+  
+  england.2000.t:0 "Henry IX Elected King"
+  england.2000.desc:0 ""
+  england.2000.a:0 "Long Live the King!"
+  
+  england.2001.t:0 "George VI Elected King"
+  england.2001.desc:0 ""
+  england.2001.a:0 "Long Live the King!"
+  
+  england.2002.t:0 "Mary III Elected Queen"
+  england.2002.desc:0 ""
+  england.2002.a:0 "Well, this'll be something..."
+  
+  england.2003.t:0 "Duarte Elected King?!"
+  england.2003.desc:0 ""
+  england.2003.a:0 "What in the Goddamn...?"
+  
+  england.2004.t:0 "Albert I Elected King"
+  england.2004.desc:0 "hes the joker baby"
+  england.2004.a:0 "Long live the King!"
+  
+  england.2005.t:0 "Nicholas I Elected King"
+  england.2005.desc:0 ""
+  england.2005.a:0 "An Odd Choice..."

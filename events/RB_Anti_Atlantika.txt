@@ -1,0 +1,203 @@
+﻿###############
+##ANGLOS MAD ##
+###############
+
+add_namespace = AAN
+
+
+
+country_event = { #Keynes writes a paper
+	id = AAN.1
+	title = AAN.1.t
+	desc = AAN.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event AAN.1"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = AAN.1.a
+		AAN = { country_event = AAN.2 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = { #epic
+		name = "We must come to a compromise for the safety of our people."
+		AAN = { country_event = AAN.3 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = AAN.2
+	title = "British Empire Refuses Petition!"
+	desc = AAN.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event AAN.2"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "...Except war."
+		set_country_flag = AAN_refused
+	}
+}
+
+country_event = { #Keynes writes a paper
+	id = AAN.3
+	title = "British Empire Accepts The Petition"
+	desc = AAN.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event AAN.3"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = AAN.3.a
+		set_country_flag = AAN_accepted
+		set_country_flag = RB_anglo_loyalist
+		RB_raise_british_econ_influence = yes
+		RB_raise_british_mil_influence = yes
+		hidden_effect = {
+			ENG = {
+				hidden_Effect = {
+					add_to_faction = AAN
+				}
+				give_guarantee = AAN
+			}
+			RB_calculate_anglo_control = yes
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = AAN.4
+	title = AAN.4.t
+	desc = AAN.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event AAN.4"}
+	picture = GFX_report_event_tea_party
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			NOT = { country_exists = SIB }
+			NOT = { country_exists = SSD }
+			NOT = { country_exists = RLC }
+			tag = AAN
+		}
+	}
+
+	option = { #epic
+		name = "Novus Ordo Seclorum."
+		set_country_flag = AA_won
+	}
+}
+
+country_event = { #Keynes writes a paper
+	id = AAN.5
+	title = "Choosing The Man"
+	desc = "As we keep getting higher, the Trubetzkoy-Ustryalov-Savitsky Triumvirate cannot live any longer. Only one man shall remain to lead the Free People's World."
+	immediate = {log = "[GetDateText]: [Root.GetName]: event AAN.5"
+		hidden_effect = {
+		}
+	}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "Trubetzkoy is the best candidate for his position."
+		set_country_flag = AAN_trub_won
+	}
+	option = { #epic
+		name = "We should give Ustryalov a chance."
+		set_country_flag = AAN_ust_won
+		set_politics = {
+			ruling_party = cromwellianism
+		}
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.25
+		}
+	}
+	option = { #epic
+		name = "...Pyotr?"
+		set_country_flag = AAN_pyot_won
+		set_politics = {
+			ruling_party = nationalism
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.25
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = AAN.6
+	title = AAN.6.t
+	desc = AAN.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event AAN.6"}
+	picture = GFX_report_event_petition
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		add_political_power = 120
+		set_cosmetic_tag = REPSIB
+		name = "Buckle up, gentlemen!"
+	}
+}
+country_event = { #Keynes writes a paper
+	id = AAN.7
+	title = "One Nation Under God"
+	desc = AAN.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event AAN.7"}
+	picture = GFX_report_event_russian_eagles
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #epic
+		name = "E Pluribus Unum."
+		set_cosmetic_tag = EURASIA
+		create_country_leader = {
+			name = "Nikolai I"
+			#desc = "HAYDEN_DESC"
+			picture = "portrait_AAN_Emperor_Nikolai_I.dds"
+			expire = "1999.12.12"
+			ideology = absolutism_subtype
+			traits = {
+				the_emperor_of_eurasia
+			}
+		}
+		set_party_name = {
+			ideology = absolutism
+			long_name = eurasia_real_party_long
+			name = eurasia_real_party_long
+		}
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.66
+		}
+	}
+}
+country_event = { #Keynes writes a paper
+	id = AAN.8
+	title = AAN.8.t
+	desc = AAN.8.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event AAN.8"}
+	picture = GFX_report_event_soldiers_marching
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			NOT = { country_exists = SIB }
+			NOT = { country_exists = SSD }
+			NOT = { country_exists = AAN }
+			tag = RLC
+		}
+	}
+
+	option = { #epic
+		name = "The pigs lay slain."
+		set_country_flag = RLC_GW_won_war
+	}
+}

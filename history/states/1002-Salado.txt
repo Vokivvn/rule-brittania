@@ -1,0 +1,25 @@
+
+state={
+	id=1002
+	name="STATE_1002"
+
+	history={
+		owner = CHL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = ARG
+		add_core_of = CHL
+
+	}
+
+	provinces={
+		2179 2215 8215 10964 10992 11021 12928
+	}
+	manpower=599269
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

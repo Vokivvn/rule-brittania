@@ -1,0 +1,204 @@
+﻿#######################################
+## British Far East Territory events ##
+###	  		by Thunderslav		 	###
+#######################################
+
+add_namespace = BFE
+
+country_event = { #Introduction event
+	id = BFE.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.1"}
+	title = BFE.1.t
+	desc = BFE.1.desc
+	picture = GFX_report_event_eastport
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Intriguing
+		name = BFE.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Sin City Blues focus - A Diamond In The Rough
+	id = BFE.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.2"}
+	title = BFE.2.t
+	desc = BFE.2.desc
+	picture = GFX_report_event_city
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.2.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.035
+	}
+}
+
+country_event = { #Meeting with the cabinet
+	id = BFE.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.3"}
+	title = BFE.3.t
+	desc = BFE.3.desc
+	picture = GFX_report_event_eastport
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}
+
+country_event = { #Rumors of revolt
+	id = BFE.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.4"}
+	title = BFE.4.t
+	desc = BFE.4.desc
+	picture = GFX_report_event_eastport
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Investigate the Vozhd
+	id = BFE.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.5"}
+	title = BFE.5.t
+	desc = BFE.5.desc
+	picture = GFX_report_event_matkovsky
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.5.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Hunting down the Red Outlaw
+	id = BFE.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.6"}
+	title = BFE.6.t
+	desc = BFE.6.desc
+	picture = GFX_report_event_russian_far_east
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.6.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Locate the Liberator
+	id = BFE.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.7"}
+	title = BFE.7.t
+	desc = BFE.7.desc
+	picture = GFX_report_event_vlasov
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.7.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Keep an eye on the Varyag
+	id = BFE.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.8"}
+	title = BFE.8.t
+	desc = BFE.8.desc
+	picture = GFX_report_event_ivor_thord_gray
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.8.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Dealing With The Syndicate
+	id = BFE.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.9"}
+	title = BFE.9.t
+	desc = BFE.9.desc
+	picture = GFX_report_event_eastport
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.9.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = { #Once Upon A Time In The East
+	id = BFE.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BFE.10"}
+	title = BFE.10.t
+	desc = BFE.10.desc
+	picture = GFX_report_event_far_east_mercenary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = BFE.10.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+}
+
+#### DEBUG SHIT ####
+country_event = { #
+	id = BFE.1000
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event BFE.1000"
+		hidden_effect = {
+			SKH = {
+				transfer_state = 537
+				add_state_core = 537
+				transfer_state = 655
+				add_state_core = 655
+			}
+		}
+	}
+	title = BFE.1000.t
+	desc = BFE.1000.desc
+	picture = GFX_report_event_soldiers_training
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Tag switch to Jomsborg
+		name = BFE.1000.a
+		ai_chance = { factor = 1 }
+		SKH = {
+			change_tag_from = ROOT
+		}
+	}
+	option = { #Stay as BFE
+		name = BFE.1000.b
+		ai_chance = { factor = 1 }
+	}
+}

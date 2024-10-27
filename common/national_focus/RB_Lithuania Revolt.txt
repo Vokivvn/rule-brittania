@@ -1,0 +1,1316 @@
+focus_tree = {
+	id = lithuania_revolt
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = LTH
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = LTH_Independence_Day
+		icon = GFX_focus_generic_support_the_left_right
+		x = 20
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Independence_Day"
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = LTH_Triumvirate
+		icon = GFX_goal_flag_lithuania
+		relative_position_id = LTH_Independence_Day
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Independence_Day
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Triumvirate"
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = LTH_Future_Of_Lithuania
+		icon = GFX_goal_national_mobilization
+		relative_position_id = LTH_Triumvirate
+		x = -13
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Triumvirate
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Future_Of_Lithuania"
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = LTH_Democratic_Republic
+		icon = GFX_Generic_Political
+		relative_position_id = LTH_Future_Of_Lithuania
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Future_Of_Lithuania
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Democratic_Republic"
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = LTH_Destroy_Personality_Cult
+		icon = GFX_RAJ_Cut_Military_Spending
+		relative_position_id = LTH_Democratic_Republic
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Democratic_Republic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Destroy_Personality_Cult"
+			add_war_support = -0.1
+			add_political_power = 15
+		}
+	}
+	focus = {
+		id = LTH_Open_Political_Scene
+		icon = GFX_goal_freedom_of_the_press
+		relative_position_id = LTH_Democratic_Republic
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Democratic_Republic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Open_Political_Scene"
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = LTH_Clean_Government
+		icon = GFX_generic_trials
+		relative_position_id = LTH_Destroy_Personality_Cult
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Destroy_Personality_Cult
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Clean_Government"
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = LTH_Open_Press
+		icon = GFX_goal_big_news
+		relative_position_id = LTH_Open_Political_Scene
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Open_Political_Scene
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Open_Press"
+			add_ideas = LIT_Revolt_Open_Presses
+		}
+	}
+	focus = {
+		id = LTH_New_Elections
+		icon = GFX_generic_elections
+		relative_position_id = LTH_Clean_Government
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Clean_Government
+		}
+		prerequisite = {
+			focus = LTH_Open_Press
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_New_Elections"
+			#country_event = {
+				#	id = lithuania.201
+				#}
+		}
+	}
+	focus = {
+		id = LTH_Peoples_Nation
+		icon = GFX_Compassionaite_Politics
+		relative_position_id = LTH_New_Elections
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_New_Elections
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Peoples_Nation"
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = LTH_Peasants_Nation
+		icon = GFX_generic_diplomacy_political
+		relative_position_id = LTH_New_Elections
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_New_Elections
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Peasants_Nation"
+			add_popularity = {
+				ideology = republicanism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = LTH_Christian_Nation
+		icon = GFX_BRA_faith_and_state
+		relative_position_id = LTH_New_Elections
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_New_Elections
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Christian_Nation_Nation"
+			add_popularity = {
+				ideology = parliamentarianism
+				popularity = 0.05
+			}
+
+		}
+	}
+	focus = {
+		id = LTH_Educate_Tuteshniy
+		icon = GFX_RAJ_The_Education
+		relative_position_id = LTH_Peoples_Nation
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Peoples_Nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Educate_Tuteshniy"
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = LTH_Poor_Aid
+		icon = GFX_Feed_the_People
+		relative_position_id = LTH_Peoples_Nation
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Peoples_Nation
+			focus = LTH_Peasants_Nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Poor_Aid"
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = LTH_Support_Keturi_Vejai
+		icon = GFX_generic_writing
+		relative_position_id = LTH_Peasants_Nation
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Christian_Nation
+			focus = LTH_Peasants_Nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Support_Keturi_Vejai"
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = LTH_Spirit_Of_Zalgiris
+		icon = GFX_Lessons_From_the_Great_War
+		relative_position_id = LTH_Christian_Nation
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Christian_Nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Spirit_Of_Zalgiris"
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = LTH_On_The_Globe
+		icon = GFX_RAJ_Question_Foreign_Policy
+		relative_position_id = LTH_Triumvirate
+		x = -4
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Triumvirate
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_On_The_Globe"
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = LTH_Renegotiate_With_The_Angloids
+		icon = GFX_focus_chi_british_cooperation
+		relative_position_id = LTH_On_The_Globe
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_On_The_Globe
+		}
+		mutually_exclusive = {
+			focus = LTH_We_Dont_Need_Them
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Renegotiate_With_The_Angloids"
+			set_cosmetic_tag = RB_anglo_loyalist
+		}
+	}
+	focus = {
+		id = LTH_We_Dont_Need_Them
+		icon = GFX_focus_eng_decolonization
+		relative_position_id = LTH_On_The_Globe
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_On_The_Globe
+		}
+		mutually_exclusive = {
+			focus = LTH_Renegotiate_With_The_Angloids
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_We_Dont_Need_Them"
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = LTH_Historical_Claims
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Renegotiate_With_The_Angloids
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Renegotiate_With_The_Angloids
+			focus = LTH_We_Dont_Need_Them
+		}
+		mutually_exclusive = {
+			focus = LTH_Strengthen_Diplomatic_Ties
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Historical_Claims"
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = LTH_Reclaim_Judoji_Rusia
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Historical_Claims
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Historical_Claims
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			AND = {
+				NOT = {
+					has_war_with = LIT
+				}
+				NOT = {
+					has_war_with = BLR
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Reclaim_Judoji_Rusia"
+			create_wargoal = {
+				type = annex_everything
+				target = BLR
+			}
+			reverse_add_opinion_modifier = {
+				target = BLR
+				modifier = claims_on_us
+			}
+		}
+	}
+	focus = {
+		id = LTH_Reclaim_Grodino
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Historical_Claims
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Historical_Claims
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			AND = {
+				NOT = {
+					has_war_with = LIT
+				}
+				NOT = {
+					has_war_with = POL
+				}
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Reclaim_Grodino"
+			create_wargoal = {
+				type = take_state_focus
+				target = POL
+			}
+			reverse_add_opinion_modifier = {
+				target = POL
+				modifier = claims_on_us
+			}
+		}
+	}
+	focus = {
+		id = LTH_A_Greater_Lithuania
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Reclaim_Judoji_Rusia
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Reclaim_Grodino
+		}
+		prerequisite = {
+			focus = LTH_Reclaim_Judoji_Rusia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		#available = {
+			#AND = {
+				#	NOT = {
+					#		has_war_with = LIT
+					#	}
+				#	#NOT = {
+					#		has_war_with = BLR
+					#	}
+				#}
+			#}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_A_Greater_Lithuania"
+			add_political_power = 250
+		}
+	}
+	focus = {
+		id = LTH_Strengthen_Diplomatic_Ties
+		icon = GFX_goal_dove_of_peace
+		relative_position_id = LTH_We_Dont_Need_Them
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Renegotiate_With_The_Angloids
+			focus = LTH_We_Dont_Need_Them
+		}
+		mutually_exclusive = {
+			focus = LTH_Historical_Claims
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Strengthen_Diplomatic_Ties"
+			add_ideas = LIT_Revolt_Diplomatic_Path
+		}
+	}
+	focus = {
+		id = LTH_Baltic_Brotherhood
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Strengthen_Diplomatic_Ties
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Strengthen_Diplomatic_Ties
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Baltic_Brotherhood"
+			reverse_add_opinion_modifier = {
+				target = COU
+				modifier = LTH_Friendship_Time
+			}
+			reverse_add_opinion_modifier = {
+				target = RIG
+				modifier = LTH_Friendship_Time
+			}
+			reverse_add_opinion_modifier = {
+				target = LIV
+				modifier = LTH_Friendship_Time
+			}
+			reverse_add_opinion_modifier = {
+				target = EST
+				modifier = LTH_Friendship_Time
+			}
+		}
+	}
+	focus = {
+		id = LTH_A_Historical_Friendship
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Strengthen_Diplomatic_Ties
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Strengthen_Diplomatic_Ties
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_A_Historical_Friendship"
+			reverse_add_opinion_modifier = {
+				target = POL
+				modifier = LTH_Friendship_Time
+			}
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = LTH_Markets_Abroad
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Baltic_Brotherhood
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Baltic_Brotherhood
+		}
+		prerequisite = {
+			focus = LTH_A_Historical_Friendship
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LIT
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Markets_Abroad"
+			every_other_country = {
+				reverse_add_opinion_modifier = {
+					target = LTH
+					modifier = LTH_Expanded_Markets
+				}
+			}
+		}
+	}
+	focus = {
+		id = LTH_War_Of_Loyalty
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Triumvirate
+		x = 4
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Triumvirate
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_War_Of_Loyalty"
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = LTH_Rally_The_Farmers
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_War_Of_Loyalty
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_War_Of_Loyalty
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Rally_The_Farmers"
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+				producer = LTH
+			}
+		}
+	}
+	focus = {
+		id = LTH_Food_For_The_Troops
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Rally_The_Farmers
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Rally_The_Farmers
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Food_For_The_Troops"
+			add_ideas = LIT_Revolt_Food_For_Troops
+		}
+	}
+	focus = {
+		id = LTH_Rural_Rumors
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Rally_The_Farmers
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Rally_The_Farmers
+		}
+		prerequisite = {
+			focus = LTH_Fate_Of_Loyalists
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Rural_Rumors"
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	focus = {
+		id = LTH_Connect_The_Farms
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Food_For_The_Troops
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Food_For_The_Troops
+		}
+		prerequisite = {
+			focus = LTH_Rural_Rumors
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Connect_The_Farms"
+			11 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LTH_Fate_Of_Loyalists
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_War_Of_Loyalty
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_War_Of_Loyalty
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Fate_Of_Loyalists"
+			#country_event = {
+				#	id = lithuania.202
+				#}
+		}
+	}
+	focus = {
+		id = LTH_Rally_The_Urbanites
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_War_Of_Loyalty
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_War_Of_Loyalty
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Rally_The_Urbanites"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 50
+				producer = LTH
+			}
+		}
+	}
+	focus = {
+		id = LTH_Word_On_The_Streets
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Fate_Of_Loyalists
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Rally_The_Urbanites
+		}
+		prerequisite = {
+			focus = LTH_Fate_Of_Loyalists
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Word_On_The_Streets"
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+	focus = {
+		id = LTH_Support_In_The_Factories
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Rally_The_Urbanites
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Rally_The_Urbanites
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Support_In_The_Factories"
+			add_ideas = LIT_Men_In_The_Factories
+		}
+	}
+	focus = {
+		id = LTH_Support_Local_Industries
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Word_On_The_Streets
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Word_On_The_Streets
+		}
+		prerequisite = {
+			focus = LTH_Support_In_The_Factories
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Support_Local_Industries"
+			11 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LTH_For_The_People
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Connect_The_Farms
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Connect_The_Farms
+		}
+		prerequisite = {
+			focus = LTH_Support_Local_Industries
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_For_The_People"
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = LTH_Question_Of_Warfare
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Triumvirate
+		x = 12
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Triumvirate
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Question_Of_Warfare"
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = LTH_Standard_Army
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Question_Of_Warfare
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Question_Of_Warfare
+		}
+		mutually_exclusive = {
+			focus = LTH_Unusual_Army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Standard_Army"
+			add_ideas = LIT_Rebels_Standard_Army
+		}
+	}
+	focus = {
+		id = LTH_Plan_Every_Move
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Standard_Army
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Standard_Army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Plan_Every_Move"
+			#add 1 planning to all generals
+		}
+	}
+	focus = {
+		id = LTH_Two_Years_Ahead
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Standard_Army
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Standard_Army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Two_Years_Ahead"
+			add_tech_bonus = {
+				name = LTH_Two_Years
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = LTH_Win_Battles_Not_Hearts
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Two_Years_Ahead
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Plan_Every_Move
+		}
+		prerequisite = {
+			focus = LTH_Two_Years_Ahead
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Win_Battles_Not_Hearts"
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = LTH_Unusual_Army
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Question_Of_Warfare
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Question_Of_Warfare
+		}
+		mutually_exclusive = {
+			focus = LTH_Standard_Army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Unusual_Army"
+			add_ideas = LIT_Rebels_Unusual_Army
+		}
+	}
+	focus = {
+		id = LTH_Into_The_Forests
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Unusual_Army
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Unusual_Army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Into_The_Forests"
+			#add supply to generals
+		}
+	}
+	focus = {
+		id = LTH_Sabatoge_Them
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Unusual_Army
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Unusual_Army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Sabatoge_Them"
+			LIT = {
+				random_owned_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				random_owned_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = LTH_Strike_Terror_Into_Hearts
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Sabatoge_Them
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Into_The_Forests
+		}
+		prerequisite = {
+			focus = LTH_Sabatoge_Them
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Strike_Terror_Into_Hearts"
+			#add attack to generals
+		}
+	}
+	focus = {
+		id = LTH_Airborne
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Win_Battles_Not_Hearts
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Win_Battles_Not_Hearts
+		}
+		prerequisite = {
+			focus = LTH_Strike_Terror_Into_Hearts
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Airborne"
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = LTH_Knowledge_From_The_Skies
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Airborne
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Airborne
+		}
+		mutually_exclusive = {
+			focus = LTH_Terror_From_The_Skies
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Knowledge_From_The_Skies"
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_operational_integrity
+			}
+		}
+	}
+	focus = {
+		id = LTH_Terror_From_The_Skies
+		icon = GFX_LOU_Cracker
+		relative_position_id = LTH_Airborne
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LTH_Airborne
+		}
+		mutually_exclusive = {
+			focus = LTH_Knowledge_From_The_Skies
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LTH_Terror_From_The_Skies"
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_strategic_destruction
+			}
+		}
+	}
+}

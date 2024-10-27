@@ -1,0 +1,42 @@
+﻿l_english:
+ ##Starting Screen Desc##
+ RAJ_RULEBRITANNIA_DESC:0 "India has been dominated by the British in one way or another for nearly as long as the Empire has existed, and has been evolving constantly to maintain such subjugation. Most recently, with the collapse of the Honorable East India Company and the destruction of the local economy, the region has been confederated and federalized by London to retain stability and keep the peace. Under the new dominion state, the locals enjoy few freedoms and privileges and are for now controlled with little regard by the disgraced Prince Albert. This too cannot last forever, and as the world changes, so again must the Crown Jewel of the British Empire."
+ 
+ ##Country Names##
+ IND_cromwellianism:0 "India"
+ IND_cromwellianism_DEF:0 "India"
+ IND_marxism:0 "India"
+ IND_marxism_DEF:0 "India"
+ IND_liberalism:0 "India"
+ IND_liberalism_DEF:0 "India"
+ IND_republicanism:0 "India"
+ IND_republicanism_DEF:0 "India"
+ IND_parliamentarianism:0 "India"
+ IND_parliamentarianism_DEF:0 "India"
+ IND_administrationism:0 "India"
+ IND_administrationism_DEF:0 "India"
+ IND_absolutism:0 "India"
+ IND_absolutism_DEF:0 "India"
+ IND_despotism:0 "India"
+ IND_despotism_DEF:0 "India"
+ IND_nationalism:0 "India"
+ IND_nationalism_DEF:0 "India"
+ IND_cromwellianism_ADJ:0 "Indian"
+ IND_marxism_ADJ:0 "Indian"
+ IND_liberalism_ADJ:0 "Indian"
+ IND_republicanism_ADJ:0 "Indian"
+ IND_parliamentarianism_ADJ:0 "Indian"
+ IND_administrationism_ADJ:0 "Indian"
+ IND_despotism_ADJ:0 "Indian"
+ IND_nationalism_ADJ:0 "Indian"
+
+ ##Party Names##
+ IND_marxism_party:0 "CPI"
+ IND_marxism_party_long:0 "Communist Party of India"
+ IND_liberalism_party:0 "INC"
+ IND_liberalism_party_long:0 "Indian National Congress"
+ IND_nationalism_party:0 "RSS"
+ IND_nationalism_party_long:0 "Rashtriya Swayamsevak Sangh"
+
+ ##leader descriptions##
+ POLITICS_Albert_Windsor_DESC:0 "In British India, there are many groups that despise the King of England, George V. The Congress hate his guts, the Communists loathe him, the Nationalists think he’s the worst man to ever live. But there is no one in India with more of an absolute hatred for the King of England than Albert Victor of Windsor.\n\nAlbert Victor was always considered a simple child. His tutors denounced him as foolish, a slow learner, a dullard, especially compared to his comparably sharp younger brother, George. As time went on, as he went from the HMS Britannia to Trinity in Cambridge, his tutors only got more and more critical. But fortunately, none of this could possibly stop succession, until Cleveland Street, that is. Members of the British aristocracy were found to be patrons to a homosexual brothel, and of course, Prince Albert Victor was accused also being a patron. The accusations against Albert Victor grew so rampant and so destructive that Edward VII, who at the time was the Prince of Wales, found it justified to strip him of his succession, handing it to his younger brother, George.\n\nAfter this, Albert Victor, still unmarried, was thrown around governor-general and viceroy roles until he was finally put in a place where people thought he could be at least comfortable, which was the crown jewel of the Empire, India. For the many years he has been in British India, he has mostly left the governing to the brutal, brutal generals, who have established their reign of terror onto India. But Albert Victor doesn’t care, really. He simply sits around, seemingly uninterested in the concept of doing anything to assist them. But of course, he’s an old man now. What could he possibly do anyway?"

@@ -1,0 +1,39 @@
+PIE_boat_launch_prep = {
+set_variable = { PIE_prep_var = PIE_boat_launch_var}
+	if = {
+		limit = {
+			check_variable = { PIE_prep_var > -1 }
+		}
+		country_event = { id = PIE_prep.1 days = 3}
+	}
+	if = {
+		limit = {
+			check_variable = { PIE_prep_var > -3}
+		}
+		country_event = { id = PIE_prep.2 days = 3}
+	}
+	if = {
+		limit = {
+			check_variable = { PIE_prep_var < 1 }
+		}
+		country_event = { id = PIE_prep.3 days = 3}
+	}
+	if = {
+		limit = {
+			check_variable = { PIE_prep_var < 3}
+		}
+		country_event = { id = PIE_prep.4 days = 3}
+	}
+	if = {
+		limit = {
+			check_variable = { PIE_prep_var < -7}
+		}
+		country_event = { id = PIE_prep.5 days = 3}
+	}
+	if = {
+		limit = {
+			check_variable = { PIE_prep_var > 7}
+		}
+		country_event = { id = PIE_prep.6 days = 3}
+	}
+}

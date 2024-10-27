@@ -1,0 +1,126 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_anglo_control_population_1"
+		texturefile = "gfx/interface/anglo_control/anglo_control_population_1.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_population_2"
+		texturefile = "gfx/interface/anglo_control/anglo_control_population_2.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_population_3"
+		texturefile = "gfx/interface/anglo_control/anglo_control_population_3.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_population_4"
+		texturefile = "gfx/interface/anglo_control/anglo_control_population_4.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_population_5"
+		texturefile = "gfx/interface/anglo_control/anglo_control_population_5.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_land_1"
+		texturefile = "gfx/interface/anglo_control/anglo_control_land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_land_2"
+		texturefile = "gfx/interface/anglo_control/anglo_control_land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_land_3"
+		texturefile = "gfx/interface/anglo_control/anglo_control_land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_land_4"
+		texturefile = "gfx/interface/anglo_control/anglo_control_land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_anglo_control_land_5"
+		texturefile = "gfx/interface/anglo_control/anglo_control_land_5.dds"
+	}
+  	spriteType = {
+		name = "GFX_george_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_King_George_V_Windsor.dds" 
+	}
+	spriteType = {
+		name = "GFX_eddy_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_King_Edward_VIII.dds" 
+	}
+	spriteType = {
+		name = "GFX_inter_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_Interregnum.dds" 
+	}
+	spriteType = {
+		name = "GFX_emperor_eddy_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_Emperor_Edward_VIII.dds" 
+	}
+	spriteType = {
+		name = "GFX_duarte_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_Duarte_Nuno.dds" 
+	}
+	spriteType = {
+		name = "GFX_big_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_Big_Building_In_New_London.dds" 
+	}
+	spriteType = {
+		name = "GFX_george_6_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_King_George_VI.dds" 
+	}
+	spriteType = {
+		name = "GFX_henry_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_King_Henry.dds" 
+	}
+	spriteType = {
+		name = "GFX_nicholas_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_King_Nicholas_von_Oldenburg.dds" 
+	}
+	spriteType = {
+		name = "GFX_mary_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_Mary_of_Teck.dds" 
+	}
+	spriteType = {
+		name = "GFX_albert_leader"
+		textureFile = "gfx/leaders/ENG/Portrait_ENG_Prince_Albert.dds" 
+	}
+	spriteType = {
+		name = "GFX_angloworld"
+		textureFile = "gfx/interface/wallpapers/angloworld.dds" 
+	}
+	spriteType = {
+		name = "GFX_hellworld"
+		textureFile = "gfx/interface/wallpapers/hellworld.dds" 
+	}
+	spriteType = {
+		name = "GFX_aaworld"
+		textureFile = "gfx/interface/wallpapers/aaworld.dds" 
+	}
+	spriteType = {
+		name = "GFX_steamworld"
+		textureFile = "gfx/interface/wallpapers/steamworld.dds" 
+	}
+	spriteType = {
+		name = "GFX_steamworldtwo"
+		textureFile = "gfx/interface/wallpapers/steamworldtwo.dds" 
+	}
+	spriteType = {
+		name = "GFX_steamworldthree"
+		textureFile = "gfx/interface/wallpapers/steamworldthree.dds" 
+	}
+	spriteType = {
+		name = "GFX_darkasfuck"
+		textureFile = "gfx/interface/wallpapers/darkasfuck.dds" 
+	}
+	spriteType = {
+		name = "GFX_darkasfucktwo"
+		textureFile = "gfx/interface/wallpapers/darkasfucktwo.dds" 
+	}
+	spriteType = {
+		name = "GFX_darkasfuckthree"
+		textureFile = "gfx/interface/wallpapers/darkasfuckthree.dds" 
+	}
+	spriteType = {
+		name = "achievements"
+		textureFile = "gfx/interface/thisisdog.dds" 
+	}
+}

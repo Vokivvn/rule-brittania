@@ -1,0 +1,19 @@
+state={
+	id=891
+	name="STATE_891" #Kenya
+	manpower = 1149102
+	
+	state_category = rural
+
+	history={
+		owner = KEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KEN
+	}
+
+	provinces={
+		 2066 5079 8133 11014 12927 13135 
+	}
+}

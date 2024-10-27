@@ -1,0 +1,501 @@
+﻿division_template = {
+	name = "Division d'Infanterie Artesienne"
+	division_names_group = BRG_artesian_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie Picarde"
+	division_names_group = BRG_picard_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie de Champagne"
+	division_names_group = BRG_champagne_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie Bourguignonne"
+	division_names_group = BRG_burgundian_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie de Lorrains"
+	division_names_group = BRG_lorrains_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Elsaessische Infanteriedivision"
+	division_names_group = BRG_alsatian_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Rheinische Infanteriedivision"
+	division_names_group = BRG_rhenish_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Leetzebuerger Infanteriedivisioun"
+	division_names_group = BRG_luxembourger_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie Wallonne"
+	division_names_group = BRG_walloon_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Vlaamse Infanteriedivisie"
+	division_names_group = BRG_flemish_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1ère Division d'Infanterie Artesienne"
+		location = 11483
+		division_template = "Division d'Infanterie Artesienne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2e Division d'Infanterie Artesienne"
+		location = 11483
+		division_template = "Division d'Infanterie Artesienne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3ème Division d'Infanterie Artesienne"
+		location = 6504
+		division_template = "Division d'Infanterie Artesienne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1ère Division d'Infanterie Picarde"
+		location = 11420
+		division_template = "Division d'Infanterie Picarde"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2e Division d'Infanterie Picarde"
+		location = 3402
+		division_template = "Division d'Infanterie Picarde"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3ème Division d'Infanterie Picarde"
+		location = 11549
+		division_template = "Division d'Infanterie Picarde"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4ème Division d'Infanterie Picarde"
+		location = 9561
+		division_template = "Division d'Infanterie Picarde"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1ère Division d'Infanterie de Champagne"
+		location = 13011
+		division_template = "Division d'Infanterie de Champagne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2e Division d'Infanterie de Champagne"
+		location = 13011
+		division_template = "Division d'Infanterie de Champagne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3ème Division d'Infanterie de Champagne"
+		location = 9490
+		division_template = "Division d'Infanterie de Champagne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4ème Division d'Infanterie de Champagne"
+		location = 3560
+		division_template = "Division d'Infanterie de Champagne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1ère Division d'Infanterie Bourguignonne"
+		location = 3652
+		division_template = "Division d'Infanterie Bourguignonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2e Division d'Infanterie Bourguignonne"
+		location = 3652
+		division_template = "Division d'Infanterie Bourguignonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3ème Division d'Infanterie Bourguignonne"
+		location = 3652
+		division_template = "Division d'Infanterie Bourguignonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4ème Division d'Infanterie Bourguignonne"
+		location = 667
+		division_template = "Division d'Infanterie Bourguignonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1ère Division d'Infanterie de Lorrains"
+		location = 9642
+		division_template = "Division d'Infanterie de Lorrains"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2e Division d'Infanterie de Lorrains"
+		location = 9642
+		division_template = "Division d'Infanterie de Lorrains"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3ème Division d'Infanterie de Lorrains"
+		location = 11516
+		division_template = "Division d'Infanterie de Lorrains"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4ème Division d'Infanterie de Lorrains"
+		location = 9559
+		division_template = "Division d'Infanterie de Lorrains"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1ère Division d'Infanterie Wallonne"
+		location = 11519
+		division_template = "Division d'Infanterie Wallonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2e Division d'Infanterie Wallonne"
+		location = 11519
+		division_template = "Division d'Infanterie Wallonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3ème Division d'Infanterie Wallonne"
+		location = 11519
+		division_template = "Division d'Infanterie Wallonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4ème Division d'Infanterie Wallonne"
+		location = 3516
+		division_template = "Division d'Infanterie Wallonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5ème Division d'Infanterie Wallonne"
+		location = 3516
+		division_template = "Division d'Infanterie Wallonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "6ème Division d'Infanterie Wallonne"
+		location = 9536
+		division_template = "Division d'Infanterie Wallonne"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1e Vlaamse Infanteriedivisie"
+		location = 516
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2e Vlaamse Infanteriedivisie"
+		location = 516
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3e Vlaamse Infanteriedivisie"
+		location = 516
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4e Vlaamse Infanteriedivisie"
+		location = 516
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5e Vlaamse Infanteriedivisie"
+		location = 13239
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "6e Vlaamse Infanteriedivisie"
+		location = 13239
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "7e Vlaamse Infanteriedivisie"
+		location = 13239
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "8e Vlaamse Infanteriedivisie"
+		location = 3576
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "9e Vlaamse Infanteriedivisie"
+		location = 575
+		division_template = "Vlaamse Infanteriedivisie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1. Elsaessische Infanteriedivision"
+		location = 9503
+		division_template = "Elsaessische Infanteriedivision"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2. Elsaessische Infanteriedivision"
+		location = 9503
+		division_template = "Elsaessische Infanteriedivision"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3. Elsaessische Infanteriedivision"
+		location = 678
+		division_template = "Elsaessische Infanteriedivision"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1. Rheinische Infanteriedivision"
+		location = 11531
+		division_template = "Rheinische Infanteriedivision"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2. Rheinische Infanteriedivision"
+		location = 9575
+		division_template = "Rheinische Infanteriedivision"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3. Rheinische Infanteriedivision"
+		location = 3423
+		division_template = "Rheinische Infanteriedivision"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4. Rheinische Infanteriedivision"
+		location = 11560
+		division_template = "Rheinische Infanteriedivision"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5. Rheinische Infanteriedivision"
+		location = 3558
+		division_template = "Rheinische Infanteriedivision"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1. Leetzebuerger Infanteriedivisioun"
+		location = 6583
+		division_template = "Leetzebuerger Infanteriedivisioun"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2. Leetzebuerger Infanteriedivisioun"
+		location = 11435
+		division_template = "Leetzebuerger Infanteriedivisioun"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+}

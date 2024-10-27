@@ -1,0 +1,20 @@
+﻿###############
+##USIP EVENTS##
+###############
+
+add_namespace = usip
+
+country_event = { #Intro
+	id = usip.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event usip.1"}
+	title = usip.1.t
+	desc = usip.1.desc
+	picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = usip.1.a
+	}
+}

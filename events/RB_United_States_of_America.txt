@@ -1,0 +1,2319 @@
+﻿add_namespace = USA
+
+country_event = { #Work with the SoL?
+	id = USA.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.1"}
+	title = USA.1.t
+	desc = USA.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Yes
+		name = USA.1.a
+		ai_chance = { factor = 1 }
+		create_country_leader = {
+			name = "Douglas MacArthur"
+			#desc = 
+			picture = "Portrait_USA_Douglas_MacArthur.dds"
+			expire = "1999.12.12"
+			ideology = republicanism_subtype
+			traits = {
+			}
+		}
+		create_field_marshal = {
+			name = "Douglas MacArthur"
+			picture = "Portrait_USA_Douglas_MacArthur.dds"
+			traits = {
+				offensive_doctrine
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		set_country_flag = USA_working_with_sol
+	}
+	option = { #No
+		name = USA.1.b
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.05
+		}
+	}
+}
+
+country_event = { #Picking a commander in chief
+	id = USA.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.2"}
+	title = USA.2.t
+	desc = USA.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = USA.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.3"}
+	title = USA.3.t
+	desc = USA.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.3.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.4"}
+	title = USA.4.t
+	desc = USA.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.4.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.4.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.5"}
+	title = USA.5.t
+	desc = USA.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.5.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.5.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.6"}
+	title = USA.6.t
+	desc = USA.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.6.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.6.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.7"}
+	title = USA.7.t
+	desc = USA.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.7.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.7.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.8"}
+	title = USA.8.t
+	desc = USA.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.8.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.8.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.9"}
+	title = USA.9.t
+	desc = USA.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.9.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.9.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.10"}
+	title = USA.10.t
+	desc = USA.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.10.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.10.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.11"}
+	title = USA.11.t
+	desc = USA.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.11.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.11.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.12"}
+	title = USA.12.t
+	desc = USA.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.12.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.12.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.13"}
+	title = USA.13.t
+	desc = USA.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.13.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.13.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.14"}
+	title = USA.14.t
+	desc = USA.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.14.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.14.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.15"}
+	title = USA.15.t
+	desc = USA.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.15.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.15.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.16"}
+	title = USA.16.t
+	desc = USA.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.16.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.16.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.17"}
+	title = USA.17.t
+	desc = USA.17.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.17.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.17.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.18"}
+	title = USA.18.t
+	desc = USA.18.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.18.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.18.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.19"}
+	title = USA.19.t
+	desc = USA.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.19.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.19.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.20"}
+	title = USA.20.t
+	desc = USA.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.20.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.20.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.21"}
+	title = USA.21.t
+	desc = USA.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.21.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.21.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.22"}
+	title = USA.22.t
+	desc = USA.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.22.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.22.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.23"}
+	title = USA.23.t
+	desc = USA.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.23.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.23.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.24"}
+	title = USA.24.t
+	desc = USA.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.24.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.24.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.25"}
+	title = USA.25.t
+	desc = USA.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.25.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.25.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.26"}
+	title = USA.26.t
+	desc = USA.26.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.26.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.26.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.27"}
+	title = USA.27.t
+	desc = USA.27.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.27.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.27.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.28"}
+	title = USA.28.t
+	desc = USA.28.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.28.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.28.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.29"}
+	title = USA.29.t
+	desc = USA.29.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.29.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.29.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.30"}
+	title = USA.30.t
+	desc = USA.30.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.30.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.30.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.31"}
+	title = USA.31.t
+	desc = USA.31.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.31.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.31.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.32"}
+	title = USA.32.t
+	desc = USA.32.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.32.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.32.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.33"}
+	title = USA.33.t
+	desc = USA.33.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.33.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.33.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.34"}
+	title = USA.34.t
+	desc = USA.34.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.34.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.34.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.35"}
+	title = USA.35.t
+	desc = USA.35.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.35.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.35.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.36"}
+	title = USA.36.t
+	desc = USA.36.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.36.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.36.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.37"}
+	title = USA.37.t
+	desc = USA.37.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.37.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.37.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.38"}
+	title = USA.38.t
+	desc = USA.38.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.38.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.38.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.39"}
+	title = USA.39.t
+	desc = USA.39.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.39.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.39.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.40"}
+	title = USA.40.t
+	desc = USA.40.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.40.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.40.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.41"}
+	title = USA.41.t
+	desc = USA.41.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.41.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.41.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.42"}
+	title = USA.42.t
+	desc = USA.42.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.42.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.42.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.43"}
+	title = USA.43.t
+	desc = USA.43.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.43.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.43.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.44"}
+	title = USA.44.t
+	desc = USA.44.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.44.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.44.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.45"}
+	title = USA.45.t
+	desc = USA.45.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.45.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.45.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.46"}
+	title = USA.46.t
+	desc = USA.46.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.46.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.46.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.47"}
+	title = USA.47.t
+	desc = USA.47.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.47.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.47.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.48"}
+	title = USA.48.t
+	desc = USA.48.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.48.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.48.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.49"}
+	title = USA.49.t
+	desc = USA.49.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.49.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.49.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.50"}
+	title = USA.50.t
+	desc = USA.50.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.50.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.50.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.51"}
+	title = USA.51.t
+	desc = USA.51.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.51.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.51.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.52"}
+	title = USA.52.t
+	desc = USA.52.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.52.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.52.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.53"}
+	title = USA.53.t
+	desc = USA.53.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.53.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.53.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.54"}
+	title = USA.54.t
+	desc = USA.54.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.54.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.54.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.55"}
+	title = USA.55.t
+	desc = USA.55.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.55.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.55.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.56"}
+	title = USA.56.t
+	desc = USA.56.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.56.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.56.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.57"}
+	title = USA.57.t
+	desc = USA.57.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.57.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.57.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.58"}
+	title = USA.58.t
+	desc = USA.58.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.58.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.58.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.59
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.59"}
+	title = USA.59.t
+	desc = USA.59.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.59.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.59.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.60
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.60"}
+	title = USA.60.t
+	desc = USA.60.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.60.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.60.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.61
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.61"}
+	title = USA.61.t
+	desc = USA.61.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.61.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.61.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.62
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.62"}
+	title = USA.62.t
+	desc = USA.62.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.62.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.62.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.63
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.63"}
+	title = USA.63.t
+	desc = USA.63.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.63.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.63.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.64
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.64"}
+	title = USA.64.t
+	desc = USA.64.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.64.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.64.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.65
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.65"}
+	title = USA.65.t
+	desc = USA.65.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.65.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.65.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.66
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.66"}
+	title = USA.66.t
+	desc = USA.66.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.66.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.66.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.67
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.67"}
+	title = USA.67.t
+	desc = USA.67.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.67.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.67.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.68
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.68"}
+	title = USA.68.t
+	desc = USA.68.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.68.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.68.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.69
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.69"}
+	title = USA.69.t
+	desc = USA.69.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.69.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.69.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.70"}
+	title = USA.70.t
+	desc = USA.70.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.70.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.70.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.71
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.71"}
+	title = USA.71.t
+	desc = USA.71.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.71.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.71.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.72
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.72"}
+	title = USA.72.t
+	desc = USA.72.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.72.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.72.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.73
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.73"}
+	title = USA.73.t
+	desc = USA.73.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.73.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.73.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.74
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.74"}
+	title = USA.74.t
+	desc = USA.74.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.74.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.74.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.75
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.75"}
+	title = USA.75.t
+	desc = USA.75.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.75.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.75.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.76
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.76"}
+	title = USA.76.t
+	desc = USA.76.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.76.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.76.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.77"}
+	title = USA.77.t
+	desc = USA.77.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.77.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.77.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.78
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.78"}
+	title = USA.78.t
+	desc = USA.78.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.78.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.78.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.79
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.79"}
+	title = USA.79.t
+	desc = USA.79.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.79.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.79.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.80
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.80"}
+	title = USA.80.t
+	desc = USA.80.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.80.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.80.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.81
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.81"}
+	title = USA.81.t
+	desc = USA.81.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.81.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.81.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.82
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.82"}
+	title = USA.82.t
+	desc = USA.82.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.82.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.82.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.83
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.83"}
+	title = USA.83.t
+	desc = USA.83.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.83.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.83.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.84
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.84"}
+	title = USA.84.t
+	desc = USA.84.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.84.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.84.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.85
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.85"}
+	title = USA.85.t
+	desc = USA.85.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.85.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.85.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.86
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.86"}
+	title = USA.86.t
+	desc = USA.86.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.86.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.86.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.87
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.87"}
+	title = USA.87.t
+	desc = USA.87.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.87.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.87.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.88
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.88"}
+	title = USA.88.t
+	desc = USA.88.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.88.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.88.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.89
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.89"}
+	title = USA.89.t
+	desc = USA.89.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.89.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.89.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.90
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.90"}
+	title = USA.90.t
+	desc = USA.90.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.90.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.90.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.91
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.91"}
+	title = USA.91.t
+	desc = USA.91.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.91.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.91.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.92
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.92"}
+	title = USA.92.t
+	desc = USA.92.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.92.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.92.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.93
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.93"}
+	title = USA.93.t
+	desc = USA.93.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.93.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.93.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.94
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.94"}
+	title = USA.94.t
+	desc = USA.94.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.94.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.94.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.95
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.95"}
+	title = USA.95.t
+	desc = USA.95.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.95.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.95.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.96
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.96"}
+	title = USA.96.t
+	desc = USA.96.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.96.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.96.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.97
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.97"}
+	title = USA.97.t
+	desc = USA.97.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.97.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.97.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.98
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.98"}
+	title = USA.98.t
+	desc = USA.98.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.98.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.98.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.99
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.99"}
+	title = USA.99.t
+	desc = USA.99.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.99.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.99.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.100"}
+	title = USA.100.t
+	desc = USA.100.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.100.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = USA.100.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #FREEDOM TIME
+	id = USA.1937
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.1937"}
+	title = USA.1937.t
+	desc = USA.1937.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA.1937.a
+		ai_chance = { factor = 1 }
+		USA = {
+			annex_country = {
+				target = CNA
+				transfer_troops = no
+			}
+			change_tag_from = CNA
+		}
+		USA = {
+			annex_country = {
+				target = LOU
+				transfer_troops = no
+			}
+			annex_country = {
+				target = HBC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = CAL
+				transfer_troops = no
+			}
+			annex_country = {
+				target = LSL
+				transfer_troops = no
+			}
+			annex_country = {
+				target = FLO
+				transfer_troops = no
+			}
+			annex_country = {
+				target = UTY
+				transfer_troops = no
+			}
+			annex_country = {
+				target = TEX
+				transfer_troops = no
+			}
+			annex_country = {
+				target = CCT
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SHW
+				transfer_troops = no
+			}
+			annex_country = {
+				target = BLK
+				transfer_troops = no
+			}
+			annex_country = {
+				target = FLT
+				transfer_troops = no
+			}
+			annex_country = {
+				target = CHU
+				transfer_troops = no
+			}
+			annex_country = {
+				target = CSW
+				transfer_troops = no
+			}
+			transfer_state = 101
+			transfer_state = 331
+			transfer_state = 376
+			transfer_state = 377
+			transfer_state = 803
+			transfer_state = 804
+			transfer_state = 827
+			transfer_state = 978
+			transfer_state = 979
+			every_owned_state = {
+				set_demilitarized_zone = no
+				add_core_of = USA
+			}
+			QUE = {
+				transfer_state = 332
+				add_state_core = 332
+				transfer_state = 806
+				add_state_core = 806
+				transfer_state = 842
+				add_state_core = 842
+			}
+		}
+	}
+}
+

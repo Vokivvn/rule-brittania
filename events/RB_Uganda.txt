@@ -1,0 +1,326 @@
+﻿add_namespace = uga
+
+country_event = {   #Intro Event
+	id = uga.1
+	title = uga.1.t
+	desc = uga.1.desc
+	picture = GFX_report_event_philip_mitchell
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.1"}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = uga.1.a
+
+	}
+}
+
+country_event = {   #Meeting with the King
+	id = uga.2
+	title = uga.2.t
+	desc = uga.2.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.2"}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = uga.2.a
+		add_to_variable = { UGA_King_Contentedness = 0.5 }
+		custom_effect_tooltip = UGA_improve_king_contentedness
+	}
+}
+
+country_event = {   #Debug Variables
+	id = uga.3
+	title = uga.3.t
+	desc = uga.3.desc
+	picture = GFX_report_event_philip_mitchell
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.3"}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {  #Yes
+		name = uga.3.a
+		custom_effect_tooltip = UGA_improve_london_trust_tt
+		add_to_variable = { UGA_London_Trust = 1 }
+		UGA_update_product = yes
+	}
+}
+
+country_event = {   #A Year of Preparation
+	id = uga.4
+	title = uga.4.t
+	desc = uga.4.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.4"}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Best colony
+		name = uga.4.a
+
+	}
+}
+
+country_event = {   #Reporting Back to London
+	id = uga.5
+	title = uga.5.t
+	desc = uga.5.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.5"}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = uga.5.a
+
+	}
+}
+
+###NEGOTIATIONS EVENTS
+country_event = {   #Beginning the Negotiations
+	id = uga.6
+	title = uga.6.t
+	desc = uga.6.desc
+	picture = GFX_report_event_generic_treaty
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.6"}
+
+	is_triggered_only = yes
+
+	option = {
+		name = uga.6.a
+		country_event = { id = uga.7 days = 1 }
+		set_variable = { UGA_Negotiations_London = 0 }
+		set_variable = { UGA_Negotiations_King = 0 }
+	}
+}
+
+country_event = {   #Issue - Coffee Export
+	id = uga.7
+	title = uga.7.t
+	desc = uga.7.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.7"}
+
+	is_triggered_only = yes
+
+	option = {  #Export as much as possible!
+		name = uga.7.a
+		trigger = {
+			check_variable = { UGA_London_Trust > 4 }
+		}
+		add_to_variable = { UGA_Negotiations_London = 2 }
+		country_event = { id = uga.8 days = 1 }
+	}
+
+	option = {  #We must satisfy London
+		name = uga.7.b
+		add_to_variable = { UGA_Negotiations_London = 1 }
+		country_event = { id = uga.8 days = 1 }
+	}
+
+	option = {  #We need to meet the expectations
+		name = uga.7.c
+		add_to_variable = { UGA_Negotiations_King = 1 }
+		country_event = { id = uga.8 days = 1 }
+	}
+
+	option = { #They can wait
+		name = uga.7.d
+		trigger = {
+			check_variable = { UGA_King_Contentedness > 4 }
+		}
+		add_to_variable = { UGA_Negotiations_King = 2 }
+		country_event = { id = uga.8 days = 1 }
+	}
+}
+
+country_event = {   #Issue - British Supervision
+	id = uga.8
+	title = uga.8.t
+	desc = uga.8.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.8"}
+
+	is_triggered_only = yes
+
+	option = {  #They sould be allowed to maintain order
+		name = uga.8.a
+		add_to_variable = { UGA_Negotiations_London = 1 }
+		country_event = { id = uga.9 days = 1 }
+	}
+
+	option = {  #The King can be trusted
+		name = uga.8.b
+		add_to_variable = { UGA_Negotiations_King = 1 }
+		country_event = { id = uga.9 days = 1 }
+	}
+}
+
+country_event = {   #Issue - Plantation Workers' Rights
+	id = uga.9
+	title = uga.9.t
+	desc = uga.9.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.9"}
+
+	is_triggered_only = yes
+
+	option = {  #No
+		name = uga.9.a
+		add_to_variable = { UGA_Negotiations_London = 1 }
+		country_event = { id = uga.10 days = 1 }
+	}
+
+	option = {  #Sure
+		name = uga.9.b
+		add_to_variable = { UGA_Negotiations_King = 1 }
+		country_event = { id = uga.10 days = 1 }
+	}
+}
+
+country_event = {   #Policing the King's Land
+	id = uga.10
+	title = uga.10.t
+	desc = uga.10.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.10"}
+
+	is_triggered_only = yes
+
+	option = {  #Our men will keep the land safe
+		name = uga.10.a
+		add_to_variable = { UGA_Negotiations_London = 1 }
+		country_event = { id = uga.11 days = 1 }
+	}
+
+	option = {  #He can take care of that
+		name = uga.10.b
+		add_to_variable = { UGA_Negotiations_King = 1 }
+		country_event = { id = uga.11 days = 1 }
+	}
+}
+
+country_event = {   #Trade with the smaller Kingdoms
+	id = uga.11
+	title = uga.11.t
+	desc = uga.11.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.11"}
+
+	is_triggered_only = yes
+
+	option = {  #Absolutely
+		name = uga.11.a
+		trigger = {
+			AND = {
+				check_variable = { UGA_London_Trust > 4 }
+				check_variable = { UGA_Negotiations_London < 3 }
+			}
+		}
+		add_to_variable = { UGA_Negotiations_London = 2 }
+		country_event = { id = uga.12 days = 5 }
+	}
+
+	option = {  #Kinda
+		name = uga.11.b
+		add_to_variable = { UGA_Negotiations_London = 1 }
+		country_event = { id = uga.12 days = 5 }
+	}
+
+	option = {  #No
+		name = uga.11.c
+		add_to_variable = { UGA_Negotiations_King = 1 }
+		country_event = { id = uga.12 days = 5 }
+	}
+
+	option = {  #Leave them to the King
+		name = uga.11.d
+		trigger = {
+			AND = {
+				check_variable = { UGA_King_Contentedness > 4 }
+				check_variable = { UGA_Negotiations_King < 3 }
+			}
+		}
+		add_to_variable = { UGA_Negotiations_King = 2 }
+		country_event = { id = uga.12 days = 5 }
+	}
+}
+
+country_event = {   #End of the Negotiations
+	id = uga.12
+	title = uga.12.t
+	desc = uga.12.desc
+	picture = GFX_placeholder
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.12"}
+
+	is_triggered_only = yes
+
+	option = {
+		name = uga.12.a
+
+	}
+}
+
+country_event = {   #Radcliffe Appointed
+	id = uga.13
+	title = uga.13.t
+	desc = uga.13.desc
+	picture = GFX_report_event_cyril_radcliffe
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.13"}
+
+	is_triggered_only = yes
+
+	option = {
+		name = uga.13.a
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Cyril Radcliffe"
+			#desc =
+			picture = "Portrait_UGA_Cyril_Radcliffe.dds"
+			expire = "1999.12.12"
+			ideology = administrationism_subtype
+			traits = {
+			}
+		}
+	}
+}
+
+country_event = {   #Mau Mau uprising
+	id = uga.14
+	title = uga.14.t
+	desc = uga.14.desc
+	picture = GFX_report_event_soldiers_march
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uga.14"}
+
+	is_triggered_only = yes
+
+	option = {	#Damn
+		hidden_effect = {
+			load_focus_tree = {
+				tree = RB_UGA_intro_2
+				keep_completed = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,204 @@
+bookmarks =  {
+	bookmark = {
+		name = "RULEBRITANNIA_NAME"
+		desc = "RULEBRITANNIA_DESC"
+		date = 1936.1.1.1
+		picture =  "GFX_select_date_1939"
+		default_country = "ENG"
+		default = yes
+
+		#MAJORS#
+		"ENG" = {
+			history = "ENG_RULEBRITANNIA_DESC"
+			ideology = absolutism
+			ideas = {
+				ENG_sidelined_parliament
+				ENG_irish_unrest
+				ENG_britannia_rules_the_waves
+			}
+			focuses = {
+				ENG_The_Ruler_Of_Everything
+			}
+		}
+		"AUS" = {
+			history = "AUS_RULEBRITANNIA_DESC"
+			ideology = despotism
+			ideas = {
+				AUS_Anglo_Austrian_Alliance
+				AUS_Old_Man_Of_Europe
+				AUS_Ethnic_Tensions
+			}
+			focuses = {
+				AUS_Kaiserliche_Armee
+				AUS_Western_Development
+				AUS_Realm_wide_Development
+			}
+		}
+		"RAJ" = {
+			history = "RAJ_RULEBRITANNIA_DESC"
+			ideology = despotism
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"FRA" = {
+			history = "FRA_RULEBRITANNIA_DESC"
+			ideology = despotism
+			ideas = {
+				FRA_London_Loyalty
+				FRA_Ministry_Treachery
+				FRA_Normandy_Garrison
+
+			}
+			focuses = {
+
+			}
+		}
+		"POR" = {
+			history = "POR_RULEBRITANNIA_DESC"
+			ideology = absolutism
+			ideas = {
+				POR_The_Last_Independent_State
+				POR_In_Hoc_Signo_Vinces
+				POR_Place_in_the_Sun
+			}
+			focuses = {
+
+			}
+		}
+		"CNA" = {
+			history = "CNA_RULEBRITANNIA_DESC"
+			ideology = parliamentarianism
+			ideas = {
+				CNA_the_continental_parliament
+				CNA_relative_self_rule
+				CNA_great_lakes_industry
+			}
+			focuses = {
+				CNA_britains_loyal_commonwealth
+				CNA_the_1936_elections
+				USA_liberty_or_death
+			}
+		}
+		"RUS" = {
+			history = "RUS_RULEBRITANNIA_DESC"
+			ideology = absolutism
+			ideas = {
+				RUS_Defeated_Nation
+				RUS_Five_Military_Modernisations
+				RUS_Chernosotentsi
+			}
+			focuses = {
+				RUS_the_tsars_reforms
+				RUS_rally_the_troops
+				RUS_the_road_to_kronstadt
+			}
+		}
+		"---"={
+			history = "OTHER_RULEBRITANNIA_DESC"
+		}
+		#MINORS#
+		"CAL" = {
+			minor = yes
+			history = "CAL_RULEBRITANNIA_DESC"
+			ideology = liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"SWE" = {
+			minor = yes
+			history = "SWE_RULEBRITANNIA_DESC"
+			ideology = despotism
+			ideas = {
+				SWE_swedish_royal_army
+				SWE_empire_realized
+				SWE_finnish_unrest
+			}
+			focuses = {
+			}
+		}
+		"BAV" = {
+			minor = yes
+			history = "BAV_RULEBRITANNIA_DESC"
+			ideology = absolutism
+			ideas = {
+				BAV_Founder_of_the_AGEI
+				BAV_Panther_of_the_South
+				BAV_Volkskrone
+			}
+			focuses = {
+			}
+
+		}
+		"PIE" = {
+			minor = yes
+			history = "PIE_RULEBRITANNIA_DESC"
+			ideology = despotism
+			ideas = {
+				pie_dukes_retinue
+				pie_admiralty_content
+				pie_guerra_cultura
+			}
+			focuses = {
+			}
+		}
+		"BRG" = {
+			minor = yes
+			history = "BRG_RULEBRITANNIA_DESC"
+			ideology = absolutism
+			ideas = {
+				BRG_Idea_No_Ones_A_Burgundian_real
+				BRG_Idea_Constituent_Countries
+			}
+			focuses = {
+			}
+		}
+		"CHI" = {
+			minor = yes
+			history = "CHI_RULEBRITANNIA_DESC"
+			ideology = despotism
+			ideas = {
+				CHI_forbidden_city
+				CHI_legacy_of_treaties
+				CHI_mandate_of_heaven
+			}
+			focuses = {
+			}
+		}
+		"BRA" = {
+			minor = yes
+			history = "BRA_RULEBRITANNIA_DESC"
+			ideology = despotism
+			ideas = {
+				bra_king_coffee
+				bra_labour_unrest
+				bra_none_dominant
+			}
+			focuses = {
+				BRA_the_great_tea_debate
+				BRA_Seeds_Victory
+				BRA_Machado_Victory
+			}
+		}
+		"SAF" = {
+			minor = yes
+			history = "SAF_RULEBRITANNIA_DESC"
+			ideology = absolutism
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

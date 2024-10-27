@@ -1,0 +1,86 @@
+ideas = {
+	country = {
+		SWE_swedish_royal_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_swedish_royal_army"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWE_idea_swedish_army
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				conscription_factor = 0.05
+			}
+		}
+		SWE_empire_realized = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_empire_realized"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWE_idea_empire_realized
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.25
+				surrender_limit = 0.2
+			}
+		}
+		SWE_pro_anglo_stance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_pro_anglo_stance"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWE_idea_pro_anglo_stance
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+				min_export = 0.3
+			}
+		}
+		SWE_finnish_unrest = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_finnish_unrest"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWE_idea_finnish_unrest
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.2
+			}
+		}
+	}
+}

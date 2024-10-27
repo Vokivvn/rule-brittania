@@ -1,0 +1,60 @@
+## King George is Fine and so is the empire nothing bad can happen ##
+
+focus_tree = {
+	id = ENG_Starting_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	shared_focus = ENG_year_1936
+	continuous_focus_position = { x = 50 y = 2000}
+}
+
+## Death of George V ##
+
+focus_tree = {
+	id = ENG_George_V_Death
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	shared_focus = ENG_The_Ruler_Of_Everything
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = ENG_Eddie_Dead
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	shared_focus = ENG_The_Regicide_Of_A_Millenium
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+## Henry IX Trees ##
+focus_tree = {
+	id = ENG_Henry_IX_consolidation_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	shared_focus = ENG_Henry_King_Henry_IX
+	continuous_focus_position = { x = 50 y = 2000 }
+}

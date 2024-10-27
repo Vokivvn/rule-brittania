@@ -1,0 +1,351 @@
+﻿add_namespace = anglo_control
+
+#Debug events for calcing anglo control
+
+country_event = { #test
+	id = anglo_control.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.1"
+		RB_calculate_anglo_control_log = yes
+	}
+	title = anglo_control.1.t
+	desc = "Current Anglo Control is [?anglo_control]%"
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = anglo_control.1.a
+		add_political_power = 1
+	}
+}
+
+country_event = { #american revolution begins
+	id = anglo_control.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.2"
+	}
+	title = anglo_control.2.t
+	desc = "Current Anglo Control is [?anglo_control]%"
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = anglo_control.2.a
+		USA = {
+			annex_country = {
+				target = CNA
+			}
+			change_tag_from = CNA
+			every_country = {
+				limit = {
+					NOT = { tag = ENG }
+				}
+				USA = {
+					annex_country = {
+						target = PREV
+					}
+				}
+			}
+			every_owned_state = {
+				add_core_of = USA
+			}
+		}
+	}
+}
+
+country_event = { #for lame people
+	id = anglo_control.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.3"
+		RB_calculate_anglo_control = yes
+	}
+	title = anglo_control.3.t
+	desc = "Current Anglo Control is [?anglo_control]%"
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = anglo_control.3.a
+		add_political_power = 1
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 10
+		}
+	}
+}
+
+country_event = { #i try to lag the game using variables
+	id = anglo_control.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.4"
+		RB_calculate_anglo_control = yes
+	}
+	title = anglo_control.4.t
+	desc = "Current Anglo Control is [?anglo_control]%"
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = anglo_control.4.a
+		hidden_effect = {
+			every_state = {
+				set_variable = { anglo1 = random }
+				multiply_variable = { anglo1 = 23 }
+				set_variable = { anglo2 = random }
+				divide_variable = { anglo1 = anglo2 }
+				if = {
+					limit = {
+						check_variable = { anglo1 > 3 }
+					}
+					add_to_variable = { anglo2 = anglo1 }
+				}
+				every_country = {
+					set_variable = { anglo3 = 2 }
+					every_owned_state = {
+						add_to_variable = { anglo3 = state_population_k }
+						add_to_variable = { anglo3 = anglo1 }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #debug
+	id = anglo_control.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.5"
+		RB_calculate_anglo_control = yes
+	}
+	title = anglo_control.5.t
+	desc = "Current Anglo Control is [?anglo_control]%"
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = anglo_control.5.a
+		every_country = {
+			set_variable = { time_counter = 1 }
+		}
+	}
+}
+
+country_event = { #debug
+	id = anglo_control.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.6"
+		RB_calculate_anglo_control = yes
+	}
+	title = anglo_control.6.t
+	desc = "Current Anglo Control is [?anglo_control]%"
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = anglo_control.6.a
+		every_country = {
+			log="[THIS.GetName]"
+			capital_scope = {
+				log="[THIS.GetName]"
+				ROOT = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+}
+
+country_event = { #debug
+	id = anglo_control.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.7"
+		RB_calculate_anglo_control = yes
+	}
+	title = anglo_control.7.t
+	desc = "Current Anglo Control is [?anglo_control]%"
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = anglo_control.7.a
+		every_country = {
+			load_oob = "ABY_1936"
+		}
+	}
+}
+
+country_event = { #loop
+	id = anglo_control.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.11"
+		RB_calculate_anglo_control = yes
+		#country_event = {
+		#	id = anglo_control.12
+		#	days = 7
+		#}
+	}
+	title = anglo_control.11.t
+	hidden = yes
+#	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = anglo_control.11.a
+		
+	}
+}
+
+country_event = { #loop
+	id = anglo_control.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.12"
+		RB_calculate_anglo_control = yes
+		country_event = {
+			id = anglo_control.13
+			days = 7
+		}
+	}
+	title = anglo_control.12.t
+	hidden = yes
+#	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = anglo_control.12.a
+		
+	}
+}
+
+country_event = { #loop
+	id = anglo_control.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.13"
+		RB_calculate_anglo_control = yes
+		country_event = {
+			id = anglo_control.11
+			days = 7
+		}
+	}
+	title = anglo_control.13.t
+	hidden = yes
+#	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = anglo_control.13.a
+		
+	}
+}
+
+country_event = { #loop
+	id = anglo_control.21
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.21"
+		random_state = {
+			limit = {
+				NOT = {
+					owner = {
+						tag = CHU
+					}
+				}
+			}
+			CHU = {
+				transfer_state = PREV
+			}
+		}
+		country_event = {
+			id = anglo_control.22
+			days = 1
+		}
+	}
+	title = anglo_control.21.t
+	hidden = yes
+#	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = anglo_control.21.a
+	}
+}
+
+country_event = { #loop
+	id = anglo_control.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.22"
+		random_state = {
+			limit = {
+				NOT = {
+					owner = {
+						tag = CHU
+					}
+				}
+			}
+			CHU = {
+				transfer_state = PREV
+			}
+		}
+		country_event = {
+			id = anglo_control.23
+			days = 1
+		}
+	}
+	title = anglo_control.22.t
+	hidden = yes
+#	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = anglo_control.22.a
+	}
+}
+
+country_event = { #loop
+	id = anglo_control.23
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event anglo_control.23"
+		random_state = {
+			limit = {
+				NOT = {
+					owner = {
+						tag = CHU
+					}
+				}
+			}
+			CHU = {
+				transfer_state = PREV
+			}
+		}
+		country_event = {
+			id = anglo_control.21
+			days = 1
+		}
+	}
+	title = anglo_control.23.t
+	hidden = yes
+#	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = anglo_control.23.a
+	}
+}

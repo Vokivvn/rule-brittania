@@ -1,0 +1,66 @@
+CHA_ecovar_change = {
+set_variable = { CHA_calc_var = CHA_economy_var}
+multiply_variable = { CHA_calc_var = CHA_trust_var }
+	if = {
+		limit = {
+			check_variable = { CHA_calc_var > -0}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { CHA_calc_var > -1}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { CHA_calc_var > -3}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { CHA_calc_var > -7}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { CHA_calc_var < -8}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { CHA_calc_var < -10}
+		}
+		#Conference in London
+	}
+}
+CHA_conclusion1 = {
+	if = { #OIL RIVER VICTORY
+		limit = {
+			check_variable = { CHA_calc_var < 11}
+			check_variable = { CHA_calc_var > 0}
+		}
+		NGA = { 
+			annex_country = {
+				target = THIS
+				transfer_troops = yes
+			} 
+		}
+	}
+	if = { #CHAD victory
+		limit = {
+			check_variable = { CHA_calc_var < 22}
+			check_variable = { CHA_calc_var > 12}
+		}
+		add_to_variable = { CHA_trust_var = 1}
+	}
+	if = { #CHAD VICTORY
+		limit = {
+			check_variable = { CHA_calc_var < 60}
+			check_variable = { CHA_calc_var > 23}
+		}
+		annex_country = {
+		    target = NGA
+		    transfer_troops = yes
+		}
+	}
+}

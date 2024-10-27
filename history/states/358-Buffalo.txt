@@ -1,0 +1,34 @@
+state={
+	id=358
+	name="STATE_358"
+	resources={
+		steel=13.000
+	}
+
+	history={
+		owner = CNA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 4
+
+		}
+		add_core_of = CNA
+		victory_points = {
+			11654 20 
+		}
+		victory_points = {
+			3733 10
+		}
+		victory_points = {
+			9708 5
+		}
+
+	}
+
+	provinces={
+		734 749 1436 3697 3702 3733 3747 6707 6717 9662 9664 9708 9836 11648 11650 11654 11680 13157 
+	}
+	manpower=3385707
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

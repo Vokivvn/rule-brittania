@@ -1,0 +1,36 @@
+PAT_debug = {
+	PAT_debug_irish = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PAT_debug_irish"
+			country_event = { id = pat.1 }
+		}
+	}
+
+	PAT_debug_german = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PAT_debug_german"
+			country_event = { id = pat.2 }
+		}
+	}
+
+	PAT_debug_mapuche = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PAT_debug_mapuche"
+			country_event = { id = pat.3 }
+		}
+	}
+}
+
+	

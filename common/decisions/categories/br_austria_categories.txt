@@ -1,0 +1,52 @@
+################
+##### AUS ######
+################
+
+unrest_austria = {
+	icon = generic_nationalism
+	allowed = {
+		tag = AUS
+	}
+	
+	
+}
+
+estates_austria = {
+	icon = generic_nationalism
+	allowed = {
+		OR = {
+			tag = AUS
+			tag = HUN
+			tag = CZE
+			tag = SER
+			tag = SIL
+		}
+	}
+	on_map_area = {
+		state = 4
+		name = AUS_estates_map_category_name
+		zoom = 250
+	}
+
+}
+
+
+ostend_austria = {
+	picture = GFX_OST_decision_Borneo
+	allowed = {
+		OR = {
+			tag = AUS
+			tag = ENG
+			tag = NET
+			tag = BOR
+		}
+	}
+	visible = {
+		OR = {
+			tag = AUS
+			tag = ENG
+			tag = NET
+			tag = BOR
+		}
+	}
+}

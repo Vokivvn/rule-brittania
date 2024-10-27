@@ -1,0 +1,189 @@
+﻿capital = 579
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 1
+
+
+add_ideas = {
+	limited_conscription
+	british_pol_independence
+	british_independent_forces
+	expelled_british_econ_influence
+	RLC_Salekhard_Arsenal
+	RLC_We_Have_A_Goal
+	SIB_complete_selfreliance
+	SIB_grand_railroad
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 2 # PLACEHOLDER
+	#basic_heavy_tank = 2 # PLACEHOLDER
+	#basic_medium_tank = 2# PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+add_equipment_to_stockpile = {
+    type = CAS_equipment_1
+    amount = 30
+    producer = RLC
+}
+add_equipment_to_stockpile = {
+    type = tac_bomber_equipment_0
+    amount = 10
+    producer = RLC
+}
+add_equipment_to_stockpile = {
+    type = fighter_equipment_0
+    amount = 60
+    producer = RLC
+}
+set_politics = {
+	ruling_party = nationalism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 0
+    liberalism = 0
+    republicanism = 0
+    parliamentarianism = 0
+    administrationism = 0
+    absolutism = 0
+    despotism = 0
+    nationalism = 100
+}
+
+create_country_leader = {
+    name = "Sergey Bunyachenko"
+	#desc = 
+	picture = "portrait_RLC_Sergey_Buyanchenko.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {
+	old_wolf
+	}
+}
+create_field_marshal = {
+	name = "Sergey Bunyachenko"
+	picture = "portrait_RLC_Sergey_Buyanchenko.dds"
+   # traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Alexei von Lampe"
+	picture = "general_plug.dds"
+   # traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+	create_corps_commander = {
+	name = "Anton Turkul"
+	picture = "general_plug.dds"
+   # traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Anatoly MacReady-Stenroos"
+	picture = "general_plug.dds"
+	#traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Abram Dragomirov"
+	picture = "general_plug.dds"
+	#traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Fyodor Trukhin"
+	picture = "general_plug.dds"
+   # traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Fyodor Abramov"
+	picture = "general_plug.dds"
+	#traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Sultan Kilic Girey"
+	picture = "general_plug.dds"
+	#traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Isaac Bykadorov"
+	picture = "general_plug.dds"
+	#traits = { reckless  }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}

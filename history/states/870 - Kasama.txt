@@ -1,0 +1,21 @@
+state={
+	id=870
+	name="STATE_870" #Kasama
+	
+	state_category = rural
+
+
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 3
+
+		}
+	}
+
+	provinces={
+		1846 10594 10930
+	}
+	manpower=1380089
+	buildings_max_level_factor=1.000
+}

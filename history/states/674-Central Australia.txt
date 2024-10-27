@@ -1,0 +1,22 @@
+
+state={
+	id=674
+	name="STATE_674"
+
+	history={
+		owner = SWN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SWN
+
+	}
+
+	provinces={
+		1511 1526 1540 1652 2157 4630 5175 7453 8130 8228 8243 10983
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

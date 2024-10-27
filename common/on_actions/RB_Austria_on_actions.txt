@@ -1,0 +1,218 @@
+on_actions = {
+	on_daily = {
+		effect = { 
+			BOR = {
+				random_controlled_state = {
+					limit = {
+						is_core_of = BOR
+						NOT = { is_owned_by = BOR }
+					}
+					if = { 
+						limit = { NOT = { state = 721 } }
+						BOR = { transfer_state = PREV }
+						else = {	
+							BOR = { set_cosmetic_tag =  BOR_STATE }
+						}	
+					}
+				}	
+			}
+			if = { 
+				limit = { 
+					BOR = { 
+						has_war_with = VOC
+						VOC = {
+							NOT = {
+								controls_state = 333
+								controls_state = 334
+							}
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = BOR
+					}
+					white_peace = BOR
+				}
+			}	
+			if = { 
+				limit = { 
+					BOR = { 
+						OR = {
+							has_war_with = OST
+							has_war_with = AUS
+						}
+						OST = {
+							NOT = {
+								controls_state = 721
+								controls_state = 1025
+							}
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = BOR
+					}
+					white_peace = BOR
+				}
+				BOR = { transfer_state = 721 }
+				BOR = { set_cosmetic_tag =  BOR_STATE }
+			}	
+			every_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						is_subject_of = AUS
+					}
+				}
+				every_owned_state = {
+					limit = {
+						has_state_flag = AUS_nobility_control
+					}
+					add_dynamic_modifier = { modifier = estates_nobility_mod }
+				}
+				every_owned_state = {
+					limit = {
+						has_state_flag = AUS_burghers_control
+					}
+					add_dynamic_modifier = { modifier = estates_burghers_mod }
+				}
+				every_owned_state = {
+					limit = {
+						has_state_flag = AUS_clergy_control
+					}
+					add_dynamic_modifier = { modifier = estates_clergy_mod }
+					
+				}
+				every_owned_state = {
+					limit = {
+						has_state_flag = AUS_nobody_control
+					}
+					add_dynamic_modifier = { modifier = estates_nobody_mod }
+				}
+				every_owned_state = {
+					limit = {
+						NOT = { has_state_flag = AUS_nobody_control }						
+						has_dynamic_modifier = {
+							modifier = estates_nobody_mod
+						}
+					}
+					remove_dynamic_modifier = { modifier = estates_nobody_mod }
+				}
+				every_owned_state = {
+					limit = {
+						NOT = { has_state_flag = AUS_clergy_control }						
+						has_dynamic_modifier = {
+							modifier = estates_clergy_mod
+						}
+					}
+					remove_dynamic_modifier = { modifier = estates_clergy_mod }
+				}
+				every_owned_state = {
+					limit = {
+						NOT = { has_state_flag = AUS_nobility_control }						
+						has_dynamic_modifier = {
+							modifier = estates_nobility_mod
+						}
+					}
+					remove_dynamic_modifier = { modifier = estates_nobility_mod }
+				}
+				every_owned_state = {
+					limit = {
+						NOT = { has_state_flag = AUS_burghers_control }						
+						has_dynamic_modifier = {
+							modifier = estates_burghers_mod
+						}
+					}
+					remove_dynamic_modifier = { modifier = estates_burghers_mod }
+				}
+			}
+		}
+	}
+	on_startup = {
+	    effect = {
+	    	AUS = {
+				add_manpower = 65000
+	    		set_variable = {
+	 				var = AUS_burghers_loyalty
+	 				value = 50
+	    		}
+	    		set_variable = {
+	 				var = AUS_clergy_loyalty
+	 				value = 50
+	    		}
+	    		set_variable = {
+	 				var = AUS_nobility_loyalty
+	 				value = 50
+	    		}
+	    	}	 
+		    937 = { #trentiono
+		    	set_state_flag = AUS_clergy_control
+		    }
+		    39 = { #south tyrol
+		    	set_state_flag = AUS_nobody_control
+		    }
+		    153 = { #tyrol
+		    	set_state_flag = AUS_nobility_control
+		    }
+		    938 = { #salzburg
+		    	set_state_flag = AUS_clergy_control
+		    }
+		    939 = { #karnten
+		    	set_state_flag = AUS_nobody_control
+		    }
+		    940 = { #steiermark
+		    	set_state_flag = AUS_nobody_control
+		    }
+		    152 = { #upper austria
+		    	set_state_flag = AUS_nobility_control
+		    }
+		    949 = { #slovenian carinthia
+		    	set_state_flag = AUS_nobody_control
+		    }
+		    102 = { #slovenia
+		    	set_state_flag = AUS_nobody_control
+		    }
+		    941 = { #austrian littoral
+		    	set_state_flag = AUS_burghers_control
+		    }
+		    736 = { #trieste
+		    	set_state_flag = AUS_burghers_control
+		    }
+		    943 = { #istria
+		    	set_state_flag = AUS_nobility_control
+		    }
+			944 = {
+				set_state_flag = AUS_nobody_control
+			}
+			160 = {
+				set_state_flag = AUS_burghers_control
+			}
+			159 = {
+				set_state_flag = AUS_nobility_control
+			}
+			9 = {
+				set_state_flag = AUS_burghers_control
+			}
+			934 = {
+				set_state_flag = AUS_clergy_control
+			}
+			69 = {
+				set_state_flag = AUS_clergy_control
+			}
+			75 = {
+				set_state_flag = AUS_nobility_control
+			}
+			66 = {
+				set_state_flag = AUS_nobility_control
+			}
+			104 = {
+				set_state_flag = AUS_nobility_control
+			}
+			AUS = { 
+				AUS_recalculate_estates = yes
+			}
+		}
+	}
+}

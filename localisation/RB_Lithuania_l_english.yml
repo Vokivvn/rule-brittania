@@ -1,0 +1,665 @@
+﻿l_english:
+ ##Country Names##
+ LIT_cromwellianism:0 "Lithuanian Revolutionary Republic"
+ LIT_cromwellianism_DEF:0 "The Lithuanian Revolutionary Republic"
+ LIT_marxism:0 "People's Republic of Lithuania"
+ LIT_marxism_DEF:0 "The People's Republic of Lithuania"
+ LIT_liberalism:0 "Grand Duchy of Lithuania"
+ LIT_liberalism_DEF:0 "The Grand Duchy of Lithuania"
+ LIT_republicanism:0 "Grand Duchy of Lithuania"
+ LIT_republicanism_DEF:0 "The Grand Duchy of Lithuania"
+ LIT_parliamentarianism:0 "Grand Duchy of Lithuania"
+ LIT_parliamentarianism_DEF:0 "The Grand Duchy of Lithuania"
+ LIT_administrationism:0 "Grand Duchy of Lithuania"
+ LIT_administrationism_DEF:0 "The Grand Duchy of Lithuania"
+ LIT_absolutism:0 "Grand Duchy of Lithuania"
+ LIT_absolutism_DEF:0 "The Grand Duchy of Lithuania"
+ LIT_despotism:0 "Grand Duchy of Lithuania"
+ LIT_despotism_DEF:0 "The Grand Duchy of Lithuania"
+ LIT_nationalism:0 "Lithuanian National Republic"
+ LIT_nationalism_DEF:0 "The Lithuanian National Republic"
+ LIT_cromwellianism_ADJ:0 "Lithuanian"
+ LIT_marxism_ADJ:0 "Lithuanian"
+ LIT_liberalism_ADJ:0 "Lithuanian"
+ LIT_republicanism_ADJ:0 "Lithuanian"
+ LIT_parliamentarianism_ADJ:0 "Lithuanian"
+ LIT_administrationism_ADJ:0 "Lithuanian"
+ LIT_despotism_ADJ:0 "Lithuanian"
+ LIT_nationalism_ADJ:0 "Lithuanian"
+ 
+ ##Party Names##
+ LIT_cromwellianism_party:0 "LKP"
+ LIT_cromwellianism_party_long:0 "Lietuvos Kapsukasistų Partija"
+ LIT_marxism_party:0 "LSLDLP"
+ LIT_marxism_party_long:0 "Lietuvos Socialistų Liaudininkų Demokratų Partija"
+ LIT_liberalism_party:0 "LVS"
+ LIT_liberalism_party_long:0 "Lietuvos Valstiečių Sąjunga"
+ LIT_republicanism_party:0 "LKDP"
+ LIT_republicanism_party_long:0 "Lietuvos Krikščionių Demokratų Partija"
+ LIT_parliamentarianism_party:0 "TPP"
+ LIT_parliamentarianism_party_long:0 "Tautos Pažangos Partija"
+ LIT_administrationism_party:0 "Lietuvos Taryba"
+ LIT_administrationism_party_long:0 "Lietuvos Taryba"
+ LIT_absolutism_party:0 "Karalienės Kotryna Itaka"
+ LIT_absolutism_party_long:0 "Karalienės Kotryna Itaka"
+ LIT_despotism_party:0 "LTS" 
+ LIT_despotism_party_long:0 "Lietuvių Tautininkų ir Respublikonų Sąjunga"
+ LIT_nationalism_party:0 "LAF"
+ LIT_nationalism_party_long:0 "Lietuvos Aktyvistų Frontas"
+ 
+ ##Country Names##
+ LTH_cromwellianism:0 "Lithuanian Revolutionary Republic"
+ LTH_cromwellianism_DEF:0 "The Lithuanian Revolutionary Republic"
+ LTH_marxism:0 "People's Republic of Lithuania"
+ LTH_marxism_DEF:0 "The People's Republic of Lithuania"
+ LTH_liberalism:0 "Republic of Lithuania"
+ LTH_liberalism_DEF:0 "The Republic of Lithuania"
+ LTH_republicanism:0 "Republic of Lithuania"
+ LTH_republicanism_DEF:0 "The Republic of Lithuania"
+ LTH_parliamentarianism:0 "Republic of Lithuania"
+ LTH_parliamentarianism_DEF:0 "The Republic of Lithuania"
+ LTH_administrationism:0 "Kingdom of Lithuania"
+ LTH_administrationism_DEF:0 "The Kingdom of Lithuania"
+ LTH_absolutism:0 "Kingdom of Lithuania"
+ LTH_absolutism_DEF:0 "The Kingdom of Lithuania"
+ LTH_despotism:0 "Lithuanian Revolt"
+ LTH_despotism_DEF:0 "The Provisional Government of Lithuania"
+ LTH_nationalism:0 "Lithuanian State"
+ LTH_nationalism_DEF:0 "The Lithuanian State"
+ LTH_cromwellianism_ADJ:0 "Lithuanian"
+ LTH_marxism_ADJ:0 "Lithuanian"
+ LTH_liberalism_ADJ:0 "Lithuanian"
+ LTH_republicanism_ADJ:0 "Lithuanian"
+ LTH_parliamentarianism_ADJ:0 "Lithuanian"
+ LTH_administrationism_ADJ:0 "Lithuanian"
+ LTH_despotism_ADJ:0 "Lithuanian"
+ LTH_nationalism_ADJ:0 "Lithuanian"
+ 
+ ##Party Names##
+ LTH_cromwellianism_party:0 "LKP"
+ LTH_cromwellianism_party_long:0 "Lietuvos Kapsukasistų Partija"
+ LTH_marxism_party:0 "LSLDLP"
+ LTH_marxism_party_long:0 "Lietuvos Socialistų Liaudininkų Demokratų Partija"
+ LTH_liberalism_party:0 "LSDP"
+ LTH_liberalism_party_long:0 "Lietuvos Socialdemokratų Partija"
+ LTH_republicanism_party:0 "LVLS"
+ LTH_republicanism_party_long:0 "Lietuvos Valstiečių Liaudininkų Sajunga"
+ LTH_parliamentarianism_party:0 "LKDP"
+ LTH_parliamentarianism_party_long:0 "Lietuvos Krikščionių Demokratų Partija"
+ LTH_administrationism_party:0 "LMP"
+ LTH_administrationism_party_long:0 "Lietuvos Monarchistų Partija"
+ LTH_absolutism_party:0 "LMP"
+ LTH_absolutism_party_long:0 "Lietuvos Monarchistų Partija"
+ LTH_despotism_party:0 "Triumviratas" 
+ LTH_despotism_party_long:0 "Triumviratas"
+ LTH_nationalism_party:0 "LB"
+ LTH_nationalism_party_long:0 "Lietuvos Balsas"
+ 
+ MEM_nationalism:0 "Ordensstaat Baltikum"
+ MEM_nationalism_DEF:0 "The German Eastern State of Baltikum"
+ MEM_nationalism_ADJ:0 "Baltik"
+ 
+ MEM_marxism_party:0 "AP"
+ MEM_marxism_party_long:0 "Arbeiterpartei des Memellandes"
+ MEM_liberalism_party:0 "SPM"
+ MEM_liberalism_party_long:0 "Sozialdemokratische Partei des Memelgebietes"
+ MEM_republicanism_party:0 "MVP"
+ MEM_republicanism_party_long:0 "Memelländische Volkspartei"
+ MEM_parliamentarianism_party:0 "Mlp"
+ MEM_parliamentarianism_party_long:0 "Memelländische Landwirtschaftspartei"
+ MEM_absolutism_party:0 "LLP" 
+ MEM_absolutism_party_long:0 "Lietuvos Liaudies Partija"
+ MEM_nationalism_party:0 "KfdK"
+ MEM_nationalism_party_long:0 "Kampfbund für Deutsche Kultur"
+ 
+ ##Leader Descriptions##
+ LIT_KOTRYNA_I_DESC:0 "Kotryna Radvila was groomed to be Lithuania’s monarch, being sent to the court of London at a young age to learn the life of high society. While she did grow up to be the high-class woman her father wanted, she came back to Lithuania with a high proficiency in gossip.\n\nFrom writing letters scourning the Hohenzollerns, to discussing the Romanov’s hemophilia, to numerous trips meeting with the great Cecil Rhodes in the pursuit of love, anything that enters the ears of Kotryna is immediately leaving her mouth."
+LIT_ALFRED_ROSENBERG_DESC:0 "Ever since he was young, Alfred Rosenberg has wondered how the world works. How were the British able to conquer the world? Neither the Romans or Mongols were able to do so, so what made the British special? Was it technology? Luck? Knowledge? This question would dominate the young man’s mind until he finally realized the answer...their DNA. The Romans could never conquer the world thanks to the inherent laziness of the Southern Europeans and the low mental capacity of Mongoloids made the Mongols unable to maintain their empire. Likewise, the hard-working, moral nature of the Germanic Race allowed for the British domination of the World.\n\nWhat about the rest of the Germanic Race though? Why was Germany unable to achieve what their DNA allowed them too? The reason is thanks to the Earth’s vermin, the Jews. The Jewish overlords are determined to keep the world how they want it, with the German people under the control of their Jewish Monarchs. That’s why Rabbi Wilhelm was unable to unite the Germans, the Zionist World Order didn’t want him to win, and as a Jew himself, he obeyed.\n\nThat ends today. With the spirit of the Catholic Teutonic Knights on his side, Alfred Rosenberg will be the savior of the Germanic Race from the Jewish Monarchists and elevate the Germans to their rightful position, Co-rulers of the World.\n\nWell that's what he believes at least."
+ 
+ ##Leader Traits##
+ gossiper:0 "Gossiper"
+ 
+ ##Tooltips##
+ MEM_Ostseidlung_tt:0 "We will bring German settlers to the Baltics."
+ MEM_Fuck_Germany_tt:0 "We shall bring Germany in to the light by force, as its oppressors would never give up without their heads off their shoulders."
+ 
+ ##Opinion Modifiers##
+ LIT_I_Hate_Minorities:0 "Persecution of Minorities
+ LTH_Friendship_Time:0 "Improved Relations"
+ LTH_Expanded_Markets:0 "Open Trade Routes"
+ 
+ ##Events##
+ 
+ lithuania.1.t:0 ""
+ lithuania.1.desc:0 ""
+ lithuania.1.a:0 ""
+ 
+ lithuania.2.t:0 "The Crisis of the Neman River"
+ lithuania.2.desc:0 "lithuania cibvil war!!!!!!!!!!!!!!!"
+ lithuania.2.a:0 "We shall end this nonsense for good."
+ lithuania.2.b:0 "We shall bring the torch of freedom to Lithuania."
+ 
+ lithuania.3.t:0 "Alfred Rosenberg denounces the Government!"
+ lithuania.3.desc:0 ""
+ lithuania.3.a:0 "We will vanquish the German Menace."
+ lithuania.3.b:0 "The world belongs to its rightful heirs."
+ 
+ lithuania.4.t:0 "The Hun strikes against the Lithuanian!"
+ lithuania.4.desc:0 ""
+ lithuania.4.a:0 ""
+ 
+ lithuania.5.t:0 ""
+ lithuania.5.desc:0 ""
+ lithuania.5.a:0 ""
+ 
+ lithuania.6.t:0 ""
+ lithuania.6.desc:0 ""
+ lithuania.6.a:0 ""
+ 
+ lithuania.7.t:0 ""
+ lithuania.7.desc:0 ""
+ lithuania.7.a:0 ""
+ 
+ lithuania.8.t:0 ""
+ lithuania.8.desc:0 ""
+ lithuania.8.a:0 ""
+ 
+ lithuania.9.t:0 ""
+ lithuania.9.desc:0 ""
+ lithuania.9.a:0 ""
+ 
+ lithuania.10.t:0 ""
+ lithuania.10.desc:0 ""
+ lithuania.10.a:0 ""
+ 
+ lithuania.11.t:0 ""
+ lithuania.11.desc:0 ""
+ lithuania.11.a:0 ""
+ 
+ lithuania.12.t:0 ""
+ lithuania.12.desc:0 ""
+ lithuania.12.a:0 ""
+ 
+ lithuania.13.t:0 ""
+ lithuania.13.desc:0 ""
+ lithuania.13.a:0 ""
+ 
+ lithuania.14.t:0 ""
+ lithuania.14.desc:0 ""
+ lithuania.14.a:0 ""
+ 
+ ##Ideas##
+ LIT_Republic_Monarchy_Debates:0 "The Republic-Monarchy Debates"
+ LIT_Republic_Monarchy_Debates_desc:0 "The Lithuanian people have been split on the idea of a monarch, with those supporting it arguing that Lithuania isn’t “politically mature” enough for a republic and those opposing it arguing that the monarchy is only a tool for the British to control and oppress the Lithuanian people.\n\nWhile the Monarchy is currently supported by the Council of Lithuania, opposition groups only grow stronger by the hour."
+ LIT_Peaceful_Times:0 "The End of War"
+ LIT_Peaceful_Times_desc:0 "Thanks to the British Empire, we live in a world where warfare is impossible. Nations today live together in peace, choosing to settle issues in the British Government rather than on the battlefield. Thanks to this most joyous situation, §GLithuania has no need for a military§!. Any problem that could cause worry in the people will be solved by the Police and the Riflemen’s Union."
+ LIT_Smetona_Young_Lithuanians:0 "The Young Lithuanians"
+ LIT_Smetona_Nationalist_Education:0 "Education Reforms"
+ LIT_Smetona_German_Tactics:0 "German Tactics"
+ LIT_Smetona_Truly_Lithuanian:0 "Truly Lithuanian Army"
+ LIT_Smetona_Naval_Improvements:0 "Naval Improvements"
+ LIT_Smetona_Safety_Shipping:0 "Safe Shipping on the Open Blue"
+ LIT_Smetona_Dummy_Thicc_Army:0 "Lithuania Mobilized"
+ LIT_Smetona_Smol_Army:0 "Lietuvos šaulių sąjunga"
+ LIT_Smetona_Drop_The_Load:0 "Drop the Load!"
+ LIT_Smetona_Work_Harder:0 "Work Harder!"
+ LIT_Revolt_Big_Union:0 "The Lithuanian Union"
+ LIT_Revolt_Expel_Traitors:0 "Expel the Traitors!"
+ LIT_Revolt_Open_Presses:0 "Open up the Presses"
+ LIT_Revolt_No_Secrets:0 "No Secrets in Lithuania"
+ LIT_Revolt_Nationalist_State:0 "Discrimination Laws"
+ LIT_Revolt_Diplomatic_Path:0 "A Peaceful Outlook"
+ LIT_Revolt_Food_For_Troops:0 "Food for the Troops"
+ LIT_Men_In_The_Factories:0 "Support from the Factory"
+ LIT_Rebels_Standard_Army:0 "The Standard Army"
+ LIT_Rebels_Unusual_Army:0 "The Unusual Army"
+ MEM_Teutonic_Ancestory:0 "Teutonic Ancestory"
+ MEM_Teutonic_Ancestory2:0 "Teutonic Ancestory"
+ MEM_German_Terror:0 "The Terror of the Hun!"
+ MEM_No_Surrender:0 "Not One Step Back!"
+ MEM_Rosenberg_Every_Church:0 "The words of Rosenberg in every Church"
+ 
+ ##NATIONAL FOCUSES##
+ LIT_Glory_Days:0 "Lithuania's Glory Days"
+ LIT_Glory_Days_desc:0 ""
+ 
+ LIT_Calm_The_People:0 "Calm the Crowds"
+ LIT_Calm_The_People_desc:0 ""
+ 
+ LIT_This_Turmoil:0 "This Turmoil..."
+ LIT_This_Turmoil_desc:0 ""
+ 
+ LIT_Is_Why_I_Lead:0 "Is Why I Lead"
+ LIT_Is_Why_I_Lead_desc:0 ""
+
+ LIT_Expansion_Of_The_Police_Force:0 "Expansion of the Police Forces"
+ LIT_Expansion_Of_The_Police_Force_desc:0 ""
+
+ LIT_Learning_Reforms:0 "Schooling Reforms"
+ LIT_Learning_Reforms_desc:0 ""
+
+ LIT_Familial_Ties:0 "Familial Ties"
+ LIT_Familial_Ties_desc:0 ""
+
+ LIT_End_The_Debates:0 "End the Debates"
+ LIT_End_The_Debates_desc:0 ""
+
+ LIT_Young_Lithuanians:0 "The Young Lithuanians"
+ LIT_Young_Lithuanians_desc:0 ""
+
+ LIT_Mass_Arrests:0 "Mass Arrests"
+ LIT_Mass_Arrests_desc:0 ""
+
+ LIT_Lithuanian_Nation:0 "A Lithuanian Nation"
+ LIT_Lithuanian_Nation_desc:0 ""
+
+ LIT_Anti_Revolutionary_Rhetoric:0 "Anti-Revolutionary Rhetoric"
+ LIT_Anti_Revolutionary_Rhetoric_desc:0 ""
+
+ LIT_Ban_Rival_Parties:0 "Ban the Opposition"
+ LIT_Ban_Rival_Parties_desc:0 ""
+
+ LIT_Radio_Expansion:0 "Radio Expansion"
+ LIT_Radio_Expansion_desc:0 ""
+
+ LIT_Royal_Regent:0 "The New Regent"
+ LIT_Royal_Regent_desc:0 ""
+
+ LIT_Sidelining_The_Monarch:0 "Sidelining the Monarch"
+ LIT_Sidelining_The_Monarch_desc:0 ""
+ 
+ LIT_Strengthen_The_Monarch:0 "Strengthen the Monarch"
+ LIT_Strengthen_The_Monarch_desc:0 ""
+
+ LIT_Land_Reforms:0 "Land Reforms"
+ LIT_Land_Reforms_desc:0 ""
+
+ LIT_Tautos_Vadas:0 "Tautos Vadas"
+ LIT_Tautos_Vadas_desc:0 ""
+
+ LIT_Fortify_Vilnius:0 "Fortify Vilnius"
+ LIT_Fortify_Vilnius_desc:0 ""
+
+ LIT_Matters_Of_The_Navy:0 "The Matters of the Navy"
+ LIT_Matters_Of_The_Navy_desc:0 ""
+ 
+ LIT_Trade_Fleet:0 "Masters of the Sea Routes"
+ LIT_Trade_Fleet_desc:0 ""
+ 
+ LIT_Request_Ships:0 "Request British Ships"
+ LIT_Request_Ships_desc:0 ""
+ 
+ LIT_Protection_Of_Trade:0 "The Protection of Trade"
+ LIT_Protection_Of_Trade_desc:0 ""
+ 
+ LIT_Safety_On_The_Open_Ocean:0 "Safety on the Open Ocean"
+ LIT_Safety_On_The_Open_Ocean_desc:0 ""
+ 
+ LIT_Expand_The_Ports:0 "Expand the Ports"
+ LIT_Expand_The_Ports_desc:0 ""
+
+ LIT_Masters_Of_The_Sea:0 "Masters of the Sea"
+ LIT_Masters_Of_The_Sea_desc:0 ""
+
+ LIT_Cut_Off_Their_Trade:0 "Cut off their Trade"
+ LIT_Cut_Off_Their_Trade_desc:0 ""
+
+ LIT_Protect_The_Seas:0 "Protect the Seas"
+ LIT_Protect_The_Seas_desc:0 ""
+
+ LIT_Grand_Fleet:0 "Grand Fleet"
+ LIT_Grand_Fleet_desc:0 ""
+
+ LIT_Matters_Of_The_Army:0 "The Matters of the Army"
+ LIT_Matters_Of_The_Army_desc:0 ""
+ 
+ LIT_Trust_In_The_Riflemen:0 "Trust the Riflemen's Union"
+ LIT_Trust_In_The_Riflemen_desc:0 ""
+ 
+ LIT_Only_The_Best:0 "Only the Best for Lithuania"
+ LIT_Only_The_Best_desc:0 ""
+ 
+ LIT_Support_The_Iron_Wolves:0 "Support the Iron Wolves"
+ LIT_Support_The_Iron_Wolves_desc:0 ""
+ 
+ LIT_Open_Up_Recruitment:0 "Open Up Recruitment"
+ LIT_Open_Up_Recruitment_desc:0 ""
+ 
+
+ LIT_As_Many_As_Weve_Got:0 "As Many as We've Got"
+ LIT_As_Many_As_Weve_Got_desc:0 ""
+ 
+ LIT_Proper_Defence:0 "Proper Defensive Positions"
+ LIT_Proper_Defence_desc:0 ""
+ 
+ LIT_Defence_Of_The_Homeland:0 "Defence of the Homeland"
+ LIT_Defence_Of_The_Homeland_desc:0 ""
+
+ LIT_Strength_In_Unity:0 "Strength in Unity"
+ LIT_Strength_In_Unity_desc:0 ""
+
+ LIT_Matters_Of_The_Air:0 "The Matters of the Air"
+ LIT_Matters_Of_The_Air_desc:0 ""
+
+ LIT_Grounded_Airforce:0 "Ground the Airforce"
+ LIT_Grounded_Airforce_desc:0 ""
+
+ LIT_Masters_Of_the_Air:0 "Masters of the Air"
+ LIT_Masters_Of_the_Air_desc:0 ""
+
+ LIT_LIT_Bombers:0 "Lithuanian Bombers"
+ LIT_LIT_Bombers_desc:0 ""
+
+ LIT_Expand_The_Airfields:0 "Expand the Airfields"
+ LIT_Expand_The_Airfields_desc:0 ""
+
+ LIT_Drop_The_Load:0 "Drop the Load!"
+ LIT_Drop_The_Load_desc:0 ""
+ 
+ LIT_Expansion:0 "The Expansion of Lithuania"
+ LIT_Expansion_desc:0 ""
+ 
+ LIT_West:0 "Westward Expansion"
+ LIT_West_desc:0 ""
+ 
+ LIT_Border_Strip:0 "The Vilnius Border Strip"
+ LIT_Border_Strip_desc:0 ""
+ 
+ LIT_North:0 "Northern Expansion"
+ LIT_North_desc:0 ""
+ 
+ LIT_Guard_The_Latvians:0 "Save the Latvians"
+ LIT_Guard_The_Latvians_desc:0 ""
+ 
+ LIT_East:0 "Eastern Expansion"
+ LIT_East_desc:0 ""
+ 
+ LIT_Integrate_The_Tutejszy:0 "Historical Claims"
+ LIT_Integrate_The_Tutejszy_desc:0 ""
+ 
+ LIT_New_Lithuania:0 "The New Lithuania"
+ LIT_New_Lithuania_desc:0 ""
+
+ LIT_LITInfrastructure_Projects:0 "Infrastructure Projects"
+ LIT_LITInfrastructure_Projects_desc:0 ""
+
+ LIT_Road_Epansion:0 "Road Expansion"
+ LIT_Road_Epansion_desc:0 ""
+
+ LIT_Port_Northeastern:0 "Port Northeastern"
+ LIT_Port_Northeastern_desc:0 ""
+
+ LIT_Capital_Expansion:0 "Expand the Capital"
+ LIT_Capital_Expansion_desc:0 ""
+
+ LIT_Further_Planning:0 "Further Planning"
+ LIT_Further_Planning_desc:0 ""
+
+ LIT_Keep_Agrarian:0 "Keep Agrarian"
+ LIT_Keep_Agrarian_desc:0 ""
+
+ LIT_Reduce_Farming_Taxes:0 "Reduce Farming Taxes"
+ LIT_Reduce_Farming_Taxes_desc:0 ""
+
+ LIT_Subsidize_Farming:0 "Subsidise Farming"
+ LIT_Subsidize_Farming_desc:0 ""
+
+ LIT_Educating_The_Poor:0 "Educate the Poor"
+ LIT_Educating_The_Poor_desc:0 ""
+
+ LIT_Trade_Will_Save_Us:0 "Trade will Save Us"
+ LIT_Trade_Will_Save_Us_desc:0 ""
+
+ LIT_Mechanize_Farming:0 "Mechanize Farming"
+ LIT_Mechanize_Farming_desc:0 ""
+
+ LIT_Slash_The_Military_Budget:0 "Slash the Military Budget"
+ LIT_Slash_The_Military_Budget_desc:0 ""
+
+ LIT_Small_Cost_For_Stability:0 "A Small Cost for Stability"
+ LIT_Small_Cost_For_Stability_desc:0 ""
+
+ LIT_Work_Harder:0 "Work Harder"
+ LIT_Work_Harder_desc:0 ""
+
+ LIT_Ignore_Farmers:0 "We Don't Listen to Some Farmers"
+ LIT_Ignore_Farmers_desc:0 ""
+
+ LIT_Glass_Industry_Expansion:0 "Expansion of the Glass Industry"
+ LIT_Glass_Industry_Expansion_desc:0 ""
+
+ LIT_Cement_Industry_Expansion:0 "Expansion of the Cement Industry"
+ LIT_Cement_Industry_Expansion_desc:0 ""
+
+ LIT_New_University:0 "A Grant for a New University"
+ LIT_New_University_desc:0 ""
+
+ LIT_We_Will_Save_Ourselves:0 "We Will Save Ourselves"
+ LIT_We_Will_Save_Ourselves_desc:0 ""
+
+ LIT_End_Of_The_World:0 "End of the Worst"
+ LIT_End_Of_The_World_desc:0 ""
+ 
+ #####################################################
+ #################Lithuania Revolt Tree###############
+ #####################################################
+ LTH_Independence_Day:0 "Independence Day"
+ LTH_Independence_Day_desc:0 ""
+
+ LTH_Triumvirate:0 "The Triumvirate"
+ LTH_Triumvirate_desc:0 ""
+
+ LTH_Future_Of_Lithuania:0 "The Force for Democracy"
+ LTH_Future_Of_Lithuania_desc:0 ""
+
+ LTH_Democratic_Republic:0 "Non-Partisan Support"
+ LTH_Democratic_Republic_desc:0 ""
+
+ LTH_Destroy_Personality_Cult:0 "Destroy the Personality Cult"
+ LTH_Destroy_Personality_Cult_desc:0 ""
+
+ LTH_Open_Political_Scene:0 "Open the Political Scene"
+ LTH_Open_Political_Scene_desc:0 ""
+
+ LTH_Clean_Government:0 "A Clean Government"
+ LTH_Clean_Government_desc:0 ""
+
+ LTH_Open_Press:0 "Open the Press"
+ LTH_Open_Press_desc:0 ""
+
+ LTH_New_Elections:0 "New Elections"
+ LTH_New_Elections_desc:0 ""
+ 
+ LTH_Peoples_Nation:0 "The People's Nation"
+ LTH_Peoples_Nation_desc:0 "The Social Democratic Party, a party dedicated to helping all citizens of Lithuania, regardless of language, have won the Lithuanian Election."
+ 
+ LTH_Peasants_Nation:0 "The Peasant's Nation"
+ LTH_Peasants_Nation_desc:0 "The Popular Peasant's Union, a centre-left political party dedicated to ending the woes of the average Lithuanian, have won the Lithuanian election."
+ 
+ LTH_Christian_Nation:0 "The Christian Nation"
+ LTH_Christian_Nation_desc:0 "The Christian Democrats, a political party dedicated to upholding Lithuania's moral values and culture, have won the Lithuanian election."
+ 
+ LTH_Educate_Tuteshniy:0 "Educate the Tuteshniy"
+ LTH_Educate_Tuteshniy_desc:0 "The Tuteshniy are a remnant of the old regime, a peoples with no connection to Lithuania, instead identifying themselves as residents of \"this area\". We won't be the old regime. We shall bring these people into the loving arms of the Lithuanian nation, educating them and bringing them into our society."
+ 
+ LTH_Poor_Aid:0 "Aid the Poor"
+ LTH_Poor_Aid_desc:0 "The old regime didn't care about its people, instead being interested in purchasing Britain's coccaine, pig-fat, and saccharin. Meanwhile the poor of Lithuania search for either someone to buy their products or a better life by boarding a ship to the Isles. The Lithuanian people deserve better, and better is exactly what the government is planning on accomplishing."
+ 
+ LTH_Support_Keturi_Vejai:0 "Support the Keturi vėjai Movement"
+ LTH_Support_Keturi_Vejai_desc:0 "Influenced by the Italian Futurist movement, Keturi vėjai is a literary movement that unlike its main rival, Neo-Romanticism, is Lithuanian in origin. If we sponsor this movement, then we could curb the influence of Neo-Romanticism and other non-Lithuanian art forms."
+ 
+ LTH_Spirit_Of_Zalgiris:0 "The Spirit of Žalgiris"
+ LTH_Spirit_Of_Zalgiris_desc:0 "The Battle of Žalgiris is the epitome of Lithuanian Greatness, as the noble Grand Duchy was heroically able to repel the bloodthirsty Germans and maintain its independence. As a nation free of the corruption and incompetence of the old regime, we shall honor the leagacy of the Battle, never letting ourselves live under the boot of another."
+
+ LTH_On_The_Globe:0 "Lithuania On the Globe"
+ LTH_On_The_Globe_desc:0 ""
+
+ LTH_Renegotiate_With_The_Angloids:0 "Renegotiate with the Empire"
+ LTH_Renegotiate_With_The_Angloids_desc:0 ""
+
+ LTH_We_Dont_Need_Them:0 "We Don't Need the Anglos"
+ LTH_We_Dont_Need_Them_desc:0 ""
+
+ LTH_Historical_Claims:0 "Our Historical Claims"
+ LTH_Historical_Claims_desc:0 ""
+
+ LTH_Reclaim_Judoji_Rusia:0 "Reclaim Judoji Rusia"
+ LTH_Reclaim_Judoji_Rusia_desc:0 ""
+
+ LTH_Reclaim_Grodino:0 "Reclaim Grodino"
+ LTH_Reclaim_Grodino_desc:0 ""
+
+ LTH_A_Greater_Lithuania:0 "A Greater Lithuania"
+ LTH_A_Greater_Lithuania_desc:0 ""
+
+ LTH_Strengthen_Diplomatic_Ties:0 "Strengthen Diplomatic Ties"
+ LTH_Strengthen_Diplomatic_Ties_desc:0 ""
+
+ LTH_Baltic_Brotherhood:0 "The Baltic Brotherhood"
+ LTH_Baltic_Brotherhood_desc:0 ""
+
+ LTH_A_Historical_Friendship:0 "A Historical Friendship"
+ LTH_A_Historical_Friendship_desc:0 ""
+
+ LTH_Markets_Abroad:0 "Markets Abroad"
+ LTH_Markets_Abroad_desc:0 ""
+
+ LTH_War_Of_Loyalty:0 "The War of Loyalty"
+ LTH_War_Of_Loyalty_desc:0 ""
+
+ LTH_Rally_The_Farmers:0 "Rally the Farmers"
+ LTH_Rally_The_Farmers_desc:0 ""
+
+ LTH_Food_For_The_Troops:0 "Food for the Troops"
+ LTH_Food_For_The_Troops_desc:0 ""
+
+ LTH_Rural_Rumors:0 "Rural Rumors"
+ LTH_Rural_Rumors_desc:0 ""
+
+ LTH_Connect_The_Farms:0 "Connect the Farms"
+ LTH_Connect_The_Farms_desc:0 ""
+
+ LTH_Fate_Of_Loyalists:0 "Woo the Loyalists?"
+ LTH_Fate_Of_Loyalists_desc:0 ""
+
+ LTH_Rally_The_Urbanites:0 "Rally the Urbanites"
+ LTH_Rally_The_Urbanites_desc:0 ""
+
+ LTH_Word_On_The_Streets:0 "Word on the Streets"
+ LTH_Word_On_The_Streets_desc:0 ""
+
+ LTH_Support_In_The_Factories:0 "Support in the Factories"
+ LTH_Support_In_The_Factories_desc:0 ""
+
+ LTH_Support_Local_Industries:0 "Support Local Industries"
+ LTH_Support_Local_Industries_desc:0 ""
+
+ LTH_For_The_People:0 "A Lithuania For the People"
+ LTH_For_The_People_desc:0 ""
+
+ LTH_Question_Of_Warfare:0 "The Question of Warfare"
+ LTH_Question_Of_Warfare_desc:0 ""
+
+ LTH_Standard_Army:0 "A Standard Army"
+ LTH_Standard_Army_desc:0 ""
+
+ LTH_Plan_Every_Move:0 "Plan Every Move"
+ LTH_Plan_Every_Move_desc:0 ""
+
+ LTH_Two_Years_Ahead:0 "Two Years Ahead"
+ LTH_Two_Years_Ahead_desc:0 ""
+
+ LTH_Win_Battles_Not_Hearts:0 "Win Battles, Win Hearts"
+ LTH_Win_Battles_Not_Hearts_desc:0 ""
+
+ LTH_Unusual_Army:0 "An Unusual Army"
+ LTH_Unusual_Army_desc:0 ""
+
+ LTH_Into_The_Forests:0 "Into the Forrests"
+ LTH_Into_The_Forests_desc:0 ""
+
+ LTH_Sabatoge_Them:0 "Sabatoge Them"
+ LTH_Sabatoge_Them_desc:0 ""
+
+ LTH_Strike_Terror_Into_Hearts:0 "Strike Terror Into Hearts"
+ LTH_Strike_Terror_Into_Hearts_desc:0 ""
+
+ LTH_Airborne:0 "Lithuanians Airborne"
+ LTH_Airborne_desc:0 ""
+
+ LTH_Knowledge_From_The_Skies:0 "Knowledge from the Skies"
+ LTH_Knowledge_From_The_Skies_desc:0 ""
+
+ LTH_Terror_From_The_Skies:0 "Terror From the Skies"
+ LTH_Terror_From_The_Skies_desc:0 ""
+
+ ##Memel FOcus Tree###############
+ 
+ MEM_Lithuania_Burns:0 "Lithuania Burns"
+ MEM_Lithuania_Burns_desc:0 ""
+
+ MEM_Phoenix:0 "So Germans can Rise"
+ MEM_Phoenix_desc:0 ""
+
+ MEM_Society_We_Sure_Live_In_It:0 "Reshaping Society"
+ MEM_Society_We_Sure_Live_In_It_desc:0 ""
+
+ MEM_Hearts_And_Minds:0 "The Soul of the German"
+ MEM_Hearts_And_Minds_desc:0 ""
+
+ MEM_End_Monarchism:0 "End the Monarchic Plague"
+ MEM_End_Monarchism_desc:0 ""
+
+ MEM_End_Socialism:0 "End the Socialist Plague"
+ MEM_End_Socialism_desc:0 ""
+
+ MEM_Purify_Culture:0 "Purify the Culture"
+ MEM_Purify_Culture_desc:0 ""
+
+ MEM_Ostsiedlung:0 "Ostsiedlung"
+ MEM_Ostsiedlung_desc:0 ""
+
+ MEM_Cleaning_The_Church:0 "Cleaning the Church"
+ MEM_Cleaning_The_Church_desc:0 ""
+
+ MEM_Rosenberg_In_Every_Church:0 "Rosenberg in Every Church"
+ MEM_Rosenberg_In_Every_Church_desc:0 ""
+
+ MEM_Cutting_Off_The_Pope:0 "Cutting off the Pope"
+ MEM_Cutting_Off_The_Pope_desc:0 ""
+
+ MEM_On_Church_One_Race:0 "One Church, One Race"
+ MEM_On_Church_One_Race_desc:0 ""
+
+ MEM_Aryan_Spirit_Obtained:0 "The Aryan Spirit Obtained"
+ MEM_Aryan_Spirit_Obtained_desc:0 ""
+
+ MEM_Mad_Prussy_Theft:0 "Our Ancestoral Lands Reclaimed"
+ MEM_Mad_Prussy_Theft_desc:0 ""
+
+ MEM_Germans_Never_Die_Minions_Cover:0 "Restore the Teutonic Forts"
+ MEM_Germans_Never_Die_Minions_Cover_desc:0 ""
+
+ MEM_Spiritual_Home:0 "Protection of the German Spiritual Home"
+ MEM_Spiritual_Home_desc:0 ""
+
+ MEM_Expand_Capital:0 "Expand the Capital"
+ MEM_Expand_Capital_desc:0 ""
+
+ MEM_Teutonic_German_Ancestory:0 "Teutonic Ancestory"
+ MEM_Teutonic_German_Ancestory_desc:0 ""
+
+ MEM_War_Crime_Time:0 "Slay the Beasts"
+ MEM_War_Crime_Time_desc:0 ""
+
+ MEM_Fuck_Poland:0 "The Second Prussian Crusade"
+ MEM_Fuck_Poland_desc:0 ""
+
+ MEM_Fuck_Baltics:0 "The Second Livonian Crusade"
+ MEM_Fuck_Baltics_desc:0 ""
+
+ MEM_Fuck_Belarus:0 "The Ruthenian Crusade"
+ MEM_Fuck_Belarus_desc:0 ""
+
+ MEM_Eastern_Legions:0 "The Eastern Legions"
+ MEM_Eastern_Legions_desc:0 ""

@@ -1,0 +1,33 @@
+state={
+	id=839
+	name="STATE_839"
+	provinces={
+		941 986 3784 3840 4518 6694 6861 6876 6881 9855 9911 11859 11876 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		victory_points = {
+			6876 10
+		}
+		victory_points = {
+			6881 5
+		}
+		victory_points = {
+			9911 5
+		}
+		victory_points = {
+			4518 3
+		}
+		victory_points = {
+			986 2
+		}
+	}
+	manpower=717808
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

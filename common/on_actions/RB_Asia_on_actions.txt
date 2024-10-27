@@ -1,0 +1,50 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#British Far East Territories
+			BFE = {
+				country_event = { id = BFE.1 days = 1 } #Intro event
+			}
+			#Korea
+			KOR = {
+				country_event = { id = kor.1 days = 1 } #Intro event
+			}
+			#india
+			RAJ = {
+				set_country_flag = RAJ_Influence_Mechanic_Active_flag
+			}
+		}
+	}
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			#KOREA
+			if = {
+				limit = { ROOT = { original_tag = KOR }}
+				if = { #Mukden
+					limit = { 
+						FROM.FROM = { state = 958 }
+						has_global_flag  = KOR_MAN_war_1
+						NOT = { has_global_flag = KOR_mukden_occupation }
+					}
+					FROM.FROM = {
+						country_event = { id = kor.32 days = 1}
+					}
+					set_global_flag = KOR_mukden_occupation
+				}
+			}
+		}
+	}
+	#ROOT is winner, FROM gets annexed.
+	on_annex = { 
+		effect = { 
+			if =  {
+				limit = {
+					ROOT = { original_tag = KOR }
+					FROM = { original_tag = MAN }
+				}
+				ROOT = { country_event = { id = kor.33 days = 1 }}
+			}
+		}
+	}			
+}

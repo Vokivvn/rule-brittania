@@ -1,0 +1,29 @@
+on_actions = {
+	on_startup = {
+	    effect = {
+		    #OTTOMANS
+		    TUR = {
+		    	set_country_flag = tur_intro
+		    	load_focus_tree = RB_Turkey_intro
+		    }
+		    340 = {
+		    	set_state_flag = tcw_orhan
+		    }
+		    343 = {
+		    	set_state_flag = tcw_orhan
+		    }
+		    349 = {
+		    	set_state_flag = tcw_orhan
+		    }
+		    344 = {
+		    	set_state_flag = tcw_orhan
+		    }
+		    355 = {
+		    	set_state_flag = tcw_orhan
+		    }
+		    354 = {
+		    	set_state_flag = tcw_orhan
+		    }
+		}
+	}
+}

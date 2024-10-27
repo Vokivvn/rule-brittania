@@ -1,0 +1,23 @@
+
+state={
+	id=590
+	name="STATE_590"
+
+	history={
+		owner = SIB
+		add_core_of = SIB
+		victory_points = {
+			4333 1 
+		}
+		buildings = {
+			infrastructure = 4
+		}
+	}
+
+	provinces={
+		1229 1287 1375 1391 1418 1662 1680 1879 4232 4238 4281 4309 4333 4670 4685 7298 7317 7326 7350 7383 10211 10235 10239 10308 10630 10633 12152 
+	}
+	manpower=980533
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

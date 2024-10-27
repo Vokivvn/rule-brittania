@@ -1,0 +1,78 @@
+﻿
+
+
+
+
+
+
+add_namespace = THR_collapse
+
+country_event = { #thuringa split
+id = THR_collapse.1
+title = THR_collapse.1.t
+desc = THR_collapse.1.desc
+immediate = {log = "[GetDateText]: [Root.GetName]: event THR_collapse.1"}
+
+is_triggered_only = yes
+
+fire_only_once = yes
+
+option = { #nat cosmetic tag
+	name = THR_collapse.1.a
+	SWM = {
+		transfer_state = 966
+		load_oob = "SWM_1936"
+		add_manpower = 10000
+	}
+	NRD = {
+		transfer_state = 965
+		load_oob = "NRD_1936"
+		add_manpower = 10000
+	}
+	SEN = {
+		transfer_state = 973
+		load_oob = "SEN_1936"
+		add_manpower = 10000
+	}
+	SAL = {
+		transfer_state = 969
+		load_oob = "SAL_1936"
+		add_manpower = 10000
+	}
+	ERF = {
+		transfer_state = 967
+		load_oob = "ERF_1936"
+		add_manpower = 10000
+	}
+	RGE = {
+		transfer_state = 972
+		load_oob = "RGE_1936"
+		add_manpower = 10000
+	}
+	RGR = {
+		transfer_state = 970
+		load_oob = "RGR_1936"
+		add_manpower = 10000
+	}
+	NAU = {
+		transfer_state = 60
+		load_oob = "NAU_1936"
+		add_manpower = 10000
+	} 
+	RDL = {
+		transfer_state = 968
+		load_oob = "RDL_1936"
+		add_manpower = 10000
+	}
+	SON = {
+		transfer_state = 963
+		load_oob = "SON_1936"
+		add_manpower = 10000
+	}
+	MHL = {
+		transfer_state = 971
+		load_oob = "MHL_1936"
+		add_manpower = 10000
+	}
+}
+}	

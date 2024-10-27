@@ -1,0 +1,21 @@
+state={
+	id=1010
+	name="STATE_1010"
+
+	history={
+		owner = PIE
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = PIE
+
+	}
+
+	state_category = large_city
+
+	provinces={
+		3772 6788 11891 
+	}
+	manpower=2023471
+	buildings_max_level_factor=1.000
+}

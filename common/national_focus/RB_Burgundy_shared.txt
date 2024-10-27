@@ -1,0 +1,368 @@
+#############################
+#### Burgundy intro tree ####
+#############################
+
+shared_focus = {
+	id = BRG_Yearly_Duties
+	icon = GFX_LOU_Cracker
+	cost = 2
+	prerequisite = {
+	}
+	x = 3
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Yearly_Duties"
+		add_political_power = 100
+	}
+}
+shared_focus = {
+	id = BRG_The_Northern_States
+	icon = GFX_ENG_Edward_VIII
+	cost = 9
+	prerequisite = {
+		focus = BRG_Yearly_Duties
+	}
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_The_Northern_States"
+		custom_effect_tooltip = BRG_Northern_States_tt
+	}
+}
+shared_focus = {
+	id = BRG_The_Central_States
+	icon = GFX_ENG_Edward_VIII
+	cost = 9
+	prerequisite = {
+		focus = BRG_Yearly_Duties
+	}
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_The_Central_States"
+		custom_effect_tooltip = BRG_Central_States_tt
+	}
+}
+shared_focus = {
+	id = BRG_The_Eastern_States
+	icon = GFX_ENG_Edward_VIII
+	cost = 9
+	prerequisite = {
+		focus = BRG_Yearly_Duties
+	}
+	x = 5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_The_Eastern_States"
+		custom_effect_tooltip = BRG_Eastern_States_tt
+	}
+}
+shared_focus = {
+	id = BRG_Meeting_With_The_Committee
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
+	cost = 5
+	prerequisite = {
+		focus = BRG_The_Central_States
+	}
+	prerequisite = {
+		focus = BRG_The_Northern_States
+	}
+	prerequisite = {
+		focus = BRG_The_Eastern_States
+	}
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Meeting_With_The_Committee"
+		add_political_power = 25
+	}
+}
+shared_focus = {
+	id = BRG_The_Economic_Side
+	icon = GFX_goal_generic_positive_trade_relations
+	cost = 8
+	prerequisite = {
+		focus = BRG_Meeting_With_The_Committee
+	}
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_The_Economic_Side"
+		# country event
+	}
+}
+shared_focus = {
+	id = BRG_Support_British_Companies
+	icon = GFX_BRG_Support_British_Companies
+	cost = 8
+	prerequisite = {
+		focus = BRG_The_Economic_Side
+	}
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Support_British_Companies"
+		# country event
+	}
+}
+shared_focus = { #block until econ crash
+	id = BRG_National_Bank_Dispute
+	icon = GFX_focus_hol_abandon_the_gold_standard
+	cost = 8
+	prerequisite = {
+		focus = BRG_Support_Local_Businesses
+		focus = BRG_Support_British_Companies
+	}
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_National_Bank_Dispute"
+		# country event
+	}
+}
+shared_focus = {
+	id = BRG_Coal_Dispute
+	icon = GFX_focus_generic_steel
+	cost = 8
+	prerequisite = {
+		focus = BRG_National_Aid_Dispute
+		focus = BRG_National_Bank_Dispute
+	}
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Coal_Dispute"
+		# country event
+	}
+}
+shared_focus = {
+	id = BRG_Support_Local_Businesses
+	icon = GFX_goal_continuous_increase_nu
+	cost = 8
+	prerequisite = {
+		focus = BRG_The_Economic_Side
+	}
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Support_Local_Businesses"
+		add_to_variable = {
+			var = BRG_committee_consumer_goods_factor
+			value = 0.05
+		}
+	}
+}
+shared_focus = {
+	id = BRG_National_Aid_Dispute
+	icon = GFX_focus_generic_concessions
+	cost = 8
+	prerequisite = {
+		focus = BRG_Support_Local_Businesses
+		focus = BRG_Support_British_Companies
+	}
+	x = 2
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_National_Aid_Dispute"
+		# country event
+	}
+}
+shared_focus = {
+	id = BRG_Road_Dispute
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 8
+	prerequisite = {
+		focus = BRG_National_Aid_Dispute
+		focus = BRG_National_Bank_Dispute
+	}
+	x = 2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Road_Dispute"
+		# country event
+	}
+}
+shared_focus = {
+	id = BRG_The_Defensive_Side
+	icon = GFX_focus_generic_military_mission
+	cost = 10
+	prerequisite = {
+		focus = BRG_Meeting_With_The_Committee
+	}
+	x = 5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_The_Defensive_Side"
+		army_experience = 10
+	}
+}
+shared_focus = {
+	id = BRG_Discuss_The_Dorten_Plan
+	icon = GFX_BRG_Defend_Against_Germany
+	cost = 8
+	prerequisite = {
+		focus = BRG_The_Defensive_Side
+	}
+	x = 4
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Discuss_The_Dorten_Plan"
+		hidden_effect = {
+			8 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			28 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			34 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = BRG_Discuss_The_Nollet_Plan
+	icon = GFX_focus_attack_france
+	cost = 8
+	prerequisite = {
+		focus = BRG_The_Defensive_Side
+	}
+	x = 6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Discuss_The_Dorten_Plan"
+		hidden_effect = {
+			18 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			27 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			785 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = BRG_Open_Up_The_Academies
+	icon = GFX_focus_generic_military_academy
+	cost = 8
+	prerequisite = {
+		focus = BRG_Discuss_The_Dorten_Plan
+		focus = BRG_Discuss_The_Nollet_Plan
+	}
+	mutually_exclusive = {
+		focus = BRG_Keep_Them_Closed
+	}
+	x = 4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Open_Up_The_Academies"
+		add_to_variable = {
+			var = BRG_committee_conscription_factor
+			value = 0.1
+		}
+		subtract_from_variable = {
+			var = BRG_committee_command_power_gain
+			value = 0.05
+		}
+	}
+}
+shared_focus = {
+	id = BRG_Keep_Them_Closed
+	icon = GFX_focus_generic_military_mission
+	cost = 8
+	prerequisite = {
+		focus = BRG_Discuss_The_Dorten_Plan
+		focus = BRG_Discuss_The_Nollet_Plan
+	}
+	mutually_exclusive = {
+		focus = BRG_Open_Up_The_Academies
+	}
+	x = 6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Open_Up_The_Academies"
+		add_to_variable = {
+			var = BRG_committee_command_power_gain
+			value = 0.1
+		}
+	}
+}
+shared_focus = {
+	id = BRG_Preparing_For_The_Worst
+	icon = GFX_goal_generic_occypy_states_ongoing_war
+	cost = 8
+	prerequisite = {
+		focus = BRG_Open_Up_The_Academies
+	}
+	prerequisite = {
+		focus = BRG_Keep_Them_Closed
+	}
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRG_Preparing_For_The_Worst"
+		# country event
+	}
+}

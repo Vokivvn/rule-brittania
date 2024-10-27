@@ -1,0 +1,41 @@
+MEX_ENG_insurgency_category = {
+	MEX_ENG_insurgency_dont_get_aars = {
+		available = { hidden_trigger = { always = yes } }
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision kovner_evacuation_dont_get_raid_aars"
+			if = {
+				limit = { has_country_flag = MEX_ENG_insurgency_dont_get_raid_aar }
+				clr_country_flag = MEX_ENG_insurgency_dont_get_raid_aar
+			}
+			else = { set_country_flag = MEX_ENG_insurgency_dont_get_raid_aar }
+		}
+	}
+
+	############### 000 ###############
+	##======| State Decisions |======##
+	###################################
+	#990- Sante Fe
+	#483- Sonora
+	#482- Chihuahua
+	#979- Albuquerque
+	#978- El Paso
+
+	#803- Tierra Media
+	MEX_ENG_insurgency_803 = {
+		visible = { 803 = { is_demilitarized_zone = yes } }
+		
+		icon = generic_ignite_civil_war
+		highlight_states = { state = 803 }
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		cost = 50
+
+		complete_effect = {
+			803 = { subtract_from_variable = { } }
+		}
+	}
+}

@@ -1,0 +1,18 @@
+is_pro_anglo = {
+	OR = {
+		tag = ENG
+		is_in_faction_with = ENG
+		is_puppet_of = ENG
+		has_country_flag = RB_anglo_loyalist
+	}
+}
+is_anti_anglo = {
+	NOT = {
+		OR = {
+			tag = ENG
+			is_in_faction_with = ENG
+			is_puppet_of = ENG
+			has_country_flag = RB_anglo_loyalist
+		}
+	}
+}

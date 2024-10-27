@@ -1,0 +1,28 @@
+##################
+#English Speeches#
+##################
+
+soundeffect = {
+	name = "soundeffect_horn_blast"
+	sounds = {
+		sound = 
+			horn_blast
+	}
+	volume = 10
+}
+soundeffect = {
+	name = "soundeffect_jackass"
+	sounds = {
+		sound = 
+			jackass
+	}
+	volume = 10
+}
+soundeffect = {
+	name = "soundeffect_george_died"
+	sounds = {
+		sound = 
+			george_died
+	}
+	volume = 10
+}

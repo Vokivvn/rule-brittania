@@ -1,0 +1,132 @@
+﻿capital = 107
+
+add_ideas = {
+	SER_Serbian_Rebels
+	SER_Harsh_Treatment
+	SER_Incapable_Command
+}
+
+set_research_slots = 2
+
+set_stability = 0.5
+set_war_support = 0.1
+
+set_cosmetic_tag = SER_ENG
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 0 
+    marxism = 12
+    liberalism = 4
+    republicanism = 4
+    parliamentarianism = 5
+    administrationism = 8
+    absolutism = 27
+    despotism = 5
+    nationalism = 35
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+create_country_leader = {
+	name = "Johann Ulrich von Salis-Seewis"
+	desc = "POLITICS_JOHANN_ULRICH_DESC"
+	picture = "Portrait_SER_Johann_Ulrich_von_Salis_Seewis.dds"
+	expire = "1999.12.12"
+	ideology = despotism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Draža Mihailović"
+	desc = "POLITICS_DRAZA_MIHAILOVIC_DESC"
+	picture = "Portrait_SER_Draža_Mihailović.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Alexander II"
+	desc = "POLITICS_ALEXANDER_II_DESC"
+	picture = "Portrait_SER_Alexander.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander II"
+	desc = "POLITICS_ALEXANDER_II_DESC"
+	picture = "Portrait_SER_Alexander.dds"
+	expire = "1999.12.12"
+	ideology = parliamentarianism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alexander II"
+	desc = "POLITICS_ALEXANDER_II_DESC"
+	picture = ""
+	expire = "1999.12.12"
+	ideology = administrationism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Moša Pijade"
+	desc = "POLITICS_MOSA_PIJADE_DESC"
+	picture = "Portrait_SER_Moša_Pijade.dds"
+	expire = "1999.12.12"
+	ideology = marxism_subtype
+	traits = {
+	}
+}

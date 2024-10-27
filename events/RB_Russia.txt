@@ -1,0 +1,411 @@
+﻿add_namespace = RUS
+
+country_event = { #Intro Event
+	id = RUS.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.1"}
+	title = RUS.1.t
+	desc = RUS.1.desc
+	picture = GFX_report_event_russian_eagles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = RUS.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Meet With The Generals
+	id = RUS.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.2"}
+	title = RUS.2.t
+	desc = RUS.2.desc
+	picture = GFX_report_event_russian_eagles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = RUS.2.a
+		ai_chance = { factor = 1 }
+		army_experience = 10
+	}
+}
+
+country_event = { #Meet With The Ministers
+	id = RUS.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.3"}
+	title = RUS.3.t
+	desc = RUS.3.desc
+	picture = GFX_report_event_russian_eagles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = RUS.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Meet With The Corporations
+	id = RUS.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.4"}
+	title = RUS.4.t
+	desc = RUS.4.desc
+	picture = GFX_report_event_russian_eagles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = RUS.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Investigating the Paramilitaries
+	id = RUS.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.5"}
+	title = RUS.5.t
+	desc = RUS.5.desc
+	picture = GFX_report_event_russian_eagles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Let them In
+		name = RUS.5.a
+		ai_chance = { factor = 0.6 }
+		complete_national_focus = RUS_let_them_in
+	}
+
+	option = { #Contain the Radicals
+		name = RUS.5.b
+		ai_chance = { factor = 0.4 }
+		complete_national_focus = RUS_contain_the_radicals
+	}
+}
+
+country_event = { #The Republican Threat
+	id = RUS.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.6"}
+	title = RUS.6.t
+	desc = RUS.6.desc
+	picture = GFX_report_event_russian_eagles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = RUS.6.a
+		ai_chance = { factor = 0.6 }
+		complete_national_focus = RUS_the_long_arm_of_the_okhrana
+	}
+
+	option = {
+		name = RUS.6.a
+		ai_chance = { factor = 0.4 }
+		complete_national_focus = RUS_path_to_reform
+	}
+}
+
+country_event = { # Road to Kronstadt
+	id = RUS.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.7"}
+	title = RUS.7.t
+	desc = RUS.7.desc
+	picture = GFX_report_event_russian_eagles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # FUCK THE SWEDE
+		name = RUS.7.a
+		ai_chance = { factor = 0.3 }
+		declare_war_on = {
+			target = SWE
+			type = annex_everything
+		}
+	}
+
+	option = { # OK let's prepare first
+		name = RUS.7.b
+		ai_chance = { factor = 0.7 }
+		load_focus_tree = RUS_winter_war_prep_tree
+	}
+}
+
+country_event = { #Belarus revolt - for Belarus
+	id = RUS.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.8"}
+	title = RUS.8.t
+	desc = RUS.8.desc
+	picture = GFX_report_event_partisans
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = RUS.8.a
+		ai_chance = { factor = 1 }
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = nationalism
+		}
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BLR_revolt
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Michał Vituška"
+			#desc = ""
+			picture = "Portrait_BLR_Michal_Vituska.dds"
+			expire = "1999.1.1"
+			ideology = nationalism_subtype
+			traits = {
+				
+			}
+		}
+		RUS = {
+			end_puppet = BLR
+		}
+		hidden_effect = {
+			RUS = {
+				country_event = {
+					id = RUS.9
+					days = 1
+				}
+			}
+			BLR = {
+				leave_faction = yes
+			}
+		}
+	}
+}
+
+country_event = { #Black Cat revolt - for Russia
+	id = RUS.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.9"}
+	title = RUS.9.t
+	desc = RUS.9.desc
+	picture = GFX_report_event_soldiers_march
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = RUS.9.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+			target = BLR
+			type = puppet_wargoal_focus
+		}
+		hidden_effect = {
+			load_focus_tree = {
+				tree = RUS_belarus_revolt
+				keep_completed = yes
+			}
+			BLR = { country_event = { id = RUS.13 days = 62 } }
+		}
+	}
+}
+
+country_event = { #First peace offer | Sweden
+	id = RUS.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.10"}
+	title = RUS.10.t
+	desc = RUS.10.desc
+	picture = GFX_report_event_russian_eagles
+	
+	trigger = {
+		original_tag = SWE
+		SWE = {
+			has_war_with = RUS
+			surrender_progress > 0.4
+		}
+	}
+
+	fire_only_once = yes
+
+	option = { #Yes
+		name = RUS.10.a
+		ai_chance = { factor = 0.7 }
+		white_peace = RUS
+		hidden_effect = {
+			RUS = { country_event = { id = RUS.11 days = 2 } }
+		}
+	}
+
+	option = { #No 
+		name = RUS.10.b
+		ai_chance = { factor = 0.3 }
+		add_stability = -0.05
+	}
+}
+
+country_event = { #Krondstadt Peace
+	id = RUS.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS.11"}
+	title = RUS.11.t
+	desc = RUS.11.desc
+	picture = GFX_report_event_russian_eagles
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Create the Dutchy of Finland
+		name = RUS.11.a
+		KAR = {
+			hidden_effect = {
+				transfer_state = 147
+				transfer_state = 150
+				transfer_state = 146
+				transfer_state = 837
+				transfer_state = 111
+				transfer_state = 149
+				transfer_state = 838
+				transfer_state = 148
+				transfer_state = 722
+				transfer_state = 1024
+				set_cosmetic_tag = KAR_FIN
+			}
+			add_stability = -0.15
+		}
+	}
+
+	option = { #Seize control over Krondstadt
+		name = RUS.11.b
+		transfer_state = 1024
+		add_stability = -0.5
+	}
+}
+
+country_event = { #More partisans rise up
+	id = RUS.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event RUS.12" }
+	title = RUS.12.t
+	desc = RUS.12.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	option = {
+		name = RUS.12.a
+		hidden_effect = {
+			random_list = {
+				50 = { 
+					BLR = { load_oob = BLR_uprising1 }
+				}
+				50 = { 
+					BLR = { load_oob = BLR_uprising2 }
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Belarussian peace offer
+	id = RUS.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event RUS.13" }
+	title = RUS.13.t
+	desc = RUS.13.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Peace out
+		name = RUS.13.a
+		trigger = {
+			BLR = {
+				has_war_with = RUS
+				surrender_progress < 0.55
+			}
+		}
+		hidden_effect = {
+			RUS = { country_event = { id = RUS.14 days = 1 } }
+		}
+	}
+
+	option = { #Surrender
+		name = RUS.13.b
+		trigger = {
+			BLR = {
+				has_war_with = RUS
+				surrender_progress > 0.54
+			}
+		}
+		hidden_effect = {
+			RUS = { country_event = { id = RUS.15 days = 1 } }
+		}
+	}
+}
+
+country_event = { #Peace offer from Belarus
+	id = RUS.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event RUS.14" }
+	title = RUS.14.t
+	desc = RUS.14.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Yes, under our conditions
+		name = RUS.14.a
+		hidden_effect = {
+			white_peace = BLR
+			transfer_state = 210
+			transfer_state = 242
+			set_country_flag = RUS_belarus_revolt_done
+			load_focus_tree = RUS_start_tree
+		}
+	}
+
+	option = { #We don't have to make a deal with rebels
+		name = RUS.14.b
+		hidden_effect = {
+			BLR = { country_event = { id = RUS.16 days = 1 } }
+		}
+	}
+}
+
+country_event = { #Belarus surrenders
+	id = RUS.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event RUS.15" }
+	title = RUS.15.t
+	desc = RUS.15.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Very well
+		name = RUS.15.a
+		hidden_effect = {
+			annex_country = { target = BLR }
+			set_country_flag = RUS_belarus_revolt_done
+			load_focus_tree = RUS_start_tree
+		}
+	}
+}
+
+country_event = { #Russia rejects offer
+	id = RUS.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event RUS.16" }
+	title = RUS.16.t
+	desc = RUS.16.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Surrender
+		name = RUS.16.a
+		hidden_effect = {
+			RUS = { country_event = { id = RUS.15 days = 1 } }
+		}
+	}
+}
+

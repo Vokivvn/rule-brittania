@@ -1,0 +1,27 @@
+state={
+	id=996
+	name="STATE_996"
+	history={
+		owner = UTY
+		add_core_of = UTY
+		buildings = {
+			infrastructure = 3
+		}
+		set_demilitarized_zone = yes
+		victory_points = {
+			1740 1 
+		}
+		victory_points = {
+			12535 3
+		}
+		victory_points = {
+			4668 5 
+		}
+	}
+	provinces={
+		1740 1756 4668 4742 7888
+	}
+	manpower=113208
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,43 @@
+﻿capital = 700
+
+set_research_slots = 1
+set_stability = 0.5
+set_war_support = 0.5
+
+set_cosmetic_tag = SIE_ENG
+
+SIE = {
+    create_faction = "West Africa Command"
+    add_to_faction = DAH
+    add_to_faction = MRT
+    add_to_faction = IVO
+}
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 1
+    marxism = 4
+    liberalism = 10
+    republicanism = 20
+    parliamentarianism = 30
+    administrationism = 20
+    absolutism = 10
+    despotism = 4
+    nationalism = 1
+}
+
+create_country_leader = {
+    name = "Arnold Hodson"
+    desc = POLITICS_ARNOLD_HODSON_DESC
+    picture = "Portrait_Pepper_Coast_Arnold_Hodson.dds"
+    expire = "1999.12.12"
+    ideology = despotism_subtype
+    traits = {
+    }
+}

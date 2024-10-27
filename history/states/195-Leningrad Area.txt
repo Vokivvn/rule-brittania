@@ -1,0 +1,31 @@
+
+state={
+	id=195
+	name="STATE_195"
+
+	history={
+		owner = PAT
+		victory_points = {
+			10953 10.0		
+		}
+		#buildings = {
+		#	infrastructure = 7
+		#	arms_factory = 6
+		#	industrial_complex = 1
+		#	dockyard = 3
+		#	air_base = 10
+		#	#3151 = {
+		#	#	naval_base = 10
+		#	#	coastal_bunker = 5
+		#	#}
+		#}
+		add_core_of = PAT
+	}
+
+	provinces={
+		2161 2169 5159 5173 5201 8198 10953 10961 12946 12952 13283
+	}
+	manpower=37501
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

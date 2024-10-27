@@ -1,0 +1,125 @@
+﻿USA_marxist_militia = {
+	name = "Worker's Revolutionary Militia"
+
+	for_countries = { USA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Worker's Revolutionary Militia"
+
+	ordered = {
+		1 = { "1st Chicago Worker's Revolutionary Militia" }
+		2 = { "2nd Chicago Worker's Revolutionary Militia" }
+		3 = { "1st Detroit Worker's Revolutionary Militia" }
+		4 = { "2nd Detroit Worker's Revolutionary Militia" }
+		5 = { "1st Buffalo Worker's Revolutionary Militia" }
+		6 = { "2nd Buffalo Worker's Revolutionary Militia" }
+		7 = { "1st Toledo Worker's Revolutionary Militia" }
+		8 = { "Ontarian Worker's Revolutionary Militia 'Yank Levy'" }
+	}
+}
+
+USA_socdem_militia = {
+	name = "Unionist Revolutionary Militia"
+
+	for_countries = { USA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Unionist Revolutionary Militia"
+
+	ordered = {
+		1 = { "1st Massachusetts Unionist Revolutionary Militia" }
+		2 = { "2nd Massachusetts Unionist Revolutionary Militia" }
+		3 = { "3rd Massachusetts Unionist Revolutionary Militia" }
+		4 = { "4th Massachusetts Unionist Revolutionary Militia" }
+		5 = { "1st Rhode Island Unionist Revolutionary Militia" }
+		6 = { "1st Connecticut Unionist Revolutionary Militia" }
+		7 = { "2nd Connecticut Unionist Revolutionary Militia" }
+		8 = { "1st Ohio Unionist Revolutionary Militia" }
+		9 = { "2nd Ohio Unionist Revolutionary Militia" }
+		10 = { "3rd Ohio Unionist Revolutionary Militia" }
+		11 = { "4th Ohio Unionist Revolutionary Militia" }
+		12 = { "2nd Asheville Unionist Revolutionary Militia" }
+		13 = { "1st Illinois Unionist Revolutionary Militia" }
+		14 = { "2nd Illinois Unionist Revolutionary Militia" }
+		15 = { "1st Pittsburgh Unionist Revolutionary Militia" }
+		16 = { "2nd Pittsburgh Unionist Revolutionary Militia" }
+		17 = { "1st Ontario Unionist Revolutionary Militia" }
+		18 = { "2nd Ontario Unionist Revolutionary Militia" }
+		19 = { "3rd Ontario Unionist Revolutionary Militia" }
+		20 = { "4th Ontario Unionist Revolutionary Militia" }
+		21 = { "5th Ontario Unionist Revolutionary Militia" }
+	}
+}
+
+USA_liberal_militia = {
+	name = "American Revolutionary Militia"
+
+	for_countries = { USA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. American Revolutionary Militia"
+
+	ordered = {
+		1 = { "1st New York American Revolutionary Militia" }
+		2 = { "2nd New York American Revolutionary Militia" }
+		3 = { "3rd New York American Revolutionary Militia" }
+		4 = { "4th New York American Revolutionary Militia" }
+		5 = { "5th New York American Revolutionary Militia" }
+		6 = { "5th Massachusetts American Revolutionary Militia" }
+		7 = { "2nd Maine American Revolutionary Militia" }
+		8 = { "Green Mountaineer American Revolutionary Militia" }
+		9 = { "1st New Jersey American Revolutionary Militia" }
+		10 = { "2nd New Jersey American Revolutionary Militia" }
+		11 = { "1st Philadelphia American Revolutionary Militia" }
+		12 = { "2nd Philadelphia American Revolutionary Militia" }
+		13 = { "3rd Philadelphia American Revolutionary Militia" }
+		14 = { "1st Maryland American Revolutionary Militia" }
+		15 = { "2nd Maryland American Revolutionary Militia" }
+		16 = { "1st Albertstown American Revolutionary Militia" }
+		17 = { "5th Transylvania American Revolutionary Militia" }
+		18 = { "1st Nashville American Revolutionary Militia" }
+		19 = { "4th Transylvania American Revolutionary Militia" }
+		20 = { "1st Vandalia American Revolutionary Militia" }
+		21 = { "2nd Vandalia American Revolutionary Militia" }
+		22 = { "3rd Vandalia American Revolutionary Militia" }
+		23 = { "1st Erie American Revolutionary Militia" }
+		24 = { "4th Pennsylvania American Revolutionary Militia" }
+		25 = { "1st Indiana American Revolutionary Militia" }
+		26 = { "2nd Indiana American Revolutionary Militia" }
+		27 = { "1st Springfield American Revolutionary Militia" }
+		28 = { "1st New Hampshire American Revolutionary Militia" }
+		29 = { "1st Maine American Revolutionary Militia" }
+		30 = { "1st Michigan American Revolutionary Militia" }
+		31 = { "1st Ontario American Revolutionary Militia" }
+	}
+}
+
+USA_conservative_militia = {
+	name = "Southern Revolutionary Militia"
+
+	for_countries = { USA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Southern Revolutionary Militia"
+
+	ordered = {
+		1 = { "1st Virginia Southern Revolutionary Militia" }
+		2 = { "2nd Virginia Southern Revolutionary Militia" }
+		3 = { "3rd Virginia Southern Revolutionary Militia" }
+		4 = { "4th Virginia Southern Revolutionary Militia" }
+		5 = { "5th Virginia Southern Revolutionary Militia" }
+		6 = { "1st Asheville Southern Revolutionary Militia" }
+	}
+}

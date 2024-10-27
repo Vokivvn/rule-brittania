@@ -1,0 +1,2569 @@
+#Starting tree
+
+shared_focus = {
+	id = CNA_britains_loyal_commonwealth
+	icon = GFX_ENG_CNA_Speech
+	cost = 1
+	x = 6
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_britains_loyal_commonwealth"
+		country_event = {
+			id = CNA.1
+			hours = 1
+		}
+		ENG = {
+			add_opinion_modifier = {
+				target = CNA
+				modifier = CNA_loyal_commonwealth
+			}
+		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = CNA_loyal_commonwealth
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_peacekeepers_of_the_atlantic
+	icon = GFX_generic_north_america
+	cost = 1
+	prerequisite = {
+		focus = CNA_britains_loyal_commonwealth
+	}
+	x = -2
+	y = 1
+	relative_position_id = CNA_britains_loyal_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_peacekeepers_of_the_atlantic"
+		country_event = {
+			id = CNA.2
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_heroes_of_the_anglo_mexican_war
+	icon = GFX_CNA_heroes_of_the_anglo_mexican_war
+	cost = 1
+	prerequisite = {
+		focus = CNA_britains_loyal_commonwealth
+	}
+	x = 0
+	y = 1
+	relative_position_id = CNA_britains_loyal_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_heroes_of_the_anglo_mexican_war"
+		country_event = {
+			id = CNA.3
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_merchants_of_north_america
+	icon = GFX_BRG_Support_British_Companies
+	cost = 1
+	prerequisite = {
+		focus = CNA_britains_loyal_commonwealth
+	}
+	x = 2
+	y = 1
+	relative_position_id = CNA_britains_loyal_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_merchants_of_north_america"
+		country_event = {
+			id = CNA.4
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_reinforce_the_rnaa
+	icon = GFX_CNA_flag_soldier_RNAA
+	cost = 4
+	prerequisite = {
+		focus = CNA_peacekeepers_of_the_atlantic
+	}
+	prerequisite = {
+		focus = CNA_heroes_of_the_anglo_mexican_war
+	}
+	prerequisite = {
+		focus = CNA_merchants_of_north_america
+	}
+	x = -3
+	y = 2
+	relative_position_id = CNA_britains_loyal_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_reinforce_the_rnaa"
+		add_manpower = 10000
+	}
+}
+
+shared_focus = {
+	id = CNA_ramp_up_arms_production
+	icon = GFX_generic_advanced_weapons
+	cost = 4
+	prerequisite = {
+		focus = CNA_reinforce_the_rnaa
+	}
+	x = -1
+	y = 1
+	relative_position_id = CNA_reinforce_the_rnaa
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_ramp_up_arms_production"
+		random_owned_state = {
+			limit = {
+				has_state_flag = USM_commie_state
+				has_state_flag = USA_rebel_state
+				NOT = { state = 357 }
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_build_up_the_rnaaaf
+	icon = GFX_generic_planes
+	cost = 4
+	prerequisite = {
+		focus = CNA_ramp_up_arms_production
+	}
+	x = -1
+	y = 2
+	relative_position_id = CNA_reinforce_the_rnaa
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_build_up_the_rnaaaf"
+		add_timed_idea = {
+			idea = CNA_building_up_rnaaaf
+			days = 180
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_spread_militarist_propaganda
+	icon = GFX_goal_national_mobilization
+	cost = 4
+	prerequisite = {
+		focus = CNA_reinforce_the_rnaa
+	}
+	x = 1
+	y = 1
+	relative_position_id = CNA_reinforce_the_rnaa
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_spread_militarist_propaganda"
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = CNA_destroy_anti_british_groups
+	icon = GFX_ENG_Scatter_the_Tommies
+	cost = 4
+	prerequisite = {
+		focus = CNA_spread_militarist_propaganda
+	}
+	x = 1
+	y = 2
+	relative_position_id = CNA_reinforce_the_rnaa
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_destroy_anti_british_groups"
+		country_event = {
+			id = CNA.11
+			days = 7
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_develop_the_commonwealth
+	icon = GFX_focus_HRE_the_eastern_boom
+	cost = 4
+	prerequisite = {
+		focus = CNA_peacekeepers_of_the_atlantic
+	}
+	prerequisite = {
+		focus = CNA_heroes_of_the_anglo_mexican_war
+	}
+	prerequisite = {
+		focus = CNA_merchants_of_north_america
+	}
+	x = 3
+	y = 2
+	relative_position_id = CNA_britains_loyal_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_develop_the_commonwealth"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_the_great_eastern_ports
+	icon = GFX_generic_diplomacy_trade
+	cost = 4
+	prerequisite = {
+		focus = CNA_develop_the_commonwealth
+	}
+	x = -1
+	y = 1
+	relative_position_id = CNA_develop_the_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_great_eastern_ports"
+		381 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 6732
+			}
+		}
+		925 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 3878
+			}
+		}
+		930 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 6845
+			}
+		}
+		928 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_made_in_the_great_lakes
+	icon = GFX_CNA_made_in_the_great_lakes
+	cost = 4
+	prerequisite = {
+		focus = CNA_the_great_eastern_ports
+	}
+	x = -1
+	y = 2
+	relative_position_id = CNA_develop_the_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_made_in_the_great_lakes"
+		swap_ideas = {
+			remove_idea = CNA_great_lakes_industry
+			add_idea = CNA_great_lakes_industry_2
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_the_underdeveloped_frontier
+	icon = GFX_CNA_the_underdeveloped_frontier_rural_person
+	cost = 4
+	prerequisite = {
+		focus = CNA_develop_the_commonwealth
+	}
+	x = 1
+	y = 1
+	relative_position_id = CNA_develop_the_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_underdeveloped_frontier"
+		random_owned_state = {
+			limit = {
+				has_state_flag = USM_commie_state
+				NOT = { has_state_flag = USA_rebel_state }
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_cooperate_with_other_colonies
+	icon = GFX_Focus_politics_country_animal_pelican
+	cost = 4
+	prerequisite = {
+		focus = CNA_the_underdeveloped_frontier
+	}
+	x = 1
+	y = 2
+	relative_position_id = CNA_develop_the_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_cooperate_with_other_colonies"
+		LOU = {
+			country_event = {
+				id = CNA.13
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_the_1936_elections
+	icon = GFX_generic_elections
+	cost = 1
+	prerequisite = {
+		focus = CNA_build_up_the_rnaaaf
+	}
+	prerequisite = {
+		focus = CNA_destroy_anti_british_groups
+	}
+	prerequisite = {
+		focus = CNA_made_in_the_great_lakes
+	}
+	prerequisite = {
+		focus = CNA_cooperate_with_other_colonies
+	}
+	x = 0
+	y = 5
+	relative_position_id = CNA_britains_loyal_commonwealth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_1936_elections"
+		country_event = {
+			id = CNA.20
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_1936_the_tories
+	icon = GFX_RB_generic_parliamentarianism_ideology
+	cost = 1
+	prerequisite = {
+		focus = CNA_the_1936_elections
+	}
+	available = {
+		always = no
+	}
+	bypass = {
+		has_country_flag = CNA_1936_tory_victory
+	}
+	x = -3
+	y = 1
+	relative_position_id = CNA_the_1936_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_1936_the_tories"
+	}
+}
+
+shared_focus = {
+	id = CNA_1936_the_whigs
+	icon = GFX_RB_generic_liberalism_ideology
+	cost = 1
+	prerequisite = {
+		focus = CNA_the_1936_elections
+	}
+	available = {
+		always = no
+	}
+	bypass = {
+		has_country_flag = CNA_1936_whig_victory
+	}
+	x = 0
+	y = 1
+	relative_position_id = CNA_the_1936_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_1936_the_whigs"
+	}
+}
+
+shared_focus = {
+	id = CNA_1936_labour
+	icon = GFX_RB_generic_social_democrat_ideology
+	cost = 1
+	prerequisite = {
+		focus = CNA_the_1936_elections
+	}
+	available = {
+		always = no
+	}
+	bypass = {
+		has_country_flag = CNA_1936_labour_victory
+	}
+	x = 3
+	y = 1
+	relative_position_id = CNA_the_1936_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_1936_labour"
+	}
+}
+
+shared_focus = {
+	id = CNA_econ_crash
+	icon = GFX_British_Gold_Reserve
+	cost = 10
+	dynamic = yes
+	prerequisite = {
+		focus = CNA_1936_the_tories
+		focus = CNA_1936_the_whigs
+		focus = CNA_1936_labour
+	}
+	x = 0
+	y = 2
+	relative_position_id = CNA_the_1936_elections
+	select_effect = {
+		hidden_effect = {
+			add_political_power = 1
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_econ_crash"
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = RB_econ_crash
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+		else = {
+			add_stability = -0.15
+			add_political_power = -100
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_draw_closer_to_london
+	icon = GFX_Generic_Rule_Britannia
+	cost = 5
+	prerequisite = {
+		focus = CNA_1936_the_tories
+	}
+	prerequisite = {
+		focus = CNA_econ_crash
+	}
+	x = -3
+	y = 3
+	relative_position_id = CNA_the_1936_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_draw_closer_to_london"
+		add_to_variable = { CNA_var_consumer_goods = -0.05 }
+		add_to_variable = { CNA_var_construction_speed = 0.2 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_consumer_goods_minus_5
+		custom_effect_tooltip = CNA_tooltip_construction_speed_20
+	}
+}
+
+shared_focus = {
+	id = CNA_further_anglo_american_trade
+	icon = GFX_Maintain_Cabinet_Loyalty
+	cost = 5
+	prerequisite = {
+		focus = CNA_draw_closer_to_london
+	}
+	x = 0
+	y = 1
+	relative_position_id = CNA_draw_closer_to_london
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_further_anglo_american_trade"
+		add_to_variable = { CNA_var_consumer_goods = -0.05 }
+		add_to_variable = { CNA_var_factory_output = 0.05 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_consumer_goods_minus_5
+		custom_effect_tooltip = CNA_tooltip_factory_output_5
+	}
+}
+
+shared_focus = {
+	id = CNA_continued_british_investment
+	icon = GFX_ENG_Empire_of_The_Seas
+	cost = 5
+	prerequisite = {
+		focus = CNA_further_anglo_american_trade
+	}
+	x = 0
+	y = 2
+	relative_position_id = CNA_draw_closer_to_london
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_continued_british_investment"
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_to_variable = { CNA_var_factory_output = 0.15 }
+		add_to_variable = { CNA_var_prod_eff_cap = -0.1 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_factory_output_15
+		custom_effect_tooltip = CNA_tooltip_prod_eff_cap_minus_10
+	}
+}
+
+shared_focus = {
+	id = CNA_request_british_economic_aid
+	icon = GFX_Cap_and_Cash
+	cost = 5
+	prerequisite = {
+		focus = CNA_continued_british_investment
+	}
+	x = 0
+	y = 3
+	relative_position_id = CNA_draw_closer_to_london
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_request_british_economic_aid"
+		ENG = {
+			country_event = {
+				id = CNA.31
+				days = 2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_free_the_market
+	icon = GFX_generic_economic_liberty
+	cost = 5
+	prerequisite = {
+		focus = CNA_1936_the_tories
+		focus = CNA_1936_the_whigs
+	}
+	prerequisite = {
+		focus = CNA_econ_crash
+	}
+	x = -1
+	y = 3
+	relative_position_id = CNA_the_1936_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_free_the_market"
+		add_to_variable = { CNA_var_construction_speed = 0.1 }
+		add_to_variable = { CNA_var_prod_eff_cap = 0.1 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_construction_speed_10
+		custom_effect_tooltip = CNA_tooltip_prod_eff_cap_10
+	}
+}
+
+shared_focus = {
+	id = CNA_cut_down_on_regulations
+	icon = GFX_generic_suspend_constitution
+	cost = 5
+	prerequisite = {
+		focus = CNA_free_the_market
+	}
+	x = 0
+	y = 1
+	relative_position_id = CNA_free_the_market
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_cut_down_on_regulations"
+		add_to_variable = { CNA_var_consumer_goods = -0.1 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_consumer_goods_minus_10
+	}
+}
+
+shared_focus = {
+	id = CNA_work_with_business_leaders
+	icon = GFX_goal_ENG_friends_in_high_places
+	cost = 5
+	prerequisite = {
+		focus = CNA_cut_down_on_regulations
+	}
+	x = 0
+	y = 2
+	relative_position_id = CNA_free_the_market
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_work_with_business_leaders"
+		add_to_variable = { CNA_var_resource_gain = 0.3 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_resource_gain_30
+	}
+}
+
+shared_focus = {
+	id = CNA_the_hub_of_north_america
+	icon = GFX_Generic_Internationalism
+	cost = 5
+	prerequisite = {
+		focus = CNA_work_with_business_leaders
+	}
+	x = 0
+	y = 3
+	relative_position_id = CNA_free_the_market
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_hub_of_north_america"
+		add_to_variable = { CNA_var_construction_speed = 0.15 }
+		add_to_variable = { CNA_var_factory_output = 0.1 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_construction_speed_15
+		custom_effect_tooltip = CNA_tooltip_factory_output_10
+	}
+}
+
+shared_focus = {
+	id = CNA_distance_from_britain
+	icon = GFX_CNA_britain_distance
+	cost = 5
+	prerequisite = {
+		focus = CNA_1936_labour
+		focus = CNA_1936_the_whigs
+	}
+	prerequisite = {
+		focus = CNA_econ_crash
+	}
+	x = 1
+	y = 3
+	relative_position_id = CNA_the_1936_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_distance_from_britain"
+		add_to_variable = { CNA_var_construction_speed = 0.1 }
+		add_to_variable = { CNA_var_prod_eff_cap = 0.05 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_construction_speed_10
+		custom_effect_tooltip = CNA_tooltip_prod_eff_cap_5
+	}
+}
+
+shared_focus = {
+	id = CNA_counter_spences_legacy
+	icon = GFX_focus_RAJ_we_failed_the_rich
+	cost = 5
+	prerequisite = {
+		focus = CNA_distance_from_britain
+	}
+	x = 0
+	y = 1
+	relative_position_id = CNA_distance_from_britain
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_counter_spences_legacy"
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = -0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_encourage_american_business
+	icon = GFX_goal_collaborate_local_elites
+	cost = 5
+	prerequisite = {
+		focus = CNA_counter_spences_legacy
+	}
+	x = 0
+	y = 2
+	relative_position_id = CNA_distance_from_britain
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_encourage_american_business"
+		RB_lower_british_econ_influence = yes
+		add_to_variable = { CNA_var_prod_eff_cap = 0.15 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_prod_eff_cap_15
+	}
+}
+
+shared_focus = {
+	id = CNA_increase_our_military_independence
+	icon = GFX_Generic_Rearmament
+	cost = 5
+	prerequisite = {
+		focus = CNA_encourage_american_business
+	}
+	x = 0
+	y = 3
+	relative_position_id = CNA_distance_from_britain
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_increase_our_military_independence"
+		RB_lower_british_mil_influence = yes
+	}
+}
+
+shared_focus = {
+	id = CNA_public_works_projects
+	icon = GFX_Generic_Construction
+	cost = 5
+	prerequisite = {
+		focus = CNA_1936_labour
+	}
+	x = 3
+	y = 3
+	relative_position_id = CNA_the_1936_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_public_works_projects"
+		custom_effect_tooltip = CNA_public_works_projects_tooltip
+		add_to_variable = { CNA_var_prod_eff_cap = 0.05 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_prod_eff_cap_5
+	}
+}
+
+shared_focus = {
+	id = CNA_defend_workers_rights
+	icon = GFX_social_democrat_focus
+	cost = 5
+	prerequisite = {
+		focus = CNA_public_works_projects
+	}
+	prerequisite = {
+		focus = CNA_econ_crash
+	}
+	x = 0
+	y = 1
+	relative_position_id = CNA_public_works_projects
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_defend_workers_rights"
+		add_stability = 0.1
+		add_to_variable = { CNA_var_factory_output = 0.1 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_factory_output_10
+	}
+}
+
+shared_focus = {
+	id = CNA_institute_progressive_taxation
+	icon = GFX_RAJ_India_Wealth_Question
+	cost = 5
+	prerequisite = {
+		focus = CNA_defend_workers_rights
+	}
+	x = 0
+	y = 2
+	relative_position_id = CNA_public_works_projects
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_institute_progressive_taxation"
+		add_to_variable = { CNA_var_resource_gain = 0.25 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_resource_gain_25
+	}
+}
+
+shared_focus = {
+	id = CNA_reinvest_into_our_industry
+	icon = GFX_generic_change_law_labor
+	cost = 5
+	prerequisite = {
+		focus = CNA_institute_progressive_taxation
+	}
+	x = 0
+	y = 3
+	relative_position_id = CNA_public_works_projects
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_reinvest_into_our_industry"
+		add_to_variable = { CNA_var_construction_speed = 0.4 }
+		add_to_variable = { CNA_var_factory_output = 0.2 }
+		add_to_variable = { CNA_var_consumer_goods = 0.1 }
+		custom_effect_tooltip = CNA_modify_econ_crash_by
+		custom_effect_tooltip = CNA_tooltip_construction_speed_40
+		custom_effect_tooltip = CNA_tooltip_factory_output_20
+		custom_effect_tooltip = CNA_tooltip_consumer_goods_10
+	}
+}
+
+shared_focus = {
+	id = CNA_call_to_the_loyalists
+	icon = GFX_ENG_CNA_Speech
+	cost = 0.1
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_call_to_the_loyalists"
+		load_oob = "CNA_revolution"
+	}
+}
+
+shared_focus = {
+	id = CNA_call_to_the_empire
+	icon = GFX_Focus_politics_country_animal_pelican
+	cost = 0.1
+	x = 7
+	y = 0
+	available = {
+		has_completed_focus = CNA_call_to_the_loyalists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_call_to_the_empire"
+		if = {
+			limit = {
+				LOU = { has_country_flag = RB_anglo_loyalist }
+			}
+			LOU = {
+				country_event = {
+					id = CNA.101
+					hours = 1
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_contain_the_insurrection
+	icon = GFX_British_Fortifications
+	cost = 0.1
+	x = 6
+	y = 1
+	prerequisite = {
+		focus = CNA_call_to_the_loyalists
+	}
+	prerequisite = {
+		focus = CNA_call_to_the_empire
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_contain_the_insurrection"
+		country_event = {
+			id = CNA.102
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_our_support_from_london
+	icon = GFX_ENG_London_Calling
+	cost = 4
+	x = -13
+	y = 1
+	relative_position_id = CNA_contain_the_insurrection
+	prerequisite = {
+		focus = CNA_contain_the_insurrection
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CNA_has_above_0_percent_cities_tooltip
+			NOT = {
+				CNA_has_0_percent_cities = yes
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_our_support_from_london"
+		if = {
+			limit = {
+				NOT = { CNA_has_0_percent_cities = yes }
+			}
+			custom_effect_tooltip = CNA_unlock_british_support_decisions
+		}
+		if = {
+			limit = {
+				CNA_has_100_percent_cities = yes
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = ENG
+			}
+		}
+		else_if = {
+			limit = {
+				CNA_has_66_percent_cities = yes
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 600
+				producer = ENG
+			}
+		}
+		else_if = {
+			limit = {
+				CNA_has_33_percent_cities = yes
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+				producer = ENG
+			}
+		}
+		
+		else_if = {
+			limit = {
+				CNA_has_0_percent_cities = yes
+			}
+			custom_effect_tooltip = CNA_britain_cant_reach
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_we_rule_the_atlantic
+	icon = GFX_Generic_Naval_Industry
+	cost = 4
+	x = -1
+	y = 1
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_our_support_from_london
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_we_rule_the_atlantic"
+		ENG = {
+			country_event = {
+				id = CNA.103
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_surround_the_rebels
+	icon = GFX_Naval_Gunners
+	cost = 4
+	x = -1
+	y = 2
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_we_rule_the_atlantic
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_surround_the_rebels"
+		QUE = {
+			if = {
+				limit = {
+					has_country_flag = RB_anglo_loyalist
+				}
+			}
+			country_event = {
+				id = CNA.105
+				days = 1
+			}
+		}
+		HBC = {
+			if = {
+				limit = {
+					has_country_flag = RB_anglo_loyalist
+				}
+			}
+			country_event = {
+				id = CNA.105
+				days = 1
+			}
+		}
+		FLO = {
+			if = {
+				limit = {
+					has_country_flag = RB_anglo_loyalist
+				}
+			}
+			country_event = {
+				id = CNA.105
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_british_military_support
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 1
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_our_support_from_london
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_british_military_support"
+		custom_effect_tooltip = CNA_british_manpower_guns
+	}
+}
+
+shared_focus = {
+	id = CNA_leverage_british_economic_might
+	icon = GFX_British_Gold_Reserve
+	cost = 4
+	x = 1
+	y = 2
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_british_military_support
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_leverage_british_economic_might"
+		custom_effect_tooltip = CNA_british_econ_boost_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_british_technological_cooperation
+	icon = GFX_focus_HRE_study_the_costs
+	cost = 4
+	x = -2
+	y = 3
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_surround_the_rebels
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_british_technological_cooperation"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_call_for_british_officers
+	icon = GFX_Generic_Colonial_Army
+	cost = 4
+	x = 0
+	y = 3
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_surround_the_rebels
+	}
+	prerequisite = {
+		focus = CNA_leverage_british_economic_might
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_call_for_british_officers"
+		custom_effect_tooltip = CNA_british_army_xp_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_talk_with_british_arms_companies
+	icon = GFX_BRG_Support_British_Companies
+	cost = 4
+	x = 2
+	y = 3
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_leverage_british_economic_might
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_talk_with_british_arms_companies"
+		custom_effect_tooltip = CNA_british_arms_company_deals_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_we_need_more
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 4
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_call_for_british_officers
+	}
+	prerequisite = {
+		focus = CNA_talk_with_british_arms_companies
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_we_need_more"
+		custom_effect_tooltip = CNA_we_need_more_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_what_we_want_them_to_hear
+	icon = GFX_Generic_Intelligence_Gathering
+	cost = 4
+	x = -1
+	y = 4
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_british_technological_cooperation
+	}
+	prerequisite = {
+		focus = CNA_call_for_british_officers
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_what_we_want_them_to_hear"
+		
+	}
+}
+
+shared_focus = {
+	id = CNA_pull_them_closer
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 5
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_we_need_more
+	}
+	prerequisite = {
+		focus = CNA_what_we_want_them_to_hear
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_pull_them_closer"
+		
+	}
+}
+
+shared_focus = {
+	id = CNA_escalate_their_commitments
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 5
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_we_need_more
+	}
+	prerequisite = {
+		focus = CNA_what_we_want_them_to_hear
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_escalate_their_commitments"
+		
+	}
+}
+
+shared_focus = {
+	id = CNA_operation_neptune
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 0
+	y = 6
+	relative_position_id = CNA_our_support_from_london
+	prerequisite = {
+		focus = CNA_pull_them_closer
+	}
+	prerequisite = {
+		focus = CNA_escalate_their_commitments
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_operation_neptune"
+		custom_effect_tooltip = CNA_operation_neptune_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_destroy_the_rebellious
+	icon = GFX_ENG_Scatter_the_Tommies
+	cost = 4
+	x = -6
+	y = 1
+	relative_position_id = CNA_contain_the_insurrection
+	available = {
+		NOT = { has_country_flag = CNA_1936_labour_victory }
+	}
+	prerequisite = {
+		focus = CNA_contain_the_insurrection
+	}
+	mutually_exclusive = {
+		focus = CNA_the_benefits_of_empire
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_destroy_the_rebellious"
+		add_manpower = 20000
+	}
+}
+
+shared_focus = {
+	id = CNA_root_out_resistance_cells
+	icon = Crush_the_Rebellion
+	cost = 4
+	x = -1
+	y = 1
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_destroy_the_rebellious
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_root_out_resistance_cells"
+		#custom_effect_tooltip = CNA_root_out_resistance_cells_tooltip #add decisions later
+	}
+}
+
+shared_focus = {
+	id = CNA_scour_the_coastal_cities
+	icon = GFX_City_Forts
+	cost = 4
+	x = 1
+	y = 1
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_destroy_the_rebellious
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_scour_the_coastal_cities"
+		381 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 6732
+			}
+		}
+		925 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 3878
+			}
+		}
+		928 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 788
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_crack_down_on_labor
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -3
+	y = 2
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_root_out_resistance_cells
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_crack_down_on_labor"
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.05
+		}
+		add_war_support = 0.05
+		USA = {
+			add_popularity = {
+				ideology = marxism
+				popularity = -0.05
+			}
+			add_war_support = -0.05
+			custom_effect_tooltip = CNA_lower_popular_support
+			hidden_effect = {
+				set_temp_variable = { USA_raise_popular_support_var = -0.1 }
+				USA_raise_popular_support_effect = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_suppress_acadian_nationalism
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 2
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_root_out_resistance_cells
+		focus = CNA_scour_the_coastal_cities
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_suppress_acadian_nationalism"
+		every_owned_state = {
+			limit = {
+				AND = {
+					controller = {
+						tag = CNA
+					}
+					has_state_flag = ACA_acadia_state
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			PREV = {
+				add_political_power = -25
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_pacify_the_south
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 2
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_root_out_resistance_cells
+		focus = CNA_scour_the_coastal_cities
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_pacify_the_south"
+		every_owned_state = {
+			limit = {
+				AND = {
+					controller = {
+						tag = CNA
+					}
+					has_state_flag = CNA_southern_state
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			random_list = {
+				50 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				50 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			PREV = {
+				add_political_power = -25
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_work_with_british_business
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -3
+	y = 3
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_crack_down_on_labor
+	}
+	prerequisite = {
+		focus = CNA_suppress_acadian_nationalism
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_work_with_british_business"
+		RB_raise_economic_law = yes
+	}
+}
+
+shared_focus = {
+	id = CNA_defeat_deskahehs_ideals
+	icon = GFX_Native_American_Focus
+	cost = 4
+	x = -1
+	y = 3
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_crack_down_on_labor
+	}
+	prerequisite = {
+		focus = CNA_suppress_acadian_nationalism
+	}
+	prerequisite = {
+		focus = CNA_pacify_the_south
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_defeat_deskahehs_ideals"
+		add_state_core = 370
+		add_state_core = 819
+		add_state_core = 840
+	}
+}
+
+shared_focus = {
+	id = CNA_militarize_the_police
+	icon = GFX_Generic_Secret_Police
+	cost = 4
+	x = 1
+	y = 3
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_suppress_acadian_nationalism
+	}
+	prerequisite = {
+		focus = CNA_pacify_the_south
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_militarize_the_police"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = military_police_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_a_commonwealth_whole
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -2
+	y = 4
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_work_with_british_business
+	}
+	prerequisite = {
+		focus = CNA_defeat_deskahehs_ideals
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_commonwealth_whole"
+		add_political_power = 150
+	}
+}
+
+shared_focus = {
+	id = CNA_crush_all_rebellion
+	icon = GFX_Crush_Resistance
+	cost = 4
+	x = 0
+	y = 4
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_defeat_deskahehs_ideals
+	}
+	prerequisite = {
+		focus = CNA_militarize_the_police
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_crush_all_rebellion"
+		add_ideas = CNA_crushing_rebels
+	}
+}
+
+shared_focus = {
+	id = CNA_the_fight_for_stability
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 2
+	y = 4
+	relative_position_id = CNA_destroy_the_rebellious
+	prerequisite = {
+		focus = CNA_militarize_the_police
+		focus = CNA_a_commonwealth_for_the_poor
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_fight_for_stability"
+		add_stability = 0.1
+		custom_effect_tooltip = CNA_raise_popular_support
+		hidden_effect = {
+			set_temp_variable = { CNA_raise_popular_support_var = 0.1 }
+			CNA_raise_popular_support_effect = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_the_benefits_of_empire
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -2
+	y = 1
+	relative_position_id = CNA_contain_the_insurrection
+	prerequisite = {
+		focus = CNA_contain_the_insurrection
+	}
+	mutually_exclusive = {
+		focus = CNA_destroy_the_rebellious
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_benefits_of_empire"
+		add_to_variable = { USA_devastation_var = -5.633 }
+		USA_update_devastation = yes
+		custom_effect_tooltip = USA_decrease_devastation_5
+	}
+}
+
+shared_focus = {
+	id = CNA_publicize_sol_atrocities
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 1
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_the_benefits_of_empire
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_publicize_sol_atrocities"
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.03
+		}
+		USA = {
+			add_war_support = -0.05
+			add_popularity = {
+				ideology = nationalism
+				popularity = -0.03
+			}
+			custom_effect_tooltip = CNA_lower_popular_support
+			hidden_effect = {
+				set_temp_variable = { USA_raise_popular_support_var = -0.1 }
+				USA_raise_popular_support_effect = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_request_a_royal_speech
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 1
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_the_benefits_of_empire
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_request_a_royal_speech"
+		ENG = {
+			country_event = {
+				id = CNA.131
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_concessions_to_the_workers
+	icon = GFX_generic_socdem_constitution
+	cost = 4
+	x = -1
+	y = 2
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_publicize_sol_atrocities
+		focus = CNA_request_a_royal_speech
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_concessions_to_the_workers"
+		add_timed_idea = {
+			idea = CNA_worker_concessions
+			days = 150
+		}
+		random_owned_state = {
+			limit = {
+				industrial_complex > 2
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {	
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_converse_with_the_minorities
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 2
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_publicize_sol_atrocities
+		focus = CNA_request_a_royal_speech
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_converse_with_the_minorities"
+		country_event = {
+			id = CNA.133
+			days = 1
+		}
+		custom_effect_tooltip = CNA_post_war_consequences_tooltip
+		set_country_flag = CNA_worked_with_ACA_nationalists
+	}
+}
+
+shared_focus = {
+	id = CNA_access_to_british_markets
+	icon = GFX_goal_ENG_friends_in_high_places
+	cost = 4
+	x = 3
+	y = 2
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_request_a_royal_speech
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_access_to_british_markets"
+		RB_raise_british_econ_influence = yes
+		random_owned_state = {
+			limit = {
+				industrial_complex > 2
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {	
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				arms_factory > 0
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {	
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_a_commonwealth_for_the_poor
+	icon = GFX_generic_labor
+	cost = 4
+	x = -1
+	y = 3
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_concessions_to_the_workers
+	}
+	prerequisite = {
+		focus = CNA_converse_with_the_minorities
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_commonwealth_for_the_poor"
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.02
+		}
+		custom_effect_tooltip = CNA_commonwealth_for_poor_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_a_true_democracy
+	icon = GFX_generic_liberal_constitution
+	cost = 4
+	x = 1
+	y = 3
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_concessions_to_the_workers
+	}
+	prerequisite = {
+		focus = CNA_converse_with_the_minorities
+	}
+	prerequisite = {
+		focus = CNA_access_to_british_markets
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_true_democracy"
+		add_to_variable = { USA_devastation_var = -5.633 }
+		USA_update_devastation = yes
+		custom_effect_tooltip = USA_decrease_devastation_5
+	}
+}
+
+shared_focus = {
+	id = CNA_a_commonwealth_for_the_rich
+	icon = GFX_Cap_and_Cash
+	cost = 4
+	x = 3
+	y = 3
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_converse_with_the_minorities
+	}
+	prerequisite = {
+		focus = CNA_access_to_british_markets
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_commonwealth_for_the_rich"
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.02
+		}
+		custom_effect_tooltip = CNA_commonwealth_for_rich_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_the_loyalist_media
+	icon = GFX_generic_change_law_speech
+	cost = 4
+	x = 0
+	y = 4
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_a_commonwealth_for_the_poor
+	}
+	prerequisite = {
+		focus = CNA_a_true_democracy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_loyalist_media"
+		custom_effect_tooltip = CNA_loyalist_media_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_celebrate_the_empire
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 2
+	y = 4
+	relative_position_id = CNA_the_benefits_of_empire
+	prerequisite = {
+		focus = CNA_a_true_democracy
+	}
+	prerequisite = {
+		focus = CNA_a_commonwealth_for_the_rich
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_celebrate_the_empire"
+		add_political_power = 100
+		add_opinion_modifier = {
+			target = ENG
+			modifier = CNA_celebrating_empire
+		}
+		ENG = {
+			add_opinion_modifier = {
+				target = CNA
+				modifier = CNA_celebrating_empire
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_reform_the_rnaa
+	icon = GFX_CNA_flag_soldier_RNAA
+	cost = 4
+	x = 5
+	y = 1
+	relative_position_id = CNA_contain_the_insurrection
+	prerequisite = {
+		focus = CNA_contain_the_insurrection
+	}
+	mutually_exclusive = {
+		focus = CNA_expand_the_militias
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_reform_the_rnaa"
+		
+	}
+}
+
+shared_focus = {
+	id = CNA_deemphasize_the_militias
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 1
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_reform_the_rnaa
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_deemphasize_the_militias"
+		
+	}
+}
+
+shared_focus = {
+	id = CNA_new_regular_army_units
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 2
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_deemphasize_the_militias
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_new_regular_army_units"
+		
+	}
+}
+
+shared_focus = {
+	id = CNA_a_unified_commonwealth_identity
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 1
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_reform_the_rnaa
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_unified_commonwealth_identity"
+		add_stability = 0.05
+		add_war_support = 0.05
+		custom_effect_tooltip = CNA_raise_popular_support
+		hidden_effect = {
+			set_temp_variable = { CNA_raise_popular_support_var = 0.1 }
+			CNA_raise_popular_support_effect = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_reform_the_command_structure
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 2
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_a_unified_commonwealth_identity
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_reform_the_command_structure"
+		
+	}
+}
+
+shared_focus = {
+	id = CNA_instate_mass_conscription
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -2
+	y = 3
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_new_regular_army_units
+	}
+	prerequisite = {
+		focus = CNA_reform_the_command_structure
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_instate_mass_conscription"
+		RB_raise_conscription = yes
+		RB_raise_conscription = yes
+		custom_effect_tooltip = CNA_lower_popular_support
+		hidden_effect = {
+			set_temp_variable = { CNA_raise_popular_support_var = -0.1 }
+			CNA_raise_popular_support_effect = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_recruit_ex_militia_members
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -2
+	y = 4
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_instate_mass_conscription
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_recruit_ex_militia_members"
+		add_ideas = CNA_ex_militia_recruitment
+	}
+}
+
+shared_focus = {
+	id = CNA_develop_our_doctrine
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 0
+	y = 3
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_new_regular_army_units
+	}
+	prerequisite = {
+		focus = CNA_reform_the_command_structure
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_develop_our_doctrine"
+		add_tech_bonus = {
+			category = land_doctrine
+			bonus = 0.5
+			uses = 3
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_invite_british_officers
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 0
+	y = 4
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_develop_our_doctrine
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_invite_british_officers"
+		add_command_power = 50
+	}
+}
+
+shared_focus = {
+	id = CNA_centralized_officer_education
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 2
+	y = 3
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_new_regular_army_units
+	}
+	prerequisite = {
+		focus = CNA_reform_the_command_structure
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_centralized_officer_education"
+		add_ideas = CNA_new_officer_academy
+	}
+}
+
+shared_focus = {
+	id = CNA_a_new_crop
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 2
+	y = 4
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_centralized_officer_education
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_new_crop"
+		swap_ideas = {
+			remove_idea = CNA_new_officer_academy
+			add_idea = CNA_new_officer_academy_2
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_a_modern_military_force
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 0
+	y = 5
+	relative_position_id = CNA_reform_the_rnaa
+	prerequisite = {
+		focus = CNA_recruit_ex_militia_members
+	}
+	prerequisite = {
+		focus = CNA_invite_british_officers
+	}
+	prerequisite = {
+		focus = CNA_a_new_crop
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_modern_military_force"
+		swap_ideas = {
+			remove_idea = CNA_ex_militia_recruitment
+			remove_idea = CNA_new_officer_academy_2
+			add_idea = CNA_modern_army
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_expand_the_militias
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 10
+	y = 1
+	relative_position_id = CNA_contain_the_insurrection
+	prerequisite = {
+		focus = CNA_contain_the_insurrection
+	}
+	mutually_exclusive = {
+		focus = CNA_reform_the_rnaa
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_expand_the_militias"
+		
+	}
+}
+
+shared_focus = {
+	id = CNA_encourage_regional_identities
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 1
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_expand_the_militias
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_encourage_regional_identities"
+		add_ideas = CNA_defending_regionalism
+	}
+}
+
+shared_focus = {
+	id = CNA_to_defend_regionalism
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 2
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_encourage_regional_identities
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_to_defend_regionalism"
+		swap_ideas = {
+			remove_idea = CNA_defending_regionalism
+			add_idea = CNA_defending_regionalism_2
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_mass_recruitment_policies
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 1
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_expand_the_militias
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_mass_recruitment_policies"
+		RB_raise_conscription = yes
+	}
+}
+
+shared_focus = {
+	id = CNA_extensive_recruitment_campaigns
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 3
+	y = 2
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_mass_recruitment_policies
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_extensive_recruitment_campaigns"
+		add_manpower = 25000
+	}
+}
+
+shared_focus = {
+	id = CNA_offer_some_incentives
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 3
+	y = 3
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_extensive_recruitment_campaigns
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_offer_some_incentives"
+		add_manpower = 50000
+		custom_effect_tooltip = CNA_raise_popular_support
+		hidden_effect = {
+			set_temp_variable = { CNA_raise_popular_support_var = 0.05 }
+			CNA_raise_popular_support_effect = yes
+		}
+		set_country_flag = CNA_incentives_for_service
+		custom_effect_tooltip = CNA_post_war_consequences_tooltip
+	}
+}
+
+shared_focus = {
+	id = CNA_recruit_local_officers
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 3
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_to_defend_regionalism
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_recruit_local_officers"
+		add_ideas = CNA_local_officers
+	}
+}
+
+shared_focus = {
+	id = CNA_a_different_kind_of_command
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 4
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_recruit_local_officers
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_different_kind_of_command"
+		swap_ideas = {
+			remove_idea = CNA_local_officers
+			add_idea = CNA_local_officers_2
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_use_american_talent
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 3
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_to_defend_regionalism
+	}
+	prerequisite = {
+		focus = CNA_mass_recruitment_policies
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_use_american_talent"
+		swap_ideas = {
+			remove_idea = CNA_defending_regionalism_2
+			add_idea = CNA_american_talent
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_marching_on_our_stomach
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 4
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_use_american_talent
+	}
+	prerequisite = {
+		focus = CNA_offer_some_incentives
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_marching_on_our_stomach"
+		swap_ideas = {
+			remove_idea = CNA_american_talent
+			add_idea = CNA_marching_on_stomach
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_to_protect_your_home_from_anarchy
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 5
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_a_different_kind_of_command
+		focus = CNA_marching_on_our_stomach
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_to_protect_your_home_from_anarchy"
+		custom_effect_tooltip = CNA_raise_popular_support
+		hidden_effect = {
+			set_temp_variable = { CNA_raise_popular_support_var = 0.1 }
+			CNA_raise_popular_support_effect = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_join_the_militia_today
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 3
+	y = 5
+	relative_position_id = CNA_expand_the_militias
+	prerequisite = {
+		focus = CNA_a_different_kind_of_command
+		focus = CNA_marching_on_our_stomach
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_join_the_militia_today"
+		add_manpower = 25000
+	}
+}
+
+shared_focus = {
+	id = CNA_to_rule_the_skies
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 17
+	y = 1
+	relative_position_id = CNA_contain_the_insurrection
+	prerequisite = {
+		focus = CNA_contain_the_insurrection
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_to_rule_the_skies"
+		air_experience = 25
+	}
+}
+
+shared_focus = {
+	id = CNA_an_independent_airforce
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 0
+	y = 1
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_to_rule_the_skies
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_an_independent_airforce"
+		add_ideas = CNA_independent_airforce
+	}
+}
+
+shared_focus = {
+	id = CNA_british_modeled_planes
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 2
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_an_independent_airforce
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_british_modeled_planes"
+		add_tech_bonus = {
+			category = air_equipment
+			bonus = 0.5
+			uses = 3
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_continuous_innovation
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 3
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_an_independent_airforce
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_continuous_innovation"
+		add_tech_bonus = {
+			category = air_equipment
+			bonus = 0.5
+			uses = 3
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_the_airfield_expansion_project
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 2
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_an_independent_airforce
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_airfield_expansion_project"
+		every_owned_state = {
+			limit = {
+				controller = {
+					tag = CNA
+				}
+				air_base > 0
+			}
+			add_building_construction = {
+				type = air_base
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_imperial_fuel_imports
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 3
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_the_airfield_expansion_project
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_imperial_fuel_imports"
+		if = {
+			limit = {
+				NOT = {
+					has_tech = fuel_silos
+				}
+			}
+			set_technology = {
+				fuel_silos = 1
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = fuel_silo
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_fuel = 30000
+	}
+}
+
+shared_focus = {
+	id = CNA_a_royal_airforces_quality
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -2
+	y = 4
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_continuous_innovation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_royal_airforces_quality"
+		if = {
+			limit = {
+				has_completed_focus = CNA_a_royal_airforces_quantity
+			}
+			swap_ideas = {
+				remove_idea = CNA_independent_airforce_2_1
+				add_idea = CNA_independent_airforce_2_2
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = CNA_independent_airforce
+				add_idea = CNA_independent_airforce_1_2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_an_american_bomber_doctrine
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 0
+	y = 4
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_continuous_innovation
+		focus = CNA_imperial_fuel_imports
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_an_american_bomber_doctrine"
+		add_tech_bonus = {
+			category = cat_operational_integrity
+			bonus = 0.5
+			uses = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_a_royal_airforces_quantity
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 2
+	y = 4
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_imperial_fuel_imports
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_a_royal_airforces_quantity"
+		if = {
+			limit = {
+				has_completed_focus = CNA_a_royal_airforces_quality
+			}
+			swap_ideas = {
+				remove_idea = CNA_independent_airforce_1_2
+				add_idea = CNA_independent_airforce_2_2
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = CNA_independent_airforce
+				add_idea = CNA_independent_airforce_2_1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_request_british_aviation_experts
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 5
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_a_royal_airforces_quality
+	}
+	prerequisite = {
+		focus = CNA_an_american_bomber_doctrine
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_request_british_aviation_experts"
+		air_experience = 50
+	}
+}
+
+shared_focus = {
+	id = CNA_expand_our_aviation_industry
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 5
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_an_american_bomber_doctrine
+	}
+	prerequisite = {
+		focus = CNA_a_royal_airforces_quantity
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_expand_our_aviation_industry"
+		swap_ideas = {
+			remove_idea = CNA_independent_airforce_2_2
+			add_idea = CNA_independent_airforce_3
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_desperate_times_desperate_measures
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = -1
+	y = 6
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_request_british_aviation_experts
+	}
+	prerequisite = {
+		focus = CNA_expand_our_aviation_industry
+	}
+	available = {
+		has_equipment = {
+			tac_bomber_equipment > 24
+		}
+	}
+	mutually_exclusive = {
+		focus = CNA_the_better_americans
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_desperate_times_desperate_measures"
+		add_to_variable = { USA_devastation_var = 4.367 }
+		USA_update_devastation = yes
+		custom_effect_tooltip = USA_increase_devastation_5
+		USA = {
+			add_to_variable = { USA_devastation_var = 9.367 }
+			USA_update_devastation = yes
+			custom_effect_tooltip = USA_increase_devastation_10
+			every_owned_state = {
+				limit = {
+					controller = {
+						tag = USA
+					}
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 0.2
+					}
+				}
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.2
+					}
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CNA_the_better_americans
+	icon = GFX_ENG_CNA_Speech
+	cost = 4
+	x = 1
+	y = 6
+	relative_position_id = CNA_to_rule_the_skies
+	prerequisite = {
+		focus = CNA_request_british_aviation_experts
+	}
+	prerequisite = {
+		focus = CNA_expand_our_aviation_industry
+	}
+	mutually_exclusive = {
+		focus = CNA_desperate_times_desperate_measures
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CNA_the_better_americans"
+		add_to_variable = { USA_devastation_var = -5.633 }
+		USA_update_devastation = yes
+		custom_effect_tooltip = USA_decrease_devastation_5
+		custom_effect_tooltip = CNA_raise_popular_support
+		hidden_effect = {
+			set_temp_variable = { CNA_raise_popular_support_var = 0.1 }
+			CNA_raise_popular_support_effect = yes
+		}
+	}
+}
+

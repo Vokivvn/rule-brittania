@@ -1,0 +1,136 @@
+on_actions = {
+	#ALGERIA
+	#ANGOLA (PORTUGESE MITTELAFRIKA)
+	#CHAD
+	#CONGO
+	#DAHOMEY
+	#DJIBOUTI
+	#EGYPT
+	on_startup = {
+		effect = {	
+			set_variable = { global.symes_eden = 60 }
+		}		
+	}
+	#ETHIOPIA
+	on_startup = {
+		effect = {	
+			ETH = {
+				country_event = { id = eth.1 days = 0}
+			}
+		}		
+	}
+	#KENYA
+	on_startup = {
+		effect = {
+			KEN = {
+				country_event = { id = ken.1 days = 1}		# intro
+				country_event = { id = ken.2 days = 14}		# white highlands
+				country_event = { id = ken.3 days = 30}		# eddie dies
+				country_event = { id = ken.4 days = 35}		# ethiopia war
+				country_event = { id = ken.5 days = 75}		# mombasa port
+				country_event = { id = ken.6 days = 100}	# new scheme from Somalia			
+				country_event = { id = ken.8 days = 150}	# new group of settlers
+				country_event = { id = ken.9 days = 175}	# fancy visit from Britain	
+				country_event = { id = ken.15 days = 180}	# ethiopian guerillas detained in the north
+				country_event = { id = ken.10 days = 200}	# the beatiful savannahs
+				country_event = { id = ken.11 days = 206}	# town leader murdered
+				country_event = { id = ken.12 days = 212}	# Supplies gone missing
+				country_event = { id = ken.13 days = 214}	# police kidnapped
+				country_event = { id = ken.16 days = 220}	# uprising begin
+				country_event = { id = ken.17 days = 225}	# uprising begin
+				country_event = { id = ken.14 days = 250}	# detatchment from Tanzania
+			}
+		}	
+	}
+		####################################
+		####	FIRST MAU MAU REVOLT	####
+		####################################
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = kenya_war_1
+					OR = {
+						original_tag = KEN
+						original_tag = MAU
+					}
+				}
+				#MAU GETS STRONGER AND ANGLOS GET REINFORCEMENTS
+				if = {
+					limit = { 
+						has_global_flag = { flag = kenya_war_1 days > 30 }
+						MAU = { surrender_progress < 0.5 }
+					}
+					# load oob 2 units
+				}
+				if = {
+					limit = { 
+						has_global_flag = { flag = kenya_war_1 days > 45 }
+						MAU = { surrender_progress < 0.65 }
+					}
+					#event for DJIBOUTI to join - 65% yes
+					# surge towards the coast - 1 unit in north coast
+				}
+				if = {
+					limit = { 
+						has_global_flag = { flag = kenya_war_1 days > 55 }
+						MAU = { surrender_progress < 0.75 }
+					}
+					#event for Britain to join - 65% yes
+					# spirit
+				}
+				if = {
+					limit = { 
+						has_global_flag = { flag = kenya_war_1 days > 60 }
+						MAU = { surrender_progress < 0.85 }
+					}
+					# load oob 2 units
+				}
+				if = {
+					limit = { 
+						has_global_flag = { flag = kenya_war_1 days > 80 }
+						MAU = { surrender_progress < 0.9 }
+						#has_global_flag = british_intervention_mau
+					}
+					#event for Kenya to surrender and create cursed cursed
+				}
+				#KENYA GETS WEAKER AND WEAKER
+				if = {
+					limit = { 
+						KEN = { surrender_progress < 0.25 }
+					}
+					# ask Djibouti NOW
+				}
+				if = {
+					limit = { 
+						OR = {
+							KEN = { surrender_progress < 0.45 }
+							has_global_flag = { flag = ken_dji_no days > 21 }
+						}
+					}
+					# ask Britain NOW
+				}
+				if = {
+					limit = { KEN = { surrender_progress < 0.6 } }
+					# doubts realizing
+				}
+				if = {
+					limit = { KEN = { surrender_progress < 0.75 }
+				}
+					# ask for negoitatied peace
+				}
+			}	
+		}
+	}
+	#GOLD COAST
+	#LIBYA
+	#MADAGASCAR
+	#MAURITANIA
+	#MOROCCO
+	#NIGERIA
+	#PEPPER COAST
+	#TANZANIA
+	#SOUTH AFRICA
+	#SUDAN
+	#UGANDA		
+}

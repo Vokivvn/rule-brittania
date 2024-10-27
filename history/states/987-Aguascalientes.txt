@@ -1,0 +1,21 @@
+state={
+	id=987
+	name="STATE_987"
+	provinces={
+		5052 13089 13268 
+	}
+	history = {
+		owner = MEX
+		add_core_of = MEX
+		victory_points = {
+			5052 10
+		}
+		victory_points = {
+			13089 5
+		}
+		set_demilitarized_zone = yes
+	}
+	manpower=145900
+	state_category=town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,12 @@
+﻿l_english:
+ ##Country Names##
+ ARM_despotism:0 "Armenia"
+ ARM_despotism_DEF:0 "Armenia"
+ ARM_despotism_ADJ:0 "Armenian"
+ ARM_administrationism:0 "Mandate of Armenia"
+ ARM_administrationism_DEF:0 "The Mandate of Armenia"
+ ARM_administrationism_ADJ:0 "Armenian"
+
+ ##Party Names##
+ ARM_despotism_party:0 "Armenia Party"
+ ARM_despotism_party_long:0 "Armenia Party"

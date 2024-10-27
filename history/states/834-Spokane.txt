@@ -1,0 +1,29 @@
+
+state={
+	id=834
+	name="STATE_834"
+
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 5
+
+		}
+		victory_points = {
+			1690 10 
+		}
+		victory_points = {
+			4747 5 
+		}
+
+	}
+
+	provinces={
+		1690 4747 4778 10327 10687 12124 12673 
+	}
+	manpower=347183
+	buildings_max_level_factor=1.000
+	state_category=town
+}

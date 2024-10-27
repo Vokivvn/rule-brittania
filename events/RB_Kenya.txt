@@ -1,0 +1,617 @@
+﻿add_namespace = ken
+country_event = { #intro
+	id = ken.1
+	title = ken.1.t
+	desc = ken.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.1"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # white highlands
+	id = ken.2
+	title = ken.2.t
+	desc = ken.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.2"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # eddie dies
+	id = ken.3
+	title = ken.3.t
+	desc = ken.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.3"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # ethiopia war
+	id = ken.4
+	title = ken.4.t
+	desc = ken.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.4"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #leave be
+		name = ken.4.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.01
+		add_political_power = 35
+	}
+	option = { #support
+		name = ken.4.b
+		ai_chance = { factor = 3 }
+		add_political_power = -50
+		ETH = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = KEN
+			}
+		}
+	}
+}
+
+country_event = { # mombasa port
+	id = ken.5
+	title = ken.5.t
+	desc = ken.5.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.5"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #nice
+		name = ken.5.a
+		ai_chance = { factor = 1 }
+	}
+	option = { #upgrade a bit
+		name = ken.5.a
+		ai_chance = { factor = 1 }
+		country_event = { id = ken.29 days = 287}
+		add_political_power = -100
+	}
+}
+
+country_event = { # new scheme from Somalia
+	id = ken.6
+	title = ken.6.t
+	desc = ken.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.6"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.6.a
+		ai_chance = { factor = 1 }
+		add_political_power = 10
+		country_event = { id = ken.7 days = 25}
+	}
+}
+
+country_event = { # scheme fails
+	id = ken.7
+	title = ken.7.t
+	desc = ken.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.7"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.7.a
+		add_political_power = -10
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # new group of settlers
+	id = ken.8
+	title = ken.8.t
+	desc = ken.8.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.8"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.8.a
+		ai_chance = { factor = 1 }
+		add_manpower = 47
+	}
+	option = { #give them premium land
+		name = ken.8.a
+		ai_chance = { factor = 1 }
+		add_manpower = 47
+		add_political_power = 25
+		add_to_variable = { KEN_native_unrest = 2 }
+	}
+}
+
+country_event = { # fancy visit from Britain
+	id = ken.9
+	title = ken.9.t
+	desc = ken.9.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.9"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.9.a
+		ai_chance = { factor = 1 }
+		add_political_power = 5
+	}
+}
+
+country_event = { # the beatiful savannahs
+	id = ken.10
+	title = ken.10.t
+	desc = ken.10.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.10"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.10.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # town leader murdered
+	id = ken.11
+	title = ken.11.t
+	desc = ken.11.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.11"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.11.a
+		ai_chance = { factor = 1 }
+		add_manpower = -1
+	}
+	option = { #crack down harder
+		name = ken.11.a
+		ai_chance = { factor = 1 }
+		add_manpower = -1
+		add_political_power = -10
+		random_list = {
+			75 = {add_to_variable = { KEN_native_unrest = 1 }}
+			25 = {subtract_from_variable = { KEN_native_unrest = 1 }}
+		}
+	}
+}
+
+country_event = { # Supplies gone missing
+	id = ken.12
+	title = ken.12.t
+	desc = ken.12.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.12"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.12.a
+		ai_chance = { factor = 1 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -250
+			producer = KEN
+		}
+	}
+	option = { #buy back from Djibouti
+		name = ken.12.a
+		ai_chance = { factor = 1 }
+		add_political_power = -75
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 50
+			producer = DJI
+		}
+	}
+}
+
+country_event = { # police kidnapped
+	id = ken.13
+	title = ken.13.t
+	desc = ken.13.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.13"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.13.a
+		ai_chance = { factor = 1 }
+		add_manpower = -2
+	}
+}
+
+country_event = { # detatchment from Tanzania
+	id = ken.14
+	title = ken.14.t
+	desc = ken.14.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.14"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.14.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { # ethiopian guerillas detained in the north
+	id = ken.15
+	title = ken.15.t
+	desc = ken.15.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.15"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.15.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			891 = {
+				random_list = {
+					30 = {
+						damage_building = { type = infrastructure damage = 0.5 }
+					}
+					50 = {
+						damage_building = { type = infrastructure damage = 1 }
+					}
+					20 = {
+						damage_building = { type = infrastructure damage = 2 }
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #protests
+	id = ken.16
+	title = ken.16.t
+	desc = ken.16.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.16"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #crack down
+		name = ken.16.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { KEN_native_unrest = 1 }
+	}
+	option = { #promise better stuff
+		name = ken.16.a
+		ai_chance = { factor = 1 }
+		add_political_power = -50
+		subtract_from_variable = { KEN_native_unrest = 1 }
+	}
+}
+
+country_event = { #demands
+	id = ken.17
+	title = ken.17.t
+	desc = ken.17.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.17"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #welcome
+		name = ken.17.a
+		ai_chance = { factor = 1 }
+		country_event = { id = ken.18 days = 5}
+		888 = {
+			set_demilitarized_zone = yes
+		}
+		890 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+
+country_event = { #revolt
+	id = ken.18
+	title = ken.18.t
+	desc = ken.18.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.18"}
+	picture = GFX_report_event_african_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ouch
+		name = ken.18.a
+		ai_chance = { factor = 1 }
+		set_global_flag = kenya_war_1
+		add_to_variable = { KEN_native_unrest = 5 }
+		MAU = {
+			transfer_state = 888
+			transfer_state = 890
+			add_state_core = 888
+			add_state_core = 890
+			#load_oob = "MAU_1936"
+
+		}
+		declare_war_on = {
+			target = MAU
+			type = annex_everything
+		}
+		if = {
+			limit = { check_variable = { KEN_native_unrest > 50 } }
+			MAU = {
+				#load_oob = "MAU+"
+			}
+			add_political_power = -50
+		}
+		if = {
+			limit = { check_variable = { KEN_native_unrest > 52 } }
+			MAU = {
+				transfer_state = 891
+				add_state_core = 891
+				#load_oob = "MAU++"
+			}
+			add_political_power = -50
+			add_stability = -0.05
+		}
+		if = {
+			limit = { check_variable = { KEN_native_unrest > 55 } }
+			MAU = {
+				#load_oob = "MAU+++"
+			}
+			add_political_power = -50
+			add_stability = -0.05
+		}
+		if = {
+			limit = {
+				has_country_flag = KEN_angries_on_coast
+			}
+			#load_oob
+		}
+		country_event = { id = ken.19 days = 55}
+		UGA = { country_event = { id = uga.14 days = 1 } }
+	}
+}
+
+country_event = { #debug to trigger war with Djibouti
+	id = ken.19
+	title = ken.19.t
+	desc = ken.19.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.19"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	option = { #welcome
+		name = ken.19.a
+		if = {
+			limit = { has_war_with = MAU }
+			DJI = { country_event = { id = ken.20 days = 0}}
+		}
+	}
+}
+country_event = { #DJIBOUTI - Join war in Kenya
+	id = ken.20
+	title = ken.20.t
+	desc = ken.20.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.20"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #right away
+		name = ken.20.a
+		add_to_war = {
+			targeted_alliance = KEN
+			enemy = MAU
+			hostility_reason = asked_to_join
+		}
+	}
+	option = { #wait a month
+		name = ken.20.b
+		country_event = { id = ken.21 days = 30}
+	}
+}
+country_event = { #DJIBOUTI - Join war in Kenya
+	id = ken.21
+	title = ken.21.t
+	desc = ken.21.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.21"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #go
+		name = ken.21.a
+		add_to_war = {
+			targeted_alliance = KEN
+			enemy = MAU
+			hostility_reason = asked_to_join
+		}
+	}
+	option = { #call it off
+		name = ken.21.b
+		add_political_power = -200
+	}
+}
+
+country_event = { #protests against relocation
+	id = ken.28
+	title = ken.28.t
+	desc = ken.28.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.21"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #more deportation as punishment
+		name = ken.28.a
+		add_to_variable = { KEN_native_unrest = 1}
+		888 = {
+			add_manpower = -2852
+		}
+		890 = {
+			add_manpower = 1392
+		}
+		891 = {
+			add_manpower = 1392
+		}
+		add_political_power = 100
+	}
+	option = { #why must this be so hard?
+		name = ken.28.b
+		add_political_power = -200
+	}
+}
+
+country_event = { #prospecting new land
+	id = ken.22
+	title = ken.22.t
+	desc = ken.22.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.22"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #North
+		name = ken.22.a
+		country_event = { id = ken.23 days = 3 }
+	}
+	option = { #coast
+		name = ken.22.a
+		country_event = { id = ken.26 days = 3 }
+	}
+}
+
+country_event = { #sending them north
+	id = ken.23
+	title = ken.23.t
+	desc = ken.23.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.23"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #send them south to Tanzania
+		name = ken.23.a
+		country_event = { id = ken.24 days = 3 }
+	}
+	option = { #continue north
+		name = ken.23.b
+		add_to_variable = { KEN_native_unrest = 2 }
+	}
+}
+
+country_event = { #tanzania rejects
+	id = ken.24
+	title = ken.24.t
+	desc = ken.24.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.24"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #leave them at the border
+		name = ken.24.a
+		#oofers
+		add_to_variable = { KEN_native_unrest = 1}
+	}
+	option = { #send them up along the coast
+		name = ken.24.b
+		country_event = { id = ken.26 days = 3 }
+		set_country_flag = KEN_angries_on_coast
+	}
+}
+
+country_event = { #tanzania accepts
+	id = ken.25
+	title = ken.25.t
+	desc = ken.25.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.25"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #nice
+		name = ken.25.a
+		add_political_power = 15
+	}
+}
+
+country_event = { #protests on the coast
+	id = ken.26
+	title = ken.26.t
+	desc = ken.26.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.26"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #damn
+		name = ken.26.a
+		#ouch
+	}
+}
+
+country_event = { #land auctions
+	id = ken.27
+	title = ken.27.t
+	desc = ken.27.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.27"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #damn
+		name = ken.27.a
+		#ouch
+	}
+}
+
+country_event = { #port is finished
+	id = ken.29
+	title = ken.29.t
+	desc = ken.29.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ken.29"}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #damn
+		name = ken.29.a
+
+	}
+}

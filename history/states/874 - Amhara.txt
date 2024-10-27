@@ -1,0 +1,22 @@
+state= {
+	id=874
+	name = "STATE_874"
+	manpower = 3462392
+	
+	state_category = rural
+
+	history= {
+		owner = ETH
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = { 
+			4954 1 
+		}
+		add_core_of = ETH
+	}
+
+	provinces = {
+		2040 4954 7041 7930 13137
+	}
+}

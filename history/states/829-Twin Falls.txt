@@ -1,0 +1,28 @@
+
+state={
+	id=829
+	name="STATE_829"
+
+	history={
+		owner = LSL
+		add_core_of = LSL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			10556 10
+		}
+		victory_points = {
+			9695 5
+		}
+	}
+
+	provinces={
+		7721 9616 9695 10556 10625 12607 
+	}
+	manpower=251695
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

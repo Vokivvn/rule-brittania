@@ -1,0 +1,40 @@
+focus_tree = {
+    id = KOR_intro_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = KOR
+        }
+    }
+    default = no
+    shared_focus = KOR_imperial_yi
+    continuous_focus_position = { x = 50 y = 2000}
+}
+
+focus_tree = {
+    id = KOR_sungman_intro
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = KOR
+        }
+    }
+    default = no
+    shared_focus = KOR_premier_sungman
+    continuous_focus_position = { x = 50 y = 2000}
+}
+focus_tree = {
+    id = KOR_conservative_intro
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = KOR
+        }
+    }
+    default = no
+    shared_focus = KOR_a_military_might
+    continuous_focus_position = { x = 50 y = 2000}
+} 

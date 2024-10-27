@@ -1,0 +1,62 @@
+guiTypes = {
+	containerWindowType = {
+		name = "button_open_political_head_of_government"
+		position = { x = 450 y = 250 }
+		buttonType = {
+			name = "open_button"
+			quadTextureSprite = "GFX_political_head_of_government_button"
+			clicksound = click_default
+			pdx_tooltip = "hog_gui_pop_tt"
+			pdx_tooltip_delayed = "hog_gui_pop_long_tt"
+		}
+		
+	}
+	containerWindowType = {
+		name = "political_head_of_government_bg"
+		position = { x = 540 y = 123 }
+		size = { width = 312 height = 420 }
+		moveable = no
+		background = {
+			name = "hog_gui_background"		
+			spriteType ="GFX_political_head_of_government_bg"
+		}
+		instantTextBoxType = {
+			name = "hog_gui_title_text_pop"
+			position = { x = 47 y = 35 }
+			maxWidth = 200
+			maxHeight = 160
+			font = "hoi_30header"
+			text = "[GetPMName]"
+			format = center
+			pdx_tooltip = "hog_gui_title_pop_tt"
+			pdx_tooltip_delayed = "hog_gui_title_pop_long_tt"
+		}
+		instantTextBoxType = {
+			name = "hog_gui_party_text_pop"
+			position = { x = 23 y = 330 }
+			maxWidth = 250
+			maxHeight = 160
+			font = "hoi_24header"
+			text = "[GetHoG_Party_Loc]"
+			format = center
+			pdx_tooltip = "hog_party_title_pop_tt"
+			pdx_tooltip_delayed = "hog_gui_title_pop_long_tt"
+		}
+		iconType = {
+			name = "hog_gui_portrait"
+			position = { x = -88 y = -105 }
+			Orientation = "CENTER"
+			spriteType = "[GetPMImage]"
+			frame = 1
+			pdx_tooltip = "hog_gui_pop_Hogg_tt"
+			pdx_tooltip_delayed = "hog_gui_pop_long_Hogg_tt"
+		}
+		iconType = {
+			name = "hog_gui_portrait_frame"
+			position = { x = -98 y = -115 }
+			Orientation = "CENTER"
+			spriteType = "GFX_political_head_of_government_portrait_frame"
+			frame = 1
+		}
+	}
+}

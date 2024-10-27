@@ -1,0 +1,382 @@
+﻿add_namespace = slv
+
+country_event = { #Slovene National Congress
+	id = slv.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.1"}
+	title = slv.1.t
+	desc = slv.1.desc
+	picture = GFX_report_event_burgundy_ducal_palace
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#epin
+		name = slv.1.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = slv.7 days = 1} #march on Trieste
+			country_event = { id = slv.9 days = 4} #hungarian alliance
+			set_variable = { SLV_land_grab = 0}
+		}
+	}
+}
+
+country_event = { #9 hungarian alliance
+	id = slv.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.9"}
+	title = slv.9.t
+	desc = slv.9.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#yes
+		name = slv.9.a
+		ai_chance = { factor = 50 }
+		HUN = { country_event = { id = slv.13 days = 2}}
+		hidden_effect = {
+			country_event = { id = slv.2 days = 1}
+		}
+	}
+	option = {#all alone
+		name = slv.9.b
+		ai_chance = { factor = 50 }
+		add_political_power = 10
+		hidden_effect = {
+			country_event = { id = slv.2 days = 1}
+		}
+	}
+}
+
+country_event = { #claim Istria
+	id = slv.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.2"}
+	title = slv.2.t
+	desc = slv.2.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Of course
+		name = slv.2.a
+		ai_chance = { factor = 70 }
+		add_state_claim = 943 #Istria
+		CRO = { country_event = { id = slv.5 days = 1}}
+		add_to_variable = { SLV_land_grab = 1}
+		hidden_effect = {
+			country_event = { id = slv.3 days = 1}
+		}
+	}
+	option = {#Isnt that a bit of a stretch
+		name = slv.2.b
+		ai_chance = { factor = 30 }
+		add_popularity = {
+			ideology = administrationism
+			popularity = -0.02
+		}
+		hidden_effect = {
+			country_event = { id = slv.3 days = 1}
+		}
+	}
+}
+country_event = { #claim Klagenfurt
+	id = slv.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.3"}
+	title = slv.3.t
+	desc = slv.3.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Of course
+		name = slv.3.a
+		ai_chance = { factor = 50 }
+		add_state_claim = 949 #Klagenfurt
+		AUS = { country_event = { id = slv.6 days = 1}}
+		add_to_variable = { SLV_land_grab = 1}
+		if = {
+			limit = { check_variable = { SLV_land_grab = 2}}
+			country_event = { id = slv.4 days = 0}
+		}
+		clear_variable = SLV_land_grab
+		hidden_effect = {
+			country_event = { id = slv.14 days = 1}
+		}
+
+	}
+	option = {#Isnt that a bit of a stretch
+		name = slv.3.b
+		ai_chance = { factor = 50 }
+		add_popularity = {
+			ideology = administrationism
+			popularity = -0.01
+		}
+		hidden_effect = {
+			country_event = { id = slv.14 days = 1}
+		}
+	}
+}
+
+country_event = { #4socialists protest this landgrabbing thing
+	id = slv.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.4"}
+	title = slv.4.t
+	desc = slv.4.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#damn nationalists
+		name = slv.4.a
+		ai_chance = { factor = 50 }
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = { #croatia and istria
+	id = slv.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.5"}
+	title = slv.5.t
+	desc = slv.5.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#hardline
+		name = slv.5.a
+		ai_chance = { factor = 50 }
+		add_political_power = -40
+		add_stability = -0.1
+		set_country_flag = croatia_no_slovene_istria
+	}
+	option = {#later damn slovene alligator
+		name = slv.5.b
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = { #austrai reacts to klagenfurt valley
+	id = slv.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.6"}
+	title = slv.6.t
+	desc = slv.6.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#hardline
+		name = slv.6.a
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		add_stability = -0.1
+		set_country_flag = austria_says_no_slovene_klagenfurt
+	}
+	option = {#later damn slovene alligator
+		name = slv.6.b
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = { #order the march on Trieste
+	id = slv.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.7"}
+	title = slv.7.t
+	desc = slv.7.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Of course
+		name = slv.7.a
+		ai_chance = { factor = 80 }
+		transfer_state = 736
+		MMV = { country_event = { id = slv.12 days = 1 }} #mmv reacts to Trieste
+		country_event = { id = slv.8 days = 1}
+		hidden_effect = {
+			country_event = { id = slv.16 days = 1}
+		}
+	}
+	option = {#eehhhh
+		name = slv.7.b
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			country_event = { id = slv.11 days = 0}
+			country_event = { id = slv.16 days = 1}
+		}
+	}
+}
+
+country_event = { #9seizure of the austrian navy
+	id = slv.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.8"}
+	title = slv.8.t
+	desc = slv.8.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Of course
+		name = slv.8.a
+		ai_chance = { factor = 50 }
+		hidden_effect = {
+			country_event = { id = slv.10 days = 1}
+		}
+	}
+}
+
+
+country_event = { #state of the navy
+	id = slv.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.10"}
+	title = slv.10.t
+	desc = slv.10.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#what do we need a navy for?!
+		name = slv.10.a
+		ai_chance = { factor = 30 }
+	}
+	option = {#slovene imper, move to Reka
+		name = slv.10.a
+		ai_chance = { factor = 10 }
+	}
+	option = {#neat
+		name = slv.10.a
+		ai_chance = { factor = 60 }
+	}
+}
+
+country_event = { #militarists protest
+	id = slv.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.11"}
+	title = slv.11.t
+	desc = slv.11.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#go go go
+		name = slv.11.a
+		ai_chance = { factor = 50 }
+		transfer_state = 736
+		add_political_power = -20
+	}
+	option = {#nah nah
+		name = slv.11.b
+		ai_chance = { factor = 50 }
+		set_country_flag = SLV_safe_italians
+	}
+}
+
+country_event = { #mmv reacts to Trieste
+	id = slv.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.12"}
+	title = slv.12.t
+	desc = slv.12.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Of course
+		name = slv.12.a
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = { #Slovenia asks for alliance - Hungary's event
+	id = slv.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.10"}
+	title = slv.13.t
+	desc = slv.13.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Of course
+		name = slv.13.a
+		ai_chance = { factor = 50 }
+		SLV = { country_event = { id = slv.14 days = 1} }
+	}
+	option = {#who are you
+		name = slv.13.b
+		ai_chance = { factor = 50 }
+		SLV = { country_event = { id = slv.14 days = 1} }
+	}
+}
+
+country_event = { #hungary says yes to alliance
+	id = slv.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.14"}
+	title = slv.14.t
+	desc = slv.14.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Of course
+		name = slv.14.a
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = { #hungary says no to alliance
+	id = slv.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.15"}
+	title = slv.15.t
+	desc = slv.15.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#damn
+		name = slv.15.a
+		ai_chance = { factor = 50 }
+	}
+	option = {#ally up with Austria
+		name = slv.15.b
+		ai_chance = { factor = 50 }
+		trigger = { has_country_flag = SLV_german_rights_yes}
+	}
+}
+
+country_event = { #german righs
+	id = slv.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event slv.14"}
+	title = slv.16.t
+	desc = slv.16.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Of course
+		name = slv.16.a
+		ai_chance = { factor = 50 }
+		set_country_flag = SLV_german_rights_yes
+	}
+	option = {#Of course
+		name = slv.16.b
+		ai_chance = { factor = 50 }
+		set_country_flag = SLV_german_rights_no
+		add_political_power = -40
+	}
+}

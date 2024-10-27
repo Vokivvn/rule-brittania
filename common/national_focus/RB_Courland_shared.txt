@@ -1,0 +1,1854 @@
+###################
+## Military Tree ##
+###################
+
+shared_focus = {
+	id = COU_modernise_militia
+	icon = GFX_focus_generic_military_mission
+	cost = 7
+
+	x = 13
+	y = 0
+	offset = {
+		x = 5
+		y = 0
+		trigger = {
+			has_country_flag = COU_new_tree
+		}
+	}
+	offset = {
+		x = 9
+		y = 0
+		trigger = {
+			has_country_flag = COU_galland
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_modernise_militia"
+		add_tech_bonus = {
+			name = infantry_tech
+			bonus = 1.0
+			uses = 1
+			category = infantry_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_reverse_engineer
+	icon = GFX_focus_secret_rearmament
+	prerequisite = { focus = COU_modernise_militia }
+	cost = 7
+
+	x = -3
+	y = 1
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_reverse_engineer"
+		add_tech_bonus = {
+			name = infantry_tech
+			bonus = 1.0
+			uses = 1
+			category = infantry_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_artillery_development
+	icon = GFX_goal_generic_army_artillery2
+	prerequisite = { focus = COU_reverse_engineer }
+	cost = 7
+
+	x = -4
+	y = 2
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_artillery_development"
+		add_tech_bonus = {
+			name = artillery
+			bonus = 1.0
+			uses = 2
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_support_batallions
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = COU_reverse_engineer }
+	cost = 7
+
+	x = -2
+	y = 2
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_support_batallions"
+		add_tech_bonus = {
+			name = support_tech
+			bonus = 1.0
+			uses = 2
+			category = support_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_militarise_gendermarie
+	icon = GFX_goal_generic_political_pressure
+	prerequisite = { focus = COU_modernise_militia }
+	cost = 7
+
+	x = 0
+	y = 1
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_militarise_gendermarie"
+		#National Spirit
+		add_war_support = 0.10
+	}
+}
+
+shared_focus = {
+	id = COU_guerilla_training
+	icon = GFX_goal_generic_secret_weapon
+	prerequisite = { focus = COU_militarise_gendermarie }
+	cost = 7
+
+	x = 0
+	y = 2
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_guerilla_training"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_bullets_wheels
+	icon = GFX_goal_generic_cavalry
+	prerequisite = { focus = COU_guerilla_training }
+	mutually_exclusive = { focus = COU_dropping_lead }
+	cost = 7
+
+	x = -1
+	y = 3
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_bullets_wheels"
+		#Subject to Change
+	}
+}
+
+shared_focus = {
+	id = COU_dropping_lead
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = { focus = COU_guerilla_training }
+	mutually_exclusive = { focus = COU_bullets_wheels }
+	cost = 7
+
+	x = 1
+	y = 3
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_dropping_lead"
+		#Subject to Change
+	}
+}
+
+shared_focus = {
+	id = COU_arm_garrisons
+	icon = GFX_focus_chi_army_reform
+	prerequisite = { focus = COU_modernise_militia }
+	cost = 7
+
+	x = 3
+	y = 1
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_arm_garrisons"
+		#Factories
+		#Add Rifles
+	}
+}
+
+shared_focus = {
+	id = COU_rifle_contracts
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_arm_garrisons }
+	cost = 7
+
+	x = 2
+	y = 2
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_rifle_contracts"
+		#Missing
+	}
+}
+
+shared_focus = {
+	id = COU_nationalise_arms
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_arm_garrisons }
+	cost = 7
+
+	x = 4
+	y = 2
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_nationalise_arms"
+		#Factories, off map
+	}
+}
+
+shared_focus = {
+	id = COU_ventspil_factory
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = COU_rifle_contracts }
+	prerequisite = { focus = COU_nationalise_arms }
+	cost = 7
+
+	x = 3
+	y = 3
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_ventspil_factory"
+		#Factories
+	}
+}
+
+###################
+## Economic Tree ##
+###################
+
+shared_focus = {
+	id = COU_economic_reconstruction
+	icon = GFX_goal_generic_production
+	cost = 7
+
+	x = 3
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_economic_reconstruction"
+		add_political_power = 100
+		add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id = COU_move_agrarianism
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_economic_reconstruction }
+	mutually_exclusive = { focus = COU_initiate_industrialisation }
+	cost = 7
+
+	x = -2
+	y = 1
+	relative_position_id = COU_economic_reconstruction
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_move_agrarianism"
+		#Factories
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_private_farmsteads
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_move_agrarianism }
+	cost = 7
+
+	x = -1
+	y = 1
+	relative_position_id = COU_move_agrarianism
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_private_farmsteads"
+		#Factories
+	}
+}
+
+shared_focus = {
+	id = COU_property_legislation
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_move_agrarianism }
+	cost = 7
+
+	x = 1
+	y = 1
+	relative_position_id = COU_move_agrarianism
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_property_legislation"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_import_equipment
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_private_farmsteads }
+	prerequisite = { focus = COU_property_legislation }
+	cost = 7
+
+	x = 0
+	y = 2
+	relative_position_id = COU_move_agrarianism
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_import_equipment"
+		add_tech_bonus = {
+			name = industry
+			bonus = 1.0
+			uses = 3
+			category = industry
+		}
+		add_tech_bonus = {
+			name = excavation_tech
+			bonus = 1.0
+			uses = 3
+			category = excavation_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_stimulate_market
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_import_equipment }
+	cost = 7
+
+	x = 0
+	y = 3
+	relative_position_id = COU_move_agrarianism
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_stimulate_market"
+		custom_effect_tooltip = COU_econ_tt
+		#National Spirit
+		#Infrastructure
+	}
+}
+
+shared_focus = {
+	id = COU_roadways_east
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_stimulate_market }
+	cost = 7
+
+	x = -1
+	y = 4
+	relative_position_id = COU_move_agrarianism
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_roadways_east"
+		#Infrastructure
+	}
+}
+
+shared_focus = {
+	id = COU_semigala_mines
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_stimulate_market }
+	cost = 7
+
+	x = 1
+	y = 4
+	relative_position_id = COU_move_agrarianism
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_semigala_mines"
+		#Resources
+	}
+}
+
+shared_focus = {
+	id = COU_breadbasket_state
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_roadways_east }
+	prerequisite = { focus = COU_semigala_mines }
+	cost = 7
+
+	x = 0
+	y = 5
+	relative_position_id = COU_move_agrarianism
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_breadbasket_state"
+		custom_effect_tooltip = COU_econ_tt
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_purchase_ships
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = {
+		focus = COU_property_legislation
+		focus = COU_construct_mills
+	}
+	cost = 7
+
+	x = 0
+	y = 3
+	relative_position_id = COU_economic_reconstruction
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_purchase_ships"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_mitau_institute
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_purchase_ships }
+	cost = 7
+
+	x = 0
+	y = 4
+	relative_position_id = COU_economic_reconstruction
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_mitau_institute"
+		add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id = COU_initiate_industrialisation
+	icon = GFX_goal_generic_production2
+	prerequisite = { focus = COU_economic_reconstruction }
+	mutually_exclusive = { focus = COU_move_agrarianism }
+	cost = 7
+
+	x = 2
+	y = 1
+	relative_position_id = COU_economic_reconstruction
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_initiate_industrialisation"
+		add_stability = -0.10
+		swap_ideas = {
+			remove_idea = COU_british_controlled_economy
+			add_idea = COU_struggling_economy
+		}
+		#Factories
+	}
+}
+
+shared_focus = {
+	id = COU_construct_mills
+	icon = GFX_focus_generic_steel
+	prerequisite = { focus = COU_initiate_industrialisation }
+	cost = 7
+
+	x = -1
+	y = 1
+	relative_position_id = COU_initiate_industrialisation
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_construct_mills"
+		#Resources
+		#Factories
+	}
+}
+
+shared_focus = {
+	id = COU_swedish_refineries
+	icon = GFX_goal_generic_oil_refinery
+	prerequisite = { focus = COU_initiate_industrialisation }
+	cost = 7
+
+	x = 1
+	y = 1
+	relative_position_id = COU_initiate_industrialisation
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_swedish_refineries"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_invest_arms
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = COU_construct_mills }
+	prerequisite = { focus = COU_swedish_refineries }
+	cost = 7
+
+	x = 0
+	y = 2
+	relative_position_id = COU_initiate_industrialisation
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_invest_arms"
+		#Factories
+	}
+}
+
+shared_focus = {
+	id = COU_sweatshop_legislation
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_swedish_refineries }
+	cost = 7
+
+	x = 2
+	y = 2
+	relative_position_id = COU_initiate_industrialisation
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_sweatshop_legislation"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_car_manufacturing
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_invest_arms }
+	prerequisite = { focus = COU_sweatshop_legislation }
+	cost = 7
+
+	x = 1
+	y = 3
+	relative_position_id = COU_initiate_industrialisation
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_car_manufacturing"
+		add_tech_bonus = {
+			name = motorised_equipment
+			bonus = 1.0
+			uses = 2
+			category = cat_mechanized_equipment
+		}
+		#Factories
+	}
+}
+
+shared_focus = {
+	id = COU_railways_suburbs
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = { focus = COU_car_manufacturing }
+	cost = 7
+
+	x = 0
+	y = 4
+	relative_position_id = COU_initiate_industrialisation
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_railways_suburbs"
+		#Infrastructure
+	}
+}
+
+shared_focus = {
+	id = COU_quality_quantity
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = COU_car_manufacturing }
+	cost = 7
+
+	x = 1
+	y = 5
+	relative_position_id = COU_initiate_industrialisation
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_quality_quantity"
+		#Factories
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_new_age
+	icon = GFX_VIN_New_Colossus
+	prerequisite = { focus = COU_car_manufacturing }
+	cost = 7
+
+	x = 2
+	y = 4
+	relative_position_id = COU_initiate_industrialisation
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_railways_suburbs"
+		add_tech_bonus = {
+			name = electronics
+			bonus = 1.0
+			uses = 2
+			category = electronics
+		}
+		#National Spirit
+	}
+}
+
+###################
+## Airforce Tree ##
+###################
+
+shared_focus = {
+	id = COU_beyond_cropdusters
+	icon = GFX_focus_usa_escort_fighters
+	cost = 7
+
+	x = 19
+	y = 0
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_beyond_cropdusters"
+		add_tech_bonus = {
+			name = air_doctrine
+			bonus = 1.0
+			uses = 2
+			category = air_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_militarise_mitau
+	icon = GFX_goal_generic_construct_military
+	prerequisite = { focus = COU_beyond_cropdusters }
+	cost = 7
+
+	x = -2
+	y = 1
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_militarise_mitau"
+		#Airports
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_daugava_academy
+	icon = GFX_goal_generic_air_doctrine
+	prerequisite = { focus = COU_militarise_mitau }
+	cost = 7
+
+	x = -3
+	y = 2
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_daugava_academy"
+		air_experience = 25
+	}
+}
+
+shared_focus = {
+	id = COU_rural_runways
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = { focus = COU_militarise_mitau }
+	cost = 7
+
+	x = -1
+	y = 2
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_rural_runways"
+		#Airports
+	}
+}
+
+shared_focus = {
+	id = COU_puchase_jaktfalken
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_beyond_cropdusters }
+	cost = 7
+
+	x = 3
+	y = 1
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_puchase_jaktfalken"
+		add_political_power = -50
+		#Add Planes
+		add_tech_bonus = {
+			name = light_air
+			bonus = 1.0
+			uses = 1
+			category = light_air
+			category = medium_air
+			category = heavy_air
+			category = naval_air
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_continue_fighters
+	icon = GFX_goal_generic_air_fighter
+	prerequisite = { focus = COU_puchase_jaktfalken }
+	mutually_exclusive = { focus = COU_invest_bombers }
+	cost = 7
+
+	x = 1
+	y = 2
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_continue_fighters"
+		add_tech_bonus = {
+			name = light_fighter
+			bonus = 1.0
+			uses = 1
+			category = light_fighter
+			category = cat_heavy_fighter
+		}
+		add_tech_bonus = {
+			name = air_doctrine
+			bonus = 1.0
+			uses = 1
+			category = air_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_steer_rudders
+	icon = GFX_goal_generic_air_production
+	prerequisite = { focus = COU_continue_fighters }
+	cost = 7
+
+	x = 1
+	y = 3
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_steer_rudders"
+		#Airports
+		add_tech_bonus = {
+			name = light_fighter
+			bonus = 1.0
+			uses = 1
+			category = light_fighter
+			category = cat_heavy_fighter
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_antiair_initiative
+	icon = GFX_focus_generic_air_defense
+	prerequisite = {
+		focus = COU_continue_fighters
+		focus = COU_invest_bombers
+	}
+	cost = 7
+
+	x = 3
+	y = 3
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_antiair_initiative"
+		#Anti-Air
+		add_tech_bonus = {
+			name = artillery
+			bonus = 1.5
+			uses = 1
+			category = artillery
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_invest_bombers
+	icon = GFX_goal_generic_air_bomber
+	prerequisite = { focus = COU_puchase_jaktfalken }
+	mutually_exclusive = { focus = COU_continue_fighters }
+	cost = 7
+
+	x = 5
+	y = 2
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_invest_bombers"
+		add_tech_bonus = {
+			name = tactical_bomber
+			bonus = 1.0
+			uses = 1
+			category = tactical_bomber
+			category = cat_strategic_bomber
+			category = naval_bomber
+			category = cas_bomber
+		}
+		add_tech_bonus = {
+			name = air_doctrine
+			bonus = 1.0
+			uses = 1
+			category = air_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_seaward_response
+	icon = GFX_goal_generic_navy_carrier
+	prerequisite = { focus = COU_invest_bombers }
+	cost = 7
+
+	x = 5
+	y = 3
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_seaward_response"
+		#Airports
+		add_tech_bonus = {
+			name = tactical_bomber
+			bonus = 1.0
+			uses = 1
+			category = naval_bomber
+			category = cas_bomber
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_heavy_development
+	icon = GFX_goal_generic_air_fighter2
+	prerequisite = { focus = COU_antiair_initiative }
+	prerequisite = {
+		focus = COU_steer_rudders
+		focus = COU_seaward_response
+	}
+	cost = 7
+
+	x = 3
+	y = 4
+	relative_position_id = COU_beyond_cropdusters
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_heavy_development"
+		add_tech_bonus = {
+			name = heavy_air
+			bonus = 1.0
+			uses = 1
+			category = cat_heavy_fighter
+			category = cat_strategic_bomber
+		}
+	}
+}
+
+###############
+## Navy Tree ##
+###############
+
+shared_focus = {
+	id = COU_expand_coastguard
+	icon = GFX_focus_generic_diplomatic_treaty
+	cost = 7
+
+	x = 9
+	y = 0
+	relative_position_id = COU_modernise_militia
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_expand_coastguard"
+		#Units
+		add_tech_bonus = {
+			name = dd_tech
+			bonus = 1.0
+			uses = 1
+			category = dd_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_baltic_marines
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_expand_coastguard }
+	cost = 7
+
+	x = 4
+	y = 1
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_baltic_marines"
+		navy_experience = 35
+		add_tech_bonus = {
+			name = marine_tech
+			bonus = 0.5
+			uses = 2
+			category = marine_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_minelayer_development
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_baltic_marines }
+	cost = 7
+
+	x = 5
+	y = 2
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_minelayer_development"
+		add_tech_bonus = {
+			name = naval_minelaying
+			bonus = 0.5
+			uses = 2
+			category = naval_minelaying
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_radar_technology
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_baltic_marines }
+	cost = 7
+
+	x = 3
+	y = 2
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_radar_technology"
+		#Radars
+		add_tech_bonus = {
+			name = radar_tech
+			bonus = 1.5
+			uses = 1
+			category = radar_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_formal_navy
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_expand_coastguard }
+	mutually_exclusive = { focus = COU_indirect_harrassment }
+	cost = 7
+
+	x = 1
+	y = 1
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_formal_navy"
+		add_tech_bonus = {
+			name = naval_equipment
+			bonus = 1.0
+			uses = 2
+			category = dd_tech
+			category = cl_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_light_ships
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_formal_navy }
+	cost = 7
+
+	x = 1
+	y = 2
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_light_ships"
+		add_tech_bonus = {
+			name = dd_tech
+			bonus = 1.0
+			uses = 2
+			category = dd_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_doctrine_revision
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_light_ships }
+	cost = 7
+
+	x = 1
+	y = 3
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_doctrine_revision"
+		add_tech_bonus = {
+			name = naval_doctrine
+			bonus = 1.0
+			uses = 2
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			name = dd_tech
+			bonus = 1.0
+			uses = 2
+			category = dd_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_daugava_bases
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = {
+		focus = COU_formal_navy
+		focus = COU_indirect_harrassment
+	}
+	cost = 7
+
+	x = -1
+	y = 2
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_daugava_bases"
+		#Ports
+		#Dockyard
+	}
+}
+
+shared_focus = {
+	id = COU_expand_shipping
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_daugava_bases }
+	cost = 7
+
+	x = -1
+	y = 3
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_expand_shipping"
+		#Dockyards
+	}
+}
+
+shared_focus = {
+	id = COU_indirect_harrassment
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_expand_coastguard }
+	mutually_exclusive = { focus = COU_formal_navy }
+	cost = 7
+
+	x = -3
+	y = 1
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_indirect_harrassment"
+		add_tech_bonus = {
+			name = ss_tech
+			bonus = 1.0
+			uses = 2
+			category = ss_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = COU_streamline_production
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_indirect_harrassment }
+	cost = 7
+
+	x = -3
+	y = 2
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_streamline_production"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_deep_wolves
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_streamline_production }
+	cost = 7
+
+	x = -3
+	y = 3
+	relative_position_id = COU_expand_coastguard
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_deep_wolves"
+		add_tech_bonus = {
+			name = naval_doctrine
+			bonus = 1.0
+			uses = 2
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			name = ss_tech
+			bonus = 1.0
+			uses = 1
+			category = ss_tech
+		}
+		add_political_power = 50
+	}
+}
+
+#####################
+## Succession Tree ##
+#####################
+
+shared_focus = {
+	id = COU_wilhelm_dead
+	icon = GFX_focus_generic_diplomatic_treaty
+	cost = 7
+
+	x = 10
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_wilhelm_dead"
+		add_stability = -0.10
+	}
+}
+
+shared_focus = {
+	id = COU_summon_council
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_wilhelm_dead }
+	cost = 7
+
+	x = 0
+	y = 1
+	relative_position_id = COU_wilhelm_dead
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_summon_council"
+		country_event = { id = coursucc.2 }
+	}
+}
+
+shared_focus = {
+	id = COU_birons_return
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_summon_council }
+	mutually_exclusive = {
+		focus = COU_indecisive_council
+		focus = COU_wittelsbach_return
+	}
+	cost = 7
+
+	x = -2
+	y = 2
+	relative_position_id = COU_wilhelm_dead
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_birons_return"
+		add_political_power = 100
+		add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id = COU_indecisive_council
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_summon_council }
+	mutually_exclusive = {
+		focus = COU_birons_return
+		focus = COU_wittelsbach_return
+	}
+	cost = 7
+
+	x = 0
+	y = 2
+	relative_position_id = COU_wilhelm_dead
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_indecisive_council"
+		add_political_power = -100
+		add_stability = -0.20
+	}
+}
+
+shared_focus = {
+	id = COU_wittelsbach_return
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_summon_council }
+	mutually_exclusive = {
+		focus = COU_birons_return
+		focus = COU_indecisive_council
+	}
+	cost = 7
+
+	x = 2
+	y = 2
+	relative_position_id = COU_wilhelm_dead
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_wittelsbach_return"
+		add_political_power = 50
+		add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id = COU_fog_looms
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = {
+		focus = COU_birons_return
+		focus = COU_indecisive_council
+		focus = COU_wittelsbach_return
+	}
+	cost = 7
+
+	x = 0
+	y = 3
+	relative_position_id = COU_wilhelm_dead
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_fog_looms"
+	}
+}
+
+####################
+## Von Biron Tree ##
+####################
+
+shared_focus = {
+	id = COU_birons_back
+	icon = GFX_focus_generic_diplomatic_treaty
+	cost = 7
+
+	x = 11
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_birons_back"
+		add_political_power = 100
+		add_stability = 0.15
+	}
+}
+
+shared_focus = {
+	id = COU_reassure_london
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_birons_back }
+	cost = 7
+
+	x = -1
+	y = 1
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_reassure_london"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_lockdown_parliament
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_birons_back }
+	cost = 7
+
+	x = 1
+	y = 1
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_lockdown_parliament"
+		add_political_power = 200
+	}
+}
+
+shared_focus = {
+	id = COU_absolute_rule
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = {
+		focus = COU_reassure_london
+		focus = COU_lockdown_parliament
+	}
+	cost = 7
+
+	x = 0
+	y = 2
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_absolute_rule"
+		add_stability = 0.10
+		#Government Change
+		#Party Popularity
+	}
+}
+
+shared_focus = {
+	id = COU_against_freikorps
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_absolute_rule }
+	cost = 7
+
+	x = -1
+	y = 3
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_against_freikorps"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_property_rights
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_absolute_rule }
+	cost = 7
+
+	x = 1
+	y = 3
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_property_rights"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_penal_labour
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_against_freikorps }
+	cost = 7
+
+	x = -2
+	y = 4
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_penal_labour"
+		#Factories
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_purge_radicals
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_against_freikorps }
+	prerequisite = { focus = COU_property_rights }
+	cost = 7
+
+	x = 0
+	y = 4
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_purge_radicals"
+		add_stability = 0.10
+		#Party Popularity
+	}
+}
+
+shared_focus = {
+	id = COU_centralise_nobility
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_property_rights }
+	cost = 7
+
+	x = 2
+	y = 4
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_centralise_nobility"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_baltic_strongman
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_penal_labour }
+	prerequisite = { focus = COU_purge_radicals }
+	prerequisite = { focus = COU_centralise_nobility }
+	cost = 7
+
+	x = 0
+	y = 5
+	relative_position_id = COU_birons_back
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_baltic_strongman"
+		#National Spirit
+	}
+}
+
+##########################
+## Von Wittelsbach Tree ##
+##########################
+
+shared_focus = {
+	id = COU_albert_ascends
+	icon = GFX_focus_generic_diplomatic_treaty
+	cost = 7
+
+	x = 11
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_albert_ascends"
+		add_political_power = 100
+		add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id = COU_banking_reforms
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_albert_ascends }
+	cost = 7
+
+	x = -2
+	y = 1
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_banking_reforms"
+		#National Spirit
+		#Factories
+	}
+}
+
+shared_focus = {
+	id = COU_reorganise_government
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_albert_ascends }
+	cost = 7
+
+	x = 0
+	y = 1
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_reorganise_government"
+		add_stability = 0.15
+	}
+}
+
+shared_focus = {
+	id = COU_bavarian_ties
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_albert_ascends }
+	cost = 7
+
+	x = 2
+	y = 1
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_bavarian_ties"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_question_independence
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_banking_reforms }
+	prerequisite = { focus = COU_reorganise_government }
+	cost = 7
+
+	x = 0
+	y = 2
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_question_independence"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_swedish_aid
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_question_independence }
+	cost = 7
+
+	x = -2
+	y = 3
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_swedish_aid"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_punch_freikorps
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_question_independence }
+	cost = 7
+
+	x = 0
+	y = 3
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_punch_freikorps"
+		#Conscription
+		#Economy
+	}
+}
+
+shared_focus = {
+	id = COU_serfdom_agreement
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_question_independence }
+	cost = 7
+
+	x = 2
+	y = 3
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_serfdom_agreement"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_riga_intervention
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_punch_freikorps }
+	prerequisite = { focus = COU_serfdom_agreement }
+	cost = 7
+
+	x = 0
+	y = 4
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_riga_intervention"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_maritime_settlements
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_riga_intervention }
+	cost = 7
+
+	x = 0
+	y = 5
+	relative_position_id = COU_albert_ascends
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_maritime_settlements"
+	}
+}
+
+##################
+## Galland Tree ##
+##################
+
+shared_focus = {
+	id = COU_gallands_coup
+	icon = GFX_focus_generic_diplomatic_treaty
+	cost = 7
+
+	x = 12
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_gallands_coup"
+		add_political_power = 100
+		add_stability = 0.20
+		#Government Change
+	}
+}
+
+shared_focus = {
+	id = COU_clamp_protestors
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_gallands_coup }
+	cost = 7
+
+	x = 0
+	y = 1
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_clamp_protestors"
+		add_stability = 0.10
+		#Party Popularity
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_martial_law
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_clamp_protestors }
+	cost = 7
+
+	x = -2
+	y = 2
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_martial_law"
+		#Conscript
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_assist_riga
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_martial_law }
+	cost = 7
+
+	x = -3
+	y = 3
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_assist_riga"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_semigallian_intervention
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_martial_law }
+	cost = 7
+
+	x = -1
+	y = 3
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_semigallian_intervention"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_german_contact
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_assist_riga }
+	prerequisite = { focus = COU_semigallian_intervention }
+	cost = 7
+
+	x = -2
+	y = 4
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_german_contact"
+		#Event
+	}
+}
+
+shared_focus = {
+	id = COU_baltic_unification
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_german_contact }
+	cost = 7
+
+	x = -2
+	y = 5
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_baltic_unification"
+		#Decisions
+	}
+}
+
+shared_focus = {
+	id = COU_suspend_constitution
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_clamp_protestors }
+	cost = 7
+
+	x = 2
+	y = 2
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_suspend_constitution"
+		add_political_power = 200
+	}
+}
+
+shared_focus = {
+	id = COU_shatter_shackles
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_suspend_constitution }
+	mutually_exclusive = { focus = COU_subjugate_latvians }
+	cost = 7
+
+	x = 1
+	y = 3
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_shatter_shackles"
+		#National Spirit
+		#Manpower
+	}
+}
+
+shared_focus = {
+	id = COU_subjugate_latvians
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_suspend_constitution }
+	mutually_exclusive = { focus = COU_shatter_shackles }
+	cost = 7
+
+	x = 3
+	y = 3
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_subjugate_latvians"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_state_egalitarianism
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_shatter_shackles }
+	cost = 7
+
+	x = 0
+	y = 4
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_state_egalitarianism"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_public_works
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = {
+		focus = COU_shatter_shackles
+		focus = COU_subjugate_latvians
+	}
+	cost = 7
+
+	x = 2
+	y = 4
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_public_works"
+		#Factories
+	}
+}
+
+shared_focus = {
+	id = COU_german_supremacy
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COU_subjugate_latvians }
+	cost = 7
+
+	x = 4
+	y = 4
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_german_supremacy"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_freikorp_police
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = {
+		focus = COU_state_egalitarianism
+		focus = COU_german_supremacy
+	}
+	cost = 7
+
+	x = 1
+	y = 5
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_freikorp_police"
+		add_stability = 0.10
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_labour_camps
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = {
+		focus = COU_state_egalitarianism
+		focus = COU_german_supremacy
+	}
+	cost = 7
+
+	x = 3
+	y = 5
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_labour_camps"
+		#National Spirit
+	}
+}
+
+shared_focus = {
+	id = COU_purge_nobility
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = {
+		focus = COU_state_egalitarianism
+		focus = COU_german_supremacy
+	}
+	cost = 7
+
+	x = 2
+	y = 6
+	relative_position_id = COU_gallands_coup
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COU_purge_nobility"
+		add_stability = -0.20
+		add_political_power = -100
+		#Country Flags
+	}
+}

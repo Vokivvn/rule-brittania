@@ -1,0 +1,18 @@
+state={
+	id=981
+	name="STATE_981"
+
+	history={
+		owner = LOU
+
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = LOU
+	}
+	provinces={
+		2082 5001 5085 6968 9829 3875
+	}
+	manpower=368320
+	state_category=town
+}

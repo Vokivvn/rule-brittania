@@ -1,0 +1,35 @@
+state={
+	id=842
+	name="STATE_842"
+	provinces={
+		490 1712 3208 3691 7364 7813 10176 12147 13166 13181 13184 13186 13196 
+	}
+	history={
+		owner = HBC
+		add_core_of = HBC
+		buildings = {
+			infrastructure = 1
+			7813 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			490 1
+		}
+		victory_points = {
+			13196 1
+		}
+		victory_points = {
+			7813 1
+		}
+		victory_points = {
+			12147 1
+		}
+		victory_points = {
+			7364 1
+		}
+	}
+	manpower=14371
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

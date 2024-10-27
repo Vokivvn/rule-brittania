@@ -1,0 +1,1916 @@
+focus_tree = {
+	id = lithuania_pride_worldwide
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = LIT
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = LIT_Glory_Days
+		icon = GFX_Extravagance
+		x = 15
+		y = 0
+		cost = 8
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Glory_Days"
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = LIT_Calm_The_People
+		icon = GFX_SP_focus_trade_unions
+		relative_position_id = LIT_Glory_Days
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Glory_Days
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Calm_The_People"
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = LIT_This_Turmoil
+		icon = GFX_focus_rom_abdicate
+		relative_position_id = LIT_Calm_The_People
+		x = -11
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_Calm_The_People
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_This_Turmoil"
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = LIT_Is_Why_I_Lead
+		icon = GFX_focus_rom_royal_dictatorship
+		relative_position_id = LIT_This_Turmoil
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_This_Turmoil
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Is_Why_I_Lead"
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = LIT_Expansion_Of_The_Police_Force
+		icon = GFX_Spy_Programme
+		relative_position_id = LIT_Is_Why_I_Lead
+		x = -4
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Is_Why_I_Lead
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Expansion_Of_The_Police_Force"
+			add_manpower = 1000
+		}
+	}
+	focus = {
+		id = LIT_Learning_Reforms
+		icon = GFX_RAJ_India_Clarify_Army_Role
+		relative_position_id = LIT_Is_Why_I_Lead
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Is_Why_I_Lead
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Learning_Reforms"
+			add_ideas = LIT_Smetona_Nationalist_Education
+		}
+	}
+	focus = {
+		id = LIT_Familial_Ties
+		icon = GFX_goal_collaborate_local_elites
+		relative_position_id = LIT_Is_Why_I_Lead
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Is_Why_I_Lead
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Familial_Ties"
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = LIT_End_The_Debates
+		icon = GFX_King_Focus
+		relative_position_id = LIT_Is_Why_I_Lead
+		x = 4
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Is_Why_I_Lead
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_End_The_Debates"
+			remove_ideas = LIT_Republic_Monarchy_Debates
+		}
+	}
+	focus = {
+		id = LIT_Young_Lithuanians
+		icon = GFX_Junta_Youth
+		relative_position_id = LIT_Expansion_Of_The_Police_Force
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Expansion_Of_The_Police_Force
+		}
+		prerequisite = {
+			focus = LIT_Learning_Reforms
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Young_Lithuanians"
+			add_ideas = LIT_Smetona_Young_Lithuanians
+		}
+	}
+	focus = {
+		id = LIT_Mass_Arrests
+		icon = GFX_Prison_Camps
+		relative_position_id = LIT_Young_Lithuanians
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Young_Lithuanians
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Mass_Arrests"
+			add_stability = -0.1
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = administrationism
+				popularity = 0.025
+			}
+		}
+	}
+	focus = {
+		id = LIT_Lithuanian_Nation
+		icon = GFX_Befriend_Lithuania
+		relative_position_id = LIT_Mass_Arrests
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Mass_Arrests
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Lithuanian_Nation"
+			reverse_add_opinion_modifier = {
+				target = BLR
+				modifier = LIT_I_Hate_Minorities
+			}
+			reverse_add_opinion_modifier = {
+				target = POL
+				modifier = LIT_I_Hate_Minorities
+			}
+		}
+	}
+	focus = {
+		id = LIT_Anti_Revolutionary_Rhetoric
+		icon = GFX_Crush_Resistance
+		relative_position_id = LIT_Is_Why_I_Lead
+		x = 0
+		y = 2
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Is_Why_I_Lead
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Anti_Revolutionary_Rhetoric"
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = LIT_Ban_Rival_Parties
+		icon = GFX_generic_elections_rigged
+		relative_position_id = LIT_Anti_Revolutionary_Rhetoric
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Anti_Revolutionary_Rhetoric
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Ban_Rival_Parties"
+			add_stability = -0.1
+			add_political_power = 50
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.25
+			}
+		}
+	}
+	focus = {
+		id = LIT_Radio_Expansion
+		icon = GFX_RAJ_Guru_on_Radio
+		relative_position_id = LIT_Ban_Rival_Parties
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Ban_Rival_Parties
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Radio_Expansion"
+			add_political_power = 50
+			784 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Royal_Regent
+		icon = GFX_Puppet_President
+		relative_position_id = LIT_Familial_Ties
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Familial_Ties
+		}
+		prerequisite = {
+			focus = LIT_End_The_Debates
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Royal_Regent"
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = LIT_Sidelining_The_Monarch
+		icon = GFX_focus_rom_handle_king
+		relative_position_id = LIT_Royal_Regent
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Royal_Regent
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Sidelining_The_Monarch"
+			#removes ruler trait
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = LIT_Strengthen_The_Monarch
+		icon = GFX_generic_monarchist_constitution
+		relative_position_id = LIT_Royal_Regent
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Royal_Regent
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Strengthen_The_Monarch"
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = LIT_Land_Reforms
+		icon = RAJ_Agricultural_Miracle
+		relative_position_id = LIT_Sidelining_The_Monarch
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Sidelining_The_Monarch
+			focus = LIT_Strengthen_The_Monarch
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Land_Reforms"
+			784 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			189 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			11 = {
+				remove_building = {
+					type = infrastructure
+					level = 3
+				}
+			}
+			188 = {
+				remove_building = {
+					type = infrastructure
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Tautos_Vadas
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Radio_Expansion
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Lithuanian_Nation
+		}
+		prerequisite = {
+			focus = LIT_Radio_Expansion
+		}
+		prerequisite = {
+			focus = LIT_Land_Reforms
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Tautos_Vadas"
+			set_politics = {
+				ruling_party = despotism
+				last_election = "1932.10.12"
+				election_frequency = 60
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = LIT_Fortify_Vilnius
+		icon = GFX_City_Forts
+		relative_position_id = LIT_Calm_The_People
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Calm_The_People
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Fortify_Vilnius"
+			if = {
+				limit = {
+					controls_state = 784
+				}
+				784 = {
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+							level < 3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					controls_state = 189
+				}
+				189 = {
+					set_building_level = {
+						type = bunker
+						level = 3
+						province = {
+							id = 9483
+						}
+					}
+				}
+			}
+			else = {}
+		}
+	}
+	focus = {
+		id = LIT_Matters_Of_The_Navy
+		icon = GFX_generic_battleship
+		relative_position_id = LIT_Fortify_Vilnius
+		x = -4
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Fortify_Vilnius
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Matters_Of_The_Navy"
+			navy_experience = 15
+		}
+	}
+	focus = {
+		id = LIT_Trade_Fleet
+		icon = GFX_generic_change_law_trade
+		relative_position_id = LIT_Matters_Of_The_Navy
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Matters_Of_The_Navy
+		}
+		mutually_exclusive = {
+			focus = LIT_Masters_Of_The_Sea
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Trade_Fleet"
+			add_tech_bonus = {
+				name = LIT_Masters_Of_The_Navy
+				bonus = 1.0
+				uses = 1
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = LIT_Request_Ships
+		icon = GFX_British_Battleship_Programme
+		relative_position_id = LIT_Trade_Fleet
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Trade_Fleet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Request_Ships"
+		}
+	}
+	focus = {
+		id = LIT_Protection_Of_Trade
+		icon = GFX_generic_diplomacy_trade
+		relative_position_id = LIT_Request_Ships
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Request_Ships
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Protection_Of_Trade"
+			add_tech_bonus = {
+				name = LIT_Masters_Of_The_Navy
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
+		}
+	}
+	focus = {
+		id = LIT_Safety_On_The_Open_Ocean
+		icon = GFX_goal_generic_amphibious_assault
+		relative_position_id = LIT_Protection_Of_Trade
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Protection_Of_Trade
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Safety_On_The_Open_Ocean"
+			add_ideas = LIT_Smetona_Safety_Shipping
+		}
+	}
+	focus = {
+		id = LIT_Masters_Of_The_Sea
+		icon = GFX_Large_Navy
+		relative_position_id = LIT_Matters_Of_The_Navy
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Matters_Of_The_Navy
+		}
+		mutually_exclusive = {
+			focus = LIT_Trade_Fleet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Masters_Of_The_Sea"
+			add_tech_bonus = {
+				name = LIT_Masters_Of_The_Navy
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = LIT_Cut_Off_Their_Trade
+		icon = GFX_Naval_Supplies
+		relative_position_id = LIT_Masters_Of_The_Sea
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Masters_Of_The_Sea
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Cut_Off_Their_Trade"
+			add_tech_bonus = {
+				name = LIT_Cutting_The_Route
+				bonus = 0.5
+				uses = 1
+				category = cat_trade_interdiction
+			}
+		}
+	}
+	focus = {
+		id = LIT_Protect_The_Seas
+		icon = GFX_Generic_Naval_Industry
+		relative_position_id = LIT_Cut_Off_Their_Trade
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Cut_Off_Their_Trade
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Protect_The_Seas"
+			add_ideas = LIT_Smetona_Naval_Improvements
+		}
+	}
+	focus = {
+		id = LIT_Grand_Fleet
+		icon = GFX_Bluewater_Navy
+		relative_position_id = LIT_Protect_The_Seas
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Protect_The_Seas
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Grand_Fleet"
+			add_tech_bonus = {
+				name = LIT_Lietuvos_Karines_Juru_Pajegos
+				bonus = 0.5
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = LIT_Expand_The_Ports
+		icon = GFX_Naval_Effort
+		relative_position_id = LIT_Safety_On_The_Open_Ocean
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Safety_On_The_Open_Ocean
+			focus = LIT_Grand_Fleet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Expand_The_Ports"
+			189 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 6314
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Matters_Of_The_Army
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Fortify_Vilnius
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Fortify_Vilnius
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Matters_Of_The_Army"
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = LIT_Trust_In_The_Riflemen
+		icon = GFX_LIT_Lithuanian_Riflemens_Union
+		relative_position_id = LIT_Matters_Of_The_Army
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Matters_Of_The_Army
+		}
+		mutually_exclusive = {
+			focus = LIT_Open_Up_Recruitment
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Trust_In_The_Riflemen"
+			add_ideas = LIT_Smetona_Smol_Army
+		}
+	}
+	focus = {
+		id = LIT_Only_The_Best
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Trust_In_The_Riflemen
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Trust_In_The_Riflemen
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Only_The_Best"
+			add_tech_bonus = {
+				name = LIT_Only_Best
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = LIT_Support_The_Iron_Wolves
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Only_The_Best
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Only_The_Best
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Support_The_Iron_Wolves"
+			add_tech_bonus = {
+				name = LIT_Motorised_Corps
+				bonus = 0.5
+				uses = 1
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	focus = {
+		id = LIT_Open_Up_Recruitment
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Matters_Of_The_Army
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Matters_Of_The_Army
+		}
+		mutually_exclusive = {
+			focus = LIT_Trust_In_The_Riflemen
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Open_Up_Recruitment"
+			swap_ideas = {
+				remove_idea = LIT_Peaceful_Times
+				add_idea = LIT_Smetona_Dummy_Thicc_Army
+			}
+		}
+	}
+	focus = {
+		id = LIT_As_Many_As_Weve_Got
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Open_Up_Recruitment
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Open_Up_Recruitment
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_As_Many_As_Weve_Got"
+			add_tech_bonus = {
+				name = LIT_Iron_Wolves
+				bonus = 0.5
+				uses = 1
+				category = cat_mass_assault
+			}
+		}
+	}
+	focus = {
+		id = LIT_Proper_Defence
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_As_Many_As_Weve_Got
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_As_Many_As_Weve_Got
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Proper_Defence"
+			#add defence to generals
+		}
+	}
+	focus = {
+		id = LIT_Defence_Of_The_Homeland
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Proper_Defence
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Support_The_Iron_Wolves
+			focus = LIT_Proper_Defence
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Defence_Of_The_Homeland"
+			every_owned_state = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Strength_In_Unity
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Defence_Of_The_Homeland
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Defence_Of_The_Homeland
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Strength_In_Unity"
+			army_experience = 25
+			add_stability = 0.01
+		}
+	}
+	focus = {
+		id = LIT_Matters_Of_The_Air
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Fortify_Vilnius
+		x = 4
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Fortify_Vilnius
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Matters_Of_The_Air"
+			air_experience = 15
+		}
+	}
+	focus = {
+		id = LIT_Masters_Of_the_Air
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Matters_Of_The_Air
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Matters_Of_The_Air
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Masters_Of_the_Air"
+			add_tech_bonus = {
+				name = LIT_Masters_Air
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = LIT_Request_Planes
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Masters_Of_the_Air
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Masters_Of_the_Air
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Request_Planes"
+		}
+	}
+	focus = {
+		id = LIT_LIT_Bombers
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Request_Planes
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Request_Planes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_LIT_Bombers"
+			add_tech_bonus = {
+				name = LIT_Bombers
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = LIT_Drop_The_Load
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_LIT_Bombers
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_LIT_Bombers
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Drop_The_Load"
+			add_ideas = LIT_Smetona_Drop_The_Load
+		}
+	}
+	focus = {
+		id = LIT_Expand_The_Airfields
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Drop_The_Load
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Drop_The_Load
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Expand_The_Airfields"
+			189 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Expansion
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Calm_The_People
+		x = 8
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_Calm_The_People
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Expansion"
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = LIT_West
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Expansion
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_Expansion
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_West"
+			add_state_claim = 913
+			add_state_claim = 914
+			add_state_claim = 95
+			add_state_claim = 97
+			reverse_add_opinion_modifier = {
+				target = POL
+				modifier = claims_on_us
+			}
+		}
+	}
+	focus = {
+		id = LIT_Border_Strip
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_West
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_West
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Border_Strip"
+			create_wargoal = {
+				type = take_claimed_state
+				target = POL
+			}
+		}
+	}
+	focus = {
+		id = LIT_North
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Expansion
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_Expansion
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_North"
+			add_state_claim = 190
+			add_state_claim = 904
+			add_state_claim = 910
+			reverse_add_opinion_modifier = {
+				target = COU
+				modifier = claims_on_us
+			}
+		}
+	}
+	focus = {
+		id = LIT_Guard_The_Latvians
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_North
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_North
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Guard_The_Latvians"
+			create_wargoal = {
+				type = annex_everything
+				target = COU
+			}
+		}
+	}
+	focus = {
+		id = LIT_East
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Expansion
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_Expansion
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_East"
+			add_state_claim = 96
+			add_state_claim = 94
+			reverse_add_opinion_modifier = {
+				target = BLR
+				modifier = claims_on_us
+			}
+		}
+	}
+	focus = {
+		id = LIT_Integrate_The_Tutejszy
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_East
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_East
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Integrate_The_Tutejszy"
+			create_wargoal = {
+				type = take_claimed_state
+				target = BLR
+			}
+		}
+	}
+	focus = {
+		id = LIT_New_Lithuania
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Guard_The_Latvians
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_Border_Strip
+		}
+		prerequisite = {
+			focus = LIT_Guard_The_Latvians
+		}
+		prerequisite = {
+			focus = LIT_Integrate_The_Tutejszy
+		}
+		available = {
+			has_war = no
+			owns_state = 94
+			owns_state = 95
+			owns_state = 96
+			owns_state = 97
+			owns_state = 190
+			owns_state = 904
+			owns_state = 910
+			owns_state = 913
+			owns_state = 914
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_New_Lithuania"
+			add_political_power = 500
+		}
+	}
+	focus = {
+		id = LIT_LITInfrastructure_Projects
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Calm_The_People
+		x = 14
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = LIT_Calm_The_People
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_LITInfrastructure_Projects"
+			188 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Road_Epansion
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_LITInfrastructure_Projects
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_LITInfrastructure_Projects
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_LITInfrastructure_Projects"
+			11 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Port_Northeastern
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_LITInfrastructure_Projects
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_LITInfrastructure_Projects
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Port_Northeastern"
+			189 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 6314
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Capital_Expansion
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_LITInfrastructure_Projects
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_LITInfrastructure_Projects
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Capital_Expansion"
+			784 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Further_Planning
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Port_Northeastern
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Road_Epansion
+		}
+		prerequisite = {
+			focus = LIT_Port_Northeastern
+		}
+		prerequisite = {
+			focus = LIT_Capital_Expansion
+		}
+		available = { #add the econ crash later
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Further_Planning"
+			add_stability = 0.01
+		}
+	}
+	focus = {
+		id = LIT_Keep_Agrarian
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Further_Planning
+		x = -3
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Further_Planning
+		}
+		mutually_exclusive = {
+			focus = LIT_Ignore_Farmers
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Keep_Agrarian"
+			add_stability = 0.01
+		}
+	}
+	focus = {
+		id = LIT_Reduce_Farming_Taxes
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Keep_Agrarian
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Keep_Agrarian
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Reduce_Farming_Taxes"
+			add_stability = 0.1
+			add_political_power = -25
+		}
+	}
+	focus = {
+		id = LIT_Subsidize_Farming
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Keep_Agrarian
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Keep_Agrarian
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Subsidize_Farming"
+			add_ideas = LIT_Smetona_Farming_Subsidies
+		}
+	}
+	focus = {
+		id = LIT_Educating_The_Poor
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Reduce_Farming_Taxes
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Reduce_Farming_Taxes
+		}
+		prerequisite = {
+			focus = LIT_Subsidize_Farming
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Educating_The_Poor"
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = LIT_Trade_Will_Save_Us
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Educating_The_Poor
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Educating_The_Poor
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Trade_Will_Save_Us"
+		}
+	}
+	focus = {
+		id = LIT_Mechanize_Farming
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Further_Planning
+		x = 0
+		y = 2
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Further_Planning
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Keep_Agrarian"
+			add_tech_bonus = {
+				name = LIT_Mechanized_Farming
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = LIT_Slash_The_Military_Budget
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Mechanize_Farming
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Mechanize_Farming
+		}
+		mutually_exclusive = {
+			focus = LIT_Small_Cost_For_Stability
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Slash_The_Military_Budget"
+			#effect the econ crash thing idk its 5 am
+		}
+	}
+	focus = {
+		id = LIT_Small_Cost_For_Stability
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Mechanize_Farming
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Mechanize_Farming
+		}
+		mutually_exclusive = {
+			focus = LIT_Slash_The_Military_Budget
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Slash_The_Military_Budget"
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = LIT_Work_Harder
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Slash_The_Military_Budget
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Slash_The_Military_Budget
+			focus = LIT_Small_Cost_For_Stability
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Slash_The_Military_Budget"
+			add_ideas = LIT_Smetona_Work_Harder
+		}
+	}
+	focus = {
+		id = LIT_Ignore_Farmers
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Further_Planning
+		x = 3
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Further_Planning
+		}
+		mutually_exclusive = {
+			focus = LIT_Keep_Agrarian
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: LIT_Ignore_Farmers"
+			add_stability = -0.05
+			add_political_power = -25
+		}
+	}
+	focus = {
+		id = LIT_Glass_Industry_Expansion
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Ignore_Farmers
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Ignore_Farmers
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_Cement_Industry_Expansion
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Ignore_Farmers
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Ignore_Farmers
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LIT_New_University
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Glass_Industry_Expansion
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Glass_Industry_Expansion
+		}
+		prerequisite = {
+			focus = LIT_Cement_Industry_Expansion
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = LIT_We_Will_Save_Ourselves
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_New_University
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_New_University
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 15
+		}
+	}
+	focus = {
+		id = LIT_End_Of_The_World
+		icon = GFX_LOU_Cracker
+		relative_position_id = LIT_Work_Harder
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = LIT_Trade_Will_Save_Us
+			focus = LIT_We_Will_Save_Ourselves
+		}
+		prerequisite = {
+			focus = LIT_Work_Harder
+		}
+		available = {
+			NOT = {
+				has_war_with = LTH
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			#get rid of the crash effect
+		}
+	}
+}

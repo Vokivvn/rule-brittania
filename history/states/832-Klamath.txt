@@ -1,0 +1,24 @@
+
+state={
+	id=832
+	name="STATE_832"
+	provinces={
+		505 528 3471 3644 4331 4347 6482 6665 10151 10305 11495 11733 12134 12281 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			11733 5
+		}
+		victory_points = {
+			528 10
+		}
+	}
+	manpower=248670
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

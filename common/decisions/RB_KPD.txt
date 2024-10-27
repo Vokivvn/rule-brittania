@@ -1,0 +1,100 @@
+KPD_reichsbanner_dismantling_category = {
+	KPD_dismantle_reichsbannersw_brandenburg = {
+		cost = 50
+		
+		highlight_states = {
+            state = 64
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KPD_dismantle_reichsbannersw_vorpommern"
+			64 = {
+				add_manpower = -6000
+			}
+			add_stability = 0.10
+		}
+	}
+	KPD_dismantle_reichsbannersw_vorpommern = {
+		cost = 20
+
+		highlight_states = {
+            state = 62
+		}
+		  
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KPD_dismantle_reichsbannersw_vorpommern"
+			62 = {
+				add_manpower = -1500
+			}
+			add_stability = 0.02
+		}
+	}
+	KPD_dismantle_reichsbannersw_hinterpommern = {
+		cost = 20
+		
+		highlight_states = {
+            state = 63
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KPD_dismantle_reichsbannersw_hinterpommern"
+			63 = {
+				add_manpower = -1000
+			}
+			add_stability = 0.02
+		}
+	}
+	KPD_dismantle_reichsbannersw_ostmark = {
+		cost = 20
+		
+		highlight_states = {
+            state = 68
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KPD_dismantle_reichsbannersw_hinterpommern"
+			68 = {
+				add_manpower = -1000
+			}
+			add_stability = 0.02
+		}
+	}
+	KPD_dismantle_reichsbannersw_dortmund = {
+		cost = 20
+		
+		highlight_states = {
+            state = 892
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KPD_dismantle_reichsbannersw_dortmund"
+			892 = {
+				add_manpower = -2000
+			}
+			add_stability = 0.05
+		}
+	}
+	KPD_dismantle_reichsbannersw_western_lands = {
+		cost = 20
+
+		highlight_states = {
+			state = 893
+			state = 846
+			state = 847
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KPD_dismantle_reichsbannersw_western_lands"
+			893 = {
+				add_manpower = -500
+			}
+			846 = {
+				add_manpower = -500
+			}
+			847 = {
+				add_manpower = -500
+			}
+			add_stability = 0.02
+		}
+	}
+}

@@ -1,0 +1,13 @@
+focus_tree = {
+	id = CZE_intro_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CZE
+		}
+	}
+	default = no
+	shared_focus = CZE_Intro_Jan_Masaryk
+	continuous_focus_position = { x = 50 y = 2000 }
+}

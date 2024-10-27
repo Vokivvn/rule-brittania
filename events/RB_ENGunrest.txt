@@ -1,0 +1,255 @@
+﻿add_namespace = engunrest
+
+country_event = {	#State of affairs
+	id = engunrest.0
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engunrest.0"}
+	title = engunrest.0.t
+	desc = engunrest.0.desc
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				var = wgr_unrest
+				value = 45
+			}
+			set_variable = {
+				var = afr_unrest
+				value = 24
+			}
+			set_variable = {
+				var = asi_unrest
+				value = 62
+			}
+			set_country_flag = wgr_unrest_intiated
+			set_country_flag = asi_unrest_intiated
+			set_country_flag = afr_unrest_intiated
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = engunrest.0.a
+	}
+}
+
+
+country_event = {	#Small German Marxist uprising
+	id = engunrest.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engunrest.1"}
+	title = engunrest.1.t
+	desc = engunrest.1.desc
+	
+	is_triggered_only = yes
+	immediate = { set_country_flag = uprising_crisis }
+	fire_only_once = yes
+	
+	option = {	#Send in the army
+		name = "Send in the army"
+		add_political_power = -75
+		custom_effect_tooltip = "The German population may retaliate."
+		ai_chance = {
+			factor = 40
+		}
+		add_to_variable = {
+			var = wgr_unrest
+			value = 11
+		}
+		custom_effect_tooltip = "The German people will gain 11% Unrest"
+	}
+	option = {	#Send in the Riot Guard
+		name = "Send in the Riot Guard"
+		add_political_power = -25
+		custom_effect_tooltip = "The German population may retaliate."
+		ai_chance = {
+			factor = 40
+		}
+		add_to_variable = {
+			var = wgr_unrest
+			value = 7
+		}
+		custom_effect_tooltip = "The German people will gain 7% Unrest"
+		hidden_effect = {
+			random_list = {
+				35 = {
+					country_event = {
+						id = engunrest.4
+						days = 7
+					}
+				}
+				65 = {
+					country_event = {
+						id = engunrest.5
+						days = 7
+					}
+				}
+			}
+		}
+	}
+	option = {	#Try to negotiate
+		name = "Try for a negotiation"
+		ai_chance = {
+			factor = 20
+		}
+		add_to_variable = {
+			var = wgr_unrest
+			value = -5
+		}
+		custom_effect_tooltip = "The German people will lose 5% Unrest"
+		hidden_effect = {
+			random_list = {
+				80 = {
+					country_event = {
+						id = engunrest.2
+						days = 12
+					}
+				}
+				20 = {
+					country_event = {
+						id = engunrest.3
+						days = 12
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {	#The demands are presented (Autonomy from London, better support for the poor)
+	id = engunrest.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engunrest.2"}
+	title = engunrest.2.t
+	desc = engunrest.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Those demands are impossible to grant"
+		set_country_flag = hun_uprising_expand
+		add_to_variable = {
+			var = wgr_unrest
+			value = 11
+		}
+		custom_effect_tooltip = "The German people will gain 6% Unrest"
+		ai_chance = {
+			factor = 60
+		}
+	}
+	option = {
+		name = "Parts of that are agreeable"
+		ai_chance = {
+			factor = 40
+		}
+		add_to_variable = {
+			var = wgr_unrest
+			value = -12
+		}
+		custom_effect_tooltip = "The German people will lose 12% Unrest"
+		hidden_effect = {
+			country_event = {
+				id = engunrest.3
+				days = 8
+			}
+		}
+	}
+}
+
+
+country_event = {	#A Hungary? Without engunrest?
+	id = engunrest.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engunrest.3"}
+	title = engunrest.3.t
+	desc = engunrest.3.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Semi Independence for Hungary!"
+		clr_country_flag = wgr_unrest_intiated
+		set_variable = {
+			var = wgr_unrest
+			value = 0
+		}
+		clr_country_flag = rom_unrest_intiated	#Its their problem now
+		set_variable = {
+			var = rom_unrest
+			value = 0
+		}
+		custom_effect_tooltip = "Hungary will be ruled by Budapest. And the German people will lose all Unrest."
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = "We will do our best to better help the poor."
+		ai_chance = {
+			factor = 100
+		}
+		add_to_variable = {
+			var = wgr_unrest
+			value = -24
+		}
+		custom_effect_tooltip = "The German people will lose 24% Unrest"
+		set_country_flag = poor_help
+	}
+}
+
+
+country_event = {	#Protests breaking out over the entire eastern part of our empire
+	id = engunrest.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engunrest.4"}
+	title = engunrest.4.t
+	desc = engunrest.4.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Send more troops!"
+		add_to_variable = {
+		
+			var = wgr_unrest
+			value = 15
+		}
+		add_to_variable = {
+			var = rom_unrest
+			value = 6
+		}
+		custom_effect_tooltip = "The German people will gain 15% Unrest"
+		set_country_flag = uprising_crisis_end
+	}
+	option = {
+		name = "Back down"
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = uprising_big
+	}
+}
+
+
+country_event = {	#The uprising is stopped, but unrest roars high
+	id = engunrest.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engunrest.5"}
+	title = engunrest.5.t
+	desc = engunrest.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "A troubling situation."
+		add_to_variable = {
+			var = wgr_unrest
+			value = 7
+		}
+		custom_effect_tooltip = "The German people will gain 7% Unrest"
+		set_country_flag = uprising_crisis_end
+	}
+}

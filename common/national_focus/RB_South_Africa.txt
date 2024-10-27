@@ -1,0 +1,28 @@
+###########################
+#### South Africa tree ####
+###########################
+
+focus_tree = {
+	id = southafrica
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = SAF
+        }
+    }
+	
+    focus = {
+    	id = SAF_blankfocus
+    	icon = GFX_generic_little_entente
+    	x = 0
+    	y = 2
+    	cost = 5
+    	allow_branch = {
+    		has_country_flag = neversetthisflag
+    	}
+    	completion_reward = {
+    		log = "[GetDateText]: [Root.GetName]: Focus SAF_blankfocus"
+    	}
+    }
+}

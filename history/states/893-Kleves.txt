@@ -1,0 +1,25 @@
+state={
+	id=893
+	name="STATE_893"
+	provinces={
+		3444 3512 
+	}
+	state_category = city
+
+	history= {
+		owner = PRU
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = { 
+			3444 2
+		}
+		victory_points = {
+			3512 3
+		}
+		add_core_of = PRU
+	}
+	manpower=41852
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

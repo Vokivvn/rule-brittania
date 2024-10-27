@@ -1,0 +1,38 @@
+spriteTypes = {	
+    spriteType = {
+		name = "GFX_BFE_decision_Eastport"
+		texturefile = "gfx/interface/decisions/BFE_decision_Eastport.dds"
+	}
+	spriteType = {
+		name = "GFX_BRG_decision_Darcy_Palace"
+		texturefile = "gfx/interface/decisions/BRG_decision_Darcy_Palace.dds"
+	}
+	spriteType = {
+		name = "GFX_TUR_decision_YTR"
+		texturefile = "gfx/interface/decisions/TUR_decision_YTR.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_decision_Parliament"
+		texturefile = "gfx/interface/decisions/ENG_decision_Parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_BRA_decision_tea"
+		texturefile = "gfx/interface/decisions/BRA_decision_tea.dds"
+	} 
+	spriteType = {
+		name = "GFX_RUS_decision_Tsardom"
+		texturefile = "gfx/interface/decisions/RUS_decision_Tsardom.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_decision_revolt"
+		texturefile = "gfx/interface/decisions/FRA_decision_revolt.dds"
+	}
+	spriteType = {
+		name = "GFX_OST_decision_Borneo"
+		texturefile = "gfx/interface/decisions/OST_decision_Borneo.dds"
+	}
+	spriteType = {
+		name = "GFX_TEX_oil_hell"
+		texturefile = "gfx/interface/decisions/TEX_oil_hell.dds"
+	}
+}

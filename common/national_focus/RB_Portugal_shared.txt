@@ -1,0 +1,639 @@
+
+shared_focus = {
+	id = POR_L_reign_continue
+	icon = GFX_generic_conservative_constitution
+	cost = 3
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_reign_continue"
+	}
+}
+
+shared_focus = {
+	id = POR_L_visit_britain
+	icon = GFX_ENG_British_Parliament
+	cost = 3
+	prerequisite = {
+		focus = POR_L_reign_continue
+	}
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_visit_britain"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = POR_L_visit_people
+	icon = GFX_generic_change_law_speech
+	cost = 3
+	prerequisite = {
+		focus = POR_L_reign_continue
+	}
+	x = 5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_visit_people"
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = POR_L_visit_army
+	icon = GFX_goal_army_guy_2
+	cost = 3
+	prerequisite = {
+		focus = POR_L_reign_continue
+	}
+	x = 7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_visit_army"
+		army_experience = 20
+	}
+}
+
+shared_focus = {
+	id = POR_L_speech_parliament
+	icon = GFX_RB_generic_parliamentarianism_ideology
+	cost = 3
+	prerequisite = {
+		focus = POR_L_visit_britain
+	}
+	prerequisite = {
+		focus = POR_L_visit_people
+	}
+	prerequisite = {
+		focus = POR_L_visit_army
+	}
+	x = 5
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_speech_parliament"
+		country_event = {
+			id = PKLuis.3
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_projects
+	icon = GFX_Generic_Construction
+	cost = 3
+	prerequisite = {
+		focus = POR_L_speech_parliament
+	}
+	x = 5
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_projects"
+		country_event = {
+			id = PKLuis.4
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_expand_navy
+	icon = goal_navy_decision
+	cost = 3
+	prerequisite = {
+		focus = POR_L_projects
+	}
+	x = 3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_expand_navy"
+		navy_experience = 20
+	}
+}
+
+shared_focus = {
+	id = POR_L_british_model
+	icon = GFX_British_Fortifications
+	cost = 3
+	prerequisite = {
+		focus = POR_L_expand_navy
+	}
+	mutually_exclusive = {
+		focus = POR_L_portugeese_privateers
+	}
+	x = 2
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_british_model"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = fleet_in_being_tree
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_portugeese_privateers
+	icon = GFX_Bluewater_Navy
+	cost = 3
+	prerequisite = {
+		focus = POR_L_expand_navy
+	}
+	mutually_exclusive = {
+		focus = POR_L_british_model
+	}
+	x = 4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_portugeese_privateers"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = trade_interdiction_tree
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_buy_ships
+	icon = GFX_British_Gold_Reserve
+	cost = 3
+	prerequisite = {
+		focus = POR_L_british_model
+	}
+	x = 1
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_buy_ships"
+	}
+}
+
+shared_focus = {
+	id = POR_L_ports
+	icon = GFX_Generic_Naval_Industry
+	cost = 3
+	prerequisite = {
+		focus = POR_L_british_model
+		focus = POR_L_portugeese_privateers
+	}
+	x = 3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_ports"
+		180 = {
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = 9817
+			}
+		}
+		179 = {
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = 3790
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_naval_innovations
+	icon = GFX_RAJ_India_New_Naval_Estimates
+	cost = 3
+	prerequisite = {
+		focus = POR_L_portugeese_privateers
+	}
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_naval_innovations"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = ss_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_naval_tradition
+	icon = GFX_Naval_Gunners
+	cost = 3
+	prerequisite = {
+		focus = POR_L_buy_ships
+		focus = POR_L_naval_innovations
+	}
+	prerequisite = {
+		focus = POR_L_ports
+	}
+	x = 3
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_naval_tradition"
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = POR_L_poor_altejo
+	icon = GFX_RAJ_we_failed_the_poor
+	cost = 3
+	prerequisite = {
+		focus = POR_L_projects
+	}
+	x = 8
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_poor_altejo"
+		country_event = {
+			id = PKLuis.5
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_roads
+	icon = GFX_POR_Infrastructure_Projects
+	cost = 3
+	prerequisite = {
+		focus = POR_L_poor_altejo
+	}
+	x = 7
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_roads"
+		179 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_support_uni
+	icon = GFX_generic_diplomacy_science
+	cost = 3
+	prerequisite = {
+		focus = POR_L_roads
+	}
+	x = 7
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_support_uni"
+		add_research_slot = 1
+	}
+}
+
+shared_focus = {
+	id = POR_L_light_industry
+	icon = GFX_generic_diplomacy_industrial
+	cost = 3
+	prerequisite = {
+		focus = POR_L_poor_altejo
+	}
+	mutually_exclusive = {
+		focus = POR_L_big_guns
+	}
+	x = 9
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_light_industry"
+		179 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_big_guns
+	icon = GFX_RAJ_rifles_guns_cannons
+	cost = 3
+	prerequisite = {
+		focus = POR_L_poor_altejo
+	}
+	mutually_exclusive = {
+		focus = POR_L_light_industry
+	}
+	x = 11
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_big_guns"
+		179 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_sines_iron
+	icon = GFX_Southern_Steel
+	cost = 3
+	prerequisite = {
+		focus = POR_L_light_industry
+		focus = POR_L_big_guns
+	}
+	x = 10
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_sines_iron"
+		179 = {
+			add_resource = {
+				type = steel
+				amount = 4
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_prosperity
+	icon = goal_endless_money
+	cost = 3
+	prerequisite = {
+		focus = POR_L_support_uni
+	}
+	prerequisite = {
+		focus = POR_L_sines_iron
+	}
+	x = 8
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_prosperity"
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = POR_L_peace_home
+	icon = GFX_RAJ_religious_peace
+	cost = 3
+	prerequisite = {
+		focus = POR_L_naval_tradition
+	}
+	prerequisite = {
+		focus = POR_L_prosperity
+	}
+	x = 5
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_sines_iron"
+		country_event = {
+			id = PKLuis.2
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_not_world
+	icon = GFX_generic_wardec
+	cost = 3
+
+	x = 5
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_not_world"
+		country_event = {
+			id = PKLuis.6
+			hours = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_honest
+	icon = GFX_POR_British_Deal
+	cost = 3
+	prerequisite = {
+		focus = POR_L_not_world
+	}
+	mutually_exclusive = {
+		focus = POR_L_secretive
+	}
+	x = 3
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_honest"
+		ENG = {
+			country_event = {
+				id = PKLuis.7
+				days = 7
+			}
+		}
+
+	}
+}
+
+shared_focus = {
+	id = POR_L_tense_relationship
+	icon = GFX_generic_wardec
+	cost = 3
+	prerequisite = {
+		focus = POR_L_honest
+	}
+	available = {
+		has_global_flag = POR_in_MAR
+	}
+	x = 3
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_tense_relationship"
+		MOR = {
+			add_stability = -0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_historic_claims
+	icon = GFX_Generic_Desert_Warfare
+	cost = 3
+	prerequisite = {
+		focus = POR_L_honest
+		focus = POR_L_secretive
+	}
+	x = 5
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_historic_claims"
+		POR = {
+			add_state_claim = 462
+			add_state_claim = 461
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_fabricate_incident
+	icon = GFX_generic_islamic_war_support
+	cost = 3
+	prerequisite = {
+		focus = POR_L_tense_relationship
+	}
+	prerequisite = {
+		focus = POR_L_historic_claims
+	}
+	x = 3
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_fabricate_incident"
+		add_political_power = -75
+	}
+}
+
+shared_focus = {
+	id = POR_L_marocco_bows
+	icon = GFX_ENG_Henry_IX
+	cost = 3
+	prerequisite = {
+		focus = POR_L_fabricate_incident
+	}
+	x = 3
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_marocco_bows"
+		MOR = {
+			country_event = {
+				id = PKLuis.10
+				days = 7
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_secretive
+	icon = GFX_Generic_Secret_Police
+	cost = 3
+	prerequisite = {
+		focus = POR_L_not_world
+	}
+	mutually_exclusive = {
+		focus = POR_L_honest
+	}
+	x = 8
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_secretive"
+		add_stability = -0.05
+	}
+}
+
+shared_focus = {
+	id = POR_L_sponsor_anti-british
+	icon = GFX_goal_ENG_stop_the_terrorists
+	cost = 3
+	prerequisite = {
+		focus = POR_L_secretive
+	}
+	x = 7
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_sponsor_anti-british"
+		MOR = {
+			add_war_support = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_bribe_officals
+	icon = GFX_focus_purge_bureaucracy
+	cost = 3
+	prerequisite = {
+		focus = POR_L_secretive
+	}
+	x = 9
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_bribe_officals"
+		add_political_power = -50
+	}
+}
+
+shared_focus = {
+	id = POR_L_spread_paranoia
+	icon = GFX_RAJ_Question_Secret_Services
+	cost = 3
+	prerequisite = {
+		focus = POR_L_historic_claims
+	}
+	prerequisite = {
+		focus = POR_L_sponsor_anti-british
+	}
+	prerequisite = {
+		focus = POR_L_bribe_officals
+	}
+	x = 8
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_spread_paranoia"
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = POR_L_offer_help
+	icon = GFX_goal_ENG_Foreign_Assistance
+	cost = 3
+	prerequisite = {
+		focus = POR_L_spread_paranoia
+	}
+	x = 8
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_offer_help"
+		ENG = {
+			country_event = {
+				id = PKLuis.13
+				days = 7
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = POR_L_luis_the_conqueror
+	icon = GFX_POR_Crown
+	cost = 3
+	prerequisite = {
+		focus = POR_L_offer_help
+		focus = POR_L_marocco_bows
+	}
+	available = {
+		OR = {
+			AND = {
+				owns_state = 461
+				owns_state = 462
+			}
+			MOR = {
+				is_puppet_of = POR
+			}
+		}
+	}
+	x = 5
+	y = 14
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus POR_L_luis_the_conqueror"
+		add_country_leader_trait = the_conqueror
+	}
+}

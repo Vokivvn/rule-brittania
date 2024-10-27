@@ -1,0 +1,35 @@
+
+state={
+	id=371
+	name="STATE_371"
+	resources={
+		oil=44.000
+	}
+
+	history={
+		owner = LOU
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 5
+			7552 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = LOU
+		victory_points = {
+			7552 25
+		}
+		victory_points = {
+			1453 10
+		}
+	}
+
+	provinces={
+		1643 4535 7552 12398 12401
+	}
+	manpower=2101592
+	buildings_max_level_factor=1.000
+	state_category=city
+}

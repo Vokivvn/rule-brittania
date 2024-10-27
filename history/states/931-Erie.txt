@@ -1,0 +1,30 @@
+state={
+	id=931
+	name="STATE_931"
+	resources={
+		steel=21.000
+	}
+	provinces={
+		689 691 695 870 9653 9654 9684 11637 11641 11656 11685 13154
+	}
+	history = {
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+		}
+		victory_points = {
+			689 10
+		}
+		victory_points = {
+			695 5
+		}
+		victory_points = {
+			870 5
+		}
+	}
+	manpower=2013471
+	state_category=large_city
+	buildings_max_level_factor=1.000
+}

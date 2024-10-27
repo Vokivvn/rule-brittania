@@ -1,0 +1,4 @@
+UGA_update_product = {
+    set_variable = { UGA_product = UGA_King_Contentedness }
+    multiply_variable = { UGA_product = UGA_London_Trust }
+}

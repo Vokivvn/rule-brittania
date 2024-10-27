@@ -1,0 +1,777 @@
+﻿##GERMANY##
+add_namespace = debug
+
+country_event = { #pog mode (RE option events)
+	id = debug.1
+	title = debug.1.t
+	desc = debug.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.1"}
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = { #
+		name = debug.1.a
+		BAV = {
+			drop_cosmetic_tag = yes
+		}
+		AUS = {
+			drop_cosmetic_tag = yes
+		}
+		PRU = {
+			drop_cosmetic_tag = yes
+		}
+		SWE = {
+			drop_cosmetic_tag = yes
+		}
+		HUN = {
+			drop_cosmetic_tag = yes
+		}
+		CZE = {
+			drop_cosmetic_tag = yes
+		}
+		SIL = {
+			drop_cosmetic_tag = yes
+		}
+		CAS = {
+			drop_cosmetic_tag = yes
+		}
+		POR = {
+			drop_cosmetic_tag = yes
+		}
+		ARA = {
+			drop_cosmetic_tag = yes
+		}
+		PPL = {
+			drop_cosmetic_tag = yes
+		}
+		PIE = {
+			drop_cosmetic_tag = yes
+		}
+		DUC = {
+			drop_cosmetic_tag = yes
+		}
+		UPR = {
+			drop_cosmetic_tag = yes
+		}
+		BUL = {
+			drop_cosmetic_tag = yes
+		}
+		NAV = {
+			drop_cosmetic_tag = yes
+		}
+		MMV = {
+			drop_cosmetic_tag = yes
+		}
+		THR = {
+			drop_cosmetic_tag = yes
+		}
+		HSM = {
+			drop_cosmetic_tag = yes
+		}
+		BAD = {
+			drop_cosmetic_tag = yes
+		}
+		MUN = {
+			drop_cosmetic_tag = yes
+		}
+		WUR = {
+			drop_cosmetic_tag = yes
+		}
+		HOH = {
+			drop_cosmetic_tag = yes
+		}
+		TUS = {
+			drop_cosmetic_tag = yes
+		}
+		THS = {
+			drop_cosmetic_tag = yes
+		}
+		WAL = {
+			drop_cosmetic_tag = yes
+		}
+		MOL = {
+			drop_cosmetic_tag = yes
+		}
+		ALB = {
+			drop_cosmetic_tag = yes
+		}
+		IPL = {
+			drop_cosmetic_tag = yes
+		}
+		TUR = {
+			drop_cosmetic_tag = yes
+		}
+		SER = {
+			drop_cosmetic_tag = yes
+		}
+		RUS = {
+			drop_cosmetic_tag = yes
+		}
+		BLR = {
+			drop_cosmetic_tag = yes
+		}
+		KAR = {
+			drop_cosmetic_tag = yes
+		}
+		KHR = {
+			drop_cosmetic_tag = yes
+		}
+		RVD = {
+			drop_cosmetic_tag = yes
+		}
+		ATR = {
+			drop_cosmetic_tag = yes
+		}
+		EST = {
+			drop_cosmetic_tag = yes
+		}
+		LIT = {
+			drop_cosmetic_tag = yes
+		}
+		COU = {
+			drop_cosmetic_tag = yes
+		}
+		RIG = {
+			drop_cosmetic_tag = yes
+		}
+		LIV = {
+			drop_cosmetic_tag = yes
+		}
+		UKR = {
+			drop_cosmetic_tag = yes
+		}
+		BRN = {
+			drop_cosmetic_tag = yes
+		}
+	}
+}
+
+country_event = { #italy cosmetic tags
+	id = debug.2
+	title = debug.2.t
+	desc = debug.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.2"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #kingdom
+		name = debug.2.a
+		set_cosmetic_tag = ITA_KINGDOM
+	}
+
+	option = { #UPI
+		name = debug.2.b
+		set_cosmetic_tag = ITA_UPI
+	}
+
+	option = { #republic
+		name = debug.2.c
+		set_cosmetic_tag = ITA_REP
+	}
+}
+
+country_event = { #palestine
+	id = debug.3
+	title = debug.3.t
+	desc = debug.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.3"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Al-Sham
+		name = debug.3.a
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PAL_SHAM
+	}
+
+	option = { #Republic of Palestine
+		name = debug.3.b
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PAL_REP
+	}
+
+	option = { #Republic of Syria Palestine
+		name = debug.3.c
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PAL_SYRIA
+	}
+}
+
+country_event = { #israel
+	id = debug.4
+	title = debug.4.t
+	desc = debug.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.4"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #State of Israel
+		name = debug.4.a
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PAL_ISRSTATE
+	}
+
+	option = { #People's Republic of Israel
+		name = debug.4.b
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PAL_ISRPRI
+	}
+
+	option = { #Dominion of Israel
+		name = debug.4.c
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PAL_ISRDOMINION
+	}
+}
+
+country_event = { #austria balk
+	id = debug.5
+	title = debug.5.t
+	desc = debug.5.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.5"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #magyar squad roll out
+		name = debug.5.a
+		TRA = {
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 84
+			add_state_core = 76
+			add_state_core = 83
+			add_state_core = 84
+			add_state_core = 948
+			load_oob = "TRA_collapse"
+		}
+		HUN = { 
+			transfer_state = 43
+			transfer_state = 945
+			transfer_state = 155
+			transfer_state = 950
+			transfer_state = 664
+			transfer_state = 154
+			transfer_state = 946
+			transfer_state = 948
+			transfer_state = 73
+			transfer_state = 45
+			add_state_core = 43
+			add_state_core = 945
+			add_state_core = 155
+			add_state_core = 950
+			add_state_core = 664
+			add_state_core = 946
+			add_state_core = 154
+			add_state_core = 948
+			set_country_flag = HUN_collapse_flag
+			load_oob = "HUN_collapse"
+			declare_war_on = {
+				target = TRA
+				type = annex_everything
+			}
+		}
+		AUS = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = AUS_NAT
+			set_politics = {
+				ruling_party = nationalism
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.2
+			}
+			create_country_leader = {
+				name = "Arthur Seyss-Inquart"
+				#desc =
+				picture = "Portrait_AUS_Arthur_Seyss_Inquart.dds"
+				expire = "1979.1.1"
+				ideology = nationalism_subtype
+				traits = {
+				}
+			}
+		}
+		TEM = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = liberalism
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.65
+			}
+			add_popularity = {
+				ideology = republicanism
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = parliamentarianism
+				popularity = 0.25
+			}
+			create_country_leader = {
+				name = "Róth Ottó"
+				#desc =
+				picture = "Portrait_TEM_Otto_Roth.dds"
+				expire = "1956.4.22"
+				ideology = liberalism_subtype
+				traits = {
+				}
+			}
+		}
+		MMV = {
+			drop_cosmetic_tag = yes
+			transfer_state = 937
+			add_state_core = 937
+			
+		}
+		CZE = {
+			drop_cosmetic_tag = yes
+			transfer_state = 934
+			transfer_state = 74
+			transfer_state = 75
+			add_state_core = 934
+			add_state_core = 74
+			add_state_core = 75
+		}
+		POL = {
+			transfer_state = 72
+			add_state_core = 72
+		}
+		SLV = {
+			transfer_state = 102
+			transfer_state = 941
+			add_state_core = 102
+			add_state_core = 736
+			add_state_core = 941
+			country_event = { id = slv.1 days = 1}
+		}
+		CRO = {
+			transfer_state = 109
+			transfer_state = 942
+			transfer_state = 943
+			transfer_state = 103
+			add_state_core = 943
+			add_state_core = 109
+			add_state_core = 103
+			add_state_core = 942
+		}
+		SLO = {
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 947
+			add_state_core = 70
+			add_state_core = 71
+			add_state_core = 947
+		}
+	}
+}
+
+country_event = { #Syrian Civil War: The Prequel
+	id = debug.6
+	title = debug.6.t
+	desc = debug.6.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.6"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #run feisal run
+		name = debug.6.a
+		AKS = {
+			transfer_state = 455
+			transfer_state = 854
+			transfer_state = 924
+			add_state_core = 455
+			add_state_core = 854
+			add_state_core = 924
+			declare_war_on = {
+				target = SYR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LEV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SSR
+				type = annex_everything
+			}
+		}
+		SAU = { 
+			transfer_state = 961
+			transfer_state = 675
+			transfer_state = 856
+			add_state_core = 961
+			add_state_core = 675
+			add_state_core = 856
+		}
+		LEV = {
+			set_politics = {
+				ruling_party = administrationism
+			}
+			add_popularity = {
+				ideology = administrationism
+				popularity = 0.2
+			}
+		}
+		SYR = {
+			transfer_state = 859
+			transfer_state = 680
+			add_state_core = 859
+			add_state_core = 680
+			declare_war_on = {
+				target = AKS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LEV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SSR
+				type = annex_everything
+			}
+		}
+		SSR = {
+			transfer_state = 554
+			add_state_core = 554
+			declare_war_on = {
+				target = AKS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LEV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SYR
+				type = annex_everything
+			}
+		}
+		LEB = {
+			transfer_state = 553
+			transfer_state = 923
+			add_state_core = 553
+			add_state_core = 923
+		}
+	}
+}
+
+country_event = { #brazil economic crisis treee
+	id = debug.8
+	title = "crash"
+	desc = "fuck"
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.7"}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "cool"
+		set_country_flag = BRA_Coffee_victory
+		clr_country_flag = intro_tree
+		load_focus_tree = { tree = BRA_London_Crash_tree keep_completed = yes }
+	}
+
+	option = {
+		name = "im anglo"
+		set_country_flag = BRA_Tea_victory
+		clr_country_flag = intro_tree
+		load_focus_tree = { tree = BRA_London_Crash_tree keep_completed = yes }
+	}
+
+	option = {
+		name = "back to intro tree"
+		clr_country_flag = BRA_Tea_victory
+		clr_country_flag = BRA_Coffee_victory
+		set_country_flag = intro_tree
+		load_focus_tree = { tree = BRA_intro_tree keep_completed = yes }
+	}
+}
+
+country_event = {
+	id = debug.9
+	title = debug.9.t
+	desc = debug.9.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.9"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Franco Regime
+		name = debug.9.a
+		drop_cosmetic_tag = yes
+		set_politics = { ruling_party = administrationism }
+		set_cosmetic_tag = CAS_FRA
+	}
+	
+	option = { #Falangist Regime
+		name = debug.9.b
+		drop_cosmetic_tag = yes
+		set_politics = { ruling_party = nationalism }
+		set_cosmetic_tag = CAS_FAL
+	}
+
+	option = { #Militarist Regime
+		name = debug.9.c
+		drop_cosmetic_tag = yes
+		set_politics = { ruling_party = despotism }
+		set_cosmetic_tag = CAS_MIL
+	}
+}
+
+country_event = { #deprecated
+	id = debug.1776
+	title = debug.1776.t
+	desc = debug.1776.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.1776"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #USA 
+		name = debug.1776.a
+		#set_cosmetic_tag = USA_REP
+	}
+}
+
+country_event = { #seminole
+	id = debug.1777
+	title = debug.1777.t
+	desc = debug.1777.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.1777"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #SEMINOLE GANG
+		name = debug.1777.a
+		SEM = { 
+			transfer_state = 921
+		}
+		921 = {
+			add_core_of = SEM
+		}
+	}
+}
+
+country_event = {
+	id = debug.1778
+	title = debug.1778.t
+	desc = debug.1778.d
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.1778"}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = debug.1778.a
+		RUK = {
+			transfer_state = 995
+			transfer_state = 993
+			transfer_state = 226
+			transfer_state = 227
+			transfer_state = 228
+			add_state_core = 995
+			add_state_core = 993
+			add_state_core = 226
+			add_state_core = 227
+			add_state_core = 228
+		}
+	}
+
+	option = {
+		name = debug.1778.b
+		NUK = {
+			transfer_state = 201
+			transfer_state = 202
+			transfer_state = 199
+			transfer_state = 198
+			transfer_state = 192
+			add_state_core = 201
+			add_state_core = 202
+			add_state_core = 199
+			add_state_core = 198
+			add_state_core = 192
+		}
+	}
+
+	option = {
+		name = debug.1778.c
+		PAU = {
+			transfer_state = 200
+			transfer_state = 196
+			add_state_core = 200
+			add_state_core = 196
+		}
+	}
+}
+country_event = { #APOC cosmetic tags
+	id = debug.1984
+	title = debug.1.1984
+	desc = debug.1984.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.1984"}
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = { #Ford cosmetic tag
+		name = debug.1984.a
+		set_cosmetic_tag = APO_FRD
+	}
+}
+country_event = { #APOC cosmetic tags
+	id = debug.1985
+	title = debug.1985.t
+	desc = debug.1985.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.1985"}
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = { #Ford cosmetic tag
+		name = debug.1985.a
+		clr_country_flag = ENG_PM_John_Simon_flag
+		clr_country_flag = ENG_PM_Douglas_Hogg_flag
+		set_country_flag = ENG_PM_James_Gascoyne_Cecil_flag
+	}
+
+	option = { #Ford cosmetic tag
+		name = debug.1985.b
+		clr_country_flag = ENG_PM_Douglas_Hogg_flag
+		clr_country_flag = ENG_PM_James_Gascoyne_Cecil_flag
+		set_country_flag = ENG_PM_John_Simon_flag
+	}
+}
+country_event = { #debug
+	id = debug.9000
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.9000"}
+	title = world.2.t
+	desc = world.2.desc
+#	picture = 
+	hidden = yes
+	is_triggered_only = yes
+	#immediate = {
+	
+#	}
+	
+	option = { #f
+		name = world.2.a
+		every_country = {
+			limit = {NOT = {tag = ENG}}
+			add_to_array = { prev.country_array = this } 
+		}
+	}
+}
+country_event = { #debug
+	id = debug.9001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.9001"}
+	title = england.2.t
+	desc = eng_gorg_desc
+	picture = GFX_report_event_england_royal_funeral
+	#hidden = yes
+	is_triggered_only = yes
+	#immediate = {
+	
+#	}
+	
+	option = { #f
+		name = "A titan of the modern age has passed away."
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "British Parliament"
+			desc = "POLITICS_PARLIAMENT_DESC"
+			picture = "Portrait_ENG_Big_Building_In_New_London.dds"
+			expire = "1999.12.12"
+			ideology = absolutism_subtype
+			traits = {
+			}
+			}
+		hidden_effect = {
+		every_country = {
+			#sound_effect = "soundeffect_jackass" 
+			#set_country_flag = Super_Event_Visible
+			#set_country_flag = superevent_amrev
+			sound_effect = "soundeffect_george_died" 
+			set_country_flag = Super_Event_Visible
+			set_country_flag = superevent_george_v_dead
+		}
+		}
+	}
+}
+
+country_event = {
+	id = debug.9002
+	immediate = { log = "[GetDateText]: [Root.GetName]: event debug.9002" }
+	title = "Mexico Super Event Debug"
+	desc = ""
+	picture = GFX_report_event_england_royal_funeral
+	is_triggered_only = yes
+
+	option = { #f
+		name = "dabadoo daabedee"
+
+		hidden_effect = {
+			every_country = {
+				#sound_effect = "soundeffect_george_died" 
+				set_country_flag = Super_Event_Visible
+				set_country_flag = superevent_mexican_civil_war
+			}
+		}
+	}	
+}
+#country_event = { #debug
+#	id = debug.9002
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event debug.9002"}
+#	title = world.2.t
+#	desc = world.2.desc
+##	picture = 
+#	hidden = yes
+#	is_triggered_only = yes
+#	#immediate = {
+#	
+##	}
+#	
+#	option = { #f
+#		name = world.2.a
+#		AAN = {
+#		add_anti_anglo = yes
+#		}
+#		RLC = {
+#		add_anti_anglo = yes
+#		}
+#		SSD = {
+#		add_anti_anglo = yes
+#		}
+#		USA = {
+#		add_anti_anglo = yes
+#		}
+#		USM = {
+#		add_anti_anglo = yes
+#		}
+#		ACA = {
+#		add_anti_anglo = yes
+#		}
+#		DIX = {
+#		add_anti_anglo = yes
+#		}
+#		AFC = {
+#		add_anti_anglo = yes
+#		}
+#	}
+#}

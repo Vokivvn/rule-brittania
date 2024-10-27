@@ -1,0 +1,66 @@
+ideas = {
+	country = {
+		SWN_Anti_Federation_Government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWN_Anti_Federation_Government"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWN_Anti_Federation_Government
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+		SWN_Auralian_Secession = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWN_Auralian_Secession"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWN_The_Auralian_Seccession
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.4
+				army_core_defence_factor = 0.2
+			}
+		}
+		SWN_Tiny_Population = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWN_Tiny_Population"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = SWN_Tiny_Population
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = -0.5
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_dockyard_factor = -0.2
+			}
+		}
+	}
+}

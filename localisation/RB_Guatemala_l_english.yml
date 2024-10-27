@@ -1,0 +1,9 @@
+﻿l_english:
+ ##Guatemala Names##
+ GUA_despotism:0 "Occupied Guatemala"
+ GUA_despotism_DEF:0 "The Occupied Zone of Guatemala"
+ GUA_despotism_ADJ:0 "Guatemalaian"
+
+ ##Party Names##
+ GUA_despotism_party:0 "Californian Marines"
+ GUA_despotism_party_long:0 "Joint Californian-Guatemalan Governing Council"

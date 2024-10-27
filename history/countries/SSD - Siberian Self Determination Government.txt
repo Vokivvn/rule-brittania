@@ -1,0 +1,165 @@
+﻿capital = 568
+
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = 0.5
+
+add_ideas = {
+	limited_conscription
+	british_pol_independence
+	british_independent_forces
+	expelled_british_econ_influence
+	SSD_Oligarch_For_The_People
+	SSD_Do_We_Need_Them
+	SIB_complete_selfreliance
+	SIB_grand_railroad
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 2 # PLACEHOLDER
+	#basic_heavy_tank = 2 # PLACEHOLDER
+	#basic_medium_tank = 2# PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+add_equipment_to_stockpile = {
+	type = CAS_equipment_1
+	amount = 30
+	producer = SSD
+}
+
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment_0
+	amount = 10
+	producer = SSD
+}
+
+add_equipment_to_stockpile = {
+	type = fighter_equipment_0
+	amount = 60
+	producer = SSD
+}
+
+set_politics = {
+	ruling_party = republicanism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+	cromwellianism = 0
+	marxism = 0
+	liberalism = 40
+	republicanism = 60
+	parliamentarianism = 0
+	administrationism = 0
+	absolutism = 0
+	despotism = 0
+	nationalism = 0
+}
+
+### Country Leaders ###
+create_country_leader = {
+	name = "Felix Yusupov"
+	desc = "YUSUPOV_DESC"
+	picture = "Portrait_SSD_Felix_Yusupov.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = {
+		man_in_gold
+	}
+}
+create_country_leader = {
+	name = "Maria Spiridonova"
+	desc = "SPIRID_DESC"
+	picture = "portrait_SSD_Maria_Spiridonova.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = {
+		martyr_of_the_revolution
+	}
+}
+
+### Generals ###
+create_field_marshal = {
+	name = "Alexander Pokryshkin"
+	picture = "Portrait_SSD_Punished_Pokryshkin.dds"
+	#traits = { reckless  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ivan Nekrasov"
+	picture = "Portrait_SSD_Ivan_Nekrasov.dds"
+	#traits = { reckless  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nestor Kozin"
+	picture = "Portrait_SSD_Nestor_Kozin.dds"
+	#traits = { reckless  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ivan Sereda"
+	picture = "Portrait_SSD_Ivan_Sereda.dds"
+	# traits = { reckless  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nikolai Totmin"
+	picture = "Portrait_SSD_Nikolay_Totmin.dds"
+	# traits = { reckless  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

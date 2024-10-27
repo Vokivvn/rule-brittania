@@ -1,0 +1,20 @@
+state={
+	id=933
+	name="STATE_933"
+	provinces={
+		13250 
+	}
+	history = {
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 7
+		}
+		victory_points = {
+			13250 10
+		}
+	}
+	manpower=687391
+	state_category=city
+	buildings_max_level_factor=1.000
+}

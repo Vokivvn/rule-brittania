@@ -1,0 +1,200 @@
+ideas = {
+	country = {
+		LOU_Idea_Crescent_City = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Crescent_City"}
+			allowed = {
+				always = no
+			}
+			picture = LOU_Crescent_City
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.05
+				trade_opinion_factor = 0.05
+			}
+		}
+		LOU_Idea_Native_Status_Autonomous = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Native_Status_Autonomous"}
+			allowed = {
+				always = no
+			}
+			picture = LOU_Autonomous_Natives
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.25
+				surrender_limit = 0.6 #calculate how much the native states affect this
+				# plan is to negate the native states in factoring capitulation
+			}
+		}
+		LOU_Idea_Native_Status_Integrated = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Native_Status_Integrated"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_research_bonus
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		LOU_Idea_Native_Status_Disregarded = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Native_Status_Disregarded"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_research_bonus
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		LOU_Idea_Bill_To_Fund_Scientists = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Bill_To_Fund_Scientists"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_research_bonus
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+		}
+		LOU_Idea_Sedition_And_Treason_Act = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Sedition_And_Treason_Act"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_research_bonus
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				encryption_factor = 0.25
+				#enemy_partisan_effect = 0.5
+			}
+		}
+		LOU_Idea_Norris_Strassen_Bill = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Norris_Strassen_Bill"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_neutrality_drift_bonus
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				#political_advisor_cost_factor = 1.25
+				war_support_factor = -0.15
+			}
+		}
+		LOU_Idea_Industrialisation_Bill = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Industrialisation_Bill"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_production_bonus
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		LOU_Idea_No_Step = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_No_Step"}
+			allowed = {
+				always = no
+			}
+			picture = LOU_Dont_Mess_With_Louisiana
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.2 
+				army_core_attack_factor = 0.2
+				defence = 0.25
+			}
+		}
+		LOU_Idea_Friends_Other_Side = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Friends_Other_Side"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_disjointed_gov
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				opinion_gain_monthly_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		LOU_Idea_House_Remodeling = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_House_Remodeling"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_disjointed_gov
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				opinion_gain_monthly_factor = 0.1
+				stability_weekly = 0.01
+				political_power_gain = 0.1
+				production_speed_infrastructure_factor = 0.25
+				industry_repair_factor = 0.25
+			}
+		}
+		LOU_Idea_Louisiana_Drills = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LOU_Idea_Louisiana_Drills"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_generic_disjointed_gov
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.25
+				army_core_attack_factor = 0.25
+				land_reinforce_rate = 0.25
+				army_org_factor = 0.15
+			}
+		}
+	}
+}

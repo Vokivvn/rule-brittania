@@ -1,0 +1,25 @@
+state={
+	id=856
+	name="STATE_856"
+	manpower = 440000
+	
+	state_category = rural
+	resources={
+		oil=1 # was: 3
+	}
+
+	history={
+		owner = LEV
+		buildings = {
+			infrastructure = 1
+			4562 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = LEV
+	}
+
+	provinces={
+		4562 5024 10850
+	}
+}

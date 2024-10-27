@@ -1,0 +1,104 @@
+﻿##########################################
+##EVERYONE GANGSTA TIL GEORGE PUMPS IRON##
+##########################################
+
+add_namespace = ukgeorge
+
+country_event = { #Intro
+	id = ukgeorge.0
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ukgeorge.0"}
+	title = ukgeorge.0.t
+	desc = ukgeorge.0.desc
+	picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = ukgeorge.0.a
+	}
+}
+
+country_event = { #Election
+	id = ukgeorge.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ukgeorge.1"}
+	title = ukgeorge.1.t
+	desc = ukgeorge.1.desc
+	picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = ukgeorge.1.a
+	}
+}
+
+country_event = { #Poltical Liberal Branch
+	id = ukgeorge.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ukgeorge.2"}
+	title = ukgeorge.2.t
+	desc = ukgeorge.2.desc
+	picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = ukgeorge.2.a
+		add_political_power = 10
+	}
+}
+
+country_event = { #Military Liberal Branch
+	id = ukgeorge.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ukgeorge.3"}
+	title = ukgeorge.3.t
+	desc = ukgeorge.3.desc
+	picture = GFX_report_event_soldiers_march
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = ukgeorge.3.a
+		add_political_power = 10
+	}
+}
+
+country_event = { #Economic Liberal Branch
+	id = ukgeorge.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ukgeorge.4"}
+	title = ukgeorge.4.t
+	desc = ukgeorge.4.desc
+	picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = ukgeorge.4.a
+		add_political_power = 10
+	}
+}
+
+country_event = { #Ecumenical Dialogue
+	id = ukgeorge.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ukgeorge.5"}
+	title = ukgeorge.5.t
+	desc = ukgeorge.5.desc
+	picture = GFX_report_event_england_rule_britannia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = ukgeorge.5.a
+		PPL = {
+		add_opinion_modifier = {
+			target = ENG
+			modifier = ENG_popeman_happy
+		}
+	}
+	}
+}

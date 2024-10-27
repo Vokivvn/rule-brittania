@@ -1,0 +1,32 @@
+RAJ_has_military_dominance = {
+	AND = {
+		check_variable = {
+			party_popularity@despotism > party_popularity@administrationism
+		}
+		check_variable = {
+			party_popularity@despotism > party_popularity@liberalism
+		}
+	}
+}
+RAJ_has_corporate_dominance = {
+	AND = {
+		check_variable = {
+			party_popularity@administrationism > party_popularity@despotism
+		}
+		check_variable = {
+			party_popularity@administrationism > party_popularity@liberalism
+		}
+	}
+}
+RAJ_has_congress_dominance = {
+	AND = {
+		check_variable = {
+			party_popularity@liberalism > party_popularity@administrationism
+		}
+		check_variable = {
+			party_popularity@liberalism > party_popularity@despotism
+		}
+	}
+}
+
+#use as a trigger to allow the ending focuses for the raj intro tree

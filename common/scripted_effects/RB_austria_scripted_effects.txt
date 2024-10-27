@@ -1,0 +1,50 @@
+##oh boy okay uh fuck how does this work. i've made a BIG mistake thinking this was a good idea - mop
+
+AUS_recalculate_estates = {    
+    AUS = { ##Clergy Percentage
+        set_variable = { AUS_clergy_number = 0 }
+        set_variable = { AUS_total_states_1 = 0 }
+        every_owned_state = {
+            add_to_variable = { AUS.AUS_total_states_1 = 1 }
+        }
+        every_owned_state = {
+            limit = {
+                has_state_flag = AUS_clergy_control
+            }
+            add_to_variable = { AUS.AUS_clergy_number = 1 }
+        }
+        divide_variable = { AUS_clergy_number = AUS_total_states_1 }
+        multiply_variable = { AUS_clergy_number = 100 }
+    }
+    AUS = { ##nobility Percentage
+        set_variable = { AUS_nobility_number = 0 }
+        set_variable = { AUS_total_states_2 = 0 }
+        every_owned_state = {
+            add_to_variable = { AUS.AUS_total_states_2 = 1 }
+        }
+        every_owned_state = {
+            limit = {
+                has_state_flag = AUS_nobility_control
+            }
+            add_to_variable = { AUS.AUS_nobility_number = 1 }
+        }
+        divide_variable = { AUS_nobility_number = AUS_total_states_2 }
+        multiply_variable = { AUS_nobility_number = 100 }
+    }
+    AUS = { ##burghers Percentage
+        set_variable = { AUS_burghers_number = 0 }
+        set_variable = { AUS_total_states_3 = 0 }
+        every_owned_state = {
+            add_to_variable = { AUS.AUS_total_states_3 = 1 }
+        }
+        every_owned_state = {
+            limit = {
+                has_state_flag = AUS_burghers_control
+            }
+            add_to_variable = { AUS.AUS_burghers_number = 1 }
+        }
+        divide_variable = { AUS_burghers_number = AUS_total_states_3 }
+        multiply_variable = { AUS_burghers_number = 100 }
+    }
+
+}

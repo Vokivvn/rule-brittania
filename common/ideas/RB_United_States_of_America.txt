@@ -1,0 +1,305 @@
+ideas = {
+	country = {
+		USA_american_revolution_devastation_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_american_revolution_devastation_idea"}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+
+			removal_cost = -1
+		}
+		USA_british_blockade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_british_blockade"}
+			allowed = {
+				always = no
+			}
+
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+
+			removal_cost = -1
+		}
+		USA_gun_in_every_hand = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_gun_in_every_hand"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.3
+					reliability = -0.1
+				}
+			}	
+			
+			removal_cost = -1
+		}
+		USA_blunt_the_british = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_blunt_the_british"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				army_core_defence_factor = 0.2
+			}	
+			
+			removal_cost = -1
+		}
+		USA_down_with_the_british = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_down_with_the_british"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				army_core_attack_factor = 0.2
+			}	
+			
+			removal_cost = -1
+		}
+		USA_guerilla_warfare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_guerilla_warfare"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				#partisan_effect = 0.15
+				attrition = -0.1
+				dig_in_speed_factor = 0.2
+				army_speed_factor = 0.075
+			}	
+			
+			removal_cost = -1
+		}
+		USA_mass_recruitment = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_mass_recruitment"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				conscription = 0.02
+			}	
+			
+			removal_cost = -1
+		}
+		USA_new_talent = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_new_talent"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				experience_gain_army_factor = 0.2
+				experience_loss_factor = -0.3
+			}	
+			
+			removal_cost = -1
+		}
+		USA_new_talent_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_new_talent_2"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				experience_gain_army_factor = 0.2
+				experience_loss_factor = -0.3
+				army_leader_start_level = 1
+				army_leader_start_attack_level = 1
+				army_leader_start_planning_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 1
+			}	
+			
+			removal_cost = -1
+		}
+		USA_wartime_industrialization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_wartime_industrialization"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.5
+				production_factory_max_efficiency_factor = 0.2
+			}	
+			
+			removal_cost = -1
+		}
+		USA_counterespionage_revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_wartime_industrialization"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				decryption_factor = 0.1
+				encryption_factor = 0.5
+			}	
+			
+			removal_cost = -1
+		}
+		USA_macarthur_force = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_macarthur_force"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				offence = 0.1
+				army_speed_factor = 0.05
+			}	
+			
+			removal_cost = -1
+		}
+		USA_macarthur_force_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_macarthur_force_2"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				offence = 0.2
+				defence = -0.1
+				army_speed_factor = 0.1
+			}	
+			
+			removal_cost = -1
+		}
+		USA_mass_offensives_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_mass_offensives_idea"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				offence = 0.15
+			}
+			
+			removal_cost = -1
+		}
+		USA_strong_america_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_strong_america_idea"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+			
+			removal_cost = -1
+		}
+		USA_strong_america_idea_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_strong_america_idea_2"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.2
+				army_core_defence_factor = 0.1
+				training_time_factor = -0.1
+			}
+			
+			removal_cost = -1
+		}
+		USA_solidarity_against_london_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_solidarity_against_london_1"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = CNA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			
+			removal_cost = -1
+		}
+		USA_solidarity_against_london_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_solidarity_against_london_2"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = CNA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			
+			removal_cost = -1
+		}
+		USA_solidarity_against_louisiana = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_solidarity_against_louisiana"}
+			allowed = {
+				always = no
+			}
+			
+			picture = AST_End_Of_Gold_Rush
+			
+			targeted_modifier = {
+				tag = LOU
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			
+			removal_cost = -1
+		}
+	}
+}

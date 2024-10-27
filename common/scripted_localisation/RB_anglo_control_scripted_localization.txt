@@ -1,0 +1,61 @@
+defined_text = {
+	name = GetAngloControlIconPop
+	text = {
+		trigger = {
+			check_variable = { anglo_control > 80 }
+		}
+		localization_key = GFX_anglo_control_population_1
+	}
+	text = {
+		trigger = {
+			check_variable = { anglo_control > 60 }
+		}
+		localization_key = GFX_anglo_control_population_2
+	}
+	text = {
+		trigger = {
+			check_variable = { anglo_control > 40 }
+		}
+		localization_key = GFX_anglo_control_population_3
+	}
+	text = {
+		trigger = {
+			check_variable = { anglo_control > 20 }
+		}
+		localization_key = GFX_anglo_control_population_4
+	}
+	text = {
+		localization_key = GFX_anglo_control_population_5
+	}
+}
+
+defined_text = {
+	name = GetAngloControlIconLand
+	text = {
+		trigger = {
+			check_variable = { anglo_control_land > 80 }
+		}
+		localization_key = GFX_anglo_control_land_1
+	}
+	text = {
+		trigger = {
+			check_variable = { anglo_control_land > 60 }
+		}
+		localization_key = GFX_anglo_control_land_2
+	}
+	text = {
+		trigger = {
+			check_variable = { anglo_control_land > 40 }
+		}
+		localization_key = GFX_anglo_control_land_3
+	}
+	text = {
+		trigger = {
+			check_variable = { anglo_control_land > 20 }
+		}
+		localization_key = GFX_anglo_control_land_4
+	}
+	text = {
+		localization_key = GFX_anglo_control_land_5
+	}
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+ ##Darian Names##
+ PAN_absolutism:0 "Dominion of Caledonia"
+ PAN_absolutism_DEF:0 "The Dominion of Caledonia"
+ PAN_absolutism_ADJ:0 "Caledonian"
+
+ ##Party Names##
+ PAN_absolutism_party:0 "Fraser of Lovat"
+ PAN_absolutism_party_long:0 "Clan Fraser of Lovat"

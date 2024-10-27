@@ -1,0 +1,1627 @@
+focus_tree = {
+	id = oh_boy_its_chili_outside
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = CHL
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 50 y = 200 }
+
+	focus = {
+		id = CHL_Opening_Focus_Thats_Basically_Filler_tbh
+		icon = GFX_Extravagance
+		x = 46
+		y = 0
+		cost = 8
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Opening_Focus_Thats_Basically_Filler_tbh"
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = CHL_Sabre_Rattling
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Opening_Focus_Thats_Basically_Filler_tbh
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Opening_Focus_Thats_Basically_Filler_tbh
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Sabre_Rattling"
+			add_war_support = 0.1
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = CHL_Army_Nation_Army_Nation
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Sabre_Rattling
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Sabre_Rattling
+		}
+		mutually_exclusive = {
+			focus = CHL_Navy_Junta_Navy_Junta
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Army_Nation_Army_Nation"
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = CHL_Navy_Junta_Navy_Junta
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Sabre_Rattling
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Sabre_Rattling
+		}
+		mutually_exclusive = {
+			focus = CHL_Army_Nation_Army_Nation
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Navy_Junta_Navy_Junta"
+			add_popularity = {
+				ideology = administrationism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = CHL_Invest_In_MAaM
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Army_Nation_Army_Nation
+		x = -34
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Army_Nation_Army_Nation
+			focus = CHL_Navy_Junta_Navy_Junta
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Invest_In_MAaM"
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = CHL_Dayton_Flyers_Tournament_Question
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Invest_In_MAaM
+		x = -6
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Invest_In_MAaM
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Dayton_Flyers_Tournament_Question"
+			#country event
+		}
+	}
+	focus = {
+		id = CHL_Airforce_Soars
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Dayton_Flyers_Tournament_Question
+		x = 4
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Dayton_Flyers_Tournament_Question
+		}
+		mutually_exclusive = {
+			focus = CHL_Airforce_Held_Down
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Airforce_Soars"
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = CHL_A_Proper_Budget_For_Maintanance
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Airforce_Soars
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Airforce_Soars
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_A_Proper_Budget_For_Maintanance"
+			add_ideas = CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid
+		}
+	}
+	focus = {
+		id = CHL_Research_Radar
+		icon = GFX_Extravagance
+		relative_position_id = CHL_A_Proper_Budget_For_Maintanance
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_A_Proper_Budget_For_Maintanance
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Research_Radar"
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = radar_tech
+			}
+			swap_ideas = {
+				remove_idea = CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid
+				add_idea = CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dos
+			}
+		}
+	}
+	focus = {
+		id = CHL_Excellence_In_Education
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Research_Radar
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Research_Radar
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Excellence_In_Education"
+			swap_ideas = {
+				remove_idea = CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dos
+				add_idea = CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dwes
+			}
+		}
+	}
+	focus = {
+		id = CHL_Flexible_Planning
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Airforce_Soars
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Airforce_Soars
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Flexible_Planning"
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CHL_Fighter_Planes
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Flexible_Planning
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Flexible_Planning
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Fighter_Planes"
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = CHL_Big_Boys_IN_The_Sky
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Fighter_Planes
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Fighter_Planes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Big_Boys_IN_The_Sky"
+		}
+	}
+	focus = {
+		id = CHL_Bomber_PLanes
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Flexible_Planning
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Flexible_Planning
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Bomber_PLanes"
+		}
+	}
+	focus = {
+		id = CHL_In_The_Sea_OR_ON_The_Ground
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Bomber_PLanes
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Bomber_PLanes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_In_The_Sea_OR_ON_The_Ground"
+		}
+	}
+	focus = {
+		id = CHL_Airforce_Held_Down
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Dayton_Flyers_Tournament_Question
+		x = -3
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Dayton_Flyers_Tournament_Question
+		}
+		mutually_exclusive = {
+			focus = CHL_Airforce_Soars
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Airforce_Held_Down"
+		}
+	}
+	focus = {
+		id = CHL_Shift_To_Recon
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Airforce_Held_Down
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Airforce_Held_Down
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Shift_To_Recon"
+		}
+	}
+	focus = {
+		id = CHL_Info_Or_The_Plane_Ride
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Shift_To_Recon
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Shift_To_Recon
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Info_Or_The_Plane_Ride"
+		}
+	}
+	focus = {
+		id = CHL_Support_For_The_Troops
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Airforce_Held_Down
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Airforce_Held_Down
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Support_For_The_Troops"
+		}
+	}
+	focus = {
+		id = CHL_B17_Bomber
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Support_For_The_Troops
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Support_For_The_Troops
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_B17_Bomber"
+		}
+	}
+	focus = {
+		id = CHL_Ground_Rather_Than_Air #add manpower later
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Airforce_Held_Down
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Airforce_Held_Down
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Ground_Rather_Than_Air"
+		}
+	}
+	focus = {
+		id = CHL_Minimal_Infrastructure
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Ground_Rather_Than_Air
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Ground_Rather_Than_Air
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Minimal_Infrastructure"
+		}
+	}
+	focus = {
+		id = CHL_The_Triple_Parentheses_DNC_Elite
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Invest_In_MAaM
+		x = 10
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Invest_In_MAaM
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_The_Triple_Parentheses_DNC_Elite"
+		}
+	}
+	focus = {
+		id = CHL_O_Higgins_Strategy
+		icon = GFX_Extravagance
+		relative_position_id = CHL_The_Triple_Parentheses_DNC_Elite
+		x = -6
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_The_Triple_Parentheses_DNC_Elite
+		}
+		
+		mutually_exclusive = {
+			focus = CHL_Andean_Strategy
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_O_Higgins_Strategy"
+		}
+	}
+	focus = {
+		id = CHL_Mobile_Warfare
+		icon = GFX_Extravagance
+		relative_position_id = CHL_O_Higgins_Strategy
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_O_Higgins_Strategy
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Mobile_Warfare"
+		}
+	}
+	focus = {
+		id = CHL_Bikes_In_The_Andes
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Mobile_Warfare
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Mobile_Warfare
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Bikes_In_The_Andes"
+		}
+	}
+	focus = {
+		id = CHL_Trucking_Across_The_Nation
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Mobile_Warfare
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Mobile_Warfare
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Trucking_Across_The_Nation"
+		}
+	}
+	focus = {
+		id = CHL_Speed_Up_Training
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Bikes_In_The_Andes
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Bikes_In_The_Andes
+			focus = CHL_Trucking_Across_The_Nation
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Speed_Up_Training"
+		}
+	}
+	focus = {
+		id = CHL_Rethink_And_Replan
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Speed_Up_Training
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Speed_Up_Training
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Rethink_And_Replan"
+		}
+	}
+	focus = {
+		id = CHL_Charge_On_UCF_National_Champions_2018
+		icon = GFX_Extravagance
+		relative_position_id = CHL_O_Higgins_Strategy
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_O_Higgins_Strategy
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Charge_On_UCF_National_Champions_2018"
+		}
+	}
+	focus = {
+		id = CHL_Psych_Them_Out
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Charge_On_UCF_National_Champions_2018
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Charge_On_UCF_National_Champions_2018
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Psych_Them_Out"
+		}
+	}
+	focus = {
+		id = CHL_Gas_Them_Out_Er_Here
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Psych_Them_Out
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Psych_Them_Out
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Gas_Them_Out_Er_Here"
+		}
+	}
+	focus = {
+		id = CHL_Plan_To_Believe_In
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Gas_Them_Out_Er_Here
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Gas_Them_Out_Er_Here
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Plan_To_Believe_In"
+		}
+	}
+	focus = {
+		id = CHL_Andean_Strategy
+		icon = GFX_Extravagance
+		relative_position_id = CHL_The_Triple_Parentheses_DNC_Elite
+		x = 6
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_The_Triple_Parentheses_DNC_Elite
+		}
+		
+		mutually_exclusive = {
+			focus = CHL_O_Higgins_Strategy
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Andean_Strategy"
+		}
+	}
+	focus = {
+		id = CHL_Defend_the_Andes
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Andean_Strategy
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Andean_Strategy
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Defend_the_Andes"
+		}
+	}
+	focus = {
+		id = CHL_Pacific_Rim
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Defend_the_Andes
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Defend_the_Andes
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Pacific_Rim"
+		}
+	}
+	focus = {
+		id = CHL_Stamp_Out_Resistance
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Defend_the_Andes
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Defend_the_Andes
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Stamp_Out_Resistance"
+		}
+	}
+	focus = {
+		id = CHL_Not_Broken_Not_Fixed_Army
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Andean_Strategy
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Andean_Strategy
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Not_Broken_Not_Fixed_Army"
+		}
+	}
+	focus = {
+		id = CHL_Military_Officer_Knowledge
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Not_Broken_Not_Fixed_Army
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Not_Broken_Not_Fixed_Army
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Military_Officer_Knowledge"
+		}
+	}
+	focus = {
+		id = CHL_Best_Offense_Is_Great_Defense
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Military_Officer_Knowledge
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Military_Officer_Knowledge
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Best_Offense_Is_Great_Defense"
+		}
+	}
+	focus = {
+		id = CHL_Guns_And_More_Guns
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Not_Broken_Not_Fixed_Army
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Not_Broken_Not_Fixed_Army
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Guns_And_More_Guns"
+		}
+	}
+	focus = {
+		id = CHL_Bring_Out_The_Big_Guns_Authors_Note_Artilery
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Guns_And_More_Guns
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Guns_And_More_Guns
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Bring_Out_The_Big_Guns_Authors_Note_Artilery"
+		}
+	}
+	focus = {
+		id = CHL_Plan_For_Everything
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Best_Offense_Is_Great_Defense
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Bring_Out_The_Big_Guns_Authors_Note_Artilery
+		}
+		prerequisite = {
+			focus = CHL_Best_Offense_Is_Great_Defense
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Plan_For_Everything"
+		}
+	}
+	focus = {
+		id = CHL_Chilian_Experience
+		icon = GFX_Extravagance
+		relative_position_id = CHL_The_Triple_Parentheses_DNC_Elite
+		x = 0
+		y = 2
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_O_Higgins_Strategy
+			focus = CHL_Andean_Strategy
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Chilian_Experience"
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = CHL_Expand_The_Weapons_Industry
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Chilian_Experience
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Chilian_Experience
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Expand_The_Weapons_Industry"
+			add_ideas = CHL_Idea_Expansy_Weapansy_Tactisities
+		}
+	}
+	focus = {
+		id = CHL_Increase_Recruitment_Tactics
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Chilian_Experience
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Chilian_Experience
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Increase_Recruitment_Tactics"
+			swap_ideas = {
+				remove_idea = limited_conscription
+				add_idea = extensive_conscription
+			}
+		}
+	}
+	focus = {
+		id = CHL_Ole_War_Skule
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Increase_Recruitment_Tactics
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Increase_Recruitment_Tactics
+		}
+		prerequisite = {
+			focus = CHL_Expand_The_Weapons_Industry
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Ole_War_Skule"
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = CHL_Loan_Because_Paper_Isnt_Real_Money
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Army_Nation_Army_Nation
+		x = -9
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Army_Nation_Army_Nation
+			focus = CHL_Navy_Junta_Navy_Junta
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Loan_Because_Paper_Isnt_Real_Money"
+		}
+	}
+	focus = {
+		id = CHL_CIS_Invest
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Loan_Because_Paper_Isnt_Real_Money
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Loan_Because_Paper_Isnt_Real_Money
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_CIS_Invest"
+		}
+	}
+	focus = {
+		id = CHL_Expand_The_Roads
+		icon = GFX_Extravagance
+		relative_position_id = CHL_CIS_Invest
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_CIS_Invest
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Expand_The_Roads"
+		}
+	}
+	focus = {
+		id = CHL_Establish_Worker_Cities
+		icon = GFX_Extravagance
+		relative_position_id = CHL_CIS_Invest
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_CIS_Invest
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Establish_Worker_Cities"
+		}
+	}
+	focus = {
+		id = CHL_Initiate_Public_Works_Projects
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Expand_The_Roads
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Expand_The_Roads
+		}
+		prerequisite = {
+			focus = CHL_Establish_Worker_Cities
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Initiate_Public_Works_Projects"
+		}
+	}
+	focus = {
+		id = CHL_Geata_Na_Greine_PLC
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Loan_Because_Paper_Isnt_Real_Money
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Loan_Because_Paper_Isnt_Real_Money
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Geata_Na_Greine_PLC"
+		}
+	}
+	focus = {
+		id = CHL_Develop_An_Candelaria
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Geata_Na_Greine_PLC
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Geata_Na_Greine_PLC
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Develop_An_Candelaria"
+		}
+	}
+	focus = {
+		id = CHL_Make_Them_Work_For_Their_Pay
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Geata_Na_Greine_PLC
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Geata_Na_Greine_PLC
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Make_Them_Work_For_Their_Pay"
+		}
+	}
+	focus = {
+		id = CHL_Protect_The_Mines
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Develop_An_Candelaria
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Develop_An_Candelaria
+		}
+		prerequisite = {
+			focus = CHL_Make_Them_Work_For_Their_Pay
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Protect_The_Mines"
+		}
+	}
+	focus = {
+		id = CHL_Patagonia_Issues
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Army_Nation_Army_Nation
+		x = 1
+		y = 1
+		cost = 8
+		
+		available = { #wait for patagonia things
+			if = {
+				PAT = {
+					is_subject_of = CHL
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = CHL_Army_Nation_Army_Nation
+			focus = CHL_Navy_Junta_Navy_Junta
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Patagonia_Issues"
+		}
+	}
+	focus = {
+		id = CHL_Round_Two_Lets_Go_Oorah_Semper_Fi
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Patagonia_Issues
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Patagonia_Issues
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Round_Two_Lets_Go_Oorah_Semper_Fi"
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PAT
+			}
+		}
+	}
+	focus = {
+		id = CHL_Intervention_Into_The_Colony_lets_Go
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Patagonia_Issues
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Patagonia_Issues
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Intervention_Into_The_Colony_lets_Go"
+			puppet = PAT
+		}
+	}
+	focus = {
+		id = CHL_Setting_Up_The_Puppet_OGov
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Intervention_Into_The_Colony_lets_Go
+		x = -1
+		y = 1
+		cost = 8
+		
+		available = {
+			if = {
+				PAT = {
+					is_subject_of = CHL
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = CHL_Intervention_Into_The_Colony_lets_Go
+			focus = CHL_Round_Two_Lets_Go_Oorah_Semper_Fi
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Setting_Up_The_Puppet_OGov"
+		}
+	}
+	focus = {
+		id = CHL_Shipping_Away_Their_Resources
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Setting_Up_The_Puppet_OGov
+		x = -3
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Setting_Up_The_Puppet_OGov
+		}
+		
+		available = {
+			if = {
+				PAT = {
+					is_subject_of = CHL
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Shipping_Away_Their_Resources"
+			give_resource_rights = {
+				receiver = ENG
+				state = 195
+			}
+			give_resource_rights = {
+				receiver = ENG
+				state = 299
+			}
+			give_resource_rights = {
+				receiver = ENG
+				state = 507
+			}
+			give_resource_rights = {
+				receiver = ENG
+				state = 512
+			}
+		}
+	}
+	focus = {
+		id = CHL_Minecraft_Reference_Question_Mark_Ah_Man_Do_You_Get_It
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Shipping_Away_Their_Resources
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Shipping_Away_Their_Resources
+		}
+		
+		available = {
+			if = {
+				PAT = {
+					is_subject_of = CHL
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Minecraft_Reference_Question_Mark_Ah_Man_Do_You_Get_It"
+			add_resource = {
+				type = oil
+				amount = 3
+				state = 512
+			}
+		}
+	}
+	focus = {
+		id = CHL_Fortifying_The_Colorado_Wait_Wtf_Thats_In_America
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Setting_Up_The_Puppet_OGov
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Setting_Up_The_Puppet_OGov
+		}
+		
+		available = {
+			if = {
+				PAT = {
+					is_subject_of = CHL
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Fortifying_The_Colorado_Wait_Wtf_Thats_In_America"
+			custom_effect_tooltip = CHL_Fortify_The_Colorado_tt
+			hidden_effect = {
+				512 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 12321
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 12306
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 2199
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 5169
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 12954
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHL_Ending_The_Patagonian_Conflict_For_Good
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Fortifying_The_Colorado_Wait_Wtf_Thats_In_America
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Fortifying_The_Colorado_Wait_Wtf_Thats_In_America
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		mutually_exclusive = {
+			focus = CHL_Peacekeeping_In_Patagonia_Hashtag_UN_Things
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Ending_The_Patagonian_Conflict_For_Good"
+			add_ideas = CHL_Idea_I_Hatesy_Watesy_Patagonya_Kun
+		}
+	}
+	focus = {
+		id = CHL_Peacekeeping_In_Patagonia_Hashtag_UN_Things
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Fortifying_The_Colorado_Wait_Wtf_Thats_In_America
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Fortifying_The_Colorado_Wait_Wtf_Thats_In_America
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		mutually_exclusive = {
+			focus = CHL_Ending_The_Patagonian_Conflict_For_Good
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Peacekeeping_In_Patagonia_Hashtag_UN_Things"
+			add_ideas = CHL_Idea_Peasy_Weasy_Keepsy_Weepsy
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = CHL_Corporate_Rule_In_The_South
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Setting_Up_The_Puppet_OGov
+		x = 3
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Setting_Up_The_Puppet_OGov
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Corporate_Rule_In_The_South"
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	focus = {
+		id = CHL_Connect_Their_Railways
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Corporate_Rule_In_The_South
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Corporate_Rule_In_The_South
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Connect_Their_Railways"
+			195 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			512 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHL_Unification_Of_The_British_South
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Ending_The_Patagonian_Conflict_For_Good
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Minecraft_Reference_Question_Mark_Ah_Man_Do_You_Get_It
+		}
+		prerequisite = {
+			focus = CHL_Ending_The_Patagonian_Conflict_For_Good
+			focus = CHL_Peacekeeping_In_Patagonia_Hashtag_UN_Things
+		}
+		prerequisite = {
+			focus = CHL_Connect_Their_Railways
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Unification_Of_The_British_South"
+		}
+		# activate_decision = CHL_decision_Patagonia_Unification
+	}
+	focus = {
+		id = CHL_Seperate_But_Certainly_Not_Equal
+		icon = GFX_Extravagance
+		relative_position_id = CHL_Peacekeeping_In_Patagonia_Hashtag_UN_Things
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = CHL_Minecraft_Reference_Question_Mark_Ah_Man_Do_You_Get_It
+		}
+		prerequisite = {
+			focus = CHL_Ending_The_Patagonian_Conflict_For_Good
+			focus = CHL_Peacekeeping_In_Patagonia_Hashtag_UN_Things
+		}
+		prerequisite = {
+			focus = CHL_Connect_Their_Railways
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: CHL_Seperate_But_Certainly_Not_Equal"
+		}
+	}

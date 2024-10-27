@@ -1,0 +1,23 @@
+
+state={
+	id=800
+	name="STATE_800"
+
+	history={
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			7899 5
+		}
+	}
+
+	provinces={
+		1769 4775 7899 10718 13159 13161 
+	}
+	manpower=113245
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

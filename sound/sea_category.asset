@@ -1,0 +1,14 @@
+category = {
+ name = "Horn Blasts"
+ soundeffects = {
+	soundeffect_horn_blast
+ }
+}
+category = {
+ name = "Superevent Sound Effects"
+ soundeffects = {
+	soundeffect_jackass
+	soundeffect_george_died
+ }
+}
+

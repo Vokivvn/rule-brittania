@@ -1,0 +1,23 @@
+state={ ##Charles
+	id=974
+	name="STATE_974"
+
+	history={
+		owner = TEX
+		victory_points = {
+			4507 5
+		}
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = TEX
+		add_core_of = LOU
+	}
+	provinces={
+		4507 12313 1528
+	}
+	manpower=71993
+	state_category=rural
+}

@@ -1,0 +1,58 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	Loyalty_to_the_Crown_opinion = { #affirming loyalty to the Anglostan
+		value = 30
+	}
+	CNA_loyal_commonwealth = {
+		value = 50
+	}
+	CNA_celebrating_empire = {
+		value = 50
+	}
+	LIT_I_Hate_Minorities = {
+		value = -50
+	}
+	LTH_Friendship_Time = {
+		value = 25
+	}
+	LTH_Expanded_Markets = {
+		trade = yes
+		value = 25
+	}
+	AUS_alpine_friendship = {
+		value = 25
+	}
+	AUS_silesian_relations = {
+		value = 50
+	}
+	AUS_rhenish_diplomacy = {
+		value = 25
+	}
+	AB_pakt = {
+		value = 25
+	}
+	AB_FWT = {
+		value = 35
+	}
+	FRA_Followed_orders = {
+		value = 20
+	}
+	FRA_Ignored_Orders = {
+		value = -20
+	}
+	ENG_popeman_happy = { #ecumenical dialogue makes Pope happy
+		value = 20
+	}
+	generic_historical_ties = {
+		value = 30
+	}
+}	

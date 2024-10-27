@@ -1,0 +1,24 @@
+
+state={
+	id=986
+	name="STATE_986"
+	provinces={
+		1952 4956 13269 
+	}
+	history = {
+		owner = MEX
+		add_core_of = MEX
+		victory_points = {
+			4956 30
+		}
+		victory_points = {
+			13269 10
+		}
+		victory_points = {
+			1952 5
+		}
+	}
+	manpower=629779
+	state_category=city
+	buildings_max_level_factor=1.000
+}

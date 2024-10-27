@@ -1,0 +1,13 @@
+################
+##### FRA ######
+################
+
+FRA_resistance_attacks = {
+	picture = GFX_FRA_decision_revolt
+	allowed = {
+		tag = FRA		
+	}
+	visible = {
+		has_country_flag = fra_ongoing_revolt
+	}
+}

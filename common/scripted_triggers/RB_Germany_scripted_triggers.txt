@@ -1,0 +1,21 @@
+is_PRU = {
+	OR = {
+		tag = PRU
+		tag = KPD
+	}
+}
+is_thuringian_state = {
+	OR = {
+		tag = SWM
+		tag = NRD
+		tag = SEN
+		tag = SAL
+		tag = ERF
+		tag = RGE
+		tag = RGR
+		tag = NAU
+		tag = RDL
+		tag = SON
+		tag = MHL
+	}
+}

@@ -1,0 +1,404 @@
+shared_focus = {
+	id = KEN_almost_heaven
+	icon = GFX_focus_eng_imperial_federation
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	x = 11
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_almost_heaven"
+		add_political_power = 50
+
+	}
+}
+
+shared_focus = {
+	id = KEN_faster_and_easier
+	icon = GFX_focus_eng_special_air_service
+	cost = 4.00
+
+	ai_will_do = {
+		factor = 40
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_almost_heaven
+	}
+
+	mutually_exclusive = {
+		focus = KEN_methodical_and_slow
+	}
+
+	x = 9
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_faster_and_easier"
+		add_political_power = -100
+		add_to_variable = { KEN_native_unrest = 5 }
+
+	}
+}
+
+shared_focus = {
+	id = KEN_move_the_natives
+	icon = GFX_goal_generic_propaganda
+	cost = 3.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_faster_and_easier
+	}
+
+	x = 8
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_move_the_natives"
+		888 = {
+			add_manpower = -8953
+		}
+		890 = {
+			add_manpower = 4637
+		}
+		891 = {
+			add_manpower = 3329
+		}
+		add_political_power = -20
+		hidden_effect = {
+			country_event = { id = ken.28 days = 10 }
+		}
+	}
+}
+
+shared_focus = {
+	id = KEN_land_auctions
+	icon = GFX_goal_generic_intelligence_exchange
+	cost = 3.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_faster_and_easier
+	}
+
+	x = 10
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_land_auctions"
+		country_event = { id = ken.27 days = 2}
+	}
+}
+
+shared_focus = {
+	id = KEN_clean_operation
+	icon = GFX_goal_generic_demand_territory
+	cost = 4.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_move_the_natives
+	}
+
+	prerequisite = {
+		focus = KEN_land_auctions
+	}
+
+	x = 9
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_clean_operation"
+		set_country_flag = KEN_new_zone_fast
+		add_timed_idea = { idea = KEN_clean_operation_i days = 200}
+	}
+}
+
+shared_focus = {
+	id = KEN_methodical_and_slow
+	icon = GFX_goal_generic_position_armies
+	cost = 5.00
+
+	ai_will_do = {
+		factor = 60
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_almost_heaven
+	}
+
+	mutually_exclusive = {
+		focus = KEN_faster_and_easier
+	}
+
+	x = 13
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_methodical_and_slow"
+
+	}
+}
+
+shared_focus = {
+	id = KEN_practice_police_maneuvers
+	icon = GFX_goal_rhineland
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_methodical_and_slow
+	}
+
+	x = 12
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_practice_police_maneuvers"
+		#add_ideas
+	}
+}
+
+shared_focus = {
+	id = KEN_schedule_trains
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_methodical_and_slow
+	}
+
+	x = 14
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_schedule_trains"
+
+	}
+}
+
+shared_focus = {
+	id = KEN_prospect_new_land
+	icon = GFX_focus_generic_concessions
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_practice_police_maneuvers
+	}
+
+	prerequisite = {
+		focus = KEN_schedule_trains
+	}
+
+	x = 13
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_clean_operation"
+		set_country_flag = KEN_new_zone_slow
+		country_event = { id = ken.22 days = 1}
+	}
+}
+
+shared_focus = {
+	id = KEN_a_lovely_place
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_clean_operation
+		focus = KEN_prospect_new_land
+	}
+
+
+	x = 11
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_clean_operation"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = KEN_unintended_chaos
+	icon = GFX_focus_generic_provoke_border_clashes
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_a_lovely_place
+	}
+
+
+	x = 11
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_unintended_chaos"
+		add_stability = -0.05
+	}
+}
+
+shared_focus = {
+	id = KEN_stamp_it_down
+	icon = GFX_goal_generic_political_pressure
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_unintended_chaos
+	}
+
+	mutually_exclusive = {
+		focus = KEN_dont_worry
+	}
+
+	x = 10
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_stamp_it_down"
+		add_political_power = -50
+		#add_idea
+		add_war_support = 0.1
+		set_country_flag = KEN_worry_flag
+	}
+}
+
+shared_focus = {
+	id = KEN_dont_worry
+	icon = GFX_goal_tripartite_pact
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_unintended_chaos
+	}
+
+	mutually_exclusive = {
+		focus = KEN_stamp_it_down
+	}
+
+	x = 12
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_dont_worry"
+		add_political_power = 50
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.02
+		}
+		add_war_support = -0.1
+		set_country_flag = KEN_dont_worry_flag
+	}
+}
+
+shared_focus = {
+	id = KEN_intended_peace
+	icon = GFX_focus_hol_united_netherlands
+	cost = 6.00
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+
+	prerequisite = {
+		focus = KEN_stamp_it_down
+		focus = KEN_dont_worry
+	}
+
+	x = 11
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KEN_intended_peace"
+		add_stability = 0.05
+		if = {
+			limit = { has_country_flag = KEN_dont_worry_flag}
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+}

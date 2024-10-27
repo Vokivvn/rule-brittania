@@ -1,0 +1,34 @@
+
+state={
+	id=374
+	name="STATE_374"
+	resources={
+		oil=60.000
+		aluminium=20.000
+	}
+
+	history={
+		owner = LOU
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		victory_points = {
+			10798 10 
+		}
+		victory_points = {
+			7904 5
+		}
+		victory_points = {
+			4740 20
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		4740 4919 7762 7904 9822 10340 10702 10798 11802
+	}
+	manpower=2396039
+	buildings_max_level_factor=1.000
+	state_category=city
+}

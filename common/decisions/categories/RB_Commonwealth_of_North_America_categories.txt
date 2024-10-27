@@ -1,0 +1,55 @@
+CNA_public_works_category = {
+	allowed = {
+		tag = CNA
+	}
+	available = {
+		has_completed_focus = CNA_public_works_projects
+		NOT = { USA = { exists = yes } }
+	}
+	visible = {
+		has_completed_focus = CNA_public_works_projects
+		NOT = { USA = { exists = yes } }
+	}
+}
+
+CNA_american_insurrection_category = {
+	allowed = {
+		tag = CNA
+	}
+	visible = {
+		OR = {
+			has_war_with = USA
+			has_war_with = USM
+			has_war_with = SOL
+		}
+	}
+}
+
+CNA_british_support_category = {
+	allowed = {
+		tag = CNA
+	}
+	visible = {
+		OR = {
+			has_war_with = USA
+			has_war_with = USM
+			has_war_with = SOL
+		}
+		has_completed_focus = CNA_our_support_from_london
+		NOT = { has_country_flag = CNA_ENG_pulled_support }
+	}
+}
+
+CNA_popular_support_category = {
+	allowed = {
+		tag = CNA
+	}
+	visible = {
+		OR = {
+			has_war_with = USA
+			has_war_with = USM
+			has_war_with = SOL
+			has_global_flag = USA_revolution_over
+		}
+	}
+}

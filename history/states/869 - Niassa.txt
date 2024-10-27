@@ -1,0 +1,18 @@
+state={
+	id=869
+	name="STATE_869" #Niassa
+	manpower = 1000
+	
+	state_category = rural
+	
+	history={
+		owner = TZN
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		2159 2202 2217 10972 
+	}
+}

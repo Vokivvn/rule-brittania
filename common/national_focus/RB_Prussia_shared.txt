@@ -1,0 +1,415 @@
+shared_focus = {
+	id = PRU_preussens_gloria
+	icon = GFX_Crush_Resistance
+	cost = 3
+
+	x = 7
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_preussens_gloria"
+	}
+}
+
+shared_focus = {
+	id = PRU_affairs_of_peacetime
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_preussens_gloria
+	}
+	relative_position_id = PRU_preussens_gloria
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_affairs_of_peacetime"
+	}
+}
+
+shared_focus = {
+	id = PRU_matters_of_the_AGEI
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_affairs_of_peacetime
+	}
+	relative_position_id = PRU_affairs_of_peacetime
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_matters_of_the_AGEI"
+	}
+}
+
+shared_focus = {
+	id = PRU_deal_with_the_bavarians
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_matters_of_the_AGEI
+	}
+	relative_position_id = PRU_matters_of_the_AGEI
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_deal_with_the_bavarians"
+	}
+}
+
+shared_focus = {
+	id = PRU_we_aren't_bitter
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_deal_with_the_bavarians
+	}
+	relative_position_id = PRU_deal_with_the_bavarians
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_we_aren't_bitter"
+	}
+}
+
+shared_focus = {
+	id = PRU_appease_the_british
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_we_aren't_bitter
+	}
+	relative_position_id = PRU_we_aren't_bitter
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_appease_the_british"
+	}
+}
+
+shared_focus = {
+	id = PRU_just_another_brick_in_the_wall
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_appease_the_british
+	}
+	relative_position_id = PRU_appease_the_british
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_just_another_brick_in_the_wall"
+	}
+}
+
+shared_focus = {
+	id = PRU_our_great_military
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 4
+	y = 1
+
+	prerequisite = {
+		focus = PRU_affairs_of_peacetime
+	}
+	relative_position_id = PRU_affairs_of_peacetime
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_our_great_military"
+	}
+}
+
+shared_focus = {
+	id = PRU_an_army_to_be_proud_of
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = -2
+	y = 1
+
+	prerequisite = {
+		focus = PRU_our_great_military
+	}
+	relative_position_id = PRU_our_great_military
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_an_army_to_be_proud_of"
+	}
+}
+
+shared_focus = {
+	id = PRU_protect_prussia's_cities
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_an_army_to_be_proud_of
+	}
+	relative_position_id = PRU_an_army_to_be_proud_of
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_protect_prussia's_cities"
+	}
+}
+
+shared_focus = {
+	id = PRU_assuage_british_fears
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_protect_prussia's_cities
+	}
+	relative_position_id = PRU_protect_prussia's_cities
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_assuage_british_fears"
+	}
+}
+
+shared_focus = {
+	id = PRU_in_the_navy
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 2
+	y = 1
+
+	prerequisite = {
+		focus = PRU_our_great_military
+	}
+	relative_position_id = PRU_our_great_military
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_in_the_navy"
+	}
+}
+
+shared_focus = {
+	id = PRU_patrol_the_oder
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_in_the_navy
+	}
+	relative_position_id = PRU_in_the_navy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_patrol_the_oder"
+	}
+}
+
+shared_focus = {
+	id = PRU_assistance_from_the_swedes
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_patrol_the_oder
+	}
+	relative_position_id = PRU_patrol_the_oder
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_assistance_from_the_swedes"
+	}
+}
+
+shared_focus = {
+	id = PRU_the_great_force_we_once_were
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 2
+	y = 1
+
+	prerequisite = {
+		focus = PRU_assistance_from_the_swedes
+	}
+	prerequisite = {
+		focus = PRU_assuage_british_fears
+	}	
+	relative_position_id = PRU_assuage_british_fears
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_the_great_force_we_once_were"
+	}
+}
+
+shared_focus = {
+	id = PRU_please_stop_shouting
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = -4
+	y = 1
+
+	prerequisite = {
+		focus = PRU_affairs_of_peacetime
+	}
+	relative_position_id = PRU_affairs_of_peacetime
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_please_stop_shouting"
+	}
+}
+
+shared_focus = {
+	id = PRU_a_handshake
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+	mutually_exclusive = { focus = PRU_a_baton }
+
+	x = -2
+	y = 1
+
+	prerequisite = {
+		focus = PRU_please_stop_shouting
+	}
+	relative_position_id = PRU_please_stop_shouting
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_please_stop_shouting"
+	}
+}
+
+shared_focus = {
+	id = PRU_a_baton
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+	mutually_exclusive = { focus = PRU_a_handshake }
+
+	x = 2
+	y = 1
+
+	prerequisite = {
+		focus = PRU_please_stop_shouting
+	}
+	relative_position_id = PRU_please_stop_shouting
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_a_baton"
+	}
+}
+
+shared_focus = {
+	id = PRU_our_patience_is_not_unlimited
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_a_handshake
+	}
+	relative_position_id = PRU_a_handshake
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_our_patience_is_not_unlimited"
+	}
+}
+
+shared_focus = {
+	id = PRU_we'll_start_hitting_harder
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_a_baton
+	}
+	relative_position_id = PRU_a_baton
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_we'll_start_hitting_harder"
+	}
+}
+
+shared_focus = {
+	id = PRU_but_we_can_make_sacrifices
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_our_patience_is_not_unlimited
+	}
+	relative_position_id = PRU_our_patience_is_not_unlimited
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_but_we_can_make_sacrifices"
+	}
+}
+
+shared_focus = {
+	id = PRU_if_you_don't_calm_the_hell_down
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_we'll_start_hitting_harder
+	}
+	relative_position_id = PRU_we'll_start_hitting_harder
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_if_you_don't_calm_the_hell_down"
+	}
+}
+
+shared_focus = {
+	id = PRU_the_quiet_streets_of_berlin
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = -2
+	y = 1
+
+	prerequisite = {
+		focus = PRU_if_you_don't_calm_the_hell_down
+		focus = PRU_but_we_can_make_sacrifices
+	}
+	relative_position_id = PRU_if_you_don't_calm_the_hell_down
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_the_quiet_streets_of_berlin"
+	}
+}
+
+shared_focus = {
+	id = PRU_we_will_not_be_forgotten
+	icon = GFX_generic_socialist_constitution
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = PRU_the_quiet_streets_of_berlin
+	}
+	prerequisite = {
+		focus = PRU_the_great_force_we_once_were
+	}
+	prerequisite = {
+		focus = PRU_just_another_brick_in_the_wall
+	}
+	relative_position_id = PRU_just_another_brick_in_the_wall
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_we_will_not_be_forgotten"
+	}
+}

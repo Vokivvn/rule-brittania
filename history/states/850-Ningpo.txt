@@ -1,0 +1,13 @@
+state={
+	id=850
+	name="STATE_850"
+	history = {
+		owner = EAC
+	}
+	provinces={
+		9974 
+	}
+	manpower=1863152
+	state_category = large_city
+	buildings_max_level_factor=1.000
+}

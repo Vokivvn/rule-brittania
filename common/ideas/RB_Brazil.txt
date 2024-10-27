@@ -1,0 +1,288 @@
+ideas = {
+	country = {
+		bra_king_coffee = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_king_coffee"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = BRA_King_coffee
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+				consumer_goods_factor = 0.05
+				stability_factor = -0.1
+			}
+		}
+
+		bra_Tea_Program = { 
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_Tea_Program"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = BRA_King_coffee
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.30
+				consumer_goods_factor = 0.10
+				stability_factor = -0.25
+			}
+		}
+		
+		bra_king_tea = { 
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_king_tea"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = BRA_King_coffee
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.50
+				consumer_goods_factor = 0.05
+				stability_factor = -0.15
+			}
+		}
+
+		bra_a_better_brazil = { 
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea bra_a_better_brazil"
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = BRA_King_coffee
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.45
+				stability_factor = 0.05
+			}
+		}
+
+		bra_labour_unrest = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_labour_unrest"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = BRA_labour_unrest
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+
+		bra_Workers_law = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_Workers_law"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = BRA_labour_unrest
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+				stability_factor = 0.055
+			}
+		}
+
+		bra_none_dominant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_none_dominant"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = BRA_two_partners_none_dominant
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		bra_portugal_dominant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_portugal_dominant"}
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = BRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_gain = -0.05
+			}
+		}
+		bra_anglos_dominant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_anglos_dominant"}
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = BRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		bra_anglos_dominant_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_anglos_dominant_2"}
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = BRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		bra_anglos_dominant_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_anglos_dominant_3"}
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = BRA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.15
+				production_factory_max_efficiency_factor = 0.30
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		bra_Economic_Crisis = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_Economic_Crisis"}
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.25
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.40
+				stability_factor = -0.20
+				political_power_gain = -0.5
+			}
+		}
+		bra_price_controls = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea bra_price_controls"}
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.20
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.35
+				stability_factor = -0.30
+				political_power_gain = -1.0
+			}
+		}
+	}
+}

@@ -1,0 +1,849 @@
+﻿#########################
+##DENMARK-NORWAY EVENTS##
+#########################
+
+add_namespace = den
+
+country_event = { #intro event
+	id = den.1
+	title = den.1.t
+	desc = den.1.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.1"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = den.1.a
+		ai_chance = { factor = 0 }
+		country_event = { id = den.2 days = 1 } #intro event - politics
+	}
+	option = { #skip
+		name = den.1.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #intro event - politics
+	id = den.2
+	title = den.2.t
+	desc = den.2.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.2"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = den.2.a
+		ai_chance = { factor = 0 }
+		country_event = { id = den.3 days = 1} #intro event - empire
+	}
+	option = { #skip
+		name = den.2.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #intro event - empire
+	id = den.3
+	title = den.3.t
+	desc = den.3.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.3"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = den.3.a
+		ai_chance = { factor = 0 }
+	}
+	option = { #skip
+		name = den.3.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #flavor - new years ball
+	id = den.4
+	title = den.4.t
+	desc = den.4.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.4"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #posh
+		name = den.4.a
+		ai_chance = { factor = 1 }
+	}
+	option = { #people
+		name = den.4.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Governor General of Norway dies
+	id = den.5
+	title = den.5.t
+	desc = den.5.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.5"}
+	picture = GFX_report_event_england_royal_funeral_2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #choose now
+		name = den.5.a
+		ai_chance = { factor = 5 }
+		country_event = { id = den.6 days = 2} #Choose a GovGen for Norway
+		add_to_variable = { DEN_NOR_labor_popularity = 3}
+		add_to_variable = { DEN_NOR_agrarian_popularity = 1}
+		subtract_from_variable = { DEN_NOR_liberal_popularity = 1 }
+		subtract_from_variable = { DEN_NOR_conservative_popularity = 3 }
+	}
+	option = { #delay the choice
+		name = den.5.b
+		ai_chance = { factor = 3 }
+		subtract_from_variable = { DEN_NOR_labor_popularity = 1}
+		subtract_from_variable = { DEN_NOR_agrarian_popularity = 1}
+		add_to_variable = { DEN_NOR_liberal_popularity = 1 }
+		add_to_variable = { DEN_NOR_conservative_popularity = 1 }
+		set_country_flag = DEN_delayed_gg36
+	}
+}
+
+country_event = { #Choose a GovGen for Norway
+	id = den.6
+	title = den.6.t
+	desc = den.6.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.6"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #progressive GovGen
+		name = den.6.a
+		ai_chance = { factor = 3 }
+		set_country_flag = NOR_liberal_governor
+		#add him
+		subtract_from_variable = { DEN_NOR_conservative_popularity = 2 }
+		add_to_variable = { DEN_NOR_liberal_popularity = 2 }
+		country_event = { id = den.7 days = 2}
+	}
+	option = { #unionist
+		name = den.6.b
+		ai_chance = { factor = 5 }
+		country_event = { id = den.7 days = 2}
+		add_to_variable = { DEN_NOR_conservative_popularity = 1 }
+		subtract_from_variable = { DEN_NOR_liberal_popularity = 1 }
+
+	}
+}
+
+country_event = { #Norway replies to unionist govgen pick
+	id = den.7
+	title = den.7.t
+	desc = den.7.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.7"}
+	hidden = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = den.7.a
+		ai_chance = { factor = 1 }
+		random_list = {
+			60 = {
+				country_event = { id = den.8 days = 2}#accepts
+				add_to_variable = { DEN_NOR_conservative_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_liberal_popularity = 1 }
+				set_country_flag = NOR_conservative_governor
+			} 
+			40 = {
+				country_event = { id = den.9 days = 2} #rejects
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 2 }
+				add_to_variable = { DEN_NOR_liberal_popularity = 1 }
+				add_to_variable = { DEN_NOR_labor_popularity = 1 }
+			}
+		}
+	}
+}
+
+country_event = { #The parliament in Norway accepts our pick
+	id = den.8
+	title = den.8.t
+	desc = den.8.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.8"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #welcome
+		name = den.8.a
+		ai_chance = { factor = 1 }
+		#add governor
+	}
+}
+
+country_event = { #Norway wants an other
+	id = den.9
+	title = den.9.t
+	desc = den.9.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.9"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #go with the conservative
+		name = den.9.a
+		ai_chance = { factor = 10 }
+		set_country_flag = NOR_conservative_governor
+		subtract_from_variable = { DEN_NOR_conservative_popularity = 2 }
+		add_to_variable = { DEN_NOR_liberal_popularity = 1 }
+		add_to_variable = { DEN_NOR_labor_popularity = 1 }
+	}
+	option = { #go with a liberal
+		name = den.9.b
+		ai_chance = { factor = 15 }
+		set_country_flag = NOR_liberal_governor
+		subtract_from_variable = { DEN_NOR_agrarian_popularity = 1 }
+		subtract_from_variable = { DEN_NOR_labor_popularity = 1 }
+		add_to_variable = { DEN_NOR_liberal_popularity = 1}
+		add_to_variable = { DEN_NOR_conservative_popularity = 1}
+	}
+	option = { #delay it until after the election
+		name = den.9.c
+		ai_chance = { factor = 15 }
+		add_to_variable = { DEN_NOR_labor_popularity = 1}
+		add_to_variable = { DEN_NOR_liberal_popularity = 1}
+		subtract_from_variable = { DEN_NOR_agrarian_popularity = 1 }
+		subtract_from_variable = { DEN_NOR_conservative_popularity = 1 }
+	}
+}
+
+country_event = { #funeral for George V
+	id = den.10
+	title = den.10.t
+	desc = den.10.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.10"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #welcome
+		name = den.10.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #new leader of the Liberal Party
+	id = den.11
+	title = den.11.t
+	desc = den.11.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.11"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Go with Munch
+		name = den.11.a
+		ai_chance = { factor = 3 }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.05
+		}
+		hidden_effect = {
+			create_country_leader = {
+				name = "Peter Munch"
+				desc = "POLITICS_PETER_MUNCH_DESC"
+				picture = "Portrait_DEN_Peter_Munch.dds"
+				expire = "1999.12.12"
+				ideology = republicanism_subtype
+				traits = {
+				}
+			}
+		}
+	}
+	option = { #Go with Buhl
+		name = den.11.b
+		ai_chance = { factor = 2 }
+		set_variable = { DEN_liberal_party_wing = 2}
+		add_popularity = {
+			ideology = republicanism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		hidden_effect = {
+			create_country_leader = {
+				name = "Peter Munch"
+				desc = "POLITICS_PETER_MUNCH_DESC"
+				picture = "Portrait_DEN_Peter_Munch.dds"
+				expire = "1999.12.12"
+				ideology = republicanism_subtype
+				traits = {
+				}
+			}
+		}
+	}
+}
+
+country_event = { #delayed gg pick
+	id = den.12
+	title = den.12.t
+	desc = den.12.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.12"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #norway
+		name = den.12.a
+		ai_chance = { factor = 2 }
+		if = {
+			limit = {
+				OR = {
+					check_variable = { DEN_NOR_parliament_wing = 1}
+					check_variable = { DEN_NOR_parliament_wing = 3}
+				}
+			}
+			#add conservative
+			else = {
+				#add liberal
+			}
+		}
+		#add governor
+	}
+	option = { #denmark
+		name = den.12.b
+		ai_chance = { factor = 3 }
+		if = {
+			limit = { has_government = parliamentarianism }
+			#add conservative
+		}
+		else = {
+			#add liberal
+		}
+	}
+	option = { #britain decide
+		name = den.12.c
+		ai_chance = { factor = 2 }
+		#add governor
+		ENG = { country_event = { id = den.13 days = 1 }}
+	}
+
+}
+
+country_event = { #britain suggests men to be governor generals of Norway
+	id = den.13
+	title = den.13.t
+	desc = den.13.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.13"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #radical unionist
+		name = den.13.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { DEN_NOR_conservative_popularity = 2}
+		subtract_from_variable = { DEN_NOR_agrarian_popularity = 1 }
+		subtract_from_variable = { DEN_NOR_labor_popularity = 1}
+		#add minister
+		
+	}
+	option = { #conservative
+		name = den.13.b
+		ai_chance = { factor = 4 }
+		add_to_variable = { DEN_NOR_conservative_popularity = 1 }
+		subtract_from_variable = { DEN_NOR_liberal_popularity = 1}
+		#Harald Gram
+		#add minister
+	}
+	option = { #liberal
+		name = den.13.c
+		ai_chance = { factor = 2 }
+		add_to_variable = { DEN_NOR_liberal_popularity = 1}
+		subtract_from_variable = { DEN_NOR_conservative_popularity = 1}
+		#add minister
+	}
+	option = { #send it to parliamet
+		name = den.13.d
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = { #Hamsuns latest book
+	id = den.14
+	title = den.14.t
+	desc = den.14.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.14"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #This is good
+		name = den.14.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { DEN_NOR_agrarian_popularity = 1}
+		subtract_from_variable = { DEN_NOR_conservative_popularity = 1}
+	}
+	option = { #Nationalist propaganda is not allowed
+		name = den.14.b
+		ai_chance = { factor = 3 }
+		subtract_from_variable = { DEN_NOR_agrarian_popularity = 1}
+ 		add_to_variable = { DEN_NOR_conservative_popularity = 1}
+	}
+}
+
+country_event = { #German Officer arrested
+	id = den.15
+	title = den.15.t
+	desc = den.15.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.15"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #damn
+		name = den.15.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #The relation with England
+	id = den.16
+	title = den.16.t
+	desc = den.16.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.16"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #A stronger Union
+		name = den.16.a
+		ai_chance = { factor = 5 }
+		#Tories
+			#NOR
+				add_to_variable = { DEN_NOR_conservative_popularity = 3 }
+				subtract_from_variable = { DEN_NOR_liberal_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_labor_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_agrarian_popularity = 1 }
+	}
+	option = { #More playroom
+		name = den.16.b
+		ai_chance = { factor = 4 }
+		#Whigs
+			#NOR
+				add_to_variable = { DEN_NOR_liberal_popularity = 1 }
+				add_to_variable = { DEN_NOR_labor_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_agrarian_popularity = 1}
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 1}
+	}
+	option = { #less power to the monarchy
+		name = den.16.c
+		ai_chance = { factor = 1 }
+		#Labor
+			#NOR
+				add_to_variable = { DEN_NOR_agrarian_popularity = 2}
+				add_to_variable = { DEN_NOR_labor_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_liberal_popularity = 2 }
+	}
+}
+country_event = { #The Language Question
+	id = den.17
+	title = den.17.t
+	desc = den.17.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.17"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Danish
+		name = den.17.a
+		ai_chance = { factor = 50 }
+		#Tories
+		#NOR
+			add_to_variable = { DEN_NOR_conservative_popularity = 3}
+			subtract_from_variable = { DEN_NOR_agrarian_popularity = 1 }
+			subtract_from_variable = { DEN_NOR_labor_popularity = 1 }
+			subtract_from_variable = { DEN_NOR_liberal_popularity = 1 }
+	}
+	option = { #Danish and German
+		name = den.17.b
+		ai_chance = { factor = 45 }
+			add_to_variable = { DEN_NOR_conservative_popularity = 1}
+			subtract_from_variable = { DEN_NOR_liberal_popularity = 1}
+	}
+	option = { #All the Languages
+		name = den.17.c
+		ai_chance = { factor = 5 }
+			add_to_variable = { DEN_NOR_liberal_popularity = 2}
+			add_to_variable = { DEN_NOR_labor_popularity = 1}
+			add_to_variable = { DEN_NOR_agrarian_popularity = 1 }
+			subtract_from_variable = { DEN_NOR_conservative_popularity = 4 }
+	}
+}
+country_event = { #Trading Agreements
+	id = den.18
+	title = den.18.t
+	desc = den.18.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.18"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Remove
+		name = den.18.a
+		ai_chance = { factor = 5 }
+		#Labor
+			#NOR
+				add_to_variable = { DEN_NOR_labor_popularity = 10 }
+				subtract_from_variable = { DEN_NOR_agrarian_popularity = 2 }
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 5 }
+				subtract_from_variable = { DEN_NOR_liberal_popularity = 3 }
+	}
+	option = { #Renegotiate
+		name = den.18.b
+		ai_chance = { factor = 40 }
+		#Whigs
+			#NOR
+				add_to_variable = { DEN_NOR_liberal_popularity = 4 }
+				add_to_variable = { DEN_NOR_labor_popularity = 3 }
+				subtract_from_variable = { DEN_NOR_agrarian_popularity = 3 }
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 4 }
+				
+	}
+	option = { #Expand
+		name = den.18.c
+		ai_chance = { factor = 55 }
+		#Tories
+			#NOR
+				add_to_variable = { DEN_NOR_conservative_popularity = 3 }
+				add_to_variable = { DEN_NOR_agrarian_popularity = 10 }
+				subtract_from_variable = { DEN_NOR_labor_popularity = 4 }
+				subtract_from_variable = { DEN_NOR_liberal_popularity = 9 }
+	}
+}
+country_event = { #Agricultural Economy
+	id = den.19
+	title = den.19.t
+	desc = den.19.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.19"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #A union of farmers
+		name = den.19.a
+		ai_chance = { factor = 40 }
+		#Tories
+			#NOR
+				add_to_variable = { DEN_NOR_agrarian_popularity = 8 }
+				add_to_variable = { DEN_NOR_conservative_popularity = 4 }
+				subtract_from_variable = { DEN_NOR_labor_popularity = 3 }
+				subtract_from_variable = { DEN_NOR_liberal_popularity = 9 }
+	}
+	option = { #Factories are the future
+		name = den.19.b
+		ai_chance = { factor = 10 }
+		#Labor
+			#NOR
+				add_to_variable = { DEN_NOR_labor_popularity = 6 }
+				add_to_variable = { DEN_NOR_liberal_popularity = 2}
+				subtract_from_variable = { DEN_NOR_agrarian_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 7 }
+	}
+	option = { #Education unlocks the future
+		name = den.19.c
+		ai_chance = { factor = 50 }
+		#Whigs
+			#NOR
+				add_to_variable = { DEN_NOR_liberal_popularity = 8 }
+				add_to_variable = { DEN_NOR_labor_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_agrarian_popularity = 2 }
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 7 }
+	}
+}
+country_event = { #The issue of education
+	id = den.20
+	title = den.20.t
+	desc = den.20.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.20"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Education is the future
+		name = den.20.a
+		ai_chance = { factor = 35 }
+		#Whigs
+			#NOR
+				add_to_variable = { DEN_NOR_liberal_popularity = 4 }
+				add_to_variable = { DEN_NOR_labor_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_agrarian_popularity = 3 }
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 2 }
+	}
+	option = { #One grand university
+		name = den.20.b
+		ai_chance = { factor = 65 }
+		#Tories
+			#NOR
+				add_to_variable = { DEN_NOR_conservative_popularity = 6}
+				subtract_from_variable = { DEN_NOR_agrarian_popularity = 1}
+				subtract_from_variable = { DEN_NOR_labor_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_liberal_popularity = 4 }
+	}
+	option = { #Free secondary school
+		name = den.20.c
+		ai_chance = { factor = 5 }
+		#Labor
+			#NOR
+				add_to_variable = { DEN_NOR_labor_popularity = 3 }
+				add_to_variable = { DEN_NOR_agrarian_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_liberal_popularity = 1 }
+				subtract_from_variable = { DEN_NOR_conservative_popularity = 3 }
+	}
+}
+country_event = { #mecklenburgs birthday
+	id = den.21
+	title = den.21.t
+	desc = den.21.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.21"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #welcome
+		name = den.21.a
+		ai_chance = { factor = 1 }
+	}
+}
+country_event = { #400 years jubileum for the reformation
+	id = den.22
+	title = den.22.t
+	desc = den.22.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.22"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #welcome
+		name = den.22.a
+		ai_chance = { factor = 1 }
+	}
+}
+country_event = { #election time 1936
+	id = den.23
+	title = den.23.t
+	desc = den.23.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.23"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #welcome
+		name = den.23.a
+		ai_chance = { factor = 1 }
+		DEN_hold_election_norway = yes
+		country_event = { id = den.24 days = 0}
+
+		#DEN_hold_elections1 = yes
+	
+
+		country_event = { id = den.25 days = 0}
+	}
+}
+
+country_event = { #norwegian elections
+	id = den.24
+	title = den.24.t
+	desc = den.24.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.22"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #tories
+		name = den.24.a
+		ai_chance = { factor = 1 }
+		trigger = { check_variable = { DEN_NOR_parliament_wing = 1}}
+		if = {
+			limit = { has_country_flag = DEN_delayed_gg36 }
+			country_event = { id = den.12 days = 7} #delayed gg nomination
+			clr_country_flag = DEN_delayed_gg36
+		}
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.05
+		}
+	}
+	option = { #whigs
+		name = den.24.b
+		ai_chance = { factor = 1 }
+		trigger = { check_variable = { DEN_NOR_parliament_wing = 2}}
+		if = {
+			limit = { has_country_flag = DEN_delayed_gg36 }
+			country_event = { id = den.12 days = 7} #delayed gg nomination
+			clr_country_flag = DEN_delayed_gg36
+		}
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+	}
+	option = { #agrarians
+		name = den.24.c
+		ai_chance = { factor = 1 }
+		trigger = { check_variable = { DEN_NOR_parliament_wing = 3}}
+		if = {
+			limit = { has_country_flag = DEN_delayed_gg36 }
+			country_event = { id = den.12 days = 7} #delayed gg nomination
+			clr_country_flag = DEN_delayed_gg36
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+	}
+	option = { #labor
+		name = den.24.d
+		ai_chance = { factor = 1 }
+		trigger = { check_variable = { DEN_NOR_parliament_wing = 4}}
+		if = {
+			limit = { has_country_flag = DEN_delayed_gg36 }
+			country_event = { id = den.12 days = 7} #delayed gg nomination
+			clr_country_flag = DEN_delayed_gg36
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.02
+		}
+	}
+	option = {
+		name = den.24.e
+	}
+}
+
+country_event = { #danish election results 1936
+	id = den.25
+	title = den.25.t
+	desc = den.25.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.25"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Kristensen
+		name = den.25.a
+		ai_chance = { factor = 1 }
+		trigger = { check_variable = { DEN_government = 1 } }
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.05
+		}
+	}
+	option = { #Munch
+		name = den.25.b
+		ai_chance = { factor = 1 }
+		trigger = { check_variable = { DEN_government = 2 } }
+		set_politics = { ruling_party = republicanism }
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = den.25.c
+		#:(((
+		add_political_power = -1
+	}
+}
+
+country_event = { #the heavy cruiser is discussed in parliament
+	id = den.26
+	title = den.26.t
+	desc = den.26.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.26"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Yea
+		name = den.26.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = DEN_build_oldenburg
+	}
+}
+
+country_event = { #The cruiser is launched
+	id = den.27
+	title = den.27.t
+	desc = den.27.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.27"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Yea
+		name = den.27.a
+		ai_chance = { factor = 1 }
+		load_oob = DEN_The_Oldenburg_naval_mtg
+	}
+}
+
+country_event = { #A Visit To St. Petersburg
+	id = den.28
+	title = den.28.t
+	desc = den.28.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.28"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Yea
+		name = den.28.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}
+
+country_event = { #A Visit To St. Petersburg
+	id = den.29
+	title = den.29.t
+	desc = den.29.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.29"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Yea
+		name = den.29.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}
+
+country_event = { #A Visit To St. Petersburg
+	id = den.30
+	title = den.30.t
+	desc = den.30.desc
+	immediate = {log = "[GetDateText]: [Root.GetName]: event den.30"}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Yea
+		name = den.30.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}

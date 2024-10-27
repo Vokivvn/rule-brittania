@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		POR_The_Last_Independent_State = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POR_The_Last_Independent_State"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_last_independent_state
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.1
+			}
+		}
+		POR_In_Hoc_Signo_Vinces = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POR_In_Hoc_Signo_Vinces"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_In_Hoc_Signo_Vinces
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.05
+				attrition = -0.05
+			}
+		}
+		POR_Place_in_the_Sun = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POR_Place_in_the_Sun"}
+			allowed = { always = no }
+			picture = GFX_idea_POR_place_in_the_sun
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				naval_hit_chance = 0.05
+				navy_max_range_factor = 0.05
+			}
+		}
+	}
+}

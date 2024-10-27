@@ -1,0 +1,83 @@
+﻿division_template = {
+	name = "Këmbësori Pjesëtim"			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	#Ushtria Shqipëtarë
+	division = { # "I Këmbësori Pjesëtim"
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6900
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "II Këmbësori Pjesëtim"
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 833
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "III Këmbësori Pjesëtim"
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9849
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "IV Këmbësori Pjesëtim"
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9809
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division = { # "V Këmbësori Pjesëtim"
+		division_name = {   
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9914
+		division_template = "Këmbësori Pjesëtim"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ALB"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 100
+	}
+}

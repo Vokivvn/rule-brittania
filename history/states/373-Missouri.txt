@@ -1,0 +1,40 @@
+
+state={
+	id=373
+	name="STATE_373"
+	resources={
+		aluminium=12.000
+	}
+
+	history={
+		owner = LOU
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 5
+			arms_factory = 1
+		}
+		add_core_of = LOU
+		victory_points = {
+			4569 25
+		}
+		victory_points = {
+			10717 15 
+		}
+		victory_points = {
+			10370 5 
+		}
+		victory_points = {
+			1621 3
+		}
+		victory_points = {
+			1441 2
+		}
+	}
+
+	provinces={
+		1441 1621 1646 4444 4569 4625 7586 10370 10717 12346 12361 12463 
+	}
+	manpower=3629365
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

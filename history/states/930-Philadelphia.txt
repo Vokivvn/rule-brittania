@@ -1,0 +1,35 @@
+state={
+	id=930
+	name="STATE_930"
+	resources={
+		steel=20.000
+	}
+	provinces={
+		891 894 3824 3897 6845 6869 9820 11785 11799 
+	}
+	history = {
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 7
+			dockyard = 7
+			industrial_complex = 3
+			6845 = {
+				naval_base = 8
+
+			}
+		}
+		victory_points = {
+			6845 30 
+		}
+		victory_points = {
+			9820 5
+		}
+		victory_points = {
+			11799 5
+		}
+	}
+	manpower=5023140
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

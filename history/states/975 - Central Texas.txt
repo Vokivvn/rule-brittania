@@ -1,0 +1,31 @@
+state={ #Austin
+	id=975
+	name="STATE_975"
+	resources={
+		oil=120.000
+	}
+
+	history={
+		owner = TEX
+		victory_points = {
+			5022 15
+		}
+		victory_points = {
+			1915 5
+		}
+		buildings = {
+			infrastructure = 4
+			12410 = {
+				naval_base = 1
+			}
+			industrial_complex = 2
+		}
+		add_core_of = TEX
+		add_core_of = MEX
+	}
+	provinces={
+		1915 5022 7836 7981 12341 12410 12875
+	}
+	manpower=790390
+	state_category=city
+}

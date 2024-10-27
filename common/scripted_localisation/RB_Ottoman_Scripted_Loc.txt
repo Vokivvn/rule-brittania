@@ -1,0 +1,21 @@
+defined_text = {
+	name = TUR_hero_of_the_revolution
+	text = {
+		trigger = {
+				check_variable = { tur_turkes_popularity = tur_pup_popularity }
+		}
+		localization_key = TUR_no_hero
+	}
+	text = {
+		trigger = {
+				check_variable = { tur_turkes_popularity > tur_pup_popularity }
+		}
+		localization_key = TUR_turkes_hero
+	}
+	text = {
+		trigger = {
+				check_variable = { tur_turkes_popularity < tur_pup_popularity }
+		}
+		localization_key = TUR_pup_hero
+	}
+}

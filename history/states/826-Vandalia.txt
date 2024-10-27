@@ -1,0 +1,26 @@
+state={
+	id=826
+	name="STATE_826"
+	provinces={
+		913 1582 4452 4627 6971 7547 7588 9727 9779 10441 12568 12637 
+	}
+	history={
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 5
+		}
+		victory_points = {
+			7588 5
+		}
+		victory_points = {
+			11635 5
+		}
+		victory_points = {
+			12568 5
+		}
+	}
+	manpower=1278422
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

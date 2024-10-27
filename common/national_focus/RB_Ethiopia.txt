@@ -1,0 +1,13 @@
+focus_tree = {
+	id = RB_ETH_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ETH
+		}
+	}
+	default = no
+	shared_focus = ETH_an_empire_crushed
+	continuous_focus_position = { x = 50 y = 2000 }
+}

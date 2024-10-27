@@ -1,0 +1,15 @@
+﻿l_english:
+ ##Nicaragua Names##
+ COS_despotism:0 "Pearl Bay"
+ COS_despotism_DEF:0 "The Mandate of Pearl Bay"
+ COS_despotism_ADJ:0 "Costa Rican"
+
+ ##Party Names##
+ COS_despotism_party:0 "Royal Navy Administration"
+ COS_despotism_party_long:0 "Royal Navy Central America and West Indies Station Administration"
+ 
+ ##Ideas##
+ COS_His_Majestys_George_The_V_Canal:0 "His Majesty's George The V Canal"
+ COS_His_Majestys_George_The_V_Canal_desc:0 ""
+ COS_His_Majestys_Loyal_Guardian:0 "His Majesty's Loyal Guardian"
+ COS_His_Majestys_Loyal_Guardian_desc:0 ""

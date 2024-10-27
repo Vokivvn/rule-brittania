@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		TUS_Habsburg_Crown = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUS_Habsburg_Crown"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = AUS
+				extra_trade_to_target_factor = 1.0
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		TUS_Black_Spot = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUS_Black_Spot"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.20
+				production_factory_max_efficiency_factor = -0.40
+				production_speed_buildings_factor = -0.30
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.70
+				trade_opinion_factor = -0.50
+				consumer_goods_factor = 0.30
+			}
+		}
+		
+		TUS_Guelph_Ghibelline_Wars = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TUS_Guelph_Ghibelline_Wars"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				army_org_factor = -0.30
+				army_morale_factor = -0.10
+				training_time_factor = 0.50
+			}
+		}
+	}
+}	

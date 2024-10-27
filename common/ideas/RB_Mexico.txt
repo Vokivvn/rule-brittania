@@ -1,0 +1,113 @@
+#|=================================================|#
+#| ███╗   ███╗███████╗██╗  ██╗██╗ ██████╗ ██████╗  |# 
+#| ████╗ ████║██╔════╝╚██╗██╔╝██║██╔════╝██╔═══██╗ |# 
+#| ██╔████╔██║█████╗   ╚███╔╝ ██║██║	 ██║   ██║ |# 
+#| ██║╚██╔╝██║██╔══╝   ██╔██╗ ██║██║	 ██║   ██║ |# 
+#| ██║ ╚═╝ ██║███████╗██╔╝ ██╗██║╚██████╗╚██████╔╝ |# 
+#| ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═════╝  |# 
+#|==================|   Ideas   |==================|#
+
+ideas = {
+	country = {
+
+		##############################
+		### PROTECTORATE OF MEXICO ###
+		##############################
+		MEX_Plan_of_Veracruz = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Plan_of_Veracruz"}
+			picture = MEX_plan_of_veracruz
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.05
+			}
+		}
+		
+		MEX_Glorified_Mine = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Glorified_Mine"}
+			picture = MEX_glorified_mine
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.2
+				local_resources_factor = 0.1
+				min_export = 0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		MEX_Joint_Staff_Dependence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Joint_Staff_Dependence"}
+			picture = MEX_joint_staff_dependence
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+				min_export = 0.05
+			}
+		}
+		
+		MEX_Unending_Insurgency = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Unending_Insurgency"}
+			picture = MEX_unending_revolt
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				conscription_factor = -0.5
+				war_support_factor = -0.15
+			}
+		}
+		
+		MEX_British_Support = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_British_Support"}
+			picture = MEX_british_support
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		#######################
+		### CONVENCIONISTAS ###
+		#######################
+		
+
+		#####################
+		### VERACRUCISTAS ###
+		#####################
+		MEX_Plan_of_Veracruz_Veracrucistas = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Plan_of_Veracruz"}
+			picture = MEX_plan_of_veracruz
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				#Something Something
+			}
+		}
+	}
+}

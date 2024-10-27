@@ -1,0 +1,3468 @@
+focus_tree = {
+	id = Real_Time_With_Sergey_Bunyachenko
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RLC
+		}
+	}
+	default = no
+	focus = {
+		id = RLC_the_iron_flag
+		icon = GFX_RB_generic_nationalism_ideology
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = RLC_GW_won_war
+		}
+
+		bypass = {
+			has_country_flag = RLC_GW_won_war
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = gw_wan_wor
+		}
+		x = 26
+		y = 0
+
+	}
+	focus = {
+		id = RLC_recover_the_last_arsenal
+		icon = GFX_generic_advanced_weapons
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+				producer = RLC
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 1000
+				producer = RLC
+			}
+		}
+		prerequisite = {
+			focus = RLC_the_iron_flag
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = RLC_action_immediate
+		icon = GFX_goal_skull_treaty2
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = RLC_Iron_Flag
+				scope = RLC
+			}
+		}
+		prerequisite = {
+			focus = RLC_recover_the_last_arsenal
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = RLC_navy
+		icon = GFX_Large_Navy
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_owned_state = { is_coastal = yes }
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			579 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_action_immediate
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = RLC_move_around
+		icon = GFX_Convoy_Protection_2
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = naval_equipment
+			}
+		}
+		prerequisite = {
+			focus = RLC_navy
+		}
+		mutually_exclusive = {
+			focus = RLC_a_single_shell
+		}
+		x = 0
+		y = 4
+
+	}
+	focus = {
+		id = RLC_get_in_subby
+		icon = GFX_goal_generic_navy_submarine
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = submarine_doctrine
+			}
+		}
+		prerequisite = {
+			focus = RLC_move_around
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = RLC_a_single_shell
+		icon = GFX_Battlefleet
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.4
+				uses = 1
+				category = naval_equipment
+			}
+		}
+		prerequisite = {
+			focus = RLC_navy
+		}
+		mutually_exclusive = {
+			focus = RLC_move_around
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = RLC_make_them_big
+		icon = GFX_Grand_Carrier
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = { is_coastal = yes }
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_a_single_shell
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = RLC_dockyards_of_far_east
+		icon = GFX_Naval_Operations
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 849
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			849 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_navy
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = RLC_air_support
+		icon = GFX_Aerial_Fleet_2
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			579 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_action_immediate
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = RLC_bases_around_siberia
+		icon = GFX_Expand_Airfields
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = RLC_GW_won_war
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_air_support
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = RLC_homemade_airships
+		icon = GFX_Aerial_Fleet
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = light_air
+			}
+		}
+		prerequisite = {
+			focus = RLC_air_support
+		}
+		mutually_exclusive = {
+			focus = RLC_quality_air
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = RLC_make_me_fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = light_fighter
+			}
+		}
+		prerequisite = {
+			focus = RLC_homemade_airships
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = RLC_garbage_cas
+		icon = GFX_goal_generic_CAS
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = cas_bomber
+			}
+		}
+		prerequisite = {
+			focus = RLC_homemade_airships
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = RLC_quality_air
+		icon = GFX_Generic_Construction
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = medium_air
+			}
+		}
+		prerequisite = {
+			focus = RLC_air_support
+		}
+		mutually_exclusive = {
+			focus = RLC_homemade_airships
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = RLC_bomber_race
+		icon = GFX_GER_gun_runners
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = tactical_bomber
+			}
+		}
+		prerequisite = {
+			focus = RLC_quality_air
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = RLC_most_valuable_sorts
+		icon = GFX_generic_naval_bombing
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = heavy_air
+			}
+		}
+		prerequisite = {
+			focus = RLC_quality_air
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = RLC_begin_pushing
+		icon = GFX_Death_Calls
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_command_power = 100
+		}
+		prerequisite = {
+			focus = RLC_action_immediate
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = RLC_detonate_the_arsenals
+		icon = GFX_goal_break_rifle
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RUS = { news_event = sib.32 }
+		}
+		prerequisite = {
+			focus = RLC_begin_pushing
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = RLC_recruit_the_people
+		icon = GFX_generic_Hell_Hounds
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = RLC_inc_cons
+			add_to_variable = { RLC_cons = 0.01 }
+		}
+		prerequisite = {
+			focus = RLC_begin_pushing
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = RLC_anti_atlanticist_division
+		icon = GFX_Military_Purges
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = SSD_AA_Division
+		}
+		prerequisite = {
+			focus = RLC_recruit_the_people
+		}
+		prerequisite = {
+			focus = RLC_detonate_the_arsenals
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = RLC_war_cult
+		icon = GFX_Little_Green_Men
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+			custom_effect_tooltip = rlc_war_tt
+			add_to_variable = { RLC_army_core_attack_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = RLC_anti_atlanticist_division
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = RLC_roll_them_out
+		icon = GFX_Tanks_Across_the_Border
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			load_oob = "Salekhard Tank Divisions"
+		}
+		prerequisite = {
+			focus = RLC_begin_pushing
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = RLC_war_nationalizations
+		icon = GFX_Shadow_Scheme#GFX_Little_Green_Men
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			two_random_arms_factory = yes
+			two_random_industrial_complex = yes
+		}
+		prerequisite = {
+			focus = RLC_recruit_the_people
+		}
+		prerequisite = {
+			focus = RLC_roll_them_out
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = RLC_raw_motors
+		icon = GFX_focus_generic_army_tanks2
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = RLC_raw_mot_tt
+			add_to_variable = { RLC_army_speed_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = RLC_war_nationalizations
+		}
+		prerequisite = {
+			focus = RLC_anti_atlanticist_division
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = RLC_sideline_the_oligarchs
+		icon = GFX_Crush_Resistance
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = RLC_sideline_tt
+			add_to_variable = { RLC_army_core_defence_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = RLC_war_nationalizations
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = RLC_request_assistance
+		icon = GFX_Gunpoint_Diplomacy
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+				producer = USA
+			}
+		}
+		prerequisite = {
+			focus = RLC_sideline_the_oligarchs
+		}
+		prerequisite = {
+			focus = RLC_raw_motors
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = RLC_all_army_all_siberian
+		icon = GFX_Wolf_Hungers
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+		prerequisite = {
+			focus = RLC_action_immediate
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = RLC_experienced_infantry
+		icon = GFX_Cossack_Riders
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = infantry_tech
+			}
+		}
+		prerequisite = {
+			focus = RLC_all_army_all_siberian
+		}
+		mutually_exclusive = {
+			focus = RLC_motorized_faster
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = RLC_finest_rifles
+		icon = GFX_Focus_Colonial_Expeditions
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+		prerequisite = {
+			focus = RLC_experienced_infantry
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = RLC_special_artillery
+		icon = GFX_Cannon
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = cat_anti_tank
+			}
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 1
+				category = artillery
+			}
+		}
+		prerequisite = {
+			focus = RLC_finest_rifles
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = RLC_special_forces
+		icon = GFX_Generic_Intelligence_Gathering
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = mountaineers_tech
+			}
+		}
+		prerequisite = {
+			focus = RLC_experienced_infantry
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = RLC_support_equipment
+		icon = GFX_RUS_Markov_plan
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 3
+				category = support_tech
+			}
+		}
+		prerequisite = {
+			focus = RLC_special_forces
+		}
+		x = 35
+		y = 6
+
+	}
+	focus = {
+		id = RLC_walk_around
+		icon = GFX_Death_or_Dishonor
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = night_vision
+			}
+		}
+		prerequisite = {
+			focus = RLC_special_artillery
+		}
+		prerequisite = {
+			focus = RLC_support_equipment
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = RLC_motorized_faster
+		icon = GFX_Focus_Military_Mobilisation
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = armor
+			}
+		}
+		prerequisite = {
+			focus = RLC_all_army_all_siberian
+		}
+		mutually_exclusive = {
+			focus = RLC_experienced_infantry
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = RLC_cheap_truck_action
+		icon = GFX_goal_generic_army_motorized
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = motorized_equipment
+			}
+		}
+		prerequisite = {
+			focus = RLC_motorized_faster
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = RLC_unreliable_jets
+		icon = GFX_Jet_Research
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = jet_technology
+			}
+		}
+		prerequisite = {
+			focus = RLC_cheap_truck_action
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = RLC_blazing_glories
+		icon = GFX_generic_tank_warfare
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		prerequisite = {
+			focus = RLC_motorized_faster
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = RLC_ol_rocketry
+		icon = GFX_focus_rocketry
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				category = mot_rockets
+			}
+		}
+		prerequisite = {
+			focus = RLC_blazing_glories
+		}
+		x = 43
+		y = 6
+
+	}
+	focus = {
+		id = RLC_rush_through
+		icon = GFX_Metal_Inferno
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = industry
+			}
+		}
+		prerequisite = {
+			focus = RLC_unreliable_jets
+		}
+		prerequisite = {
+			focus = RLC_ol_rocketry
+		}
+		x = 42
+		y = 7
+
+	}
+	focus = {
+		id = RLC_the_main_doctrine
+		icon = GFX_generic_diplomacy_expansion
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		prerequisite = {
+			focus = RLC_walk_around
+			focus = RLC_rush_through
+		}
+		x = 38
+		y = 8
+
+	}
+	focus = {
+		id = RLC_partisan_action
+		icon = GFX_Into_the_Flames_of_Glory
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+		prerequisite = {
+			focus = RLC_the_main_doctrine
+		}
+		mutually_exclusive = {
+			focus = RLC_werewolf_infiltration
+		}
+		x = 37
+		y = 9
+
+	}
+	focus = {
+		id = RLC_werewolf_infiltration
+		icon = GFX_Counter_Push
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+		prerequisite = {
+			focus = RLC_the_main_doctrine
+		}
+		mutually_exclusive = {
+			focus = RLC_partisan_action
+		}
+		x = 39
+		y = 9
+
+	}
+	focus = {
+		id = RLC_nuclear_race
+		icon = GFX_Hammer_of_Wrath
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 1940.1.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = electronics
+			}
+		}
+		prerequisite = {
+			focus = RLC_action_immediate
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = RLC_from_the_foregin_eyes
+		icon = GFX_shadow_government
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = computing_tech
+			}
+		}
+		prerequisite = {
+			focus = RLC_nuclear_race
+		}
+		x = 47
+		y = 4
+
+	}
+	focus = {
+		id = RLC_delivery_methods
+		icon = GFX_GER_around_the_world_eighty_seconds
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 1
+				category = rocketry
+			}
+		}
+		prerequisite = {
+			focus = RLC_from_the_foregin_eyes
+		}
+		x = 48
+		y = 5
+
+	}
+	focus = {
+		id = RLC_sharazhkas
+		icon = GFX_Brainpower
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 1
+				category = decryption_tech
+			}
+		}
+		prerequisite = {
+			focus = RLC_nuclear_race
+		}
+		x = 51
+		y = 4
+
+	}
+	focus = {
+		id = RLC_kurchatov_group
+		icon = GFX_Academica_Sinica_4
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = nuclear
+			}
+		}
+		prerequisite = {
+			focus = RLC_sharazhkas
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = RLC_stenka_raziin
+		icon = GFX_Generic_Red_Atomic
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			has_tech = nukes
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = world.3
+		}
+		prerequisite = {
+			focus = RLC_delivery_methods
+		}
+		prerequisite = {
+			focus = RLC_kurchatov_group
+		}
+		x = 49
+		y = 6
+
+	}
+	focus = {
+		id = RLC_bases_around_russia
+		icon = GFX_Death_Tracks2
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 219
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_bases_around_siberia
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = RLC_bases_around_russian_exterior
+		icon = GFX_Death_Tracks
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				controls_state = 137
+				controls_state = 849
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = RLC_bases_around_russia
+		}
+		x = 8
+		y = 6
+	}
+	focus = {
+		id = RLC_total_sky_war
+		icon = GFX_goal_continuous_air_production
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = battlefield_support_tree
+			}
+		}
+		prerequisite = {
+			focus = RLC_make_me_fighters
+		}
+		prerequisite = {
+			focus = RLC_garbage_cas
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = RLC_tactical_bombardments
+		icon = GFX_focus_usa_escort_fighters
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = strategic_destruction_tree
+			}
+		}
+		prerequisite = {
+			focus = RLC_bomber_race
+		}
+		prerequisite = {
+			focus = RLC_most_valuable_sorts
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = RLC_suicide_attacks
+		icon = GFX_Dare_to_Die_Corps
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
+		}
+		prerequisite = {
+			focus = RLC_total_sky_war
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = RLC_bomb_them_to_shreds
+		icon = GFX_Combined_Bomber_Offensive
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = cat_strategic_bomber
+			}
+		}
+		prerequisite = {
+			focus = RLC_tactical_bombardments
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = RLC_doctrine_warfare
+		icon = GFX_goal_continuous_air_production
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 3
+				category = air_doctrine
+			}
+		}
+		prerequisite = {
+			focus = RLC_bomb_them_to_shreds
+			focus = RLC_suicide_attacks
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = RLC_radars_at_every_corner
+		icon = GFX_RAJ_mutual_wiretapping
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_doctrine_warfare
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = RLC_anti_air_systems
+		icon = GFX_focus_generic_air_defense
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_doctrine_warfare
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = RLC_make_them_move
+		icon = GFX_VIN_Napalm_Runs
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 1
+				category = jet_technology
+			}
+		}
+		prerequisite = {
+			focus = RLC_anti_air_systems
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = RLC_make_them_tremble
+		icon = GFX_focus_HRE_the_iron_harvest
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = air_equipment
+			}
+		}
+		prerequisite = {
+			focus = RLC_radars_at_every_corner
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = RLC_not_a_single_soul
+		icon = GFX_Lessons_From_the_Great_War
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			air_experience = 50
+		}
+		prerequisite = {
+			focus = RLC_make_them_move
+		}
+		prerequisite = {
+			focus = RLC_make_them_tremble
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = RLC_dockyards_of_baltic
+		icon = GFX_Naval_Effort
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 208
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			208 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_dockyards_of_far_east
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = RLC_dockyarsds_of_black_sea
+		icon = GFX_Naval_Purges
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 137
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			137 = {
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_dockyards_of_baltic
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = RLC_make_them_damage
+		icon = GFX_generic_dreadnought_warfare
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+		prerequisite = {
+			focus = RLC_make_them_big
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = RLC_get_cheaper_fuel
+		icon = GFX_Generic_Oil_Production
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = synth_resources
+			}
+		}
+		prerequisite = {
+			focus = RLC_get_in_subby
+		}
+		x = 0
+		y = 6
+
+	}
+	focus = {
+		id = RLC_thousands_of_barrels
+		icon = GFX_Generic_Oil_Concern
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_get_cheaper_fuel
+		}
+		x = 1
+		y = 7
+
+	}
+	focus = {
+		id = RLC_the_super_heavy_projects
+		icon = GFX_Battleship_Investment
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 3
+				category = naval_air
+			}
+		}
+		prerequisite = {
+			focus = RLC_make_them_damage
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = RLC_sea_awakens
+		icon = GFX_Deep_Water_Terror
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			navy_experience = 70
+		}
+		prerequisite = {
+			focus = RLC_thousands_of_barrels
+			focus = RLC_the_super_heavy_projects
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = {
+		id = RLC_the_all_out_front
+		icon = GFX_focus_mobilisation
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = 250000
+		}
+		prerequisite = {
+			focus = RLC_war_cult
+		}
+		prerequisite = {
+			focus = RLC_raw_motors
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = RLC_all_in
+		icon = GFX_focus_ger_strike_at_the_source
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KAZ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ATR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = RVD
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KHR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BLR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KAR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LIV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = EST
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BFE
+				type = annex_everything
+			}
+			custom_effect_tooltip = RLC_butthereismore
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							BFE = {controls_state = 408}
+						}
+					}
+					declare_war_on = {
+						target = MAN
+						type = annex_everything
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = RLC_the_all_out_front
+		}
+		prerequisite = {
+			focus = RLC_request_assistance
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = RLC_won_war_of_independence
+		icon = GFX_Champagne_Repression
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = no
+			controls_state = 219
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 200
+		}
+		prerequisite = {
+			focus = RLC_all_in
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = RLC_as_high_as_russia_gets
+		icon = GFX_RUS_Russian_Imperialism
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_core_of = RLC
+			}
+		}
+		prerequisite = {
+			focus = RLC_a_warning_to_them_all
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
+		id = RLC_cult_of_the_saviors
+		icon = GFX_A_Stronger_Military
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = RLC_cots
+			add_to_variable = { RLC_reinforce = 0.05 }
+		}
+		prerequisite = {
+			focus = RLC_integrate_the_black_hundreds
+		}
+		x = 24
+		y = 12
+
+	}
+	focus = {
+		id = RLC_integrate_the_black_hundreds
+		icon = GFX_Crush_the_Monarchy
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			load_oob = "Black Hundred Paramilitary Divisions"
+		}
+		prerequisite = {
+			focus = RLC_a_warning_to_them_all
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = RLC_a_warning_to_them_all
+		icon = GFX_SP_focus_shadow_government
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			news_event = world.4
+		}
+		prerequisite = {
+			focus = RLC_won_war_of_independence
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = RLC_devour_the_church
+		icon = GFX_Orthodox_Orgy
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = RLC_dtc_tt
+			add_to_variable = { RLC_pp_factor = 0.05 }
+		}
+		prerequisite = {
+			focus = RLC_a_warning_to_them_all
+		}
+		x = 29
+		y = 11
+
+	}
+	focus = {
+		id = RLC_the_world_goes_up_in_fire
+		icon = GFX_pheonix_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_war_support = 0.2
+			four_random_industrial_complex = yes
+			four_random_arms_factory = yes
+
+		}
+		prerequisite = {
+			focus = RLC_action_action_action
+		}
+		x = 26
+		y = 15
+
+	}
+	focus = {
+		id = RLC_the_bells_of_war
+		icon = GFX_Officers_Command
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_to_variable = { RLC_org = 0.05 }
+			custom_effect_tooltip = RLC_tbow_tt
+		}
+		prerequisite = {
+			focus = RLC_devour_the_church
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = RLC_ru_revolution
+		icon = GFX_RUS_Tsarist_Crown
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_to_variable = { RLC_MONTHLY_POPULATION = 0.1 }
+			custom_effect_tooltip = RLC_rr_tt
+		}
+		prerequisite = {
+			focus = RLC_as_high_as_russia_gets
+		}
+		x = 26
+		y = 12
+
+	}
+	focus = {
+		id = RLC_one_step_higher
+		icon = GFX_Prison_Camps
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -30000
+			army_experience = 50
+			add_to_variable = { RLC_speed_factor = 0.05 }
+			custom_effect_tooltip = OSH_tt
+		}
+		prerequisite = {
+			focus = RLC_cult_of_the_saviors
+		}
+		prerequisite = {
+			focus = RLC_ru_revolution
+		}
+		x = 25
+		y = 13
+
+	}
+	focus = {
+		id = RLC_export_our_ideas
+		icon = GFX_European_Soldiers
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = RLC_eoi_tt #hahaha
+			add_to_variable = { RLC_send_volunteer_size = 20 }
+			add_to_variable = { RLC_send_volunteer_divisions_required = -0.20 }
+			add_to_variable = { RLC_send_volunteers_tension = -0.25 }
+		}
+		prerequisite = {
+			focus = RLC_the_bells_of_war
+		}
+		prerequisite = {
+			focus = RLC_ru_revolution
+		}
+		x = 27
+		y = 13
+
+	}
+	focus = {
+		id = RLC_action_action_action
+		icon = GFX_generic_artillery_warfare
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_to_variable = { industrial_capacity_factory = 0.1 }
+			custom_effect_tooltip = AAA_tt
+		}
+		prerequisite = {
+			focus = RLC_one_step_higher
+		}
+		prerequisite = {
+			focus = RLC_export_our_ideas
+		}
+		x = 26
+		y = 14
+
+	}
+	focus = {
+		id = RLC_core_defence_tactics
+		icon = GFX_focus_kick_ladder
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+		}
+		prerequisite = {
+			focus = RLC_partisan_action
+			focus = RLC_werewolf_infiltration
+		}
+		mutually_exclusive = {
+			focus = RLC_core_attack_tactics
+		}
+		x = 37
+		y = 10
+
+	}
+	focus = {
+		id = RLC_core_attack_tactics
+		icon = GFX_Upset_the_Balance
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+		prerequisite = {
+			focus = RLC_partisan_action
+			focus = RLC_werewolf_infiltration
+		}
+		mutually_exclusive = {
+			focus = RLC_core_defence_tactics
+		}
+		x = 39
+		y = 10
+
+	}
+	focus = {
+		id = RLC_mobilise_all
+		icon = GFX_Human_tsunami
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+		}
+		prerequisite = {
+			focus = RLC_core_defence_tactics
+			focus = RLC_core_attack_tactics
+		}
+		mutually_exclusive = {
+			focus = RLC_elite_recruits
+		}
+		x = 37
+		y = 11
+
+	}
+	focus = {
+		id = RLC_elite_recruits
+		icon = GFX_Into_the_Flames
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+		prerequisite = {
+			focus = RLC_core_defence_tactics
+			focus = RLC_core_attack_tactics
+		}
+		mutually_exclusive = {
+			focus = RLC_mobilise_all
+		}
+		x = 39
+		y = 11
+
+	}
+	focus = {
+		id = RLC_army_russia_deserves
+		icon = GFX_Frozen_Fury
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 70
+		}
+		prerequisite = {
+			focus = RLC_mobilise_all
+			focus = RLC_elite_recruits
+		}
+		x = 38
+		y = 12
+
+	}
+}

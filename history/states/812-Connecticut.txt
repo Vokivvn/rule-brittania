@@ -1,0 +1,32 @@
+
+state={
+	id=812
+	name="STATE_812"
+
+	history={
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			9832 = {
+				naval_base = 3
+            
+			}
+		}
+		victory_points = {
+			6909 5
+		}
+		victory_points = {
+			11830 5
+		}
+
+	}
+
+	provinces={
+		6909 9832 9847 9850 11830 
+	}
+	manpower=1613257
+	state_category=city
+	buildings_max_level_factor=1.000
+}

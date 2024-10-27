@@ -1,0 +1,26 @@
+
+state={
+	id=512
+	name="STATE_512"
+	resources={
+		oil=5.000
+	}
+
+	history={
+		owner = PAT
+		buildings = {
+			infrastructure = 3
+			#10953 = {
+			#	naval_base = 1
+			#}
+		}
+		add_core_of = PAT
+	}
+
+	provinces={
+		2149 2199 5118 5121 5169 8161 8176 8192 10981 11005 12306 12321 12349 12920 12954 12982 
+	}
+	manpower=226638
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

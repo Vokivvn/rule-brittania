@@ -1,0 +1,3 @@
+RAJ_Influence_Mechanic = {
+	#use party popularity for liberalism, administrationism, and despotism to modify the vraiable.it should clamp itself automatically, so just add party pop and remove party pop, always do remove party pop first to avoid fringe showing up
+}

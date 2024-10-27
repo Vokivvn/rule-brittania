@@ -1,0 +1,215 @@
+﻿capital = 483
+
+add_ideas = {
+	#Spirits
+
+	#Laws
+	limited_conscription
+	low_economic_mobilisation
+	free_trade
+	british_econ_dominance
+	british_pol_dominance
+	british_colonial_force
+}
+
+#oob = "MEX_1936"
+
+set_research_slots = 2
+
+set_stability = 0.6
+set_war_support = 0.4
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+	cromwellianism = 16
+	marxism = 4
+	liberalism = 22
+	republicanism = 16
+	parliamentarianism = 14
+	administrationism = 8
+	absolutism = 0
+	despotism = 14
+	nationalism = 6
+}
+
+#set_cosmetic_tag = MEX_ENG
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+######################
+### COUNTRY LEADER ###
+######################
+create_country_leader = {
+	name = "Felipe Ángeles"
+	desc = LEADER_DESC_MEX_FELIPE_ANGELES
+	picture = "gfx/leaders/MEX/RMX/Portrait_MEX_Filipe_Angeles.dds"
+	expire = "1999.12.12"
+	ideology = cromwellianism_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Pedro Rodríguez Triana"
+	desc = LEADER_DESC_MEX_PEDRO_RODRIGUEZ_TRIANA
+	picture = "gfx/leaders/MEX/RMX/Portrait_MEX_Pedro_Rodriguez_Triana.dds"
+	expire = "1999.12.12"
+	ideology = marxism_subtype
+	traits = { }
+}
+
+#The Initial Leader
+create_country_leader = {
+	name = "Felipe Ángeles"
+	desc = LEADER_DESC_MEX_FELIPE_ANGELES
+	picture = "gfx/leaders/MEX/RMX/Portrait_MEX_Filipe_Angeles.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Felipe Ángeles"
+	desc = LEADER_DESC_MEX_FELIPE_ANGELES
+	picture = "gfx/leaders/MEX/RMX/Portrait_MEX_Filipe_Angeles.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Manuel Gómez Morín"
+	desc = LEADER_DESC_MEX_MANUEL_GÓMEZ_MORÍN
+	picture = "gfx/leaders/MEX/MEX/Portrait_MEX_Manuel_Gomez_Morin.dds"
+	expire = "1999.12.12"
+	ideology = parliamentarianism_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "William Sholto Douglas"
+	desc = LEADER_DESC_MEX_WILLIAM_SHOLTO_DOUGLAS
+	picture = "gfx/leaders/MEX/ENG/Portrait_MEX_William_Sholto_Douglas.dds"
+	expire = "1999.12.12"
+	ideology = administrationism_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "William Sholto Douglas"
+	desc = LEADER_DESC_MEX_WILLIAM_SHOLTO_DOUGLAS
+	picture = "gfx/leaders/MEX/ENG/Portrait_MEX_William_Sholto_Douglas.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "William Sholto Douglas"
+	desc = LEADER_DESC_MEX_WILLIAM_SHOLTO_DOUGLAS
+	picture = "gfx/leaders/MEX/ENG/Portrait_MEX_William_Sholto_Douglas.dds"
+	expire = "1999.12.12"
+	ideology = despotism_subtype
+	traits = { }
+}
+
+create_country_leader = {
+	name = "José Antonio Urquiza"
+	desc = LEADER_DESC_MEX_JOSE_ANTONIO_URQUIZA
+	picture = "gfx/leaders/MEX/MEX/Portrait_MEX_Jose_Antonio_Urquiza.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = { }
+}
+
+################
+### GENERALS ###
+################
+create_field_marshal = {
+	name = "William Sholto Douglas"
+	desc = "GENERAL_DESC_MEX_WILLIAM_SHOLTO_DOUGLAS"
+	portrait_path = "Portrait_MEX_William_Sholto_Douglas.dds"
+	traits = { trait_reckless media_personality }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Walter Venning"
+	desc = "GENERAL_DESC_MEX_WALTER_VENNING"
+	portrait_path = "Portrait_MEX_Walter_Venning.dds"
+	traits = { organizer career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "James Lochhead Jack"
+	desc = "GENERAL_DESC_MEX_JAMES_LOCHHEAD_JACK"
+	portrait_path = "Portrait_MEX_James_Lochhead_Jack.dds"
+	traits = { war_hero hill_fighter }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Francisco Luis Urquizo"
+	desc = "GENERAL_DESC_MEX_FRANCISCO_LUIS_URQUIZO"
+	portrait_path = "Portrait_MEX_Francisco_Luis_Urquizo.dds"
+	traits = { organizer career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}

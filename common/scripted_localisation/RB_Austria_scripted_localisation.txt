@@ -1,0 +1,160 @@
+defined_text = { 
+	name = GetAUS_nobility_loyalty
+	text = {
+		trigger = {
+			check_variable = { AUS_nobility_loyalty > 59 }
+		}
+		localization_key = AUS_nobility_loyality_loyal
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_nobility_loyalty > 39 }
+		}
+		localization_key = AUS_nobility_loyalty_neutral
+	}
+	text = {
+		localization_key = AUS_nobility_loyalty_disloyal
+	}
+}
+
+defined_text = { 
+	name = GetAUS_burghers_loyalty
+	text = {
+		trigger = {
+			check_variable = { AUS_burghers_loyalty > 59 }
+		}
+		localization_key = AUS_burghers_loyality_loyal
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_burghers_loyalty > 39 }
+		}
+		localization_key = AUS_burghers_loyalty_neutral
+	}
+	text = {
+		localization_key = AUS_burghers_loyalty_disloyal
+	}
+}
+
+defined_text = {
+	name = GetAUS_clergy_loyalty
+	text = {
+		trigger = {
+			check_variable = { AUS_clergy_loyalty > 59 }
+		}
+		localization_key = AUS_clergy_loyality_loyal
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_clergy_loyalty > 39 }
+		}
+		localization_key = AUS_clergy_loyalty_neutral
+	}
+	text = {
+		localization_key = AUS_clergy_loyalty_disloyal
+	}
+}
+
+defined_text = { 
+	name = GetAUS_nobility_influence
+	text = {
+		trigger = {
+			check_variable = { AUS_nobility_loyalty > 99 }
+		}
+		localization_key = AUS_nobility_influence_overwhelming
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_nobility_loyalty > 59 }
+		}
+		localization_key = AUS_nobility_influence_powerful
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_nobility_loyalty > 39 }
+		}
+		localization_key = AUS_nobility_influence_normal
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_nobility_loyalty > 19 }
+		}
+		localization_key = AUS_nobility_influence_weak
+	}
+	text = {
+		localization_key = AUS_nobility_influence_nonexistent
+	}
+}
+
+defined_text = { 
+	name = GetAUS_burghers_influence
+	text = {
+		trigger = {
+			check_variable = { AUS_burghers_loyalty > 99 }
+		}
+		localization_key = AUS_burghers_influence_overwhelming
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_burghers_loyalty > 59 }
+		}
+		localization_key = AUS_burghers_influence_powerful
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_burghers_loyalty > 39 }
+		}
+		localization_key = AUS_burghers_influence_normal
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_burghers_loyalty > 19 }
+		}
+		localization_key = AUS_burghers_influence_weak
+	}
+	text = {
+		localization_key = AUS_burghers_influence_nonexistent
+	}
+}
+
+defined_text = { 
+	name = GetAUS_clergy_influence
+	text = {
+		trigger = {
+			check_variable = { AUS_clergy_loyalty > 99 }
+		}
+		localization_key = AUS_clergy_influence_overwhelming
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_clergy_loyalty > 59 }
+		}
+		localization_key = AUS_clergy_influence_powerful
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_clergy_loyalty > 39 }
+		}
+		localization_key = AUS_clergy_influence_normal
+	}
+	text = {
+		trigger = {
+			check_variable = { AUS_clergy_loyalty > 19 }
+		}
+		localization_key = AUS_clergy_influence_weak
+	}
+	text = {
+		localization_key = AUS_clergy_influence_nonexistent
+	}
+}
+
+defined_text = { 
+	name = AUS_empress_governates
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = AUS_empress_governates
+	}
+}
+

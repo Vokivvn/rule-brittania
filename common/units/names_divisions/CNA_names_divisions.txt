@@ -1,0 +1,154 @@
+﻿CNA_RNAA_inf = {
+	name = "Royal North American Infantry Division"
+
+	for_countries = { CNA MEX }
+
+	can_use = { 
+		OR = {
+			original_tag = CNA
+			has_cosmetic_tag = MEX_ENG #for Mexico
+		}
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Royal North American Infantry"
+
+	ordered = {
+		1 = { "Royal North American Infantry 'Boston'" }
+		2 = { "Royal North American Infantry 'Edward'" }
+		3 = { "Royal North American Infantry 'George'" }
+		4 = { "Royal North American Infantry 'King's Men'" }
+		5 = { "Royal North American Infantry 'Liberators'" }
+		6 = { "Royal North American Infantry 'Hudson'" }
+		7 = { "Royal North American Infantry 'Loyalists'" }
+	}
+}
+
+CNA_militia = {
+	name = "Commonwealth Militia Division"
+
+	for_countries = { CNA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Commonwealth Militia"
+
+	ordered = {
+		1 = { "1st Memphis Militia" }
+		2 = { "2nd Memphis Militia" }
+		3 = { "1st Chattanooga Militia" }
+		4 = { "1st Montgomery Militia" }
+		5 = { "1st Birmingham Militia" }
+		6 = { "2nd Birmingham Militia" }
+		7 = { "5th Alabama Militia" }
+		8 = { "1st Atlanta Militia" }
+		9 = { "2nd Atlanta Militia" }
+		10 = { "3rd Atlanta Militia" }
+		11 = { "1st Augusta Militia" }
+		12 = { "1st Savannah Militia" }
+		13 = { "6th Georgia Militia" }
+		14 = { "1st Charleston Militia" }
+		15 = { "1st Charlotte Militia" }
+		16 = { "1st Columbia Militia" }
+		17 = { "1st Durham Militia" }
+		18 = { "1st Greensboro Militia" }
+		19 = { "3rd North Carolina Militia" }
+		20 = { "4th North Carolina Militia" }
+		21 = { "1st Sherbrooke Militia" }
+		22 = { "2nd Sherbrooke Militia" }
+		23 = { "1st Levis Militia" }
+		24 = { "1st Saint John Militia" }
+		25 = { "2nd Maine Militia" }
+		26 = { "1st Fredericton Militia" }
+		27 = { "1st Moncton Militia" }
+		28 = { "1st Halifax Militia" }
+		29 = { "2nd Halifax Militia" }
+		30 = { "1st Prince Edward Island Militia" }
+		31 = { "1st Wisconsin Militia" }
+		32 = { "1st Landchester Militia" }
+		33 = { "1st Duluth Militia" }
+		34 = { "1st Paulshire Militia" }
+		35 = { "1st Thunder Bay Militia" }
+		36 = { "1st Sudbury Militia" }
+	}
+}
+
+CNA_militia_urban = {
+	name = "Commonwealth Militia Division"
+
+	for_countries = { CNA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Commonwealth Defense Militia"
+
+	ordered = {
+		1 = { "1st Norfolk Defense Militia" }
+		2 = { "2nd Norfolk Defense Militia" }
+		3 = { "3rd Norfolk Defense Militia" }
+		4 = { "1st New York Defense Militia" }
+		5 = { "2nd New York Defense Militia" }
+		6 = { "3rd New York Defense Militia" }
+		7 = { "4th New York Defense Militia" }
+		8 = { "1st Boston Defense Militia" }
+		9 = { "2nd Boston Defense Militia" }
+		10 = { "3rd Boston Defense Militia" }
+		11 = { "4th Boston Defense Militia" }
+	}
+}
+
+CNA_RNAA_coastal_inf = {
+	name = "RNAA Coastal Infantry"
+
+	for_countries = { CNA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Commonwealth Defense Militia"
+
+	ordered = {
+		1 = { "1st Coastal Infantry" }
+		2 = { "2nd Coastal Infantry" }
+		3 = { "3rd Coastal Infantry" }
+		4 = { "4th Coastal Infantry" }
+		5 = { "5th Coastal Infantry" }
+		6 = { "6th Coastal Infantry" }
+		7 = { "7th Coastal Infantry" }
+		8 = { "8th Coastal Infantry" }
+		9 = { "9th Coastal Infantry" }
+		10 = { "10th Coastal Infantry" }
+		11 = { "11th Coastal Infantry" }
+		12 = { "12th Coastal Infantry" }
+		13 = { "13th Coastal Infantry" }
+		14 = { "14th Coastal Infantry" }
+		15 = { "15th Coastal Infantry" }
+		16 = { "16th Coastal Infantry" }
+	}
+}
+
+CNA_ACA_militia = {
+	name = "Milice Acadienne"
+
+	for_countries = { CNA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Milice Acadienne"
+
+	ordered = {
+		1 = { "1ère Milice Acadienne" }
+		2 = { "2nde Milice Acadienne" }
+		3 = { "3ème Milice Acadienne" }
+		4 = { "4ème Milice Acadienne" }
+		5 = { "5ème Milice Acadienne" }
+	}
+}

@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+		BRN_Undefined_State = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRN_Undefined_State"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		BRN_Unknown_Future = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRN_Unknown_Future"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		BRN_Claim_to_Hanovers_Throne = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRN_Claim_to_Hanovers_Throne"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=1003
+	name="STATE_1003"
+
+	state_category = pastoral
+
+	history={
+		owner = NZP
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			10693 5
+		}
+		add_core_of = NZP
+	}
+
+	provinces={
+		1832 4838 7820 10693 12578 
+	}
+	manpower = 10500
+	buildings_max_level_factor=1.000
+}

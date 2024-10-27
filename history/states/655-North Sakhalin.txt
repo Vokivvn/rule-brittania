@@ -1,0 +1,28 @@
+
+state={
+	id=655
+	name="STATE_655"
+
+	history={
+		owner = KOR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			855 5 
+		}
+		victory_points = {
+			1755 2 
+		}
+
+	}
+
+	provinces={
+		848 1148 4004 7021 7070 9936 9981 10083 11958 12011 
+	}
+	manpower=94759
+	buildings_max_level_factor=1.000
+	state_category= rural
+}

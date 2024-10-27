@@ -1,0 +1,1637 @@
+shared_focus = {
+	id = CHI_New_Year_Address
+	icon = GFX_focus_the_emperors_new_year_addres2_CHI
+	cost = 2.00
+	available = {
+		always = yes
+	}
+	x = 18
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_New_Year_Address"
+		country_event = {
+			id = chi.2
+		}
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = CHI_Wonders_Technology
+	icon = GFX_focus_the_wonders_of_technology_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_New_Year_Address
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Wonders_Technology"
+		country_event = {
+			id = chi.3
+		}
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = computing_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = CHI_Invite_All_Attend
+	icon = GFX_focus_invite_all_to_attend_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_New_Year_Address
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Invite_All_Attend"
+		country_event = {
+			id = chi.4
+		}
+		add_political_power = 30
+	}
+}
+
+shared_focus = {
+	id = CHI_Speech
+	icon = GFX_focus_the_speech_CHI
+	cost = 10.00
+	prerequisite = {
+		focus = CHI_Invite_All_Attend
+	}
+	prerequisite = {
+		focus = CHI_Wonders_Technology
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 0
+	y = 2
+	select_effect = {
+		country_event = {
+			id = chi.5
+		}
+		country_event = {
+			id = chi.6
+			days = 17
+		}
+		country_event = {
+			id = chi.7
+			days = 34
+		}
+		country_event = {
+			id = chi.8
+			days = 51
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Speech"
+		custom_effect_tooltip = CHI_speech_tt
+		hidden_effect = {
+			country_event = {
+				id = chi.9
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CHI_Do_Well
+	icon = GFX_focus_do_well2_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Speech
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Do_Well"
+	}
+}
+
+shared_focus = {
+	id = CHI_Our_Friends
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Do_Well
+	}
+	mutually_exclusive = {
+		focus = CHI_Ourselves
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Our_Friends"
+	}
+}
+
+shared_focus = {
+	id = CHI_Ourselves
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Do_Well
+	}
+	mutually_exclusive = {
+		focus = CHI_Our_Friends
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Ourselves"
+	}
+}
+
+shared_focus = {
+	id = CHI_Mission_Canton
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Our_Friends
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Mission_Canton"
+	}
+}
+
+shared_focus = {
+	id = CHI_Court_Anglo
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Our_Friends
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -2
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Court_Anglo"
+	}
+}
+
+shared_focus = {
+	id = CHI_Sir_Howe_Peking
+	icon = GFX_focus_sir_howe_in_Peking_CHI3
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Mission_Canton
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -4
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Sir_Howe_Peking"
+	}
+}
+
+shared_focus = {
+	id = CHI_Sandhurst_Wuchang
+	icon = GFX_focus_sandhurst_to_wuchang_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Court_Anglo
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Sandhurst_Wuchang"
+	}
+}
+
+shared_focus = {
+	id = CHI_Eighth_Conference_Sino_English_Cooperation
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Sandhurst_Wuchang
+	}
+	prerequisite = {
+		focus = CHI_Sir_Howe_Peking
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -3
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Eighth_Conference_Sino_English_Cooperation"
+	}
+}
+
+shared_focus = {
+	id = CHI_Fifth_Treaty_Peking
+	icon = GFX_focus_the_fifth_treaty_of_peking_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Eighth_Conference_Sino_English_Cooperation
+	}
+	mutually_exclusive = {
+		focus = CHI_Peking_Agreements
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -4
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Fifth_Treaty_Peking"
+	}
+}
+
+shared_focus = {
+	id = CHI_Peking_Agreements
+	icon = GFX_focus_the_peking_accords_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Eighth_Conference_Sino_English_Cooperation
+	}
+	mutually_exclusive = {
+		focus = CHI_Fifth_Treaty_Peking
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -2
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Peking_Agreements"
+	}
+}
+
+shared_focus = {
+	id = CHI_British_Officers
+	icon = GFX_focus_british_officers_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Fifth_Treaty_Peking
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -4
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_British_Officers"
+	}
+}
+shared_focus = {
+	id = CHI_Purchase_Needs
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_British_Officers
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -4
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Purchase_Needs"
+	}
+}
+
+shared_focus = {
+	id = CHI_Rules_War
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Peking_Agreements
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -2
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Rules_War"
+	}
+}
+shared_focus = {
+	id = CHI_British_Designs
+	icon = GFX_focus_british_aircraft_designs_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Rules_War
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -2
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_British_Designs"
+	}
+}
+
+shared_focus = {
+	id = CHI_Special_Relationship
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Purchase_Needs
+	}
+	prerequisite = {
+		focus = CHI_British_Designs
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -3
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Special_Relationship"
+	}
+}
+
+shared_focus = {
+	id = CHI_No_Enemies
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Special_Relationship
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -3
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_No_Enemies"
+	}
+}
+
+shared_focus = {
+	id = CHI_Friends_Close
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Special_Relationship
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -5
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Friends_Close"
+	}
+}
+
+shared_focus = {
+	id = CHI_No_Secrets
+	icon = GFX_focus_There_are_no_secrets_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Special_Relationship
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -1
+	y = 12
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_No_Secrets"
+	}
+}
+
+shared_focus = {
+	id = CHI_Years_To_Come
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Friends_Close
+	}
+	prerequisite = {
+		focus = CHI_No_Enemies
+	}
+	prerequisite = {
+		focus = CHI_No_Secrets
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = -3
+	y = 13
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Years_To_Come"
+	}
+}
+
+shared_focus = {
+	id = CHI_Eight_Banners
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Ourselves
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Eight_Banners"
+	}
+}
+
+shared_focus = {
+	id = CHI_Mil_Centralization
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Eight_Banners
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Mil_Centralization"
+	}
+}
+
+shared_focus = {
+	id = CHI_Groom_Generals
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Mil_Centralization
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 1
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Groom_Generals"
+	}
+}
+
+shared_focus = {
+	id = CHI_Ask_Admirals
+	icon = GFX_focus_ask_the_admirals_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Mil_Centralization
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 3
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Ask_Admirals"
+	}
+}
+
+shared_focus = {
+	id = CHI_Pilots_Place
+	icon = GFX_focus_a_pilots_place_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Mil_Centralization
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 5
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Pilots_Place"
+	}
+}
+
+shared_focus = {
+	id = CHI_Inter_Admin_Staff
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Groom_Generals
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 1
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Inter_Admin_Staff"
+	}
+}
+
+shared_focus = {
+	id = CHI_Unilateral_Rights
+	icon = GFX_focus_unilateral_docking_rights_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Ask_Admirals
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 3
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Unilateral_Rights"
+	}
+}
+
+shared_focus = {
+	id = CHI_Airfield_Commission
+	icon = GFX_focus_airfield_comissions_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Pilots_Place
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 5
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Airfield_Commission"
+	}
+}
+
+shared_focus = {
+	id = CHI_Budgetary_Concessions
+	icon = GFX_focus_budgetary_concessions_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Airfield_Commission
+	}
+	prerequisite = {
+		focus = CHI_Unilateral_Rights
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 4
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Budgetary_Concessions"
+	}
+}
+
+shared_focus = {
+	id = CHI_Practical_Meetings
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Inter_Admin_Staff
+	}
+	prerequisite = {
+		focus = CHI_Unilateral_Rights
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 2
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Practical_Meetings"
+	}
+}
+
+shared_focus = {
+	id = CHI_Military_Council
+	icon = GFX_focus_a_military_council_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Practical_Meetings
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 2
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Military_Council"
+	}
+}
+
+shared_focus = {
+	id = CHI_Unified_Funding
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Budgetary_Concessions
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 4
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Unified_Funding"
+	}
+}
+
+shared_focus = {
+	id = CHI_Teeth_That_Bite
+	icon = GFX_focus_theet_that_bite_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Military_Council
+	}
+	prerequisite = {
+		focus = CHI_Unified_Funding
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 3
+	y = 11
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Teeth_That_Bite"
+	}
+}
+
+#DOMESTIC RELATIONS TREE
+
+shared_focus = {
+	id = CHI_Make_Amends
+	icon = GFX_focus_make_amends_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Speech
+	}
+	relative_position_id = CHI_New_Year_Address
+	x = 12
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Make_Amends"
+	}
+}
+
+shared_focus = {
+	id = CHI_Because_We_Have_To
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Make_Amends
+	}
+	mutually_exclusive = {
+		focus = CHI_Stronger_Future
+	}
+	relative_position_id = CHI_Make_Amends
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Because_We_Have_To"
+	}
+}
+
+shared_focus = {
+	id = CHI_Stronger_Future
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Make_Amends
+	}
+	mutually_exclusive = {
+		focus = CHI_Because_We_Have_To
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Stronger_Future"
+	}
+}
+
+shared_focus = {
+	id = CHI_Invitations_Forbidden_City
+	icon = GFX_focus_invitations_to_the_forbidden_city_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Because_We_Have_To
+	}
+	relative_position_id = CHI_Make_Amends
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Invitations_Forbidden_City"
+	}
+}
+
+shared_focus = {
+	id = CHI_Grant_Audience
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Invitations_Forbidden_City
+	}
+	relative_position_id = CHI_Make_Amends
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Grant_Audience"
+	}
+}
+
+shared_focus = {
+	id = CHI_Divine_Emperor
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Grant_Audience
+	}
+	relative_position_id = CHI_Make_Amends
+	x = -3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Divine_Emperor"
+	}
+}
+
+shared_focus = {
+	id = CHI_Conspiracy
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Divine_Emperor
+	}
+	relative_position_id = CHI_Make_Amends
+	x = -3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Conspiracy"
+	}
+}
+
+shared_focus = {
+	id = CHI_Cycle_Them
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Grant_Audience
+	}
+	relative_position_id = CHI_Make_Amends
+	x = -1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Cycle_Them"
+	}
+}
+
+shared_focus = {
+	id = CHI_Prepare_The_Train
+	icon = GFX_focus_prepare_the_train_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Stronger_Future
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Prepare_The_Train"
+	}
+}
+
+shared_focus = {
+	id = CHI_Grand_Tour
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Prepare_The_Train
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Grand_Tour"
+	}
+}
+
+shared_focus = {
+	id = CHI_Return_Friends
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Grand_Tour
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Return_Friends"
+	}
+}
+
+shared_focus = {
+	id = CHI_Rights_For_Rights
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Grand_Tour
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Rights_For_Rights"
+	}
+}
+
+shared_focus = {
+	id = CHI_Constitutional_Way
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Rights_For_Rights
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Constitutional_Way"
+	}
+}
+
+shared_focus = {
+	id = CHI_Grand_Council
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Cycle_Them
+		focus = CHI_Return_Friends
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Grand_Council"
+	}
+}
+
+shared_focus = {
+	id = CHI_Man_From_Zhili
+	icon = GFX_focus_The_man_from_zhili_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Conspiracy
+	}
+	prerequisite = {
+		focus = CHI_Grand_Council
+	}
+	relative_position_id = CHI_Make_Amends
+	x = -2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Man_From_Zhili"
+	}
+}
+
+shared_focus = {
+	id = CHI_Man_From_Around
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Constitutional_Way
+	}
+	prerequisite = {
+		focus = CHI_Grand_Council
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Man_From_Around"
+	}
+}
+
+shared_focus = {
+	id = CHI_Action
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Man_From_Zhili
+	}
+	relative_position_id = CHI_Make_Amends
+	x = -2
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Action"
+	}
+}
+
+shared_focus = {
+	id = CHI_Union_Never_Stronger
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Man_From_Around
+	}
+	relative_position_id = CHI_Make_Amends
+	x = 2
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Union_Never_Stronger"
+	}
+}
+
+#INDUSTRIALIZATION
+
+shared_focus = {
+	id = CHI_Be_Best
+	icon = GFX_focus_be_the_best_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Speech
+	}
+	relative_position_id = CHI_Speech
+	x = -12
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Be_Best"
+	}
+}
+
+shared_focus = {
+	id = CHI_To_Our_Friends
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Be_Best
+	}
+	mutually_exclusive = {
+		focus = CHI_To_Our_People
+	}
+	relative_position_id = CHI_Be_Best
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_To_Our_Friends"
+	}
+}
+
+shared_focus = {
+	id = CHI_To_Our_People
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Be_Best
+	}
+	mutually_exclusive = {
+		focus = CHI_To_Our_Friends
+	}
+	relative_position_id = CHI_Be_Best
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_To_Our_People"
+	}
+}
+
+shared_focus = {
+	id = CHI_Regional_Neighbors
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_To_Our_Friends
+	}
+	relative_position_id = CHI_Be_Best
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Regional_Neighbors"
+	}
+}
+
+shared_focus = {
+	id = CHI_Friends_In_Canton
+	icon = GFX_focus_friends_in_canton_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Regional_Neighbors
+	}
+	relative_position_id = CHI_Be_Best
+	x = -4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Friends_In_Canton"
+	}
+}
+
+shared_focus = {
+	id = CHI_Trade_With_Company
+	icon = GFX_focus_trade_with_the_company_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Regional_Neighbors
+	}
+	relative_position_id = CHI_Be_Best
+	x = -2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Trade_With_Company"
+	}
+}
+
+shared_focus = {
+	id = CHI_Seek_Investment
+	icon = GFX_focus_seek_out_economic_investment
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_To_Our_People
+	}
+	relative_position_id = CHI_Be_Best
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Seek_Investment"
+	}
+}
+
+shared_focus = {
+	id = CHI_Equal_Distribution
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Seek_Investment
+	}
+	relative_position_id = CHI_Be_Best
+	x = 2
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Equal_Distribution"
+	}
+}
+
+shared_focus = {
+	id = CHI_Home_Industry
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Seek_Investment
+	}
+	relative_position_id = CHI_Be_Best
+	x = 4
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Home_Industry"
+	}
+}
+
+shared_focus = {
+	id = CHI_Yangtze_Factories
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Friends_In_Canton
+	}
+	prerequisite = {
+		focus = CHI_Trade_With_Company
+	}
+	relative_position_id = CHI_Be_Best
+	x = -3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Yangtze_Factories"
+	}
+}
+
+shared_focus = {
+	id = CHI_Courtly_Representatives
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Equal_Distribution
+		focus = CHI_Trade_With_Company
+	}
+	relative_position_id = CHI_Be_Best
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Courtly_Representatives"
+	}
+}
+
+shared_focus = {
+	id = CHI_Kwantung_Flatland
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Equal_Distribution
+	}
+	prerequisite = {
+		focus = CHI_Home_Industry
+	}
+	relative_position_id = CHI_Be_Best
+	x = 3
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Kwantung_Flatland"
+	}
+}
+
+shared_focus = {
+	id = CHI_Peking_Industrial_Complex
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Yangtze_Factories
+	}
+	relative_position_id = CHI_Be_Best
+	x = -3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Peking_Industrial_Complex"
+	}
+}
+
+shared_focus = {
+	id = CHI_Wuchang_Hub
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Peking_Industrial_Complex
+	}
+	relative_position_id = CHI_Be_Best
+	x = -3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Wuchang_Hub"
+	}
+}
+
+shared_focus = {
+	id = CHI_Eunuch_Ambassadors
+	icon = GFX_focus_eunuch_ambassadors_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Courtly_Representatives
+	}
+	relative_position_id = CHI_Be_Best
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Eunuch_Ambassadors"
+	}
+}
+
+shared_focus = {
+	id = CHI_Break_Tradition
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Eunuch_Ambassadors
+	}
+	relative_position_id = CHI_Be_Best
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Break_Tradition"
+	}
+}
+
+shared_focus = {
+	id = CHI_Western_Railway
+	#icon =
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Kwantung_Flatland
+	}
+	relative_position_id = CHI_Be_Best
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Western_Railway"
+	}
+}
+
+shared_focus = {
+	id = CHI_Science_Education
+	icon = GFX_focus_scientific_education_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Western_Railway
+	}
+	relative_position_id = CHI_Be_Best
+	x = 3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Science_Education"
+	}
+}
+
+shared_focus = {
+	id = CHI_Emperors_Essay
+	icon = GFX_focus_the_emperors_essay_CHI
+	cost = 1.00
+	prerequisite = {
+		focus = CHI_Wuchang_Hub
+		focus = CHI_Science_Education
+	}
+	prerequisite = {
+		focus = CHI_Break_Tradition
+	}
+	relative_position_id = CHI_Be_Best
+	x = 0
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Emperors_Essay"
+	}
+}
+
+#BIG TROUBLE IN LITTLE CHINA TREE
+
+shared_focus = {
+	id = CHI_Turmoil_In_The_Middle_Kingdom
+	#icon = 
+	cost = 2.00
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Turmoil_In_The_Middle_Kingdom"
+	}
+}
+
+shared_focus = {
+	id = CHI_Take_The_Crotch_Kick
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Turmoil_In_The_Middle_Kingdom
+	}
+	relative_position_id = CHI_Turmoil_In_The_Middle_Kingdom
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Take_The_Crotch_Kick"
+	}
+}
+
+shared_focus = {
+	id = CHI_Raise_The_Reserves
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Take_The_Crotch_Kick
+	}
+	relative_position_id = CHI_Take_The_Crotch_Kick
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Raise_The_Reserves"
+	}
+}
+
+shared_focus = {
+	id = CHI_Martial_Law
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Raise_The_Reserves
+	}
+	relative_position_id = CHI_Take_The_Crotch_Kick
+	x = 1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Martial_Law"
+	}
+}
+
+shared_focus = {
+	id = CHI_Wuhan_Conference #should be Wuchang, Hankow, and Hanyang
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Take_The_Crotch_Kick
+	}
+	relative_position_id = CHI_Take_The_Crotch_Kick
+	x = 3
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Wuhan_Conference"
+	}
+}
+
+shared_focus = {
+	id = CHI_Appoint_New_Viceroys
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Wuhan_Conference
+	}
+	relative_position_id = CHI_Take_The_Crotch_Kick
+	x = 3
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Appoint_New_Viceroys"
+	}
+}
+
+shared_focus = {
+	id = CHI_Tear_It_Down
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Martial_Law
+	}
+	prerequisite = {
+		focus = CHI_Appoint_New_Viceroys
+	}
+	relative_position_id = CHI_Take_The_Crotch_Kick
+	x = 2
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Tear_It_Down"
+	}
+}
+
+shared_focus = {
+	id = CHI_Handle_The_Suckerpunch
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Turmoil_In_The_Middle_Kingdom
+	}
+	relative_position_id = CHI_Turmoil_In_The_Middle_Kingdom
+	x = 7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Handle_The_Suckerpunch"
+	}
+}
+
+shared_focus = {
+	id = CHI_Dialogue_With_The_Consulate
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Handle_The_Suckerpunch
+	}
+	relative_position_id = CHI_Handle_The_Suckerpunch
+	x = 7
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Dialogue_With_The_Consulate"
+	}
+}
+
+shared_focus = {
+	id = CHI_Take_Over_British_Assets
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Dialogue_With_The_Consulate
+	}
+	relative_position_id = CHI_Handle_The_Suckerpunch
+	x = 7 
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Take_Over_British_Assets"
+	}
+}
+
+shared_focus = {
+	id = CHI_Assist_With_The_Evacuation
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Handle_The_Suckerpunch
+	}
+	relative_position_id = CHI_Handle_The_Suckerpunch
+	x = 9
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Assist_With_The_Evacuation"
+	}
+}
+
+shared_focus = {
+	id = CHI_Fund_The_Evacuation
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Assist_With_The_Evacuation
+	}
+	relative_position_id = CHI_Handle_The_Suckerpunch
+	x = 9
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Fund_The_Evacuation"
+	}
+}
+
+shared_focus = {
+	id = CHI_No_Idea_What_Were_Doing
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Fund_The_Evacuation
+	}
+	prerequisite = {
+		focus = CHI_Take_Over_British_Assets
+	}
+	relative_position_id = CHI_Handle_The_Suckerpunch
+	x = 8
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_No_Idea_What_Were_Doing"
+	}
+}
+
+shared_focus = {
+	id = CHI_Big_Trouble_In_Little_China
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Tear_It_Down
+	}
+	prerequisite = {
+		focus = CHI_No_Idea_What_Were_Doing
+	}
+	relative_position_id = CHI_Turmoil_In_The_Middle_Kingdom
+	x = 5
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Big_Trouble_In_Little_China"
+	}
+}
+
+shared_focus = {
+	id = CHI_Address_Corruption
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Big_Trouble_In_Little_China
+	}
+	mutually_exclusive = {
+		focus = CHI_Address_Suffering
+	}
+	mutually_exclusive = {
+		focus = CHI_Address_Underdevelopment
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 2
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Address_Corruption"
+	}
+}
+
+shared_focus = {
+	id = CHI_Examination_Agency
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Address_Corruption
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 2
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Examination_Agency"
+	}
+}
+
+shared_focus = {
+	id = CHI_Expand_The_Bureaucracy
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Examination_Agency
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 2
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Expand_The_Bureaucracy"
+	}
+}
+
+shared_focus = {
+	id = CHI_Unexpected_Consequences
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Expand_The_Bureaucracy
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 2
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Unexpected_Consequences"
+	}
+}
+
+shared_focus = {
+	id = CHI_Address_Suffering
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Big_Trouble_In_Little_China
+	}
+	mutually_exclusive = {
+		focus = CHI_Address_Corruption
+	}
+	mutually_exclusive = {
+		focus = CHI_Address_Underdevelopment
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Address_Suffering"
+	}
+}
+
+shared_focus = {
+	id = CHI_Public_Welfare_Funds
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Address_Suffering
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 5
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Public_Welfare_Funds"
+	}
+}
+
+shared_focus = {
+	id = CHI_Taxation_Saves_Lives
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Public_Welfare_Funds
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 5
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Taxation_Saves_Lives"
+	}
+}
+
+shared_focus = {
+	id = CHI_Unexpected_Consequences_I
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Taxation_Saves_Lives
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 5
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Unexpected_Consequences_I"
+	}
+}
+
+shared_focus = {
+	id = CHI_Address_Underdevelopment
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Big_Trouble_In_Little_China
+	}
+	mutually_exclusive = {
+		focus = CHI_Address_Corruption
+	}
+	mutually_exclusive = {
+		focus = CHI_Address_Suffering
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 8
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Address_Underdevelopment"
+	}
+}
+
+shared_focus = {
+	id = CHI_Labor_Corps
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Address_Underdevelopment
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 8
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Labor_Corps"
+	}
+}
+
+shared_focus = {
+	id = CHI_Swords_Plows_Chains
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Labor_Corps
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 8
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Swords_Plows_Chains"
+	}
+}
+
+shared_focus = {
+	id = CHI_Unexpected_Consequences_II
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Swords_Plows_Chains
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 8
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Unexpected_Consequences_II"
+	}
+}
+
+shared_focus = {
+	id = CHI_Bigger_Trouble
+	#icon = 
+	cost = 2.00
+	prerequisite = {
+		focus = CHI_Unexpected_Consequences
+	}
+	prerequisite = {
+		focus = CHI_Unexpected_Consequences_I
+	}
+	prerequisite = {
+		focus = CHI_Unexpected_Consequences_II
+	}
+	relative_position_id = CHI_Big_Trouble_In_Little_China
+	x = 5
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHI_Bigger_Trouble"
+	}
+}

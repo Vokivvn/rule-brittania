@@ -1,0 +1,17 @@
+debug_category = {
+	picture = GFX_RUS_decision_Tsardom
+
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		always = yes
+	}
+	
+	visible_when_empty = yes
+	
+	priority = {
+		base = 15
+	}
+}

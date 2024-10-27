@@ -1,0 +1,22 @@
+state={
+	id=841
+	name="STATE_841"
+	provinces={
+		694 
+	}
+	history={
+		owner = HOH
+		add_core_of = HOH
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			694 5
+		}
+	}
+	manpower=73121
+	state_category = town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_political_head_of_government_bg"
+		texturefile = "gfx/interface/political_head_of_government_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_political_head_of_government_portrait_frame"
+		texturefile = "gfx/interface/political_head_of_government_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_political_head_of_government_button"
+		texturefile = "gfx/interface/political_head_of_government_button.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ENG_Douglas_Hogg"
+		texturefile = "gfx/interface/political_head_of_government/Portrait_ENG_Douglas_Hogg.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ENG_Marquess_of_Salisbury"
+		texturefile = "gfx/interface/political_head_of_government/Portrait_ENG_Marquess_of_Salisbury.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ENG_Viscount_Simon"
+		texturefile = "gfx/interface/political_head_of_government/Portrait_ENG_Viscount_Simon.dds"
+	}
+}

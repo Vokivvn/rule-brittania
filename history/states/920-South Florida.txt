@@ -1,0 +1,22 @@
+state={
+	id=920
+	name="STATE_920"
+	provinces={
+		1913 9834 
+	}
+	
+	history={
+		owner = FLO
+		add_core_of = FLO
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			9834 5
+		}
+	}
+	
+	manpower=71530
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

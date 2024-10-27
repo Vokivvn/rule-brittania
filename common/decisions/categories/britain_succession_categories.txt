@@ -1,0 +1,38 @@
+#party v monarch
+
+ENG_parliament_versus_monarch_system = {
+	picture = GFX_ENG_decision_Parliament
+	visible_when_empty = yes
+	allowed = {
+		tag = ENG
+	}
+	visible = {
+		NOT = {
+			ENG = {
+				has_country_flag = ENG_Coalition_Dissolved
+			}
+		}
+	}
+}
+
+ENG_the_investigation = {
+	picture = GFX_FRA_decision_revolt
+	visible_when_empty = no
+	allowed = {
+		tag = ENG		
+	}
+	visible = {
+		has_country_flag = ENG_the_investigation_begins
+	}
+}
+
+ENG_collected_evidence = {
+	picture = GFX_FRA_decision_revolt
+	visible_when_empty = yes
+	allowed = {
+		tag = ENG		
+	}
+	visible = {
+		has_country_flag = ENG_the_investigation_begins
+	}
+}

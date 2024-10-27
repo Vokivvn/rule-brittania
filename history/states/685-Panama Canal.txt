@@ -1,0 +1,22 @@
+state={
+	id=685
+	name="STATE_685"
+	manpower = 232016
+	
+	state_category = town
+
+	history={
+		owner = NIC
+		buildings = {
+			infrastructure = 4
+			2031 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = NIC
+	}
+	
+	provinces={ 
+		2031 
+	}
+}

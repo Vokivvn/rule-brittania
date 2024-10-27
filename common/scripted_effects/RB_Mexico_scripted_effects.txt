@@ -1,0 +1,127 @@
+### MCW ###
+MEX_Politics_Init = {
+	################
+	### POLITICS ###
+	################
+	set_politics = {
+		ruling_party = despotism
+		last_election = "1935.11.14"
+		election_frequency = 12
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		cromwellianism = 16
+		marxism = 4
+		liberalism = 22
+		republicanism = 16
+		parliamentarianism = 14
+		administrationism = 8
+		absolutism = 0
+		despotism = 14
+		nationalism = 6
+	}
+
+	#######################
+	### COUNTRY LEADERS ###
+	#######################
+	#Initial Leader:
+	create_country_leader = {
+		name = "Felix Diaz"
+		desc = LEADER_DESC_MEX_FELIX_DIAZ
+		picture = "gfx/leaders/MEX/MEX/Portrait_MEX_Felix_Diaz.dds"
+		expire = "1999.12.12"
+		ideology = despotism_subtype
+		traits = { }
+	}
+
+
+	################
+	### GENERALS ###
+	################
+	create_corps_commander = {
+		name = "Francisco Luis Urquizo"
+		desc = "GENERAL_DESC_MEX_FRANCISCO_LUIS_URQUIZO"
+		portrait_path = "gfx/leaders/MEX/MEX/Portrait_MEX_Francisco_Luis_Urquizo.dds"
+		traits = { organizer career_officer }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	create_corps_commander = {
+		name = "Pablo Gonzalez Garza"
+		desc = "GENERAL_DESC_MEX_PABLO_GONZALEZ_GARZA"
+		portrait_path = "gfx/leaders/MEX/MEX/Portrait_MEX_Pablo_Gonzalez_Garza.dds"
+		traits = { trait_reckless old_guard }
+		skill = 2
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
+RMX_Politics_Init = {
+	################
+	### POLITICS ###
+	################
+	set_politics = {
+		ruling_party = liberalism
+		last_election = "1935.11.14"
+		election_frequency = 12
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		cromwellianism = 16
+		marxism = 4
+		liberalism = 22
+		republicanism = 16
+		parliamentarianism = 14
+		administrationism = 8
+		absolutism = 0
+		despotism = 14
+		nationalism = 6
+	}
+
+	#######################
+	### COUNTRY LEADERS ###
+	#######################
+	#Initial Leader:
+	create_country_leader = {
+		name = "Felipe Ángeles"
+		desc = LEADER_DESC_MEX_FELIPE_ANGELES
+		picture = "gfx/leaders/MEX/RMX/Portrait_MEX_Felipe_Angeles.dds"
+		expire = "1999.12.12"
+		ideology = liberalism_subtype
+		traits = { }
+	}
+
+	################
+	### GENERALS ###
+	################
+	create_corps_commander = {
+		name = "Francisco Luis Urquizo"
+		desc = "GENERAL_DESC_MEX_FRANCISCO_LUIS_URQUIZO"
+		portrait_path = "gfx/leaders/MEX/MEX/Portrait_MEX_Francisco_Luis_Urquizo.dds"
+		traits = { organizer career_officer }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	create_corps_commander = {
+		name = "Pablo Gonzalez Garza"
+		desc = "GENERAL_DESC_MEX_PABLO_GONZALEZ_GARZA"
+		portrait_path = "gfx/leaders/MEX/MEX/Portrait_MEX_Pablo_Gonzalez_Garza.dds"
+		traits = { trait_reckless old_guard }
+		skill = 2
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}

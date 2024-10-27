@@ -1,0 +1,17 @@
+﻿l_english:
+ ST:0 "st"
+ ND:0 "nd"
+ RD:0 "rd"
+ TH:0 "th"
+ WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ War"
+ CIVIL_WAR_NAME:0 "$ORDER$$SECOND$ Civil War"
+ WAR_TAKE_CORE_NAME:0 "$ORDER$$FIRST$ Reclamation of $STATE$"
+ WAR_TAKE_CLAIM_NAME:0 "$ORDER$$FIRST$ Aggression for $STATE$"
+ 
+ #AMERICA
+ WAR_NAME_USA_CNA:0 "The American Revolution"
+ WAR_NAME_CNA_USA:0 "The American Rebellion"
+ WAR_NAME_ACA_NEE:0 "The Maine War"
+ WAR_NAME_NEE_ACA:0 "The Maine War"
+ WAR_NAME_AFC_DIX:0 "New African Liberation War"
+ WAR_NAME_DIX_AFC:0 "African Uprising"

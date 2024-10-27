@@ -1,0 +1,26 @@
+
+state={
+	id=572
+	name="STATE_572"
+
+	history={
+		owner = SIB
+		victory_points = {
+			9292 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = SIB
+
+	}
+
+	provinces={
+		1233 1292 1294 1327 1694 1775 4242 4850 7285 9292 10170 10213 10542 12106 12157 12287 12584 
+	}
+	manpower=2074932
+	buildings_max_level_factor=1.000
+	state_category=town
+}

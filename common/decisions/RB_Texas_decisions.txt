@@ -1,0 +1,193 @@
+TEX_oil_dependence = {
+	TEX_divert_oil_investments = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			custom_effect_tooltip = TEX_lower_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = -1
+			}
+		}
+	}
+	TEX_raise_oil_prices = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			975 = {
+			add_resource = {
+    			type = oil
+    			amount = -15
+				}
+			}
+			custom_effect_tooltip = TEX_lower_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = -2
+			}
+		}
+	}
+	TEX_invest_in_transportation = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			375 = {
+				add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TEX_lower_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = -1
+			}
+		}
+	}
+	TEX_support_oil_unions = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			add_stability = 0.05
+			custom_effect_tooltip = TEX_lower_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = -1
+			}
+		}
+	}
+	TEX_limit_civilian_usage = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			975 = {
+			add_resource = {
+    			type = oil
+    			amount = -15
+				}
+			}
+			custom_effect_tooltip = TEX_lower_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = -2
+			}
+		}
+	}
+
+	TEX_open_more_oil_jobs = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			custom_effect_tooltip = TEX_raise_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = 1
+			}
+		}
+	}
+	TEX_support_humble_oil = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			975 = {
+			add_resource = {
+    			type = oil
+    			amount = 15
+				}
+			}
+			custom_effect_tooltip = TEX_raise_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = 1
+			}
+		}
+	}
+	TEX_invest_in_beaumont = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			375 = {
+				add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+				}
+			}
+			custom_effect_tooltip = TEX_raise_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = 1
+			}
+		}
+	}
+	TEX_attract_immigration_to_oil_cities = {
+		visible = {
+			has_country_flag = TEX_the_oil_agenda
+		}
+		allowed = {
+			tag = TEX
+		}
+		cost = 75
+		days_re_enable = 30
+		complete_effect = {
+			add_manpower = 5000
+			custom_effect_tooltip = TEX_raise_oil_impact
+			add_to_variable = {
+    			var = TEX_OIL_RELY
+    			value = 1
+			}
+		}
+	}
+
+}

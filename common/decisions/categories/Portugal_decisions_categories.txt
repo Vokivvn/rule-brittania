@@ -1,0 +1,10 @@
+Morocco_war = {
+	#picture = 
+	visible_when_empty = yes
+	allowed = {
+		tag = POR
+	}
+	visible = {
+		has_country_flag = POR_war_in_MOR
+	}
+}

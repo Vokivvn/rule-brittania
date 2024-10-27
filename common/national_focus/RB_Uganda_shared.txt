@@ -1,0 +1,305 @@
+shared_focus = {
+	id = UGA_pearl_of_africa
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 8
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_pearl_of_africa"
+		country_event = { id = uga.1 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = UGA_meet_with_the_king
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = UGA_pearl_of_africa
+	}
+	relative_position_id = UGA_pearl_of_africa
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_meet_with_the_king"
+		hidden_effect = {
+			country_event = { id = uga.2 days = 1 }
+		}
+		custom_effect_tooltip = UGA_meet_with_the_king_tt
+	}
+}
+
+shared_focus = {
+	id = UGA_report_home
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = UGA_pearl_of_africa
+	}
+	relative_position_id = UGA_pearl_of_africa
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_report_home"
+		custom_effect_tooltip = UGA_report_home_tt
+	}
+}
+
+shared_focus = {
+	id = UGA_visit_plantations
+	icon = GFX_LOU_Cracker
+	cost = 5
+
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = UGA_meet_with_the_king
+	}
+	relative_position_id = UGA_meet_with_the_king
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_visit_plantations"
+		custom_effect_tooltip = UGA_visit_plantations_tt
+	}
+}
+
+shared_focus = {
+	id = UGA_trip_to_london
+	icon = GFX_LOU_Cracker
+	cost = 5
+
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = UGA_report_home
+	}
+	relative_position_id = UGA_report_home
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_trip_to_london"
+		custom_effect_tooltip = UGA_trip_to_london_tt
+	}
+}
+
+shared_focus = {
+	id = UGA_negotiations_should_begin_soon
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 0
+	y = 3
+	prerequisite = {
+		focus = UGA_meet_with_the_king
+		focus = UGA_report_home
+	}
+	relative_position_id = UGA_pearl_of_africa
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_negotiations_should_begin_soon"
+		country_event = { id = uga.6 days = 5 }
+		custom_effect_tooltip = UGA_negotiations_should_begin_soon_tt
+	}
+}
+
+shared_focus = {
+	id = UGA_year_of_preparations
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 0
+	y = 1
+	available = {
+		always = no
+	}
+	prerequisite = {
+		focus = UGA_negotiations_should_begin_soon
+	}
+	relative_position_id = UGA_negotiations_should_begin_soon
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_year_of_preparations"
+		country_event = { id = uga.4 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = UGA_improve_the_legalese
+	icon = GFX_LOU_Cracker
+	cost = 5
+
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = UGA_year_of_preparations
+	}
+	relative_position_id = UGA_year_of_preparations
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_improve_the_treaty"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_cover_the_loopholes
+	icon = GFX_LOU_Cracker
+	cost = 5
+
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = UGA_year_of_preparations
+	}
+	relative_position_id = UGA_year_of_preparations
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_cover_the_loopholes"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_prepare_for_presentation
+	icon = GFX_LOU_Cracker
+	cost = 5
+
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = UGA_year_of_preparations
+	}
+	relative_position_id = UGA_year_of_preparations
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_prepare_for_presentation"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_grand_presentation
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = UGA_prepare_for_presentation
+	}
+	relative_position_id = UGA_prepare_for_presentation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_grand_presentation"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_our_lifeline_is_cut
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = -7
+	y = 1
+	prerequisite = {
+		focus = UGA_year_of_preparations
+	}
+	relative_position_id = UGA_year_of_preparations
+	allow_branch = {
+		has_global_flag = kenya_war_1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_our_lifeline_is_cut"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_ask_daudi_cwa
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = UGA_our_lifeline_is_cut
+	}
+	relative_position_id = UGA_our_lifeline_is_cut
+	mutually_exclusive = {
+		focus = UGA_it_is_our_duty
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_ask_daudi_cwa"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_it_is_our_duty
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = UGA_our_lifeline_is_cut
+	}
+	relative_position_id = UGA_our_lifeline_is_cut
+	mutually_exclusive = {
+		focus = UGA_ask_daudi_cwa
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_it_is_our_duty"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_request_kings_guards
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = UGA_ask_daudi_cwa
+		focus = UGA_it_is_our_duty
+	}
+	relative_position_id = UGA_our_lifeline_is_cut
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_request_kings_guards"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_connection_through_tanzania
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = UGA_ask_daudi_cwa
+		focus = UGA_it_is_our_duty
+	}
+	relative_position_id = UGA_ask_daudi_cwa
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_connection_through_tanzania"
+
+	}
+}
+
+shared_focus = {
+	id = UGA_garrison_along_kenyan_rails
+	icon = GFX_LOU_Cracker
+	cost = 10
+
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = UGA_it_is_our_duty
+		focus = UGA_ask_daudi_cwa
+	}
+	relative_position_id = UGA_it_is_our_duty
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UGA_garrison_along_kenyan_rails"
+
+	}
+}

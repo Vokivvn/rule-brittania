@@ -1,0 +1,26 @@
+
+state={
+	id=382
+	name="STATE_382"
+	resources={
+		oil=14.000
+	}
+
+	history={
+		owner = UTY
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = UTY
+		add_core_of = LOU
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		868 1658 6887 7684 10535 12633
+	}
+	manpower=435790
+	buildings_max_level_factor=1.000
+	state_category=town
+}

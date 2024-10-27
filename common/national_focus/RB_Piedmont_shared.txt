@@ -1,0 +1,305 @@
+########################
+#### Piedmont Trees ####
+########################
+
+##########################
+#### The First Launch ####
+##########################
+
+shared_focus = {
+	id = PIE_ocean_blue
+	icon = GFX_BFE_Rising_Sun
+	cost = 3
+
+    x = 8
+    y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_ocean_blue"
+		country_event = { id = pied.1 }
+	}
+}
+
+shared_focus = {
+    id = PIE_first_prep
+    icon = GFX_Battlefleet
+    prerequisite = { focus = PIE_ocean_blue }
+    cost = 2
+
+	x = 0
+	y = 1
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_first_prep"
+		country_event = { id = pied.2 }
+		add_stability = 0.02
+	}
+}
+
+shared_focus = {
+	id = PIE_preparing_ship
+	icon = goal_endless_money
+	prerequisite = { focus = PIE_first_prep }
+	cost = 1
+
+	x = -1
+	y = 2
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_preparing_ship"
+		country_event = { id = pied.15}
+	}
+}
+
+shared_focus = {
+    id = PIE_swab_decks
+    prerequisite = { focus = PIE_preparing_ship }
+    cost = 1
+
+	x = -3
+	y = 3
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_swab_decks"
+		country_event = { id = pied.17 }
+	}
+}
+
+shared_focus = {
+    id = PIE_final_checks
+    icon = GFX_Generic_Naval_Industry
+    prerequisite = { focus = PIE_swab_decks }
+    cost = 1
+
+	x = -3
+	y = 4
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_final_checks"
+		country_event = { id = pied.3 }
+	}
+}
+
+shared_focus = {
+    id = PIE_perfect_crew
+	icon = GFX_focus_generic_navy_battleship2
+    prerequisite = { focus = PIE_preparing_ship }
+    cost = 1
+
+	x = -1
+	y = 3
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_perfect_crew"
+		country_event = { id = pied.4 }
+	}
+}
+
+shared_focus = {
+    id = PIE_perfect_uniforms
+    icon = GFX_Cloth
+    prerequisite = { focus = PIE_perfect_crew }
+    cost = 1
+
+	x = -1
+	y = 4
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_perfect_uniforms"
+		country_event = { id = pied.5 }
+	}
+}
+
+shared_focus = {
+	id = PIE_prepare_harbour
+	icon = goal_endless_money
+	prerequisite = { focus = PIE_first_prep }
+	cost = 1
+
+	x = 1
+	y = 2
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_prepare_harbour"
+		country_event = { id = pied.16}
+	}
+}
+
+shared_focus = {
+    id = PIE_invite_aristocracy
+    icon = GFX_goal_collaborate_local_elites
+    prerequisite = { focus = PIE_prepare_harbour }
+    cost = 1
+
+	x = 1
+	y = 3
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_invite_aristocracy"
+		country_event = { id = pied.6 }
+	}
+}
+
+shared_focus = {
+    id = PIE_invite_british
+    icon = GFX_ENG_Empire_of_The_Seas
+    prerequisite = { focus = PIE_invite_aristocracy }
+    cost = 1
+
+	x = 1
+	y = 4
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_invite_british"
+		country_event = { id = pied.7 }
+	}
+}
+
+shared_focus = {
+    id = PIE_launch_location
+    icon = GFX_Generic_Major_City
+    prerequisite = { focus = PIE_prepare_harbour }
+    cost = 1
+
+	x = 3
+	y = 3
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_launch_location"
+		country_event = { id = pied.8 }
+	}
+}
+
+shared_focus = {
+    id = PIE_any_toppings
+	icon = GFX_focus_generic_navy_battleship2
+    prerequisite = { focus = PIE_launch_location }
+    cost = 1
+
+	x = 3
+	y = 4
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_any_toppings"
+		country_event = { id = pied.9 }
+	}
+}
+
+shared_focus = {
+	id = PIE_centerpiece_set
+	icon = The_New_Yacht
+	prerequisite = { focus = PIE_final_checks }
+	cost = 1
+
+	x = -2
+	y = 5
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_centerpiece_set"
+		add_political_power = 10
+		add_stability = 0.02
+	}
+}
+
+shared_focus = {
+    id = PIE_actors_set
+    icon = GFX_focus_generic_military_mission_blue
+    prerequisite = { focus = PIE_perfect_uniforms }
+    prerequisite = { focus = PIE_invite_british }
+    cost = 1
+
+	x = 0
+	y = 5
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_actors_set"
+		add_political_power = 10
+		add_stability = 0.02
+	}
+}
+
+shared_focus = {
+	id = PIE_stage_set
+	icon = GFX_Bluewater_Navy
+	prerequisite = { focus = PIE_any_toppings }
+	cost = 1
+
+	x = 2
+	y = 5
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_stage_set"
+		add_political_power = 10
+		add_stability = 0.02
+	}
+}
+
+shared_focus = {
+	id = PIE_perfect_vintage
+	icon = GFX_Wine
+	prerequisite = { focus = PIE_centerpiece_set }
+	prerequisite = { focus = PIE_actors_set }
+	prerequisite = { focus = PIE_stage_set }
+	cost = 2
+
+	x = 0
+	y = 6
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_perfect_vintage"
+		country_event = { id = pied.10 }
+	}
+}
+
+shared_focus = {
+    id = PIE_first_launch
+    icon = The_New_Yacht
+    prerequisite = { focus = PIE_perfect_vintage }
+    cost = 2
+
+	x = 0
+	y = 7
+	relative_position_id = PIE_ocean_blue
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PIE_first_launch"
+		IF = {
+			limit = {
+				check_variable = {
+					var = PIE_boat_launch_prep
+					value = 4
+					compare = greater_than_or_equals
+				}
+			}
+			country_event = { id = pied.11 }
+		}
+		ELSE_IF = {
+			limit = {
+				check_variable = {
+					var = PIE
+					value = -4
+					compare = less_than_or_equals
+				}
+			}
+			country_event = { id = pied.12 }
+		}
+		ELSE = {
+			country_event = { id = pied.13 }
+		}
+	}
+}

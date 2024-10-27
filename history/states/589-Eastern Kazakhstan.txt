@@ -1,0 +1,23 @@
+state={
+	id=589
+	name="STATE_589"
+
+	history={
+		owner = CHI
+		add_core_of = SIK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			1668 1
+		}
+	}
+
+	provinces={
+		1749 1818 1864 4651 4867 4674 7711 7784 7795 7856 7890 10550 10610 10619 10680 12427 12529 12564 12635 12662 13148 13149 13151 13197 7680
+	}
+	manpower=535191
+	buildings_max_level_factor=1.000
+	state_category=megalopolis #READ THE ERROR LOG
+}

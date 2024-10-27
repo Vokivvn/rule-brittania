@@ -1,0 +1,31 @@
+
+state={
+	id=308
+	name="STATE_308"
+	manpower=	25678
+	state_category = tiny_island
+
+	history={
+		add_core_of = CAR
+		owner = CAR
+		victory_points = {
+			4450 5
+		}
+		victory_points = {
+			7123 5
+		}
+		buildings = {
+			infrastructure = 4
+			4450 = {
+				naval_base = 1
+			}
+			7123 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		4450 7123 
+	}
+}

@@ -1,0 +1,55 @@
+﻿l_english:
+ ##Leader Descs##
+
+ ##Country Names##
+ UPR_cromwellianism:0 "United Parthenopean Republics"
+ UPR_cromwellianism_DEF:0 "The United Parthenopean Republics"
+ UPR_marxism:0 "United Parthenopean Republics"
+ UPR_marxism_DEF:0 "The United Parthenopean Republics"
+ UPR_liberalism:0 "United Parthenopean Republics"
+ UPR_liberalism_DEF:0 "The United Parthenopean Republics"
+ UPR_republicanism:0 "United Parthenopean Republics"
+ UPR_republicanism_DEF:0 "The United Parthenopean Republics"
+ UPR_parliamentarianism:0 "United Parthenopean Republics"
+ UPR_parliamentarianism_DEF:0 "The United Parthenopean Republics"
+ UPR_administrationism:0 "United Parthenopean Republics"
+ UPR_administrationism_DEF:0 "The United Parthenopean Republics"
+ UPR_absolutism:0 "United Parthenopean Republics"
+ UPR_absolutism_DEF:0 "The United Parthenopean Republics"
+ UPR_despotism:0 "United Parthenopean Republics"
+ UPR_despotism_DEF:0 "The United Parthenopean Republics"
+ UPR_nationalism:0 "United Parthenopean Republics"
+ UPR_nationalism_DEF:0 "The United Parthenopean Republics"
+ UPR_cromwellianism_ADJ:0 "Parthenopean"
+ UPR_marxism_ADJ:0 "Parthenopean"
+ UPR_liberalism_ADJ:0 "Parthenopean"
+ UPR_republicanism_ADJ:0 "Parthenopean"
+ UPR_parliamentarianism_ADJ:0 "Parthenopean"
+ UPR_administrationism_ADJ:0 "Parthenopean"
+ UPR_despotism_ADJ:0 "Parthenopean"
+ UPR_nationalism_ADJ:0 "Parthenopean"
+
+ ##Party Names##
+ UPR_liberalism_party:0 "MOLA"
+ UPR_liberalism_party_long:0 "Movimento dei Lavoratori"
+ UPR_republicanism_party:0 "ROMO"
+ UPR_republicanism_party_long:0 "Repubblica o Morte"
+ UPR_parliamentarianism_party:0 "LOMO"
+ UPR_parliamentarianism_party_long:0 "Libertà o Morte"
+ UPR_nationalism_party:0 "MOPO"
+ UPR_nationalism_party_long:0 "Movimento Popolare"
+
+ ##Cosmetic Tags##
+
+ ##Ideas##
+ UPR_ROMO_LOMO:0 "ROMO and LOMO"
+ UPR_Modernising_Economy:0 "Modernising Economy"
+ UPR_Liberal_Stronghold:0 "Liberal Stronghold"
+ UPR_British_Economic_Stability:0 "British Economic Stability"
+
+ ##Events##
+
+
+ ##Focuses##
+
+ #Starting Tree#

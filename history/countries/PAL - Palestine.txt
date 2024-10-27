@@ -1,0 +1,144 @@
+﻿capital = 454
+
+add_ideas = {
+	british_econ_subordination
+	weak_british_colony
+	british_colonial_force	
+	PAL_Jewish_Settlement_Medium
+	PAL_Zionist_Strength_Medium
+	PAL_Arab_Strength_Disunified
+}
+
+set_research_slots = 2
+
+set_stability = 0.5
+set_war_support = 0.1
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+set_cosmetic_tag = ENG_Puppet
+
+set_politics = {
+	ruling_party = administrationism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no	
+}
+
+set_popularities = {
+    cromwellianism = 0
+    marxism = 15
+    liberalism = 7
+    republicanism = 5
+    parliamentarianism = 3
+    administrationism = 50
+    absolutism = 0
+    despotism = 5
+    nationalism = 15
+}
+
+create_country_leader = {
+	name = "David Ben-Gurion"
+	#desc = 
+	picture = "Portrait_PAL_David_Ben_Gurion.dds"
+	expire = "1999.12.12"
+	ideology = marxism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Hayyim Vaytsman"
+	#desc = 
+	picture = "Portrait_PAL_Hayyim_Azri'el_Vaytsman.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Raghib al-Nashashibi"
+	#desc = 
+	picture = "Portrait_PAL_Raghib_al-Nashashibi.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Izzat Darwaza"
+	#desc = 
+	picture = "Portrait_PAL_Izzat_Darwaza.dds"
+	expire = "1999.12.12"
+	ideology = parliamentarianism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Wauchope"
+	#desc = 
+	picture = "Portrait_PAL_Arthur_Wauchope.dds"
+	expire = "1999.12.12"
+	ideology = administrationism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ze'ev Zhabotinski"
+	#desc = 
+	picture = "Portrait_PAL_Ze'ev_Zhabotinski.dds"
+	expire = "1999.12.12"
+	ideology = despotism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Haj Amin al-Husayni"
+	#desc = 
+	picture = "Portrait_PAL_Haj_Amin_al_Husayni.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {
+	}
+}

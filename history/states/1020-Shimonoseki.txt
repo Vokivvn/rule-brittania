@@ -1,0 +1,20 @@
+state={
+	id=1020
+	name="STATE_1020"
+
+	history={
+		owner = EAC
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = EAC
+	}
+
+	state_category = city
+
+	provinces={
+		13289 
+	}
+	manpower=981203
+	buildings_max_level_factor=1.000
+}

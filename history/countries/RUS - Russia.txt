@@ -1,0 +1,506 @@
+﻿capital = 219
+
+oob = "RB_RUS_1936"
+
+if = {
+	limit = { 
+		has_dlc = "Man the Guns" 
+	}
+	set_technology = {    
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_light = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_naval_mines = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+	}
+	set_naval_oob = "RB_RUS_1936_naval_mtg" 
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+	    early_destroyer = 1
+	    early_light_cruiser = 1
+	    early_heavy_cruiser = 1
+	    early_battleship = 1
+	    early_battlecruiser = 1
+	    transport = 1
+		
+	}
+	set_naval_oob = "RB_RUS_1936_naval_legacy"
+}
+
+set_research_slots = 2
+
+set_stability = 0.5
+set_war_support = 0.1
+
+load_focus_tree = RUS_start_tree
+
+add_ideas = {
+	### Standard ###
+	RUS_Defeated_Nation
+	RUS_European_Backwater
+	RUS_Rukonomika
+	RUS_Five_Military_Modernisations
+	RUS_Republican_Agitation
+	RUS_Chernosotentsi
+	### Laws ###
+	limited_conscription
+	british_pol_kingmaking
+	british_influenced_forces
+	british_econ_influence_idea
+}
+
+set_cosmetic_tag = RUS_ENG
+
+RUS = {
+	create_faction = "Russian Empire"
+	add_to_faction = KHR
+	add_to_faction = RVD
+	add_to_faction = ATR
+	add_to_faction = KAR
+	add_to_faction = BLR
+}
+
+#Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	#early_submarine = 1
+	#early_destroyer = 1
+	#basic_destroyer = 1
+	#early_light_cruiser = 1
+	#early_heavy_cruiser = 1
+	#early_battleship = 1
+	#early_battlecruiser = 1
+	#early_carrier = 1
+	#trench_warfare = 1
+
+	#transport = 1
+	#fleet_in_being = 1
+	#electronic_mechanical_engineering = 1
+	#radio = 1
+	#radio_detection = 1
+}
+
+if = {
+	limit = { has_dlc = "Death or Dishonor" }
+	set_autonomy = {
+		target = ATR 
+		autonomy_state = RUSautonomy_governate
+	}
+	else = { 
+		puppet = ATR 
+	}
+}
+if = {
+	limit = { has_dlc = "Death or Dishonor" }
+	set_autonomy = {
+		target = KHR 
+		autonomy_state = RUSautonomy_governate
+	}
+	else = { 
+		puppet = KHR 
+	}
+}
+if = {
+	limit = { has_dlc = "Death or Dishonor" }
+	set_autonomy = {
+		target = RVD 
+		autonomy_state = RUSautonomy_governate
+	}
+	else = { 
+		puppet = RVD 
+	}
+}
+if = {
+	limit = { has_dlc = "Death or Dishonor" }
+	set_autonomy = {
+		target = BLR 
+		autonomy_state = RUSautonomy_governate
+	}
+	else = { 
+		puppet = BLR 
+	}
+}
+if = {
+	limit = { has_dlc = "Death or Dishonor" }
+	set_autonomy = {
+		target = KAR 
+		autonomy_state = RUSautonomy_governate
+	}
+	else = { 
+		puppet = KAR 
+	}
+}
+
+ATR = {
+	set_politics = {
+		ruling_party = despotism
+		last_election = "1935.11.14"
+		election_frequency = 12
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		cromwellianism = 0
+		marxism = 0
+		liberalism = 0
+		republicanism = 0
+		parliamentarianism = 0
+		administrationism = 0
+		absolutism = 0
+		despotism = 100
+		nationalism = 0
+	}
+}
+
+BLR = {
+	set_politics = {
+		ruling_party = despotism
+		last_election = "1935.11.14"
+		election_frequency = 12
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		cromwellianism = 4
+		marxism = 5
+		liberalism = 0
+		republicanism = 1
+		parliamentarianism = 0
+		administrationism = 0
+		absolutism = 6
+		despotism = 74
+		nationalism = 10
+	}
+}
+
+KAR = {
+	set_politics = {
+		ruling_party = absolutism
+		last_election = "1935.11.14"
+		election_frequency = 12
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		cromwellianism = 1
+		marxism = 4
+		liberalism = 10
+		republicanism = 20
+		parliamentarianism = 15
+		administrationism = 20
+		absolutism = 25
+		despotism = 4
+		nationalism = 1
+	}
+}
+
+KHR = {
+	set_politics = {
+		ruling_party = absolutism
+		last_election = "1935.11.14"
+		election_frequency = 12
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		cromwellianism = 0
+		marxism = 0
+		liberalism = 0
+		republicanism = 0
+		parliamentarianism = 0
+		administrationism = 0
+		absolutism = 100
+		despotism = 0
+		nationalism = 0
+	}
+}
+
+RVD = {
+	set_politics = {
+		ruling_party = absolutism
+		last_election = "1935.11.14"
+		election_frequency = 12
+		elections_allowed = no
+	}
+	
+	set_popularities = {
+		cromwellianism = 0
+		marxism = 0
+		liberalism = 0
+		republicanism = 0
+		parliamentarianism = 0
+		administrationism = 0
+		absolutism = 100
+		despotism = 0
+		nationalism = 0
+	}
+}
+
+set_politics = {
+	ruling_party = absolutism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+	cromwellianism = 5
+	marxism = 5
+	liberalism = 5
+	republicanism = 5
+	parliamentarianism = 5
+	administrationism = 5
+	absolutism = 60
+	despotism = 5
+	nationalism = 5
+}
+
+### Country Leaders ###
+create_country_leader = {
+	name = "Mikhail Kalinin"
+	desc = "POLITICS_MIKHAIL_KALININ_DESC"
+	picture = "Portrait_Russia_Mikhail_Kalinin.dds"
+	expire = "1999.12.12"
+	ideology = marxism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Alexander IV"
+	desc = "POLITICS_ALEXANDER_IV_DESC"
+	picture = "Portrait_Russia_Alexei_Nikolaevich.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = {
+		soldier_tsar
+	}
+}
+
+create_country_leader = {
+	name = "Anton Denikin"
+	desc = "POLITICS_ANTON_DENIKIN_DESC"
+	picture = "Portrait_Russia_Anton_Denikin.dds"
+	expire = "1999.12.12"
+	ideology = despotism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Mikhail Diterikhs"
+	desc = "POLITICS_MIKHAIL_DITERIKHS_DESC"
+	picture = "Portrait_Russia_Mikhail_Diterikhs.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {
+		
+	}
+}
+
+### VARIANTS ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	## Battleship ##
+	create_equipment_variant = {
+		name = "Imperatritsta Mariya Class"
+		type = ship_hull_heavy_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	## Light Cruisers ##
+	create_equipment_variant = {
+		name = "Svetlana Class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Admiral Nakhimov Class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	## Destroyers ##
+	create_equipment_variant = {
+		name = "Izyaslav Class"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Fidonisy Class"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	## Submarines ##
+	create_equipment_variant = {
+		name = "Bars Class"
+		type = ship_hull_submarine_1
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	## Submarines ##
+	create_equipment_variant = {
+		name = "Bars Class"
+		type = submarine_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+	## Destroyers ##
+	create_equipment_variant = {
+		name = "Izyaslav Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Fidonisy Class"
+		type = destroyer_1
+		parent_version = 0
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	## Light Cruisers ##
+	create_equipment_variant = {
+		name = "Svetlana Class"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_gun_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Admiral Nakhimov Class"
+		type = light_cruiser_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_gun_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Imperatritsta Mariya Class"
+		type = battleship_1
+		parent_version = 0
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 1
+		}
+	}
+}
+
+
+### Generals ###

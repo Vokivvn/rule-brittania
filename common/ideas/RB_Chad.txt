@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+		CHA_laboratory = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHA_laboratory"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = science_oil_econom_civilian
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		CHA_loaned_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHA_loaned_economy"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = economy_country_flag_CHA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = NGA
+				extra_trade_to_target_factor = 0.5
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+		CHA_unionizing = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CHA_unionizing"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = science_oil_econom_civilian
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				marxism_drift = 0.005
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}		

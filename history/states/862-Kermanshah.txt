@@ -1,0 +1,18 @@
+state={
+	id=862
+	name="STATE_862"
+ 
+
+        state_category = rural
+          
+
+	provinces={
+		829 5050 5098 12773 
+	}
+	history = {
+		owner = APO
+		add_core_of = APO
+	}
+	manpower=365356
+	buildings_max_level_factor=1.000
+}

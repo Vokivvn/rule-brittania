@@ -1,0 +1,36 @@
+
+state={
+	id=174
+	name="STATE_174"
+
+	history={
+		owner = CAS
+		victory_points = {
+			726 10 
+		}
+		victory_points = {
+			920 3 
+		}
+		victory_points = {
+			4024 2 
+		}
+		victory_points = {
+			11843 5 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = CAS
+
+	}
+
+	provinces={
+		726 918 920 3725 3727 3918 3920 4024 6746 6907 11843 
+	}
+	manpower=766041
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

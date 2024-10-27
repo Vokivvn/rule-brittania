@@ -1,0 +1,20 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "button_open_anglosphere"
+		position = { x = 995 y = 30	}	
+		
+		size = { width = 440 height = 105 }
+		
+		moveable = yes
+		buttonType = {
+			name = "open_button"
+			position = { x = -5 y = 0 }
+			buttonFont = "hoi_16mbs"
+			buttonText = "[Get_BritGrip]"			
+			quadTextureSprite = "button_type_1"
+			clicksound = click_default
+			pdx_tooltip = "example_9_tooltip"
+		}
+    }
+}

@@ -1,0 +1,16 @@
+state={
+	id=853
+	name="STATE_853"
+	history = {
+		owner = EAC
+		victory_points = {
+			10068 5
+		}
+	}
+	provinces={
+		10068
+	}
+	manpower=1203841
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,900 @@
+CNA_public_works_category = {
+	CNA_trans_appalachian_railroad = {
+		available = {
+			NOT = { has_country_flag = CNA_public_work_ongoing }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 150
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_trans_appalachian_railroad"
+			set_country_flag = CNA_public_work_ongoing
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_trans_appalachian_railroad"
+			360 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			824 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			825 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			826 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			clr_country_flag = CNA_public_work_ongoing
+			add_to_variable = { CNA_var_construction_speed = 0.1 }
+			add_to_variable = { CNA_var_factory_output = 0.1 }
+			add_to_variable = { CNA_var_prod_eff_cap = 0.1 }
+			custom_effect_tooltip = CNA_modify_econ_crash_by
+			custom_effect_tooltip = CNA_tooltip_construction_speed_10
+			custom_effect_tooltip = CNA_tooltip_factory_output_10
+			custom_effect_tooltip = CNA_tooltip_prod_eff_cap_10
+		}
+	}
+	CNA_great_lakes_project = {
+		available = {
+			NOT = { has_country_flag = CNA_public_work_ongoing }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 150
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_great_lakes_project"
+			set_country_flag = CNA_public_work_ongoing
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_great_lakes_project"
+			every_owned_state = {
+				limit = {
+					OR = {
+						AND = {
+							has_state_flag = USM_commie_state
+							NOT = { state = 357 }
+						}
+						state = 261
+						state = 929
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			clr_country_flag = CNA_public_work_ongoing
+			add_to_variable = { CNA_var_construction_speed = 0.1 }
+			add_to_variable = { CNA_var_factory_output = 0.1 }
+			add_to_variable = { CNA_var_prod_eff_cap = 0.1 }
+			custom_effect_tooltip = CNA_modify_econ_crash_by
+			custom_effect_tooltip = CNA_tooltip_construction_speed_10
+			custom_effect_tooltip = CNA_tooltip_factory_output_10
+			custom_effect_tooltip = CNA_tooltip_prod_eff_cap_10
+		}
+	}
+}
+
+CNA_american_insurrection_category = {
+	CNA_fortifying_the_south = {
+		available = {
+			NOT = {
+				AND = {
+					has_full_control_of_state = 363
+					has_full_control_of_state = 364
+					has_full_control_of_state = 365
+					has_full_control_of_state = 367
+				}
+			}
+		}
+		activation = {
+			has_country_flag = CNA_south_defensive_plan
+		}
+		fire_only_once = yes
+		days_mission_timeout = 30
+		ai_will_do = {
+			factor = 20
+		}
+		is_good = yes
+		timeout_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision timeout CNA_fortifying_the_south"
+			363 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			364 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			365 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			367 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_fortifying_the_south"
+		}
+	}
+	CNA_fortifying_the_maritimes = {
+		available = {
+			NOT = {
+				AND = {
+					has_full_control_of_state = 468
+					has_full_control_of_state = 809
+				}
+			}
+		}
+		activation = {
+			has_country_flag = CNA_maritimes_defensive_plan
+		}
+		fire_only_once = yes
+		days_mission_timeout = 30
+		ai_will_do = {
+			factor = 20
+		}
+		is_good = yes
+		timeout_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision timeout CNA_fortifying_the_maritimes"
+			468 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			809 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_fortifying_the_maritimes"
+		}
+	}
+	CNA_fortifying_the_northwest = {
+		available = {
+			NOT = {
+				AND = {
+					has_full_control_of_state = 394
+					has_full_control_of_state = 801
+					has_full_control_of_state = 802
+				}
+			}
+		}
+		activation = {
+			has_country_flag = CNA_northwest_defensive_plan
+		}
+		fire_only_once = yes
+		days_mission_timeout = 30
+		ai_will_do = {
+			factor = 20
+		}
+		is_good = yes
+		timeout_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision timeout CNA_fortifying_the_northwest"
+			394 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			801 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			802 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_fortifying_the_northwest"
+		}
+	}
+}
+
+CNA_british_support_category = {
+	CNA_test = {
+		available = {
+			always = no
+		}
+		visible = {
+			NOT = { has_completed_focus = CNA_british_military_support }
+		}
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 50
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_test"
+		}
+	}
+	CNA_british_guns = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CNA_has_above_0_percent_cities_tooltip
+				NOT = {
+					CNA_has_0_percent_cities = yes
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = CNA_british_military_support
+			NOT = { has_completed_focus = CNA_talk_with_british_arms_companies }
+		}
+		fire_only_once = yes
+		days_remove = 5
+		days_re_enable = 50
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 20
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_british_guns"
+			ENG = {
+				country_event = {
+					id = CNA.107
+					days = 1
+				}
+			}
+		}
+	}
+	CNA_british_guns_2 = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CNA_has_above_0_percent_cities_tooltip
+				NOT = {
+					CNA_has_0_percent_cities = yes
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = CNA_talk_with_british_arms_companies
+		}
+		fire_only_once = yes
+		days_remove = 5
+		days_re_enable = 50
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 30
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_british_guns_2"
+			if = {
+				limit = {
+					CNA_has_100_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+				}
+			}
+			else_if = {
+				limit = {
+					CNA_has_66_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 600
+				}
+			}
+			else_if = {
+				limit = {
+					CNA_has_33_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 300
+				}
+			}
+			else_if = {
+				limit = {
+					CNA_has_100_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+				}
+			}
+			else_if = {
+				limit = {
+					CNA_has_66_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1200
+				}
+			}
+			else_if = {
+				limit = {
+					CNA_has_33_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 600
+				}
+			}
+		}
+	}
+	CNA_army_experience_decision = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CNA_has_above_0_percent_cities_tooltip
+				NOT = {
+					CNA_has_0_percent_cities = yes
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = CNA_call_for_british_officers
+		}
+		fire_only_once = yes
+		days_remove = 5
+		days_re_enable = 60
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 30
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_army_experience_decision"
+			if = {
+				limit = {
+					CNA_has_100_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				army_experience = 30
+			}
+			else_if = {
+				limit = {
+					CNA_has_66_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				army_experience = 20
+			}
+			else_if = {
+				limit = {
+					CNA_has_33_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				army_experience = 10
+			}
+			else_if = {
+				limit = {
+					CNA_has_100_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				army_experience = 60
+			}
+			else_if = {
+				limit = {
+					CNA_has_66_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				army_experience = 40
+			}
+			else_if = {
+				limit = {
+					CNA_has_33_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				army_experience = 20
+			}
+		}
+	}
+	CNA_economic_wartime_decision = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = CNA_has_above_0_percent_cities_tooltip
+				NOT = {
+					CNA_has_0_percent_cities = yes
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = CNA_leverage_british_economic_might
+		}
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 100
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 50
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_economic_wartime_decision"
+			if = {
+				limit = {
+					CNA_has_100_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 3
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 3
+				}
+				set_variable = { CNA_temp_factories = -3 }
+			}
+			else_if = {
+				limit = {
+					CNA_has_66_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+				}
+				set_variable = { CNA_temp_factories = -2 }
+			}
+			else_if = {
+				limit = {
+					CNA_has_33_percent_cities = yes
+					NOT = { has_completed_focus = CNA_we_need_more }
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+				set_variable = { CNA_temp_factories = -1 }
+			}
+			else_if = {
+				limit = {
+					CNA_has_100_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 6
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 6
+				}
+				set_variable = { CNA_temp_factories = -6 }
+			}
+			else_if = {
+				limit = {
+					CNA_has_66_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 4
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 4
+				}
+				set_variable = { CNA_temp_factories = -4 }
+			}
+			else_if = {
+				limit = {
+					CNA_has_33_percent_cities = yes
+					has_completed_focus = CNA_we_need_more
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+				}
+				set_variable = { CNA_temp_factories = -2 }
+			}
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_economic_wartime_decision"
+			hidden_effect = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = var:CNA_temp_factories
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = var:CNA_temp_factories
+				}
+			}
+			custom_effect_tooltip = CNA_remove_temp_factories
+		}
+	}
+	CNA_operation_neptune_request_greenlight = {
+		available = {
+			always = yes
+		}
+		visible = {
+			has_completed_focus = CNA_operation_neptune
+		}
+		fire_only_once = yes
+		days_remove = 1
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_operation_neptune_request_greenlight"
+			ENG = {
+				country_event = {
+					id = CNA.121
+					days = 1
+				}
+			}
+		}
+	}
+	CNA_operation_neptune_fire = {
+		allowed = {
+			tag = CNA
+		}
+		activation = {
+			has_completed_focus = CNA_operation_neptune
+			has_country_flag = CNA_op_neptune_greenlight
+			NOT = { has_country_flag = CNA_op_neptune_began }
+		}
+		available = {
+			has_country_flag = CNA_op_neptune_began
+		}
+		fire_only_once = yes
+		days_mission_timeout = 180
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_operation_neptune_fire"
+		}
+		timeout_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_operation_neptune_fire"
+			add_political_power = -100
+			hidden_effect = {
+				load_oob = "CNA_op_neptune"
+			}
+			custom_effect_tooltip = CNA_op_neptune_divs
+			set_country_flag = CNA_op_neptune_began
+			custom_effect_tooltip = CNA_op_neptune_warning
+		}
+	}
+	CNA_operation_neptune_fire_d = {
+		allowed = {
+			tag = CNA
+		}
+		visible = {
+			has_completed_focus = CNA_operation_neptune
+			has_country_flag = CNA_op_neptune_greenlight
+			NOT = { has_country_flag = CNA_op_neptune_began }
+		}
+		fire_only_once = yes
+		cost = 100
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_operation_neptune_fire_d"
+			hidden_effect = {
+				load_oob = "CNA_op_neptune"
+			}
+			custom_effect_tooltip = CNA_op_neptune_divs
+			set_country_flag = CNA_op_neptune_began
+			custom_effect_tooltip = CNA_op_neptune_warning
+		}
+	}
+	CNA_operation_neptune_timelimit = {
+		allowed = {
+			tag = CNA
+		}
+		available = {
+			USA = {
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+						is_controlled_by = USA
+					}
+				}
+			}
+		}
+		activation = {
+			has_completed_focus = CNA_operation_neptune
+			has_country_flag = CNA_op_neptune_began
+		}
+		fire_only_once = yes
+		days_mission_timeout = 90
+		ai_will_do = {
+			factor = 200
+		}
+		is_good = yes
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_operation_neptune_fire"
+			add_political_power = 100
+		}
+		timeout_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_operation_neptune_fire"
+			delete_unit_template_and_units = {
+				division_template = "RNAA Coastal Infantry"
+			}
+			ENG = {
+				country_event = {
+					id = CNA.125
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+CNA_popular_support_category = {
+	#CNA_test_2 = {
+	#	available = {
+	#		always = yes
+	#	}
+	#	visible = {
+	#		always = yes
+	#	}
+	#	fire_only_once = yes
+	#	days_remove = 30
+	#	ai_will_do = {
+	#		factor = 20
+	#	}
+	#	cost = 50
+	#	complete_effect = {
+	#		log="[GetDateText]: [Root.GetName]: Decision CNA_test_2"
+	#	}
+	#}
+	CNA_campaign_for_support = {
+		available = {
+			always = yes
+		}
+		visible = {
+			NOT = { has_completed_focus = CNA_a_commonwealth_for_the_poor }
+		}
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 50
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_campaign_for_support"
+			custom_effect_tooltip = CNA_raise_popular_support
+			hidden_effect = {
+				set_temp_variable = { CNA_raise_popular_support_var = 0.1 }
+				CNA_raise_popular_support_effect = yes
+			}
+		}
+	}
+	CNA_campaign_to_poor = {
+		available = {
+			always = yes
+		}
+		visible = {
+			has_completed_focus = CNA_a_commonwealth_for_the_poor
+		}
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 30
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_campaign_to_poor"
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_campaign_to_poor"
+			custom_effect_tooltip = CNA_raise_popular_support
+			hidden_effect = {
+				set_temp_variable = { CNA_raise_popular_support_var = 0.15 }
+				CNA_raise_popular_support_effect = yes
+			}
+		}
+	}
+	CNA_campaign_to_rich = {
+		available = {
+			always = yes
+		}
+		visible = {
+			has_completed_focus = CNA_a_commonwealth_for_the_rich
+		}
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 30
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_campaign_to_rich"
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_campaign_to_rich"
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = CNA_lower_popular_support_slight
+			hidden_effect = {
+				set_temp_variable = { CNA_raise_popular_support_var = -0.05 }
+				CNA_raise_popular_support_effect = yes
+			}
+		}
+	}
+	CNA_rally_loyalist_media = {
+		available = {
+			always = yes
+		}
+		visible = {
+			has_completed_focus = CNA_the_loyalist_media
+		}
+		fire_only_once = yes
+		days_remove = 15
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 40
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_rally_loyalist_media"
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_rally_loyalist_media"
+			custom_effect_tooltip = CNA_raise_popular_support
+			hidden_effect = {
+				set_temp_variable = { CNA_raise_popular_support_var = 0.1 }
+				CNA_raise_popular_support_effect = yes
+			}
+		}
+	}
+	CNA_crack_down_on_rebel_media = {
+		available = {
+			always = yes
+		}
+		visible = {
+			has_completed_focus = CNA_the_loyalist_media
+		}
+		fire_only_once = yes
+		days_remove = 40
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 40
+		complete_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision CNA_crack_down_on_rebel_media"
+		}
+		remove_effect = {
+			log="[GetDateText]: [Root.GetName]: Decision remove CNA_crack_down_on_rebel_media"
+			USA = {
+				custom_effect_tooltip = CNA_lower_popular_support
+				hidden_effect = {
+					set_temp_variable = { USA_raise_popular_support_var = -0.1 }
+					USA_raise_popular_support_effect = yes
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

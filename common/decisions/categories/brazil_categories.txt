@@ -1,0 +1,23 @@
+BRA_tea_and_unrest = {
+	picture = GFX_BRA_decision_tea
+	allowed = { 
+		tag = BRA
+	}
+	visible = {
+		has_country_flag = BRA_Tea_Program
+	}
+
+	visible_when_empty = yes
+}
+
+BRA_Power_Struggle = {
+	picture = GFX_BRA_decision_tea
+	allowed = { 
+		tag = BRA
+	}
+	visible = {
+		has_country_flag = BRA_Anglo_Power_Struggle
+	}
+
+	visible_when_empty = yes
+}

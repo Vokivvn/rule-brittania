@@ -1,0 +1,442 @@
+shared_focus = {
+	id = ENG_year_1936
+	icon = GFX_focus_british_monarchy
+	cost = 0.5
+
+	x = 8
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_year_1936"
+		country_event = { id = england.1936 }
+	}
+}
+
+shared_focus = {
+	id = ENG_review_shares
+	icon = GFX_focus_eng_concessions_to_the_trade_unions
+	prerequisite = { focus = ENG_year_1936 }
+	cost = 1
+
+	x = 6
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_review_shares"
+		country_event = { id = england.1937 }
+	}
+}
+
+shared_focus = {
+	id = ENG_collect_dividends
+	icon = GFX_focus_mex_privatisation
+	prerequisite = { focus = ENG_year_1936 }
+	cost = 1
+
+	x = 8
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_collect_dividends"
+		country_event = { id = england.1938 }
+	}
+}
+
+shared_focus = {
+	id = ENG_speech_parliament
+	icon = GFX_focus_rom_royal_dictatorship
+	prerequisite = { focus = ENG_year_1936 }
+	cost = 1
+
+	x = 10
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_speech_parliament"
+		country_event = { id = england.1939 }
+	}
+}
+
+shared_focus = {
+	id = ENG_goodnight_george
+	icon = GFX_focus_eng_imperial_federation
+	prerequisite = { focus = ENG_review_shares }
+	prerequisite = { focus = ENG_collect_dividends }
+	prerequisite = { focus = ENG_speech_parliament }
+	cost = 1
+
+	x = 8
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_goodnight_george"
+		custom_effect_tooltip = ENG_night_george
+		hidden_effect = {
+			country_event = { id = england.2 }
+		}
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_africa
+	icon = GFX_generic_africa
+	prerequisite = { focus = ENG_goodnight_george }
+	cost = 1
+
+	x = 6
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_africa"
+		custom_effect_tooltip = ENG_intro_regional_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_week_in_cape
+	icon = GFX_Large_Navy
+	prerequisite = { focus = ENG_intro_africa }
+	cost = 1
+
+	x = 6
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_week_in_cape"
+		custom_effect_tooltip = ENG_intro_cape_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_tour_of_rhodesia
+	icon = GFX_Steel
+	prerequisite = { focus = ENG_intro_week_in_cape }
+	cost = 1
+
+	x = 6
+	y = 8
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_tour_of_rhodesia"
+		custom_effect_tooltip = ENG_intro_rhodesia_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_research_in_chad
+	icon = GFX_generic_change_law_trade
+	prerequisite = { focus = ENG_intro_tour_of_rhodesia }
+	cost = 1
+
+	x = 6
+	y = 9
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_research_in_chad"
+		custom_effect_tooltip = ENG_intro_chad_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_accra_conference
+	icon = GFX_goal_ENG_redletter
+	prerequisite = { focus = ENG_intro_research_in_chad }
+	cost = 1
+
+	x = 6
+	y = 10
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_accra_conference"
+		custom_effect_tooltip = ENG_intro_accra_conference_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_the_mighty_nile
+	icon = GFX_Anglo_Egyptian_Co_Operation
+	prerequisite = { focus = ENG_intro_africa }
+	cost = 1
+
+	x = 4
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_the_mighty_nile"
+		custom_effect_tooltip = ENG_intro_egypt_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_negotiations_in_addis_ababa
+	icon = GFX_ETH_Last_Battle_of_The_Lion
+	prerequisite = { focus = ENG_intro_the_mighty_nile }
+	cost = 1
+
+	x = 4 
+	y = 8
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_negotiations_in_addis_ababa"
+		custom_effect_tooltip = ENG_intro_addis_ababa_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_visiting_kenyan_settlers
+	icon = GFX_ENG_Settler_Relations
+	prerequisite = { focus = ENG_intro_negotiations_in_addis_ababa }
+	cost = 1
+
+	x = 4
+	y = 9
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_visiting_kenyan_settlers"
+		custom_effect_tooltip = ENG_intro_kenya_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_day_in_zanzibar
+	icon = GFX_ENG_Globe_Ship
+	prerequisite = { focus = ENG_intro_visiting_kenyan_settlers }
+	cost = 1
+
+	x = 4
+	y = 10
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_day_in_zanzibar"
+		custom_effect_tooltip = ENG_intro_zanzibar_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_america
+	icon = GFX_generic_north_america
+	prerequisite = { focus = ENG_goodnight_george }
+	cost = 1
+
+	x = 8
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_america"
+		custom_effect_tooltip = ENG_intro_regional_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_stay_in_new_england
+	icon = GFX_ENG_CNA_Speech
+	prerequisite = { focus = ENG_intro_america }
+	cost = 1
+
+	x = 8
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_stay_in_new_england"
+		custom_effect_tooltip = ENG_intro_ne_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_walk_through_dixie
+	icon = GFX_Generic_Tobacco_Farming
+	prerequisite = { focus = ENG_intro_stay_in_new_england }
+	cost = 1
+
+	x = 8
+	y = 8
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_walk_through_dixie"
+		custom_effect_tooltip = ENG_intro_dixie_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_night_in_french_quarter
+	icon = GFX_Room_Meeting
+	prerequisite = { focus = ENG_intro_walk_through_dixie }
+	cost = 1
+
+	x = 8
+	y = 9
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_night_in_french_quarter"
+		custom_effect_tooltip = ENG_intro_nawlins_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_day_in_sunny_california
+	icon = GFX_BFE_Rising_Sun
+	prerequisite = { focus = ENG_intro_night_in_french_quarter }
+	cost = 1
+
+	x = 8
+	y = 10
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_day_in_sunny_california"
+		custom_effect_tooltip = ENG_intro_california_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_the_east
+	icon = GFX_generic_asia
+	prerequisite = { focus = ENG_goodnight_george }
+	cost = 1
+
+	x = 10
+	y = 6
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_the_east"
+		custom_effect_tooltip = ENG_intro_regional_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_the_crown_jewel
+	icon = GFX_RAJ_indian_railways_star
+	prerequisite = { focus = ENG_intro_the_east }
+	cost = 1
+
+	x = 10
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_the_crown_jewel"
+		custom_effect_tooltip = ENG_intro_the_crown_jewel_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_speaking_with_the_rajs
+	icon = GFX_Mughal_Crown
+	prerequisite = { focus = ENG_intro_the_crown_jewel }
+	cost = 1
+
+	x = 10
+	y = 8
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_speaking_with_the_rajs"
+		custom_effect_tooltip = ENG_intro_rajs_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_our_friend_ching
+	icon = GFX_generic_china_diplomacy
+	prerequisite = { focus = ENG_intro_speaking_with_the_rajs }
+	cost = 1
+
+	x = 10
+	y = 9
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_our_friend_ching"
+		custom_effect_tooltip = ENG_intro_ching_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_an_edo_feast
+	icon = GFX_The_Burgos_Meeting
+	prerequisite = { focus = ENG_intro_our_friend_ching }
+	cost = 1
+
+	x = 10
+	y = 10
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_an_edo_feast"
+		custom_effect_tooltip = ENG_intro_edo_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_land_down_under
+	icon = GFX_generic_australia
+	prerequisite = { focus = ENG_intro_the_east }
+	cost = 1
+
+	x = 12
+	y = 7
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_land_down_under"
+		custom_effect_tooltip = ENG_intro_australia_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_trip_to_wellington
+	icon = GFX_generic_battleship
+	prerequisite = { focus = ENG_intro_land_down_under }
+	cost = 1
+
+	x = 12
+	y = 8
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_trip_to_wellington"
+		custom_effect_tooltip = ENG_intro_nzl_visit_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_vacation_to_hawaii
+	icon = GFX_Empire_of_Hawaii
+	prerequisite = { focus = ENG_intro_trip_to_wellington }
+	cost = 1
+
+	x = 12
+	y = 9
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_vacation_to_hawaii"
+		custom_effect_tooltip = ENG_intro_vacation_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_sail_through_nicaragua
+	icon = GFX_ENG_ship_pearl_bay
+	prerequisite = { focus = ENG_intro_vacation_to_hawaii }
+	cost = 1
+
+	x = 12
+	y = 10
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_sail_through_nicaragua"
+		custom_effect_tooltip = ENG_intro_nicaragua_tt
+	}
+}
+
+shared_focus = {
+	id = ENG_intro_setting_annual_agenda
+	icon = GFX_ENG_British_Parliament
+	prerequisite = { focus = ENG_intro_accra_conference }
+	prerequisite = { focus = ENG_intro_day_in_zanzibar }
+	prerequisite = { focus = ENG_intro_day_in_sunny_california }
+	prerequisite = { focus = ENG_intro_an_edo_feast }
+	prerequisite = { focus = ENG_intro_sail_through_nicaragua }
+	cost = 1
+
+	x = 8
+	y = 12
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ENG_intro_setting_annual_agenda"
+		custom_effect_tooltip = ENG_intro_agenda_tt
+	}
+}

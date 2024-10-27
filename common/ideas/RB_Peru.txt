@@ -1,0 +1,46 @@
+ideas = {
+	country = {
+		BOL_mines_work_conditions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_mines_work_conditions"}
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				stability_weekly = -0.02
+				liberalism_drift = 0.02
+			}
+		}
+
+		BOL_criminal_organizations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOL_criminal_organisations"}
+			
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.75
+				stability_factor = -0.10
+			}
+		}
+	}
+}

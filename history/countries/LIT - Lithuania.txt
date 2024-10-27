@@ -1,0 +1,117 @@
+﻿capital = 784
+
+set_research_slots = 2
+
+set_stability = 0.5
+set_war_support = 0.1
+
+set_cosmetic_tag = LIT_ENG
+
+set_politics = {
+	ruling_party = administrationism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+add_ideas = {
+	LIT_Republic_Monarchy_Debates
+	LIT_Peaceful_Times
+	
+	british_econ_dominance
+	british_pol_kingmaking
+	british_influenced_forces
+	
+	disarmed_nation
+	civilian_economy
+	export_focus
+}
+
+add_manpower = 12000
+
+oob = "LIT_1936"
+
+set_popularities = {
+    cromwellianism = 8
+    marxism = 2
+    liberalism = 18
+    republicanism = 15
+    parliamentarianism = 12
+    administrationism = 34
+    absolutism = 0
+    despotism = 4
+    nationalism = 7
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+create_country_leader = {
+	name = "Antanas Sniečkus"
+	#desc = LIT_EKATERINA_RZEWUSKA_DESC
+	picture = "Portrait_LIT_Ekaterina_Adamovna_Rzewuska.dds"
+	expire = "1999.12.12"
+	ideology = cromwellianism_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Jonas Vileišis"
+	#desc = LIT_EKATERINA_RZEWUSKA_DESC
+	picture = "Portrait_LIT_Ekaterina_Adamovna_Rzewuska.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = { }
+}
+create_country_leader = {
+	name = "Kotryna I"
+	desc = LIT_KOTRYNA_I_DESC
+	picture = "Portrait_LIT_Ekaterina_Adamovna_Rzewuska.dds"
+	expire = "1999.12.12"
+	ideology = administrationism_subtype
+	traits = {
+		gossiper
+	}
+}
+create_country_leader = {
+	name = "Antanas Smetona"
+	#desc = LIT_EKATERINA_RZEWUSKA_DESC
+	picture = "Portrait_LIT_Antanas_Smetona.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = { }
+}

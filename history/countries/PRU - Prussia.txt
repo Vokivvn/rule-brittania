@@ -1,0 +1,121 @@
+﻿capital = 64
+
+oob = "RB_PRU_1936"
+set_naval_oob = "RB_PRU_naval"
+
+add_ideas = {
+	PRU_Broken_Nation
+	PRU_Foreign_Meddling
+	PRU_Stagnant_Industrialisation
+	PRU_Fierce_Opposition_Militias
+}
+
+set_research_slots = 3
+
+set_stability = 0.3
+set_war_support = 0.5
+
+set_politics = {
+	ruling_party = absolutism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 4
+    marxism = 5
+    liberalism = 8
+    republicanism = 19
+    parliamentarianism = 5
+    administrationism = 0
+    absolutism = 59
+    despotism = 0
+    nationalism = 0
+}
+
+set_cosmetic_tag = PRU_ENG
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+
+create_country_leader = {
+	name = "August Wilhelm I"
+	desc = "POLITICS_AUGUST_WILHELM_I_DESC"
+	picture = "Portrait_PRU_August_Wilhelm.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Erich von Manstein"
+	#desc = 
+	picture = "Portrait_PRU_Erich_von_Manstein.dds"
+	expire = "1999.12.12"
+	ideology = despotism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Hans Jendretzky"
+	#desc = 
+	picture = "Portrait_PRU_Hans_Jendretzky.dds"
+	expire = "1999.12.12"
+	ideology = cromwellianism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Otto Braun"
+	#desc = 
+	picture = "Portrait_PRU_Otto_Braun.dds"
+	expire = "1999.12.12"
+	ideology = liberalism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Otto Fischbeck"
+	#desc = 
+	picture = "Portrait_PRU_Otto_Fischbeck.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = {
+	}
+}

@@ -1,0 +1,27 @@
+﻿l_english:
+ #Econ
+ british_econ_influence:0 "British Economic Influence"
+ british_econ_dominance:0 "Economic Dominance"
+ british_econ_subordination:0 "Economic Subordination"
+ british_econ_influence_idea:0 "Economic Influence"
+ lingering_british_econ_influence:0 "Lingering Economic Influence"
+ expelled_british_econ_influence:0 "Expelled Economic Influence"
+ british_econ_influence_rule_britannia:0 "Rule Britannia!"
+ 
+ #Pol
+ british_pol_influence:0 "British Political Influence"
+ strong_british_colony:0 "Strong British Colony"
+ weak_british_colony:0 "Weak British Colony"
+ british_pol_dominance:0 "Political Dominance"
+ british_pol_kingmaking:0 "British Kingmaking"
+ british_pol_independence:0 "Political Independence"
+ british_pol_influence_rule_britannia:0 "Rule Britannia!"
+ 
+ #Mil
+ british_mil_influence:0 "British Military Influence"
+ british_colonial_force:0 "British Colonial Force"
+ british_controlled_forces:0 "British-Controlled Forces"
+ british_advised_forces:0 "British-Advised Forces"
+ british_influenced_forces:0 "British-Influenced Forces"
+ british_independent_forces:0 "Independent Military Forces"
+ british_mil_influence_rule_britannia:0 "Rule Britannia!"

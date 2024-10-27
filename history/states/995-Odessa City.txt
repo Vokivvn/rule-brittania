@@ -1,0 +1,17 @@
+state={
+	id=995
+	name="STATE_995"
+	history={
+		owner = UKR
+		add_core_of = UKR
+		victory_points = {
+			13280 25
+		}
+	}
+	provinces={
+		13280 
+	}
+	manpower=600981
+	state_category=city
+	buildings_max_level_factor=1.000
+}

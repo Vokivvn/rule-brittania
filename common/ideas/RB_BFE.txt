@@ -1,0 +1,167 @@
+ideas = {
+	country = {
+		BFE_port_of_eastport = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BFE_port_of_eastport"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = sea_waves_ship_anchor_port
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				navy_max_range_factor = 0.25
+				industrial_capacity_dockyard = 0.2
+				production_speed_dockyard_factor = 0.15
+			}
+		}
+		BFE_the_wild_frontier = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BFE_the_wild_frontier"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = frame_picture_cold_siberia
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.075
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+		BFE_a_wretched_hive_of_scum_and_villainy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BFE_a_wretched_hive_of_scum_and_villainy"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = gun_handcuffs_crime
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.075
+				political_power_gain = -0.20
+			}
+		}
+		BFE_bandit_problem = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BFE_bandit_problem"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = bandit_person_bandana_hat
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				#enemy_partisan_effect = 0.20
+			}
+		}
+		BFE_backwater_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BFE_backwater_industry"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = water_wheat_waves
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = -0.2
+				consumer_goods_factor = 0.15
+			}
+		}
+		BFE_eastport_defence_force = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BFE_eastport_defence_force"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture =
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				dig_in_speed_factor = 0.3
+				army_core_defence_factor = 0.15
+				army_org_factor = 0.075
+			}
+		}
+		BFE_royal_marines = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BFE_royal_marines"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture =
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				special_forces_cap = 0.03
+				special_forces_attack_factor = 0.15
+				invasion_preparation = -0.35
+			}
+		}
+		BFE_mercenary_force = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BFE_mercenary_force"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture =
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = 0.025
+				training_time_factor = -0.15
+			}
+		}
+	}
+}

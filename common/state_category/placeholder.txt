@@ -1,0 +1,14 @@
+#placeholder text
+
+#Category Name	Base Building Slots
+#enclave		0
+#tiny_island	0
+#wasteland		0
+#small_island	1
+#rural			2
+#town			4
+#large_town		5
+#city			6
+#large_city		8
+#pastoral		10
+#megalopolis	12

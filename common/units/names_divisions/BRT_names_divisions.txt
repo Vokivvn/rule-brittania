@@ -1,0 +1,11 @@
+﻿BRT_infantry = {
+	name = "Rann Infantry"
+
+	for_countries = { BRT }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Rann Infantry"
+}

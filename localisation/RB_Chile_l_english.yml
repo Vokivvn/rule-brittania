@@ -1,0 +1,278 @@
+﻿l_english:
+ ##Country Names##
+ CHL_cromwellianism:0 "Chilian People's Republic"
+ CHL_cromwellianism_DEF:0 "The Chilian People's Republic"
+ CHL_marxism:0 "Grand Commonwealth of Chili"
+ CHL_marxism_DEF:0 "The Grand Commonwealth of Chili"
+ CHL_liberalism:0 "Grand Captaincy of Chili"
+ CHL_liberalism_DEF:0 "The Grand Captaincy of Chili"
+ CHL_republicanism:0 "Grand Captaincy of Chili"
+ CHL_republicanism_DEF:0 "The Grand Captaincy of Chili"
+ CHL_parliamentarianism:0 "Grand Captaincy of Chili"
+ CHL_parliamentarianism_DEF:0 "The Grand Captaincy of Chili"
+ CHL_administrationism:0 "Grand Captaincy of Chili"
+ CHL_administrationism_DEF:0 "The Grand Captaincy of Chili"
+ CHL_absolutism:0 "Grand Captaincy of Chili"
+ CHL_absolutism_DEF:0 "The Grand Captaincy of Chili"
+ CHL_despotism:0 "Grand Captaincy of Chili"
+ CHL_despotism_DEF:0 "The Grand Captaincy of Chili"
+ CHL_nationalism:0 "Chilian State"
+ CHL_nationalism_DEF:0 "The Chilian State"
+ CHL_cromwellianism_ADJ:0 "Chilian"
+ CHL_marxism_ADJ:0 "Chilian"
+ CHL_liberalism_ADJ:0 "Chilian"
+ CHL_republicanism_ADJ:0 "Chilian"
+ CHL_parliamentarianism_ADJ:0 "Chilian"
+ CHL_administrationism_ADJ:0 "Chilian"
+ CHL_despotism_ADJ:0 "Chilian"
+ CHL_nationalism_ADJ:0 "Chilian"
+ 
+ ##Party Names##
+ 
+ CHL_cromwellianism_party:0 "SnOS"
+ CHL_cromwellianism_party_long:0 "Páirtí na nOibrithe Sóisialacha"
+ CHL_marxism_party:0 "PSC"
+ CHL_marxism_party_long:0 "Páirtí Sóisialach Chili"
+ CHL_liberalism_party:0 "PR"
+ CHL_liberalism_party_long:0 "Páirtí Radacach"
+ CHL_republicanism_party:0 "PL"
+ CHL_republicanism_party_long:0 "Páirtí Liobrálach"
+ CHL_parliamentarianism_party:0 "PC"
+ CHL_parliamentarianism_party_long:0 "Páirtí Coimeádach"
+ CHL_administrationism_party:0 "CRI"
+ CHL_administrationism_party_long:0 "Cumann Rialaithe Impiriúla"
+ CHL_absolutism_party:0 "CRI"
+ CHL_absolutism_party_long:0 "Cumann Rialaithe Impiriúla"
+ CHL_despotism_party:0 "CRI" 
+ CHL_despotism_party_long:0 "Cumann Rialaithe Impiriúla"
+ CHL_nationalism_party:0 "CSC"
+ CHL_nationalism_party_long:0 "Comhaontas Saoirse Coitianta"
+ 
+ ##Ideas##
+ 
+ CHL_Idea_Interservice_Rivalry:0 "The Interservice Rivalry"
+ 
+ CHL_Idea_I_Hatesy_Watesy_Patagonya_Kun:0 "Exterminating the Patagonian Threat"
+ 
+ CHL_Idea_Peasy_Weasy_Keepsy_Weepsy:0 "Keeping the Peace in the Patagonia"
+ 
+ CHL_Idea_Expansy_Weapansy_Tactisities:0 "Expansion of Weapon Factories"
+ 
+ CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid:0 "The Airforce's Budget"
+ 
+ CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dos:0 "The Airforce's Budget"
+ 
+ CHL_Idea_Uwa_tilde_Cand_Affowd_Anyding_In_Dedwoid_Dwes:0 "The Airforce's Budget"
+ 
+ #Leader Descs
+ 
+ POLITICS_PEDRO_DARTNELL_DESC:0 "His Excellency the Grand Captain Pedro Pablo Dartnell Encina is the quintessence of the proud Chilean military: pragmatic, determined, honorable and most of all, loyal to the greater mission of the Chilean Army as a cornerstone of British rule in the Latin American continent. Born in Linares on the 24th of December 1873 to a family descendant of Irish Immigrants, the future Grand Captain studied at the Army Officers’ School before joining the Army. He climbed the ranks, serving as a Lieutenant Colonel in the staff of multiple Grand Captains over the years between his graduation in 1903 and his ascent to the position of General of the Army in 1930. Never one to openly take sides in politics, Ibáñez has done his best to remain apolitical and endorse any and all policies he believed beneficial to Chili.\n\nThis behavior carried on when, in 1930, he was sworn in as the Grand Captain of Chili. Maintaining Chili’s role as a military-first “ultraloyalist” member of the Commonwealth of Earth and the British Empire, H.E. Carlos Ibáñez del Campo quickly became one of the most decorated non-British servants of His Majesty the King.\n\nHis ability to balance the concerns of almost all groups in Chili have earned him plenty of affection, but also a fair share of enemies. In the palaces of government the more radical wings of Chilian politics all share a profound dissatisfaction with his rule. Even in the military, where he makes his only truly radical stand, dissenters work against his goal of enshrining the dominance of the ground forces in Chili’s proud military."
+
+##Focus Names##
+
+ CHL_Opening_Focus_Thats_Basically_Filler_tbh:0 "Opening of the 1936 Government"
+ CHL_Opening_Focus_Thats_Basically_Filler_tbh_desc:0 ""
+
+ CHL_Sabre_Rattling:0 "Sabre Rattling"
+ CHL_Sabre_Rattling_desc:0 ""
+
+ CHL_Army_Nation_Army_Nation:0 "Favor the Army"
+ CHL_Army_Nation_Army_Nation_desc:0 ""
+
+ CHL_Navy_Junta_Navy_Junta:0 "Favor the Navy"
+ CHL_Navy_Junta_Navy_Junta_desc:0 ""
+
+ CHL_Invest_In_MAaM:0 "Invest in MAaM"
+ CHL_Invest_In_MAaM_desc:0 ""
+
+ CHL_Dayton_Flyers_Tournament_Question:0 "The Question of the Airforce"
+ CHL_Dayton_Flyers_Tournament_Question_desc:0 ""
+
+ CHL_Airforce_Soars:0 "The Airforce Soars"
+ CHL_Airforce_Soars_desc:0 ""
+
+ CHL_A_Proper_Budget_For_Maintanance:0 "A Proper Budget for Maintenance"
+ CHL_A_Proper_Budget_For_Maintanance_desc:0 ""
+
+ CHL_Research_Radar:0 "Research Radar"
+ CHL_Research_Radar_desc:0 ""
+
+ CHL_Excellence_In_Education:0 "Excellence in Education"
+ CHL_Excellence_In_Education_desc:0 ""
+
+ CHL_Flexible_Planning:0 "Flexible Planning"
+ CHL_Flexible_Planning_desc:0 ""
+
+ CHL_Fighter_Planes:0 "Fighter Plane Research"
+ CHL_Fighter_Planes_desc:0 ""
+
+ CHL_Big_Boys_IN_The_Sky:0 "Big Boys in the Sky"
+ CHL_Big_Boys_IN_The_Sky_desc:0 ""
+
+ CHL_Bomber_PLanes:0 "Bomber Plane Research"
+ CHL_Bomber_PLanes_desc:0 ""
+
+ CHL_In_The_Sea_OR_ON_The_Ground:0 "In the Sea or On the Ground"
+ CHL_In_The_Sea_OR_ON_The_Ground_desc:0 ""
+
+ CHL_Airforce_Held_Down:0 "The Airforce Held Down"
+ CHL_Airforce_Held_Down_desc:0 ""
+
+ CHL_Shift_To_Recon:0 "Shift to Recon"
+ CHL_Shift_To_Recon_desc:0 ""
+
+ CHL_Info_Or_The_Plane_Ride:0 "Information or the Plane Ride"
+ CHL_Info_Or_The_Plane_Ride_desc:0 ""
+
+ CHL_Support_For_The_Troops:0 "Support for the Troops"
+ CHL_Support_For_The_Troops_desc:0 ""
+
+ CHL_B17_Bomber:0 "Bomber Focuses"
+ CHL_B17_Bomber_desc:0 ""
+
+ CHL_Ground_Rather_Than_Air:0 "On the Ground rather than In the Air"
+ CHL_Ground_Rather_Than_Air_desc:0 ""
+
+ CHL_Minimal_Infrastructure:0 "Minimal Infrastructure"
+ CHL_Minimal_Infrastructure_desc:0 ""
+
+ CHL_The_Triple_Parentheses_DNC_Elite:0 "The Military High Command"
+ CHL_The_Triple_Parentheses_DNC_Elite_desc:0 ""
+
+ CHL_O_Higgins_Strategy:0 "The O'Higgins Strategy"
+ CHL_O_Higgins_Strategy_desc:0 ""
+
+ CHL_Mobile_Warfare:0 "Mobile Warfare"
+ CHL_Mobile_Warfare_desc:0 ""
+
+ CHL_Bikes_In_The_Andes:0 "Bikes in the Andes Mountains"
+ CHL_Bikes_In_The_Andes_desc:0 ""
+
+ CHL_Trucking_Across_The_Nation:0 "Trucking Across the Nation"
+ CHL_Trucking_Across_The_Nation_desc:0 ""
+
+ CHL_Speed_Up_Training:0 "Speed Up Training"
+ CHL_Speed_Up_Training_desc:0 ""
+
+ CHL_Rethink_And_Replan:0 "Rethink and Replan"
+ CHL_Rethink_And_Replan_desc:0 ""
+
+ CHL_Charge_On_UCF_National_Champions_2018:0 "Charge On!"
+ CHL_Charge_On_UCF_National_Champions_2018_desc:0 ""
+
+ CHL_Psych_Them_Out:0 "Psych them Out"
+ CHL_Psych_Them_Out_desc:0 ""
+
+ CHL_Gas_Them_Out_Er_Here:0 "Gas Them Outta Here"
+ CHL_Gas_Them_Out_Er_Here_desc:0 ""
+
+ CHL_Plan_To_Believe_In:0 "A Plan to Believe In"
+ CHL_Plan_To_Believe_In_desc:0 ""
+
+ CHL_Andean_Strategy:0 "The Andean Strategy"
+ CHL_Andean_Strategy_desc:0 ""
+
+ CHL_Defend_the_Andes:0 "Defend the Mountains"
+ CHL_Defend_the_Andes_desc:0 ""
+
+ CHL_Pacific_Rim:0 "Pacific Rim"
+ CHL_Pacific_Rim_desc:0 ""
+
+ CHL_Stamp_Out_Resistance:0 "Stamp Out the Resistance"
+ CHL_Stamp_Out_Resistance_desc:0 ""
+
+ CHL_Not_Broken_Not_Fixed_Army:0 "An Army Not Broken and Not Fixed"
+ CHL_Not_Broken_Not_Fixed_Army_desc:0 ""
+
+ CHL_Military_Officer_Knowledge:0 "Military Officer Knowledge"
+ CHL_Military_Officer_Knowledge_desc:0 ""
+
+ CHL_Best_Offense_Is_Great_Defense:0 "The Best Offence is Great Defense"
+ CHL_Best_Offense_Is_Great_Defense_desc:0 ""
+
+ CHL_Guns_And_More_Guns:0 "Guns, Guns, and More Guns"
+ CHL_Guns_And_More_Guns_desc:0 ""
+
+ CHL_Bring_Out_The_Big_Guns_Authors_Note_Artilery:0 "Bring Out the Big Guns"
+ CHL_Bring_Out_The_Big_Guns_Authors_Note_Artilery_desc:0 ""
+
+ CHL_Plan_For_Everything:0 "A Plan For Everything"
+ CHL_Plan_For_Everything_desc:0 ""
+
+ CHL_Chilian_Experience:0 "The Chilian Experience"
+ CHL_Chilian_Experience_desc:0 ""
+
+ CHL_Expand_The_Weapons_Industry:0 "Expand the Weapons Industry"
+ CHL_Expand_The_Weapons_Industry_desc:0 ""
+
+ CHL_Increase_Recruitment_Tactics:0 "Increase Recruitment Tactics"
+ CHL_Increase_Recruitment_Tactics_desc:0 ""
+
+ CHL_Ole_War_Skule:0 "The Ole War Skule"
+ CHL_Ole_War_Skule_desc:0 ""
+
+ CHL_Loan_Because_Paper_Isnt_Real_Money:0 "Invest in Our Nation"
+ CHL_Loan_Because_Paper_Isnt_Real_Money_desc:0 ""
+
+ CHL_CIS_Invest:0 "Invest in the CiS"
+ CHL_CIS_Invest_desc:0 ""
+
+ CHL_Expand_The_Roads:0 "Expand the Roads"
+ CHL_Expand_The_Roads_desc:0 ""
+
+ CHL_Establish_Worker_Cities:0 "Establish Worker Cities"
+ CHL_Establish_Worker_Cities_desc:0 ""
+
+ CHL_Initiate_Public_Works_Projects:0 "Initiate Public Works Projects"
+ CHL_Initiate_Public_Works_Projects_desc:0 ""
+
+ CHL_Geata_Na_Greine_PLC:0 "Invest in Geata na Greine PLC"
+ CHL_Geata_Na_Greine_PLC_desc:0 ""
+
+ CHL_Develop_An_Candelaria:0 "Develop An Candelaria"
+ CHL_Develop_An_Candelaria_desc:0 ""
+
+ CHL_Make_Them_Work_For_Their_Pay:0 "Make Them Work for Their Pay"
+ CHL_Make_Them_Work_For_Their_Pay_desc:0 ""
+
+ CHL_Protect_The_Mines:0 "Protect the Mines"
+ CHL_Protect_The_Mines_desc:0 ""
+
+ CHL_Patagonia_Issues:0 "Issues in the Patagonia"
+ CHL_Patagonia_Issues_desc:0 ""
+
+ CHL_Round_Two_Lets_Go_Oorah_Semper_Fi:0 "Begin Round Two"
+ CHL_Round_Two_Lets_Go_Oorah_Semper_Fi_desc:0 ""
+
+ CHL_Intervention_Into_The_Colony_lets_Go:0 "Intervention into the Colony"
+ CHL_Intervention_Into_The_Colony_lets_Go_desc:0 ""
+
+ CHL_Setting_Up_The_Puppet_OGov:0 "Setting Up the Puppet Government"
+ CHL_Setting_Up_The_Puppet_OGov_desc:0 ""
+
+ CHL_Shipping_Away_Their_Resources:0 "Shipping Away their Resources"
+ CHL_Shipping_Away_Their_Resources_desc:0 ""
+
+ CHL_Minecraft_Reference_Question_Mark_Ah_Man_Do_You_Get_It:0 "Mine the Region"
+ CHL_Minecraft_Reference_Question_Mark_Ah_Man_Do_You_Get_It_desc:0 ""
+
+ CHL_Fortifying_The_Colorado_Wait_Wtf_Thats_In_America:0 "Fortify the Colorado"
+ CHL_Fortifying_The_Colorado_Wait_Wtf_Thats_In_America_desc:0 ""
+
+ CHL_Ending_The_Patagonian_Conflict_For_Good:0 "Ending the Patagonian Conflict for Good"
+ CHL_Ending_The_Patagonian_Conflict_For_Good_desc:0 ""
+
+ CHL_Peacekeeping_In_Patagonia_Hashtag_UN_Things:0 "Peacekeeping in the Patagonia"
+ CHL_Peacekeeping_In_Patagonia_Hashtag_UN_Things_desc:0 ""
+
+ CHL_Corporate_Rule_In_The_South:0 "Corporate Rule in the South"
+ CHL_Corporate_Rule_In_The_South_desc:0 ""
+
+ CHL_Connect_Their_Railways:0 "Connect their Railways"
+ CHL_Connect_Their_Railways_desc:0 ""
+
+ CHL_Unification_Of_The_British_South:0 "Unification of the British South"
+ CHL_Unification_Of_The_British_South_desc:0 ""
+
+ CHL_Seperate_But_Certainly_Not_Equal:0 "Seperate but Certainly not Equal"
+ CHL_Seperate_But_Certainly_Not_Equal_desc:0 ""

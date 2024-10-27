@@ -1,0 +1,20 @@
+state={
+	id=905
+	name="STATE_905"
+	provinces={
+		9275 
+	}
+
+	history={
+		owner = RIG
+		add_core_of = RIG
+		
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	manpower=27712
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

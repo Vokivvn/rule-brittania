@@ -1,0 +1,92 @@
+﻿capital = 279
+
+set_research_slots = 1
+set_stability = 0.3
+set_war_support = 0.8
+
+add_ideas = CHL_Idea_Interservice_Rivalry
+add_ideas = limited_conscription
+add_ideas = partial_economic_mobilisation
+add_ideas = free_trade
+add_ideas = british_econ_dominance
+add_ideas = strong_british_colony
+add_ideas = british_colonial_force
+
+set_cosmetic_tag = CHL_ENG
+
+CHL = {
+    create_faction = "Plate Command"
+    add_to_faction = ARG
+    add_to_faction = PAT
+    add_to_faction = UGY
+    add_to_faction = BOL
+}
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 1
+    marxism = 10
+    liberalism = 0
+    republicanism = 16
+    parliamentarianism = 0
+    administrationism = 33
+    absolutism = 0
+    despotism = 40
+    nationalism = 0
+}
+
+create_country_leader = {
+    name = "Pedro Dartnell"
+    desc = "POLITICS_PEDRO_DARTNELL_DESC"
+    picture = "Portrait_CHL_Pedro_Dartnell.dds"
+    expire = "1960.4.28"
+    ideology = despotism_subtype
+    traits = {
+    }
+}
+
+create_country_leader = {
+    name = "Pedro Dartnell"
+    desc = "POLITICS_PEDRO_DARTNELL_DESC"
+    picture = "Portrait_CHL_Pedro_Dartnell.dds"
+    expire = "1960.4.28"
+    ideology = parliamentarianism_subtype
+    traits = {
+    }
+}
+
+create_country_leader = {
+    name = "Marmaduke Grove"
+    desc = "POLITICS_MARMADUKE_GROVE_DESC"
+    picture = "Portrait_CHL_Marmaduke_Grove.dds"
+    expire = "1954.5.15"
+    ideology = marxism_subtype
+    traits = {
+    }
+}
+
+create_country_leader = {
+    name = "Julio Allard"
+    desc = "POLITICS_JULIO_ALLARD_DESC"
+    picture = "Portrait_CHL_Julio_Allard.dds"
+    expire = "1979.5.25"
+    ideology = liberalism_subtype
+    traits = {
+    }
+}
+
+create_country_leader = {
+    name = "Arturo Alessandri"
+    desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
+    picture = "Portrait_CHL_Arturo_Alessandri.dds"
+    expire = "1950.8.24"
+    ideology = republicanism_subtype
+    traits = {
+    }
+}

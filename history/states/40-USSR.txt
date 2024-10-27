@@ -1,0 +1,33 @@
+
+state={
+	id=40
+	name="STATE_40"
+
+	history={
+		owner = SIB
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = SIB
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+
+			}
+
+		}
+		victory_points = {
+			1794 1 
+		}
+
+	}
+
+	provinces={
+		1297 1794 1797 4661 4803 7708 10202 10218 10537 10546 10584 11410 12515 12594 12613 12616 
+	}
+	manpower=2107451
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

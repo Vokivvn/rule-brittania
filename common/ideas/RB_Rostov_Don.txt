@@ -1,0 +1,62 @@
+ideas = {
+	country = {
+		RVD_disorganized_governorate = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RVD_disorganized_governorate"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.15
+			}
+		}
+		RVD_chechen_hostility = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RVD_chechen_hostility"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		RVD_russian_frontier = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RVD_russian_frontier"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.15
+			}
+		}
+	}
+}

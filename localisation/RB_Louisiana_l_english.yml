@@ -1,0 +1,436 @@
+﻿l_english:
+ ##Country Names##
+ LOU_cromwellianism:0 "Louisianan Revolutionary Republic"
+ LOU_cromwellianism_DEF:0 "The Louisianan Revolutionary Republic"
+ LOU_marxism:0 "Dominion of Louisiana"
+ LOU_marxism_DEF:0 "The Dominion of Louisiana"
+ LOU_liberalism:0 "Dominion of Louisiana"
+ LOU_liberalism_DEF:0 "The Dominion of Louisiana"
+ LOU_republicanism:0 "Dominion of Louisiana"
+ LOU_republicanism_DEF:0 "The Dominion of Louisiana"
+ LOU_parliamentarianism:0 "Dominion of Louisiana"
+ LOU_parliamentarianism_DEF:0 "The Dominion of Louisiana"
+ LOU_administrationism:0 "Dominion of Louisiana"
+ LOU_administrationism_DEF:0 "The Dominion of Louisiana"
+ LOU_absolutism:0 "Dominion of Louisiana"
+ LOU_absolutism_DEF:0 "The Dominion of Louisiana"
+ LOU_despotism:0 "Dominion of Louisiana"
+ LOU_despotism_DEF:0 "The Dominion of Louisiana"
+ LOU_nationalism:0 "Provisional Republic of the Trans-Mississippi"
+ LOU_nationalism_DEF:0 "The Provisional Republic of the Trans-Mississippi"
+ LOU_cromwellianism_ADJ:0 "Louisianian"
+ LOU_marxism_ADJ:0 "Louisianian"
+ LOU_liberalism_ADJ:0 "Louisianian"
+ LOU_republicanism_ADJ:0 "Louisianian"
+ LOU_parliamentarianism_ADJ:0 "Louisianian"
+ LOU_administrationism_ADJ:0 "Louisianian"
+ LOU_despotism_ADJ:0 "Louisianian"
+ LOU_nationalism_ADJ:0 "Trans-Mississippian"
+ 
+ GPC_cromwellianism:0 "Indian Revolutionary Republic"
+ GPC_cromwellianism_DEF:0 "The Indian Revolutionary Republic"
+ GPC_marxism:0 "Great Plains Confederacy"
+ GPC_marxism_DEF:0 "The Great Plains Confederacy"
+ GPC_liberalism:0 "Great Plains Confederacy"
+ GPC_liberalism_DEF:0 "The Great Plains Confederacy"
+ GPC_republicanism:0 "Great Plains Confederacy"
+ GPC_republicanism_DEF:0 "The Great Plains Confederacy"
+ GPC_parliamentarianism:0 "Great Plains Confederacy"
+ GPC_parliamentarianism_DEF:0 "The Great Plains Confederacy"
+ GPC_administrationism:0 "Great Plains Confederacy"
+ GPC_administrationism_DEF:0 "The Great Plains Confederacy"
+ GPC_absolutism:0 "Great Plains Confederacy"
+ GPC_absolutism_DEF:0 "The Great Plains Confederacy"
+ GPC_despotism:0 "Great Plains Confederacy"
+ GPC_despotism_DEF:0 "The Great Plains Confederacy"
+ GPC_nationalism:0 "Great Plains Confederacy"
+ GPC_nationalism_DEF:0 "The Great Plains Confederacy"
+ GPC_cromwellianism_ADJ:0 "Indian"
+ GPC_marxism_ADJ:0 "Indian"
+ GPC_liberalism_ADJ:0 "Indian"
+ GPC_republicanism_ADJ:0 "Indian"
+ GPC_parliamentarianism_ADJ:0 "Indian"
+ GPC_administrationism_ADJ:0 "Indian"
+ GPC_despotism_ADJ:0 "Indian"
+ GPC_nationalism_ADJ:0 "Indian"
+ 
+ ##Party Names##
+ LOU_cromwellianism_party:0 "Revolutionary Society"
+ LOU_cromwellianism_party_long:0 "Society of the Revolutionaries, Friends of Workers and Peasants"
+ LOU_marxism_party:0 "LPSO"
+ LOU_marxism_party_long:0 "Louisianan People's Socialist Organisation"
+ LOU_liberalism_party:0 "Liberal Party"
+ LOU_liberalism_party_long:0 "Liberal Party"
+ LOU_republicanism_party:0 "Farmers' Party"
+ LOU_republicanism_party_long:0 "National Party of the Order of Patrons of Farmers"
+ LOU_parliamentarianism_party:0 "Conservative Party"
+ LOU_parliamentarianism_party_long:0 "Conservative Party of Louisiana"
+ LOU_administrationism_party:0 "CDLAB"
+ LOU_administrationism_party_long:0 "The Committee to Defend Louisiana by Aiding the British"
+ LOU_absolutism_party:0 "N'Orleans Commission"
+ LOU_absolutism_party_long:0 "Louisianan Royal Commission"
+ LOU_despotism_party:0 "Military Committee" 
+ LOU_despotism_party_long:0 "Provisional Military Administrative Committee"
+ LOU_nationalism_party:0 "APP"
+ LOU_nationalism_party_long:0 "American Patriotic Party"
+ 
+ ###########
+ # Opinion #
+ ###########
+ 
+ Loyalty_to_the_Crown_opinion:0 "Loyal to the Crown"
+ 
+ ###########
+ ##Focuses##
+ ###########
+ 
+ ##Oscar Allen Governorship and Interregnum Tree##
+ LOU_Oscar_Allen_Governorship:0 "The Allen Administration"
+ LOU_Oscar_Allen_Governorship_desc:0 "The administration of Oscar K. Allen has been famous throughout the Empire for accomplishing nothing. Members of Parliament spend their hours chatting about the latest installment of a popular radio drama instead of trying to draft legislation, a task that is impossible due to the iron grip Governor-General Sutherland has on Louisiana politics."
+ LOU_Oscar_Allen_Governorship_tt:0 "There's no use in speculating half-way through his term, nothing will happen."
+ 
+ ##The Death of Allen Tree##
+ LOU_Death_Of_Allen:0 "The Death of Oscar K. Allen"
+ LOU_Death_Of_Allen_desc:0 "The sudden death of our Governor has left our nation feeling not much different."
+
+ LOU_Bill_Ensuring_Loyalty_To_The_Filthy_Angloids:0 "Ensure Our Loyalties to the Crown"
+ LOU_Bill_Ensuring_Loyalty_To_The_Filthy_Angloids_desc:0 "Despite a new Governor, our support and undying loyalty for the British Empire will not falter. We are Britons through and through."
+
+ LOU_Loyalty_Among_Natives:0 "Loyalty among the Indians"
+ LOU_Loyalty_Among_Natives_desc:0 "Despite making up about half of the Dominion's territory, the Indians live a mostly seprate life from the Louisianans, with various treaties denying us from interfering in their affairs. Nonetheless, we need to strive for greater cooperation between us and them, allowing our allegiance to the crown bind the settler and the native."
+
+ LOU_Loyalty_Among_Crackers:0 "Loyalty among the Louisianans"
+ LOU_Loyalty_Among_Crackers_desc:0 "The Louisianans are a diverse group, with farming communities in the north and urban life in the south. Despite our differences however, we are all united by one cause, the continuation of the British Empire."
+
+ LOU_Restart_The_Government:0 "Restart the Government"
+ LOU_Restart_The_Government_desc:0 "The Louisianan Government had grown quite poorly, spending its time discussing \"Jiminy Star\" instead of passing laws or governing the nation. George Sutherland had other plans however, and the Louisianan Government shall function once again."
+
+ LOU_Roads_Bill:0 "Expand the Roads"
+ LOU_Roads_Bill_desc:0 "The infrastructure of Louisiana is surely lacking, with the main mode of transportation in Louisiana still relying on the rivers. \"The 1936 Bill to Expand the Rail Roads of Louisiana\", drafted by Governor George Sutherland, will authorise the creation of a national road going from New Orleans to Chariton, greatly increasing trade across all affected Provinces."
+ 
+ LOU_Sedition_And_Treason_Bill:0 "The Sedition and Treason Bill"
+ LOU_Sedition_And_Treason_Bill_desc:0 ""
+ 
+ LOU_They_Sign_It:0 "They Sign It!"
+ LOU_They_Sign_It_desc:0 ""
+ 
+ LOU_It_Dies_In_Committee:0 "It Died in Committee!"
+ LOU_It_Dies_In_Committee_desc:0 ""
+ 
+ LOU_Joseph_France_Speeches:0 "The Joseph I. France Speeches"
+ LOU_Joseph_France_Speeches_desc:0 ""
+
+ LOU_Browders_Revolutionaries:0 "The Revolutionary Society"
+ LOU_Browders_Revolutionaries_desc:0 ""
+
+ LOU_Arm_The_Workers:0 "Arm the Workers"
+ LOU_Arm_The_Workers_desc:0 ""
+
+ LOU_Meeting_With_The_Society_Of_Indians:0 "Meet with the Dominion's Minorities"
+ LOU_Meeting_With_The_Society_Of_Indians_desc:0 ""
+
+ LOU_Popular_Front:0 "The Popular Front Arises"
+ LOU_Popular_Front_desc:0 ""
+
+ LOU_Afalfa_Bills_Nationalists:0 "The American People's Party"
+ LOU_Afalfa_Bills_Nationalists_desc:0 ""
+
+ LOU_Missouri_Guard:0 "The Missouri Guard Example"
+ LOU_Missouri_Guard_desc:0 ""
+
+ LOU_Legacy_Of_HOI_Four_Meme_Man:0 "Legacy of the Duke of Winnfield"
+ LOU_Legacy_Of_HOI_Four_Meme_Man_desc:0 ""
+
+ LOU_American_Dream:0 "The American Dream Goes West"
+ LOU_American_Dream_desc:0 ""
+
+ LOU_Norris_Strassen_Omnibus:0 "The Norris-Strassen Omnibus"
+ LOU_Norris_Strassen_Omnibus_desc:0 ""
+ 
+ LOU_Industrialisation_Bills:0 "The Industrialisation Bills"
+ LOU_Industrialisation_Bills_desc:0 ""
+
+ LOU_Election_Of_1937:0 "Preparing for the Election"
+ LOU_Election_Of_1937_desc:0 ""
+
+ LOU_Native_Question:0 "The Indian Inquiry"
+ LOU_Native_Question_desc:0 ""
+
+ LOU_Economic_Question:0 "The Economic Meltdown"
+ LOU_Economic_Question_desc:0 ""
+
+ LOU_Farming_Question:0 "The Farming Catastrophe"
+ LOU_Farming_Question_desc:0 ""
+
+ LOU_Eastern_Question:0 "The Eastern Crisis"
+ LOU_Eastern_Question_desc:0 ""
+
+ LOU_Vote_Conservative:0 "Vote Conservative!"
+ LOU_Vote_Conservative_desc:0 ""
+
+ LOU_Vote_Farmers:0 "Vote for the Farmers!"
+ LOU_Vote_Farmers_desc:0 ""
+
+ LOU_Vote_Liberal:0 "Vote for the Liberals!"
+ LOU_Vote_Liberal_desc:0 ""
+ 
+ LOU_Expel_The_Disloyal:0 "Expel the Disloyal"
+ LOU_Expel_The_Disloyal_desc:0 ""
+
+ LOU_CDLAB_Lead:0 "The Committee to Defend Louisiana by Aiding the British"
+ LOU_CDLAB_Lead_desc:0 ""
+
+ LOU_Bill_To_Expand_The_Provincial_Guards:0 "Expand the Provincial Guards"
+ LOU_Bill_To_Expand_The_Provincial_Guards_desc:0 ""
+
+ LOU_Bill_To_Fund_Scientists:0 "Fund the Scientists"
+ LOU_Bill_To_Fund_Scientists_desc:0 ""
+
+ LOU_Bill_To_Expand_The_Eastern_Defenses:0 "Expand the Eastern Defences"
+ LOU_Bill_To_Expand_The_Eastern_Defenses_desc:0 ""
+
+ LOU_Emergency_Powers_Act:0 "The Emergency Powers Act"
+ LOU_Emergency_Powers_Act_desc:0 ""
+
+ LOU_Safekeeping_Of_Louisianan_Independence:0 "Safeguard Louisianan Independence"
+ LOU_Safekeeping_Of_Louisianan_Independence_desc:0 ""
+ 
+ #####################
+ ### Lib1 War Tree ###
+ #####################
+ 
+ LOU_Lib1War_Focusing_On_The_East:0 "Focusing on the East"
+ LOU_Lib1War_Focusing_On_The_East_desc:0 ""
+ 
+ LOU_Lib1War_Our_Place_In_The_International_Machine:0 "Our Place in the International Machine"
+ LOU_Lib1War_Our_Place_In_The_International_Machine_desc:0 ""
+ 
+ LOU_Lib1War_Out_To_Seek_Peace:0 "Out to Seek Peace"
+ LOU_Lib1War_Out_To_Seek_Peace_desc:0 ""
+ 
+ LOU_Lib1War_Run_The_Louisiana_Maneuvers:0 "Run the Louisiana Drill"
+ LOU_Lib1War_Run_The_Louisiana_Maneuvers_desc:0 "Louisiana and the C.N.A. used to have one of the best rivalries in the Empire. Unfortunately, that rivalry ended when the Yankees left the Empire. George Norris is trying to bring it back, though.\n\nLouisiana’s Governor, who experienced the rivalry during his time as a Louisiana Legislator, took a playful shot at CNA today.\n\nNorris joked that Louisiana does not run the “North American Drill” during practice. Instead, the Louisianans run the "Louisiana Drill."\n\nThe North American Drill, of course, is a wildly popular drill among militaries, though it’s not so popular in New Orleans or Mexico City."
+ 
+ LOU_Lib1War_Expand_The_Airfields:0 "Expand the Airfields"
+ LOU_Lib1War_Expand_The_Airfields_desc:0 ""
+ 
+ LOU_Lib1War_Airborn_Offense:0 "The Airborn Offense"
+ LOU_Lib1War_Airborn_Offense_desc:0 ""
+ 
+ LOU_Lib1War_Purchase_Weapons:0 "Purchase Weapons"
+ LOU_Lib1War_Purchase_Weapons_desc:0 ""
+ 
+ LOU_Lib1War_Boot_Up_The_Draft:0 "Boot Up the Draft"
+ LOU_Lib1War_Boot_Up_The_Draft_desc:0 ""
+ 
+ LOU_Lib1War_Shine_The_Crescent_City_Ports:0 "Shine the Crescent City Ports"
+ LOU_Lib1War_Shine_The_Crescent_City_Ports_desc:0 ""
+ 
+ LOU_Lib1War_Create_The_Navy:0 "Create a Navy"
+ LOU_Lib1War_Create_The_Navy_desc:0 ""
+ 
+ LOU_Lib1War_Defend_Our_Freedom:0 "Defend Our Freedom"
+ LOU_Lib1War_Defend_Our_Freedom_desc:0 ""
+ 
+ LOU_Lib1War_Work_With_Unions:0 "Work With Unions"
+ LOU_Lib1War_Work_With_Unions_desc:0 ""
+ 
+ LOU_Lib1War_Expansion_Of_Closed_Shops:0 "Expansion of Closed Shops"
+ LOU_Lib1War_Expansion_Of_Closed_Shops_desc:0 ""
+ 
+ LOU_Lib1War_Moniter_The_East:0 "Moniter the East"
+ LOU_Lib1War_Moniter_The_East_desc:0 ""
+ 
+ LOU_Lib1War_Dont_Step_On_Louisiana:0 "Don't Step On Louisiana"
+ LOU_Lib1War_Dont_Step_On_Louisiana_desc:0 ""
+ 
+ LOU_Lib1War_Missouri_Talks:0 "The Missouri Talks"
+ LOU_Lib1War_Missouri_Talks_desc:0 ""
+ 
+ LOU_Lib1War_Dove_Ignored:0 "The Dove Ignored"
+ LOU_Lib1War_Dove_Ignored_desc:0 ""
+ 
+ LOU_Lib1War_Dove_Shot:0 "The Dove Shot"
+ LOU_Lib1War_Dove_Shot_desc:0 ""
+ 
+ LOU_Lib1War_Off_To_War_We_Go:0 "Off to War we Go"
+ LOU_Lib1War_Off_To_War_We_Go_desc:0 ""
+ 
+ LOU_Lib1War_Kickstart_The_Draft:0 "Kickstart the Draft"
+ LOU_Lib1War_Kickstart_The_Draft_desc:0 ""
+ 
+ LOU_Lib1War_Improve_Our_Tactics:0 "Improve Our Tactics"
+ LOU_Lib1War_Improve_Our_Tactics_desc:0 ""
+ 
+ LOU_Lib1War_Dove_Flies:0 "The Dove Flies"
+ LOU_Lib1War_Dove_Flies_desc:0 ""
+ 
+ LOU_Lib1War_Friends_On_The_Other_Side:0 "Friends on the Other Side"
+ LOU_Lib1War_Friends_On_The_Other_Side_desc:0 ""
+ 
+ LOU_Lib1War_House_Remodeling:0 "House Remodeling"
+ LOU_Lib1War_House_Remodeling_desc:0 ""
+ 
+ LOU_Lib1War_Start_Disarmament:0 "Start Disarmament"
+ LOU_Lib1War_Start_Disarmament_desc:0 ""
+ 
+ ############
+ ##Tooltips##
+ ############
+ 
+ LOU_Cracker_Dead_tt:0 "The Interregnum starts in Louisiana."
+ LOU_Conservative_Election_tt:0 "The Conservative Party wins the Debate."
+ LOU_Liberal_Election_tt:0 "The Liberal Party wins the Debate."
+ LOU_Farmers_Election_tt:0 "The Farmers' Party wins the Debate."
+ 
+ ############
+ ###Ideas####
+ ############
+ 
+ LOU_Idea_Crescent_City:0 "Crescent City"
+ LOU_Idea_Crescent_City_desc:0 "Louisianan is the de jure culture of Louisiana. De facto, New Orleanian is the real culture of the country.\n\nA large port city, New Orleans is the main source of exports in and out of Louisiana, is responsible for a near majority of industrial production by itself, and contains the best learning institutions in a large region. People flock to the city, and because of its ability to cater to them, scientists, industrialists, and especially artists find New Orleans to be incredibly attractive. Willing or not, the entirety of Louisiana is led along by the Crescent City on a leash. No city in Louisiana - maybe not even North America - could even hope to compare."
+ LOU_Idea_Native_Status_Autonomous:0 "Native Policy - Autonomy"
+ LOU_Idea_Native_Status_Autonomous_desc:0 "If you were to be a native American, then living in Louisiana is far from the worst way you could live your life. Not that it is particularly good, with regular incursions by hostile settlers, but it is better than somewhere with a hostile government to back them up.\n\nLouisiana adopts a peculiar sort of live-and-let-live attitude with native populations, treating them as sovereign nations and interacting with them in an according manner. Their citizens do not treat them the same way, constantly attempting to seize their land, but nearly all falter when they discover that the government favors the natives in any given border conflict."
+ LOU_Idea_Native_Status_Integrated:0 "Native Policy - Integration"
+ LOU_Idea_Native_Status_Disregarded:0 "Native Policy - Oppression"
+ LOU_Idea_Sedition_And_Treason_Act:0 "The Sedition and Treason Act"
+ LOU_Idea_Norris_Strassen_Bill:0 "The Norris-Strassen Omnibus"
+ LOU_Idea_Industrialisation_Bill:0 "The Industrialisation Bill of 1937"
+ LOU_Idea_No_Step:0 "Don't Mess With Louisiana"
+ LOU_Idea_No_Step_desc:0 "Don't you dare take the name of Louisiana in vain!"
+ LOU_Idea_Friends_Other_Side:0 "Friends on the Other Side"
+ LOU_Idea_Friends_Other_Side_desc:0 "Don't you disrespect me little man. Don't you derogate or deride. You're in my world now, not your world.\n\nAnd I got friends on the other side..."
+ LOU_Idea_House_Remodeling:0 "House Remodeling"
+ LOU_Idea_Louisiana_Drills:0 "The Louisiana Drills"
+ LOU_Idea_Louisiana_Drills_desc:0 "George Norris on their modified North American drill: Louisiana's old rival to the east called it something else. We don't call it that.\n\nNorris, with a smile, on what they call it: The Louisiana Drill."
+ 
+ 
+ ############
+ ###Events###
+ ############
+ 
+ louisiana.0.t:0 "The Death of the Governor."
+ louisiana.0.desc:0 "In news that is neither shocking nor heartbreaking to the people of Louisiana, Governor Oscar K. Allen, leader of the Dominion, passed away this morning due to complications arising from a brain hemorrhage. While the government has yet to issue an official statement to the population, it is quite obvious that plans have already been premeditated by the administration in preparation for his death. Within an hour of Allen’s demise, British Governor-General George Sutherland swooped in and took the title of Interim Governor, and has assumed full control of Louisiana by the authority of the British Empire.\n\nWhile many of the local white population had little opinion on Oscar Allen, as he had enforced a form of salutary neglect upon the people living in the colony, many view the Governor-General with skepticism. After all, they had been living for the most part without government in their lives for years, and anything that threatens the status quo threatens their way of life. This fear stems in part due to Sutherland’s loyalty to the Empire being far more outspoken than any concerns he has for the residents who stand afraid of being crushed under London’s boot. Alongside this, many extremist groups can already sense that Sutherland is going to pursue an intense policy of anti-insurgency that will likely end in them either being jailed or hunted down.\n\nHowever, elections in 1937 have already been announced, leading to the moderate parties relaxing just a bit, satisfied that the Interim Governor has no public intention to remain the leader of Louisiana indefinitely. The only questions now are if he is sincere about the elections and what sort of damage will he cause before the ballots are cast?"
+ louisiana.0.a:0 "Humble in Life, Exalted in Death."
+ 
+ louisiana.1.t:0 "Rumors from Missouri"
+ louisiana.1.desc:0 "The Missouri Provincial Guard is by far our most elite and effective frontier force, and have acted as watchdogs along the Mississippi River for years. Serving both as a check against the unruly French Missourians and the potentially dangerous native populations in the area, the Guard has been entrusted with keeping civility in an otherwise unpoliced region of the world along with keeping the area under control of the British Empire. And until recently they were highly respected and trustworthy soldiers that the Louisianian government could depend upon.\n\nNow, stories have begun to spread that the Guard could be harboring anti-British sympathies and are potentially hoping to overthrow the Dominion government. While no formal evidence has been presented as of yet, the rumors alone are beginning to stain our reputation. Many are suggesting that we look into the matter immediately, and punish anyone found guilty of treason in a brutal and quick manner. Others say that such an investigation would take too much time and resources that are already spread thin, and that we stand to possibly alienate the members of the Guard who would surely be offended by such an inquisition.\n\nEither way, a decision needs to be made, and soon."
+ louisiana.1.a:0 "Proceed with the investigation, but keep it quiet."
+ louisiana.1.b:0 "Pursuing simple rumors is beneath us."
+ 
+ louisiana.2.t:0 "Anti-British Sentiments Confirmed"
+ louisiana.2.desc:0 "After a surprisingly brief investigation over the command and personnel of the Missouri Provincial Guard, it has been uncovered that indeed a vast majority of the militiamen and their leaders have lost faith in London and instead harbour revolutionary ideals. A few even openly advocated for a violent overthrow of the colonial administration and the installment of leaders over an independent nation in the Missouri area.\n\nWhile there appears to be no immediate threat of uprising or instability in the region, it is quite risky to allow armed and trained soldiers that are not completely loyal to us to run around unchecked. As such, many in our capital are suggesting that immediate and drastic actions be taken to ensure that the traitors are dealt with permanently. While a bit brutal, it is the safest option and has the best chance to keep this embarrassment a secret from the public.\n\nHowever, such a purge would both remove a necessary element in our frontier defense and open the door for native and French populations to be left completely outside of our influence. We rely on our troops completely to control our territory and without them we are powerless."
+ louisiana.2.a:0 "Just make this problem disappear."
+ louisiana.2.b:0 "Simply keep an eye on them."
+ 
+ louisiana.3.t:0 "Revolution in Missouri!"
+ louisiana.3.desc:0 "It appears that the situation with the Missouri Provincial Guard was far more dire than we had ever imagined. Just today, the traitor Dan Turner has declared the Republic of the Ozarks, a separatist insurgency formed with the intent of achieving independence from the British Empire. Already, their militia, under the command of General Harry Truman, has begun the process of entrenching their position and preparing for an assault by our military. Regardless of who these backstabbers are and what it is they stand for, everyone in our government is in agreement that they need to be put down by any means necessary. \n\nDue to the fact that the Guard was the only significant military presence we had in the region, we have been unable to respond immediately. However, already Interim Governor Sutherland has declared that we shall crush these rebels with full force and has personally ordered Turner to be taken into custody. As such, our generals have begun efforts to establish a force capable of responding to this new threat and are preparing to engage with the enemy."
+ louisiana.3.a:0 "This failure of intelligence will be rectified through force."
+ 
+ louisiana.4.t:0 "Order Regained in Missouri."
+ louisiana.4.desc:0 "With the fall of illegitimate Republic of the Ozarks and the capture of Dan Turner, we can finally claim victory over the rebel scum that dared defy our authority. As we rejoice at our triumph, already congratulations on upholding the dominion have arrived from London, and many of our citizens are satisfied that the status quo remains unchanged.\n\nNow it is time for us to squash any and all pockets of insurgents that may still remain in the territory that we have retaken. It may take a while to root them all out, however we are confident that order can be fully restored. The only problem in our plan is the disappearance of General Truman, leader of the militia and moderate threat to the stability of the Louisiana colony. While we doubt he will be able to start another uprising within our borders, many are worried he will make his way to the American Commonwealth and join the resistance movement there.\n\nAll concerns aside, we have succeeded so far and those who believe that British authority is waning in the New World have evidence to prove them contrary."
+ louisiana.4.a:0 "Due punishment, served hot and ready by the Empire!"
+ 
+ louisiana.5.t:0 "The Sedition and Treason Bill"
+ louisiana.5.desc:0 "When the two highest offices of State in Louisiana converged in the person of George Sutherland the first people to take notice had been the political cartoonists, the satirical comedians and the writers of graffiti on the metropolitan walls. Satire had had its brief flourishing in Britain, and the liberally minded American colonies had never really done much to sanction it, but Sutherland was no liberal. His entire political career was built on a blind obedience to London and a genuine worship of the Imperial political edifice; two core values he has every intention to impose on his subjects. He all but openly said so in his latest address to the legislature of Louisiana, wherein, after noting with satisfaction the spontaneous decrease in libelous publication, he declared that an official Treason and Sedition Act will be emanated in the coming weeks. \n\nListing a variety of offenses ranging from minor protocol breaches to open criticism of the Empire and its Louisianan institutions, the Act will effectively put a muzzle on press, theater and radio. Political parties will also be forced to apply the utmost restraint to their political speeches, and the assembly is understandably divided on this Act - censorship goes beyond Party loyalties.\n\nStill, Sutherland is a powerful man with even more powerful connections, and as the votes are cast no one can be sure of the outcome. Finally, after a careful count…"
+ louisiana.5.a:0 "The Act Passes!"
+ louisiana.5.b:0 "The Act Dies!"
+ 
+ louisiana.6.t:0 "Criticism of the Bill"
+ louisiana.6.desc:0 "\"While ordinarily the propriety of its members and the collective loyalty of the Cabinet of Louisiana to the figure of the Governor are absolute, it is also true that under no ordinary circumstances have the offices of Governor-General and Governor been united, in form or in function, for so long...\"\n\nWith these words began the long speech held by Minister of the Interior Lester J. Dickinson in front of a crowd of Party members, reporters and minor institutional figures. A loyalist of the defunct Allen governorship, Mr. Dickinson always made little secret of his lack of sympathy for the new administration. But, due to the propriety and loyalty expected of a Cabinet member, he never went beyond a mild disapproval. \n\nNow, with the Treason and Sedition Act on the table, he has decided to make his stand against the ruling administration, gathering as many supporters as possible in a public display of political influence. For nearly an hour and a half Minister Dickinson listed and commented the irregularities and transgressions of the Sutherland administration, subtly hinting at the unconstitutionality of the Governor-General’s meddling in gubernatorial politics, with the entire speech building up to an heated, open condemnation of the Sedition Act itself.\n\nCarrying himself perfectly, Dickinson however made sure to avoid falling under the Act’s jurisdiction. With the legal way closed, Governor Sutherland must now decide whether to let the affront go unpunished or punish Dickinson politically - for example, by forcing his resignation from the Cabinet. Both approaches present dangers however. While showing weakness in the face of a subordinate goes against the Governor’s every instinct, the government he recently took over is built on a carefully negotiated majority, a significant portion of which remains loyal to Minister Dickinson and the ideals of the Allen governorship.\n\nA decision must be made however, and in the end Sutherland chooses..."
+ louisiana.6.a:0 "To let Dickinson have his moment of glory."
+ louisiana.6.b:0 "To sack the traitorous bastard!"
+ 
+ louisiana.8.t:0 "The Iowa Cup"
+ louisiana.8.desc:0 "Today, two of the best college basketball teams went head to head in the championship finals to fight for the famed Iowa cup. The two teams from Iowa State University and the University of Des Moines battled it out on the court in one of the most high stakes games in the history of basketball. The sport of basketball, while mostly popular in the Northeastern territory of Louisiana, has been spreading throughout North America in recent years and much of the public is consumed by it. This game was broadcast throughout the dominion to the many fans of the sport and college athletics in general, and fans as far as New Orleans travelled to Chariton to see the finale of the competition personally.\n\nAfter a relatively close first half, Iowa State ended up triumphing twenty nine to seventeen against their rival, securing the title of champions and bringing pride to their Alma Mater. This game, while trivial compared to the intensity of the current political climate, symbolizes the unity of our people and our ferocious spirit in competition. The colonial administration, while originally attempting to stem the spread of basketball, have actually recently began endorsing the activity as a means of unity and sportsmanship amongst a rather diverse group of people. In whatever course, basketball is here to stay and the people are in love."
+ louisiana.8.a:0 "A great game for a great civilization."
+ 
+ louisiana.9.t:0 "The Trial of the Duke of Winnfield"
+ louisiana.9.desc:0 "The decision in a highly controversial court case involving a recent skirmish between white militia from Red Provence and the Caddo people has just been handed down from the high court in New Orleans today. The case is based on the fact that the Duke of Winnfield, a white nobleman who sought to expand his domain by striking the Caddo Nation, and in doing so caused a bloodbath between whites and natives the likes of which hasn’t been seen in Southern Louisiana since the mid-eighteenth century. The Duke himself, having died in the ensuing battle, cannot be held accountable for his actions, and since this is such a politically charged issue the court has taken a particularly long time to deliberate.\n\nHowever, with today's decision to simply eliminate the title of Duke of Winnfield, the court, and to an extent the nation, has signalled that they have chosen a policy of trying to leave this incident behind themselves and move forward, in whichever direction that may be. Extremists on both sides are disappointed with the lack of definitive action, however most are simply happy that a native uprising hasn’t resulted in response to this new aggression."
+ louisiana.9.a:0 "Let us hope there is no more bloodshed inside or outside the Dominion."
+ 
+ louisiana.10.t:0 "The Adventures of Jiminy Starr"
+ louisiana.10.desc:0 "A popular new detective drama airing across Louisiana named The Adventures of Jiminy Star has been taking the dominion by storm. Every program begins with \"armchair\" detectives being introduced alongside the case that will be solved. The episodes cases can range anywhere between from a midget mysteriously being bitten by a rattlesnake on broadway to ghost in a cat costume cutting people’s throats on Halloween. As the broadcast goes on, a dramatized mystery will be presented to the audience and the detectives will try and solve it alongside the listeners at home. Eventually, Jiminy Star will reveal the solution and, after a message from their sponsors, will conclude the episode.\n\nThis show has been taking the territories by storm, with nearly everyone able to afford a radio having parties during the weekly broadcasts to try and figure out the solution to each case together. Rumour has it that even government sessions have been delayed because the representatives and administrators are so enthralled with the program that they refuse to come in when it is playing. Nevertheless, this truly is a display of how modern advances in technology can impact the culture our people and bring us all together."
+ louisiana.10.a:0 "Well ain’t that something!"
+ 
+ louisiana.11.t:0 "The Norris-Strassen Omnibus - Extremists"
+ louisiana.11.desc:0 "The Dominion of Louisiana is, by and large, a conservative country. While California and North America founded their Commonwealths, launching vast programs of industrialization and internal pacification, we have remained entrenched in the idea of a rural Louisiana, with a tightly controlled legislature, limited parliamentarism, and very little desire for change. The Norris-Strassen Omnibus Act seeks now to change all that, and enact a parliamentary revolution in Louisiana by lifting the ban on the most prominent radical parties in the Dominion, in the interest of proper representation and national pacification. \n\nThe clauses of the Omnibus regarding eligibility are especially aimed at allowing the American People’s Party and the Revolutionary Society of America to run for Parliament, in the hope of neutralizing these parties’ violent tendencies through compromise and the induction of their leadership in the Louisianan élite. While this sounds good on paper, these are still the same radical groups that fought and still fight against Louisiana’s natural place in the Empire, and the theories they espouse on the matters of race and economic intervention have so far never been allowed in any respectable debate - let alone the Parliament of Louisiana! But Norris and Strassen have ample following, and Sutherland’s regency has awoken a reformist fervor no one expected from the Louisianans. Ultimately, the choice on the matter rests with the Governor, guardian of legality in the Dominion, and his choice is…"
+ louisiana.11.a:0 "To allow this section of the Omnibus."
+ louisiana.11.b:0 "To condemn this section of the Omnibus."
+ 
+ louisiana.12.t:0 "The Norris-Strassen Omnibus - Succession"
+ louisiana.12.desc:0 "As part of the sweeping structural reforms proposed by the Norris-Strassen Omnibus, changes to the emergency succession protocol enacted in case of death in office of the Governor have been proposed. Whereas the typical structure of our Dominion usually has the Governor-General step in as Governor ad interim, should this section be included in the Omnibus the responsibility to step in would fall on the Speaker of the House of Commons of Louisiana. While the Omnibus does not threaten the legitimacy of the Sutherland administration, as law is not retroactive, this clause further limits the British Empire’s ability to impose its administrators on Louisiana while further legitimizing the Parliament as the sole source of legitimate power in the Dominion. \n\nOn the other hand, Governor-General Sutherland has every interest to show the people that he is not as attached to power as his opponents imply, and that his accession to the governorship is nothing more than the enactment of a law that, as all laws, is subject to reform by will of the Parliament with the blessing of His Majesty. \n\nBeing Governor-General and thus chief constitutional justice in the Dominion, Sutherland still has the responsibility of allowing or not the Succession Clause to be included in the final device of the Omnibus."
+ louisiana.12.a:0 "Emergency succession is hardly a matter of constitutional relevance. The clause is accepted."
+ louisiana.12.b:0 "If we take this path we’ll end up like California before the century is over!"
+ 
+ louisiana.13.t:0 "The Norris-Strassen Omnibus - Noble Titles"
+ louisiana.13.desc:0 "As Louisiana is a Dominion of the British Empire, the traditions of the Imperial peerages are still held as binding law. Dukes, Earls, Viscounts and Marquesses of the Peerage of Louisiana are granted a patent of nobility by the Sovereign of the British Empire through the person of the Governor-General, granting them tax exemptions, electoral privileges, special immunities, the right to raise limited armed retinues and most importantly, land. This power has in the past been used liberally to consolidate the Dominion, making the most devout subjects of the Empire into Peers of Louisiana and thereby putting them in an advantageous position to deal with independent-minded industrialists, plantation owners and other disloyal notables.\n\nAfter the Indian Wars, Peers were granted lands in the former native territories and given substantial aid to raise militias and build fortifications to retain control of those lands. The system has been so far a staple of the Dominion of Louisiana and one of its most visible links to the British homeland. \n\nThe recent tragedy of the Duke of Winnfield has given the Liberals a casus belli to attack it, and in a surprising turn of events Strassen’s Conservatives are backing them! The newest section of the Omnibus calls for a parliamentary seal of approval to become necessary for a patent of nobility to be considered valid. This proposition imperils the way of life of our élite and would likely alienate a large and relatively powerful aristocracy that has become well-connected with its British counterpart. Then again, the House of Lords could easily become determinant in such a procedure, and the proposal may not be as radical as it sounds. Being the appointment of nobles still in the Governor-General’s province, we have to take a decision now."
+ louisiana.13.a:0 "Let them have their seal, the Lords will have the last word!"
+ louisiana.13.b:0 "What are we, a republic? The King creates nobles, and the Governor-General hands the parents."
+ 
+ louisiana.14.t:0 "The Norris-Strassen Omnibus - Minister of Native Affairs"
+ louisiana.14.desc:0 "Native rights have been a contentious issue for as long as Louisiana has existed. The current system of autonomous reservations overseen by a Minister for Native Affairs, selected by the Governor as part of his Cabinet, has stood for well over a century unchallenged but not uncriticized. The radical wing of the Liberal Party has managed to convince the leadership of their faction to include in the Norris-Strassen Omnibus a measure that will change forever the fundamental nature of the Reservations without significantly altering their present organization.\n\nThe proposal is to have the natives themselves elect the Minister for Native Affairs, who will thereafter rule the Reservations answering only to the Governor of Louisiana. The proposal will effectively turn the Reservations into an autonomous republic spread out within the Dominion, and even more importantly it will see the elected Governor rather than the royally appointed Governor-General as the ultimate warden of Louisiana’s territorial integrity. As radical as the proposal is, the political climate is favoring it and the idea of a political experiment in the vein of the Empire’s Commonwealths within Louisiana excites many. Furthermore, the presence of an elected representative of the tribes in the Cabinet would free us from the burdensome issue of native general suffrage, at least for a while. Being it a constitutional matter investing the competences of a Ministry and the territorial organization of the Dominion, the final choice on this section of the Omnibus stands with the Governor-General."
+ louisiana.14.a:0 "In the long run this may be beneficial to His Majesty’s rule."
+ louisiana.14.b:0 "Natives appointing Ministers of a British Dominion? This is borderline treason!"
+ 
+ louisiana.15.t:0 "The Election Day"
+ louisiana.15.desc:0 "The air in the Grand Chamber of the Parliament of Louisiana is electric. For the fifth time in the history of the Dominion the two Houses are assembled as one to vote on a proposal tabled by George W. Norris, a proposal that has thrown the normally uneventful politics of the Dominion into a frenzied confusion. The Norris-Strassen Omnibus is a comprehensive plan of reform investing all aspects of the Dominion’s government. It has the combined backing of the two Liberal Party caucuses in the House of Commons, both the mainstream Liberals under Norris and Harold Strassen’s Liberal Conservatives, and its wide popularity with the electorate has drawn many parliamentarians from opposing factions to defy Party discipline and make a stand in favor of the Act. Conservatives, Farmers and the few scattered independents flock to the Omnibus and its promise of a radically modernized Louisiana. Strengthening Parliament and the elected Government against the Governor-General appointed by the British monarch, reforming the organization of the native reservations and introducing a number of administrative innovations along with a lift to the 1898 ban on radical parties are all on the table, and this vote may change the political geography of the North American continent as decisively as the British did when they conquered it.\n\nSpeeches are held and listened to, amendments are carried and repealed, and at the end of the day the votes for the definitive device of the Omnibus are counted. The result is…"
+ louisiana.15.a:0 "A triumph for the Omnibus and democracy!"
+ louisiana.15.b:0 "A score for the old order."
+ 
+ louisiana.16.t:0 "The Reservations Debate"
+ louisiana.16.desc:0 "As the campaigning for the Louisiana General Election of 1937 enter the final crescendo before the votes are finally cast a new issue has taken center stage in the debate between the Liberal Party, the Conservative Party and the Farmers’ Party: native rights. \n\nIt began with an offhand comment by a Liberal speaker on the alleged “wastefulness” of the native reservations system, which in turn led his direct electoral opponent, a Conservative MP, to question his criticism against such a proven and cherished institution. Rather than dropping the matter, the Liberals have opted for a principled stand and have gone so far as to propose a voting reform allowing native suffrage, clearly pandering to the more radically democratic elements within Louisiana.\n\nThis has been opposed by the Conservative Party, who argue that by choosing autonomy over full annexation the natives renounced the rights of civilized subjects of the Empire, and citing the persistence of anti-British and un-Christian behaviors among their populations.\n\nThe Farmers’ intervention in the debate has been predictably loud, decrying how the Reservation militias have picked fights with rural Louisianans, claiming that the territorial extension reached by the Reservations themselves is excessive and disparaging the natives’ ability to govern themselves “properly”, loudly calling for the forced dismantlement of the Reservations’ autonomy.\n\nWhile only a month ago the native issue was a matter for specialists and activists, now every voting subject of Louisiana has an opinion on the matter."
+ louisiana.16.a:0 "The current system works just fine."
+ louisiana.16.b:0 "We cannot leave the Natives in Poverty."
+ louisiana.16.c:0 "Perhaps the Government should focus on its citizens instead."
+ 
+ louisiana.17.t:0 "The Economic Debate"
+ louisiana.17.desc:0 "It wouldn’t be a true election without the parties squabbling about the economy, but with the recent economic disaster plaguing the nation, it has become a forerunning issue dividing the dominion. Each party has there own solution to the problem, and it appears that the ballots will be deciding what path we take.\n\nFirst off, the conservatives are advocating that we begin to renew overseas trading and create new marketplaces to the West as a means of gaining revenue and becoming less dependent on the motherland to sell our exports, mostly consisting of food and raw materials. This has popular support from many of the Mississippi settlements and the maritime industry, both of whom have been all but wiped off the map by the crash. Next, the liberals propose a plan that would put the poor and unemployed to work on public works, mostly revolving around constructing hundreds of dams on the Mississippi to produce enough electricity to power the entire colony with cheap energy. As it would mostly benefit the impoverished, this plan is supported by the legions of out of work citizens in New Orleans and Southern Louisiana barely scraping by. Last and least popular, the farmers of course advocate only giving relief to the farmers with subsidies and tax cuts. They suggest that doing so would help reduce inflation and kickstart the economy, however many are sceptical that this would in turn benefit the people as a whole.\n\nHowever, preliminary results appear to indicate that the voting population has decided to support…"
+ louisiana.17.a:0 "New trade routes and markets to reinvigorate Louisiana!"
+ louisiana.17.b:0 "A public works project to provide jobs for the poor!"
+ louisiana.17.c:0 "The farmers, they are the heart of our people!"
+ 
+ louisiana.18.t:0 "The Farming Debate"
+ louisiana.18.desc:0 "The economy of Louisiana is based nearly entirely on agriculture, mostly involving food products like wheat and corn, which is grown in the North and shipped down the Mississippi River by steam ship to the world beyond. However, the economic crisis plaguing our nation coupled with dust storms the likes of which have never been seen before have made conditions incredibly perilous for the farmers of our nation. As such, the parties in contest for leadership of the dominion are making this a forefront issue in their debates.\n\nThe Farmer’s Party has obviously been the most vocal about the crisis, basing their entire campaign on the idea of the government doing everything in its power to save the farmers of the colony. This would involve nearly eliminating their taxes, subsidizing them like there is no tomorrow, and trying every avenue available to ensure no farms are foreclosed and the banks still support them. The Liberal Party has agreed that subsidizing the farms to halt production and therefore allow the market to stabilize is necessary, but not nearly to the caliber that the farmers propose. The conservatives on the other hand seek to keep government intervention to a minimum and focus on building the economy up in more direct ways, which would indirectly help the farmers.\n\nWith all this campaigning and arguing, the public are sure to have been swayed one way or another…"
+ louisiana.18.a:0 "The farms will grow as a natural result of economic growth, not intervention."
+ louisiana.18.b:0 "The people support reform, but do not wish to bow to the farms."
+ louisiana.18.c:0 "We are a farming nation, we cannot abandon what gives us life."
+ 
+ louisiana.20.t:0 "The Election Day"
+ louisiana.20.desc:0 "The day was, even in the morning, warm. Not uncomfortably so, but more akin to that temperature you would find yourself bathed in if you were to sit near the fireplace. This fair weather only served to motivate the emerging voters more. It elevated the travel to the voting booths from just a trip to point A from B to a memorable experience of its own. It was as if nature itself was voting in the day's elections.\n\nThe voting booths were located in dedicated buildings, typically repurposed government buildings, and had plenty of space to both wait and discuss in. Many people had come to vote, and everywhere was nearly filled to the brim with voters, cheerful or no. Putting in votes took time, and as they waited for their chance to vote, the people coalesced into conversation groups. There was plenty of free time, and everyone had differing opinions on the candidates. So, most did what any reasonable bunch would - they talked it out. Most political stances seemed irreconcilable, but in the wrestling fields of discussion they found a respect for another they never knew they could have. Doubly so for those who fought with these weapons of speech, who occasionally found in their opponents someone to respect, or even to befriend."
+ louisiana.20.a:0 "How wonderful. But how are the poll numbers?"
+ 
+ louisiana.21.t:0 "The Conservative Party of Louisiana win the Election!"
+ louisiana.21.desc:0 "Considered the most expected outcome, the Conservative Party, led by Nellie Tayloe Ross, has won the elections of Louisiana by a fair margin. The policies of Ross have been called ‘moderate, though traditional’. Her plans are in-line with those of the Conservative Party, including budget cuts and a reduction in spending. She has also seen mild support from both the Liberal and the Farmer party for her planned programs of strengthening the rights of children, women, and miners, including the assistance of farmers with light subsidization of the agricultural industry, aimed mostly towards poor farmers. In her inauguration speech, Nellie Tayloe Ross says that, “Though I cannot promise anything, it is my hope that our Louisiana will remain stable, and in good hands. God bless our people with good luck and fortune."
+ louisiana.21.a:0 "The Woman Who Made Good"
+ 
+ louisiana.22.t:0 "The Liberal Party of Louisiana win the Election!"
+ louisiana.22.desc:0 "The results are in! After the relative silence of the days following the post-election phase passed, the Dominion of Louisiana has announced the new ruling party and Governor. George W. Norris of the Liberal Party, a self-described ‘progressive’ and ‘isolationist’, has won the majority of votes with a mixture of promises of democratic reforms and an everyday-man outlook. Though he has found popular support with the people, his policies may dictate a shake future for Louisiana, as he seeks for the Dominion to lessen- though not completely sever- its ties with the British Empire. In his inauguration speech, George W. Norris has promised that, "To get good government and to retain it, it is necessary that a liberty-loving, educated, intelligent people should be ever watchful, to carefully guard and protect their rights and liberties.""
+ louisiana.22.a:0 "The Gentle Knight of Liberalism"
+ 
+ louisiana.23.t:0 "The National Party of the Order of Patrons of Farmers win the Election!"
+ louisiana.23.desc:0 "In a somewhat surprising turn of events, the Farmers’ Party, lead by Edward James Gay, has won the elections. While many call them a ‘one-issue platform’ party, they claim that their primary focus - that is, assisting the farming population of Louisiana - will in turn strengthen the economy of the Dominion. They have promised numerous things, including increased investment into goods such as sugar cane, extra funding into agricultural research, and subsidies for farmers. Alongside this, they have called for dismantling the autonomy of the reservations, including plans of eventual full annexation, much to the protests of the more progressive parts of the nation. Edward James Gay has expressed in his inauguration speech that, “The farmer is the lifeblood of Louisiana, and its fields the veins. Thus, if our veins are strong and the blood flows freely through those veins, we will all prosper for it.”"
+ louisiana.23.a:0 "The Most Good for the Most People"
+ 
+ demlouisiana.0.t:0 "What will we Focus on First?"
+ demlouisiana.0.desc:0 ""
+ demlouisiana.0.a:0 "The Eastern Crisis"
+ demlouisiana.0.b:0 "The Economic Conundrum DOESN'T DO ANYTHING YET"
+ demlouisiana.0.c:0 "The Internal Issues DOESN'T DO ANYTHING YET"
+ 
+ demlouisiana.1.t:0 "The Olive Branch"
+ demlouisiana.1.d:0 ""
+ demlouisiana.1.a:0 "The dove flies eastwards."
+ 
+ demlouisiana.2.t:0 "A Letter from the West"
+ demlouisiana.2.d:0 ""
+ demlouisiana.2.a:0 "We can spend time to chat"
+ demlouisiana.2.b:0 "new phone who this????????????????????????"
+ 
+ demlouisiana.3.t:0 "THEY IGNORED ME"
+ demlouisiana.3.d:0 "MOM WHY DO GOOD GIRLS LIKE BAD GUYS AND NOT NICE GUYS LIKE ME"
+ demlouisiana.3.a:0 "funny joker quote"
+ 
+ demlouisiana.4.t:0 "The Missouri Talks"
+ demlouisiana.4.d:0 ""
+ demlouisiana.4.a:0 "Lets hope for the best"

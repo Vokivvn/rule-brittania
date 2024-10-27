@@ -1,0 +1,19 @@
+state={
+	id=866
+	name="STATE_866"
+	manpower = 107660
+	
+	state_category = rural
+
+	history={
+		owner = BSP
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BSP
+	}
+
+	provinces={
+		6864 6912 9887
+	}
+}

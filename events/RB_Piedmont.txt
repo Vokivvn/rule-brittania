@@ -1,0 +1,250 @@
+﻿#######		##########		##########	  #########		###		   ###	   #######		##	   ##	##########
+########		##			##			  ##	   #	####	  ####	  ##	 ##		###	   ##		##
+##	  ##		##			##			  ##		#	## ##	 ##	##	 ##		  ##	## #   ##		##
+##	  ##		##			##			  ##		#	##	##	##	##	##		   ##	## #   ##		##
+########		##			##########	  ##		#	##	 ####	##	##		   ##	##	#  ##		##
+#######			##			##########	  ##		#	##	  ##	##	##		   ##	##	#  ##		##
+##				##			##			  ##		#	##			##	##		   ##	##	 # ##		##
+##				##			##			  ##		#	##			##	 ##		  ##	##	 # ##		##
+##				##			##			  ##	   #	##			##	  ##	 ##		##	  ###		##
+##			##########		##########	  #########		##			##	   #######		##	   ##		##
+
+add_namespace = pied
+
+country_event = { #Introduction event
+	id = pied.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.1"}
+	title = pied.1.t
+	desc = pied.1.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.1.a
+	}
+}
+
+country_event = {
+	id = pied.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.2"}
+	title = pied.2.t
+	desc = pied.2.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.2.a
+	}
+}
+
+country_event = {
+	id = pied.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.3"}
+	title = pied.3.t
+	desc = pied.3.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.3.a
+	}
+}
+
+country_event = {
+	id = pied.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.4"}
+	title = pied.4.t
+	desc = pied.4.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.4.a
+	}
+}
+
+country_event = {
+	id = pied.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.5"}
+	title = pied.5.t
+	desc = pied.5.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.5.a
+	}
+}
+
+country_event = {
+	id = pied.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.6"}
+	title = pied.6.t
+	desc = pied.6.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.6.a
+	}
+}
+
+country_event = {
+	id = pied.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.7"}
+	title = pied.7.t
+	desc = pied.7.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.7.a
+	}
+}
+
+country_event = {
+	id = pied.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.8"}
+	title = pied.8.t
+	desc = pied.8.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.8.a
+	}
+}
+
+country_event = {
+	id = pied.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.9"}
+	title = pied.9.t
+	desc = pied.9.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.9.a
+	}
+}
+
+country_event = {
+	id = pied.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.10"}
+	title = pied.10.t
+	desc = pied.10.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.10.a
+	}
+}
+
+country_event = {
+	id = pied.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.11"}
+	title = pied.11.t
+	desc = pied.11.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.11.a
+	}
+}
+
+country_event = {
+	id = pied.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.12"}
+	title = pied.12.t
+	desc = pied.12.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.12.a
+	}
+}
+
+country_event = {
+	id = pied.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.13"}
+	title = pied.13.t
+	desc = pied.13.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.13.a
+	}
+}
+
+country_event = {
+	id = pied.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.14"}
+	title = pied.14.t
+	desc = pied.14.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.14.a
+	}
+}
+
+country_event = {
+	id = pied.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.15"}
+	title = pied.15.t
+	desc = pied.15.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.15.a
+	}
+}
+
+country_event = {
+	id = pied.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.16"}
+	title = pied.16.t
+	desc = pied.16.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.16.a
+	}
+}
+
+country_event = {
+	id = pied.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pied.17"}
+	title = pied.17.t
+	desc = pied.17.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = pied.17.a
+	}
+}

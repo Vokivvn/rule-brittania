@@ -1,0 +1,646 @@
+focus_tree = {
+	id = memel_rosenberg
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = MEM
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = MEM_Lithuania_Burns
+		icon = GFX_Burn_Lithuania
+		x = 8
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Lithuania_Burns"
+			add_ideas = MEM_German_Terror
+		}
+	}
+	focus = {
+		id = MEM_Phoenix
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Lithuania_Burns
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Lithuania_Burns
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Phoenix"
+			add_war_support = 0.1
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = MEM_Society_We_Sure_Live_In_It
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Phoenix
+		x = -5
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Phoenix
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Phoenix"
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = MEM_Hearts_And_Minds
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Society_We_Sure_Live_In_It
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Society_We_Sure_Live_In_It
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Hearts_And_Minds"
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = MEM_End_Monarchism
+		icon = GFX_VIN_Ultimatum_to_King
+		relative_position_id = MEM_Hearts_And_Minds
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Hearts_And_Minds
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_End_Monarchism"
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = administrationism
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = absolutism
+				popularity = -0.25
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = MEM_End_Socialism
+		icon = VIN_War_of_Annihilation
+		relative_position_id = MEM_Hearts_And_Minds
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Hearts_And_Minds
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_End_Socialism"
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = cromwellianism
+				popularity = -0.25
+			}
+			add_popularity = {
+				ideology = marxism
+				popularity = -0.25
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = MEM_Purify_Culture
+		icon = GFX_GER_architectural_revival
+		relative_position_id = MEM_End_Monarchism
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_End_Monarchism
+		}
+		prerequisite = {
+			focus = MEM_End_Socialism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Purify_Culture"
+			country_event = {
+				id = lithuania.301
+			}
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = MEM_Ostsiedlung
+		icon = GFX_generic_change_law_immigration
+		relative_position_id = MEM_Purify_Culture
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Purify_Culture
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Ostsiedlung"
+			custom_effect_tooltip = MEM_Ostseidlung_tt
+			hidden_effect = {
+				every_owned_state = {
+					add_state_modifier = {
+						modifier = {
+							conscription = -2.0
+							MONTHLY_POPULATION = -0.05
+						}
+					}
+				}
+				954 = {
+					add_state_modifier = {
+						modifier = {
+							conscription = 2.0
+							MONTHLY_POPULATION = 0.05
+						}
+					}
+				}
+				763 = {
+					add_state_modifier = {
+						modifier = {
+							conscription = 2.0
+							MONTHLY_POPULATION = 0.05
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEM_Cleaning_The_Church
+		icon = GFX_generic_christianity
+		relative_position_id = MEM_Society_We_Sure_Live_In_It
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Society_We_Sure_Live_In_It
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Cleaning_The_Church"
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = MEM_Rosenberg_In_Every_Church
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Cleaning_The_Church
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Cleaning_The_Church
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Rosenberg_In_Every_Church"
+			add_ideas = MEM_Rosenberg_Every_Church
+		}
+	}
+	focus = {
+		id = MEM_Cutting_Off_The_Pope
+		icon = GFX_Enshrine_Secularism
+		relative_position_id = MEM_Cleaning_The_Church
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Cleaning_The_Church
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Cutting_Off_The_Pope"
+			add_political_power = 10
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = MEM_On_Church_One_Race
+		icon = GFX_focus_BEL_Improve_Catholic_Relations
+		relative_position_id = MEM_Rosenberg_In_Every_Church
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Rosenberg_In_Every_Church
+		}
+		prerequisite = {
+			focus = MEM_Cutting_Off_The_Pope
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_On_Church_One_Race"
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = MEM_Aryan_Spirit_Obtained
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_On_Church_One_Race
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_On_Church_One_Race
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Aryan_Spirit_Obtained"
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = MEM_Mad_Prussy_Theft
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Phoenix
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Phoenix
+		}
+		available = {
+			owns_state = 763
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Mad_Prussy_Theft"
+			set_capital = 763
+			add_state_core = 763
+		}
+	}
+	focus = {
+		id = MEM_Germans_Never_Die_Minions_Cover
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Mad_Prussy_Theft
+		x = -1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Mad_Prussy_Theft
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Germans_Never_Die_Minions_Cover"
+			add_ideas = MEM_No_Surrender
+			if = {
+				limit = {
+					owns_state = 763
+				}
+				763 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			}
+			else = {
+			}
+			954 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEM_Spiritual_Home
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Mad_Prussy_Theft
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Mad_Prussy_Theft
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Spiritual_Home"
+			add_war_support = 0.1
+			add_ideas = MEM_No_Surrender
+		}
+	}
+	focus = {
+		id = MEM_Expand_Capital
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Germans_Never_Die_Minions_Cover
+		x = 1
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Germans_Never_Die_Minions_Cover
+		}
+		prerequisite = {
+			focus = MEM_Spiritual_Home
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Expand_Capital"
+			763 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			954 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEM_Teutonic_German_Ancestory
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_Phoenix
+		x = 5
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Phoenix
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Mad_Prussy_Theft"
+			add_ideas = MEM_Teutonic_Ancestory
+		}
+	}
+	focus = {
+		id = MEM_War_Crime_Time
+		icon = GFX_Pogroms
+		relative_position_id = MEM_Teutonic_German_Ancestory
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Teutonic_German_Ancestory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_War_Crime_Time"
+			swap_ideas = {
+				remove_idea = MEM_Teutonic_Ancestory
+				add_idea = MEM_Teutonic_Ancestory2
+			}
+		}
+	}
+	focus = {
+		id = MEM_Fuck_Poland
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_War_Crime_Time
+		x = -2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_War_Crime_Time
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Fuck_Poland"
+			create_wargoal = {
+				type = annex_everything
+				target = POL
+			}
+			if = {
+				limit = {
+					PRU = {
+						owns_state = 763
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = PRU
+				}
+			}
+			else = {}
+		}
+	}
+	focus = {
+		id = MEM_Fuck_Baltics
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_War_Crime_Time
+		x = 0
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_War_Crime_Time
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Fuck_Baltics"
+			create_wargoal = {
+				type = annex_everything
+				target = COU
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = RIG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LIV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = EST
+			}
+		}
+	}
+	focus = {
+		id = MEM_Fuck_Belarus
+		icon = GFX_LOU_Cracker
+		relative_position_id = MEM_War_Crime_Time
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_War_Crime_Time
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Fuck_Belarus"
+			create_wargoal = {
+				type = annex_everything
+				target = BLR
+			}
+		}
+	}
+	focus = {
+		id = MEM_Eastern_Legions
+		icon = GFX_goal_army_guy_2
+		relative_position_id = MEM_Fuck_Poland
+		x = 2
+		y = 1
+		cost = 8
+
+		prerequisite = {
+			focus = MEM_Fuck_Poland
+		}
+		prerequisite = {
+			focus = MEM_Fuck_Belarus
+		}
+		prerequisite = {
+			focus = MEM_Fuck_Baltics
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: MEM_Eastern_Legions"
+			add_manpower = 1000
+		}
+	}
+}

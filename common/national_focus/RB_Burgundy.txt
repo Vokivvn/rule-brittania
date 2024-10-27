@@ -1,0 +1,17 @@
+#######################
+#### Burgundy tree ####
+#######################
+
+focus_tree = {
+	id = BRG_Intro_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRG
+		}
+	}
+	default = no
+	shared_focus = BRG_Yearly_Duties
+	continuous_focus_position = { x = 50 y = 2000 }
+}

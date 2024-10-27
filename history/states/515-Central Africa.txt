@@ -1,0 +1,23 @@
+state={
+	id=515
+	name="STATE_515"
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = CHA
+		add_core_of = CHA
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+
+	provinces={
+		1115 1958 8128 10868
+	}
+	manpower=1456356
+	buildings_max_level_factor=1.000
+}

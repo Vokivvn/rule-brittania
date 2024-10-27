@@ -1,0 +1,115 @@
+TUR_swap_tree = {
+	if = {
+		limit = {
+			has_focus_tree = RB_Turkey_intro
+		}
+		hidden_effect = {
+			load_focus_tree = RB_Turkey_tree_two
+		}
+		custom_effect_tooltip = tur_focus_change
+	}
+	else_if = {
+		limit = {
+			has_focus_tree = RB_Turkey_tree_two
+		}
+		hidden_effect = {
+			load_focus_tree = RB_Turkey_intro
+		}
+		custom_effect_tooltip = tur_focus_change
+	}
+}
+
+TUR_unlock_military = {
+	set_country_flag = tur_army_unlocked
+	set_country_flag = tur_airforce_unlocked
+	set_country_flag = tur_navy_unlocked
+}
+
+TUR_tcw_start = {
+	every_owned_state = {
+		limit = {
+			has_state_flag = tcw_orhan
+		}
+		TRN = {
+			transfer_state = PREV
+		}
+	}
+	TUR = {
+		create_country_leader = {
+			name = "Fuad IV"
+			desc = "POLITICS_SULTAN_OSMAN_DESC"
+			picture = "Portrait_TUR_Faud_IV.dds"
+			expire = "1965.1.1"
+			ideology = absolutism_subtype
+			traits = {}
+		}
+		set_politics = { ruling_party = absolutism }
+		set_cosmetic_tag = TUR_TCW
+	}
+	if = {
+		limit = {
+			has_country_flag = tcw_joined_orhan
+		}
+		TRN = {
+			change_tag_from = TUR
+		}
+	}
+}
+
+TUR_ytr_begins = {
+	set_variable = {
+			var = tur_turkes_popularity
+			value = 3
+		}
+	set_variable = {
+		var = tur_pup_popularity
+		value = 1
+	}
+	custom_effect_tooltip = tur_ytr_beginning_of_the_struggle
+}
+
+TUR_small_boost_for_the_PUP = {
+	add_to_variable = { tur_pup_popularity = 1 }
+	custom_effect_tooltip = tur_ytr_small_pup_boost
+}
+
+TUR_medium_boost_for_the_PUP = {
+	add_to_variable = { tur_pup_popularity = 2 }
+	custom_effect_tooltip = tur_ytr_medium_pup_boost
+}
+
+TUR_large_boost_for_the_PUP = {
+	add_to_variable = { tur_pup_popularity = 3 }
+	custom_effect_tooltip = tur_ytr_large_pup_boost
+}
+
+TUR_small_boost_for_turkes = {
+	add_to_variable = { tur_turkes_popularity = 1 }
+	custom_effect_tooltip = tur_ytr_small_turkes_boost
+}
+
+TUR_medium_boost_for_turkes = {
+	add_to_variable = { tur_turkes_popularity = 2 }
+	custom_effect_tooltip = tur_ytr_medium_turkes_boost
+}
+
+TUR_large_boost_for_turkes = {
+	add_to_variable = { tur_turkes_popularity = 3 }
+	custom_effect_tooltip = tur_ytr_large_turkes_boost
+}
+
+TUR_ytr_the_victor = {
+	if = {
+		limit = {
+			check_variable = { tur_turkes_popularity > tur_pup_popularity }
+		}
+		country_event = { id = tur.33 }
+	}
+
+	else_if = {
+		limit = {
+			check_variable = { tur_turkes_popularity < tur_pup_popularity }
+		}
+		country_event = { id = tur.34 }
+	}
+}

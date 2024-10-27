@@ -1,0 +1,29 @@
+
+state={
+	id=650
+	name="STATE_650"
+
+	history={
+		owner = CIP
+		add_core_of = CIP
+		victory_points = {
+			13067 1 
+		}
+		buildings = {
+			infrastructure = 3
+			13067 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		12207 13067 
+	}
+	manpower=20
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

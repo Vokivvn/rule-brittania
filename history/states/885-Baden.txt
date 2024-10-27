@@ -1,0 +1,42 @@
+state={
+	id=885
+	name="STATE_885"
+
+	state_category = large_town
+
+	history = {
+		owner = BAD
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = BAD
+		victory_points = {
+			6568 25
+		}
+		victory_points = {
+			6581 5
+		}
+		victory_points = {
+			3530 15
+		}
+		victory_points = {
+			6542 3
+		}
+		victory_points = {
+			6712 2
+		}
+		victory_points = {
+			11640 5
+		}
+		victory_points = {
+			3679 5
+		}
+	}
+
+	provinces={
+		3530 3679 3692 6542 6568 6581 6712 11640 
+	}
+	manpower=2982834
+	state_category = large_city
+	buildings_max_level_factor=1.000
+}

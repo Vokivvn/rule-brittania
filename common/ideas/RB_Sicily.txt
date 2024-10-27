@@ -1,0 +1,46 @@
+ideas = {
+	country = {
+		SIC_Council_Princes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SIC_Council_Princes"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		SIC_Royal_Navy_Arsenals = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SIC_Royal_Navy_Arsenals"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.20
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+		
+		SIC_Peasants_Plight = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SIC_Peasants_Plight"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.20
+				consumer_goods_factor = 0.10
+			}
+		}
+	}
+}	

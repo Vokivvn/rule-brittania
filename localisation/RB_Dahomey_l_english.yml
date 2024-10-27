@@ -1,0 +1,91 @@
+﻿#|=============================================================|#
+#|██████╗  █████╗ ██╗  ██╗ ██████╗ ███╗   ███╗███████╗██╗   ██╗|#
+#|██╔══██╗██╔══██╗██║  ██║██╔═══██╗████╗ ████║██╔════╝╚██╗ ██╔╝|#
+#|██║  ██║███████║███████║██║   ██║██╔████╔██║█████╗   ╚████╔╝ |#
+#|██║  ██║██╔══██║██╔══██║██║   ██║██║╚██╔╝██║██╔══╝    ╚██╔╝  |#
+#|██████╔╝██║  ██║██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗   ██║   |#
+#|╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝   ╚═╝   |#
+#|================|   Country Localization   |=================|#
+l_english:
+
+ ##Country Names##
+ DAH_nationalism:0 "Dahomey"
+ DAH_nationalism_ADJ:0 "Dahomeyan"
+ DAH_nationalism_DEF:0 "The Kingdom of Dahomey"
+
+ DAH_despotism:0 "Dahomey"
+ DAH_despotism_ADJ:0 "Dahomeyan"
+ DAH_despotism_DEF:0 "The Kingdom of Dahomey"
+ 
+ DAH_absolutism:0 "Dahomey"
+ DAH_absolutism_ADJ:0 "Dahomeyan"
+ DAH_absolutism_DEF:0 "The Kingdom of Dahomey"
+
+ DAH_administrationism:0 "Dahomey"
+ DAH_administrationism_ADJ:0 "Dahomeyan"
+ DAH_administrationism_DEF:0 "The Kingdom of Dahomey"
+
+ DAH_parliamentarianism:0 "Dahomey"
+ DAH_parliamentarianism_ADJ:0 "Dahomeyan"
+ DAH_parliamentarianism_DEF:0 "The Kingdom of Dahomey"
+
+ DAH_republicanism:0 "Dahomey"
+ DAH_republicanism_ADJ:0 "Dahomeyan"
+ DAH_republicanism_DEF:0 "The Kingdom of Dahomey"
+ 
+ DAH_liberalism:0 "Dahomey"
+ DAH_liberalism_ADJ:0 "Dahomeyan"
+ DAH_liberalism_DEF:0 "The Kingdom of Dahomey"
+
+ DAH_marxism:0 "Dahomey"
+ DAH_marxism_ADJ:0 "Dahomeyan"
+ DAH_marxism_DEF:0 "The Kingdom of Dahomey"
+ 
+ DAH_cromwellianism:0 "Dahomey"
+ DAH_cromwellianism_ADJ:0 "Dahomeyan"
+ DAH_cromwellianism_DEF:0 "The Kingdom of Dahomey"
+
+ #Anglo Aligned
+ DAH_ENG_administrationism:0 "Dahomey"
+ DAH_ENG_administrationism_ADJ:0 "Dahomeyan"
+ DAH_ENG_administrationism_DEF:0 "The Kingdom of Dahomey"
+
+ ##Party Names##
+ DAH_cromwellianism_party:0 "RPD"
+ DAH_cromwellianism_party_long:0 "Republic Party of Dahomey"
+ DAH_cromwellianism_party_desc:0 "-"
+
+ DAH_marxism_party:0 "RPD"
+ DAH_marxism_party_long:0 "Republic Party of Dahomey"
+ DAH_marxism_party_desc:0 "-"
+
+ DAH_liberalism_party:0 "RPD"
+ DAH_liberalism_party_long:0 "Republic Party of Dahomey"
+ DAH_liberalism_party_desc:0 "-"
+
+ DAH_republicanism_party:0 "RPD"
+ DAH_republicanism_party_long:0 "Republic Party of Dahomey"
+ DAH_republicanism_party_desc:0 "-"
+
+ DAH_parliamentarianism_party:0 "Royal Court of Dahomey- Radicals"
+ DAH_parliamentarianism_party_long:0 "Royal Court of Dahomey- Radicals"
+ DAH_parliamentarianism_party_desc:0 "-"
+
+ DAH_administrationism_party:0 "Royal Court of Dahomey- Modernists"
+ DAH_administrationism_party_long:0 "Royal Court of Dahomey- Modernists"
+ DAH_administrationism_party_desc:0 "-"
+
+ DAH_absolutism_party:0 "Royal Court of Dahomey- Conservatives"
+ DAH_absolutism_party_long:0 "Royal Court of Dahomey- Conservatives"
+ DAH_absolutism_party_desc:0 "-"
+
+ DAH_despotism_party:0 "Royal Court of Dahomey- Conservatives"
+ DAH_despotism_party_long:0 "Royal Court of Dahomey- Conservatives"
+ DAH_despotism_party_desc:0 "-"
+
+ DAH_nationalism_party:0 "Royal Court of Dahomey- Radicals"
+ DAH_nationalism_party_long:0 "Royal Court of Dahomey- Radicals"
+ DAH_nationalism_party_desc:0 "-"
+
+ ##Leader Descriptions##
+ LEADER_DESC_KOULERY_OUIBRO:0 "A biiiiggg boy who likes old dead white guys\n\nwho doesn't"

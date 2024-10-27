@@ -1,0 +1,14 @@
+state={
+	id=837
+	name="STATE_837"
+	provinces={
+		204 3061 3161 6009 6108 6186 11105 11211 
+	}
+	history={
+		owner = SWE
+		add_core_of = SWE
+	}
+	manpower=982536
+	state_category= large_town
+	buildings_max_level_factor=1.000
+}

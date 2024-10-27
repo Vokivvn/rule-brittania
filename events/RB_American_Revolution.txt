@@ -1,0 +1,1436 @@
+﻿add_namespace = american_rev
+
+country_event = { #american revolution begins
+	id = american_rev.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event american_rev.1"
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = USA_rebel_state
+				}
+				USA = {
+					transfer_state = PREV
+				}
+				remove_core_of = CNA
+				add_claim_by = CNA
+			}
+			every_owned_state = {
+				add_claim_by = USA
+			}
+			USA = {
+				set_capital = 930
+				every_owned_state = {
+					add_core_of = USA
+				}
+				declare_war_on = {
+					target = CNA
+					type = annex_everything
+				}
+				country_event = {
+					id = USA.1
+					days = 1
+				}
+				country_event = {
+					id = american_rev.2
+					days = 1225
+				}
+				country_event = {
+					id = american_rev.4
+					days = 1225
+				}
+				add_ideas = USA_american_revolution_devastation_idea
+				add_dynamic_modifier = {
+					modifier = USA_devastation_dynmod
+				}
+				set_variable = { USA_devastation_var = 1 }
+				set_variable = { USA_devastation_ticker = 0.633 }
+				set_variable = { USA_devastation_var_negative = -0.01 }
+				set_variable = { USA_devastation_var_half = 0.005 }
+				set_variable = { USA_devastation_var_negative_half = -0.005 }
+				set_variable = { USA_devastation_var_negative_third = -0.0033 }
+				set_variable = { USA_devastation_var_ten = 10 }
+				set_variable = { USA_devastation_var_fifteen_shift = 0.15 }
+				set_variable = { USA_popular_support = 0.6 }
+				RB_raise_economic_law = yes
+				RB_raise_economic_law = yes
+				country_event = {
+					id = american_rev.2101
+					hours = 169
+				}
+			}
+			CNA = {
+				dismantle_faction = yes
+				add_ideas = USA_american_revolution_devastation_idea
+				add_dynamic_modifier = {
+					modifier = USA_devastation_dynmod
+				}
+				set_variable = { USA_devastation_var = 1 }
+				set_variable = { USA_devastation_ticker = 0.633 }
+				set_variable = { USA_devastation_var_negative = -0.01 }
+				set_variable = { USA_devastation_var_half = 0.005 }
+				set_variable = { USA_devastation_var_negative_half = -0.005 }
+				set_variable = { USA_devastation_var_negative_third = -0.0033 }
+				set_variable = { USA_devastation_var_ten = 10 }
+				set_variable = { USA_devastation_var_fifteen_shift = 0.15 }
+				set_variable = { CNA_popular_support = 0.3 }
+				RB_raise_economic_law = yes
+				RB_raise_economic_law = yes
+				country_event = {
+					id = american_rev.2001
+					hours = 169
+				}
+				load_focus_tree = {
+					tree = CNA_revolution_tree
+					keep_completed = yes
+				}
+			}
+			if = {
+				limit = {
+					country_exists = CCT
+				}
+				CCT = {
+					country_event = {
+						id = deskaheh.1
+						days = 2
+					}
+				}
+			}
+			else = {
+				CSW = {
+					country_event = {
+						id = deskaheh.1
+						days = 2
+					}
+				}
+			}
+		}
+	}
+	title = american_rev.1.t
+	desc = american_rev.1.desc
+	picture = GFX_report_event_fishing
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.1.a
+		#hidden_effect = {
+		#	every_country = {
+		#		sound_effect = "soundeffect_jackass" 
+		#		set_country_flag = Super_Event_Visible
+		#		set_country_flag = superevent_amrev
+		#	}
+		#}
+	}
+	
+	option = { #FREEDOM
+		name = american_rev.1.b
+		#hidden_effect = {
+		#	every_country = {
+		#		sound_effect = "soundeffect_jackass" 
+		#		set_country_flag = Super_Event_Visible
+		#		set_country_flag = superevent_amrev
+		#	}
+		#}
+		USA = { change_tag_from = CNA }
+	}
+}
+
+country_event = { #SoL attempt coup, Marxists take control
+	id = american_rev.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2"}
+	title = american_rev.2.t
+	desc = american_rev.2.desc
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_country_flag = USA_supported_SoL }
+	}
+	
+	option = { #ok
+		name = american_rev.2.a
+		add_stability = -0.25
+		hidden_effect = {
+			country_event = {
+				id = american_rev.3
+				days = 7
+			}
+		}
+		add_popularity = {
+			ideology = marxism
+			popularity = 0.3
+		}
+		set_politics = {
+			ruling_party = marxism
+		}
+		create_country_leader = {
+			name = "Yank Levy"
+			#desc = 
+			picture = "Portrait_USA_Yank_Levy.dds"
+			expire = "1999.12.12"
+			ideology = marxism_subtype
+			traits = {
+			}
+		}
+	}
+}
+
+country_event = { #SoL split off
+	id = american_rev.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.3"}
+	title = american_rev.3.t
+	desc = american_rev.3.desc
+#	picture = 
+
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = SOL_SoL_state
+					is_controlled_by = USA
+				}
+				SOL = {
+					transfer_state = PREV
+				}
+				add_core_of = SOL
+				remove_core_of = USA
+				add_claim_by = USA
+			}
+			CNA = {
+				every_owned_state = {
+					limit = {
+						has_state_flag = SOL_SoL_state
+						is_controlled_by = USA
+					}
+					SOL = {
+						set_state_controller = PREV
+					}
+				}
+				country_event = {
+					id = american_rev.10
+					days = 4
+				}
+			}
+			every_owned_state = {
+				limit = {
+					NOT = { is_core_of = SOL }
+				}
+				add_claim_by = SOL
+			}
+			CNA = {
+				every_owned_state = {
+					limit = {
+						NOT = { is_core_of = SOL }
+					}
+					add_claim_by = SOL
+				}
+			}
+			SOL = {
+				declare_war_on = {
+					target = CNA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = USA
+					type = annex_everything
+				}
+				add_ideas = USA_american_revolution_devastation_idea
+				add_dynamic_modifier = {
+					modifier = USA_devastation_dynmod
+				}
+				set_variable = { USA_devastation_var = USA.USA_devastation_var }
+				set_variable = { USA_devastation_ticker = USA.USA_devastation_ticker }
+				set_variable = { USA_devastation_var_negative = USA.USA_devastation_var_negative }
+				set_variable = { USA_devastation_var_half = USA.USA_devastation_var_half }
+				set_variable = { USA_devastation_var_negative_half = USA.USA_devastation_var_negative_half }
+				set_variable = { USA_devastation_var_negative_third = USA.USA_devastation_var_negative_third }
+				set_variable = { USA_devastation_var_ten = USA.USA_devastation_var_ten }
+				set_variable = { USA_devastation_var_fifteen_shift = USA.USA_devastation_var_ten }
+				country_event = {
+					id = american_rev.2301
+					hours = 169
+				}
+			}
+			country_event = {
+				id = american_rev.6
+				days = 30
+			}
+			country_event = {
+				id = american_rev.7
+				days = 7
+			}
+			country_event = {
+				id = american_rev.9
+				days = 34
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.3.a
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.3
+		}
+	}
+	option = { #play nats
+		name = american_rev.3.b
+		ai_chance = { factor = 0 }
+		add_popularity = {
+			ideology = nationalism
+			popularity = -0.3
+		}
+		SOL = { change_tag_from = USA }
+	}
+}
+
+country_event = { #Marxists attempt coup, big mac goes sicko mode
+	id = american_rev.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.4"}
+	title = american_rev.4.t
+	desc = american_rev.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = USA_supported_SoL
+	}
+	
+	trigger = {
+		has_war_with = CNA
+	}
+	
+	option = { #ok
+		name = american_rev.4.a
+		add_stability = -0.25
+		hidden_effect = {
+			country_event = {
+				id = american_rev.5
+				days = 7
+			}
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.3
+		}
+		set_politics = {
+			ruling_party = nationalism
+		}
+		create_country_leader = {
+			name = "Douglas MacArthur"
+			#desc = 
+			picture = "Portrait_USA_Douglas_MacArthur.dds"
+			expire = "1999.12.12"
+			ideology = nationalism_subtype
+			traits = {
+			}
+		}
+	}
+}
+
+country_event = { #Marxists split off
+	id = american_rev.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.5"}
+	title = american_rev.5.t
+	desc = american_rev.5.desc
+	#picture = 
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = USM_commie_state
+					is_controlled_by = USA
+				}
+				USM = {
+					transfer_state = PREV
+				}
+				add_core_of = USM
+				remove_core_of = USA
+				add_claim_by = USA
+			}
+			CNA = {
+				every_owned_state = {
+					limit = {
+						has_state_flag = USM_commie_state
+						is_controlled_by = USA
+					}
+					USM = {
+						set_state_controller = PREV
+					}
+				}
+				country_event = {
+					id = american_rev.10
+					days = 4
+				}
+			}
+			every_owned_state = {
+				limit = {
+					NOT = { is_core_of = USM }
+				}
+				add_claim_by = USM
+			}
+			CNA = {
+				every_owned_state = {
+					limit = {
+						NOT = { is_core_of = USM }
+					}
+					add_claim_by = USM
+				}
+			}
+			USM = {
+				declare_war_on = {
+					target = CNA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = USA
+					type = annex_everything
+				}
+				add_ideas = USA_american_revolution_devastation_idea
+				add_dynamic_modifier = {
+					modifier = USA_devastation_dynmod
+				}
+				set_variable = { USA_devastation_var = USA.USA_devastation_var }
+				set_variable = { USA_devastation_ticker = USA.USA_devastation_ticker }
+				set_variable = { USA_devastation_var_negative = USA.USA_devastation_var_negative }
+				set_variable = { USA_devastation_var_half = USA.USA_devastation_var_half }
+				set_variable = { USA_devastation_var_negative_half = USA.USA_devastation_var_negative_half }
+				set_variable = { USA_devastation_var_negative_third = USA.USA_devastation_var_negative_third }
+				set_variable = { USA_devastation_var_ten = USA.USA_devastation_var_ten }
+				set_variable = { USA_devastation_var_fifteen_shift = USA.USA_devastation_var_ten }
+				country_event = {
+					id = american_rev.2201
+					hours = 169
+				}
+			}
+			country_event = {
+				id = american_rev.6
+				days = 30
+			}
+			country_event = {
+				id = american_rev.7
+				days = 7
+			}
+			country_event = {
+				id = american_rev.9
+				days = 34
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.5.a
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.3
+		}
+	}
+	option = { #play commies
+		name = american_rev.5.b
+		ai_chance = { factor = 0 }
+		add_popularity = {
+			ideology = marxism
+			popularity = -0.3
+		}
+		USM = { change_tag_from = USA }
+	}
+}
+
+country_event = { #Acadian independence
+	id = american_rev.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.6"}
+	title = american_rev.6.t
+	desc = american_rev.6.desc
+	#picture = 
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = ACA_acadia_state
+				}
+				ACA = {
+					transfer_state = PREV
+				}
+				add_core_of = ACA
+			}
+			CNA = {
+				every_owned_state = {
+					limit = {
+						has_state_flag = ACA_acadia_state
+					}
+					ACA = {
+						transfer_state = PREV
+					}
+					add_core_of = ACA
+				}
+			}
+			#468 = {
+			#	add_core_of = ACA
+			#}
+			#ACA = {
+			#	declare_war_on = {
+			#		target = CNA
+			#		type = annex_everything
+			#	}
+			#	declare_war_on = {
+			#		target = USA
+			#		type = annex_everything
+			#	}
+			#	declare_war_on = {
+			#		target = USM
+			#		type = annex_everything
+			#	}
+			#}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.6.a
+	}
+	option = { #play acadia
+		name = american_rev.6.b
+		ai_chance = { factor = 0 }
+		ACA = { change_tag_from = USA }
+	}
+}
+
+country_event = { #Dixie independence
+	id = american_rev.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.7"}
+	title = american_rev.7.t
+	desc = american_rev.7.desc
+	#picture = 
+	immediate = {
+		hidden_effect = {
+
+			every_owned_state = {
+				limit = {
+					OR = {
+						has_state_flag = DIX_dixieland_state
+						has_state_flag = AFC_new_afrika_state
+					}
+				}
+				DIX = {
+					transfer_state = PREV
+				}
+				if = {
+					limit = {
+						has_state_flag = DIX_dixieland_state
+					}
+					add_core_of = DIX
+				}
+				else = {
+					add_claim_by = DIX
+				}
+			}
+			CNA = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							has_state_flag = DIX_dixieland_state
+							has_state_flag = AFC_new_afrika_state
+						}
+					}
+					DIX = {
+						transfer_state = PREV
+					}
+					if = {
+						limit = {
+							has_state_flag = DIX_dixieland_state
+						}
+						add_core_of = DIX
+					}
+					else = {
+						add_claim_by = DIX
+					}
+				}
+			}
+			DIX = {
+				country_event = {
+					id = american_rev.8
+					days = 3
+				}
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.7.a
+	}
+	option = { #play acadia
+		name = american_rev.7.b
+		ai_chance = { factor = 0 }
+		DIX = { change_tag_from = USA }
+	}
+}
+
+country_event = { #New African independence
+	id = american_rev.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.8"}
+	title = american_rev.8.t
+	desc = american_rev.8.desc
+	#picture = 
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = AFC_new_afrika_state
+					is_controlled_by = DIX
+				}
+				AFC = {
+					transfer_state = PREV
+				}
+				add_core_of = AFC
+			}
+			every_owned_state = {
+				limit = {
+					has_state_flag = DIX_dixieland_state
+					NOT = { has_state_flag = AFC_new_afrika_state }
+				}
+				add_claim_by = AFC
+			}
+			AFC = {
+				declare_war_on = {
+					target = DIX
+					type = annex_everything
+				}
+			}
+			SIE = {
+				country_event = {
+					id = sie.1
+					days = 3
+				}
+			}
+			IVO = {
+				country_event = {
+					id = sie.1
+					days = 3
+				}
+			}
+			DIX = {
+				country_event = {
+					id = cherokia.1
+				}
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.8.a
+	}
+	option = { #play acadia
+		name = american_rev.8.b
+		ai_chance = { factor = 0 }
+		AFC = { change_tag_from = DIX }
+	}
+}
+
+country_event = { #New England
+	id = american_rev.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.9"}
+	title = american_rev.9.t
+	desc = american_rev.9.desc
+	#picture = 
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = NEE_new_england_state
+				}
+				NEE = {
+					transfer_state = PREV
+				}
+				add_core_of = NEE
+			}
+			CNA = {
+				every_owned_state = {
+					limit = {
+						has_state_flag = NEE_new_england_state
+					}
+					NEE = {
+						transfer_state = PREV
+					}
+					add_core_of = NEE
+				}
+			}
+			NEE = {
+				country_event = {
+					id = american_rev.13
+					days = 5
+				}
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.9.a
+	}
+	option = { #play new england
+		name = american_rev.9.b
+		ai_chance = { factor = 0 }
+		NEE = { change_tag_from = USA }
+	}
+}
+
+country_event = { #RNAA coup
+	id = american_rev.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.10"}
+	title = american_rev.10.t
+	desc = american_rev.10.desc
+	#picture = 
+	immediate = {
+		
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.10.a
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.3
+		}
+		set_politics = {
+			ruling_party = despotism
+		}
+		set_party_name = {
+			ideology = despotism
+			name = CNA_despotism_party_RNAA
+			long_name = CNA_despotism_party_RNAA_long
+		}
+		create_country_leader = {
+			name = "John Carl Murchie"
+			#desc = 
+			picture = "Portrait_USA_Douglas_MacArthur.dds"
+			expire = "1999.12.12"
+			ideology = despotism_subtype
+			traits = {
+			}
+		}
+	}
+}
+
+country_event = { #Send offer to Louisiana
+	id = american_rev.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.11"}
+	title = american_rev.11.t
+	desc = american_rev.11.desc
+	#picture = 
+	immediate = {
+		
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.11.a
+		LOU = {
+			country_event = {
+				id = american_rev.12
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Accept offer
+	id = american_rev.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.12"}
+	title = american_rev.12.t
+	desc = american_rev.12.desc
+	#picture = 
+	immediate = {
+		
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.12.a
+		USA = { white_peace = LOU }
+	}
+}
+
+country_event = { #Maine War begins
+	id = american_rev.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.13"}
+	title = american_rev.13.t
+	desc = american_rev.13.desc
+	#picture = 
+	immediate = {
+		hidden_effect = {
+			809 = { add_claim_by = NEE }
+			810 = { add_claim_by = ACA }
+			declare_war_on = {
+				target = ACA
+				type = annex_everything
+			}
+			country_event = {
+				id = american_rev.14
+				days = 60
+			}
+			load_oob = "NEE_start"
+			ACA = { load_oob = "ACA_start" }
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.13.a
+	}
+}
+
+country_event = { #Maine War ceasefire (60 days)
+	id = american_rev.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.14"}
+	title = american_rev.14.t
+	desc = american_rev.14.desc
+	#picture = 
+	trigger = {
+		NOT = {
+			809 = {
+				controller = {
+					tag = NEE
+				}
+			}
+		}
+		NOT = {
+			810 = {
+				controller = {
+					tag = ACA
+				}
+			}
+		}
+		NOT = { NEE = { has_country_flag = maine_war_finished } }
+	}
+	immediate = {
+		set_country_flag = maine_war_finished
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.14.a
+		white_peace = ACA
+		add_political_power = -50
+	}
+}
+
+country_event = { #Maine War- NEE victory
+	id = american_rev.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.15"}
+	title = american_rev.15.t
+	desc = american_rev.15.desc
+	#picture = 
+	trigger = {
+		809 = {
+			controller = {
+				tag = NEE
+			}
+		}
+		NOT = {
+			810 = {
+				controller = {
+					tag = ACA
+				}
+			}
+		}
+		NOT = { NEE = { has_country_flag = maine_war_finished } }
+	}
+	immediate = {
+		set_country_flag = maine_war_finished
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.15.a
+		transfer_state = 809
+		white_peace = ACA
+		add_political_power = 100
+	}
+}
+
+country_event = { #Maine War- ACA victory
+	id = american_rev.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.16"}
+	title = american_rev.16.t
+	desc = american_rev.16.desc
+	#picture = 
+	trigger = {
+		NOT = {
+			809 = {
+				controller = {
+					tag = NEE
+				}
+			}
+		}
+		810 = {
+			controller = {
+				tag = ACA
+			}
+		}
+		NOT = { NEE = { has_country_flag = maine_war_finished } }
+	}
+	immediate = {
+		set_country_flag = maine_war_finished
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.16.a
+		white_peace = ACA
+		ACA = { transfer_state = 810 }
+		hidden_effect = {
+			country_event = {
+				id = american_rev.17
+				days = 1
+			}
+		}
+		add_political_power = -100
+	}
+}
+
+country_event = { #Maine War- ACA victory 2
+	id = american_rev.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.17"}
+	title = american_rev.17.t
+	desc = american_rev.17.desc
+	#picture = 
+	immediate = {
+		813 = { set_demilitarized_zone = yes }
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	
+	option = { #ok
+		name = american_rev.17.a
+		
+	}
+}
+
+country_event = { #test
+	id = american_rev.1001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.1001"}
+	title = american_rev.1001.t
+	desc = american_rev.1001.desc
+	#picture = 
+	immediate = {
+		every_owned_state = {
+			limit = {
+				has_state_flag = ACA_acadia_state
+			}
+			ACA = {
+				transfer_state = PREV
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_state_flag = DIX_dixieland_state
+			}
+			DIX = {
+				transfer_state = PREV
+			}
+		}
+		every_owned_state = {
+			limit = {
+				has_state_flag = AFC_new_afrika_state
+			}
+			AFC = {
+				transfer_state = PREV
+			}
+		}
+		USA = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = USM_commie_state
+				}
+				USM = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.1001.a
+		
+	}
+}
+
+country_event = { #test dixieland/new africa
+	id = american_rev.1002
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.1002"}
+	title = american_rev.1002.t
+	desc = american_rev.1002.desc
+	#picture = 
+	immediate = {
+		CNA = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = CNA_southern_state
+				}
+				ROOT = {
+					transfer_state = PREV
+				}
+				add_core_of = ROOT
+			}
+		}
+		USA = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = CNA_southern_state
+				}
+				ROOT = {
+					transfer_state = PREV
+				}
+				add_core_of = ROOT
+			}
+		}
+		USM = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = CNA_southern_state
+				}
+				ROOT = {
+					transfer_state = PREV
+				}
+				add_core_of = ROOT
+			}
+		}
+		SOL = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = CNA_southern_state
+				}
+				ROOT = {
+					transfer_state = PREV
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.1002.a
+		
+	}
+}
+
+country_event = { #new englan imper
+	id = american_rev.1003
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.1003"}
+	title = american_rev.1003.t
+	desc = american_rev.1003.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = american_rev.1002.a
+		NEE = {
+			transfer_state = 357
+			add_state_core = 357
+			transfer_state = 358
+			add_state_core = 358
+			transfer_state = 359
+			add_state_core = 359
+			transfer_state = 360
+			add_state_core = 360
+			transfer_state = 381
+			add_state_core = 381
+			transfer_state = 464
+			add_state_core = 464
+			transfer_state = 465
+			add_state_core = 465
+			transfer_state = 468
+			add_state_core = 468
+			transfer_state = 808
+			add_state_core = 808
+			transfer_state = 809
+			add_state_core = 809
+			transfer_state = 810
+			add_state_core = 810
+			transfer_state = 811
+			add_state_core = 811
+			transfer_state = 812
+			add_state_core = 812
+			transfer_state = 813
+			add_state_core = 813
+			transfer_state = 925
+			add_state_core = 925
+			transfer_state = 926
+			add_state_core = 926
+			transfer_state = 927
+			add_state_core = 927
+			transfer_state = 930
+			add_state_core = 930
+			transfer_state = 933
+			add_state_core = 933
+			change_tag_from = CNA
+		}
+	}
+}
+
+country_event = { #Devastation ticker- CNA
+	id = american_rev.2001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2001"}
+	title = american_rev.2001.t
+	desc = american_rev.2001.desc
+	#picture = 
+	trigger = {
+		tag = CNA
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2002
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2001.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- CNA
+	id = american_rev.2002
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2002"}
+	title = american_rev.2002.t
+	desc = american_rev.2002.desc
+	#picture = 
+	trigger = {
+		tag = CNA
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2003
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2002.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- CNA
+	id = american_rev.2003
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2003"}
+	title = american_rev.2003.t
+	desc = american_rev.2003.desc
+	#picture = 
+	trigger = {
+		tag = CNA
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2001
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2003.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- USA
+	id = american_rev.2101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2101"}
+	title = american_rev.2101.t
+	desc = american_rev.2101.desc
+	#picture = 
+	trigger = {
+		tag = USA
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2102
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2101.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- USA
+	id = american_rev.2102
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2102"}
+	title = american_rev.2102.t
+	desc = american_rev.2102.desc
+	#picture = 
+	trigger = {
+		tag = USA
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2103
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2102.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- USA
+	id = american_rev.2103
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2103"}
+	title = american_rev.2103.t
+	desc = american_rev.2103.desc
+	#picture = 
+	trigger = {
+		tag = USA
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2101
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2103.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- USM
+	id = american_rev.2201
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2201"}
+	title = american_rev.2201.t
+	desc = american_rev.2201.desc
+	#picture = 
+	trigger = {
+		tag = USM
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2202
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2201.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- USM
+	id = american_rev.2202
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2202"}
+	title = american_rev.2202.t
+	desc = american_rev.2202.desc
+	#picture = 
+	trigger = {
+		tag = USM
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2203
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2202.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- USM
+	id = american_rev.2203
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2203"}
+	title = american_rev.2203.t
+	desc = american_rev.2203.desc
+	#picture = 
+	trigger = {
+		tag = USM
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2201
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2203.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- SOL
+	id = american_rev.2301
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2301"}
+	title = american_rev.2301.t
+	desc = american_rev.2301.desc
+	#picture = 
+	trigger = {
+		tag = SOL
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2302
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2301.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- SOL
+	id = american_rev.2302
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2302"}
+	title = american_rev.2302.t
+	desc = american_rev.2302.desc
+	#picture = 
+	trigger = {
+		tag = SOL
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2303
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2302.a
+		
+	}
+}
+
+country_event = { #Devastation ticker- SOL
+	id = american_rev.2303
+	immediate = {log = "[GetDateText]: [Root.GetName]: event american_rev.2303"}
+	title = american_rev.2303.t
+	desc = american_rev.2303.desc
+	#picture = 
+	trigger = {
+		tag = SOL
+	}
+	hidden = yes
+	immediate = {
+		USA_update_devastation = yes
+		country_event = {
+			id = american_rev.2301
+			hours = 169
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = { #ok
+		name = american_rev.2303.a
+		
+	}
+}
+
+
+
+
+
+
+
+
+

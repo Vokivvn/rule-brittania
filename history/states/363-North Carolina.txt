@@ -1,0 +1,34 @@
+
+state={
+	id=363
+	name="STATE_363"
+
+	history={
+		owner = CNA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 3
+			1132 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CNA
+		victory_points = {
+			7045 5
+		}
+		victory_points = {
+			12445 5
+		}
+
+	}
+
+	provinces={
+		1019 1077 1132 1163 4168 7045 7083 9931 10051 10081 11783 11927 12054 12445 
+	}
+	manpower=2853246
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=484
+	name="STATE_484"
+
+	history={
+		owner = CAL
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			12736 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CAL
+		add_core_of = MEX
+		victory_points = {
+			12736 5
+		}
+	}
+
+	provinces={
+		1904 7964 8119 12736 12859 
+	}
+	manpower=93871
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

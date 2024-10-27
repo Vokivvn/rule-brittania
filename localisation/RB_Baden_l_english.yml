@@ -1,0 +1,42 @@
+﻿l_english:
+ ##Country Names##
+ BAD_cromwellianism:0 "Margraviate of Baden"
+ BAD_cromwellianism_DEF:0 "The Margraviate of Baden"
+ BAD_marxism:0 "Margraviate of Baden"
+ BAD_marxism_DEF:0 "The Margraviate of Baden"
+ BAD_liberalism:0 "Margraviate of Baden"
+ BAD_liberalism_DEF:0 "The Margraviate of Baden"
+ BAD_republicanism:0 "Margraviate of Baden"
+ BAD_republicanism_DEF:0 "The Margraviate of Baden"
+ BAD_parliamentarianism:0 "Margraviate of Baden"
+ BAD_parliamentarianism_DEF:0 "The Margraviate of Baden"
+ BAD_administrationism:0 "Margraviate of Baden"
+ BAD_administrationism_DEF:0 "The Margraviate of Baden"
+ BAD_absolutism:0 "Margraviate of Baden"
+ BAD_absolutism_DEF:0 "The Margraviate of Baden"
+ BAD_despotism:0 "Margraviate of Baden"
+ BAD_despotism_DEF:0 "The Margraviate of Baden"
+ BAD_nationalism:0 "Margraviate of Baden"
+ BAD_nationalism_DEF:0 "The Margraviate of Baden"
+ BAD_cromwellianism_ADJ:0 "Badenese"
+ BAD_marxism_ADJ:0 "Badenese"
+ BAD_liberalism_ADJ:0 "Badenese"
+ BAD_republicanism_ADJ:0 "Badenese"
+ BAD_parliamentarianism_ADJ:0 "Badenese"
+ BAD_administrationism_ADJ:0 "Badenese"
+ BAD_despotism_ADJ:0 "Badenese"
+ BAD_nationalism_ADJ:0 "Badenese"
+ 
+ ##cosmetic tags##
+ BAD_NAT_nationalism:0 "Freistaat Baden"
+ 
+ ##Ideas##
+ BAD_Revolutionary_Hotbed:0 "Revolutionary Hotbed"
+ BAD_Revolutionary_Hotbed_desc:0 "The majority of the people have grown fed up of British rule and the outcome is that many have joined revolutionary movements seeking to overthrow the House of Zähringen and establish a Republic. Already support for the Swedes has eroded to such a degree that a revolution appears imminent, with only the spark missing..."
+ BAD_Corrupt_Royal_Government:0 "Corrupt Foreign Government"
+ BAD_Corrupt_Royal_Government_desc:0 "The Swedish elite has run Baden as if it its personal property for its own benefit. The taxes that the people pay instead of being directed towards improving the nation are siphoned to Sweden and distributed amongst the elite. Baden has become increasingly poor and underdeveloped due to the rampant corruption and none sees the Swedes anymore with a good eye."
+ BAD_Down_With_Grand_Duke:0 "Down With the Viceroy!"
+ BAD_Down_With_Grand_Duke_desc:0 "The Viceroy, Oscar von Sydow, is seen as the representative of Swedish rule and corruption in the country and has thus become a demonised person amongst the Baden nationalists."
+ 
+ ##Leader Descriptions##
+ BAD_OSCAR_VON_SYDOW_DESC:0 "Oscar Fredrik von Sydow is the Viceroy of Baden and a scion of an old Pomeranian family belonging to the petty nobility. His first years were unremarkable, having been born in Kalmar, in Sweden and living in the north before moving to Uppsala, in the south, to study law.\n\nHis entire career has been that of a civil servant and a loyal subject of the Swedish King and he has occupied a multitude of positions such as counsellor to the Supreme Court, governor of several Swedish counties and even Minister of Civil Affairs. As a 'reward' for his service to the Swedish state, von Sydow was offered the position of Viceroy of Baden, the most prestigious of all Swedish positions.\n\n But upon arriving in Baden, von Sydow was unprepared for the hostility he would meet. Having at his hands a corrupt administration and a bancrupt country, von Sydow proved to be too inapt for the task. Instead he resolved to do nothing at all, hoping that the situation improves by itself..."

@@ -1,0 +1,275 @@
+ideas = {
+	country = {
+		KOR_raids1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_raids1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = KOR_Manchurian_Raids
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				stability_factor = -0.05	
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		KOR_raids2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_raids2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = KOR_Manchurian_Raids
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.2
+				stability_factor = -0.10	
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		KOR_anglo_megacorps2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_anglo_megacorps2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = KOR_Chaebol_Economy
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = 0.15			
+			}
+		}
+		KOR_old_ways = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_old_ways"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = economy_country_flag_CHA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		KOR_labor_rights = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_labor_rights"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = economy_country_flag_CHA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		KOR_advisor_board1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_advisor_board1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = KOR_Board_Of_Advisors
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = -0.1		
+			}
+		}
+		KOR_advisor_board2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_advisor_board2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = KOR_Board_Of_Advisors
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.2
+				political_power_factor = -0.3	
+			}
+		}
+		KOR_advisor_board3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_advisor_board3"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = KOR_Board_Of_Advisors
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.3
+				political_power_factor = -0.5
+				surrender_limit	= 0.1	
+			}
+		}
+		KOR_on_the_rise = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_on_the_rise"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = KOR_Korea_On_The_Rise
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.02
+				MONTHLY_POPULATION = 0.02
+			}
+		}
+		MAN_chinese_sanctions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MAN_chinese_sanctions"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = economy_country_flag_CHA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1	
+
+			modifier = {
+				stability_factor = -0.05	
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.15
+			}
+		}
+		KOR_small_efficient = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_small_efficient"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = economy_country_flag_CHA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1	
+
+			modifier = {
+				offence = 0.15
+				conscription = -0.001
+			}
+		}
+		KOR_special_force_centric = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_special_force_centric"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = economy_country_flag_CHA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1	
+
+			modifier = {
+				special_forces_min = 50
+				conscription = -0.005
+				offence = 0.05
+			}
+		}
+		KOR_mass_trained_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOR_mass_trained_army"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = economy_country_flag_CHA
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1	
+
+			modifier = {
+				conscription = 0.0025
+				minimum_training_level = -0.05
+				training_time_factor = -0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}	
+		}
+	}
+}		

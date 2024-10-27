@@ -1,0 +1,30 @@
+Morocco_war = {
+	time_until_Morocco_finish = {
+
+		icon = generic_civil_support
+
+		available = {
+			NOT = {
+				has_country_flag = POR_war_in_MOR
+			}
+		}
+
+		days_mission_timeout = 365
+
+		activation = {
+			has_country_flag = POR_war_in_MOR
+		}
+		visible = {
+			has_country_flag = POR_war_in_MOR
+		}
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+			white_peace = MOR
+			add_stability = -0.15
+			add_political_power = -100
+			add_war_support = -0.2
+		}
+	}
+}

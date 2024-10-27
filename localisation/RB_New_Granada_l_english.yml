@@ -1,0 +1,13 @@
+﻿l_english:
+ ##Country Names##
+ COL_despotism:0 "Crown Colony of New Granada"
+ COL_despotism_DEF:0 "The Crown Colony of New Granada"
+ COL_despotism_ADJ:0 "Granadian"
+
+ ##Party Names##
+ COL_despotism_party:0 "Colombia Party"
+ COL_despotism_party_long:0 "Colombia Party"
+
+ COL_coffee_and_suggar_economy:0 "Coffee and Sugar Economy"
+ COL_oil_question:0 "The Oil Question"
+ COL_indian_minority:0 "Indian Minority"

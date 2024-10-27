@@ -1,0 +1,61 @@
+ideas = {
+	country = {
+
+		### Ejercito de (la) <XXXX> - Power Balance Ideas
+		EDS_Ejercito_de_la_Liberacion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EDS_Ejercito_de_la_Liberacion" }
+			picture = MEX_plan_of_veracruz
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = { }
+		}
+
+		EDS_Ejercito_de_la_Razon = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EDS_Ejercito_de_la_Razon" }
+			picture = MEX_plan_of_veracruz
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = { }
+		}
+
+		EDS_Ejercito_de_la_Justicia = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EDS_Ejercito_de_la_Justicia" }
+			picture = MEX_plan_of_veracruz
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = { }
+		}
+
+		EDS_Ejercito_del_Campesinado = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EDS_Ejercito_del_Campesinado" }
+			picture = MEX_plan_of_veracruz
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = { }
+		}
+
+		### Others
+		EDS_Two_Chiefs_Three_Armies = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EDS_Two_Chiefs_Three_Armies" }
+			picture = MEX_plan_of_veracruz
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = { }
+		}
+	}
+}

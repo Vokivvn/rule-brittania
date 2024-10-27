@@ -1,0 +1,25 @@
+state={
+	id=928
+	name="STATE_928"
+	provinces={
+		788 
+	}
+	history = {
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 7
+			dockyard = 4
+			788 = {
+				naval_base = 10
+
+			}
+		}
+		victory_points = {
+			788 15
+		}
+	}
+	manpower=229710
+	state_category=city
+	buildings_max_level_factor=1.000
+}

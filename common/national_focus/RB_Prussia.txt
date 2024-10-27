@@ -1,0 +1,13 @@
+focus_tree = {
+    id = PRU_intro_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PRU
+        }
+    }
+    default = no
+    continuous_focus_position = { x = 0 y = 1600 }
+    shared_focus = PRU_preussens_gloria
+}

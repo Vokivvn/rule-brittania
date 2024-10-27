@@ -1,0 +1,273 @@
+﻿add_namespace = cherokia
+
+#i dont fucking care if this is taking up space im having my monarchist south wank
+#sincerely
+#primeministertoad smiley face emoticon
+#no because you can't read the fucking error log
+#signed uncountably
+
+country_event = {
+#talmadge coup
+#will be expanded on later just doing this for first release flavor
+	id = cherokia.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event cherokia.1"
+		add_stability = -0.75
+	}
+	title = cherokia.1.t
+	desc = cherokia.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.1.a
+		set_politics = {
+			ruling_party = nationalism
+		}
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.3
+		}
+		set_cosmetic_tag = DIX_Talmadge_Coup
+		add_political_power = -100
+	}
+	option = { #
+		name = cherokia.1.b
+		add_political_power = -50
+	}
+}
+
+country_event = { #
+	id = cherokia.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.2"}
+	title = cherokia.2.t
+	desc = cherokia.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_war_with = AFC
+	}
+	
+	option = { #William I
+		name = cherokia.2.a
+		hidden_effect = {
+			create_country_leader = {
+				name = "William I"
+				#desc = 
+				picture = "Portrait_DIX_William_I.dds"
+				expire = "1999.12.12"
+				ideology = absolutism_subtype
+				traits = {
+				}
+			}
+			retire_country_leader = yes
+		}
+		create_country_leader = {
+			name = "William I"
+			#desc = 
+			picture = "Portrait_DIX_William_I.dds"
+			expire = "1999.12.12"
+			ideology = administrationism_subtype
+			traits = {
+			}
+		}
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.3
+		}
+	}
+	option = { #Edward I
+		name = cherokia.2.b
+		hidden_effect = {
+			create_country_leader = {
+				name = "Edward I"
+				#desc = 
+				picture = "Portrait_DIX_Edward_I.dds"
+				expire = "1999.12.12"
+				ideology = absolutism_subtype
+				traits = {
+				}
+			}
+			retire_country_leader = yes
+		}
+		create_country_leader = {
+			name = "Edward I"
+			#desc = 
+			picture = "Portrait_DIX_Edward_I.dds"
+			expire = "1999.12.12"
+			ideology = administrationism_subtype
+			traits = {
+			}
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.3
+		}
+	}
+}
+
+country_event = { #
+	id = cherokia.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.3"}
+	title = cherokia.3.t
+	desc = cherokia.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.3.a
+
+	}
+	option = { #
+		name = cherokia.3.b
+
+	}
+}
+
+country_event = { #
+	id = cherokia.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.4"}
+	title = cherokia.4.t
+	desc = cherokia.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.4.a
+
+	}
+	option = { #
+		name = cherokia.4.b
+
+	}
+}
+
+country_event = { #
+	id = cherokia.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.5"}
+	title = cherokia.5.t
+	desc = cherokia.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.5.a
+
+	}
+	option = { #
+		name = cherokia.5.b
+
+	}
+}
+
+country_event = { #
+	id = cherokia.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.6"}
+	title = cherokia.6.t
+	desc = cherokia.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.6.a
+
+	}
+	option = { #
+		name = cherokia.6.b
+
+	}
+}
+
+country_event = { #
+	id = cherokia.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.7"}
+	title = cherokia.7.t
+	desc = cherokia.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.7.a
+
+	}
+	option = { #
+		name = cherokia.7.b
+
+	}
+}
+
+country_event = { #
+	id = cherokia.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.8"}
+	title = cherokia.8.t
+	desc = cherokia.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.8.a
+
+	}
+	option = { #
+		name = cherokia.8.b
+
+	}
+}
+
+country_event = { #
+	id = cherokia.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.9"}
+	title = cherokia.9.t
+	desc = cherokia.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.9.a
+
+	}
+	option = { #
+		name = cherokia.9.b
+
+	}
+}
+
+country_event = { #
+	id = cherokia.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event cherokia.10"}
+	title = cherokia.10.t
+	desc = cherokia.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = cherokia.10.a
+
+	}
+	option = { #
+		name = cherokia.10.b
+
+	}
+}
+

@@ -1,0 +1,26 @@
+
+state={
+	id=554
+	name="STATE_554"
+
+	history={
+		owner = LEV
+		victory_points = {
+			4550 5 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+
+		}
+		add_core_of = LEV
+
+	}
+
+	provinces={
+		4486 4550 7184 
+	}
+	manpower=547797
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

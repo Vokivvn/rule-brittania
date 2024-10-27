@@ -1,0 +1,27 @@
+state={
+	id=926
+	name="STATE_926"
+	provinces={
+		706 3806 3894 6911 9673 9693 9774 11660 
+	}
+	history = {
+		owner = CNA
+		add_core_of = CNA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		victory_points = {
+			3806 3
+		}
+		victory_points = {
+			6911 2
+		}
+		victory_points = {
+			9693 5
+		}
+	}
+	manpower=1692853
+	state_category=city
+	buildings_max_level_factor=1.000
+}

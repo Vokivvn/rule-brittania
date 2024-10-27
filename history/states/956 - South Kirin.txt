@@ -1,0 +1,26 @@
+state={
+	id=956
+	name="STATE_956" # Kirin
+	manpower = 2166266
+	
+	state_category = rural
+
+	resources={
+		aluminium=2 # was: 10
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			9883 4
+		}
+	}
+
+	provinces={
+		800 861 927 945 3888 3929 3947 3949 6868 6905 9759 9803 9841 9848 9866 9883 11781 11823 11850 11862
+	}
+}

@@ -1,0 +1,35 @@
+﻿add_namespace = shx
+
+country_event = { #intro
+	id = shx.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event shx.1"}
+	title = shx.1.t
+	desc = shx.1.d
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = shx.1.a
+		set_politics = {
+			ruling_party = cromwellianism
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Li Hsiao"
+			picture = "Portrait_SHX_Hsiao_Li_Lindsay.dds"
+			desc = "POLITICS_HSIAO_DESC"
+			expire = "1965.1.1"
+			ideology = cromwellianism_subtype
+			traits = {
+				#
+			}
+		}
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SHX_CROM
+		CHI = {
+			end_puppet = SHX
+		}
+	}
+}

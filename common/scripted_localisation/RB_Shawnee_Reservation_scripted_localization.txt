@@ -1,0 +1,22 @@
+defined_text = {
+	name = GetShawneeWinner
+	text = {
+		trigger = {
+			check_variable = {
+				SHW.CNA_influence_shawnee > SHW.louisiana_influence_shawnee
+			}
+		}
+		localization_key = SHW_CNA_winner
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				SHW.louisiana_influence_shawnee > SHW.CNA_influence_shawnee
+			}
+		}
+		localization_key = SHW_louisiana_winner
+	}
+	text = {
+		localization_key = SHW_no_winner
+	}
+}

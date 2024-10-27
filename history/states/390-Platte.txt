@@ -1,0 +1,33 @@
+
+state={
+	id=390
+	name="STATE_390"
+
+	history={
+		owner = LOU
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = LOU
+		victory_points = {
+			12586 20 
+		}
+		victory_points = {
+			10676 5
+		}
+		victory_points = {
+			7852 3
+		}
+		victory_points = {
+			3708 2
+		}
+	}
+
+	provinces={
+		3708 4757 7852 10676 12513 12586 
+	}
+	manpower=692849
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

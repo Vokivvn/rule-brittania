@@ -1,0 +1,42 @@
+
+state={
+	id=830
+	name="STATE_830"
+	provinces={
+		677 3677 3678 6681 6699 9637 9671 9713 11658 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+			9671 = {
+				naval_base = 4
+            
+			}
+		}
+		victory_points = {
+			9671 30 
+		}
+		victory_points = {
+			9713 20 
+		}
+		victory_points = {
+			3677 15
+		}
+		victory_points = {
+			3678 5
+		}
+		victory_points = {
+			6699 10
+		}
+		victory_points = {
+			9637 5
+		}
+	}
+	manpower=1352999
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,392 @@
+﻿###################
+##PORTUGAL EVENTS##
+###################
+
+add_namespace = portugal
+add_namespace = PKLuis
+
+country_event = { #intro
+	id = portugal.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event portugal.1"}
+	title = portugal.1.t
+	desc = portugal.1.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = portugal.1.a
+	}
+}
+
+country_event = { #load Luis tree
+	id = PKLuis.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.1"}
+	title = PKLuis.1.t
+	desc = PKLuis.1.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = PKLuis.1.a
+		hidden_effect = {
+			load_focus_tree = POR_king_luis
+		}
+	}
+}
+
+country_event = { #load Luis second tree
+	id = PKLuis.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.2"}
+	title = PKLuis.2.t
+	desc = PKLuis.2.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = PKLuis.2.a
+		hidden_effect = {
+			load_focus_tree = POR_king_luis2
+		}
+	}
+}
+
+country_event = { #Luis speech in Parliament
+	id = PKLuis.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.3"}
+	title = PKLuis.3.t
+	desc = PKLuis.3.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = PKLuis.3.a
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #Luis projects
+	id = PKLuis.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.4"}
+	title = PKLuis.4.t
+	desc = PKLuis.4.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = PKLuis.4.a
+	}
+}
+
+country_event = { #Poor Altejo
+	id = PKLuis.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.5"}
+	title = PKLuis.5.t
+	desc = PKLuis.5.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = PKLuis.5.a
+		add_political_power = -25
+	}
+}
+
+country_event = { #Maroccon Ambitions
+	id = PKLuis.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.6"}
+	title = PKLuis.6.t
+	desc = PKLuis.6.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = PKLuis.6.a
+	}
+}
+
+country_event = { #Luis tells britian his plans
+	id = PKLuis.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.7"}
+	title = PKLuis.7.t
+	desc = PKLuis.7.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #its just marocco
+		name = PKLuis.7.a
+		ai_chance = {
+			factor = 7
+		}
+		set_global_flag = POR_in_MAR
+		POR = {
+			country_event = {
+				id = PKLuis.8
+				hours = 12
+			}
+		}
+	}
+
+	option = { #silence luso
+		name = PKLuis.7.b
+		ai_chance = {
+			factor = 3
+		}
+		POR = {
+			country_event = {
+				id = PKLuis.9
+				hours = 12
+			}
+		}
+	}
+}
+
+country_event = { #Britain agrees
+	id = PKLuis.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.8"}
+	title = PKLuis.8.t
+	desc = PKLuis.8.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = PKLuis.8.a
+	}
+}
+
+country_event = { #Britain is being a dick
+	id = PKLuis.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.9"}
+	title = PKLuis.9.t
+	desc = PKLuis.9.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = PKLuis.9.a
+		hidden_effect = {
+			load_focus_tree = POR_chaos
+		}
+		add_political_power = -25
+		add_war_support = -0.05
+	}
+}
+
+country_event = { #Bow to portugal?
+	id = PKLuis.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.10"}
+	title = PKLuis.10.t
+	desc = PKLuis.10.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #it has to be
+		name = PKLuis.10.a
+		ai_chance = {
+			factor = 2
+		}
+		POR = {
+			puppet = MOR
+		}
+		hidden_effect = {
+			set_autonomy = {
+				target = MOR
+				autonomy_state = autonomy_colony
+			}
+		}
+		POR = {
+			country_event = {
+				id = PKLuis.11
+				hours = 12
+			}
+		}
+		ENG = {
+			transfer_state = 178
+		}
+	}
+
+	option = { #silence luso
+		name = PKLuis.10.b
+		ai_chance = {
+			factor = 8
+		}
+		MOR = {
+			leave_faction = yes
+		}
+		POR = {
+			leave_faction = yes
+		}
+		POR = {
+			country_event = {
+				id = PKLuis.12
+				hours = 12
+			}
+		}
+		add_political_power = 100
+	}
+}
+
+country_event = { #Marocco bows
+	id = PKLuis.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.11"}
+	title = PKLuis.11.t
+	desc = PKLuis.11.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #greatou daze
+		name = PKLuis.11.a
+		add_political_power = 100
+		ENG = { add_to_faction = POR }
+	}
+}
+
+country_event = { #Marocco doesnt bow
+	id = PKLuis.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.12"}
+	title = PKLuis.12.t
+	desc = PKLuis.12.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #oh no
+		name = PKLuis.12.a
+		declare_war_on = {
+			target = MOR
+			type = puppet_wargoal_focus
+		}
+		hidden_effect = {
+			MOR = {
+				country_event = {
+					id = PKLuis.14
+					days = 365
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Attac morocco
+	id = PKLuis.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.13"}
+	title = PKLuis.13.t
+	desc = PKLuis.13.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #oh no
+		name = PKLuis.13.a
+		MOR = {
+			leave_faction = yes
+		}
+		declare_war_on = {
+			target = MOR
+			type = puppet_wargoal_focus
+		}
+		hidden_effect = {
+			MOR = {
+				country_event = {
+					id = PKLuis.14
+					days = 365
+				}
+			}
+		}
+	}
+}
+
+country_event = { #victory over portugal
+	id = PKLuis.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.14"}
+	title = PKLuis.14.t
+	desc = PKLuis.14.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #oh no
+		name = PKLuis.14.a
+		add_political_power = 100
+		if = {
+			limit = {
+				owns_state = 112
+			}
+			release = POR
+			ENG = { add_to_faction = POR }
+		}
+		if = {
+			limit = {
+				POR = {
+					is_puppet_of = MOR
+				}
+			}
+			end_puppet = POR
+			ENG = { add_to_faction = POR }
+		}
+		if = {
+			limit = {
+				NOT = {
+					is_puppet_of = POR
+				}
+			}
+			POR = {
+				country_event = {
+					id = PKLuis.15
+					days = 1
+				}
+				white_peace = MOR
+				EGY = { add_to_faction = MOR }
+
+			}
+		}
+	}
+}
+
+country_event = { #defeat in morocco
+	id = PKLuis.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PKLuis.15"}
+	title = PKLuis.15.t
+	desc = PKLuis.15.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #oh no
+		name = PKLuis.15.a
+		add_stability = -0.15
+		add_political_power = -100
+		add_war_support = -0.2
+		ENG = { add_to_faction = POR }
+	}
+}

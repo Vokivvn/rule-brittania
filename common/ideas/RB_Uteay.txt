@@ -1,0 +1,222 @@
+ideas = {
+	country = {
+		UTY_Church_Influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Church_Influence"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = UTY_Church_Influence
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_gain = 0.15
+			}
+		}
+		UTY_Church_Influence_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Church_Influence_2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = UTY_Church_Influence
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_gain = 0.1
+			}
+		}
+		UTY_Church_Influence_1_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Church_Influence_1_2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = UTY_Church_Influence
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = 0.05
+			}
+		}
+		UTY_Church_Influence_2_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Church_Influence_2_2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = UTY_Church_Influence
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		UTY_Poseys_Raids = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Poseys_Raids"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				conscription_factor = -0.20
+			}
+		}
+		UTY_Poseys_Raids_2_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Poseys_Raids_2_1"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.075
+				conscription_factor = -0.20
+			}
+		}
+		UTY_Poseys_Raids_1_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Poseys_Raids_1_2"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				conscription_factor = -0.15
+			}
+		}
+		UTY_Poseys_Raids_2_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Poseys_Raids_2_1"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.075
+				conscription_factor = -0.15
+			}
+		}
+		UTY_Poseys_Raids_negative_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Poseys_Raids_negative_1"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				conscription_factor = -0.2
+			}
+		}
+		UTY_Desperados = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_Desperados"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
+		UTY_native_recruitment = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTY_native_recruitment"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.005
+			}
+		}
+	}
+}

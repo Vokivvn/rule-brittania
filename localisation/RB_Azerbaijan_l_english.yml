@@ -1,0 +1,9 @@
+﻿l_english:
+ ##Country Names##
+ AZR_despotism:0 "Protectorate of Azerbaijan"
+ AZR_despotism_DEF:0 "The Protectorate of Azerbaijan"
+ AZR_despotism_ADJ:0 "Azerbaijanian"
+
+ ##Party Names##
+ AZR_despotism_party:0 "Azerbaijan Party"
+ AZR_despotism_party_long:0 "Azerbaijan Party"

@@ -1,0 +1,28 @@
+focus_tree = {
+	id = KPD_intro
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KPD
+		}
+	}
+	default = no
+	shared_focus = KPD_the_red_flag_flutters
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = KPD_expansion
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KPD
+		}
+	}
+	default = no
+	shared_focus = KPD_the_red_flag_flutters
+	shared_focus = KPD_the_german_red_army
+	continuous_focus_position = { x = 50 y = 2000 }
+}

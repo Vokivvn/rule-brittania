@@ -1,0 +1,94 @@
+﻿l_english:
+ ##Country Names##
+ RAJ_cromwellianism:0 "British India"
+ RAJ_cromwellianism_DEF:0 "British India"
+ RAJ_marxism:0 "British India"
+ RAJ_marxism_DEF:0 "British India"
+ RAJ_liberalism:0 "British India"
+ RAJ_liberalism_DEF:0 "British India"
+ RAJ_republicanism:0 "British India"
+ RAJ_republicanism_DEF:0 "British India"
+ RAJ_parliamentarianism:0 "British India"
+ RAJ_parliamentarianism_DEF:0 "British India"
+ RAJ_administrationism:0 "British India"
+ RAJ_administrationism_DEF:0 "British India"
+ RAJ_absolutism:0 "British India"
+ RAJ_absolutism_DEF:0 "British India"
+ RAJ_despotism:0 "British India"
+ RAJ_despotism_DEF:0 "British India"
+ RAJ_nationalism:0 "British India"
+ RAJ_nationalism_DEF:0 "British India"
+ RAJ_cromwellianism_ADJ:0 "British Indian"
+ RAJ_marxism_ADJ:0 "British Indian"
+ RAJ_liberalism_ADJ:0 "British Indian"
+ RAJ_republicanism_ADJ:0 "British Indian"
+ RAJ_parliamentarianism_ADJ:0 "British Indian"
+ RAJ_administrationism_ADJ:0 "British Indian"
+ RAJ_despotism_ADJ:0 "British Indian"
+ RAJ_nationalism_ADJ:0 "British Indian"
+
+ ##Party Names##
+ RAJ_marxism_party:0 "CPI"
+ RAJ_marxism_party_long:0 "Communist Party of India"
+ RAJ_liberalism_party:0 "INC"
+ RAJ_liberalism_party_long:0 "Indian National Congress"
+ RAJ_administrationism_party:0 "British Corproations"
+ RAJ_absolutism_party:0 "Viceregal Government"
+ RAJ_despotism_party:0 "Viceregal Government"
+ RAJ_nationalism_party:0 "RSS"
+ RAJ_nationalism_party_long:0 "Rashtriya Swayamsevak Sangh"
+ 
+ ##Ideas##
+ RAJ_Crown_Jewel:0 "The Crown Jewel"
+ RAJ_Crown_Jewel_desc:0 "While their dominions in North America are among the most prized parts of their Empire, Britain has expressed much interest of the colony of British India. In fact, many British nobles and politicians consider India, with its vast, easily-accessible natural resources, and exotic environments, as the crown jewel of British rule in India.\n\nTo this matter, many British politicians have started their careers as Viceroys of India, doing what they could to keep the INC out, the British in, and also, of course, to boost their own popularity."
+ RAJ_Indian_Resistance:0 "Indian Resistance"
+ RAJ_Corrupt_Administration:0 "Corrupt Administration"
+ RAJ_Indian_Military_Academy:0 "Indian Military Academy"
+
+ #Decisions
+ RAJ_Influence_Mechanic:0 "Factional Influences in the British Raj"
+ RAJ_Influence_Mechanic_desc:0 "pog\n\n[Root.RAJ_Military_Influence_Loc]\n\n[Root.RAJ_Corporate_Influence_Loc]\n\n[Root.RAJ_INC_Influence_Loc]"
+ RAJ_Military_Influence:0 "§YMilitary influence comprises [?party_popularity@despotism|%Y0] of the government.§!"
+ RAJ_Corporate_Influence:0 "§YCorporate influence comprises [?party_popularity@administrationism|%Y0] of the government.§!"
+ RAJ_INC_Influence:0 "§YCongress influence comprises [?party_popularity@liberalism|%Y0] of the government.§!"
+
+ #no touch please it works fine, just change color if at all
+
+ 
+ ##Events##
+ india.1.t:0 "The Crown Jewel"
+ india.1.desc:0 "From Herat in the west to Kra in the east, British India stands strong. With the expansion of the British Empire across all four corners of the map, one may believe that we would lose our standing as Britain's crown colony. However, the growth of Britain has only increased our standing, with our rival colonies being unable to even come close to our efficiency.\n\nHowever, recently this efficiency has come at a price; the Viceroy, Prince Albert, is a very sinful man, indulging in parties, drinking, and lavish spending - all at the expense of the state. Meanwhile, while the native people of this great expanse of land have never found British rule to be desirable, recently, their cries for independence have become louder and louder, with train robberies, murder, and rioting being a common occurance in the streets of India. All these issues, alongside the burden of the helpless princely states that we must bear, will have to be overtaken by Prince Albert's government, or we may not just lose our status as the Crown Jewel of the British Empire, but our status as a jewel at all."
+ india.1.a:0 "Heaven's light our guide."
+ 
+ india.3.t:0 "Fear and Loathing in the India Office"
+ india.3.desc:0 "Stanley sighed as he entered the Foreign and Commonwealth Office Main Building, for yet another day working as the Office Janitor. As he entered the building, he spoke with the secretary, Patricia, and she redirected him to where his work would start for the day, the India Office. Quite strange, Stanley thought: the people of the India Office were typically very clean, posh individuals; why were they letting him in there? He knew that something must have been aloof.\n\nAs he went up the staircase to the India Office, he heard something, but didn't quite know what it was. However, as he got closer to the door, he soon discovered that it was the sound of what seemed to be a million men, all shouting at each other. Nervously opening the door, Stanley found chaos engulfing the India Office. Paperwork and documents were strewn about across the room, with suited men shouting and howling at each other over the Duke of Windsor's sudden disappearance. Each man was boasting that he alone had the talent, tact, and skill to be the next Viceroy.\n\nStanley had no words. Except for, of course, a shaky, simple, enquiry; "Hello?" he asked to the crowd of men. As soon as he did so, they stopped. One man came forwards, and happily shook Stanley's hand.\n\n"Hello, Mister... Ah, I apologise, I don't seem to have caught your name," he said, to which the janitor responded, "My name's Stanley, sir. What's the issue here?"\n\n"Well, Stanley," the man responded, smiling, "we have a very problematic situation on our hands, as you've no doubt read in the news, and we need you to go to Calcutta to deliver a message to the Lord Irwin, that he shall be the next Viceroy of India."\n\nWith that, the man handed Stanley a letter, as the chaos only increased from prior. Stanley quickly exited the room, closing the door behind him, but he knew the job that had been delegated to him."
+ india.3.a:0 "Pack your bags!"
+ 
+ india.4.t:0 "The Advisor"
+ india.4.desc:0 "The Nizam sat in his lavish palace, with nothing to do but enjoy life as the British Empire came tumbling down, when British soldiers burst into the room. Fearing that he would be taken hostage, he rose his hands to show that he was unarmed, but, as more British troops entered the room, the British Advisor in Hyderabad, Archibald Wavell, entered as well.\n\n"Osman, we're facing a serious crisis; the Viceroy is missing!" The Nizam sighed. Couldn't he at least be left out of this?\n\n"In order to secure order in India, we've received orders from the India Office in London to terminate your autonomy, and bring you under rule of the Crown. Understood?"\n\nAt once, the British troops
+
+#focuses
+RAJ_the_king_is_dead:0 "The King Is Dead!"
+RAJ_the_viceroy_is_gone:0 "The Viceroy Is Gone!"
+RAJ_jinnahs_reformism:0 "Jinnah's Reformism"
+RAJ_irwins_complacency:0 "Irwin's Complacency"
+RAJ_wingates_imperialism:0 "Wingate's Imperialism"
+RAJ_getting_to_work:0 "Getting To Work"
+RAJ_friends_in_big_business:0 "Friends In Big Business"
+RAJ_contacts_with_the_right_inc:0 "Contacts with the Right-INC"
+RAJ_the_military_question:0 "The Military Question"
+RAJ_the_union_jack_flies_alone:0 "The Union Jack Flies Alone!"
+RAJ_look_into_dominionism:0 "Look Into Dominionism"
+RAJ_cut_back_on_corruption:0 "Cut Back On Corruption"
+RAJ_make_some_shady_deals:0 "Make Some Shady Deals"
+RAJ_cut_back_on_service_quotas:0 "Cut Back On Service Quotas"
+RAJ_militarise_the_police:0 "Militarise The Police"
+RAJ_the_white_mans_burden:0 "The White Man's Burden"
+RAJ_the_potential_for_equality:0 "The Potential For Equality"
+RAJ_sweep_away_the_legacy_of_the_eic:0 "Sweep Away The Legacy Of The EIC"
+RAJ_the_golden_raj:0 "The Golden Raj"
+RAJ_promote_wingate:0 "Promote Wingate"
+RAJ_reassign_wingate:0 "Reassign Wingate"
+RAJ_the_governor_general:0 "The Governor-General"
+RAJ_the_viceroy:0 "The Viceroy"
+RAJ_the_generalissimo:0 "The Generalissimo"

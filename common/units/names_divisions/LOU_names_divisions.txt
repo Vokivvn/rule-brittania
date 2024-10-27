@@ -1,0 +1,26 @@
+﻿LOU_INF_01 = {
+	name = "Louisianan Provincial Guard"
+
+	for_countries = { LOU MEX }
+
+	can_use = { 
+		OR = {
+			original_tag = LOU
+			has_cosmetic_tag = MEX_ENG #for Mexico
+		}
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Louisianan Provincial Guard"
+
+	ordered = {
+		1 = { "Louisianan Provincial Guard" }
+		2 = { "Missourian Provincial Guard" }
+		3 = { "Charitonian Provincial Guard" }
+		4 = { "Iowan Provincial Guard" }
+		5 = { "Red Provincial Guard" }
+		6 = { "Minnesotan Provincial Guard" }
+		7 = { "Nebraskier Territorial Guard" }
+	}
+}

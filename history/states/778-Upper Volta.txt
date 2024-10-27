@@ -1,0 +1,19 @@
+
+state={
+	id=778
+	name="STATE_778" # Upper Volta
+	manpower = 3186184
+	
+	state_category = pastoral
+	history={
+		owner = SIE
+		add_core_of = SIE
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		2001 2044 8116 12838
+	}
+}

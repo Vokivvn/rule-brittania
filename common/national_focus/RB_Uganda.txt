@@ -1,0 +1,26 @@
+focus_tree = {
+	id = RB_UGA_intro
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UGA
+		}
+	}
+	default = no
+	shared_focus = UGA_pearl_of_africa
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+focus_tree = {
+	id = RB_UGA_intro_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UGA
+		}
+	}
+	default = no
+	shared_focus = UGA_pearl_of_africa
+	continuous_focus_position = { x = 50 y = 2000 }
+}

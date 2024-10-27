@@ -1,0 +1,209 @@
+﻿capital = 570
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+
+set_cosmetic_tag = SIB_ENG
+oob = "SIB_1936"
+
+add_ideas = {
+	limited_conscription
+	british_econ_subordination
+	weak_british_colony
+	british_colonial_force
+	SIB_complete_selfreliance
+	SIB_grand_railroad
+	SIB_wealth_split
+	SIB_zagovor
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	#improved_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	trench_warfare = 1
+
+	transport = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+add_equipment_to_stockpile = {
+	type = CAS_equipment_1
+	amount = 30
+	producer = SIB
+}
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment_0
+	amount = 10
+	producer = SIB
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_0
+	amount = 60
+	producer = SIB
+}
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+	cromwellianism = 10
+	marxism = 0
+	liberalism = 0
+	republicanism = 50
+	parliamentarianism = 0
+	administrationism = 0
+	absolutism = 15
+	despotism = 15
+	nationalism = 10
+}
+
+### Country Leaders ###
+create_country_leader = {
+	name = "Esmond Ovey"
+	#desc =
+	picture = "Portrait_SIB_Esmond_Ovey.dds"
+	expire = "1999.12.12"
+	desc = "ESMOND_DESC"
+	ideology = despotism_subtype
+	traits = {
+		loyal_administrator
+	}
+}
+
+create_country_leader = {
+	name = "Nikolai Ustryalov"
+	#desc =
+	picture = "Portrait_SIB_Nikolai_Ustryalov.dds"
+	expire = "1999.12.12"
+	ideology = cromwellianism_subtype
+	traits = {
+		hot_head
+	}
+}
+create_country_leader = {
+	name = "Felix Yusupov"
+	#desc =
+	picture = "Portrait_SIB_Felix_Yusupov.dds"
+	expire = "1999.12.12"
+	ideology = republicanism_subtype
+	traits = {
+		man_in_gold
+	}
+}
+create_country_leader = {
+	name = "Vladimir Gil"
+	#desc =
+	picture = "Portrait_SIB_Esmond_Ovey.dds"
+	expire = "1999.12.12"
+	ideology = nationalism_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Nikolai Trubetzkoy"
+	#desc =
+	picture = "Portrait_SIB_Nikolai_Trubetzkoy.dds"
+	expire = "1999.12.12"
+	ideology = absolutism_subtype
+	traits = {
+		
+	}
+}
+
+### Generals ###
+create_field_marshal = {
+	name = "Adrian Carton de Wiart"
+	picture = "general_plug.dds"
+	# traits = { reckless  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "James Hill"
+	picture = "general_plug.dds"
+	# traits = { reckless  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Anders Lassen"
+	picture = "general_plug.dds"
+	#traits = { reckless  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Harold Marshall"
+	picture = "general_plug.dds"
+	#traits = { reckless  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Tommy Prince"
+	picture = "Portrait_SIB_Tommy_Prince.dds"
+	#traits = { reckless  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Leo Major"
+	picture = "Portrait_SIB_Leo_Major.dds"
+	#traits = { reckless  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}

@@ -1,0 +1,40 @@
+scripted_gui = {
+	RB_anglo_control_pop = {
+		context_type = player_context
+		
+		window_name = "anglo_control_container_pop"
+		
+		visible = {
+			has_capitulated = no
+		}
+		
+		effects = {
+		
+		}
+		
+		properties = {
+			anglo_control_pop_icon = {
+				image = "[GetAngloControlIconPop]"
+			}
+		}
+	}
+	RB_anglo_control_land = {
+		context_type = player_context
+		
+		window_name = "anglo_control_container_land"
+		
+		visible = {
+			has_capitulated = no
+		}
+		
+		effects = {
+		
+		}
+		
+		properties = {
+			anglo_control_land_icon = {
+				image = "[GetAngloControlIconLand]"
+			}
+		}
+	}
+}

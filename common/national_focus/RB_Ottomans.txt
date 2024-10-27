@@ -1,0 +1,52 @@
+## Ottoman Silver Jubilee ##
+focus_tree = {
+	id = RB_Turkey_intro
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+	shared_focus = TUR_intro_eighteen_years_of_peace
+	
+	shared_focus = TUR_ali_the_rightful_heir
+	shared_focus = TUR_ali_breaking_our_shackles
+	shared_focus = TUR_ali_the_new_colossus
+	shared_focus = TUR_ali_the_old_blood
+
+	shared_focus = TUR_ytr_the_young_turk_revolution
+
+	shared_focus = TUR_tcw_a_golden_cage_broken
+
+	shared_focus = TUR_lessons_of_the_anglo_turkish_war
+	shared_focus = TUR_econ_addressing_the_crisis
+	continuous_focus_position = { x = 50 y = 2000 }
+}
+
+focus_tree = {
+	id = RB_Turkey_tree_two
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+	shared_focus = TUR_intro_eighteen_years_of_peace
+	
+	shared_focus = TUR_ali_the_rightful_heir
+	shared_focus = TUR_ali_breaking_our_shackles
+	shared_focus = TUR_ali_the_new_colossus
+	shared_focus = TUR_ali_the_old_blood
+
+	shared_focus = TUR_ytr_the_young_turk_revolution
+
+	shared_focus = TUR_tcw_a_golden_cage_broken
+
+	shared_focus = TUR_lessons_of_the_anglo_turkish_war
+	shared_focus = TUR_econ_addressing_the_crisis
+	continuous_focus_position = { x = 50 y = 2000 }
+}

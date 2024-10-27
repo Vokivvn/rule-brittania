@@ -1,0 +1,1636 @@
+focus_tree = {
+	id = BRA_intro_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	default = no
+
+	focus = {
+		id = BRA_prepare_the_suggestion
+		icon = GFX_Extravagance
+		cost = 1
+		x = 11
+		y = 0
+		available = {
+			always = yes
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_prepare_the_suggestion"
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BRA_draw_up_graphs
+		icon = GFX_Generic_Good_Economy
+		cost = 1
+		prerequisite = {
+			focus = BRA_prepare_the_suggestion
+		}
+		x = 10
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_draw_up_graphs"
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = BRA_find_the_perfect_tea
+		icon = GFX_Tea
+		cost = 1
+		prerequisite = {
+			focus = BRA_prepare_the_suggestion
+		}
+		x = 12
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_find_the_perfect_tea"
+			country_event = { #picking type of tea
+				id = bra.1
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BRA_the_great_tea_debate
+		icon = GFX_BRA_the_great_tea_debate
+		cost = 2
+		prerequisite = {
+			focus = BRA_draw_up_graphs
+		}
+		prerequisite = {
+			focus = BRA_find_the_perfect_tea
+		}
+		x = 11
+		y = 2
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_the_great_tea_debate"
+			add_stability = -0.05
+			add_political_power = 30
+			set_variable = {
+				bra_tea_or_coffee = 0
+				tooltip = bra_tea_or_coffee_tt
+			}
+		}
+	}
+	focus = {
+		id = BRA_survey_the_land
+		icon = GFX_VIN_Modern_Farm_Equipment
+		cost = 5
+		prerequisite = {
+			focus = BRA_the_great_tea_debate
+		}
+		x = 9
+		y = 3
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_survey_the_land"
+			country_event = {
+				id = bra.2
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BRA_testing_cultivation
+		icon = GFX_RAJ_India_Revitalize_Farming
+		cost = 4
+		prerequisite = {
+			focus = BRA_survey_the_land
+		}
+		x = 8
+		y = 4
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_testing_cultivation"
+			country_event = {
+				id = bra.3
+				days = 1
+			}
+		}
+
+	}
+	focus = {
+		id = BRA_find_prime_markets
+		icon = GFX_BRG_Support_British_Companies
+		cost = 4
+		prerequisite = {
+			focus = BRA_the_great_tea_debate
+		}
+		x = 11
+		y = 3
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_find_prime_markets"
+			country_event = {
+				id = bra.4
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BRA_discuss_with_the_coffee_barons
+		icon = GFX_Maintain_Cabinet_Loyalty
+		cost = 4
+		prerequisite = {
+			focus = BRA_find_prime_markets
+		}
+		x = 11
+		y = 4
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_discuss_with_the_coffee_barons"
+			country_event = {
+				id = bra.5
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BRA_talk_with_london
+		icon = GFX_Generic_Rule_Britannia
+		cost = 4
+		prerequisite = {
+			focus = BRA_the_great_tea_debate
+		}
+		x = 13
+		y = 3
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_talk_with_london"
+			country_event = {
+				id = bra.6
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BRA_seeking_investors
+		icon = Hand_reaching_for_money
+		cost = 4
+		prerequisite = {
+			focus = BRA_talk_with_london
+		}
+		x = 14
+		y = 4
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_seeking_investors"
+			country_event = {
+				id = bra.7
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BRA_and_a_few_last_points
+		icon = GFX_Political_Support
+		cost = 2
+		prerequisite = {
+			focus = BRA_testing_cultivation
+		}
+		prerequisite = {
+			focus = BRA_discuss_with_the_coffee_barons
+		}
+		prerequisite = {
+			focus = BRA_seeking_investors
+		}
+		x = 11
+		y = 5
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_and_a_few_last_points"
+			country_event = {
+				id = bra.8
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BRA_the_winner_of_the_debate
+		icon = GFX_Cap_and_Cash
+		cost = 2
+		prerequisite = {
+			focus = BRA_and_a_few_last_points
+		}
+		x = 11
+		y = 6
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_the_winner_of_the_debate"
+			custom_effect_tooltip = BRA_debate_winner
+			hidden_effect = {
+				IF = {
+					limit = {
+						check_variable = {
+							var = bra_tea_or_coffee
+							value = 0
+							compare = less_than_or_equals
+						}
+					}
+					country_event = {
+						id = bra.9
+						days = 1
+					}
+				}
+				ELSE = {
+					country_event = {
+						id = bra.10
+						days = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = BRA_Seeds_Victory
+		icon = GFX_focus_british_monarchy
+		cost = 2
+		allow_branch = {
+			has_country_flag = intro_tree
+		}
+		prerequisite = {
+			focus = BRA_the_winner_of_the_debate
+		}
+		mutually_exclusive = {
+			focus = BRA_Machado_Victory
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BRA_Tea_Option_trigger
+				has_country_flag = BRA_Tea_victory
+			}
+		}
+		relative_position_id = BRA_the_winner_of_the_debate
+		x = -5
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Seeds_Victory"
+			swap_ideas = {
+				remove_idea = bra_none_dominant
+				add_idea = bra_anglos_dominant
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = administrationism
+				popularity = -0.10
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_The_Tea_Program
+		icon = GFX_Generic_Tea_Farming
+		cost = 2
+		prerequisite = {
+			focus = BRA_Seeds_Victory
+		}
+		relative_position_id = BRA_Seeds_Victory
+
+		x = 0
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_The_Tea_Program"
+			set_variable = {
+				var = bra_tea_introduction
+				value = 0
+			}
+			set_variable = {
+				var = bra_unrest
+				value = 3
+			}
+			swap_ideas = {
+				remove_idea = bra_king_coffee
+				add_idea = bra_Tea_Program
+			}
+			set_country_flag = BRA_Tea_Program
+		}
+	}
+
+	focus = {
+		id = BRA_Buy_Tea_Crops
+		icon = GFX_generic_diplomacy_trade
+		cost = 2
+		prerequisite = {
+			focus = BRA_The_Tea_Program
+		}
+		relative_position_id = BRA_The_Tea_Program
+		x = 0
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Buy_Tea_Crops"
+			add_to_variable = {
+				bra_tea_introduction = 1
+				tooltip = BRA_tea_progress_improve
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Swap_Coffee_Plantations
+		icon = GFX_RAJ_Three_Shots
+		cost = 2
+		prerequisite = {
+			focus = BRA_Buy_Tea_Crops
+		}
+		relative_position_id = BRA_Buy_Tea_Crops
+		x = -2
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Swap_Coffee_Plantations"
+			custom_effect_tooltip = BRA_unrest_worsen
+			custom_effect_tooltip = BRA_tea_progress_improve
+			add_to_variable = { bra_unrest = 3 }
+			add_to_variable = { bra_tea_introduction = 1 }
+		}
+	}
+
+	focus = {
+		id = BRA_New_Lands_for_Tea
+		icon = GFX_VIN_Modern_Farm_Equipment
+		cost = 3
+		prerequisite = {
+			focus = BRA_Swap_Coffee_Plantations
+		}
+		relative_position_id = BRA_Swap_Coffee_Plantations
+		x = 0
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_New_Lands_for_Tea"
+			custom_effect_tooltip = BRA_tea_progress_improve
+			add_to_variable = { bra_unrest = 1 }
+			add_to_variable = { bra_tea_introduction = 1 }
+		}
+	}
+
+	focus = {
+		id = BRA_Deal_with_Unrest
+		icon = GFX_Crush_Resistance
+		cost = 3
+		prerequisite = {
+			focus = BRA_Buy_Tea_Crops
+		}
+		relative_position_id = BRA_Buy_Tea_Crops
+		x = 2
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Deal_with_Unrest"
+			add_stability = -0.15
+		}
+	}
+
+	focus = {
+		id = BRA_Deploy_the_Army
+		icon = GFX_goal_army_guy_2
+		cost = 2
+		prerequisite = {
+
+			focus = BRA_Deal_with_Unrest
+		}
+		relative_position_id = BRA_Deal_with_Unrest
+		x = -1
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Deploy_the_Army"
+			custom_effect_tooltip = BRA_unrest_improve
+			add_to_variable = { bra_unrest = -1 }
+			add_political_power = -30
+		}
+	}
+
+	focus = {
+		id = BRA_Deal_with_Coffee_Barons
+		icon = GFX_Maintain_Cabinet_Loyalty
+		cost = 2
+		prerequisite = {
+			focus = BRA_Deal_with_Unrest
+		}
+		relative_position_id = BRA_Deal_with_Unrest
+		x = 1
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Deal_with_Coffee_Barons"
+			custom_effect_tooltip = BRA_unrest_improve
+			custom_effect_tooltip = BRA_tea_progress_worsen
+			add_to_variable = { bra_unrest = -2 }
+			add_to_variable = { bra_tea_introduction = -2 }
+		}
+	}
+
+	focus = {
+		id = BRA_Profits_From_the_British_Drink
+		icon = goal_endless_money
+		cost = 12
+		prerequisite = {
+			focus = BRA_Deal_with_Coffee_Barons
+		}
+		prerequisite = {
+			focus = BRA_Deploy_the_Army
+		}
+		prerequisite = {
+			focus = BRA_New_Lands_for_Tea
+		}
+		relative_position_id = BRA_Buy_Tea_Crops
+		x = 0
+		y = 3
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus cheater scum"
+			custom_effect_tooltip = BRA_unrest_improve
+			effect_tooltip = {
+				add_stability = 0.10
+				add_political_power = 50
+			}
+			hidden_effect = {
+				add_stability = -2.00
+				add_political_power = -8987
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_King_Tea
+		icon = GFX_VIN_Cash_Crops
+		cost = 7
+		prerequisite = {
+			focus = BRA_Profits_From_the_British_Drink
+		}
+		relative_position_id = BRA_Profits_From_the_British_Drink
+		x = 0
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus cheater scum"
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = bra_Tea_Program
+					add_idea = bra_king_tea
+				}
+			}
+			hidden_effect = {
+				UGY = {
+					annex_country = {
+						target = BRA
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Machado_Victory
+		icon = GFX_Portugal_Monarchy_Focus
+		cost = 4
+		allow_branch = {
+			has_country_flag = intro_tree
+		}
+		prerequisite = {
+			focus = BRA_the_winner_of_the_debate
+		}
+		mutually_exclusive = {
+			focus = BRA_Seeds_Victory
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BRA_Coffee_victory_trigger
+				has_country_flag = BRA_Coffee_victory
+			}
+		}
+		relative_position_id = BRA_the_winner_of_the_debate
+		x = 5
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Machado_Victory"
+			add_popularity = {
+				ideology = administrationism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = -0.10
+			}
+			set_politics = {
+				ruling_party = administrationism
+			}
+			swap_ideas = {
+				remove_idea = bra_none_dominant
+				add_idea = bra_portugal_dominant
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Implement_Reforms
+		icon = GFX_liberalism_focus
+		cost = 1
+		prerequisite = {
+			focus = BRA_Machado_Victory
+		}
+		relative_position_id = BRA_Machado_Victory
+		x = 0
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Implement_Reforms"
+			add_political_power = -20
+			add_popularity = {
+				ideology = administrationism
+				popularity = 0.10
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Protect_Rural_Workers
+		icon = GFX_focus_HRE_economic_land_reform
+		cost = 2
+		prerequisite = {
+			focus = BRA_Implement_Reforms
+		}
+		relative_position_id = BRA_Implement_Reforms
+		x = 0
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Protect_Rural_Workers"
+			add_stability = 0.05
+			country_event = {
+				id = bra.16
+				hours = 3
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Fight_Illegal_Slave_Trade
+		icon = GFX_generic_change_law_slavery
+		cost = 2
+		prerequisite = {
+			focus = BRA_Protect_Rural_Workers
+		}
+		relative_position_id = BRA_Protect_Rural_Workers
+		x = -1
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Fight_Illegal_Slave_Trade"
+			country_event = {
+				id = bra.15
+				hours = 3
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Fiscalize_Coffee_Plantations
+		icon = GFX_Generic_Coffee_Farming
+		cost = 2
+		prerequisite = {
+			focus = BRA_Fight_Illegal_Slave_Trade
+		}
+		relative_position_id = BRA_Fight_Illegal_Slave_Trade
+		x = -1
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Fiscalize_Coffee_Plantations"
+			add_political_power = 45
+		}
+	}
+
+	focus = {
+		id = BRA_Ally_with_Friendly_Trade_Unions
+		icon = GFX_SP_focus_trade_unions
+		cost = 2
+		prerequisite = {
+			focus = BRA_Protect_Rural_Workers
+		}
+		relative_position_id = BRA_Protect_Rural_Workers
+		x = 1
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Ally_with_Friendly_Trade_Unions"
+			add_popularity = {
+				ideology = administrationism
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = republicanism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.04
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Fight_Marxist_Trade_Unions
+		icon = GFX_generic_execute_communists
+		cost = 3
+		prerequisite = {
+			focus = BRA_Ally_with_Friendly_Trade_Unions
+		}
+		relative_position_id = BRA_Protect_Rural_Workers
+		x = 0
+		y = 2
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Fight_Marxist_Trade_Unions"
+			add_popularity = {
+				ideology = marxism
+				popularity = -0.05
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_workers_Law
+		icon = GFX_RAJ_India_Worker_Rights
+		cost = 2
+		prerequisite = {
+			focus = BRA_Ally_with_Friendly_Trade_Unions
+		}
+		relative_position_id = BRA_Ally_with_Friendly_Trade_Unions
+		x = 1
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_workers_Law"
+			swap_ideas = {
+				remove_idea = bra_labour_unrest
+				add_idea = bra_Workers_law
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_A_Better_Brazil
+		icon = GFX_Generic_Good_Economy
+		cost = 9
+		prerequisite = {
+			focus = BRA_workers_Law
+		}
+		prerequisite = {
+			focus = BRA_Fight_Marxist_Trade_Unions
+		}
+		prerequisite = {
+			focus = BRA_Fiscalize_Coffee_Plantations
+		}
+		relative_position_id = BRA_Fight_Marxist_Trade_Unions
+		x = 0
+		y = 1
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus cheater scum"
+			add_ideas = bra_a_better_brazil
+			hidden_effect = {
+				UGY = {
+					annex_country = {
+						target = BRA
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
+}
+
+focus_tree = {
+	id = BRA_London_Crash_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	default = no
+	shared_focus = BRA_prepare_the_suggestion
+
+	focus = {
+		id = BRA_Economic_Crisis
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BRA_the_winner_of_the_debate
+		bypass = {
+			has_country_flag = BRA_London_Crash
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Economic_Crisis"
+		}
+	}
+
+	focus = {
+		id = BRA_Tea_Crash
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BRA_Economic_Crisis
+		allow_branch = {
+			has_country_flag = BRA_Tea_victory
+		}
+		select_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = { bra_tea_introduction < -2 }
+					}
+					add_to_variable = { bra_unrest = 4 }
+				}
+			}
+		}
+		prerequisite = {
+			focus = BRA_Economic_Crisis
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Tea_Crash"
+			add_to_variable = { bra_unrest = 2 }
+		}
+	}
+
+	focus = {
+		id = BRA_Save_The_Investments
+		icon = GFX_goal_unknown
+		cost = 8
+		x = -3
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Tea_Crash
+		prerequisite = {
+			focus = BRA_Tea_Crash
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Save_The_Investments"
+			country_event = {
+				id = bra.17
+				hours  = 5
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Price_Controls
+		icon = GFX_goal_unknown
+		cost = 8
+		x = 0
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Save_The_Investments
+		prerequisite = {
+			focus = BRA_Save_The_Investments
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Price_Controls"
+			swap_ideas = {
+				remove_idea = bra_Economic_Crisis
+				add_idea = bra_price_controls
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Incinerate_coffee_stocks
+		icon = GFX_goal_unknown
+		cost = 8
+		x = 0
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Price_Controls
+		prerequisite = {
+			focus = BRA_Price_Controls
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Incinerate_coffee_stocks"
+			add_political_power = 50
+			add_to_variable = {
+				bra_unrest = 2
+				tooltip = BRA_unrest_worsen
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Confiscate_Coffee_Plantations
+		icon = GFX_goal_unknown
+		cost = 8
+		x = 0
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Incinerate_coffee_stocks
+		prerequisite = {
+			focus = BRA_Incinerate_coffee_stocks
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Confiscate_Coffee_Plantations"
+			add_to_variable = {
+				bra_tea_introduction = 2
+				tooltip = BRA_tea_progress_improve
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Crush_Unrest
+		icon = GFX_goal_unknown
+		cost = 8
+		x = 3
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Tea_Crash
+		prerequisite = {
+			focus = BRA_Tea_Crash
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Crush_Unrest"
+			add_stability = -0.10
+			hidden_effect = {
+				country_event = {
+					id = bra.17
+					days = 10
+					random = 960
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Reinforce_the_Imperial_Guard
+		icon = GFX_goal_unknown
+		cost = 8
+		x = 0
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Crush_Unrest
+		prerequisite = {
+			focus = BRA_Crush_Unrest
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Reinforce_the_Imperial_Guard"
+			add_political_power = -50
+			add_to_variable = {
+				bra_unrest = -2
+				tooltip = BRA_unrest_improve
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_The_Portuguese
+		icon = GFX_goal_unknown
+		cost = 8
+		x = -1
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Reinforce_the_Imperial_Guard
+		mutually_exclusive = {
+			focus = BRA_Even_The_British
+		}
+		prerequisite = {
+			focus = BRA_Reinforce_the_Imperial_Guard
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_The_Portuguese"
+			swap_ideas = {
+				remove_idea = bra_anglos_dominant
+				add_idea = bra_anglos_dominant_2
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Even_The_British
+		icon = GFX_goal_unknown
+		cost = 8
+		x = 1
+		y = 1
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Reinforce_the_Imperial_Guard
+		mutually_exclusive = {
+			focus = BRA_The_Portuguese
+		}
+		prerequisite = {
+			focus = BRA_Reinforce_the_Imperial_Guard
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Even_The_British"
+			swap_ideas = {
+				remove_idea = bra_anglos_dominant
+				add_idea = bra_anglos_dominant_3
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Martial_Law
+		icon = GFX_goal_unknown
+		cost = 8
+		x = 0
+		y = 2
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = BRA_Power_Struggle }
+			}
+		}
+		relative_position_id = BRA_Reinforce_the_Imperial_Guard
+		prerequisite = {
+			focus = BRA_The_Portuguese
+			focus = BRA_Even_The_British
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Martial_Law"
+			add_to_variable = {
+				bra_unrest = 3
+				tooltip = BRA_unrest_worsen
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_continue_the_tea_program
+		icon = GFX_goal_unknown
+		cost = 11.5
+		x = 0
+		y = 5
+		relative_position_id = BRA_Tea_Crash
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BRA_continue_the_tea_program_trigger
+				always = no
+			}
+		}
+		prerequisite = {
+			focus = BRA_Confiscate_Coffee_Plantations
+		}
+		prerequisite = {
+			focus = BRA_Martial_Law
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus cheater scum"
+			add_political_power = -20
+			hidden_effect = {
+				UGY = {
+					annex_country = {
+						target = BRA
+						transfer_troops = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Coffee_Crash
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BRA_Economic_Crisis
+		allow_branch = {
+			has_country_flag = BRA_Coffee_victory
+		}
+		prerequisite = {
+			focus = BRA_Economic_Crisis
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Coffee_Crash"
+
+		}
+	}
+
+	focus = {
+		id = BRA_Urban_Society
+		icon = GFX_goal_unknown
+		cost = 6
+		x = -3
+		y = 1
+		relative_position_id = BRA_Coffee_Crash
+		prerequisite = {
+			focus = BRA_Coffee_Crash
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Coffee_Crash"
+
+		}
+	}
+
+	focus = {
+		id = BRA_Fight_the_Crisis
+		icon = GFX_goal_unknown
+		cost = 6
+		x = 0
+		y = 2
+		relative_position_id = BRA_Coffee_Crash
+		prerequisite = {
+			focus = BRA_Coffee_Crash
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Coffee_Crash"
+
+		}
+	}
+
+	focus = {
+		id = BRA_Rural_Society
+		icon = GFX_goal_unknown
+		cost = 6
+		x = 3
+		y = 1
+		relative_position_id = BRA_Coffee_Crash
+		prerequisite = {
+			focus = BRA_Coffee_Crash
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Coffee_Crash"
+
+		}
+	}
+}
+
+focus_tree = {
+	id = BRA_Revolution_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	default = no
+
+	focus = {
+		id = BRA_Second_Brazilian_Revolution
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 10
+		y = 0
+		bypass = {
+			NOT = { has_country_flag = RB_anglo_loyalist }
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Second_Brazilian_Revolution"
+		}
+	}
+
+	focus = {
+		id = BRA_Consolidate_the_Republic
+		icon = GFX_goal_unknown
+		cost = 6
+		relative_position_id = BRA_Second_Brazilian_Revolution
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Second_Brazilian_Revolution
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Consolidate_the_Republic"
+			add_stability = 0.10
+			add_political_power = 70
+			set_variable = { BRA_demo = 0 }
+			set_variable = { BRA_commie = 0 }
+			set_variable = { BRA_vargas = 0 }
+		}
+	}
+
+	focus = {
+		id = BRA_Status_of_the_Officers
+		icon = GFX_goal_unknown
+		cost = 6
+		relative_position_id = BRA_Consolidate_the_Republic
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Consolidate_the_Republic
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Status_of_the_Officers"
+			country_event = {
+				id = bra.19
+				hours = 3
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_The_Coffee_Barons
+		icon = GFX_goal_unknown
+		cost = 6
+		relative_position_id = BRA_Status_of_the_Officers
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Status_of_the_Officers
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_The_Coffee_Barons"
+			country_event = {
+				id = bra.20
+				hours = 3
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_The_British_Issue
+		icon = GFX_goal_unknown
+		cost = 6
+		relative_position_id = BRA_The_Coffee_Barons
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_The_Coffee_Barons
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_The_British_Issue"
+			country_event = {
+				id = bra.21
+				hours = 3
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Fate_of_the_Trade_Unions
+		icon = GFX_goal_unknown
+		cost = 6
+		relative_position_id = BRA_The_British_Issue
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_The_British_Issue
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Fate_of_the_Trade_Unions"
+			country_event = {
+				id = bra.22
+				hours = 3
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_About_our_Neighbors
+		icon = GFX_goal_unknown
+		cost = 6
+		relative_position_id = BRA_Fate_of_the_Trade_Unions
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Fate_of_the_Trade_Unions
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_About_our_Neighbors"
+			country_event = {
+				id = bra.23
+				hours = 3
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_Future_of_Brazil
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_About_our_Neighbors
+		x = 0
+		y = 1
+		available = {
+			NOT = {
+				OR = {
+					has_government = marxism
+					has_government = nationalism
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = BRA_About_our_Neighbors
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Future_of_Brazil"
+			country_event = {
+				id = bra.27
+				hours = 3
+			}
+		}
+	}
+
+	#Army Tree
+
+	focus = {
+		id = BRA_Estabilish_the_Brazilian_Army
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Future_of_Brazil
+		x = -10
+		y = 1
+		prerequisite = {
+			focus = BRA_Future_of_Brazil
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Estabilish_the_Brazilian_Army"
+		}
+	}
+
+	focus = {
+		id = BRA_Mass_Assault_Doctrine
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Estabilish_the_Brazilian_Army
+		x = -5
+		y = 1
+		mutually_exclusive = {
+			focus = BRA_Superior_Firepower_Doctrine
+			focus = BRA_Mobile_Warfare_Doctrine
+		}
+		prerequisite = {
+			focus = BRA_Estabilish_the_Brazilian_Army
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Mass_Assault_Doctrine"
+		}
+	}
+
+	focus = {
+		id = BRA_Superior_Firepower_Doctrine
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Estabilish_the_Brazilian_Army
+		mutually_exclusive = {
+			focus = BRA_Mass_Assault_Doctrine
+			focus = BRA_Mobile_Warfare_Doctrine
+		}
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Estabilish_the_Brazilian_Army
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Superior_Firepower_Doctrine"
+		}
+	}
+
+	focus = {
+		id = BRA_Mobile_Warfare_Doctrine
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Estabilish_the_Brazilian_Army
+		x = 5
+		y = 1
+		mutually_exclusive = {
+			focus = BRA_Mass_Assault_Doctrine
+			focus = BRA_Superior_Firepower_Doctrine
+		}
+		prerequisite = {
+			focus = BRA_Estabilish_the_Brazilian_Army
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Mobile_Warfare_Doctrine"
+		}
+	}
+
+	focus = {
+		id = BRA_Scavenge_for_Weapons
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Mass_Assault_Doctrine
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = BRA_Mass_Assault_Doctrine
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Scavenge_for_Weapons"
+		}
+	}
+
+	focus = {
+		id = BRA_Guerrilla_Tactics
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Scavenge_for_Weapons
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Scavenge_for_Weapons
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Guerrilla_Tactics"
+		}
+	}
+
+	focus = {
+		id = BRA_Every_Man_in_the_Army
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Guerrilla_Tactics
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Guerrilla_Tactics
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Every_Man_in_the_Army"
+		}
+	}
+
+	focus = {
+		id = BRA_The_New_Military_Age
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Mass_Assault_Doctrine
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = BRA_Mass_Assault_Doctrine
+			focus = BRA_Superior_Firepower_Doctrine
+			focus = BRA_Mobile_Warfare_Doctrine
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_The_New_Military_Age"
+		}
+	}
+
+	focus = {
+		id = BRA_Coastline_Radars
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_The_New_Military_Age
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = BRA_The_New_Military_Age
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Coastline_Radars"
+		}
+	}
+
+	focus = {
+		id = BRA_Special_Forces
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_The_New_Military_Age
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = BRA_The_New_Military_Age
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Special_Forces"
+		}
+	}
+
+	focus = {
+		id = BRA_Rocket_Fire
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_The_New_Military_Age
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = BRA_Coastline_Radars
+		}
+		prerequisite = {
+			focus = BRA_Special_Forces
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Rocket_Fire"
+		}
+	}
+
+	focus = {
+		id = BRA_Army_Arsenal
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Mobile_Warfare_Doctrine
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = BRA_Mass_Assault_Doctrine
+			focus = BRA_Superior_Firepower_Doctrine
+			focus = BRA_Mobile_Warfare_Doctrine
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Army_Arsenal"
+		}
+	}
+
+	focus = {
+		id = BRA_War_Industry
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Army_Arsenal
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = BRA_Army_Arsenal
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_War_Industry"
+		}
+	}
+
+	focus = {
+		id = BRA_Military_Exercises
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Army_Arsenal
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = BRA_Army_Arsenal
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Military_Exercises"
+		}
+	}
+
+	focus = {
+		id = BRA_CSI
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Army_Arsenal
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = BRA_War_Industry
+		}
+		prerequisite = {
+			focus = BRA_Military_Exercises
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_CSI"
+		}
+	}
+
+	focus = {
+		id = BRA_Better_Infantry_Weapons
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Superior_Firepower_Doctrine
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Superior_Firepower_Doctrine
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Better_Infantry_Weapons"
+		}
+	}
+
+	focus = {
+		id = BRA_Artillery_Shells_Over_the_Enemy
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Better_Infantry_Weapons
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Better_Infantry_Weapons
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Artillery_Shells_Over_the_Enemy"
+		}
+	}
+
+	focus = {
+		id = BRA_An_United_Army
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Artillery_Shells_Over_the_Enemy
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Artillery_Shells_Over_the_Enemy
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_An_United_Army"
+		}
+	}
+
+	focus = {
+		id = BRA_The_First_Tank_Divisions
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Mobile_Warfare_Doctrine
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = BRA_Mobile_Warfare_Doctrine
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_The_First_Tank_Divisions"
+		}
+	}
+
+	focus = {
+		id = BRA_Radio_Companies
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_The_First_Tank_Divisions
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_The_First_Tank_Divisions
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Radio_Companies"
+		}
+	}
+
+	focus = {
+		id = BRA_Cut_the_Head_Off
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_Radio_Companies
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Radio_Companies
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Cut_the_Head_Off"
+		}
+	}
+
+	focus = {
+		id = BRA_Against_the_Perfidious_Albion
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = BRA_An_United_Army
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BRA_Every_Man_in_the_Army
+			focus = BRA_An_United_Army
+			focus = BRA_Cut_the_Head_Off
+		}
+		prerequisite = {
+			focus = BRA_Rocket_Fire
+		}
+		prerequisite = {
+			focus = BRA_CSI
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BRA_Against_the_Perfidious_Albion"
+		}
+	}
+}

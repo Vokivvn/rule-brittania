@@ -1,0 +1,841 @@
+﻿add_namespace = burgundy
+
+country_event = {
+	id = burgundy.0
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.0"}
+	title = burgundy.0.t
+	desc = burgundy.0.desc
+	picture = GFX_report_event_generic_funeral
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.0.a
+		# Alexandre de Teck A Nibba Dead
+		custom_effect_tooltip = BRG_King_Ded_tt
+		hidden_effect = {
+			set_politics = {
+				ruling_party = absolutism
+				last_election = "1793.08.05"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Marie de Bourgogne"
+			#	desc = 
+				picture = "Portrait_BRG_Marie_de_Bourgogne.dds"
+				expire = "1999.12.12"
+				ideology = absolutism_subtype
+				traits = {
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Flanders Intro
+	id = burgundy.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.1"}
+	title = burgundy.1.t
+	desc = burgundy.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+			focus = BRG_The_Northern_States
+			progress > 0.25
+		}
+	}
+	
+	option = { #bad
+		name = burgundy.1.a
+		subtract_from_variable = {
+			var = BRG_Flanders_Loyalty
+			value = 10
+		}
+		country_event = {
+			id = burgundy.2
+			days = 15
+		}
+	}
+	option = { #neutral
+		name = burgundy.1.b
+		add_political_power = -10
+		country_event = {
+			id = burgundy.2
+			days = 15
+		}
+	}
+	option = { #positive
+		name = burgundy.1.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Flanders_Loyalty
+			value = 5
+		}
+		country_event = {
+			id = burgundy.2
+			days = 15
+		}
+	}
+}
+
+country_event = { #Hainaut Intro
+	id = burgundy.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.2"}
+	title = burgundy.2.t
+	desc = burgundy.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #bad
+		name = burgundy.2.a
+		subtract_from_variable = {
+			var = BRG_Hainaut_Loyalty
+			value = 10
+		}
+		country_event = {
+			id = burgundy.3
+			days = 15
+		}
+	}
+	option = { #neutral
+		name = burgundy.2.b
+		add_political_power = -10
+		country_event = {
+			id = burgundy.3
+			days = 15
+		}
+	}
+	option = { #positive
+		name = burgundy.2.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Hainaut_Loyalty
+			value = 5
+		}
+		country_event = {
+			id = burgundy.3
+			days = 15
+		}
+	}
+}
+
+country_event = { #Luxembourg Intro
+	id = burgundy.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.3"}
+	title = burgundy.3.t
+	desc = burgundy.3.desc
+	picture = GFX_report_event_burgundy_luxembourg_palace
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #bad
+		name = burgundy.3.a
+		subtract_from_variable = {
+			var = BRG_Luxembourg_Loyalty
+			value = 10
+		}
+	}
+	option = { #neutral
+		name = burgundy.3.b
+		add_political_power = -10
+	}
+	option = { #positive
+		name = burgundy.3.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Luxembourg_Loyalty
+			value = 5
+		}
+	}
+}
+
+country_event = { #Artois Intro
+	id = burgundy.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.4"}
+	title = burgundy.4.t
+	desc = burgundy.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+			focus = BRG_The_Central_States
+			progress > 0.25
+		}
+	}
+	
+	option = { #bad
+		name = burgundy.4.a
+		subtract_from_variable = {
+			var = BRG_Artois_Loyalty
+			value = 10
+		}
+		country_event = {
+			id = burgundy.5
+			days = 15
+		}
+	}
+	option = { #neutral
+		name = burgundy.4.b
+		add_political_power = -10
+		country_event = {
+			id = burgundy.5
+			days = 15
+		}
+	}
+	option = { #positive
+		name = burgundy.4.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Artois_Loyalty
+			value = 5
+		}
+		country_event = {
+			id = burgundy.5
+			days = 15
+		}
+	}
+}
+
+country_event = { #Picardy Intro
+	id = burgundy.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.5"}
+	title = burgundy.5.t
+	desc = burgundy.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #bad
+		name = burgundy.5.a
+		subtract_from_variable = {
+			var = BRG_Picardy_Loyalty
+			value = 10
+		}
+		country_event = {
+			id = burgundy.6
+			days = 15
+		}
+	}
+	option = { #neutral
+		name = burgundy.5.b
+		add_political_power = -10
+		country_event = {
+			id = burgundy.6
+			days = 15
+		}
+	}
+	option = { #positive
+		name = burgundy.5.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Picardy_Loyalty
+			value = 5
+		}
+		country_event = {
+			id = burgundy.6
+			days = 15
+		}
+	}
+}
+
+country_event = { #Champagne Intro
+	id = burgundy.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.6"}
+	title = burgundy.6.t
+	desc = burgundy.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #bad
+		name = burgundy.6.a
+		subtract_from_variable = {
+			var = BRG_Champagne_Loyalty
+			value = 10
+		}
+	}
+	option = { #neutral
+		name = burgundy.6.b
+		add_political_power = -10
+	}
+	option = { #positive
+		name = burgundy.6.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Champagne_Loyalty
+			value = 5
+		}
+	}
+}
+
+country_event = { #Lorraine Intro
+	id = burgundy.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.7"}
+	title = burgundy.7.t
+	desc = burgundy.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+			focus = BRG_The_Eastern_States
+			progress > 0.25
+		}
+	}
+	
+	option = { #bad
+		name = burgundy.7.a
+		subtract_from_variable = {
+			var = BRG_Lorraine_Loyalty
+			value = 10
+		}
+		country_event = {
+			id = burgundy.8
+			days = 15
+		}
+	}
+	option = { #neutral
+		name = burgundy.7.b
+		add_political_power = -10
+		country_event = {
+			id = burgundy.8
+			days = 15
+		}
+	}
+	option = { #positive
+		name = burgundy.7.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Lorraine_Loyalty
+			value = 5
+		}
+		country_event = {
+			id = burgundy.8
+			days = 15
+		}
+	}
+}
+
+country_event = { #Palatine Intro
+	id = burgundy.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.8"}
+	title = burgundy.8.t
+	desc = burgundy.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #bad
+		name = burgundy.8.a
+		subtract_from_variable = {
+			var = BRG_Palatine_Loyalty
+			value = 10
+		}
+		country_event = {
+			id = burgundy.9
+			days = 15
+		}
+	}
+	option = { #neutral
+		name = burgundy.8.b
+		add_political_power = -10
+		country_event = {
+			id = burgundy.9
+			days = 15
+		}
+	}
+	option = { #positive
+		name = burgundy.8.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Palatine_Loyalty
+			value = 5
+		}
+		country_event = {
+			id = burgundy.9
+			days = 15
+		}
+	}
+}
+
+country_event = { #alsace intro
+	id = burgundy.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.9"}
+	title = burgundy.9.t
+	desc = burgundy.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #bad
+		name = burgundy.9.a
+		subtract_from_variable = {
+			var = BRG_Alsace_Loyalty
+			value = 10
+		}
+	}
+	option = { #neutral
+		name = burgundy.9.b
+		add_political_power = -10
+	}
+	option = { #positive
+		name = burgundy.9.c
+		add_political_power = -20
+		add_to_variable = {
+			var = BRG_Alsace_Loyalty
+			value = 5
+		}
+	}
+}
+
+country_event = { #Econ Crash luxembourg protests and more protests
+	id = burgundy.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.40"}
+	title = burgundy.40.t
+	desc = burgundy.40.desc
+	picture = GFX_report_event_generic_rally
+	
+	is_triggered_only = yes #trigger will be the econ crash
+	fire_only_once = yes
+	
+	option = { #terrible
+		name = burgundy.40.a
+		add_political_power = -20
+		hidden_effect = {
+			country_event = {
+				id = burgundy.11
+				days = 20
+			}
+		}
+	}
+}
+
+country_event = { #the luxembourg protests worsen
+	id = burgundy.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.11"}
+	title = burgundy.11.t
+	desc = burgundy.11.desc
+	picture = GFX_report_event_generic_peaceful_annexation
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #we can do nothing but send prayers
+		name = burgundy.11.a
+		custom_effect_tooltip = BRG_Decrease_Relations_tt
+		hidden_effect = {
+			subtract_from_variable = {
+				var = BRG_Luxembourg_Loyalty
+				value = 30
+			}
+		}
+	}
+}
+
+country_event = { #Marie Adelaide appoints Leon Degrelle as PM
+	id = burgundy.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.12"}
+	title = burgundy.12.t
+	desc = burgundy.12.desc
+	picture = GFX_report_event_burgundy_leon_degrelle
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.12.a
+	}
+	option = { #
+		name = burgundy.12.b
+	}
+}
+
+country_event = { #
+	id = burgundy.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event burgundy.13"
+	hidden_effect = {
+			LUX = {
+				transfer_state = 8
+			}
+		}
+	}
+	title = burgundy.13.t
+	desc = burgundy.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.13.a
+		declare_war_on = {
+			target = LUX
+			type = annex_everything
+		}
+	}
+	option = { #
+		name = burgundy.13.b
+
+	}
+}
+
+####LIBERAL CONGRESS CHAIN
+country_event = { #invite to the European Liberal Philosophy Congress
+	id = burgundy.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.14"}
+	title = burgundy.14.t
+	desc = burgundy.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.14.a
+		hidden_effect = {
+			country_event = { id = burgundy.15 days = 64 }
+		}
+	}
+}
+
+country_event = { #the congress is ready
+	id = burgundy.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.15"}
+	title = burgundy.15.t
+	desc = burgundy.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #say welcome
+		name = burgundy.15.a
+		hidden_effect = {
+			BRG_send_lib_invitations = yes
+			country_event = { id = burgundy.17 days = 7}
+		}	
+	}
+
+}
+
+country_event = { # exciting, we got invited to liberal congress
+	id = burgundy.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.16"}
+	title = burgundy.16.t
+	desc = burgundy.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #epic
+		name = burgundy.16.a
+	}
+}
+
+country_event = { # hidden event to calculate winner
+	id = burgundy.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.17"}
+	hidden = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.17.a
+		random_list = {
+			20 = { 
+				BRG_anglo_congress = yes
+				set_country_flag = BRG_anglo_liberal
+			}
+			50 = { 
+				BRG_french_congress = yes
+				set_country_flag = BRG_french_liberal 
+			}
+			30 = { 
+				BRG_german_congress = yes
+				set_country_flag = BRG_german_liberal 
+			}
+		}
+	}
+
+}
+
+country_event = { #
+	id = burgundy.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.18"}
+	title = burgundy.18.t
+	desc = burgundy.18.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #anglo
+		name = burgundy.18.a
+		trigger = { has_country_flag = BRG_anglo_liberal }
+	}
+	option = { #french
+		name = burgundy.18.b
+		trigger = { has_country_flag = BRG_french_liberal }
+	}
+	option = { #german
+		name = burgundy.18.c
+		trigger = { has_country_flag = BRG_german_liberal }
+	}
+}
+
+country_event = { #
+	id = burgundy.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.19"}
+	title = burgundy.19.t
+	desc = burgundy.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.19.a
+
+	}
+	option = { #
+		name = burgundy.19.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.20"}
+	title = burgundy.20.t
+	desc = burgundy.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.20.a
+
+	}
+	option = { #
+		name = burgundy.20.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.21"}
+	title = burgundy.21.t
+	desc = burgundy.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.21.a
+
+	}
+	option = { #
+		name = burgundy.21.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.22"}
+	title = burgundy.22.t
+	desc = burgundy.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.22.a
+
+	}
+	option = { #
+		name = burgundy.22.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.23"}
+	title = burgundy.23.t
+	desc = burgundy.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.23.a
+
+	}
+	option = { #
+		name = burgundy.23.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.24"}
+	title = burgundy.24.t
+	desc = burgundy.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.24.a
+
+	}
+	option = { #
+		name = burgundy.24.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.25"}
+	title = burgundy.25.t
+	desc = burgundy.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.25.a
+
+	}
+	option = { #
+		name = burgundy.25.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.26"}
+	title = burgundy.26.t
+	desc = burgundy.26.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.26.a
+
+	}
+	option = { #
+		name = burgundy.26.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.27"}
+	title = burgundy.27.t
+	desc = burgundy.27.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.27.a
+
+	}
+	option = { #
+		name = burgundy.27.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.28"}
+	title = burgundy.28.t
+	desc = burgundy.28.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.28.a
+
+	}
+	option = { #
+		name = burgundy.28.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.29"}
+	title = burgundy.29.t
+	desc = burgundy.29.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.29.a
+
+	}
+	option = { #
+		name = burgundy.29.b
+
+	}
+}
+
+country_event = { #
+	id = burgundy.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event burgundy.30"}
+	title = burgundy.30.t
+	desc = burgundy.30.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = burgundy.30.a
+
+	}
+	option = { #
+		name = burgundy.30.b
+
+	}
+}

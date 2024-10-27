@@ -1,0 +1,38 @@
+
+state={
+	id=171
+	name="STATE_171"
+
+	history={
+		owner = CAS
+		victory_points = {
+			758 10
+		}
+		victory_points = {
+			11692 2
+		}
+		victory_points = {
+			6955 3
+		}
+		buildings = {
+			infrastructure = 6
+			dockyard = 2
+			arms_factory = 1
+			air_base = 2
+			758 = {
+				naval_base = 6
+
+			}
+
+		}
+		add_core_of = CAS
+
+	}
+
+	provinces={
+		729 758 3761 6764 6955 11692 11710 
+	}
+	manpower=1295085
+	buildings_max_level_factor=1.000
+	state_category=city
+}

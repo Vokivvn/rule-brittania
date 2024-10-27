@@ -1,0 +1,42 @@
+﻿l_english:
+ ##Country Names##
+ OST_cromwellianism:0 "Ostend Company"
+ OST_cromwellianism_DEF:0 "The Ostend Company"
+ OST_marxism:0 "Borneo"
+ OST_marxism_DEF:0 "Sabah"
+ OST_liberalism:0 "Ostend Company"
+ OST_liberalism_DEF:0 "The Ostend Company"
+ OST_republicanism:0 "Ostend Company"
+ OST_republicanism_DEF:0 "The Ostend Company"
+ OST_parliamentarianism:0 "Ostend Company"
+ OST_parliamentarianism_DEF:0 "The Ostend Company"
+ OST_administrationism:0 "Ostend Company"
+ OST_administrationism_DEF:0 "The Ostend Company"
+ OST_absolutism:0 "Ostend Company"
+ OST_absolutism_DEF:0 "The Ostend Company"
+ OST_despotism:0 "Ostend Company"
+ OST_despotism_DEF:0 "The Ostend Company"
+ OST_nationalism:0 "Ostend Company"
+ OST_nationalism_DEF:0 "The Ostend Company"
+ OST_cromwellianism_ADJ:0 "Austro-Bornean"
+ OST_marxism_ADJ:0 "Bornean"
+ OST_liberalism_ADJ:0 "Austro-Bornean"
+ OST_republicanism_ADJ:0 "Austro-Bornean"
+ OST_parliamentarianism_ADJ:0 "Austro-Bornean"
+ OST_administrationism_ADJ:0 "Austro-Bornean"
+ OST_despotism_ADJ:0 "Austro-Bornean"
+ OST_nationalism_ADJ:0 "Austro-Bornean"
+ 
+ OST_absolutism_party:0 "KL"
+ OST_absolutism_party_long:0 "Kaiserliche Loyalisten"
+
+ OST_marxism_party:0 "BCP"
+ OST_marxism_party_long:0 "Parti Komunis Borneo"
+ 
+ ostend_austria:0 "Die Ostend Kompanie"
+ ostend_austria_desc:0 "The region Sabah of Northern Borneo was aquired by the Habsburgs and sold to the Ostend Kompanie and since then promoted Austrian national pride and the idea of A.E.I.O.U. However the k.k Kriegsmarine, always lacking in comparison to other great powers, has struggled to keep the Colony supplied and protected. The Anglo-Dutch East Indies' government has long tried to purchase the small territory but every request has been denied by the Kaiser in Wien."
+ 
+ HOL_ENG_Purchase_Ostend:0 "Purchase Ostend"
+ AUS_Garrison:0 "Garrison the Colony"
+ 
+ experienced_diplomat:0 "Experienced Diplomat"

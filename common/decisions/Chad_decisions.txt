@@ -1,0 +1,111 @@
+CHA_economy_system = {
+	CHA_placate_london = {
+		visible = {
+			check_variable = { CHA_trust_var < 5 }
+		}
+		fire_only_once = no
+		cost = 50
+		days_re_enable = 30
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = CHA_trust_up
+			add_to_variable = { CHA_trust_var = 0.25 }
+		}
+	}
+	CHA_pay_loans = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		cost = 75
+		days_re_enable = 30
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = CHA_eco_up
+			add_to_variable = { CHA_economy_var = 0.5 }
+		}
+	}
+	CHA_take_loan = {
+		visible = {
+			check_variable = { CHA_economy_var > 2 }
+		}
+		fire_only_once = no
+		cost = 10
+		days_re_enable = 60
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = CHA_eco_down
+			add_political_power = 110
+			subtract_from_variable = { CHA_economy_var = 0.75 }
+		}
+	}
+	CHA_skip_a_payment = {
+		visible = {
+			check_variable = { CHA_economy_var > 2.9 }
+		}
+		fire_only_once = no
+		cost = 0
+		days_re_enable = 29
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = CHA_eco_down
+			custom_effect_tooltip = CHA_trust_down
+			add_political_power = 20
+			subtract_from_variable = { CHA_economy_var = 0.25 }
+			subtract_from_variable = { CHA_trust_var = 0.15 }
+		}
+	}
+	CHA_pay_small = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		cost = 25
+		days_re_enable = 30
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = CHA_eco_up
+			add_to_variable = { CHA_economy_var = 0.15 }
+		}
+	}
+	CHA_enforce_taxes = {
+		visible = {
+			check_variable = { CHA_economy_var > 2 }
+		}
+		fire_only_once = no
+		cost = 10
+		days_re_enable = 90
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			add_political_power = 45
+			add_popularity = {
+				ideology = administrationism
+				popularity = -0.025
+			}
+		}
+	}
+}

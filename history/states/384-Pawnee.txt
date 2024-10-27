@@ -1,0 +1,27 @@
+
+state={
+	id=384
+	name="STATE_384"
+
+	history={
+		owner = LOU
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			10532 2
+		}
+		victory_points = {
+			3855 3
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		1753 4814 4830 4871 10606 10532
+	}
+	manpower=1377962
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

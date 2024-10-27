@@ -1,0 +1,1772 @@
+#Intro Tree#
+
+shared_focus = {
+	id = TUR_intro_eighteen_years_of_peace
+	icon = TUR_Turkey_Flag_Peace
+	cost = 2.00
+	x = 8
+	y = 0
+	allow_branch = { has_country_flag = tur_intro }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_intro_eighteen_years_of_peace"
+		country_event = { id = tur.22 }
+	}
+}
+
+shared_focus = {
+	id = TUR_intro_send_out_the_invitations
+	icon = GFX_goal_big_news
+	cost = 2.00
+	x = 8
+	y = 1
+
+	prerequisite = {
+		focus = TUR_intro_eighteen_years_of_peace
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_intro_send_out_the_invitations"
+		country_event = { id = tur.23 }
+	}
+}
+
+shared_focus = {
+	id = TUR_intro_the_commissioners_lair
+	icon = GFX_Cap_and_Cash
+	cost = 3.00
+	x = 7
+	y = 2
+
+	prerequisite = {
+		focus = TUR_intro_send_out_the_invitations
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_intro_the_commissioners_lair"
+		country_event = { id = tur.26 }
+	}
+}
+
+shared_focus = {
+	id = TUR_intro_the_den_of_decadence
+	icon = TUR_Ahmet_Pasha
+	cost = 2.00
+	x = 7
+	y = 3
+
+	prerequisite = {
+		focus = TUR_intro_the_commissioners_lair
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_intro_the_den_of_decadence"
+		country_event = { id = tur.27 }
+	}
+}
+
+shared_focus = {
+	id = TUR_intro_the_guardsmans_hold
+	icon = TUR_Osman_Faud
+	cost = 2.00
+	x = 9
+	y = 2
+
+	prerequisite = {
+		focus = TUR_intro_send_out_the_invitations
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_intro_the_guardsmans_hold"
+		country_event = { id = tur.24 }
+	}
+}
+
+shared_focus = {
+	id = TUR_intro_the_sons_refuge
+	icon = TUR_Ali
+	cost = 2.00
+	x = 9
+	y = 3
+
+	prerequisite = {
+		focus = TUR_intro_the_guardsmans_hold
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_intro_the_sons_refuge"
+		country_event = { id = tur.25 }
+	}
+}
+
+shared_focus = {
+	id = TUR_intro_the_night_of_the_gala
+	icon = GFX_goal_collaborate_local_elites
+	cost = 2.00
+	x = 8
+	y = 4
+
+	prerequisite = { focus = TUR_intro_the_sons_refuge }
+	prerequisite = { focus = TUR_intro_the_den_of_decadence }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_intro_the_night_of_the_gala"
+		country_event = { id = tur.28 }
+	}
+}
+
+#Good Sultan Focus Tree#
+shared_focus = {
+	id = TUR_ali_the_rightful_heir
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 0
+	allow_branch = { has_country_flag = tur_good_sultan }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_the_rightful_heir"
+		create_country_leader = {
+			name = "Sultan Ali"
+			desc = "POLITICS_SULTAN_ALI_DESC"
+			picture = "Portrait_TUR_radical_cianos"
+			expire = "1965.1.1"
+			ideology = absolutism_subtype
+			traits = {}
+		}
+
+		set_politics = {
+			ruling_party = absolutism
+		}
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_breaking_the_janissaries
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = TUR_ali_the_rightful_heir
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_breaking_the_janissaries"
+		swap_ideas = {
+			add_idea = tur_the_janissaries_weakened
+			remove_idea = tur_the_janissaries
+		}
+
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_one_million_lira
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 2
+	y = 3
+	prerequisite = {
+		focus = TUR_ali_breaking_the_janissaries
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_one_million_lira"
+		country_event = { id = tur.39 hours = 3 }
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_dealing_with_the_commissioner
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 1
+	prerequisite = {
+		focus = TUR_ali_the_rightful_heir
+	}
+	completion_reward = { #come back to later
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_dealing_with_the_commissioner"
+		add_popularity = { ideology = despotism popularity = -0.05 }
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_undermine_the_garrison
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 3
+	y = 2
+	prerequisite = {
+		focus = TUR_ali_dealing_with_the_commissioner
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_undermine_the_garrison"
+		swap_ideas = {
+			add_idea = british_advised_forces
+			remove_idea = british_controlled_forces
+		}
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_build_up_the_imperial_guard
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 5
+	y = 2
+	prerequisite = {
+		focus = TUR_ali_dealing_with_the_commissioner
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_build_up_the_imperial_guard"
+		army_experience = 25
+		add_war_support = 0.10
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_good_ol_uncle_faud
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 3
+
+	prerequisite = { focus = TUR_ali_build_up_the_imperial_guard }
+	prerequisite = { focus = TUR_ali_undermine_the_garrison }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_good_ol_uncle_faud"
+		create_field_marshal = {
+			name = "Osman Faud"
+			picture = "Portrait_TUR_Faud_IV.dds"
+			traits = { defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_clean_up_the_imperial_court
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 1
+	prerequisite = {
+		focus = TUR_ali_the_rightful_heir
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_clean_up_the_imperial_court"
+		add_popularity = { ideology = absolutism popularity = 0.1 }
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_expel_the_snakes_from_the_garden
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 6
+	y = 3
+	prerequisite = {
+		focus = TUR_ali_clean_up_the_imperial_court
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_expel_the_snakes_from_the_garden"
+		add_stability = 0.05
+		add_political_power = 50
+		add_country_leader_trait = dedicated_reformer
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_expel_the_commissioner
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 4
+
+	prerequisite = { focus = TUR_ali_expel_the_snakes_from_the_garden }
+	prerequisite = { focus = TUR_ali_good_ol_uncle_faud }
+	prerequisite = { focus = TUR_ali_one_million_lira }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_expel_the_commissioner"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_disband_britains_thugs
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 1
+	y = 5
+
+	prerequisite = { focus = TUR_ali_expel_the_commissioner }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_disband_britains_thugs"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_no_more_auspicious_incidents
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 1
+	y = 8
+
+	prerequisite = { focus = TUR_ali_disband_britains_thugs }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_no_more_auspicious_incidents"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_sultan_alis_reforms
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 5
+
+	prerequisite = { focus = TUR_ali_expel_the_commissioner }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_sultan_alis_reforms"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_freedom_for_the_press
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 2
+	y = 6
+
+	prerequisite = { focus = TUR_ali_sultan_alis_reforms }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_freedom_for_the_press"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_freedom_for_the_family
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 6
+
+	prerequisite = { focus = TUR_ali_sultan_alis_reforms }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_freedom_for_the_family"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_freedom_for_the_parties
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 6
+	y = 6
+
+	prerequisite = { focus = TUR_ali_sultan_alis_reforms }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_freedom_for_the_parties"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_reform_the_general_assembly
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 7
+
+	prerequisite = { focus = TUR_ali_freedom_for_the_parties }
+	prerequisite = { focus = TUR_ali_freedom_for_the_press }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_reform_the_general_assembly"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_mark_the_calender
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 8
+
+	prerequisite = { focus = TUR_ali_reform_the_general_assembly }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_mark_the_calender"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_a_temporary_grand_vizier
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 5
+
+	prerequisite = { focus = TUR_ali_expel_the_commissioner }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_a_temporary_grand_vizier"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_reform_the_imperial_army
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 8
+
+	prerequisite = { focus = TUR_ali_a_temporary_grand_vizier }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_reform_the_imperial_army"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_the_second_constitutional_era
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 4
+	y = 9
+
+	prerequisite = { focus = TUR_ali_reform_the_imperial_army }
+	prerequisite = { focus = TUR_ali_mark_the_calender }
+	prerequisite = { focus = TUR_ali_no_more_auspicious_incidents }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_the_second_constitutional_era"
+	}
+}
+
+#Good Sultan Foreign Policy
+shared_focus = {
+	id = TUR_ali_breaking_our_shackles
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 13
+	y = 0
+	available = { has_completed_focus = TUR_ali_expel_the_commissioner }
+	allow_branch = { has_country_flag = tur_good_sultan }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_breaking_our_shackles"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_prepare_the_armies
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 12
+	y = 1
+
+	prerequisite = { focus = TUR_ali_breaking_our_shackles }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_prepare_the_armies"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_contact_the_arabs
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 14
+	y = 1
+
+	prerequisite = { focus = TUR_ali_breaking_our_shackles }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_breaking_our_shackles"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_the_march_on_constantinople
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 13
+	y = 2
+
+	prerequisite = {
+		focus = TUR_ali_contact_the_arabs
+		focus = TUR_ali_prepare_the_armies
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_the_march_on_constantinople"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_imperial_revanchism
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 11
+	y = 3
+
+	prerequisite = { focus = TUR_ali_the_march_on_constantinople }
+	mutually_exclusive = { focus = TUR_ali_levantine_diplomacy }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_imperial_revanchism"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_reclaim_kurdistan
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 11
+	y = 4
+
+	prerequisite = { focus = TUR_ali_imperial_revanchism }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_reclaim_kurdistan"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_reclaim_eastern_anatolia
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 4
+
+	prerequisite = { focus = TUR_ali_imperial_revanchism }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_reclaim_eastern_anatolia"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_the_lion_of_the_levant
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 11
+	y = 5
+
+	prerequisite = { focus = TUR_ali_reclaim_eastern_anatolia }
+	prerequisite = { focus = TUR_ali_reclaim_kurdistan }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_the_lion_of_the_levant"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_levantine_diplomacy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 15
+	y = 3
+
+	prerequisite = { focus = TUR_ali_the_march_on_constantinople }
+	mutually_exclusive = { focus = TUR_ali_imperial_revanchism }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_levantine_diplomacy"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_support_the_arabs
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 15
+	y = 4
+
+	prerequisite = { focus = TUR_ali_levantine_diplomacy }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_support_the_arabs"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_aid_to_the_persians
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 17
+	y = 4
+
+	prerequisite = { focus = TUR_ali_levantine_diplomacy }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_aid_to_the_persians"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_the_father_of_the_levant
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 15
+	y = 5
+
+	prerequisite = { focus = TUR_ali_support_the_arabs }
+	prerequisite = { focus = TUR_ali_aid_to_the_persians }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_the_father_of_the_levant"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_reclaim_the_isles
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 13
+	y = 4
+
+	prerequisite = {
+		focus = TUR_ali_levantine_diplomacy
+		focus = TUR_ali_imperial_revanchism
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_reclaim_the_isles"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_our_brothers_in_cyprus
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 13
+	y = 5
+
+	prerequisite = {
+		focus = TUR_ali_reclaim_the_isles
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_our_brothers_in_cyprus"
+	}
+}
+
+#Good Sultan PUP
+
+shared_focus = {
+	id = TUR_ali_the_old_blood
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 16
+	y = 6
+	allow_branch = { has_country_flag = tur_good_sultan }
+
+	available = { hidden_trigger = { has_country_flag = tur_pee } }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_the_old_blood"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_traditional_education
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 14
+	y = 7
+
+	prerequisite = { focus = TUR_ali_the_old_blood }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_traditional_education"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_the_karabekir_viziership
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 16
+	y = 7
+
+	prerequisite = { focus = TUR_ali_the_old_blood }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_the_karabekir_viziership"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_traditional_family_life
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 15
+	y = 8
+
+	prerequisite = { focus = TUR_ali_traditional_education }
+	prerequisite = { focus = TUR_ali_the_karabekir_viziership }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_traditional_family_life"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_rebuild_the_millet_system
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 18
+	y = 7
+
+	prerequisite = { focus = TUR_ali_the_old_blood }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_rebuild_the_millet_system"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_religious_courts
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 17
+	y = 8
+
+	prerequisite = { focus = TUR_ali_the_karabekir_viziership }
+	prerequisite = { focus = TUR_ali_rebuild_the_millet_system }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_religious_courts"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_an_islamic_democracy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 16
+	y = 9
+
+	prerequisite = { focus = TUR_ali_religious_courts }
+	prerequisite = { focus = TUR_ali_traditional_family_life }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_an_islamic_democracy"
+	}
+}
+
+#Good Sultan Kemalists
+
+shared_focus = {
+	id = TUR_ali_the_new_colossus
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 10
+	y = 6
+	allow_branch = { has_country_flag = tur_good_sultan }
+
+	available = { hidden_trigger = { has_country_flag = tur_pee } }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_the_new_colossus"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_secular_schools
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 8
+	y = 7
+
+	prerequisite = { focus = TUR_ali_the_new_colossus }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_secular_schools"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_rights_for_women
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 8
+
+	prerequisite = { focus = TUR_ali_secular_schools }
+	prerequisite = { focus = TUR_ali_second_koprulu_era }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_rights_for_women"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_second_koprulu_era
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 10
+	y = 7
+
+	prerequisite = { focus = TUR_ali_the_new_colossus }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_second_koprulu_era"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_overhaul_the_legal_code
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 12
+	y = 7
+
+	prerequisite = { focus = TUR_ali_the_new_colossus }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_overhaul_the_legal_code"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_secular_courts
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 11
+	y = 8
+
+	prerequisite = { focus = TUR_ali_overhaul_the_legal_code }
+	prerequisite = { focus = TUR_ali_second_koprulu_era }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_secular_courts"
+	}
+}
+
+shared_focus = {
+	id = TUR_ali_a_modern_democracy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 10
+	y = 9
+
+	prerequisite = { focus = TUR_ali_secular_courts }
+	prerequisite = { focus = TUR_ali_rights_for_women }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ali_a_modern_democracy"
+	}
+}
+
+#########################
+# Young Turk Revolution #
+#########################
+
+shared_focus = {
+	id = TUR_ytr_the_young_turk_revolution
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 8
+	y = 0
+	allow_branch = { has_country_flag = tur_ytr }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_the_young_turk_revolution"
+		TUR_ytr_begins = yes
+
+		set_country_flag = tur_the_struggle_for_the_revolution
+		swap_ideas = {
+			remove_idea = tur_turkish_intikamcilik
+			add_idea = tur_the_young_turk_revolution
+		}
+
+		swap_ideas = {
+			remove_idea = tur_british_corporations
+			add_idea = tur_economic_revolution
+		}
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_rally_the_masses
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 1
+	prerequisite = { focus = TUR_ytr_the_young_turk_revolution }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_rally_the_masses"
+		add_political_power = 50
+		add_popularity = {
+			ideology = cromwellianism
+			popularity = 0.05
+		}
+		TUR_medium_boost_for_turkes = yes
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_embrace_the_nationalists
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 6
+	y = 2
+	prerequisite = { focus = TUR_ytr_rally_the_masses }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_embrace_the_nationalists"
+		add_popularity = {
+			ideology = nationalism
+			popularity = 0.05
+		}
+		TUR_small_boost_for_the_PUP = yes
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_crush_the_guard
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 3
+	prerequisite = { focus = TUR_ytr_embrace_the_nationalists }
+	prerequisite = { focus = TUR_ytr_deride_the_house_of_osman }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_crush_the_guard"
+		country_event = { id = tur.31 days = 3 }
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_search_for_allies
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 1
+	prerequisite = { focus = TUR_ytr_the_young_turk_revolution }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_search_for_allies"
+		country_event = { id = tur.30 }
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_an_alliance_with_the_pup
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 10
+	y = 2
+	prerequisite = { focus = TUR_ytr_search_for_allies }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_an_alliance_with_the_pup"
+		TUR_medium_boost_for_the_PUP = yes
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_deride_the_house_of_osman
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 8
+	y = 2
+	prerequisite = { focus = TUR_ytr_search_for_allies }
+	prerequisite = { focus = TUR_ytr_rally_the_masses }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_deride_the_house_of_osman"
+		add_political_power = -70
+		add_popularity = {
+			ideology = absolutism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = -0.03
+		}
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_friends_within_the_government
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 3
+	prerequisite = { focus = TUR_ytr_an_alliance_with_the_pup }
+	prerequisite = { focus = TUR_ytr_deride_the_house_of_osman }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_friends_within_the_government"
+		TUR_medium_boost_for_the_PUP = yes
+		add_political_power = 70
+		add_stability = -0.05
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_the_end_of_the_empire
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 8
+	y = 4
+	prerequisite = { focus = TUR_ytr_friends_within_the_government }
+	prerequisite = { focus = TUR_ytr_crush_the_guard }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_the_end_of_the_empire"
+		country_event = { id = tur.32 }
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_the_father_of_the_revolution
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 5
+	prerequisite = { focus = TUR_ytr_the_end_of_the_empire }
+	mutually_exclusive = { focus = TUR_ytr_the_three_crowned_heads }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_the_father_of_the_revolution"
+	}
+}
+
+shared_focus = {
+	id = TUR_ytr_the_three_crowned_heads
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 5
+	prerequisite = { focus = TUR_ytr_the_end_of_the_empire }
+	mutually_exclusive = { focus = TUR_ytr_the_father_of_the_revolution }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_ytr_the_three_crowned_heads"
+	}
+}
+
+################
+# Pre-TCW Tree #
+################
+
+shared_focus = {
+	id = TUR_tcw_a_golden_cage_broken
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 8
+	y = 0
+	allow_branch = { has_country_flag = tur_oh_god_oh_fuck }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_a_golden_cage_broken"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_oppose_the_madness
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 6
+	y = 1
+	prerequisite = { focus = TUR_tcw_a_golden_cage_broken }
+	mutually_exclusive = { focus = TUR_tcw_the_one_true_sultan }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_oppose_the_madness"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_mobilize_the_guard
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 5
+	y = 2
+	prerequisite = { focus = TUR_tcw_oppose_the_madness }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_mobilize_the_guard"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_the_devil_we_know
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 2
+	prerequisite = { focus = TUR_tcw_oppose_the_madness }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_the_devil_we_know"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_promises_to_the_people
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 3
+	prerequisite = { focus = TUR_tcw_the_devil_we_know }
+	prerequisite = { focus = TUR_tcw_mobilize_the_guard }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_promises_to_the_people"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_the_only_option_left
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 4
+	prerequisite = { focus = TUR_tcw_promises_to_the_people }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_the_only_option_left"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_the_march_on_bursa
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 7
+	y = 5
+	prerequisite = { focus = TUR_tcw_the_only_option_left }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_the_march_on_bursa"
+		country_event = { id = tcw.1 days = 3 }
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_the_one_true_sultan
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 10
+	y = 1
+	prerequisite = { focus = TUR_tcw_a_golden_cage_broken }
+	mutually_exclusive = { focus = TUR_tcw_oppose_the_madness }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_the_one_true_sultan"
+		set_country_flag = tcw_joined_orhan
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_call_on_the_people
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 2
+	prerequisite = { focus = TUR_tcw_the_one_true_sultan }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_call_on_the_people"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_allies_in_central_asia
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 11
+	y = 2
+	prerequisite = { focus = TUR_tcw_the_one_true_sultan }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_allies_in_central_asia"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_the_peoples_sultan
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 3
+	prerequisite = { focus = TUR_tcw_call_on_the_people }
+	prerequisite = { focus = TUR_tcw_allies_in_central_asia }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_the_peoples_sultan"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_the_march_towards_destiny
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 4
+	prerequisite = { focus = TUR_tcw_the_peoples_sultan }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_the_march_towards_destiny"
+	}
+}
+
+shared_focus = {
+	id = TUR_tcw_the_march_on_izmir
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 9
+	y = 5
+	prerequisite = { focus = TUR_tcw_the_march_towards_destiny }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_tcw_the_march_on_izmir"
+		country_event = { id = tcw.2 days = 3 }
+	}
+}
+
+#################
+# Economy Trees #
+#################
+
+shared_focus = {
+	id = TUR_econ_addressing_the_crisis
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 7
+
+	allow_branch = { has_country_flag = tur_army_unlocked }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_addressing_the_crisis"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_nationalize_key_industries
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 20
+	y = 8
+
+	prerequisite = { focus = TUR_econ_addressing_the_crisis }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_nationalize_key_industries"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_annual_the_OPDA
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 8
+
+	prerequisite = { focus = TUR_econ_addressing_the_crisis }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_annual_the_OPDA"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_buyout_british_industries
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 24
+	y = 8
+
+	prerequisite = { focus = TUR_econ_addressing_the_crisis }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_buyout_british_industries"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_the_new_direction
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 9
+
+	prerequisite = { focus = TUR_econ_nationalize_key_industries }
+	prerequisite = { focus = TUR_econ_buyout_british_industries }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_the_new_direction"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_invest_in_RnD
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 11
+
+	prerequisite = {
+		focus = TUR_econ_a_directed_push
+		focus = TUR_econ_the_winds_of_change
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_invest_in_RnD"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_a_directed_push
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 19
+	y = 10
+
+	prerequisite = { focus = TUR_econ_the_new_direction }
+
+	mutually_exclusive = { focus = TUR_econ_the_winds_of_change }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_a_directed_push"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_state_owned_industries
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 19
+	y = 11
+
+	prerequisite = { focus = TUR_econ_a_directed_push }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_state_owned_industries"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_the_military_industrial_complex
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 19
+	y = 12
+
+	prerequisite = { focus = TUR_econ_state_owned_industries }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_the_military_industrial_complex"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_back_to_work_programs
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 17
+	y = 11
+
+	prerequisite = { focus = TUR_econ_a_directed_push }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_back_to_work_programs"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_the_winds_of_change
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 25
+	y = 10
+
+	prerequisite = { focus = TUR_econ_the_new_direction }
+
+	mutually_exclusive = { focus = TUR_econ_a_directed_push }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_the_winds_of_change"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_encourage_foreign_investment
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 25
+	y = 11
+
+	prerequisite = { focus = TUR_econ_the_winds_of_change }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_encourage_foreign_investment"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_limited_public_works_programs
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 27
+	y = 11
+
+	prerequisite = { focus = TUR_econ_the_winds_of_change }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_limited_public_works_programs"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_business_friendly_climate
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 25
+	y = 12
+
+	prerequisite = { focus = TUR_econ_encourage_foreign_investment }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_business_friendly_climate"
+	}
+}
+
+shared_focus = {
+	id = TUR_econ_the_empires_new_groove
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 13
+
+	prerequisite = {
+		focus = TUR_econ_the_military_industrial_complex
+		focus = TUR_econ_business_friendly_climate
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_econ_the_empires_new_groove"
+	}
+}
+
+##################
+# Military Trees #
+##################
+
+shared_focus = {
+	id = TUR_lessons_of_the_anglo_turkish_war
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 0
+
+	allow_branch = { has_country_flag = tur_army_unlocked }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_lessons_of_the_anglo_turkish_war"
+	}
+}
+
+shared_focus = {
+	id = TUR_izzeds_tradition
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 20
+	y = 1
+
+	prerequisite = {
+		focus = TUR_lessons_of_the_anglo_turkish_war
+	}
+
+	mutually_exclusive = { focus = TUR_fauds_firepower }
+	mutually_exclusive = { focus = TUR_farouks_mobility }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_izzeds_tradition"
+	}
+}
+
+shared_focus = {
+	id = TUR_expand_conscription
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 18
+	y = 2
+
+	prerequisite = {
+		focus = TUR_izzeds_tradition
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_expand_conscription"
+	}
+}
+
+shared_focus = {
+	id = TUR_the_largest_army_in_the_levant
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 18
+	y = 3
+
+	prerequisite = {
+		focus = TUR_expand_conscription
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_largest_army_in_the_levant"
+	}
+}
+
+shared_focus = {
+	id = TUR_fauds_firepower
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 1
+
+	prerequisite = {
+		focus = TUR_lessons_of_the_anglo_turkish_war
+	}
+
+	mutually_exclusive = { focus = TUR_izzeds_tradition }
+	mutually_exclusive = { focus = TUR_farouks_mobility }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_fauds_firepower"
+	}
+}
+
+shared_focus = {
+	id = TUR_farouks_mobility
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 24
+	y = 1
+
+	prerequisite = {
+		focus = TUR_lessons_of_the_anglo_turkish_war
+	}
+
+	mutually_exclusive = { focus = TUR_fauds_firepower }
+	mutually_exclusive = { focus = TUR_izzeds_tradition }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_farouks_mobility"
+	}
+}
+
+shared_focus = {
+	id = TUR_the_future_is_now
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 26
+	y = 2
+
+	prerequisite = {
+		focus = TUR_farouks_mobility
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_future_is_now"
+	}
+}
+
+shared_focus = {
+	id = TUR_the_new_spearhead
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 26
+	y = 3
+
+	prerequisite = {
+		focus = TUR_the_future_is_now
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_new_spearhead"
+	}
+}
+
+shared_focus = {
+	id = TUR_modernize_the_rifles
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 2
+
+	prerequisite = {
+		focus = TUR_farouks_mobility
+		focus = TUR_fauds_firepower
+		focus = TUR_izzeds_tradition
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_modernize_the_rifles"
+	}
+}
+
+shared_focus = { #think of better name
+	id = TUR_expand_military_industry
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 3
+
+	prerequisite = {	focus = TUR_modernize_the_rifles	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_expand_military_industry"
+	}
+}
+
+shared_focus = { #think of better name
+	id = TUR_turkish_rifles_for_turkish_troops
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 4
+
+	prerequisite = {	focus = TUR_expand_military_industry	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_turkish_rifles_for_turkish_troops"
+	}
+}
+
+shared_focus = {
+	id = TUR_modernize_communications
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 20
+	y = 2
+
+	prerequisite = {
+		focus = TUR_farouks_mobility
+		focus = TUR_fauds_firepower
+		focus = TUR_izzeds_tradition
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_modernize_communications"
+	}
+}
+
+shared_focus = {
+	id = TUR_the_invisible_eyes
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 20
+	y = 3
+
+	prerequisite = {	focus = TUR_modernize_communications	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_invisible_eyes"
+	}
+}
+
+shared_focus = {
+	id = TUR_lions_in_officers_clothing
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 19
+	y = 4
+
+	prerequisite = {	focus = TUR_the_invisible_eyes	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_lions_in_officers_clothing"
+	}
+}
+
+shared_focus = {
+	id = TUR_modernize_the_artillery
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 24
+	y = 2
+
+	prerequisite = {
+		focus = TUR_farouks_mobility
+		focus = TUR_fauds_firepower
+		focus = TUR_izzeds_tradition
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_modernize_the_artillery"
+	}
+}
+
+shared_focus = {
+	id = TUR_the_guns_of_the_sultanate
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 24
+	y = 3
+
+	prerequisite = {	focus = TUR_modernize_the_artillery	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_guns_of_the_sultanate"
+	}
+}
+
+shared_focus = {
+	id = TUR_expand_support_companies
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 25
+	y = 4
+
+	prerequisite = {	focus = TUR_the_guns_of_the_sultanate	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_expand_support_companies"
+	}
+}
+
+shared_focus = {
+	id = TUR_the_new_imperial_army
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 22
+	y = 5
+
+	prerequisite = {
+		focus = TUR_expand_support_companies
+		focus = TUR_lions_in_officers_clothing
+		focus = TUR_turkish_rifles_for_turkish_troops
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_expand_support_companies"
+	}
+}
+
+shared_focus = {
+	id = TUR_the_constantinople_military_academy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 21
+	y = 6
+
+	prerequisite = { focus = TUR_the_new_imperial_army }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_constantinople_military_academy"
+	}
+}
+
+shared_focus = {
+	id = TUR_the_weapons_of_the_future
+	icon = GFX_goal_unknown
+	cost = 5.00
+	x = 23
+	y = 6
+
+	prerequisite = { focus = TUR_the_new_imperial_army }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_weapons_of_the_future"
+	}
+}
+
+#prerequisite = {
+#	focus = ENG_The_Oldenburg_Claim
+#}

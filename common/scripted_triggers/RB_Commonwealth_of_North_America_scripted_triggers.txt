@@ -1,0 +1,52 @@
+CNA_has_100_percent_cities = {
+	AND = {
+		controls_state = 381
+		controls_state = 925
+		controls_state = 928
+	}
+}
+CNA_has_66_percent_cities = {
+	OR = {
+		AND = {
+			controls_state = 381
+			controls_state = 925
+			NOT = { controls_state = 928 }
+		}
+		AND = {
+			controls_state = 381
+			NOT = { controls_state = 925 }
+			controls_state = 928
+		}
+		AND = {
+			controls_state = 381
+			controls_state = 925
+			NOT = { controls_state = 928 }
+		}
+	}
+}
+CNA_has_33_percent_cities = {
+	OR = {
+		AND = {
+			controls_state = 381
+			NOT = { controls_state = 925 }
+			NOT = { controls_state = 928 }
+		}
+		AND = {
+			NOT = { controls_state = 381 }
+			controls_state = 925
+			NOT = { controls_state = 928 }
+		}
+		AND = {
+			NOT = { controls_state = 381 }
+			NOT = { controls_state = 925 }
+			controls_state = 928
+		}
+	}
+}
+CNA_has_0_percent_cities = {
+	AND = {
+		NOT = { controls_state = 381 }
+		NOT = { controls_state = 925 }
+		NOT = { controls_state = 928 }
+	}
+}

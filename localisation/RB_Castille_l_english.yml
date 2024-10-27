@@ -1,0 +1,73 @@
+﻿l_english:
+ ##Country Names##
+ CAS_cromwellianism:0 "Crown of Castille"
+ CAS_cromwellianism_DEF:0 "The Crown of Castille"
+ CAS_marxism:0 "Crown of Castille"
+ CAS_marxism_DEF:0 "The Crown of Castille"
+ CAS_liberalism:0 "Crown of Castille"
+ CAS_liberalism_DEF:0 "The Crown of Castille"
+ CAS_republicanism:0 "Crown of Castille"
+ CAS_republicanism_DEF:0 "The Crown of Castille"
+ CAS_parliamentarianism:0 "Crown of Castille"
+ CAS_parliamentarianism_DEF:0 "The Crown of Castille"
+ CAS_administrationism:0 "Crown of Castille"
+ CAS_administrationism_DEF:0 "The Crown of Castille"
+ CAS_absolutism:0 "Crown of Castille"
+ CAS_absolutism_DEF:0 "The Crown of Castille"
+ CAS_despotism:0 "Crown of Castille"
+ CAS_despotism_DEF:0 "The Crown of Castille"
+ CAS_nationalism:0 "Crown of Castille"
+ CAS_nationalism_DEF:0 "The Crown of Castille"
+ CAS_cromwellianism_ADJ:0 "Castillian"
+ CAS_marxism_ADJ:0 "Castillian"
+ CAS_liberalism_ADJ:0 "Castillian"
+ CAS_republicanism_ADJ:0 "Castillian"
+ CAS_parliamentarianism_ADJ:0 "Castillian"
+ CAS_administrationism_ADJ:0 "Castillian"
+ CAS_despotism_ADJ:0 "Castillian"
+ CAS_nationalism_ADJ:0 "Castillian"
+
+ CAS_FRA_administrationism:0 "Kingdom of Castille"
+ CAS_FRA_administrationism_DEF:0 "The Kingdom of Castille"
+ CAS_FRA_administrationism_ADJ:0 "Castillian"
+
+ CAS_FAL_nationalism:0 "Falangist Castille"
+ CAS_FAL_nationalism_DEF:0 "The Castillian State"
+ CAS_FAL_nationalism_ADJ:0 "Castillian"
+
+ CAS_MIL_despotism:0 "State of Castille"
+ CAS_MIL_despotism_DEF:0 "The State of Castille"
+ CAS_MIL_despotism_ADJ:0 "Castillian"
+
+ #Ideas
+ CAS_Fragile_Economy:0 "Fragile Economy"
+ CAS_Fragile_Economy_desc:0 "While Spain is by no means prospering, and is certainly not an industrial powerhouse, it has reached a workable plateau. In order to satisfy London's demands and quotas the kingdom has been forced to bend and contort its economy in order to fulfill what was needed of it. This is something that is survivable, if not ideal.\n\nHowever, these arrangements have brought a considerable tie between Spain and England. It is a common saying among economists that 'Spain follows Britain like a second shadow'. If anything unfortunate were to befall the English economy then whatever passes for a budget in Madrid would cascade with it."
+
+ CAS_British_Garrison:0 "British Garrison"
+ CAS_British_Garrison_desc:0 "In order to ensure a Spain that is subservient and loyal, the British maintain a substantial garrison of troops in every major city in the country. These soldiers are tasked with the hunting of dissidents and the monitoring of the king and his court. They have been very effective in making sure that no rebels can overthrow the pro-British government. Just as importantly, they have made sure the government stays pro-British, too.\n\nOf course, these have led to the Spanish armed forces declining to a state that is downright pitiful. Nobody wants to fight a war, since the British are here to do that for them. Spain has forgotten the horrors of battle, and nothing can make them re-learn it other than war."
+
+ CAS_Questionable_Officer_Loyalty:0 "Questionable Officer Loyalty"
+ CAS_Questionable_Officer_Loyalty_desc:0 "The Castilian general staff, as small as it is, is perhaps the only independent thing in Castile. Castilian Officers do not object - they do as they are ordered, and they organize marches, parades, and generally act as any other loyal British subject would. As every day goes on, this seems to become more and more obvious as a facade. It seems that they act peacefully only because they lack the means to do otherwise.\n\nWhile no major rebellion within the ranks seems likely at this moment, should a major shakeup occur it will be impossible to discern what the officers will choose to do next; but it probably won't be pleasant."
+
+ #leader descs
+ POLITICS_FRANCIS_III_DESC:0 "Upon the death of the last king, archaic succession laws led to Friedrich Maria Albrecht Wilhelm Karl, formerly duke of Teschen, sacrificed his crown for one much larger. He was placed upon the throne of Spain, and where there was once a duke now sat a king.\n\nIt would be a lie to say that Friedrich was underprepared for his position. The man was overprepared, subjecting himself to agonizing study to prepare himself for his new job. His reaction was nearly strong enough to be felt from another room once he figured out that he had greatly over prepared himself for kingship.\n\nThe Habsburg had set himself to watch every facet of Castile, to guide it with his fair hands towards prosperity under the British benefactors. What he found was that his only power was that he had taken the reins of the Burgundian Chains. Kept under close surveillance for most of his tenure with the crown, he was little more than a prisoner in regalia. As the years have worn on, Friedrich approaches the end of his life, unable to do much else than lament his lack of independence."
+
+ #Party Names
+ CAS_cromwellianism_party:0 "PCE"
+ CAS_cromwellianism_party_long:0 "Partido Comunista de España"
+ CAS_marxism_party:0 "PSOE-I"
+ CAS_marxism_party_long:0 "Partido Socialista Obrero Español - Izquierda"
+ CAS_liberalism_party:0 "PSOE-D"
+ CAS_liberalism_party_long:0 "Partido Socialista Obrero Español - Derecha"
+ CAS_republicanism_party:0 "ARB"
+ CAS_republicanism_party_long:0 "Alianza Para Restaurar Los Borbones"
+ CAS_parliamentarianism_party:0 "Corte Real"
+ CAS_parliamentarianism_party_long:0 "Corte Real"
+ CAS_administrationism_party:0 "Corte Real"
+ CAS_administrationism_party_long:0 "Corte Real"
+ CAS_absolutism_party:0 "Corte Real"
+ CAS_absolutism_party_long:0 "Corte Real"
+ CAS_despotism_party:0 "Ejército Real"
+ CAS_despotism_party_long:0 "Ejército Real"
+ CAS_nationalism_party:0 "FE-JONS"
+ CAS_nationalism_party_long:0 "Falange Española de las Juntas de Ofensiva Nacional Sindicalista"

@@ -1,0 +1,28 @@
+#####################
+#### Sweden tree ####
+#####################
+
+focus_tree = {
+	id = sweden
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = SWE
+        }
+    }
+	
+    focus = {
+    	id = SWE_blankfocus
+    	icon = GFX_generic_little_entente
+    	x = 0
+    	y = 2
+    	cost = 5
+    	allow_branch = {
+    		has_country_flag = neversetthisflag
+    	}
+    	completion_reward = {
+    		log = "[GetDateText]: [Root.GetName]: Focus SWE_blankfocus"
+    	}
+    }
+}

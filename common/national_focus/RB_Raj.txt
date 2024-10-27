@@ -1,0 +1,13 @@
+focus_tree = {
+	id = RAJ_AV_Gone
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RAJ
+		}
+	}
+	default = no
+	shared_focus = RAJ_the_king_is_dead
+	continuous_focus_position = { x = 50 y = 2000 }
+}

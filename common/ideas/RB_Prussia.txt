@@ -1,0 +1,157 @@
+ideas = {
+	country = {
+		PRU_Broken_Nation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_Broken_Nation"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PRU_Broken_Nation 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = -0.1
+				political_power_gain = -0.05
+
+			}
+		}
+		PRU_Foreign_Meddling = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_Foreign_Meddling"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PRU_Foreign_Meddling
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.15
+			}
+		}
+		PRU_Stagnant_Industrialisation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_Stagnant_Industrialisation"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = AST_Remnants_Of_The_Squattocracy
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		PRU_Fierce_Opposition_Militias = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_Fierce_Opposition_Militias"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = PRU_Intensely_Opposing_Militias
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		PRU_strike_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_strike_1"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+			}
+		}
+		PRU_strike_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_strike2"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.25
+			}
+		}
+		PRU_labor_relations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_strike_labor_relations"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}	
+	}
+	hidden_ideas = {
+		PRU_ENG_helping = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRU_strike_labor_relations"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+	}
+}

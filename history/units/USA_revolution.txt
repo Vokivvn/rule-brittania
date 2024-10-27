@@ -1,0 +1,730 @@
+﻿division_template = {
+	name = "Worker's Revolutionary Militia"
+	division_names_group = USA_marxist_militia
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	#support = {
+	#	artillery = { x = 0 y = 0 }
+	#}
+}
+
+division_template = {
+	name = "Unionist Revolutionary Militia"
+	division_names_group = USA_socdem_militia
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	#support = {
+	#	artillery = { x = 0 y = 0 }
+	#}
+}
+
+division_template = {
+	name = "American Revolutionary Militia"
+	division_names_group = USA_liberal_militia
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	#support = {
+	#	artillery = { x = 0 y = 0 }
+	#}
+}
+
+division_template = {
+	name = "Southern Revolutionary Militia"
+	division_names_group = USA_conservative_militia
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	#support = {
+	#	artillery = { x = 0 y = 0 }
+	#}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "9450"
+		division_template = "Worker's Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "9450"
+		division_template = "Worker's Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "6710"
+		division_template = "Worker's Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "6710"
+		division_template = "Worker's Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "11654"
+		division_template = "Worker's Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = "11654"
+		division_template = "Worker's Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = "689"
+		division_template = "Worker's Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = "3763" #Hamilton ON
+		division_template = "Worker's Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "3906"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "13253"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "13254"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "715"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "13250"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = "9847"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = "6909"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = "6890"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = "6890"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = "6890"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = "6855"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = "10468"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = "10339"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = "12357"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = "11800"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = "11800"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = "3778"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = "7345"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = "3775"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = "3775"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = "722"
+		division_template = "Unionist Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "3894"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "6911"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "9693"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "598"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "3733"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = "3710"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = "6719"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = "7629"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = "6882"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = "11782"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = "6845"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = "6845"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = "6845"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = "6984"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = "9758"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = "6696"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = "1758"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = "12501"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = "5059"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = "913"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = "10441"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = "9779"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = "3687"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = "3847"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = "1595"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = "1595"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = "12497"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = "3712"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = "7462"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = "11731"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = "3640"
+		division_template = "American Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "6943"
+		division_template = "Southern Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "9876"
+		division_template = "Southern Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "11738"
+		division_template = "Southern Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "3823"
+		division_template = "Southern Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "10412"
+		division_template = "Southern Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = "7643"
+		division_template = "Southern Revolutionary Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=831
+	name="STATE_831"
+	provinces={
+		710 766 1432 1601 1651 4521 4607 7667 10159 10422 11698 11763 12425 
+	}
+	history={
+		owner = CAL
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			10422 5
+		}
+		victory_points = {
+			4607 3
+		}
+		victory_points = {
+			11763 2
+		}
+	}
+	manpower=665766
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

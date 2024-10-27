@@ -1,0 +1,27 @@
+
+state={
+	id=242
+	name="STATE_242"
+
+	history={
+		owner = BLR
+		victory_points = {
+			306 15 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		add_core_of = BLR
+
+	}
+
+	provinces={
+		306 3235 3247 3313 3362 6264 6273 6367 6400 11272 11290 11353 
+	}
+	manpower=1300028
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,43 @@
+
+state={
+	id=18
+	name="STATE_18"
+	manpower = 1370800
+	
+	state_category = city
+
+	history={
+		owner = BRG
+		victory_points = {
+			9490 10
+		}
+		victory_points = {
+			13011 20
+		}
+		victory_points = {
+			3560 2
+		}
+		victory_points = {
+			5291 3
+		}
+		victory_points = {
+			6545 5
+		}
+		victory_points = {
+			9505 3
+		}
+		victory_points = {
+			6531 2
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			air_base = 10
+		}
+		add_core_of = BRG
+	}
+
+	provinces={
+		551 3533 3546 3560 5291 6531 6545 9472 9490 9505 11732 13011 
+	}
+}

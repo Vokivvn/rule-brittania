@@ -1,0 +1,12 @@
+CNA_econ_crash_dynmod = {
+	enable = {
+		has_global_flag = RB_econ_crash
+	}
+	
+	production_speed_buildings_factor = CNA_var_construction_speed
+	production_factory_max_efficiency_factor = CNA_var_prod_eff_cap
+	industrial_capacity_factory = CNA_var_factory_output
+	industrial_capacity_dockyard = CNA_var_factory_output
+	consumer_goods_factor = CNA_var_consumer_goods
+	local_resources_factor = CNA_var_resource_gain
+}

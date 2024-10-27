@@ -1,0 +1,17 @@
+state={
+	id=994
+	name="STATE_994"
+	history={
+		owner = BSP
+		add_core_of = BSP
+		victory_points = {
+			13279 20
+		}
+	}
+	provinces={
+		13279 
+	}
+	manpower=231768
+	state_category=city
+	buildings_max_level_factor=1.000
+}

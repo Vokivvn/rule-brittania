@@ -1,0 +1,2451 @@
+focus_tree = {
+	id = RB_Anti_Atlantika
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AAN
+		}
+	}
+	default = no
+	focus = {
+		id = AAN_THE_ETERNAL_MARCH
+		icon = GFX_focus_prc_infiltration
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = AA_won
+		}
+
+		bypass = {
+			has_country_flag = AA_won
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AAN_man_ttt
+		}
+		x = 14
+		y = 6
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = AAN_PYOTR_SAVITSKY
+		icon = GFX_Cossack_Riders
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = AAN_pyot_won
+		}
+
+		bypass = {
+			has_country_flag = AAN_pyot_won
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SIB_pyo_ttt
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_LEADER
+		}
+		mutually_exclusive = {
+			focus = AAN_NIKOLAI_TRUBETZKOY
+			focus = AAN_NIKOLAI_USTRYALOV
+
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = AAN_WHAT_CAN_WE_DO
+		icon = GFX_VIN_New_Militarism
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_ETERNAL_MARCH
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = AAN_AB_PAKT
+		icon = GFX_focus_purge_bureaucracy
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = AB_Pakt
+				scope = AAN
+			}
+			custom_effect_tooltip = AB_PAKT_UNLOCK
+			set_global_flag = AB_Pakt_set
+			# custom_effect_tooltip = SIB_man_ttt
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_WHAT_CAN_WE_DO
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = AAN_WORLD_WAITING
+		icon = GFX_Generic_Radio_Broadcast
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AAN_strentt
+			add_to_variable = { ab_pakt_strength = 0.01 }
+			# custom_effect_tooltip = SIB_man_ttt
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_AB_PAKT
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = AAN_BRING_THE_CANNONS
+		icon = GFX_Cannon
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 500
+				producer = AAN
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 500
+				producer = AAN
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+				amount = 500
+				producer = AAN
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_WORLD_WAITING
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = AAN_THE_WORLD_REVOLVING
+		icon = GFX_generic_revolutionary_movement
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			army_experience = 40
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_AB_PAKT
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = AAN_BRING_THE_ARMS
+		icon = GFX_generic_advanced_weapons
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2500
+				producer = AAN
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 1000
+				producer = AAN
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_WORLD_REVOLVING
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = AAN_INTERNATIONAL_ASSISTANCE_SYSTEM
+		icon = GFX_Generic_Intelligence_Gathering
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = electronics
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_AB_PAKT
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = AAN_BRING_THE_PLANES
+		icon = GFX_GER_around_the_world_eighty_seconds
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 65
+				producer = AAN
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_0
+				amount = 30
+				producer = AAN
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 100
+				producer = AAN
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_INTERNATIONAL_ASSISTANCE_SYSTEM
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = AAN_ENOUGH
+		icon = GFX_BFE_Rising_Sun
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_BRING_THE_CANNONS
+		}
+		prerequisite = {
+			focus = AAN_BRING_THE_ARMS
+		}
+		prerequisite = {
+			focus = AAN_BRING_THE_PLANES
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = AAN_THE_SPEED_OF_CAR
+		icon = GFX_Automobile_Production
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = motorized_equipment
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 2000
+				producer = AAN
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_PYOTR_SAVITSKY
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = AAN_THE_BEAUTY_OF_WAR
+		icon = GFX_Blood_for_Blood
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 3
+				category = land_doctrine
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_SPEED_OF_CAR
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = AAN_THE_MIGHT_OF_OUR_PEOPLE
+		icon = GFX_Human_tsunami
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = 1200000
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_BEAUTY_OF_WAR
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = AAN_THEY_SNEAK_AROUND
+		icon = GFX_focus_refugee_management
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -10000
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = encryption_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 2
+				category = decryption_tech
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_MIGHT_OF_OUR_PEOPLE
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = AAN_NO_TIME_FOR_MATTERS
+		icon = GFX_Generic_Coffee_Farming
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RB_raise_economic_law = yes
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THEY_SNEAK_AROUND
+		}
+		x = 20
+		y = 12
+
+	}
+	focus = {
+		id = AAN_THE_LEADER
+		icon = GFX_ENG_A_Succession_Crisis
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = AAN.5
+			# custom_effect_tooltip = SIB_man_ttt
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_ENOUGH
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = AAN_NIKOLAI_TRUBETZKOY
+		icon = GFX_Maintain_Cabinet_Loyalty
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = AAN_trub_won
+		}
+
+		bypass = {
+			has_country_flag = AAN_trub_won
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SIB_trub_ttt
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_LEADER
+		}
+		mutually_exclusive = {
+			focus = AAN_NIKOLAI_USTRYALOV
+			focus = AAN_PYOTR_SAVITSKY
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = AAN_FIRST_WORLD_TACTIC
+		icon = GFX_Generic_Colonial_Army
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_anti_anglo = yes
+				}
+				add_opinion_modifier = {
+					target = PREV
+					modifier = AB_FWT
+				}
+				reverse_add_opinion_modifier = {
+					target = AAN
+					modifier = AB_FWT
+				}
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NIKOLAI_TRUBETZKOY
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = AAN_EXPAND_AB_PAKT
+		icon = GFX_Generic_Railroads
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AAN_strentt
+			add_to_variable = { ab_pakt_strength = 0.02 }
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NIKOLAI_TRUBETZKOY
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = AAN_INCREASE_EXPANSION
+		icon = GFX_Generic_Rearmament
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = BFE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NIKOLAI_TRUBETZKOY
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = AAN_THOUGHT_UNSUPERVISED
+		icon = GFX_RAJ_mutual_wiretapping
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.05
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_FIRST_WORLD_TACTIC
+		}
+		prerequisite = {
+			focus = AAN_EXPAND_AB_PAKT
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = AAN_REGRET_NOTHING
+		icon = GFX_VIN_Napalm_Runs
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -25000
+			add_research_slot = 1
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_EXPAND_AB_PAKT
+		}
+		prerequisite = {
+			focus = AAN_INCREASE_EXPANSION
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = AAN_THE_CORONATION
+		icon = GFX_generic_show_trials
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = AAN.7
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THOUGHT_UNSUPERVISED
+		}
+		prerequisite = {
+			focus = AAN_REGRET_NOTHING
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = AAN_BENEVOLENCE_OF_OUR_DEEDS
+		icon = GFX_Glass
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_CORONATION
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = AAN_WORLD_OF_PIGS
+		icon = GFX_generic_no_mans_land
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			four_random_arms_factory = yes
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_CORONATION
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = AAN_INVITE_THE_FRENCH
+		icon = GFX_focus_HRE_study_the_costs
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			add_research_slot = 1
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_BENEVOLENCE_OF_OUR_DEEDS
+		}
+		x = 8
+		y = 12
+
+	}
+	focus = {
+		id = AAN_TRIGGER_HAPPY
+		icon = GFX_Compassionaite_Politics
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			custom_effect_tooltip = AAN_strentt
+			add_to_variable = { ab_pakt_strength = 0.04 }
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_WORLD_OF_PIGS
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = AAN_WORLD_GOLD
+		icon = GFX_focus_HRE_in_the_black
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			four_random_industrial_complex = yes
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_BENEVOLENCE_OF_OUR_DEEDS
+		}
+		prerequisite = {
+			focus = AAN_WORLD_OF_PIGS
+		}
+		x = 11
+		y = 12
+
+	}
+	focus = {
+		id = AAN_DO_NOT_BE_AFRAID
+		icon = GFX_generic_rainy_day
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			every_owned_state = {
+				add_core_of = AAN
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_INVITE_THE_FRENCH
+		}
+		prerequisite = {
+			focus = AAN_WORLD_GOLD
+		}
+		x = 9
+		y = 13
+
+	}
+	focus = {
+		id = AAN_NO_MORE_WARS
+		icon = GFX_GER_invite_russia
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			create_wargoal  = {
+				target = ENG
+				type = annex_everything
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_WORLD_GOLD
+		}
+		prerequisite = {
+			focus = AAN_TRIGGER_HAPPY
+		}
+		x = 13
+		y = 13
+
+	}
+	focus = {
+		id = AAN_WORLD_PROJECTION
+		icon = GFX_GER_monuments_great_war
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			every_state = {
+				add_core_of = AAN
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NO_MORE_WARS
+		}
+		prerequisite = {
+			focus = AAN_DO_NOT_BE_AFRAID
+		}
+		x = 11
+		y = 14
+
+	}
+	focus = {
+		id = AAN_NIKOLAI_USTRYALOV
+		icon = GFX_Death_Calls
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = AAN_ust_won
+		}
+
+		bypass = {
+			has_country_flag = AAN_ust_won
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SIB_ust_ttt
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_LEADER
+		}
+		mutually_exclusive = {
+			focus = AAN_NIKOLAI_TRUBETZKOY
+			focus = AAN_PYOTR_SAVITSKY
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = AAN_WORLDWIDE_MILITIA
+		icon = GFX_Generic_Socialist_Volunteers
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SIB_abvol_ttt
+			add_to_variable = { ab_send_volunteer_size = 8 }
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NIKOLAI_USTRYALOV
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = AAN_SPANISH_LESSONS
+		icon = GFX_focus_HRE_Number_The_Dead
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = industry
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NIKOLAI_USTRYALOV
+		}
+		x = 1
+		y = 8
+
+	}
+	focus = {
+		id = AAN_COIL_AND_RECOIL
+		icon = GFX_Kiss_of_Death
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.1
+				uses = 2
+				category = infantry_tech
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_SPANISH_LESSONS
+		}
+		x = 2
+		y = 9
+
+	}
+	focus = {
+		id = AAN_GETTING_THE_RIDE
+		icon = GFX_Old_Train
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_WORLDWIDE_MILITIA
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = AAN_BIGGER_GUNS
+		icon = GFX_generic_tank_warfare
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = armor
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_COIL_AND_RECOIL
+		}
+		x = 1
+		y = 10
+
+	}
+	focus = {
+		id = AAN_GET_OUT
+		icon = GFX_Pogroms
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -50000
+			add_war_support = 0.1
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_GETTING_THE_RIDE
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = AAN_LEARN_FROM_MEXICO
+		icon = GFX_generic_cultist_inquisitor
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 4
+				category = land_doctrine
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_BIGGER_GUNS
+		}
+		x = 2
+		y = 11
+
+	}
+	focus = {
+		id = AAN_WORLD_NOT_SATISFIED
+		icon = GFX_RAJ_India_Political_Shuffle
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal  = {
+				target = POL
+				type = annex_everything
+			}
+			create_wargoal  = {
+				target = UKR
+				type = annex_everything
+			}
+			create_wargoal  = {
+				target = KAZ
+				type = annex_everything
+			}
+			create_wargoal  = {
+				target = BFE
+				type = annex_everything
+			}
+			create_wargoal  = {
+				target = LIT
+				type = annex_everything
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_GET_OUT
+		}
+		x = 4
+		y = 11
+
+	}
+	focus = {
+		id = AAN_THOUGHT_SOUP
+		icon = GFX_RAJ_India_Worker_Rights
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_LEARN_FROM_MEXICO
+		}
+		x = 1
+		y = 12
+
+	}
+	focus = {
+		id = AAN_THINK_DIFFERENT
+		icon = GFX_Upset_the_Balance
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 1
+				category = nuclear
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_WORLD_NOT_SATISFIED
+		}
+		x = 5
+		y = 12
+
+	}
+	focus = {
+		id = AAN_CANT_DISPERSE_US_ALL
+		icon = GFX_generic_political_chaos
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+			add_popularity = {
+				ideology = cromwellianism
+				popularity = 0.42
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THOUGHT_SOUP
+		}
+		x = 2
+		y = 13
+
+	}
+	focus = {
+		id = AAN_SEND_THE_ARMIES
+		icon = GFX_Gunpoint_Diplomacy
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SIB_abvols_ttt
+			add_to_variable = { ab_send_volunteer_size = 80 }
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THINK_DIFFERENT
+		}
+		x = 4
+		y = 13
+
+	}
+	focus = {
+		id = AAN_SCOUT_AROUND
+		icon = GFX_GER_gun_runners
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			# custom_effect_tooltip = SIB_man_ttt
+			add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = light_air
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 150
+				producer = AAN
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_CANT_DISPERSE_US_ALL
+		}
+		x = 1
+		y = 14
+
+	}
+	focus = {
+		id = AAN_OTHER_WORLDS
+		icon = GFX_ITA_lamp_its_not_me
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AAN_strentt
+			add_to_variable = { ab_pakt_strength = 0.1 }
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_SEND_THE_ARMIES
+		}
+		x = 5
+		y = 14
+
+	}
+	focus = {
+		id = AAN_THE_BOMB
+		icon = GFX_generic_nuclear_warfare
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = nuclear
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NO_TIME_FOR_MATTERS
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
+		id = AAN_A_BOLD_MOVE
+		icon = GFX_Counter_Push
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RB_raise_trade_law = yes
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_THE_BOMB
+		}
+		x = 19
+		y = 14
+
+	}
+	focus = {
+		id = AAN_NO_SENSE
+		icon = GFX_Bear
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				target = KAZ
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ATR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = RVD
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KHR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = UKR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BLR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KAR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LIV
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BFE
+				type = annex_everything
+			}
+
+			create_wargoal = {
+				target = MON
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SIK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MAN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MRV
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ARL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TCS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BKH
+				type = annex_everything
+			}
+
+			create_wargoal = {
+				target = GEO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BSP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = AZR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ARM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MOL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = UKR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = POL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LIT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = COU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = RIG
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_A_BOLD_MOVE
+		}
+		x = 20
+		y = 15
+
+	}
+	focus = {
+		id = ANN_FOLLOW_THE_LEAD
+		icon = GFX_Generic_Espionage
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_corps_commander = {
+				name = "Pyotr Savitsky"
+				picture = "portrait_AAN_Pyotr_Savitskiy.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Pyotr Savitsky"
+				picture = "portrait_AAN_Pyotr_Savitskiy.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Pyotr Savitsky"
+				picture = "portrait_AAN_Pyotr_Savitskiy.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Pyotr Savitsky"
+				picture = "portrait_AAN_Pyotr_Savitskiy.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Pyotr Savitsky"
+				picture = "portrait_AAN_Pyotr_Savitskiy.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Pyotr Savitsky"
+				picture = "portrait_AAN_Pyotr_Savitskiy.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Pyotr Savitsky"
+				picture = "portrait_AAN_Pyotr_Savitskiy.dds"
+				#traits = { reckless  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NO_SENSE
+		}
+		x = 19
+		y = 16
+
+	}
+	focus = {
+		id = AAN_SCYTHIAN_BRIGADES
+		icon = GFX_Lamb_to_The_Slaughter
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			load_oob = "Scythian Brigades"
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = ANN_FOLLOW_THE_LEAD
+		}
+		x = 21
+		y = 17
+
+	}
+	focus = {
+		id = AAN_SUBJUGATION
+		icon = GFX_focus_kick_ladder
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				add_core_of = AAN
+			}
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_NO_MERCY
+		}
+		x = 21
+		y = 19
+
+	}
+	focus = {
+		id = AAN_NO_MERCY
+		icon = GFX_Fist_of_Fury
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_manpower = -25000
+			four_random_industrial_complex = yes
+			four_random_arms_factory = yes
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_SCYTHIAN_BRIGADES
+		}
+		x = 20
+		y = 18
+
+	}
+	focus = {
+		id = AAN_ANTIATLANTIK_FEDERATION
+		icon = GFX_Room_Meeting
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.42
+			}
+			set_party_name = {
+				ideology = nationalism
+				long_name = eurasia_real_time_party_long
+				name = eurasia_real_time_party_long
+			}
+			set_cosmetic_tag = EURASIANS
+			add_political_power = 500
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_SUBJUGATION
+		}
+		x = 20
+		y = 20
+
+	}
+	focus = {
+		id = AAN_MIND_TRAPPED
+		icon = GFX_RAJ_paranoid_investments
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			#has_country_flag = the_judge_arrived
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 2
+		}
+		x = 14
+		y = 6
+		prerequisite = {
+			focus = AAN_ANTIATLANTIK_FEDERATION
+		}
+		x = 19
+		y = 21
+
+	}
+}

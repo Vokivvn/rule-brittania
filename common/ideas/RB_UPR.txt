@@ -1,0 +1,59 @@
+ideas = {
+	country = {
+		UPR_ROMO_LOMO = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UPR_ROMO_LOMO"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		UPR_Modernising_Economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UPR_Modernising_Economy"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.20
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+		
+		UPR_Liberal_Stronghold = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UPR_Liberal_Stronghold"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				liberalism_acceptance = 60
+				republicanism_acceptance = 60
+				parliamentarianism_acceptance = 60
+			}
+		}
+		UPR_British_Economic_Stability = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UPR_British_Economic_Stability"}
+			allowed = { always = no }
+			picture = heart_of_darkness_HOH
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+}	

@@ -1,0 +1,21 @@
+state={
+	id= 896
+	name="STATE_896" # Atlas
+	manpower = 10428
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = MOR
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 0
+		}
+
+	}
+
+	provinces={
+		8088
+	}
+}

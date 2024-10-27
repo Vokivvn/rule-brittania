@@ -1,0 +1,72 @@
+BRG_Constituent_States_Mechanic = {
+	BRG_Constituent_States_Alemannic = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = BRG_Constituent_States_Alemannic_tt
+			hidden_effect = {
+				country_event = {
+					id = burgundy.1
+				}
+			}
+		}
+	}
+	BRG_Constituent_States_Low_Counties = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = BRG_Constituent_States_Alemannic_tt
+			hidden_effect = {
+				country_event = {
+					id = burgundy.1
+				}
+			}
+		}
+	}
+	BRG_Constituent_States_Hauts_de_Bourgogne = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = BRG_Constituent_States_Alemannic_tt
+			hidden_effect = {
+				country_event = {
+					id = burgundy.1
+				}
+			}
+		}
+	}
+	BRG_Constituent_States_Chamagne_and_Lorraine = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = BRG_Constituent_States_Alemannic_tt
+			hidden_effect = {
+				country_event = {
+					id = burgundy.1
+				}
+			}
+		}
+	}
+	BRG_Constituent_States_Alsace = {
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip = BRG_Constituent_States_Alemannic_tt
+			hidden_effect = {
+				country_event = {
+					id = burgundy.1
+				}
+			}
+		}
+	}
+}

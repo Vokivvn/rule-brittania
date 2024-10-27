@@ -1,0 +1,301 @@
+ideas = {
+	country = {
+		COU_british_controlled_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_british_controlled_economy"}
+			allowed = { always = no }
+			picture = british_economy_control
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.50
+				production_factory_start_efficiency_factor = -0.50
+				production_speed_buildings_factor = -0.25
+				political_power_factor = 0.05
+			}
+		}
+		COU_struggling_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_struggling_economy"}
+			allowed = { always = no }
+			picture = british_economy_control
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.40
+				production_factory_start_efficiency_factor = -0.40
+				production_speed_buildings_factor = 0.20
+				political_power_factor = -0.25
+			}
+		}
+		COU_stagnant_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_stagnant_economy"}
+			allowed = { always = no }
+			picture = british_economy_control
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.50
+				production_factory_start_efficiency_factor = -0.50
+				production_speed_buildings_factor = -0.25
+				stability_factor = -0.10
+				political_power_factor = -0.10
+			}
+		}
+		COU_initial_industrialisation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_initial_industrialisation"}
+			allowed = { always = no }
+			picture = british_economy_control
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.20
+				production_factory_start_efficiency_factor = -0.20
+			}
+		}
+		COU_couronian_identity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_couronian_identity"}
+			allowed = { always = no }
+			picture = couronian_identity
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		COU_serfdom_entrenched = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_serfdom_entrenched"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				consumer_goods_factor = -0.05
+			}
+		}
+		COU_serfdom_reformed = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_serfdom_reformed"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.50
+			}
+		}
+		COU_serfdom_enlightened = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_serfdom_enlightened"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = -0.10
+			}
+		}
+		COU_rural_defenses = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_rural_defenses"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.10
+			}
+		}
+		COU_agrarian_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_agrarian_economy"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+		COU_agrarian_economy_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_agrarian_economy_2"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.10
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		COU_agrarian_economy_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_agrarian_economy_3"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+		COU_industrialisation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_industrialisation"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+		COU_sweatshop_crackdown = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_sweatshop_crackdown"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.2
+			}
+		}
+		COU_radio_mitau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_radio_mitau"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		COU_high_quality_production = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_high_quality_production"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		COU_aux_troops = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_aux_troops"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.05
+				training_time_army_factor = -0.10
+			}
+		}
+		COU_duke_authority = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_duke_authority"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.10
+			}
+		}
+		COU_duke_authority_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_duke_authority_2"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.10
+				political_power_factor = 1
+			}
+		}
+		COU_baltic_bank = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_baltic_bank"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		COU_indirect_colonisation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_indirect_colonisation"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = 0.10
+			}
+		}
+		COU_baltic_german_supremacy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_baltic_german_supremacy"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.20
+				stability_factor = 0.15
+			}
+		}
+		COU_baltic_german_supremacy_cgs = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_baltic_german_supremacy_2"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.20
+				stability_factor = 0.15
+				political_power_factor = 1
+			}
+		}
+		COU_baltic_german_supremacy_cgs_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea COU_baltic_german_supremacy_2"}
+			allowed = { always = no }
+			picture = slaves_chain
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.20
+				stability_factor = 0.15
+				political_power_factor = 1
+
+			}
+		}
+	}
+}

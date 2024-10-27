@@ -1,0 +1,1295 @@
+﻿add_namespace = louisiana # used for intro tree and any event that pertains to more than one path
+add_namespace = gglouisiana # used for the governor-general path and interregnum
+add_namespace = demlouisiana # used for democratic louisiana
+add_namespace = applouisiana # used for nationalist louisiana
+add_namespace = soclouisiana # used for cromwellianist louisiana
+
+country_event = { #Something Wrong I Hold My Head
+	id = louisiana.0
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event louisiana.0"
+			kill_country_leader = yes
+		}
+	}
+	title = louisiana.0.t
+	desc = louisiana.0.desc
+	picture = GFX_report_event_louisiana_seal
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Oscar K Allen A Nibba Dead
+		name = louisiana.0.a
+		custom_effect_tooltip = LOU_Cracker_Dead_tt
+		hidden_effect = {
+			create_country_leader = {
+				name = "Nellie Tayloe Ross"
+				#desc =
+				picture = "Portrait_LOU_Nellie_Tayloe_Ross.dds"
+				expire = "1999.12.12"
+				ideology = parliamentarianism_subtype
+				traits = {
+				}
+			}
+			set_politics = {
+				ruling_party = absolutism
+				last_election = "1932.10.12"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			load_focus_tree = {
+				tree = LOU_Death_Of_A_Real_One_Tree
+			}
+			complete_national_focus = LOU_Death_Of_Allen
+		}
+	}
+}
+
+country_event = { #Inspection of the Missouri Provincial Militia
+	id = louisiana.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.1"}
+	title = louisiana.1.t
+	desc = louisiana.1.desc
+	picture = GFX_report_event_swedish_soldier
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Inspect the Militia
+		name = louisiana.1.a
+		country_event = {
+			id = louisiana.2
+			days = 20
+		}
+	}
+	option = { #No Need to inspect them
+		name = louisiana.1.b
+		set_country_flag = LOU_Missouri_Militia_Let_Off
+	}
+}
+
+country_event = { #The Militia is Inspected
+	id = louisiana.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.2"}
+	title = louisiana.2.t
+	desc = louisiana.2.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Disband the Traitors
+		name = louisiana.2.a
+		add_manpower = -4500
+	}
+	option = { #Too much work
+		name = louisiana.2.b
+		set_country_flag = LOU_Missouri_Militia_Let_Off
+	}
+}
+
+country_event = { #The Republic of the Ozarks
+	id = louisiana.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.3"}
+	title = louisiana.3.t
+	desc = louisiana.3.desc
+	picture = GFX_report_event_yugoslavian_cavalry
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { #redo later
+		AND = {
+			country_exists = USA
+			has_country_flag  = LOU_Missouri_Militia_Let_Off
+		}
+	}
+
+	option = { #End this nonsense now
+		name = louisiana.3.a
+		373 = {
+			set_demilitarized_zone = yes
+		}
+		#harry truman will no longer be a general
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+
+country_event = { #The End of the Republic of the Ozarks
+	id = louisiana.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.4"}
+	title = louisiana.4.t
+	desc = louisiana.4.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.4.a
+		373 = {
+			set_demilitarized_zone = no
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = nationalism
+				last_election = "1932.10.12"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "William H. Murray"
+				#desc =
+				picture = "Portrait_LOU_William_H_Murray.dds"
+				expire = "1999.12.12"
+				ideology = nationalism_subtype
+				traits = {
+				}
+			}
+			set_politics = {
+				ruling_party = absolutism
+				last_election = "1932.10.12"
+				election_frequency = 60
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+country_event = { #Kek or Cringe - Sedition and Treason Act
+	id = louisiana.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.5"}
+	title = louisiana.5.t
+	desc = louisiana.5.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Kek
+		name = louisiana.5.a
+		complete_national_focus = LOU_They_Sign_It
+	}
+	option = { #Cringe
+		name = louisiana.5.b
+		complete_national_focus = LOU_It_Dies_In_Committee
+	}
+}
+
+country_event = { #Lester J Dickinson speaks out against the Bill
+	id = louisiana.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.6"}
+	title = louisiana.6.t
+	desc = louisiana.6.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Lets heed his word
+		name = louisiana.6.a
+	}
+	option = { #get the fuck outta here you cracker
+		name = louisiana.6.b
+		#removes Lester J Dickinson as a minister
+		country_event = {
+			id = louisiana.7
+			days = 5
+		}
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { #The open slot
+	id = louisiana.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.7"}
+	title = louisiana.7.t
+	desc = louisiana.7.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Harlan J Bushfield will be sworn in - Conservative
+		name = louisiana.7.a
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.02
+		}
+	}
+	option = { #Harry Hopkins will be sworn in - Liberal
+		name = louisiana.7.b
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.02
+		}
+	}
+	option = { #Ray Lyman Wilbur will be sworn in - Farmers
+		name = louisiana.7.c
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.02
+		}
+	}
+	option = { #Felix Hebert will be sworn in - Absolutism
+		name = louisiana.7.d
+		add_popularity = {
+			ideology = absolutism
+			popularity = 0.02
+		}
+	}
+}
+
+country_event = { #Intro Sporting Event
+	id = louisiana.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.8"}
+	title = louisiana.8.t
+	desc = louisiana.8.desc
+	picture = GFX_report_event_louisiana_basketball
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #penguin
+		name = louisiana.8.a
+	}
+}
+
+country_event = { #Intro Hubey Longo Event
+	id = louisiana.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.9"}
+	title = louisiana.9.t
+	desc = louisiana.9.desc
+	picture = GFX_report_event_yugoslavian_cavalry
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #funny meme man is dead
+		name = louisiana.9.a
+	}
+}
+
+country_event = { #Intro Radio Event
+	id = louisiana.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.10"}
+	title = louisiana.10.t
+	desc = louisiana.10.desc
+	picture = GFX_report_event_louisiana_radio_event
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.10.a
+	}
+}
+
+country_event = { #Norris-Strassen Omnibus - Extremists
+	id = louisiana.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.11"}
+	title = louisiana.11.t
+	desc = louisiana.11.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+			focus = my_focus
+			progress > 0.2
+		}
+	}
+
+	option = { #Allow them to participate
+		name = louisiana.11.a
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = {
+				id = louisiana.12
+				days = 11
+			}
+		}
+	}
+	option = { #Dont deal with Terrorists
+		name = louisiana.11.b
+		add_political_power = -50
+		hidden_effect = {
+			country_event = {
+				id = louisiana.12
+				days = 11
+			}
+		}
+	}
+}
+
+country_event = { #Norris-Strassen Omnibus - Interregnums
+	id = louisiana.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.12"}
+	title = louisiana.12.t
+	desc = louisiana.12.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #End this Nonsense
+		name = louisiana.12.a
+		add_popularity = {
+			ideology = absolutism
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = louisiana.13
+				days = 14
+			}
+		}
+	}
+	option = { #There is no harm in peace and stability
+		name = louisiana.12.b
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				id = louisiana.13
+				days = 14
+			}
+		}
+	}
+}
+
+country_event = { #Norris-Strassen Omnibus - Nobility Restriction
+	id = louisiana.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.13"}
+	title = louisiana.13.t
+	desc = louisiana.13.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Louisiana needs no Nobility
+		name = louisiana.13.a
+		hidden_effect = {
+			country_event = {
+				id = louisiana.14
+				days = 14
+			}
+		}
+
+	}
+	option = { #my buddy needs to be a noble though
+		name = louisiana.13.b
+		hidden_effect = {
+			country_event = {
+				id = louisiana.14
+				days = 14
+			}
+		}
+
+	}
+}
+
+country_event = { #Norris-Strassen Omnibus - Natives appointing Minister of Indian Affairs
+	id = louisiana.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.14"}
+	title = louisiana.14.t
+	desc = louisiana.14.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Only Fair
+		name = louisiana.14.a
+		add_political_power = -100
+		add_stability = 0.01
+	}
+	option = { #No
+		name = louisiana.14.b
+		add_political_power = 10
+	}
+}
+
+country_event = { #Norris-Strassen Omnibus - The Voting Itself
+	id = louisiana.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.15"}
+	title = louisiana.15.t
+	desc = louisiana.15.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Pwned
+		name = louisiana.15.a
+	}
+	option = { #Epic Fail
+		name = louisiana.15.b
+		swap_ideas = {
+			remove_idea = LOU_Idea_Sedition_And_Treason_Act
+			add_idea = LOU_Idea_Norris_Strassen_Bill
+		}
+	}
+}
+
+country_event = { #Election of 1937 - Native Question
+	id = louisiana.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.16"}
+	title = louisiana.16.t
+	desc = louisiana.16.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #They can survive on their own
+		name = louisiana.16.a
+		custom_effect_tooltip = LOU_Conservative_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Cons = 1 }
+		}
+	}
+	option = { #We must Integrate them into Our Society
+		name = louisiana.16.b
+		custom_effect_tooltip = LOU_Liberal_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Libs = 1 }
+		}
+	}
+	option = { #Fuggetabout dem
+		name = louisiana.16.c
+		custom_effect_tooltip = LOU_Farmers_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Farmers = 1 }
+		}
+	}
+}
+
+country_event = { #Election of 1937 - Economic Question
+	id = louisiana.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.17"}
+	title = louisiana.17.t
+	desc = louisiana.17.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #We must rebuild our trade routes
+		name = louisiana.17.a
+		custom_effect_tooltip = LOU_Conservative_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Cons = 1 }
+		}
+	}
+	option = { #We must rebuild ourselves
+		name = louisiana.17.b
+		custom_effect_tooltip = LOU_Liberal_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Libs = 1 }
+		}
+	}
+	option = { #A Radical Solution is Needed
+		name = louisiana.17.c
+		custom_effect_tooltip = LOU_Farmers_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Farmers = 1 }
+		}
+	}
+}
+
+country_event = { #Election of 1937 - Farming Question
+	id = louisiana.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.18"}
+	title = louisiana.18.t
+	desc = louisiana.18.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #The Government would only fuck it up
+		name = louisiana.18.a
+		custom_effect_tooltip = LOU_Conservative_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Cons = 1 }
+		}
+	}
+	option = { #We must aid the Farmers
+		name = louisiana.18.b
+		custom_effect_tooltip = LOU_Liberal_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Libs = 1 }
+		}
+	}
+	option = { #TOP PRIORITY HOLY SHIT THEY ARE THE HEART AND SOUL OF LOUISIANA
+		name = louisiana.18.c
+		custom_effect_tooltip = LOU_Farmers_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Farmers = 1 }
+		}
+	}
+}
+
+country_event = { #Election of 1937 - Eastern Question
+	id = louisiana.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.19"}
+	title = louisiana.19.t
+	desc = louisiana.19.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Fucking Rebel Scum
+		name = louisiana.19.a
+		custom_effect_tooltip = LOU_Conservative_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Cons = 1 }
+		}
+	}
+	option = { #We must stay neutral on the Issue
+		name = louisiana.19.b
+		custom_effect_tooltip = LOU_Liberal_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Libs = 1 }
+		}
+	}
+	option = { #Fuck them
+		name = louisiana.19.c
+		custom_effect_tooltip = LOU_Farmers_Election_tt
+		hidden_effect = {
+			add_to_variable = { Louisiana_Election_Farmers = 1 }
+		}
+	}
+}
+
+country_event = { #Election Day
+	id = louisiana.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.20"}
+	title = louisiana.20.t
+	desc = louisiana.20.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.20.a
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						is_ai = yes
+						has_country_flag = LOU_AI_Elections
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							check_variable = { Louisiana_Election_Farmers > Louisiana_Election_Cons }
+							check_variable = { Louisiana_Election_Farmers > Louisiana_Election_Libs }
+						}
+					}
+					country_event = {
+						id = louisiana.23 #farmer gamering
+						days = 5
+					}
+				}
+				else_if = {
+					limit = {
+						AND = {
+							check_variable = { Louisiana_Election_Libs > Louisiana_Election_Cons }
+							check_variable = { Louisiana_Election_Libs > Louisiana_Election_Farmers }
+						}
+					}
+					country_event = {
+						id = louisiana.22 #liberal dominion
+						days = 5
+					}
+				}
+				else = {
+					country_event = {
+						id = louisiana.21 #conservative gang
+						days = 5
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_completed_focus = LOU_Vote_Farmers
+					}
+					country_event = {
+						id = louisiana.23 #farmer gamering
+						days = 5
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = LOU_Vote_Liberal
+					}
+					country_event = {
+						id = louisiana.22 #liberal dominion
+						days = 5
+					}
+				}
+				else = {
+					country_event = {
+						id = louisiana.21 #conservative gang
+						days = 5
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Conservative Victory
+	id = louisiana.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.21"}
+	title = louisiana.21.t
+	desc = louisiana.21.desc
+	picture = GFX_report_event_louisiana_nellie_tayloe_ross
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #YAY
+		name = louisiana.21.a
+		set_politics = {
+			ruling_party = parliamentarianism
+			last_election = "1937.10.12"
+			election_frequency = 60
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = { #Liberal Victory
+	id = louisiana.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.22"}
+	title = louisiana.22.t
+	desc = louisiana.22.desc
+	picture = GFX_report_event_louisiana_george_w_norris
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.22.a
+		set_politics = {
+			ruling_party = liberalism
+			last_election = "1937.10.12"
+			election_frequency = 60
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = { #Farmers Victory
+	id = louisiana.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.23"}
+	title = louisiana.23.t
+	desc = louisiana.23.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.23.a
+		set_politics = {
+			ruling_party = republicanism
+			last_election = "1937.10.12"
+			election_frequency = 60
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = { #
+	id = louisiana.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.24"}
+	title = louisiana.24.t
+	desc = louisiana.24.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.24.a
+
+	}
+	option = { #
+		name = louisiana.24.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.25"}
+	title = louisiana.25.t
+	desc = louisiana.25.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.25.a
+
+	}
+	option = { #
+		name = louisiana.25.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.26"}
+	title = louisiana.26.t
+	desc = louisiana.26.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.26.a
+
+	}
+	option = { #
+		name = louisiana.26.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.27"}
+	title = louisiana.27.t
+	desc = louisiana.27.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.27.a
+
+	}
+	option = { #
+		name = louisiana.27.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.28"}
+	title = louisiana.28.t
+	desc = louisiana.28.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.28.a
+
+	}
+	option = { #
+		name = louisiana.28.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.29"}
+	title = louisiana.29.t
+	desc = louisiana.29.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.29.a
+
+	}
+	option = { #
+		name = louisiana.29.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.30"}
+	title = louisiana.30.t
+	desc = louisiana.30.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.30.a
+
+	}
+	option = { #
+		name = louisiana.30.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.31"}
+	title = louisiana.31.t
+	desc = louisiana.31.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.31.a
+
+	}
+	option = { #
+		name = louisiana.31.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.32"}
+	title = louisiana.32.t
+	desc = louisiana.32.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.32.a
+
+	}
+	option = { #
+		name = louisiana.32.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.33"}
+	title = louisiana.33.t
+	desc = louisiana.33.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.33.a
+
+	}
+	option = { #
+		name = louisiana.33.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.34"}
+	title = louisiana.34.t
+	desc = louisiana.34.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.34.a
+
+	}
+	option = { #
+		name = louisiana.34.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.35"}
+	title = louisiana.35.t
+	desc = louisiana.35.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.35.a
+
+	}
+	option = { #
+		name = louisiana.35.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.36"}
+	title = louisiana.36.t
+	desc = louisiana.36.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.36.a
+
+	}
+	option = { #
+		name = louisiana.36.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.37"}
+	title = louisiana.37.t
+	desc = louisiana.37.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.37.a
+
+	}
+	option = { #
+		name = louisiana.37.b
+
+	}
+}
+
+country_event = { #
+	id = louisiana.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.38"}
+	title = louisiana.38.t
+	desc = louisiana.38.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.38.a
+
+	}
+	option = { #
+		name = louisiana.38.b
+
+	}
+}
+
+country_event = { #debug event for getting rid of the demil zones
+	id = louisiana.900
+	immediate = {log = "[GetDateText]: [Root.GetName]: event louisiana.900"}
+	title = louisiana.900.t
+	desc = louisiana.900.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = louisiana.900.a
+		372 = {
+			set_demilitarized_zone = no
+		}
+		374 = {
+			set_demilitarized_zone = no
+		}
+		383 = {
+			set_demilitarized_zone = no
+		}
+		384 = {
+			set_demilitarized_zone = no
+		}
+		388 = {
+			set_demilitarized_zone = no
+		}
+		389 = {
+			set_demilitarized_zone = no
+		}
+		815 = {
+			set_demilitarized_zone = no
+		}
+		816 = {
+			set_demilitarized_zone = no
+		}
+		818 = {
+			set_demilitarized_zone = no
+		}
+		903 = {
+			set_demilitarized_zone = no
+		}
+	}
+}
+
+country_event = { #Lib1 Focus
+	id = demlouisiana.0
+	title = demlouisiana.0.t
+	desc = demlouisiana.0.desc
+	picture = GFX_report_event_louisiana_seal
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Focus On War
+		name = demlouisiana.0.a
+		load_focus_tree = {
+			tree = LOU_Lib1War_Tree
+		}
+	}
+	option = { # Focus On Econ
+		name = demlouisiana.0.b
+		#load_focus_tree = {
+		#	tree = LOU_Lib1War_Tree
+		#}
+	}
+	option = { # Focus On Politics
+		name = demlouisiana.0.c
+		#load_focus_tree = {
+		#	tree = LOU_Lib1War_Tree
+		#}
+	}
+}
+
+country_event = { #Reaching out to the Americans parenthesis yuck parenthesis
+	id = demlouisiana.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.1"}
+	title = demlouisiana.1.t
+	desc = demlouisiana.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = demlouisiana.1.a
+		USA = {
+			country_event = {
+				id = demlouisiana.2
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #The Americooooonts get the letter
+	id = demlouisiana.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.2"}
+	title = demlouisiana.2.t
+	desc = demlouisiana.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #set up the talks
+		name = demlouisiana.2.a
+		LOU = {
+			country_event = {
+				id = demlouisiana.4
+				days = 10
+			}
+		}
+	}
+	option = { #ignore the louisianas lol get efucked
+		name = demlouisiana.2.b
+		LOU = {
+			country_event = {
+				id = demlouisiana.3
+				days = 20
+			}
+		}
+	}
+}
+
+country_event = { #THE UNITED STATES IGNORED ME MOM LIKE SHE WAS THERE AND I WAVED AT HER AND SHE DID NOTHING
+	id = demlouisiana.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.3"}
+	title = demlouisiana.3.t
+	desc = demlouisiana.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #I HATE YOU AMERICA DIE
+		name = demlouisiana.3.a
+		complete_national_focus = LOU_Lib1War_Dove_Ignored
+		add_political_power = -100
+	}
+}
+
+country_event = { #The Missouri Talks
+	id = demlouisiana.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.4"}
+	title = demlouisiana.4.t
+	desc = demlouisiana.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = demlouisiana.4.a
+
+	}
+}
+
+country_event = { #
+	id = demlouisiana.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.5"}
+	title = demlouisiana.5.t
+	desc = demlouisiana.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = demlouisiana.5.a
+
+	}
+	option = { #
+		name = demlouisiana.5.b
+
+	}
+}
+
+country_event = { #
+	id = demlouisiana.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.6"}
+	title = demlouisiana.6.t
+	desc = demlouisiana.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = demlouisiana.6.a
+
+	}
+	option = { #
+		name = demlouisiana.6.b
+
+	}
+}
+
+country_event = { #
+	id = demlouisiana.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.7"}
+	title = demlouisiana.7.t
+	desc = demlouisiana.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = demlouisiana.7.a
+
+	}
+	option = { #
+		name = demlouisiana.7.b
+
+	}
+}
+
+country_event = { #
+	id = demlouisiana.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.8"}
+	title = demlouisiana.8.t
+	desc = demlouisiana.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = demlouisiana.8.a
+
+	}
+	option = { #
+		name = demlouisiana.8.b
+
+	}
+}
+
+country_event = { #
+	id = demlouisiana.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.9"}
+	title = demlouisiana.9.t
+	desc = demlouisiana.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = demlouisiana.9.a
+
+	}
+	option = { #
+		name = demlouisiana.9.b
+
+	}
+}
+
+country_event = { #
+	id = demlouisiana.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event demlouisiana.10"}
+	title = demlouisiana.10.t
+	desc = demlouisiana.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = demlouisiana.10.a
+
+	}
+	option = { #
+		name = demlouisiana.10.b
+
+	}
+}

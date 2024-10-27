@@ -1,0 +1,215 @@
+﻿################################################
+#ECONOMIC CRASH OF 1937
+
+add_namespace = engeco
+
+country_event = { #stocks dip as george die
+	id = engeco.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.1"}
+	title = engeco.1.t
+	desc = engeco.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.1.a
+		add_political_power = -10
+	}
+}
+
+country_event = { #stocks recover in anticipation for Eddie coronation
+	id = engeco.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.2"}
+	title = engeco.2.t
+	desc = engeco.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.2.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #stocks have gone stale in the aftermath of Eddie's assassination
+	id = engeco.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.3"}
+	title = engeco.3.t
+	desc = engeco.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.3.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #START OF ECONOMIC CRISIS - something
+	id = engeco.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.4"}
+	title = engeco.4.t
+	desc = engeco.4.desc
+	#picture = 
+	immediate = { #block for other countries
+		hidden_effect = {
+			CNA = {
+				country_event = {
+					id = CNA.30
+					days = 1
+				}
+			}
+			SHW = {
+				country_event = {
+					id = SHW.2
+					days = 2
+				}
+			}
+			BRA = {
+				country_event = {
+					id = bra.14
+					days = 5
+				}
+			}
+			THR = {
+				country_event = {
+					id = THR_collapse.1
+					days = 7
+				}
+			}
+			SER = {
+				country_event = {
+					id = srbija.11
+					days = 35
+				}
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.4.a
+		add_political_power = 5
+		set_global_flag = RB_econ_crash
+	}
+}
+
+country_event = { #Friday 8th crash
+	id = engeco.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.5"}
+	title = engeco.5.t
+	desc = engeco.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.5.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #monday is fine
+	id = engeco.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.6"}
+	title = engeco.6.t
+	desc = engeco.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.6.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #everything fine
+	id = engeco.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.7"}
+	title = engeco.7.t
+	desc = engeco.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.7.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #new drop, oh oh
+	id = engeco.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.8"}
+	title = engeco.8.t
+	desc = engeco.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.8.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #industrialists say everything is fine
+	id = engeco.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.9"}
+	title = engeco.9.t
+	desc = engeco.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.9.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #monay crash
+	id = engeco.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.10"}
+	title = engeco.10.t
+	desc = engeco.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.10.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #hudson bay goes bankrupt
+	id = engeco.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event engeco.11"}
+	title = engeco.11.t
+	desc = engeco.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = engeco.11.a
+		add_political_power = 5
+	}
+}

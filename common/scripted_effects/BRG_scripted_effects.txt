@@ -1,0 +1,42 @@
+BRG_send_lib_invitations = {
+	ENG = {
+		country_event = { id = burgundy.16 days = 7}
+	}
+	DEN = {
+		country_event = { id = burgundy.16 days = 7}
+	}
+	SWE = {
+		country_event = { id = burgundy.16 days = 7}
+	}
+	THR = {
+		country_event = { id = burgundy.16 days = 7}
+	}
+	POR = {
+		country_event = { id = burgundy.16 days = 7}
+	}
+	HAN = {
+		country_event = { id = burgundy.16 days = 7}
+	}
+	CZE = {
+		country_event = { id = burgundy.16 days = 7}
+	}
+}
+
+BRG_anglo_congress = {
+	DEN = {
+		add_to_variable = { DEN_NOR_liberal_popularity = 1 }
+		add_to_variable = { DEN_NOR_conservative_popularity = -1 }
+		add_to_variable = { DEN_Whig_popularity_var = 2 }
+	}
+}
+BRG_french_congress = {
+	
+}
+BRG_german_congress = {
+	CZE = {
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.02
+		}
+	}
+}

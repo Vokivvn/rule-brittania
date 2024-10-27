@@ -1,0 +1,26 @@
+state={
+	id=919
+	name="STATE_919"
+	provinces={
+		1843 
+	}
+	
+	history={
+		owner = FLO
+		add_core_of = FLO
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			1843 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			1843 20 
+		}
+	}
+	
+	manpower=163089
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

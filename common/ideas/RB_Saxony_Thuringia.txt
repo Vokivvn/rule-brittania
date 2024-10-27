@@ -1,0 +1,70 @@
+ideas = {
+	country = {
+		THR_decentralized_principals = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea THR_decentralized_principals"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = THR_Decentralized_Principalities
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10 
+				political_power_gain = 0.25
+				army_org_factor = -0.15 
+			}
+		}
+
+		THR_saxon_supremacy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea THR_saxon_supremacy"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = THR_Saxon_Supremacy
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+				local_building_slots_factor = 0.5 
+			}
+		}
+
+		THR_scourge_of_nordhausen = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea THR_scourge_of_nordhausen"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = THR_The_Scourge_of_Nordhausen
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.1
+				army_core_defence_factor = 0.1
+				army_morale_factor = -0.1
+			}
+		}
+
+	}
+}

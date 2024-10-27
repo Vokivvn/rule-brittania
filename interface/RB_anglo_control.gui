@@ -1,0 +1,62 @@
+guiTypes = {
+	containerWindowType = {
+		name="anglo_control_container_pop"
+		position={ x=990 y=2 }
+		size = { width=100%% height=100%% }
+		iconType={
+			name = "anglo_control_pop_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=2 }
+		}
+		iconType ={
+			name = "anglo_control_pop_icon"
+			spriteType = "GFX_army_experience"
+			position = { x= 4 y = 6 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "anglo_control_pop_tt"
+			pdx_tooltip_delayed = "anglo_control_pop_long_tt"
+		}
+		instantTextBoxType = {
+			name = "anglo_control_text_pop"
+			position = { x= 20 y = 6 }
+			font = "hoi_18mbs"
+			text = "anglo_control_text_pop_text"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "anglo_control_pop_tt"
+			pdx_tooltip_delayed = "anglo_control_pop_long_tt"
+		}
+	}
+	containerWindowType = {
+		name="anglo_control_container_land"
+		position={ x=1062 y=2 }
+		size = { width=100%% height=100%% }
+		iconType={
+			name = "anglo_control_land_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=2 }
+		}
+		iconType ={
+			name = "anglo_control_land_icon"
+			spriteType = "GFX_army_experience"
+			position = { x= 4 y = 6 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "anglo_control_land_tt"
+			pdx_tooltip_delayed = "anglo_control_land_long_tt"
+		}
+		instantTextBoxType = {
+			name = "anglo_control_text_land"
+			position = { x= 20 y = 6 }
+			font = "hoi_18mbs"
+			text = "anglo_control_text_land_text"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "anglo_control_land_tt"
+			pdx_tooltip_delayed = "anglo_control_land_long_tt"
+		}
+	}
+}

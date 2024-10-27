@@ -1,0 +1,764 @@
+﻿l_english:
+ ##Starting Screen Desc##
+ ENG_RULEBRITANNIA_DESC:0 "From its small home off the coast of Europe, the British have extended their hands over all four corners of the world, modernising the "barbaric savages" in their path. Now, the British Empire is at its height. Not one piece of Earth has escaped the flag of the British Empire, nor the jackboots of the British armies. However, the British Empire may soon find itself in the same state that Rome found itself in; broken, shattered, defeated, and burning. It is up to only God if the British Empire can survive, and may He save the king."
+ 
+ ##LEADER DESCRIPTIONS##
+ 
+ POLITICS_George_V_DESC:0 "George V of the House of Windsor is the most successful man in the history of humanity. The Romans? Weaklings. The Ottomans? Conquered. The Chinese of the East? Puppets. There is no one to compare to the great British empire. He himself oversaw the last step in the British worldwide control in the Anglo-Mexican War, and in his 26 year reign, many changes have come to the British Isles that have only cemented his absolute popularity with the people. His worker friendly attitudes have brought him the support of the working class, and the economic prosperity of the nation has grown exponentially.\n\nBut across the world, from Dublin to Philadelphia, from Wuchang to Buenos Aires, from the deserts of the Sahara to the river Amazon, people speak of uprising, of revolution, of the tyranny of the Anglo and the eventual collapse of their hegemony. And, to a more importantly, the King’s health is declining, and many doubt that he’ll survive the year..."
+ POLITICS_HENRY_IX_DESC:0 "Henry IX is not a man of grand ambitions. In his youth, he served in the army but was put on a collar by the fact that he was royalty, and thus forced to not be subject to the cruelties of war and the battlefield. Indeed, as quickly as Henry had found a love in Kenya while shooting big game in the form of famous aviator Beryl Markham, he had lost it, forced by his status as royalty, once again, to end it. A growing bitterness of the Empire and the ball and chain it has placed around his leg has culminated in wavering motivation to be at his best.\n\nNot that it has stopped him fully. Though he feels dragged down by status as Prince, now King, Henry is a man of good faith, good optimism, and good manners. He enjoys any social interaction and any outgoing he can get with others, though is not as interested in the administrative and bureaucratic parts of it. Above all, Henry IX wishes to rid himself of the red tape that follows him wherever he goes, and would much rather employ those time-consuming tasks to people that are more capable and more willing than him. For better or worse."
+ POLITICS_NICHOLAS_I_DESC:0 ""
+ POLITICS_ALBERT_I_DESC:0 ""
+ POLITICS_GEORGE_VI_DESC:0 ""
+ POLITICS_MARY_III_DESC:0 ""
+ POLITICS_EDWARD_IX_DESC:0 ""
+ 
+ ##Country Names##
+ ENG_cromwellianism:0 "Union of the British Isles"
+ ENG_cromwellianism_DEF:0 "The Union of the British Isles"
+ ENG_marxism:0 "British Empire"
+ ENG_marxism_DEF:0 "The British Empire"
+ ENG_liberalism:0 "British Empire"
+ ENG_liberalism_DEF:0 "The British Empire"
+ ENG_republicanism:0 "British Empire"
+ ENG_republicanism_DEF:0 "The British Empire"
+ ENG_parliamentarianism:0 "British Empire"
+ ENG_parliamentarianism_DEF:0 "The British Empire"
+ ENG_administrationism:0 "British Empire"
+ ENG_administrationism_DEF:0 "The British Empire"
+ ENG_absolutism:0 "British Empire"
+ ENG_absolutism_DEF:0 "The British Empire"
+ ENG_despotism:0 "British Empire"
+ ENG_despotism_DEF:0 "The British Empire"
+ ENG_nationalism:0 "Britannia"
+ ENG_nationalism_DEF:0 "The State of Britannia"
+ ENG_cromwellianism_ADJ:0 "British"
+ ENG_marxism_ADJ:0 "British"
+ ENG_liberalism_ADJ:0 "British"
+ ENG_republicanism_ADJ:0 "British"
+ ENG_parliamentarianism_ADJ:0 "British"
+ ENG_administrationism_ADJ:0 "British"
+ ENG_despotism_ADJ:0 "British"
+ ENG_absolutism_ADJ:0 "British"
+ ENG_nationalism_ADJ:0 "Britannian"
+
+ ##Party Names##
+ ENG_cromwellianism_party:0 "CPBL"
+ ENG_cromwellianism_party_long:0 "Cromwellian Party for British Liberation"
+ ENG_marxism_party:0 "UFB"
+ ENG_marxism_party_long:0 "United Front of Britain"
+ ENG_marxism_mary_party:0 "Fabians"
+ ENG_marxism_mary_party_long:0 "The Fabian Society"
+ ENG_liberalism_party:0 "Labour"
+ ENG_liberalism_party_long:0 "Labour Party"
+ ENG_republicanism_party:0 "Whigs"
+ ENG_republicanism_party_long:0 "Liberal Party"
+ ENG_parliamentarianism_party:0 "Tories"
+ ENG_parliamentarianism_party_long:0 "Conservative Party"
+ ENG_administrationism_party:0 "CK"
+ ENG_administrationism_party_long:0 "Coalition for the King"
+ ENG_absolutism_party:0 "CK"
+ ENG_absolutism_party_long:0 "Coalition for the King\n§gThe Coalition for the King is the most powerful political party in Britain, commanding both an absolute majority in Parliament and the favor of the reigning monarch. An umbrella organization, it covers monarchist circles, apolitical nobles, high Tories, corporate interests, and most governors within the empire, and most of the middle-class and upper class. Its main significance, however, is its willingness to provide services as a rubber-stamp for the monarch, rather than acting as an independent party. This attitude has left Parliament useless as an entity to keep a check on the monarch and has rendered it pointless to the electorate, thus making it ineffectual in every imaginable way. Regardless of these shortcomings in the system, the Coalition for the King remains dominant in British politics.§!"
+ ENG_despotism_party:0 "CK"
+ ENG_despotism_party_long:0 "Coalition for the King"
+ ENG_nationalism_party:0 "EP"
+ ENG_nationalism_party_long:0 "Empire Party"
+
+ #Ideas
+ eng_irish_unrest:0 "Irish Unrest"
+ eng_irish_unrest_desc:0 "The Union of Great Britain, Ireland, and the United Netherlands has been more beneficial for some than others. While we have thrown the Irish token autonomy and other small pieces of legislature, independence movements persist. These movements have been growing increasingly violent in the past few decades, with several members of the government fearing that these cries for independence may come to a head in the near future."
+ eng_second_anglo_mexican_war:0 "The Second Anglo-Mexican War"
+ eng_second_anglo_mexican_war_desc:0 "Britannia's most recent venture to secure one of the last independent regions on Earth. What we thought would be a quick and easy war, has lead to a costly 10 year guerilla conflict, putting a dent in the supplies of our mighty armed forces and our monetary reserves. While the conflict has inflicted a blow to our economy, the region is ours at last. Now we must find a way to make up for the lost cash."
+ eng_britannia_rules_the_waves:0 "Britannia Rules The Waves"
+ eng_britannia_rules_the_waves_desc:0 "From Celtic tribes on a barren island to the unquestioned rulers of the planet, the British have risen far. Our enemies have been crushed and mankind has been liberated. Our mighty fleet and ground forces protect his majesty's empire. \n\nFrom the coastlines of North America, to the fertile lands of Central Europe, from the ports of East Asia to the sands of the Sahara, and from the jungles of the Amazon to the Australian outback, let it be sung; \"Rule, Britannia! Britannia, rule the waves! Britons never, never, never shall be slaves!\""
+ eng_sidelined_parliament:0 "Sidelined Parliament"
+ eng_sidelined_parliament_desc:0 "The Parliament of Great Britain has found itself in a rather peculiar situation. While our monarch still reigns as our unquestioned leader, the establishment has found itself slowly edging in on the power-base. For now, however, the Parliament's control remains marginal."
+ eng_king_george_v:0 "King George V"
+ eng_king_george_v_desc:0 "King George V, our glorious King! The Emperor of India, the God-chosen royal! He has united the globe under our mighty empire, ushering in a new era of peace and prosperity for mankind. God save the King!"
+ eng_great_profits:0 "Charter Company Dividends"
+ eng_great_profits_desc:0 "The King, and thus, the country, receive massive dividends from companies chartered from all corners of the earth, which go a long way towards helping the British economy."
+ 
+ ##Decisions##
+ ENG_Mary_Colonial_Reorganisation:0 "Colonial Reorganisation"
+ ENG_Mary_Colonial_Reorganisation_desc:0 "The Earl of Calais has some very liberal ideas on how to run the colonies of the empire. Rather than rule from London, as many support, he proposes the unique idea of giving Britain's colonies native rule. However, the Earl has more up his sleeve than allowing these nations freedom...
+ ENG_MColReorg_Mesopotamia:0 "Reorganise Mesopotamia"
+ ENG_MColReorg_Mesopotamia_tt:0 "We shall create a democratic, constitutional monarchy in Mesopotamia."
+ ENG_MColReorg_BEAC:0 "Reorganise the East Asia Company"
+ ENG_MColReorg_BEAC_tt:0 "We shall let the Chinese be in charge of Shanghai."
+ ENG_MColReorg_Palestine:0 "Reorganise Palestine"
+ ENG_MColReorg_Palestine_tt:0 "We shall hand over control of Palestine to the more...extreme Arabs.\n§RBe warned that this will not bode well for our popularity at home!§!"
+
+ ENG_the_investigation:0 "The Investigation"
+ ENG_the_investigation_desc:0 "With pressure mounting from parliament, a public demanding justice, and the eyes of the world watching, the investigation into the King's murderer will not be an easy one. But as many have said over the years, we must keep calm and carry on, if we desire to solve this ghastly crime."
+ INV_the_murder_weapon:0 "The Murder Weapon"
+ INV_the_motive:0 "The Motive"
+ INV_the_assassins_day:0 "The Assassin's Day"
+ INV_the_assassins_associates:0 "The Assassin's Associates"
+ INV_the_kings_day:0 "The King's Day"
+ INV_the_assassins_work:0 "The Assassin's Writing"
+ INV_the_assassins_invitation:0 "The Invitation"
+ INV_the_events_security:0 "The Event's Security"
+
+ ENG_collected_evidence:0 "Collected Evidence"
+ ENG_collected_evidence_desc:0 "Major clues collected through the investigation will be stored here, for easy access should you wish to review them."
+ Evidence_the_murder_weapon:0 "Review the Murder Weapon"
+ Evidence_the_murder_weapon_desc:0 "If we so desire, we can review the information collected on the §RAssassin's gun§!"
+ Evidence_the_assassin:0 "Review the Suspect"
+ Evidence_the_assassin_desc:0 "If we so desire, we can review the information collected on the §RAssassin§!"
+ Evidence_the_motive:0 "Review the Motive"
+ Evidence_the_motive_desc:0 "If we so desire, we can review the information collected on the §RAssassin's Motive§!"
+ Evidence_the_event:0 "Review the Event"
+ Evidence_the_event_desc:0 "If we so desire, we can review the information collected on the §RScene of the Crime§!"
+ Evidence_the_crime:0 "Review the Crime Itself"
+ Evidence_the_crime_desc:0 "If we so desire, we can review the information collected on the §RCrime Itself§!"
+ 
+ #Missions#
+ INV_end_of_the_investigation:0 "Time Till the Investigation Ends"
+ INV_end_of_the_investigation_desc:0 "Parliament has given us a fixed amount of time to investigate the murder, at the end of which we will have to come before them and present our findings. It is almost certain that they intend to elect the new Monarch after our presentation."
+
+ #Events
+ england.1.t:0 "State Of The Empire" 
+ england.1.desc:0 "The Sun never sets on the British Empire, and it isn't setting anytime soon. Under the rule of Emperor George V,  Mexico fell, and with it, British hegemony has been secured. Because of this, nations once undeveloped and backward have seen the illuminating light of civilization and our western way of life. The peoples and goods of all nations flow into London, a sign of the truly international scale of our Empire.\n\nLondon is not the only part of our Empire that has benefitted from our global expansion. The nations of Asia have finally opened themselves to trade, allowing their culture and economies to flourish. In Africa and South America, the British government has brought modernized bureaucracies and safety to the once war-torn nations of these massive continents. Britain has established a natural order in Europe, saving thousands of future generations from the horrors of war and destruction.\n\nThe new year dawns upon the Empire, and with the guidance of George V, let us hope it is a better one."
+ england.1.a:0 "Rule, Britannia!"
+ 
+ england.2.t:0 "Death Of The King" 
+ england.2.desc:0 "His Majesty's old age became more and more apparent to close friends and relatives throughout the past few days, but when Sandringham estate sent for a doctor immediately, no one expected the grim news that would follow. His Majesty, George V, Emperor of the British Empire, has passed away due to natural causes in his sleep.\n\nWindsor Castle has yet to announce an official date for the funeral, but multiple political leaders, family members, and close friends have already visited London in preparation for it. Despite the expected political fallout caused by his death, not many people have commented on the situation, creating a united sense of mourning throughout the empire. Parliament has been adjourned , and prime ministers of dominions across the commonwealth have released press statements in solidarity with the English people.\n\nEdward, George's son, has already been seen shaking hands with prime minister Hogg, possibly to discuss his future coronation in the wake of these events. Hopefully, with Edward at the throne, he can continue his father's success."
+ england.2.a:0 "The King is dead, long live the King!"
+
+ england.3.t:0 "The Funeral of a Former Emperor" 
+ england.3.desc:0 "The day began on a somber note as the big ben ran a total of 70 times at 10 Am, in honor of the 70 years of the deceased emperor's life. In St George's Chapel at Windsor Castle relatives and loyal subjects of our majesty, George V turned out to say their final goodbyes to the long-reigning monarch of over 25 years. Heartfelt Eulogies and stories of our majesty's greatness were shared, with Mary's eulogy bringing even the coldest figures to tears. After heartfelt goodbyes and a period of great mourning, the casket was loaded onto a carriage, and the procession began.\n\nThousands turned out to see their Emperor, the same Emperor that cemented Britain's position in the world while also reforming the empire into one that benefitted all its subjects, now laid dead. George, Mary, and Henry followed the escort, along with counts and dukes from other parts of the empire, although some members of the royal family weren't visibly present. Eventually after 2 hours of public mourning, our majesty George V returned to St George's chapel and was left to his final resting place. The flag flies at half-mast, as the nation attempts to heal from this catastrophic day. The question of succession and all other news has been left unimportant, as a nation, we have only one thing to say."
+ england.3.a:0 "Goodbye, your Majesty..."
+
+ england.4.t:0 "Remembering the former King" 
+ england.4.desc:0 "King-Emperor George V's excellent stewardship during his reign has earned him the respect of many political experts, with some people even believing that his recent rule surpassed Queen Victoria's in greatness. Under his benevolent rule, the British Empire truly became a global one, with all the nations and realms of the earth subjugated to the beck and call of Westminster. But a monarch cannot triumph with military might alone; His majesty opened up the political realm to allow his constituency greater freedoms in petitioning, in representation, and government. Thanks to his ability to entrench British rule and his before-mentioned political reforms, Britain prospered, leading to an economic golden age throughout the empire. It is to him Britain owes for the success their empire has had in the past few decades- expert from Time magazine recent issue.\n\nWith the British state of mourning concluded, it seems the nation has come to celebrate George's life. Already radio and editorial specials are being released to commemorate the emperor's life; In some dominions, George's birthday became a national holiday, and portraits of his majesty are hung in honor of the golden age he created. For the final time, England and its subjects cried out-\n\n"God save the King!""
+ england.4.a:0 "He was one of our finest..."
+
+ england.5.t:0 "A Shot Heard Around the World"
+ england.5.desc:0 "Earlier this evening, incoming King Edward was visiting an upper class restaurant, making connections with the higher echelons of British society and preparing to assume the social obligations of being King. Among the attendees were several rich businessmen, influential journalists, and other royals. One of the lesser-known attendees was an Irish journalist, who had expressed an interest in working with the new King to improve relations and encourage communication. Just barely earning an invite, he had been ignored by Edward for much of the event until he finally elbowed his way between two steel tycoons. He reportedly interrupted another conversation, askng for the King's attention before saying \"Hold on, I need to give you my card.\" He reached into his pocket and whipped out a small pistol, shooting Edward through the eye before being tackled to the ground and apprehended. \n\nThe incoming King-Emperor is in the hospital in critical condition, and doctors reportedly claim his chances to be slim. The nation and parliament alike pray for his recovery, but preparations are being made for what was thought to be nigh-impossible: a succession crisis. Should the heir die so soon after his father, there will be nobody directly in line to inherit, and the next king will be decided by parliament."
+ england.5.a:0 "The King is dead, long live the..."
+
+ england.6.t:0 "The King's Condition Worsens" #?
+ england.6.desc:0 "After a week, the hospital was relatively quiet again. At most, you'd have some minor politicians wander around, waiting to give the king his best wishes. It was an unusual sight, a couple of weeks ago his father being hospitalized brought the eyes of the nation, but now poor Edward remained in the hospital unknown and forgotten.\n\nOf course, as the Prime Minister of Britain and a loyal friend to his father, I made sure to pay this boy the respect he deserved. Even if he couldn't appreciate it, I had the feeling that my presence gave some solace to the staff and the little family that would pop in from time to time. Every day I'd try to pry the doctors or nurses for more information, when would he wake up? How is his condition? Will he be able to return to royal duties? Usually, these rightful concerns would be brushed off, as if I was the only person there that truly understood the importance of his majesty's health.\n\nBut today I didn't even get those half-truths and bits of pity. The doctor sat me down and explained the situation to me. He's not waking up, at least, not anytime soon. I asked if there's any operation, any miracle that can save him. I already knew the answer but I didn't want to believe it. At least I got an answer, no matter how grim.\n\nIt's funny, the sympathy he showed me, the one glimmer of humanity that I've seen in the past few weeks concerning the monarch, maybe he thought I was some relative who was close to him or an old family friend. Truth is I barely knew him, but I respected his father and the work he did.\n\nOf course, once the news came out to the circles of aristocrats and successors, all of a sudden the hospital was flooded again with relatives and politicians. It just reminded me of what George told me when he was discussing the future of Britain, one without him a few months ago. He used some french saying, but I could tell what it meant even without a mastery of the language. All I can think now is he was right."
+ england.6.a:0 "Apres moi, le deluge"
+ 
+ england.7.t:0 "Edward's Assassin Killed in Transit!" #succession event needs loc
+ england.7.desc:0 ""
+ england.7.a:0 "This complicates things..."
+
+ england.8.t:0 "Albert Victor Returns from India" 
+ england.8.desc:0 "Albert Victor, the Viceroy of India, exits the ship, his wizened frame stepping down the gangboard slowly and carefully. His wife, Margaret of Prussia, follows in tow, seemingly rushing down to her husband. The couple steps off the gangplank before immediately being assaulted by leagues of reporters, tall and short, brown haired and black haired.\n\n“Your Highness, is it true that rebellion is out of control in India?”\n\nAlbert Victor continues walking as the reporters crowd around him.\n\n“Your Highness, what of the accusations of your links to drug cartels in Eastport and Sicily?”\n\nHe pushes through the crowd, remaining stoically silent.\n\n”Your Highness, how do you feel about your brother’s death?”\n\nAlbert Victor stops, and walks over to the gentleman who asked the question.\n\n”I was heartbroken upon my brother’s death. Despite our bad blood in the past, he was my brother nonetheless, a strong man, and a proud man. It truly shook me to my core-”\n\n“He wouldn’t leave his room for a day!” Margaret interjects, her shrill German tone ringing out. Albert Victor glanced at her in disdain, before continuing.\n\n“As I was saying, it truly shook me to my core. But now what Britain needs is a strong leader. One who can bring a new hope, who can see disasters before the come. Really, it’s food for thought. Good afternoon.”\n\nAlbert Victor tips his hat and walks carefully into the waiting car. The car drives away, as the reporters all disperse, going back to their paper’s headquarters."
+ england.8.a:0 "We welcome him home!"
+
+ england.15.t:0 "The Oldenburg Triumph" #succession event needs loc
+ england.15.desc:0 ""
+ england.15.a:0 "The Empire shall be perserved through strength!"
+
+ england.16.t:0 "The End of a Journey" #succession event needs loc
+ england.16.desc:0 ""
+ england.16.a:0 "The Empire shall be perserved through duty!"
+
+ england.17.t:0 "The Expected Outcome" #succession event needs loc
+ england.17.desc:0 ""
+ england.17.a:0 "The Empire shall be perserved through tradition!"
+
+ england.18.t:0 "The Welcomed Outcome" #succession event needs loc
+ england.18.desc:0 ""
+ england.18.a:0 "The Empire shall be perserved through reform!"
+
+ england.19.t:0 "The Unprecedented Outcome" #succession event needs loc
+ england.19.desc:0 ""
+ england.19.a:0 "The Empire shall be perserved through Marxism!"
+
+ england.20.t:0 "The Unthinkable Option" #succession event needs loc
+ england.20.desc:0 ""
+ england.20.a:0 "Good Lord how did this happen...?"
+
+ england.21.t:0 "Brother and Sister" #succession event needs loc
+ england.21.desc:0 ""
+ england.21.a:0 "As if this entire ordeal wasn't complicated enough..."
+
+ england.22.t:0 "The Two Dukes"
+ england.22.desc:0 "The news of AV’s arrest spread like wildfire across the continent, with every man from the lowly porter to the high Prince of Hohenzollern soon learning of the fate of British Imperialisms’ face. The only surprise was how long it took for people to attempt to fill the vacuum. \n\nHe came as a returning war hero, crossing the Channel onboard a British dreadnaught. Dressed in the uniform of a field marshal with a chest full of medals, he was met at the docks by the army high command in person. Posing for a photo with the hero of the Anglo-Turkish war, Sir. Douglas Haig, he gave the press a few remarks on the announcement of his entrance into the developing succession crisis. Speaking of military glory, peace through strength, and ending the \"Catholic Fifth Column\", the Grand Duke of Oldenburg quickly established himself as a fitting successor for the now imprisoned Prince of India. \n\nIt was only several days later that another man arrived at the docks. \n\nArriving on the King of Portugal’s formerly missing yacht, the man strode out dressed in a fine royal uniform to meet with the small entourage who had arrived to meet him. Speaking through a translator, he too announced his intention to contest the throne and gave a speech riddled with outrageous claims and stretches of the imagination. Returning Britain to the true church, digging up Cromwell’s corpse and trying him for crimes against humanity, and emancipating the Irish... all this and more were promised by the Duke of Braganza within his first hour in Britain. The public reaction to this has been... mixed."
+ england.22.a:0 "They can't be serious..."
+ 
+ england.23.t:0 "Mountbattens Lend their Support to Mary" #succession event needs review
+ england.23.desc:0 "Mary, one of the stranger candidates up as a possibility for the new Monarch, has recently had a boost in her efforts due to support lent to her by the Mountbatten household. With her marriage to Louis Mountbatten, it only makes sense for them to, and with their large influence within the aristocracy and well to do members of the British empire, it will surely give a boost to her chances at holding the Crown, much to the chagrin of the current Royal Family, seeing her candidacy as nothing but a front for the Mountbattens to increase her power."
+ england.23.a:0 "Those Mountbattens are up to something..."
+ 
+ england.24.t:0 "Socialites Speak up for George" #succession event needs review
+ england.24.desc:0 "In a smoky room in Soho, a common meeting place for the more 'liberal' gentlemen and women, the topic has slowly drifted towards politics, and especially the topic of the Succession Crisis.\n\nWhile all have many differing opinions on who should succeed, the colonial man arguing for Albert Victor, the strong armed military man arguing for Nikolaus, and the man who has had a bit too much to drink for Duarte, it appears that a majority fall on supporting George. To most of the partygoers it makes sense. Most of them have seen him around this very club after all, and he came across as a charming, friendly fellow who would finally loosen the stuffy old country up a bit.\n\nThey go home happy, and at least a few Lords and MPs attending the party have had their minds changed, specifically to voting for George."
+ england.24.a:0 "That's one way to win support..."
+ 
+ england.25.t:0 "Henry Meets with the Public" #succession event needs loc
+ england.25.desc:0 ""
+ england.25.a:0 "A true people's King!"
+ 
+ england.26.t:0 "Daily Mail Announces Support for Albert Victor"
+ england.26.desc:0 "Men and women throughout the empire woke up this morning to a loud and brash headline on the front of the Daily Mail: HURRAH FOR THE VICEROY! After the announcement of Albert Victor’s candidacy for the throne, it appears that “Britain’s favourite newspaper” as it enthusiastically calls itself has jumped at the chance for the brother of the late King George to take the throne of the United Kingdom.\n\nThe article itself notes his “strong, conservative values” and “his cracking job at managing rebellion in India”. The more knowledgeable in the inner working of the London press circle will see this as the work of the owner of the Daily Mail, Baron Rothermere, who took complete control of the newspaper after the death of his brother Baron Northcliffe. Rothermere is known for his sympathetic outlook to the more authoritarian sides of British politics, denouncing the Labour party as “The Lunatic Left” and seeing the suggestion that the Coalition for the King could be dissolved as “populist poppycock”.\n\nIt is said among the press circles that the Mail’s sister tabloid The Daily Mirror will be hosting a story tomorrow about the conspiratorial freemasonry of Albert Victor’s nephew George. It appears that Albert Victor has a clear ally in the battle for the crown."
+ england.26.a:0 "A sure boon to his claim!"
+ 
+ england.27.t:0 "British Generals voice Support for Nikolaus" #succession event needs loc
+ england.27.desc:0 ""
+ england.27.a:0 "A strong hand to guide us through the worst."
+ 
+ england.28.t:0 "Duarte Announces Plans to End the Schism" #succession event needs loc
+ england.28.desc:0 ""
+ england.28.a:0 "How does this guy even have a chance?"
+ 
+ england.29.t:0 "A Discussion with Henry" #succession event needs loc
+ england.29.desc:0 ""
+ england.29.a:0 "Well spoken and reasonable."
+ 
+ england.30.t:0 "George Discusses his Candidacy" #succession event needs loc
+ england.30.desc:0 ""
+ england.30.a:0 "A slightly strange fellow, but a Decent one nontheless."
+ 
+ england.31.t:0 "An Interview with Mary" #succession event needs loc
+ england.31.desc:0 ""
+ england.31.a:0 "I thought they were interviewing the wife, not the husband..."
+ 
+ england.32.t:0 "Daily Mail Publishes Interview with Albert Victor" #succession event needs loc
+ england.32.desc:0 ""
+ england.32.a:0 "A true son of the Empire!"
+ 
+ england.33.t:0 "Military Paper Interviews Nikolaus"
+ england.33.desc:0 "The Army News, a quintessential reading experience for all things regarding Britain’s might, has recently held an interview with the up-and-running candidate Nikolaus, Duke of Oldenburg. One of the immediate questions posed to the potential Emperor of the World was his background. That, of course, being of a Teuton. Nikolaus quickly assured the interviewer that since the might of Britannia had conquered his native homeland, then surely fate had decreed it that way, meaning that Germans of all backgrounds, including his own, had to clearly see that their loyalties should lie to Britain first, and then their own lands.\n\nAfterwards, questions regarding the hegemony of the Empire and its forces were met with enthusiastic response, citing that the airforce is the "glare", the ground army is the "whip", and that the navy is the "jackboot", all of which must be used in equal parts to achieve total supremacy over any people that dare raise the mast of rebellion against us. Though, during the interview, Nikolaus seemed the most favorable towards the ground army, discussing the plans of expanding the global garrisons and investing into artillery and modernized vehicles.\n\nHis economic sentiments were touched upon briefly, with Nikolaus discussing that Britain is the heart of the world, therefore it must treat its subjects as a stepping stone towards eternal prosperity, but for matters of the internal workings of Britain's industry, Nikolaus simply waved his hand and said that what worked before would work again, signifying a continuation of King George V’s policies.\n\nThe circulation of this interview has been weak, as The Army News remains only a mildly popular newspaper agency, with a vast majority of its readers already subscribing to militarist thought - though the interview has been praised by some as "a good old chap ready to toughen the Empire's skin" and to "sharpen its fangs once more"."
+ england.33.a:0 "A real military man."
+ 
+ england.34.t:0 "The Ramblings of Duarte" #succession event needs loc
+ england.34.desc:0 ""
+ england.34.a:0 "What is up with this guy?"
+ 
+ england.35.t:0 "Mary and George meet with the Lords" #succession event needs loc
+ england.35.desc:0 ""
+ england.35.a:0 "George seems rather pleasant"
+ england.35.b:0 "Mary seems like a delightful choice."
+ 
+ england.36.t:0 "Henry visits his brother" #succession event needs loc
+ england.36.desc:0 ""
+ england.36.a:0 "A kind soul, he is."
+ 
+ england.37.t:0 "Albert Victor Returns" #succession event needs loc
+ england.37.desc:0 ""
+ england.37.a:0 "He certainly has a score to settle."
+ 
+ england.38.t:0 "Nikolaus and Duarte meet with the Lords" #succession event needs loc
+ england.38.desc:0 ""
+ england.38.a:0 "Nicky is Truly British at Heart"
+ england.38.b:0 "Duarte is... interesting."
+ 
+ england.39.t:0 "Royals Hint Support of Henry" #succession event needs loc
+ england.39.desc:0 ""
+ england.39.a:0 "No surprises there."
+ 
+ england.40.t:0 "Colonial Administrators Pen Letter of Support for Albert" #succession event needs loc
+ england.40.desc:0 ""
+ england.40.a:0 "Looking out for their own."
+
+ england.41.t:0 "Resignation of Prime Minister Hogg" #succession event needs loc
+ england.41.d:0 ""
+ england.41.a:0 "The Marquess of Salisbury, a dependable man"
+ england.41.b:0 "The Viscount Simon, the sort of reform we need!"
+
+ england.42.t:0 "The Moment of Truth" #succession event needs loc
+ england.42.d:0 ""
+ england.42.a:0 "Parliament shall decide their fates."
+
+ ##############################################################################################################################
+ #MALTA CHAIN#####   ##  #     # ####     ###     ######   ##  #     # ####     ###     ####   ##  #     # ####     ###     ##
+ #MALTA CHAIN##### # # # # ### # ###### ##### ### ###### # # # # ### # ###### ##### ### #### # # # # ### # ###### ##### ### ##
+ #MALTA CHAIN##### ## ## #     # ###### #####     ###### ## ## #     # ###### #####     #### ## ## #     # ###### #####     ##
+ #MALTA CHAIN##### ##### # ### # ###### ##### ### ###### ##### # ### # ###### ##### ### #### ##### # ### # ###### ##### ### ##
+ #MALTA CHAIN##### ##### # ### #    ### ##### ### ###### ##### # ### #    ### ##### ### #### ##### # ### #    ### ##### ### ##
+ ##############################################################################################################################
+
+ england.51.t:0 "The Crown Colony of Malta"
+ england.51.desc:0 "A pearl in the middle of the Mediterranean, Malta is a beautiful place with great beaches and clear water. Malta is also the headquarters of the Mediterranean Navy. It has functioned as that since the mid 1800s when the Knights of Malta were kicked out by said navy. The position proved to crucial to be run by some strange catholic cult. Indeed, only the Brits were considered worthy of ruling the islands.\n\nThe islands is run as a crown colony, meaning that in addition to a governor general acting on behalf of the Monarchy, there is a democratically elected government. This system has been in place for slightly more than 20 years, and for this whole period, Lord Gerald Strickland has served as prime minister for his Constitution Party, a pro-british party.\n\nMost inhabitants on the island are relatively content, they can speak their Maltese in school and all official letters are also in Maltese, an Italian upper class has lived on the island for ages, and serve as higher ranking officials and positions in banks and companies and so on."
+ england.51.a:0 "We sure have a wide and great empire!"
+
+ england.52.t:0 "Port City Projects on Malta"
+ england.52.desc:0 "The British Navy stationed in Malta needs fuel, it needs rations, it need supplies. To get all this for the navy requires ports, shipping and so on. To do this you need labour, a lot of labour, and these labourers need homes. We must build these, suburbs surrounding the ports where all the related organizations and subdivisions of the Navy administration on Malta can draw workers from.\n\nSadly, the local Maltese don't see it this way, they see this project as a cruel plan to colonize Malta for good, by importing English workers to take over their cities. These claims are absolutely false, but the projects have become an issue for the upcoming election.\n\nOur man, Gerald Strickland, is a sure ally on this issue, although we could have him reduce his plans, that might be beneficial."
+ england.52.a:0 "This is a matter of imperial integrity"
+ england.52.b:0 "A compromise should be found"
+ england.52.c:0 "It is better not to anger the locals too much"
+
+ england.53.t:0 "Language Rights on Malta"
+ england.53.desc:0 "The upper class speak Italian, we speak English, the rest speak Maltese. Out of old traditions the legal language has been Italian and this spread into higher administration, but the schools dont teach Italian, which creates a conondrum. Only the wealthy can afford to sail to Italy to study and learn Italian, while learning the arts and crafts of statemanship. Changing from Italian in courts seems like it would anger the Italians, and we need them for our administration.\n\nA few different solutions make themselves clear:"
+ england.53.a:0 "Strickland can decide"
+ england.53.b:0 "Maltese and English is enough"
+ england.53.c:0 "It should fine with Italian too"
+
+ england.54.t:0 "Sabotage on Malta"
+ england.54.desc:0 "We have been expanding the port in Malta for a while now, but under cover of darkness, two italian-speaking youngsters brought a bunch of dynamite and blew up the recently installed crane. This shipment had just arrived and the budget cannot allow the shipping of a new crane for a while, at least not if we need to expect more attacks like these.\n\nPolice General Howard Chaff-Stoneward has said that until they have figured out if the two kids were part of something larger, they cannot guarantee the security on current budgets, as they suspect furhter attacks."
+ england.54.a:0 "Increase guarding until it is finished"
+ england.54.b:0 "We cannot allow these sorts of attacks, at all.\nHalt the construction"
+
+ england.55.t:0 "Election on Malta"
+ england.55.desc:0 "The day has come for Malta to choose their new prime minister, in what has been the most heated election campaign in Malta's history. Many believe Strickland is sure to win, as he always do. But we live in exciting times, revolting times, and Enrico Mizzi might just have managed to hit a nerve in the Maltese consciousness, arguing for more self rule, respect for the Italian minority and fiscial independece. Who will win? We shall see."
+ england.55.a:0 "Time to count!"
+
+ england.56.t:0 "Strickland won on Malta"
+ england.56.desc:0 "It had to be this way, didnt it? Strickland won again, even against a fiercer competition he managed to draw the victory card again. This is good news and we can continue business as usual."
+ england.56.a:0 "Congratulations"
+
+ england.57.t:0 "The National Party Won on Malta"
+ england.57.desc:0 "For the first time in Malta's history, someone other than Strickland is the Prime Minister. Elected on a platform of promoting Italian as the lingua franca on the island and stopping the port suburbs, Mizzi's victory will require more attention from us."
+ england.57.a:0 "We should have helped Strickland more"
+
+ england.58.t:0 "Nationalist Coup on Malta"
+ england.58.desc:0 "Seemingly out of no where, a minor official in the ministry of defense has taken over government. Enrico Mizzi has been arrested and is awaiting trial. Our garrisoned forces were overrun and forced to surrender. A strange group of young students have apparantly planned long for this day, and seized the opportunity this morning, and we received this telegram earlier:\n\nTo George Windsor.\n\nThe Italian State is a free state, independent and sovereign.\nThis is truth and cannot be negotiatied. As Premier of the Italian State, I, Carmelo Borg Pisani, demand your recognition of our sovereignty. Best wishes, Carmelo Borg Pisani."
+ england.58.a:0 "Stupid fools"
+
+ ##############################################################################################################################
+ #MALTA CHAIN#####   ##  #     # ####     ###     ####   ##  #     # ####     ###     ####   ##  #     # ####     ###     ##
+ #MALTA CHAIN##### # # # # ### # ###### ##### ### #### # # # # ### # ###### ##### ### #### # # # # ### # ###### ##### ### ##
+ #MALTA CHAIN##### ## ## #     # ###### #####     #### ## ## #     # ###### #####     #### ## ## #     # ###### #####     ##
+ #MALTA CHAIN##### ##### # ### # ###### ##### ### #### ##### # ### # ###### ##### ### #### ##### # ### # ###### ##### ### ##
+ #MALTA CHAIN##### ##### # ### #    ### ##### ### #### ##### # ### #    ### ##### ### #### ##### # ### #    ### ##### ### ##
+ ##############################################################################################################################
+
+ england.1936.t:0 "The 1936 New Year’s Address"
+ england.1936.desc:0 "This year, King George V has given his New Year’s address to the people of the British Empire, as per tradition. His speech, given through radio, was transmitted all across the globe to Britain’s subjects, from the Amazon Rainforest to the Himalayan Mountains, to the Cape of Africa, and as far as the Far Eastern Orient. All people of this Earth tuned in to his speech, making it the most listened to broadcast of all time. \nHis Majesty's speech was short and sweet, mentioning the state of the Empire and how prosperous these last years have been. The King seemed optimistic and nearly every person tuning in shared his positive outlook on the future. After all, Britain stands as the sole power in the world, and the planet his her dominion. We have nothing to be concerned about, for our subjects adore us, the economy is strong, and the Union Jack flies high over every capitol. \nAt the end of the broadcast, the King bid everyone good night and signed off. And as such, every English citizen slept well, confident in the state of affairs in the world. But not everybody was asleep, for the night is the time for those most dissatisfied with British rule to conspire for their liberation."
+ england.1936.a:0 "May Britannia rule for a thousand years!"
+ england.1937.t:0 "The State of the Economy"
+ england.1937.desc:0 "Today, King George V had a formal meeting with the Chancellor of the Exchequer, economic advisors, and leading industrialists to gauge the state of the economy of the British Empire. As expected, the economy is still climbing after a long period of growth and the general opinion is that the market will stay strong for decades. \nDue to the unique position of the Empire owning every corner of the world, the economy is completely in London’s hands. Every good sold and every product produced in some way benefits the people of the United Kingdom, and the markets have luxury goods that all classes can afford. As a result, many British citizens are content with the state of things and live happy, stress free lives, not having to worry about financial security. And as for the colonies, they can not only export goods at predetermined prices, but in some of the more civilized parts can also import manufactured products from across the globe. \nDue to this news being predicted well in advance, no one has any plans to change the way the economy runs for a long while. As such, the King quickly concluded the meeting on a high note. Now we can just sit back and taste the fruits of our labours."
+ england.1937.a:0 "Here is to another fifty years!"
+ england.1938.t:0 "Profit from Across the Empire"
+ england.1938.desc:0 "The many chartered companies that operate across our dominions have been doing incredibly well over the past few years, but this year they have exceeded expectations. From Hudson Bay to East Asia, business has been booming and the money has been flowing. With our colonies prospering alongside us, and exports up more than they ever have been, this years dividends have been through the roof, much to the pleasure of British businessmen, politicians, and colonial administrators. \nWith King George V personally signing off on the United Kingdom’s take of the profits, everyone is confident that this new revenue will be put to great use at home and across the Empire. His Majesty has been quite pleased with this development and wished the companies the best of luck in matching these results next year. He even got to keep some dividends that the Royal Family received for investing in the charters years ago, giving the King one more thing to be satisfied with this year."
+ england.1938.a:0 "Money well earned indeed"
+ england.1939.t:0 "King George V Speaks to Parliament"
+ england.1939.desc:0 "With the new year upon us and the nation rejoicing, the King has decided to deliver a speech to the House of Lords, controlled completely by the Coalition of the King, in regards to the future of the Empire and more specifically the path the administration will take moving onward. \nDue to the authority invested in the King, he alone can decide the fate of Great Britain over the course of the next year. Many are expecting him to keep the status quo, with him as the absolute monarch and Parliament doing as the King would want. This would keep us on the path we are currently taking and will not shake the boat. Alternatively, rumour has it that the King may take a few steps back from power and allow Parliament to operate more independently do to his old age and inability to administrate as effectively as he once could. While this would certainly be unusual, it too wouldn't really change daily life in England too drastically. \nThen of course, there is always the chance that the King, growing old as he is, may make a powerplay and attempt to assert even more dominance over political affairs. While it may grind the gears of the representatives, they would be powerless to stop him."
+ england.1939.a:0 "His Majesty is satisfied with our current course"
+ england.1939.b:0 "The King steps back to maintain an effective government"
+ england.1939.c:0 "These fools must learn their place, and more importantly obey their King"
+ 
+ #Investigation Events#
+ eng_inv.1.t:0 "Arrival on the Scene"
+ eng_inv.1.d:0 ""
+ eng_inv.1.a:0 "Lead the way"
+
+ eng_inv.2.t:0 "Searching the Scene"
+ eng_inv.2.d:0 ""
+ eng_inv.2.a:0 "An Indian postcard, how strange..."
+
+ eng_inv.3.t:0 "Last Second Discoveries"
+ eng_inv.3.d:0 ""
+ eng_inv.3.a:0 "Royal whisky, how on earth did he get his hands on this?"
+
+ eng_inv.4.t:0 "The Initial Arrest"
+ eng_inv.4.d:0 ""
+ eng_inv.4.a:0 "All evidence points to the Duke of Glouchester"
+ eng_inv.4.b:0 "The Prince of India is our prime suspect"
+
+ eng_inv.5.t:0 "The Investigation Begins"
+ eng_inv.5.d:0 ""
+ eng_inv.5.a:0 "We have alot of ground to cover..."
+
+ eng_inv.6.t:0 "The Murder Weapon"
+ eng_inv.6.d:0 ""
+ eng_inv.6.a:0 "Reach out to Walther, they may know more"
+
+ eng_inv.7.t:0 "The Motive"
+ eng_inv.7.d:0 ""
+ eng_inv.7.a:0 "He left a widow behind, perhaps she knows more..."
+
+ eng_inv.8.t:0 "The Assassin's Day"
+ eng_inv.8.d:0 ""
+ eng_inv.8.a:0 "He met with some drinking buddies... interesting"
+
+ eng_inv.9.t:0 "The Assassin's Friends"
+ eng_inv.9.d:0 ""
+ eng_inv.9.a:0 "Looks like this is going to take some legwork..."
+
+ eng_inv.10.t:0 "A Day in the Life"
+ eng_inv.10.d:0 ""
+ eng_inv.10.a:0 "Imagine if the tabeloids catch wind of this..."
+
+ eng_inv.11.t:0 "The Assassin's Writing"
+ eng_inv.11.d:0 ""
+ eng_inv.11.a:0 "Search the archives, their must be more!"
+
+ eng_inv.12.t:0 "The Invitation"
+ eng_inv.12.d:0 ""
+ eng_inv.12.a:0 "We must find this J.D. Ripper..."
+
+ eng_inv.13.t:0 "The Security"
+ eng_inv.13.d:0 ""
+ eng_inv.13.a:0 "Off duty soldiers... sounds like something worth investigating"
+
+ eng_inv.14.t:0 "Visiting Mauser"
+ eng_inv.14.d:0 ""
+ eng_inv.14.a:0 "Well... we already knew most of that"
+
+ eng_inv.15.t:0 "Conclusions - The Murder Weapon"
+ eng_inv.15.d:0 ""
+ eng_inv.15.a:0 "Seems like the weapon came from the continent"
+ eng_inv.15.b:0 "Seems like the weapon came from the colonies"
+
+ eng_inv.16.t:0 "Meeting the Widow"
+ eng_inv.16.d:0 ""
+ eng_inv.16.a:0 "Hm, how perculiar..."
+
+ eng_inv.17.t:0 "Conclusions - The Motive"
+ eng_inv.17.d:0 ""
+ eng_inv.17.a:0 "The man was a bomb throwing radical!"
+ eng_inv.17.b:0 "We don't have a clear motive..."
+
+ eng_inv.18.t:0 "The Pub Crawl"
+ eng_inv.18.d:0 ""
+ eng_inv.18.a:0 "What an odd bunch of friends for an assassin"
+
+ eng_inv.19.t:0 "Conclusions - The Day Before"
+ eng_inv.19.d:0 ""
+ eng_inv.19.a:0 "He must have received instructions from within the government!"
+ eng_inv.19.b:0 "He must have received instructions from within the military!"
+
+ eng_inv.20.t:0 "From Door to Door"
+ eng_inv.20.d:0 ""
+ eng_inv.20.a:0 "Quite an odd bunch..."
+
+ eng_inv.21.t:0 "Conclusions - Assassin's Associates"
+ eng_inv.21.d:0 ""
+ eng_inv.21.a:0 "He was clearly against the Empire"
+ eng_inv.21.b:0 "He was, strangely enough, an Imperial fanatic!"
+
+ eng_inv.22.t:0 "The Hunt for the Dancer"
+ eng_inv.22.d:0 ""
+ eng_inv.22.a:0 "Blimey..."
+
+ eng_inv.23.t:0 "Conclusions - Edward's Day"
+ eng_inv.23.d:0 ""
+ eng_inv.23.a:0 "This doesn't really tell us anything..."
+
+ eng_inv.24.t:0 "The Archives"
+ eng_inv.24.d:0 ""
+ eng_inv.24.a:0 "He sure had a lot to say..."
+
+ eng_inv.25.t:0 "Conclusions - The Assassin's Work"
+ eng_inv.25.d:0 ""
+ eng_inv.25.a:0 "He was clearly a domestic writer through and through"
+ eng_inv.25.b:0 "For what little he wrote, the colonies seem to have fascinated him"
+
+ eng_inv.26.t:0 "The Search for Mr. Ripper"
+ eng_inv.26.d:0 ""
+ eng_inv.26.a:0 "He seems to have dissappeared..."
+
+ eng_inv.27.t:0 "Conclusions - The Invitation"
+ eng_inv.27.d:0 ""
+ eng_inv.27.a:0 "It must have been a Royal"
+ eng_inv.27.b:0 "It could have been anyone of them, except Duarte!"
+
+ eng_inv.28.t:0 "The Soldiers"
+ eng_inv.28.d:0 ""
+ eng_inv.28.a:0 "These are our countries finest?"
+
+ eng_inv.29.t:0 "Conclusions - Security"
+ eng_inv.29.d:0 ""
+ eng_inv.29.a:0 "The Royal Guardsmen must have let him pass..."
+ eng_inv.29.b:0 "One of the former soldiers must have been bribed..."
+
+ eng_inv.30.t:0 "The Investigations Emd"
+ eng_inv.30.d:0 ""
+ eng_inv.30.a:0 "We stand by our previous arrest"
+ eng_inv.30.c:0 "Sadly, we got it wrong..."
+
+ eng_inv.31.t:0 "The True Mastermind"
+ eng_inv.31.desc:0 ""
+ eng_inv.31.a:0 "The Duke of Glouchester"
+ eng_inv.31.b:0 "The Grand Duke of Oldenburg"
+ eng_inv.31.c:0 "The Duke of Braganza"
+ eng_inv.31.d:0 "The Prince of India"
+ eng_inv.31.e:0 "The Duke of Kent"
+ eng_inv.31.f:0 "The Countess of Harewood"
+
+ eng_inv.32.t:0 "The Matter of the Weapon"
+ eng_inv.32.d:0 ""
+ eng_inv.32.a:0 "RIGHT CHOICE"
+ eng_inv.32.b:0 "wrong choice"
+
+ eng_inv.33.t:0 "The Matter of the Connection"
+ eng_inv.33.d:0 ""
+ eng_inv.33.a:0 "RIGHT CHOICE"
+ eng_inv.33.b:0 "WRONG CHOICE"
+
+ eng_inv.34.t:0 "The Matter of the Motive"
+ eng_inv.34.d:0 ""
+ eng_inv.34.a:0 "RIGHT CHOICE"
+ eng_inv.34.b:0 "WRONG CHOICE"
+
+ eng_inv.35.t:0 "The Case Cracked"
+ eng_inv.35.d:0 ""
+ eng_inv.35.a:0 "One could say, it was elementary"
+
+ eng_inv.36.t:0 "The Case Gone Cold"
+ eng_inv.36.d:0 "Pee"
+ eng_inv_duarte_accused:0 "The Halls of Parliament where completely silent as the investigators named the Duke of Braganza as being responsible for the assassination of Edward. The silence held for an agonizing minute, before in a moment that would be debated by historians for decades to come, an unknown member of parliament burst out laughing. Soon, this laughter proved contagious, and the poor investigation team that had worked so hard, found themselves the butt of a joke shared by the entire nation. \n\nFinally, after a good five minutes of continued laughing, an MP from the Greater London area wiped the tears from his eyes, and addressed the investigators. \"Really, him? You accused him of all the possible suspects? He doesn’t even speak English, no one had even known he existed on this side of the channel until he showed up one day! Clearly, the only thing you’ve investigated is how to waste the good taxpayers pounds.\""
+ eng_inv.36.a:0 "What an embarrassment..."
+
+ eng_inv.37.t:0 "The Murder Weapon - Review"
+ eng_inv.37.d:0 "Model: Mauser C96 \nManufactured: Between 1935-1936 \nSerial Number: Shaved Off \nNumber of Shots Fired: 1. \n\nGun fired by the assassin was a Mauser C96, a hand gun manufactured in Germany and popular within the colonial garrisons and European continent. Serial number has been shaved off, the weapon seems to be brand new otherwise. \n\nNearly one million C96’s have been manufactured, making it difficult to tell for certain where this one would have been purchased."
+ eng_inv.37.a:0 "Interesting"
+
+ eng_inv.38.t:0 "The Suspect - Review"
+ eng_inv.38.d:0 ""
+ eng_inv.38.a:0 "Interesting"
+
+ eng_inv.39.t:0 "The Motive - Review"
+ eng_inv.39.d:0 ""
+ eng_inv.39.a:0 "Interesting"
+
+ eng_inv.40.t:0 "The Event - Review"
+ eng_inv.40.d:0 ""
+ eng_inv.40.a:0 "Interesting"
+
+ eng_inv.41.t:0 "The Crime - Review"
+ eng_inv.41.d:0 ""
+ eng_inv.41.a:0 "Interesting"
+
+ engeco.1.t:0 "Stock market dips"
+ engeco.1.desc:0 "George V's rule has been one of prosperity and growth, stability and a bright outlooks for the future. His age is over, and the economy felt its first consequences as the index fell a few more points than is usually regarded as sound, predictions have it to recover by within a few days."
+ engeco.1.a:0 "This always happens, no harm in it"
+ engeco.2.t:0 "Economy is growing"
+ engeco.2.desc:0 "With the past market dip behind us, the economy has long since recovered and is once again growing, several large stocks have grown related to the upcoming coronation, another grand moment when our King will be crowned"
+ engeco.2.a:0 "Long may he live"
+ 
+ ## Focus Trees ##
+
+ #Starting Tree
+ ENG_year_1936:0 "The Year 1936"
+ ENG_year_1936_desc:0 "With today's sunrise comes the beginning of the new year, 1936. With every new year, it has come time to inform England of current affairs around the Empire. If you were to ask your average good citizen Britain would be just swell, with a fine empire to follow her-- and they are right. But they do not know how right they are! Even though little has changed from last year, tradition demands King George V deliver a speech for everyone to listen. All is well, everything will be well, and the confirmation of His Majesty will ensure all believe it."
+ ENG_review_shares:0 "Review Our Shares"
+ ENG_review_shares_desc:0 "Come to think of it, everyone says the economy is doing fine, but nobody seems to have checked. It's time for that to change! London is home to the stock market and employs no small number of economists for the royal court. It'd be rude to let them go without something to do. So they can earn their pay, His Majesty will confer with his economic analysts. They will take a look at the stock market, and make sure things are growing in a healthy manner. If things are not on the up-and-up, the economists will devise a solution to fix that. It's only right for the people of Britain that the promises of prosperity have weight to back them."
+ ENG_collect_dividends:0 "Collect Company Dividends"
+ ENG_collect_dividends_desc:0 "It is no secret that Britain leases many of her colonial holdings to private companies, allowing daring entrepreneurs to develop the regions for both their own gain and for the British. The charters are very profitable, standing as a monument to the power of personal enterprise and the ever-successful nature of the free market. Only issue is that sometimes they can be a bit stingy. Our rates are so generous they seem to make some people forget they're even there. Since we provide a vital part of the process they use to make their profits, we will collect our fair share from them. It also certainly won't hurt to compare their earnings to last years, and the years before that, to make sure the promises of growth are as grand as they have been promised to be."
+ ENG_speech_parliament:0 "The King's Speech To Parliament"
+ ENG_speech_parliament_desc:0 "Britain is in perfect shape. Her empire is in a similar condition - there are no major issues, the people are happy, and the economy is prosperous. Everything that needs to be resolved can be left to the governors, and the more regional areas, rather than coming to the attention of the king himself. Because of this pleasant turn of events, His Majesty can turn his attention away from external matters. Instead, the internal affairs - and the condition of the Coalition for the King - can become the focal point of His Majesty's efforts. Is there not any better way to make sure the coalition is secure than for the king to deliver a speech in its favor? Not to mention that the king's favor could definitely tip the balance of power between factions..."
+ ENG_goodnight_george:0 "Prepare For An Imperial Tour"
+ ENG_goodnight_george_desc:0 ""
+ ENG_intro_africa:0 "Africa"
+ ENG_intro_africa_desc:0 ""
+ ENG_intro_the_mighty_nile:0 "The Mighty Nile"
+ ENG_intro_the_mighty_nile_desc:0 ""
+ ENG_intro_negotiations_in_addis_ababa:0 "Negotiations in Addis Ababa"
+ ENG_intro_negotiations_in_addis_ababa_desc:0 ""
+ ENG_intro_visiting_kenyan_settlers:0 "Visting Kenyan Settlers"
+ ENG_intro_visiting_kenyan_settlers_desc:0 ""
+ ENG_intro_day_in_zanzibar:0 "A Day In Zanzibar"
+ ENG_intro_day_in_zanzibar_desc:0 ""
+ ENG_intro_week_in_cape:0 "A Week In Cape"
+ ENG_intro_week_in_cape_desc:0 ""
+ ENG_intro_tour_of_rhodesia:0 "A Tour Of Rhodesia"
+ ENG_intro_tour_of_rhodesia_desc:0 ""
+ ENG_intro_research_in_chad:0 "Research The Chad Colony"
+ ENG_intro_research_in_chad_desc:0 ""
+ ENG_intro_accra_conference:0 "The Accra Conference"
+ ENG_intro_accra_conference_desc:0 ""
+ ENG_intro_america:0 "North America"
+ ENG_intro_america_desc:0 ""
+ ENG_intro_stay_in_new_england:0 "A Stay In New England"
+ ENG_intro_stay_in_new_england_desc:0 ""
+ ENG_intro_walk_through_dixie:0 "A Walk Through Dixieland"
+ ENG_intro_walk_through_dixie_desc:0 ""
+ ENG_intro_night_in_french_quarter:0 "A Night In The French Quarter"
+ ENG_intro_night_in_french_quarter_desc:0 ""
+ ENG_intro_day_in_sunny_california:0 "A Day In Sunny California"
+ ENG_intro_day_in_sunny_california_desc:0 ""
+ ENG_intro_the_east:0 "The Far East"
+ ENG_intro_the_east_desc:0 ""
+ ENG_intro_the_crown_jewel:0 "The Crown Jewel"
+ ENG_intro_the_crown_jewel_desc:0 ""
+ ENG_intro_speaking_with_the_rajs:0 "Speaking With The Rajs"
+ ENG_intro_speaking_with_the_rajs_desc:0 ""
+ ENG_intro_our_friend_ching:0 "Our Friend, The Ch'ing"
+ ENG_intro_our_friend_ching_desc:0 ""
+ ENG_intro_an_edo_feast:0 "An Edo Feast"
+ ENG_intro_an_edo_feast_desc:0 ""
+ ENG_intro_land_down_under:0 "A Land Down Under"
+ ENG_intro_land_down_under_desc:0 ""
+ ENG_intro_trip_to_wellington:0 "A Trip To Wellington"
+ ENG_intro_trip_to_wellington_desc:0 ""
+ ENG_intro_vacation_to_hawaii:0 "A Vacation To Hawai'i"
+ ENG_intro_vacation_to_hawaii_desc:0 ""
+ ENG_intro_sail_through_nicaragua:0 "Sail Through The Nicaragua Canal"
+ ENG_intro_sail_through_nicaragua_desc:0 ""
+ ENG_intro_setting_annual_agenda:0 "Setting The Annual Agenda"
+ ENG_intro_setting_annual_agenda_desc:0 ""
+
+ #intro tooltips
+ ENG_intro_regional_visit_tt:0 "§YThe King will visit these areas.§!"
+ ENG_intro_cape_visit_tt:0 "§YWe will visit our Afrikaner subjects in the Cape.§!"
+ ENG_intro_rhodesia_visit_tt:0 "§YHis Majesty will tour the mines and industrial works of Rhodesia.§!"
+ ENG_intro_chad_visit_tt:0 "§YA royal delegation will conduct research and interview Keynes in Chad.§!"
+ ENG_intro_accra_conference_tt:0 "§YKing George will attend a conference in Accra to discuss the future of West African enterprises.§!"
+ ENG_intro_egypt_visit_tt:0 "§YHis Majesty will visit King Farouk and Governor Eden.§!"
+ ENG_intro_addis_ababa_visit_tt:0 "§RKing George will try his best to mediate an end to skirmishes in the Ethiopia Colony.§!"
+ ENG_intro_kenya_visit_tt:0 "§YHis Majesty will speak with British settlers in the Kenyan Highlands.§!"
+ ENG_intro_zanzibar_visit_tt:0 "§YThe King will meet with Tanzanian officials in Zanzibar.§!"
+ ENG_intro_ne_visit_tt:0 "§YThe King will visit his similarly-named New English subjects.§!"
+ ENG_intro_dixie_visit_tt:0 "§YHis Majesty will give a speech to farmers in Dixieland.§!"
+ ENG_intro_nawlins_visit_tt:0 "§YKing George will speak with Governor Allen about the status of natives in the Great Plains.§!"
+ ENG_intro_california_visit_tt:0 "§YHis Majesty will visit the most loyal and warm dominion: California!§!"
+ ENG_intro_the_crown_jewel_tt:0 "§YKing George will attempt to speak with his sidelined brother.§!"
+ ENG_intro_rajs_tt:0 "§YKing George and Rajs in British-controlled India will hold a conference in Calcutta to discuss the possibility of reform and devolution.§!"
+ ENG_intro_ching_tt:0 "§YHis Majesty will visit the Auspicious Emperor in Peking.§!"
+ ENG_intro_edo_visit_tt:0 "§YA royal delegation will dine with the Tokugawa government.§!"
+ ENG_intro_australia_visit_tt:0 "§YHis Majesty will try and defuse tensions in Australia over Auralia.§!"
+ ENG_intro_nzl_visit_tt:0 "§YA royal delegation will visit Wellington and sightsee.§!"
+ ENG_intro_vacation_tt:0 "§YThe royal delegation will take a vacation in Hawai'i after a long tour.§!"
+ ENG_intro_nicaragua_tt:0 "§YKing George will visit his namesake canal to celebrate its prosperity.§!"
+ ENG_intro_agenda_tt:0 "§GWith our foreign affairs settled, we are now free to determine the course of the British Empire!§!"
+ 
+ ENG_gained_evidence_tt:0 "§OObtained Evidence!§!"
+ 
+ #Succession Tree 
+ ENG_The_Ruler_Of_Everything:0 "The Ruler Of Everything"
+ ENG_The_Ruler_Of_Everything_desc:0 ""
+ ENG_The_Ruler_Of_Everything_tt:0 "With the passing of §YKing George V§! we must prepare for the accession of his heir, §YEdward§!."
+ ENG_Prepare_The_Successor:0 "Prepare The Successor"
+ ENG_Prepare_The_Successor_desc:0 ""
+ ENG_Commemorate_The_Late_King:0 "Commemorate The Late King"
+ ENG_Commemorate_The_Late_King_desc:0 ""
+ ENG_Begin_The_Mourning_Period:0 "The Mourning Period"
+ ENG_Begin_The_Mourning_Period_desc:0 ""
+ ENG_Begin_The_Mourning_Period_tt:0 "May God watch over our late king."
+ ENG_The_Coronation:0 "The Coronation"
+ ENG_The_Coronation_desc:0 ""
+
+ #The Succession Crisis
+ ENG_The_Regicide_Of_A_Millenium:0 "The Regicide of a Millenium"
+ ENG_The_Regicide_Of_A_Millenium_desc:0 ""
+ ENG_call_on_the_yards_finest:0 "Call on the Yard's Finest"
+ ENG_call_on_the_yards_finest_desc:0 ""
+ ENG_the_succession_crisis:0 "The Succession Crisis"
+ ENG_the_succession_crisis_desc:0 "From the halls of power to the streets of London, unease grips Britain. For the first time in centuries, Britain is without a monarch, and parliament tasks itself with finding one. For those who fight for the crown, the very future of the world rests on their shoulders, and for the common people of the Empire, a bickering match between royals signals the end of an era and the beginning of a new, uncertain time."
+ ENG_the_resignation_of_douglas_hogg:0 "The Resignantion of Douglas Hogg"
+ ENG_the_resignation_of_douglas_hogg_desc:0 ""
+ ENG_a_shot_of_reform:0 "A Shot of Reform"
+ ENG_a_shot_of_reform_desc:0 ""
+ ENG_recommend_the_able_minded:0 "Recommend the Able Minded"
+ ENG_recommend_the_able_minded_desc:0 ""
+ ENG_the_tried_and_tested:0 "The Tried and Tested"
+ ENG_the_tried_and_tested_desc:0 ""
+ ENG_endorse_the_strong:0 "Endorse the Strong"
+ ENG_endorse_the_strong_desc:0 ""
+ ENG_sc_the_duke_of_glouchester:0 "The Duke of Glouchester"
+ ENG_sc_the_duke_of_glouchester_desc:0 ""
+ ENG_sc_the_obvious_choice:0 "The Obvious Choice"
+ ENG_sc_the_obvious_choice_desc:0 ""
+ ENG_sc_support_from_the_royal_family:0 "Support from the Royal Family"
+ ENG_sc_support_from_the_royal_family_desc:0 ""
+ ENG_sc_britains_second_favorite_son:0 "Britain's Second Favorite Son"
+ ENG_sc_britains_second_favorite_son_desc:0 ""
+ ENG_sc_the_reformist_vacuum:0 "The Reformist Vacuum"
+ ENG_sc_the_reformist_vacuum_desc:0 ""
+ ENG_sc_the_duke_of_kent:0 "The Duke of Kent"
+ ENG_sc_the_duke_of_kent_desc:0 ""
+ ENG_sc_sincerity_and_smiles:0 "Sincerity and Smiles"
+ ENG_sc_sincerity_and_smiles_desc:0 ""
+ ENG_sc_the_countess_of_harewood:0 "The Countess of Harewood"
+ ENG_sc_the_countess_of_harewood_desc:0 ""
+ ENG_sc_a_reformer_in_name_only:0 "A Reformer in Name Only"
+ ENG_sc_a_reformer_in_name_only_desc:0 ""
+ ENG_sc_the_prince_of_india:0 "The Prince of India"
+ ENG_sc_the_prince_of_india_desc:0 ""
+ ENG_sc_a_long_time_coming:0 "A Long Time Coming"
+ ENG_sc_a_long_time_coming_desc:0 ""
+ ENG_sc_support_from_the_colonies:0 "Support from the Colonies"
+ ENG_sc_support_from_the_colonies_desc:0 ""
+ ENG_sc_britains_most_loyal_defender:0 "Britain's Most Loyal Defender"
+ ENG_sc_britains_most_loyal_defender_desc:0 ""
+ ENG_sc_the_conservative_vacuum:0 "The Conservative Vacuum"
+ ENG_sc_the_conservative_vacuum_desc:0 ""
+ ENG_sc_the_grand_duke_of_oldenburg:0 "The Grand Duke of Oldenburg"
+ ENG_sc_the_grand_duke_of_oldenburg_desc:0 ""
+ ENG_sc_posture_and_pomp:0 "Posture and Pomp"
+ ENG_sc_posture_and_pomp_desc:0 ""
+ ENG_sc_the_duke_of_braganza:0 "The Duke of Braganza"
+ ENG_sc_the_duke_of_braganza_desc:0 ""
+ ENG_sc_an_utterly_bizarre_charade:0 "An Utterly Bizarre Charade"
+ ENG_sc_an_utterly_bizarre_charade_desc:0 ""
+
+ ##Henry Consolidation##
+ ENG_Henry_King_Henry_IX:0 "King Henry IX"
+ ENG_Henry_King_Henry_IX_desc:0 ""
+ ENG_Henry_Tour_the_Dominions:0 "Tour the Dominions"
+ ENG_Henry_Tour_the_Dominions_desc:0 ""
+ ENG_Henry_Shore_up_the_ranks:0 "Shore up the Ranks"
+ ENG_Henry_Shore_up_the_ranks_desc:0 ""
+ ENG_Henry_strong_arm_the_nobles:0 "Strong Arm the Nobles"
+ ENG_Henry_strong_arm_the_nobles_desc:0 ""
+ ENG_Henry_Get_on_the_air_waves:0 "Get on the Air Waves"
+ ENG_Henry_Get_on_the_air_waves_desc:0 ""
+ ENG_Henry_the_common_man_triumphant:0 "The Common Man Triumphant"
+ ENG_Henry_the_common_man_triumphant_desc:0 ""
+ ENG_Henry_a_return_to_better_days:0 "A Return to Better Days"
+ ENG_Henry_a_return_to_better_days_desc:0 ""
+ ENG_Henry_addressing_the_chaos_across_the_pond:0 "Adressing the Chaos Across the Pond"
+ ENG_Henry_addressing_the_chaos_across_the_pond_desc:0 ""
+ ENG_Henry_supplies_for_boston:0 "Supplies for Boston"
+ ENG_Henry_supplies_for_boston_desc:0 ""
+ ENG_Henry_good_ol_boys_for_atlanta:0 "Good Ol' Boys for Atlanta"
+ ENG_Henry_good_ol_boys_for_atlanta_desc:0 ""
+ ENG_Henry_pressure_louisiana:0 "Pressure Louisiana"
+ ENG_Henry_pressure_louisiana_desc:0 ""
+ ENG_Henry_addressing_the_slump:0 "Addressing the Slump"
+ ENG_Henry_addressing_the_slump_desc:0 ""
+ ENG_Henry_austerity_and_protectionism:0 "Austerity and Protectionism"
+ ENG_Henry_austerity_and_protectionism_desc:0 ""
+ ENG_Henry_keep_calm_and_carry_on:0 "Keep Calm and Carry on"
+ ENG_Henry_keep_calm_and_carry_on_desc:0 ""
+ 
+ ##succession tooltips##
+ ENG_hardliners_influence_up:0 "§GThe Hardliner Candidate or Candidates will see their chances of Succession grow.§"
+ ENG_reformers_influence_up:0 "§GThe Reformist Candidate or Candidates will see their chances of Succession grow.§"
+ ENG_SC_tt:0 "May Parliament Make the Right Choice..."
+
+ #Nicky Tree#
+ ENG_The_Oldenburg_Claim:0 "The Oldenburg Claim"
+ ENG_The_Oldenburg_Claim_desc:0 ""
+ ENG_Fill_In_The_Hardliner_Vacuum:0 "Fill In The Hardliner Vacuum"
+ ENG_Fill_In_The_Hardliner_Vacuum_desc:0 ""
+ ENG_Prod_Dutch_Parliament:0 "Prod Dutch Parliament"
+ ENG_Prod_Dutch_Parliament_desc:0 ""
+ ENG_King_Nicholas_I:0 "King Nicholas I"
+ ENG_King_Nicholas_I_desc:0 ""
+
+ ENG_The_Lost_Crown_Of_The_East:0 "The Lost Crown Of The East"
+ ENG_The_Lost_Crown_Of_The_East_desc:0 ""
+ ENG_Trust_Uncle_Victor:0 "Uncle Victor"
+ ENG_Trust_Uncle_Victor_desc:0 ""
+ ENG_Appeal_To_The_Conservative_MPs:0 "Appeal To The Conservative MPs"
+ ENG_Appeal_To_The_Conservative_MPs_desc:0 ""
+ ENG_Emperor_Victor_I:0 "Emperor Victor I"
+ ENG_Emperor_Victor_I_desc:0 ""
+ 
+ ENG_Out_Of_The_Running:0 "Out Of The Running"
+ ENG_Out_Of_The_Running_desc:0 ""
+ ENG_King_George_VI:0 "King George VI"
+ ENG_King_George_VI_desc:0 ""
+ ENG_The_Queen_Of_Mountbatten:0 "The Queen Of Mountbatten"
+ ENG_The_Queen_Of_Mountbatten_desc:0 ""
+ ENG_Muddle_Gender_Succession_Laws:0 "Muddle Gender Succession Laws"
+ ENG_Muddle_Gender_Succession_Laws_desc:0 ""
+ ENG_Stand_Side_By_Side:0 "Stand Side By Side"
+ ENG_Stand_Side_By_Side_desc:0 ""
+ ENG_Queen_Mary_III:0 "Queen Mary III"
+ ENG_Queen_Mary_III_desc:0 ""
+ ENG_The_Stretch_Of_A_Claim:0 "The Stretch Of A Claim"
+ ENG_The_Stretch_Of_A_Claim_desc:0 ""
+ ENG_Placate_The_Homeland:0 "Placate The Homeland"
+ ENG_Placate_The_Homeland_desc:0 ""
+ ENG_Like_Third_Cousin:0 "Like Third Cousin, Twice-Removed, Like Son"
+ ENG_Like_Third_Cousin_desc:0 ""
+ ENG_Emperor_John_II:0 "Emperor John II"
+ ENG_Emperor_John_II_desc:0 ""
+
+ ##Tooltips##
+ ENG_night_george:0 "§YKing George V will prepare for his final tour of the empire, confident in his realm."
+
+ ##Flags##
+ ENG_henry_discredited:0 "The Duke of Kent has had his reputation ruined, opening the door for new contendors...\n"
+ ENG_AV_discredited:0 "The Prince of India has had his reputation ruined, opening the door for new contendors...\n"
+ ENG_investigating:0 "\nThere is an ongoing investigation"
+ ENG_investigation_completed:0 "The investigation has been completed conclusively"
+ ENG_PM_James_Gascoyne_Cecil_flag:0 "The Marquess of Salisbury has been confirmed as the new PM"
+ ENG_PM_John_Simon_flag:0 "The Viscount Simon has been confirmed as the new PM"

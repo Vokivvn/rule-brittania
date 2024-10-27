@@ -1,0 +1,20 @@
+﻿################
+##JAPAN EVENTS##
+################
+
+add_namespace = japan
+
+country_event = { #intro
+	id = japan.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event japan.1"}
+	title = japan.1.t
+	desc = japan.1.desc
+	picture = GFX_report_event_japan_samurai
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok
+		name = japan.1.a
+	}
+}

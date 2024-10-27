@@ -1,0 +1,449 @@
+shared_focus = {
+	id = RAJ_the_king_is_dead
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = 7
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_king_is_dead"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_viceroy_is_gone
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_the_king_is_dead
+	}
+	relative_position_id = RAJ_the_king_is_dead
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_viceroy_is_gone"
+	}
+}
+
+shared_focus = {
+	id = RAJ_jinnahs_reformism
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = -2
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_the_viceroy_is_gone
+	}
+	relative_position_id = RAJ_the_viceroy_is_gone
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_jinnahs_reformism"
+	}
+}
+
+shared_focus = {
+	id = RAJ_irwins_complacency
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_the_viceroy_is_gone
+	}
+	relative_position_id = RAJ_the_viceroy_is_gone
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_irwins_complacency"
+	}
+}
+
+shared_focus = {
+	id = RAJ_wingates_imperialism
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = 2
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_the_viceroy_is_gone
+	}
+	relative_position_id = RAJ_the_viceroy_is_gone
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_wingates_imperialism"
+	}
+}
+
+shared_focus = {
+	id = RAJ_getting_to_work
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_jinnahs_reformism
+	}
+		prerequisite = {
+		focus = RAJ_wingates_imperialism
+	}
+	prerequisite = {
+		focus = RAJ_irwins_complacency
+	}
+	relative_position_id = RAJ_irwins_complacency
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_getting_to_work"
+	}
+}
+
+shared_focus = {
+	id = RAJ_friends_in_big_business
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_getting_to_work
+	}
+	relative_position_id = RAJ_getting_to_work
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_friends_in_big_business"
+	}
+}
+
+shared_focus = {
+	id = RAJ_cut_back_on_corruption
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_make_some_shady_deals }
+
+
+	x = -1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_friends_in_big_business
+	}
+	relative_position_id = RAJ_friends_in_big_business
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_cut_back_on_corruption"
+	}
+}
+
+shared_focus = {
+	id = RAJ_make_some_shady_deals
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_cut_back_on_corruption }
+
+
+	x = 1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_friends_in_big_business
+	}
+	relative_position_id = RAJ_friends_in_big_business
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_make_some_shady_deals"
+	}
+}
+
+shared_focus = {
+	id = RAJ_sweep_away_the_legacy_of_the_eic
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_the_golden_raj }
+
+
+	x = -2
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_make_some_shady_deals
+		focus = RAJ_cut_back_on_corruption
+	}
+	relative_position_id = RAJ_make_some_shady_deals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_sweep_away_the_legacy_of_the_eic"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_golden_raj
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_sweep_away_the_legacy_of_the_eic }
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_make_some_shady_deals
+		focus = RAJ_cut_back_on_corruption
+	}
+	relative_position_id = RAJ_make_some_shady_deals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_golden_raj"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_viceroy
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { 
+		focus = RAJ_the_governor_general
+		focus = RAJ_the_generalissimo	
+	}
+
+	x = -1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_the_golden_raj
+		focus = RAJ_sweep_away_the_legacy_of_the_eic
+	}
+	relative_position_id = RAJ_the_golden_raj
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_viceroy"
+	}
+}
+
+shared_focus = {
+	id = RAJ_contacts_with_the_right_inc
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = -4
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_getting_to_work
+	}
+	relative_position_id = RAJ_getting_to_work
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_contacts_in_the_right_inc"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_union_jack_flies_alone
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_look_into_dominionism }
+
+
+	x = -1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_contacts_with_the_right_inc
+	}
+	relative_position_id = RAJ_contacts_with_the_right_inc
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_union_jack_flies_alone"
+	}
+}
+
+shared_focus = {
+	id = RAJ_look_into_dominionism
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_the_union_jack_flies_alone }
+
+
+	x = 1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_contacts_with_the_right_inc
+	}
+	relative_position_id = RAJ_contacts_with_the_right_inc
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_look_into_dominionism"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_white_mans_burden
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_the_potential_for_equality }
+
+
+	x = -2
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_look_into_dominionism
+		focus = RAJ_the_union_jack_flies_alone
+	}
+	relative_position_id = RAJ_look_into_dominionism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_white_mans_burden"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_potential_for_equality
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_the_white_mans_burden }
+
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_look_into_dominionism
+		focus = RAJ_the_union_jack_flies_alone
+	}
+	relative_position_id = RAJ_look_into_dominionism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_potential_for_equality"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_governor_general
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { 
+		focus = RAJ_the_generalissimo
+		focus = RAJ_the_viceroy
+	}
+
+	x = 1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_the_potential_for_equality
+		focus = RAJ_the_white_mans_burden
+	}
+	relative_position_id = RAJ_the_white_mans_burden
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_governor_general"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_military_question
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+
+	x = 4
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_getting_to_work
+	}
+	relative_position_id = RAJ_getting_to_work
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_the_military_question"
+	}
+}
+
+shared_focus = {
+	id = RAJ_cut_back_on_service_quotas
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_militarise_the_police }
+
+	x = -1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_the_military_question
+	}
+	relative_position_id = RAJ_the_military_question
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_cut_back_on_service_quotas"
+	}
+}
+
+shared_focus = {
+	id = RAJ_militarise_the_police
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_cut_back_on_service_quotas }
+
+	x = 1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_the_military_question
+	}
+	relative_position_id = RAJ_the_military_question
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_militarise_the_police"
+	}
+}
+
+shared_focus = {
+	id = RAJ_promote_wingate
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_reassign_wingate }
+
+	x = -2
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_militarise_the_police
+		focus = RAJ_cut_back_on_service_quotas
+	}
+	relative_position_id = RAJ_militarise_the_police
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_promote_wingate"
+	}
+}
+
+shared_focus = {
+	id = RAJ_reassign_wingate
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { focus = RAJ_promote_wingate }
+
+	x = 0
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_militarise_the_police
+		focus = RAJ_cut_back_on_service_quotas
+	}
+	relative_position_id = RAJ_militarise_the_police
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_reassign_wingate"
+	}
+}
+
+shared_focus = {
+	id = RAJ_the_generalissimo
+	icon = GFX_ENG_Albert_Victor
+	cost = 3
+	mutually_exclusive = { 
+		focus = RAJ_the_governor_general
+		focus = RAJ_the_viceroy
+	}
+
+	x = -1
+	y = 1
+
+	prerequisite = {
+		focus = RAJ_reassign_wingate
+		focus = RAJ_promote_wingate
+	}
+	relative_position_id = RAJ_reassign_wingate
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RAJ_reassign_wingate"
+	}
+}

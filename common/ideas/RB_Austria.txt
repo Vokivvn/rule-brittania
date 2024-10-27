@@ -1,0 +1,141 @@
+ideas = {
+	country = {
+		AUS_Anglo_Austrian_Alliance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Anglo_Austrian_Alliance"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = anglo_austrian_alliance_AUS
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.15
+				army_org_factor = 0.05
+				command_power_gain = 0.25
+				war_support_factor = -0.15
+			}
+		}
+		AUS_Old_Man_Of_Europe = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Old_Man_Of_Europe"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = country_austria_flag_walking_stick
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.20
+			}
+		}
+		AUS_Ethnic_Tensions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Ethnic_Tensions"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = ethnic_tensions_escalating_AUS
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+			}
+		}
+		AUS_Western_Industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Western_Industry"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = country_austria_factory
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		AUS_Minority_Volunteer_Program = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Minority_Volunteer_Program"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
+		AUS_Strengthened_Domestic_Trade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AUS_Strengthened_Domestic_Trade"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = can_wartime_prices_and_trade_board
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = AUS
+				extra_trade_to_target_factor = 0.1
+			}
+		}
+		BOR_death_before_surrender = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SPR_death_before_surrender"}
+			picture = generic_manpower_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = 1
+			}
+		}
+	}
+}

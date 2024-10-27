@@ -1,0 +1,26 @@
+CNA_battle_for_pemiscot_category = {
+	allowed = {
+		tag = CNA
+	}
+	visible = {
+		SHW = { exists = yes }
+	}
+}
+
+LOU_battle_for_pemiscot_category = {
+	allowed = {
+		tag = LOU
+	}
+	visible = {
+		SHW = { exists = yes }
+	}
+}
+
+SHW_battle_for_pemiscot_category = {
+	allowed = {
+		tag = SHW
+	}
+	visible = {
+		SHW = { exists = yes }
+	}
+}

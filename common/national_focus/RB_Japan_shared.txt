@@ -1,0 +1,904 @@
+### Jaabn tree ###
+shared_focus = {
+	id = JAP_showa_10
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	x = 27
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_showa_10"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_consult_the_privy_council
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_showa_10
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_showa_10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_consult_the_privy_council"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_convene_the_diet
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_showa_10
+	}
+	x = -1
+	y = 1
+	relative_position_id = JAP_showa_10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_convene_the_diet"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_establishing_a_budget
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_convene_the_diet
+	}
+	prerequisite = {
+		focus = JAP_consult_the_privy_council
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_convene_the_diet
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_establishing_a_budget"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_fund_domestic_militarization
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_establishing_a_budget
+	}
+	x = -6
+	y = 1
+	relative_position_id = JAP_establishing_a_budget
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_fund_domestic_militarization"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_consecrate_a_modern_ijn
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_fund_domestic_militarization
+	}
+	mutually_exclusive = {
+		focus = JAP_build_up_the_ija
+	}
+	x = -2
+	y = 1
+	relative_position_id = JAP_fund_domestic_militarization
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_consecrate_a_modern_ijn"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_darthmouth_fleet_in_being_doctrine
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_consecrate_a_modern_ijn
+	}
+	x = -8
+	y = 1
+	relative_position_id = JAP_consecrate_a_modern_ijn
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_darthmouth_fleet_in_being_doctrine"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_etajima_power_projection_doctrine
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_consecrate_a_modern_ijn
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_consecrate_a_modern_ijn
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_etajima_power_projection_doctrine"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_hire_british_advisors
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_darthmouth_fleet_in_being_doctrine
+	}
+	x = -2
+	y = 1
+	relative_position_id = JAP_darthmouth_fleet_in_being_doctrine
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_hire_british_advisors"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_seek_investors_for_drydocks
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_hire_british_advisors
+	}
+	x = -5
+	y = 1
+	relative_position_id = JAP_hire_british_advisors
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_seek_investors_for_drydocks"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_purchase_destroyers
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_seek_investors_for_drydocks
+	}
+	x = -2
+	y = 1
+	relative_position_id = JAP_seek_investors_for_drydocks
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_purchase_destroyers"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_purchase_cruisers
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_seek_investors_for_drydocks
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_seek_investors_for_drydocks
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_purchase_cruisers"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_purchase_submarines
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_seek_investors_for_drydocks
+	}
+	x = 2
+	y = 1
+	relative_position_id = JAP_seek_investors_for_drydocks
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_purchase_submarines"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_begin_plan_1943
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_purchase_destroyers
+	}
+	prerequisite = {
+		focus = JAP_purchase_cruisers
+	}
+	prerequisite = {
+		focus = JAP_purchase_submarines
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_purchase_cruisers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_begin_plan_1943"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_allocate_additional_naval_funds
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_begin_plan_1943
+	}
+	x = -1
+	y = 1
+	relative_position_id = JAP_begin_plan_1943
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_allocate_additional_naval_funds"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_private_industry_development
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_begin_plan_1943
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_begin_plan_1943
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_private_industry_development"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_niigata_joint_naval_exercises
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_hire_british_advisors
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_hire_british_advisors
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_niigata_joint_naval_exercises"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_coordinated_warplanning_initiatives
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_niigata_joint_naval_exercises
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_niigata_joint_naval_exercises
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_coordinated_warplanning_initiatives"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_invite_korean_naval_staff
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_coordinated_warplanning_initiatives
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_coordinated_warplanning_initiatives
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_invite_korean_naval_staff"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_the_tokyo_naval_conference
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_invite_korean_naval_staff
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_invite_korean_naval_staff
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_the_tokyo_naval_conference"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_proceed_with_modernization_efforts
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_allocate_additional_naval_funds
+	}
+	prerequisite = {
+		focus = JAP_private_industry_development
+	}
+	prerequisite = {
+		focus = JAP_the_tokyo_naval_conference
+	}
+	x = -2
+	y = 1
+	relative_position_id = JAP_the_tokyo_naval_conference
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_proceed_with_modernization_efforts"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_homegrown_naval_staff
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_darthmouth_fleet_in_being_doctrine
+		focus = JAP_etajima_power_projection_doctrine
+	}
+	x = -2
+	y = 1
+	relative_position_id = JAP_etajima_power_projection_doctrine
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_homegrown_naval_staff"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_tetsutaros_proven_worth
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_homegrown_naval_staff
+	}
+	mutually_exclusive = {
+		focus = JAP_abandon_kantai_kessen
+	}
+	x = -4
+	y = 1
+	relative_position_id = JAP_homegrown_naval_staff
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_tetsutaros_proven_worth"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_more_powerful_engines
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_tetsutaros_proven_worth
+	}
+	x = -1
+	y = 1
+	relative_position_id = JAP_tetsutaros_proven_worth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_more_powerful_engines"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_to_power_the_guns
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_tetsutaros_proven_worth
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_tetsutaros_proven_worth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_to_power_the_guns"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_thicken_armor_belts
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_more_powerful_engines
+	}
+	prerequisite = {
+		focus = JAP_to_power_the_guns
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_more_powerful_engines
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_thicken_armor_belts"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_battleship_supremacy
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_thicken_armor_belts
+	}
+	x = -1
+	y = 1
+	relative_position_id = JAP_thicken_armor_belts
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_battleship_supremacy"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_intensify_seaplane_testing
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_battleship_supremacy
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_battleship_supremacy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_intensify_seaplane_testing"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_invest_in_screens
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_thicken_armor_belts
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_thicken_armor_belts
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_invest_in_screens"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_upgrade_submarines
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_invest_in_screens
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_invest_in_screens
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_upgrade_submarines"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_the_yamato_project
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_intensify_seaplane_testing
+	}
+	prerequisite = {
+		focus = JAP_upgrade_submarines
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_intensify_seaplane_testing
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_the_yamato_project"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_south_honshu_drydocks
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_tetsutaros_proven_worth
+		focus = JAP_abandon_kantai_kessen
+	}
+	x = 4
+	y = 1
+	relative_position_id = JAP_tetsutaros_proven_worth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_south_honshu_drydocks"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_new_port_facilities
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_south_honshu_drydocks
+	}
+	x = -1
+	y = 1
+	relative_position_id = JAP_south_honshu_drydocks
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_new_port_facilities"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_renovate_pre_existing_facilities
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_south_honshu_drydocks
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_south_honshu_drydocks
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_renovate_pre_existing_facilities"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_naval_recruitment_drive
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_new_port_facilities
+	}
+	prerequisite = {
+		focus = JAP_renovate_pre_existing_facilities
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_new_port_facilities
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_naval_recruitment_drive"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_japanese_teachers_for_the_japanese_navy
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_naval_recruitment_drive
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_naval_recruitment_drive
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_japanese_teachers_for_the_japanese_navy"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_abandon_kantai_kessen
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_homegrown_naval_staff
+	}
+	mutually_exclusive = {
+		focus = JAP_tetsutaros_proven_worth
+	}
+	x = 4
+	y = 1
+	relative_position_id = JAP_homegrown_naval_staff
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_abandon_kantai_kessen"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_convert_surface_ships_to_carriers
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_abandon_kantai_kessen
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_abandon_kantai_kessen
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_convert_surface_ships_to_carriers"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_monoplane_carrier_aircraft
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_convert_surface_ships_to_carriers
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_convert_surface_ships_to_carriers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_monoplane_carrier_aircraft"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_increase_flight_deck_capacity
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_convert_surface_ships_to_carriers
+	}
+	x = 2
+	y = 1
+	relative_position_id = JAP_convert_surface_ships_to_carriers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_increase_flight_deck_capacity"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_invest_in_new_designs
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_monoplane_carrier_aircraft
+	}
+	prerequisite = {
+		focus = JAP_increase_flight_deck_capacity
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_monoplane_carrier_aircraft
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_invest_in_new_designs"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_land_based_torpedo_bombers
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_invest_in_new_designs
+	}
+	x = -1
+	y = 1
+	relative_position_id = JAP_invest_in_new_designs
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_land_based_torpedo_bombers"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_investigate_oxygen_fueled_torpedos
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_land_based_torpedo_bombers
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_land_based_torpedo_bombers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_investigate_oxygen_fueled_torpedos"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_train_officers_in_carrier_tactics
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_invest_in_new_designs
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_invest_in_new_designs
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_train_officers_in_carrier_tactics"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_fighter_torpedo_bomb_doctrine
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_train_officers_in_carrier_tactics
+	}
+	x = 0
+	y = 1
+	relative_position_id = JAP_train_officers_in_carrier_tactics
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_fighter_torpedo_bomb_doctrine"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_6_carriers_in_6_years
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_investigate_oxygen_fueled_torpedos
+	}
+	prerequisite = {
+		focus = JAP_fighter_torpedo_bomb_doctrine
+	}
+	x = 1
+	y = 1
+	relative_position_id = JAP_investigate_oxygen_fueled_torpedos
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_6_carriers_in_6_years"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_build_up_the_ija
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_fund_domestic_militarization
+	}
+	mutually_exclusive = {
+		focus = JAP_consecrate_a_modern_ijn
+	}
+	x = 2
+	y = 1
+	relative_position_id = JAP_fund_domestic_militarization
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_build_up_the_ija"
+		
+	}
+}
+
+shared_focus = {
+	id = JAP_imperial_infrastructure_initiative
+	icon = GFX_goal_unknown
+	cost = 3.00
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	prerequisite = {
+		focus = JAP_establishing_a_budget
+	}
+	x = 6
+	y = 1
+	relative_position_id = JAP_establishing_a_budget
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JAP_imperial_infrastructure_initiative"
+		
+	}
+}

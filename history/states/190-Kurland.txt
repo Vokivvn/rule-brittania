@@ -1,0 +1,30 @@
+
+state={
+	id=190
+	name="STATE_190"
+	resources={ steel=2.000 }
+
+	history={
+		owner = COU
+		add_core_of = COU
+
+		victory_points = { 9262 3 }
+		victory_points = { 6342 1 }
+		
+		buildings = {
+			infrastructure = 4
+			9262 = { naval_base = 1 }
+			dockyard = 1
+			industrial_complex = 1
+			arms_factory = 2
+		}
+
+	}
+
+	provinces={
+		3194 3296 3319 3525 6322 6342 9262 11246 
+	}
+	manpower=486304
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

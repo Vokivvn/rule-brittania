@@ -1,0 +1,9 @@
+﻿l_english:
+ ##Country Names##
+ MOR_absolutism:0 "Protectorate of Morocco"
+ MOR_absolutism_DEF:0 "The Protectorate of Morocco"
+ MOR_absolutism_ADJ:0 "Moroccan"
+
+ ##Party Names##
+ MOR_absolutism_party:0 "Morocco Party"
+ MOR_absolutism_party_long:0 "Morocco Party"

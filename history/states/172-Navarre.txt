@@ -1,0 +1,50 @@
+
+state={
+	id=172
+	name="STATE_172"
+	resources={
+		steel=8.000
+	}
+
+	history={
+		owner = NAV
+		victory_points = {
+			740 30 
+		}
+		victory_points = {
+			3735 5 
+		}
+		victory_points = {
+			3737 10 
+		}
+		victory_points = {
+			3933 5 
+		}
+		victory_points = {
+			932 2 
+		}
+		victory_points = {
+			9857 3 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 1
+			740 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = NAV
+
+	}
+
+	provinces={
+		740 932 3735 3737 3931 3933 6756 9857 
+	}
+	manpower=1394880
+	buildings_max_level_factor=1.000
+	state_category=city
+}

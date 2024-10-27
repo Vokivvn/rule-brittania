@@ -1,0 +1,50 @@
+
+state={
+	id=169
+	name="STATE_169"
+
+	history={
+		owner = CAS
+		victory_points = {
+			1048 10
+		}
+		victory_points = {
+			875 20 
+		}
+		victory_points = {
+			7183 30 
+		}
+		victory_points = {
+			1178 3
+		}
+		victory_points = {
+			4182 2
+		}
+		victory_points = {
+			10111 5
+		}
+		victory_points = {
+			9815 5
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 3
+			#1048 = {
+			#	naval_base = 5
+            #
+			#}
+
+		}
+		add_core_of = CAS
+
+	}
+
+	provinces={
+		875 879 950 1178 3810 3871 3940 4182 6744 7098 7183 9891 10094 10111 11749 
+	}
+	manpower=3175163
+	buildings_max_level_factor=1.000
+	state_category=city
+}

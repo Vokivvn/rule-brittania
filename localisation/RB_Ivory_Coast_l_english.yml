@@ -1,0 +1,12 @@
+﻿l_english:
+ ##Country Names##
+ IVO_despotism:0 "Gold Coast"
+ IVO_despotism_DEF:0 "The Gold Coast"
+ IVO_despotism_ADJ:0 "West African"
+ IVO_administrationism:0 "Gold Coast"
+ IVO_administrationism_DEF:0 "The Gold Coast"
+ IVO_administrationism_ADJ:0 "West African"
+
+ ##Party Names##
+ IVO_despotism_party:0 "Gold Coast Party"
+ IVO_despotism_party_long:0 "Gold Coast Party"

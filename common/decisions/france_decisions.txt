@@ -1,0 +1,59 @@
+FRA_resistance_attacks = {
+	FRA_growing_revolts_1 = {
+		allowed = { tag = FRA }
+		available = { NOT = { country_exists = FRE } }
+		activation = { has_country_flag = fra_ongoing_revolt }
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			FRA = { 
+				activate_mission = FRA_growing_revolts_2
+				swap_ideas = {
+					remove_idea = FRA_growing_discontent_1
+					add_idea = FRA_growing_discontent_2
+				}
+			}
+		}
+		complete_effect = {
+			add_political_power = 80
+		}
+	}
+	FRA_growing_revolts_2 = {
+		allowed = { tag = FRA }
+		available = { NOT = { country_exists = FRE } }
+		activation = { has_country_flag = fra_ongoing_revolt }
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			FRA = { 
+				activate_mission = FRA_growing_revolts_3
+				swap_ideas = {
+					remove_idea = FRA_growing_discontent_2
+					add_idea = FRA_growing_discontent_3
+				}
+			}
+		}
+		complete_effect = {
+			add_political_power = 40
+		}
+	}
+	FRA_growing_revolts_3 = {
+		allowed = { tag = FRA }
+		available = { NOT = { country_exists = FRE } }
+		activation = { has_country_flag = fra_ongoing_revolt }
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			FRA = { 
+				swap_ideas = {
+					remove_idea = FRA_growing_discontent_3
+					add_idea = FRA_growing_discontent_4
+				}
+				add_war_support = -0.2
+			}
+		}
+		complete_effect = {
+			add_political_power = 1
+		}
+	}
+}

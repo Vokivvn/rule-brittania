@@ -1,0 +1,2249 @@
+﻿add_namespace = uteay
+
+country_event = { #Intro event sorta
+	id = uteay.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.1"}
+	title = uteay.1.t
+	desc = uteay.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Uintas
+	id = uteay.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.2"}
+	title = uteay.2.t
+	desc = uteay.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Wasatch
+	id = uteay.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.3"}
+	title = uteay.3.t
+	desc = uteay.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Posey Found
+	id = uteay.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.4"}
+	title = uteay.4.t
+	desc = uteay.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.4.a
+		ai_chance = { factor = 1 }
+		set_country_flag = UTY_negotiating_with_posey
+	}
+	option = { #
+		name = uteay.4.b
+		ai_chance = { factor = 1 }
+		set_country_flag = UTY_killing_posey
+	}
+}
+
+country_event = { #Plan a meeting
+	id = uteay.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.5"}
+	title = uteay.5.t
+	desc = uteay.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.5.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Meeting
+	id = uteay.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.6"}
+	title = uteay.6.t
+	desc = uteay.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.6.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Treaty
+	id = uteay.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.7"}
+	title = uteay.7.t
+	desc = uteay.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.7.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			remove_ideas = {
+				UTY_Poseys_Raids
+				UTY_Poseys_Raids_2_1
+				UTY_Poseys_Raids_2_2
+				UTY_Poseys_Raids_1_2
+				UTY_Poseys_Raids_negative_1
+			}
+		}
+		custom_effect_tooltip = UTY_end_poseys_raids
+	}
+}
+
+country_event = { #
+	id = uteay.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.8"}
+	title = uteay.8.t
+	desc = uteay.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.8.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.8.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.9"}
+	title = uteay.9.t
+	desc = uteay.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.9.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.9.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.10"}
+	title = uteay.10.t
+	desc = uteay.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.10.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.10.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Baiting out Posey
+	id = uteay.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.11"}
+	title = uteay.11.t
+	desc = uteay.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.11.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Sending Out the Posses
+	id = uteay.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.12"}
+	title = uteay.12.t
+	desc = uteay.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.12.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #The Mirror Lake Massacre
+	id = uteay.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.13"}
+	title = uteay.13.t
+	desc = uteay.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #kill them
+		name = uteay.13.a
+		ai_chance = { factor = 1 }
+		swap_ideas = {
+			remove_idea = UTY_Poseys_Raids
+			add_idea = UTY_Poseys_Raids_negative_1
+		}
+		382 = { set_demilitarized_zone = no }
+		996 = { set_demilitarized_zone = no }
+	}
+}
+
+country_event = { #
+	id = uteay.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.14"}
+	title = uteay.14.t
+	desc = uteay.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.14.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.14.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.15"}
+	title = uteay.15.t
+	desc = uteay.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.15.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.15.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #Blood retiring
+	id = uteay.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.16"}
+	title = uteay.16.t
+	desc = uteay.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.16.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.01
+		}
+	}
+}
+
+country_event = { #Church endorses Watkins
+	id = uteay.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.17"}
+	title = uteay.17.t
+	desc = uteay.17.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.17.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = UTY_watkins_support
+	}
+}
+
+country_event = { #Meeting with church pres.
+	id = uteay.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.18"}
+	title = uteay.18.t
+	desc = uteay.18.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #appease them
+		name = uteay.18.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #fuck you
+		name = uteay.18.b
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				has_idea = UTY_Church_Influence_2
+			}
+			swap_ideas = {
+				remove_idea = UTY_Church_Influence_2
+				add_idea = UTY_Church_Influence_2_2
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = UTY_Church_Influence
+				add_idea = UTY_Church_Influence_1_2
+			}
+		}
+	}
+}
+
+country_event = { #handling commie union libtards
+	id = uteay.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.19"}
+	title = uteay.19.t
+	desc = uteay.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Use propaganda to sway their support base
+		name = uteay.19.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.03
+			}
+		}
+	}
+	option = { #Crack down on union activity
+		name = uteay.19.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.03
+			}
+			add_to_variable = { UTY_farmer_labor = 1 }
+		}
+	}
+}
+
+country_event = { #Dealing with strikes
+	id = uteay.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.20"}
+	title = uteay.20.t
+	desc = uteay.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Ban all strikes
+		name = uteay.20.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.03
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.03
+		}
+	}
+	option = { #Allow limited strikes
+		name = uteay.20.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.03
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.03
+		}
+		add_to_variable = { UTY_farmer_labor = 1 }
+	}
+}
+
+country_event = { #Meeting with Christensen
+	id = uteay.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.21"}
+	title = uteay.21.t
+	desc = uteay.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.21.a
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = parliamentarianism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.02
+		}
+	}
+}
+
+country_event = { #Election event
+	id = uteay.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.22"}
+	title = uteay.22.t
+	desc = uteay.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.22.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = UTY_election_event_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { UTY_farmer_labor > 1 }
+				}
+				country_event = {
+					id = uteay.25
+					days = 1
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_completed_focus = UTY_endorse_watkins
+					}
+					country_event = {
+						id = uteay.23
+						days = 1
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = UTY_endorse_bennett
+					}
+					country_event = {
+						id = uteay.24
+						days = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Watkins wins
+	id = uteay.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.23"}
+	title = uteay.23.t
+	desc = uteay.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.23.a
+		ai_chance = { factor = 1 }
+		create_country_leader = {
+			name = "Arthur Vivian Watkins"
+			#desc = 
+			picture = "Portrait_UTY_Spencer_W._Kimball.dds"
+			expire = "1999.12.12"
+			ideology = parliamentarianism_subtype
+			traits = {
+			}
+		}
+	}
+}
+
+country_event = { #Bennett wins
+	id = uteay.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.24"}
+	title = uteay.24.t
+	desc = uteay.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.24.a
+		ai_chance = { factor = 1 }
+		create_country_leader = {
+			name = "Wallace F. Bennett"
+			#desc = 
+			picture = "Portrait_UTY_Spencer_W._Kimball.dds"
+			expire = "1999.12.12"
+			ideology = parliamentarianism_subtype
+			traits = {
+			}
+		}
+		hidden_effect = {
+			set_party_name = {
+				ideology = parliamentarianism
+				name = UTY_parliamentarianism_party_beehive
+				long_name = UTY_parliamentarianism_party_beehive_long
+			}
+		}
+	}
+}
+
+country_event = { #Christensen wins
+	id = uteay.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.25"}
+	title = uteay.25.t
+	desc = uteay.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.25.a
+		ai_chance = { factor = 1 }
+		set_politics = {
+			ruling_party = liberalism
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = republicanism
+			popularity = 0.05
+		}
+		hidden_effect = {
+			add_popularity = {
+				ideology = nationalism
+				popularity = 0.07
+			}
+		}	
+	}
+}
+
+country_event = { #
+	id = uteay.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.26"}
+	title = uteay.26.t
+	desc = uteay.26.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.26.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.26.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.27"}
+	title = uteay.27.t
+	desc = uteay.27.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.27.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.27.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.28"}
+	title = uteay.28.t
+	desc = uteay.28.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.28.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.28.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.29"}
+	title = uteay.29.t
+	desc = uteay.29.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.29.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.29.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.30"}
+	title = uteay.30.t
+	desc = uteay.30.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.30.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.30.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.31"}
+	title = uteay.31.t
+	desc = uteay.31.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.31.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.31.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.32"}
+	title = uteay.32.t
+	desc = uteay.32.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.32.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.32.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.33"}
+	title = uteay.33.t
+	desc = uteay.33.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.33.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.33.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.34"}
+	title = uteay.34.t
+	desc = uteay.34.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.34.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.34.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.35"}
+	title = uteay.35.t
+	desc = uteay.35.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.35.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.35.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.36"}
+	title = uteay.36.t
+	desc = uteay.36.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.36.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.36.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.37"}
+	title = uteay.37.t
+	desc = uteay.37.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.37.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.37.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.38"}
+	title = uteay.38.t
+	desc = uteay.38.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.38.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.38.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.39"}
+	title = uteay.39.t
+	desc = uteay.39.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.39.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.39.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.40"}
+	title = uteay.40.t
+	desc = uteay.40.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.40.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.40.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.41"}
+	title = uteay.41.t
+	desc = uteay.41.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.41.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.41.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.42"}
+	title = uteay.42.t
+	desc = uteay.42.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.42.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.42.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.43"}
+	title = uteay.43.t
+	desc = uteay.43.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.43.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.43.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.44"}
+	title = uteay.44.t
+	desc = uteay.44.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.44.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.44.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.45"}
+	title = uteay.45.t
+	desc = uteay.45.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.45.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.45.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.46"}
+	title = uteay.46.t
+	desc = uteay.46.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.46.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.46.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.47"}
+	title = uteay.47.t
+	desc = uteay.47.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.47.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.47.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.48"}
+	title = uteay.48.t
+	desc = uteay.48.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.48.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.48.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.49"}
+	title = uteay.49.t
+	desc = uteay.49.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.49.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.49.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.50"}
+	title = uteay.50.t
+	desc = uteay.50.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.50.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.50.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.51"}
+	title = uteay.51.t
+	desc = uteay.51.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.51.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.51.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.52"}
+	title = uteay.52.t
+	desc = uteay.52.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.52.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.52.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.53"}
+	title = uteay.53.t
+	desc = uteay.53.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.53.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.53.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.54"}
+	title = uteay.54.t
+	desc = uteay.54.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.54.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.54.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.55"}
+	title = uteay.55.t
+	desc = uteay.55.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.55.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.55.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.56"}
+	title = uteay.56.t
+	desc = uteay.56.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.56.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.56.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.57"}
+	title = uteay.57.t
+	desc = uteay.57.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.57.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.57.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.58"}
+	title = uteay.58.t
+	desc = uteay.58.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.58.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.58.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.59
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.59"}
+	title = uteay.59.t
+	desc = uteay.59.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.59.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.59.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.60
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.60"}
+	title = uteay.60.t
+	desc = uteay.60.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.60.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.60.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.61
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.61"}
+	title = uteay.61.t
+	desc = uteay.61.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.61.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.61.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.62
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.62"}
+	title = uteay.62.t
+	desc = uteay.62.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.62.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.62.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.63
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.63"}
+	title = uteay.63.t
+	desc = uteay.63.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.63.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.63.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.64
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.64"}
+	title = uteay.64.t
+	desc = uteay.64.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.64.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.64.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.65
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.65"}
+	title = uteay.65.t
+	desc = uteay.65.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.65.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.65.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.66
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.66"}
+	title = uteay.66.t
+	desc = uteay.66.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.66.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.66.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.67
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.67"}
+	title = uteay.67.t
+	desc = uteay.67.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.67.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.67.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.68
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.68"}
+	title = uteay.68.t
+	desc = uteay.68.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.68.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.68.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.69
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.69"}
+	title = uteay.69.t
+	desc = uteay.69.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.69.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.69.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.70"}
+	title = uteay.70.t
+	desc = uteay.70.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.70.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.70.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.71
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.71"}
+	title = uteay.71.t
+	desc = uteay.71.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.71.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.71.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.72
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.72"}
+	title = uteay.72.t
+	desc = uteay.72.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.72.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.72.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.73
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.73"}
+	title = uteay.73.t
+	desc = uteay.73.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.73.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.73.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.74
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.74"}
+	title = uteay.74.t
+	desc = uteay.74.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.74.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.74.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.75
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.75"}
+	title = uteay.75.t
+	desc = uteay.75.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.75.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.75.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.76
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.76"}
+	title = uteay.76.t
+	desc = uteay.76.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.76.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.76.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.77"}
+	title = uteay.77.t
+	desc = uteay.77.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.77.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.77.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.78
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.78"}
+	title = uteay.78.t
+	desc = uteay.78.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.78.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.78.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.79
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.79"}
+	title = uteay.79.t
+	desc = uteay.79.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.79.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.79.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.80
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.80"}
+	title = uteay.80.t
+	desc = uteay.80.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.80.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.80.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.81
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.81"}
+	title = uteay.81.t
+	desc = uteay.81.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.81.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.81.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.82
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.82"}
+	title = uteay.82.t
+	desc = uteay.82.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.82.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.82.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.83
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.83"}
+	title = uteay.83.t
+	desc = uteay.83.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.83.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.83.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.84
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.84"}
+	title = uteay.84.t
+	desc = uteay.84.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.84.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.84.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.85
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.85"}
+	title = uteay.85.t
+	desc = uteay.85.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.85.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.85.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.86
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.86"}
+	title = uteay.86.t
+	desc = uteay.86.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.86.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.86.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.87
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.87"}
+	title = uteay.87.t
+	desc = uteay.87.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.87.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.87.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.88
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.88"}
+	title = uteay.88.t
+	desc = uteay.88.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.88.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.88.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.89
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.89"}
+	title = uteay.89.t
+	desc = uteay.89.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.89.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.89.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.90
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.90"}
+	title = uteay.90.t
+	desc = uteay.90.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.90.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.90.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.91
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.91"}
+	title = uteay.91.t
+	desc = uteay.91.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.91.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.91.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.92
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.92"}
+	title = uteay.92.t
+	desc = uteay.92.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.92.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.92.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.93
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.93"}
+	title = uteay.93.t
+	desc = uteay.93.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.93.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.93.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.94
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.94"}
+	title = uteay.94.t
+	desc = uteay.94.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.94.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.94.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.95
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.95"}
+	title = uteay.95.t
+	desc = uteay.95.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.95.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.95.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.96
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.96"}
+	title = uteay.96.t
+	desc = uteay.96.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.96.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.96.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.97
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.97"}
+	title = uteay.97.t
+	desc = uteay.97.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.97.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.97.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.98
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.98"}
+	title = uteay.98.t
+	desc = uteay.98.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.98.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.98.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.99
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.99"}
+	title = uteay.99.t
+	desc = uteay.99.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.99.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.99.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = uteay.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event uteay.100"}
+	title = uteay.100.t
+	desc = uteay.100.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = uteay.100.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = uteay.100.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+

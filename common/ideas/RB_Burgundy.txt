@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		BRG_Idea_No_Ones_A_Burgundian = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_Idea_No_Ones_A_Burgundian"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_Flag_Burgundy_Question
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				#conscription_factor = -0.5
+				stability_factor = -0.05				
+				army_org_factor = -0.05
+			}
+		}
+		BRG_Idea_No_Ones_A_Burgundian_real = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_Idea_No_Ones_A_Burgundian_real"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_Flag_Burgundy_Question
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.5
+				stability_factor = -0.05				
+				army_org_factor = -0.05
+			}
+		}
+		BRG_Idea_Constituent_Countries = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_Idea_Constituent_Countries"}
+			allowed = {
+				always = no
+			}
+			picture = Icon_Flag_Burgundy_Crown
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.5
+				non_core_manpower = 0.02
+				#enemy_partisan_effect = -0.1
+			}
+		}
+	}
+}

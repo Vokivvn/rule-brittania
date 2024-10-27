@@ -1,0 +1,36 @@
+﻿capital = 588
+
+set_research_slots = 1
+set_stability = 0.5
+set_war_support = 0.5
+
+set_cosmetic_tag = KAZ_ENG
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1935.11.14"
+	election_frequency = 12
+	elections_allowed = no
+}
+
+set_popularities = {
+    cromwellianism = 4
+    marxism = 16
+    liberalism = 20
+    republicanism = 14
+    parliamentarianism = 6
+    administrationism = 13
+    absolutism = 10
+    despotism = 7
+    nationalism = 10
+}
+
+create_country_leader = {
+    name = "Sultan Kilij Giray Khan"
+    #desc =
+    picture = "Portrait_Kilij_Giray_Khan.dds"
+    expire = "1999.1.1"
+    ideology = despotism_subtype
+    traits = {
+    }
+}

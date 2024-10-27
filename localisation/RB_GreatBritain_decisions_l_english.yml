@@ -1,0 +1,61 @@
+﻿l_english:
+
+##MONARCHY VS PARLIAMENT##
+ENG_parliament_versus_monarch_system:0 "The Parliament and the Monarch"
+ENG_parliament_versus_monarch_system_desc:0 "The Imperial Coalition for His Majesty, or the Coalition for the King, is the Empire's governmental organization created by former Prime Minister Fumimaro Konoe, to promote the goals of his Rule Britannia Movement. It has evolved into a statist ruling political party which aimed at removing the sectionalism in the politics and economics in the Empire of Britain in order to maximize the efficiency of Britain's total war in the world. When the organization was launched officially, Konoe was hailed as a "political savior" of the Empire, with a white-ethnostate in Africa being named after him.\n\nThe monarch is [Root.ENG_Monarch_Loc]. \nThe monarch [Root.ENG_Monarch_Influence_Loc] Parliament. \nThe ruling party/coalition is [Root.ENG_Parliament_Party_Loc] \nThey are [Root.ENG_Monarch_Opinion_Parliament_Loc] the monarch.\n\n[Root.ENG_Coalition_Tory_Loc][Root.ENG_Coalition_Whig_Loc][Root.ENG_Coalition_Labour_Loc][Root.ENG_YSK_Influence_Loc]\n"
+#MONARCH
+ENG_George_V:0 "§YKing George V§!"
+ENG_Edward_VIII:0 "§YKing Edward VIII§!"
+ENG_Albert_Victor_I:0 "§YKing Albert Victor I§!"
+ENG_Henry_IX:0 "§YKing Henry IX§!"
+ENG_George_VI:0 "§YKing George VI§!"
+ENG_Mary_III:0 "§YQueen Mary III§!"
+ENG_Edward_IX:0 "§YKing Edward IX§!"
+ENG_Nicholas_I:0 "§YKing Nicholas I§!"
+#MONARCH INFLUENCE
+ENG_Monarch_Supreme:0 "§Rhas absolute control over§!"
+ENG_Monarch_Dominant:0 "§Ydominates§!"
+ENG_Monarch_Influential:0 "§Yhas great influence over§!"
+ENG_Monarch_Important:0 "§Yis important to§!"
+ENG_Monarch_Unimportant:0 "§Yis unimportant to§!"
+ENG_Monarch_Powerless:0 "§Yis meaningless to§!"
+#PARTY SCRIPTED LOC
+ENG_King_Coalition:0 "§gthe Coalition for the King.§!"
+#GOVERNMENT ACCEPTANCE
+ENG_Government_Hated:0 "§Rhated by§!"
+ENG_Government_Friendly:0 "§Gfriendly to§!"
+ENG_Government_Accepted:0 "§Yaccepting of§!"
+ENG_Government_Disapproves:0 "§Wneutral to§!"
+ENG_Government_Unfriendly:0 "§YRunfriendly to§!"
+ENG_Government_Opposed:0 "§Ropposed to§!"
+#YSK SUPPORT#
+ENG_Coalition_Key_Dissolved_Tory:0 "§RThe Coalition for the King is Disolved.§"
+ENG_Coalition_Key_Dissolved:0 ""
+
+ENG_Coalition_Key_Almost_All_Tory:0 "§GAlmost all§! §BConservative MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Majority_Tory:0 "§lA Majority§ of §BConservative MPs§ are in the §gCoalition§!."
+ENG_Coalition_Key_Half_Tory:0 "§WAbout Half§ of the §BConservative MPs§ are in the §gCoalition§!."
+ENG_Coalition_Key_Minority_Tory:0 "§HFew§ §BConservative MPs§ are in the §gCoalition§!."
+ENG_Coalition_Key_Barely_Any_Tory:0 "§HBarely Any§ §BConservative MPs§ are in the §gCoalition§!."
+ENG_Coalition_Key_None_Tory:0 "§RNo§ §BConservative MP§ is in the §gCoalition§!."
+
+ENG_Coalition_Key_Almost_All_Whig:0 "\n§GAlmost all§! of §YLiberal MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Majority_Whig:0 "\n§lA Majority§! of §YLiberal MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Half_Whig:0 "\n§WAbout Half§! of the §YLiberal MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Minority_Whig:0 "\n§HFew§! §YLiberal MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Barely_Any_Whig:0 "\n§HBarely Any§! §YLiberal MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_None_Whig:0 "\n§RNo§! §YLiberal MP§! is in the §gCoalition§!."
+
+ENG_Coalition_Key_Almost_All_Labour:0 "\n§GAlmost all§! of §RLabour MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Majority_Labour:0 "\n§lA Majority§! of §RLabour MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Half_Labour:0 "\n§WAbout Half§! of the §RLabour MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Minority_Labour:0 "\n§HFew§! §RLabour MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_Barely_Any_Labour:0 "\n§HBarely Any§! §RLabour MPs§! are in the §gCoalition§!."
+ENG_Coalition_Key_None_Labour:0 "\n§RNo§! §RLabour MP§! is in the §gCoalition§!."
+
+#YSK INFLUENCE#
+ENG_YSK_Influence_Extremely_Influencial:0 "\n\n§gThe Coalition for the King§! is §Gextremely influencial.§!"
+ENG_YSK_Influence_Influencial:0 "\n\n§gThe Coalition for the King§! is §linfluencial.§!"
+ENG_YSK_Influence_Mildly_Influencial:0 "\n\n§gThe Coalition for the King§! is §Wmildly influencial.§!"
+ENG_YSK_Influence_Somewhat_Influencial:0 "\n\n§gThe Coalition for the King§! is §Ysomewhat influencial.§!"
+ENG_YSK_Influence_Not_Influencial:0 "\n\n§gThe Coalition for the King§! is §Rnot influencial.§!"

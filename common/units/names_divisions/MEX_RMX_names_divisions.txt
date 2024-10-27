@@ -1,0 +1,39 @@
+﻿MEX_inf = {
+	name = "Ejército Mexicano División de Infantería"
+
+	for_countries = { MEX }
+
+	can_use = {
+		AND = {
+			original_tag = MEX
+			has_cosmetic_tag = MEX_ENG #for Mexico
+		}
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "Ejército Mexicano %dto División de Infantería"
+
+	ordered = {
+		1 = { "Ejército Mexicano 1ro División de Infantería" }
+		2 = { "Ejército Mexicano 2do División de Infantería" }
+		3 = { "Ejército Mexicano 3ro División de Infantería" }
+		4 = { "Ejército Mexicano 4to División de Infantería" }
+		5 = { "Ejército Mexicano 5to División de Infantería" }
+		6 = { "Ejército Mexicano 6to División de Infantería" }
+        7 = { "Ejército Mexicano 7mo División de Infantería" }
+		8 = { "Ejército Mexicano 8vo División de Infantería" }
+		9 = { "Ejército Mexicano 9no División de Infantería" }
+        10 = { "Ejército Mexicano 10mo División de Infantería" }
+		11 = { "Ejército Mexicano 11ro División de Infantería" }
+		12 = { "Ejército Mexicano 12do División de Infantería" }
+		13 = { "Ejército Mexicano 13ro División de Infantería" }
+		14 = { "Ejército Mexicano 14to División de Infantería" }
+		15 = { "Ejército Mexicano 15to División de Infantería" }
+		16 = { "Ejército Mexicano 16to División de Infantería" }
+        17 = { "Ejército Mexicano 17mo División de Infantería" }
+		18 = { "Ejército Mexicano 18vo División de Infantería" }
+		19 = { "Ejército Mexicano 19no División de Infantería" }
+		20 = { "Ejército Mexicano 20mo División de Infantería" }
+	}
+}

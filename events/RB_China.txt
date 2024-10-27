@@ -1,0 +1,145 @@
+﻿add_namespace = chi
+
+country_event = { #intro
+	id = chi.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.1"}
+	title = chi.1.t
+	desc = chi.1.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = chi.1.a
+	}
+}
+
+country_event = { #year of rat
+	id = chi.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.2"}
+	title = chi.2.t
+	desc = chi.2.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = chi.2.a
+	}
+}
+
+country_event = { #radio time
+	id = chi.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.3"}
+	title = chi.3.t
+	desc = chi.3.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = chi.3.a
+	}
+}
+
+country_event = { #invite friends
+	id = chi.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.4"}
+	title = chi.4.t
+	desc = chi.4.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = chi.4.a
+	}
+}
+
+country_event = { #speech
+	id = chi.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.5"}
+	title = chi.5.t
+	desc = chi.5.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = chi.5.a
+	}
+}
+
+country_event = { #speech - industry
+	id = chi.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.6"}
+	title = chi.6.t
+	desc = chi.6.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #british
+		name = chi.6.a
+	}
+	option = { #domestic
+		name = chi.6.b
+	}
+}
+
+country_event = { #speech - military
+	id = chi.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.7"}
+	title = chi.7.t
+	desc = chi.7.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #british
+		name = chi.7.a
+	}
+	option = { #domestic
+		name = chi.7.b
+	}
+}
+
+country_event = { #speech - internal admin
+	id = chi.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.8"}
+	title = chi.8.t
+	desc = chi.8.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #constitutionalism
+		name = chi.8.a
+	}
+	option = { #absolutism
+		name = chi.8.b
+	}
+}
+
+country_event = { #speech - end
+	id = chi.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi.9"}
+	title = chi.9.t
+	desc = chi.9.d
+#	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = chi.9.a
+	}
+}

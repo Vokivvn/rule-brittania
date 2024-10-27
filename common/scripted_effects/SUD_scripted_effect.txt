@@ -1,0 +1,31 @@
+eden_symes_power_change = {
+	if = {
+		limit = {
+			check_variable = { global.symes_eden > 79}
+		}
+		#Eden wins hard
+	}
+	if = {
+		limit = {
+			check_variable = { global.symes_eden > 69}
+			NOT = { has_global_flag = symes_lost }
+		}
+		#Eden wins soft
+		set_global_flag = symes_lost
+	}
+	if = {
+		limit = {
+			check_variable = { global.symes_eden < 35}
+			NOT = { has_global_flag = eden_lost }
+		}
+		#symes wins soft
+		set_global_flag = eden_lost
+	}
+	if = {
+		limit = {
+			check_variable = { global.symes_eden < 25}
+			NOT = { has_global_flag = eden_lost }
+		}
+		#symes wins hard
+	}
+}

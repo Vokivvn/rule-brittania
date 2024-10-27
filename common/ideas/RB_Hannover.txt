@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+		HAN_Fragile_Personal_Union = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HAN_Fragile_Personal_Union"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		HAN_Limited_Parliamentary_Representation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HAN_Limited_Parliamentary_Representation"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		HAN_Viceroyal_Administration = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea HAN_Viceroyal_Administration"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}

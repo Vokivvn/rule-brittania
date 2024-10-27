@@ -1,0 +1,305 @@
+﻿l_english:
+
+
+###################
+##Parliament Mana##
+###################
+
+ENG_George_Parliament_Mana:0 "The Parliament of the Merry King"
+ENG_George_Parliament_Mana_desc:0 "when i see a meme that has big chungus in it\n\nThe Power of the Conservative Party is currently [?ENG_Tory_Power]\nThe Power of the Liberal Party is currently [?ENG_Whig_Power]\nAnd the Power of the Labour Party is currently [?ENG_Fabian_Power]."
+
+ENG_Boost_Tory:0 "Increase the Support of the Tories."
+ENG_Boost_Tory_desc:0 "end the sjwing of video games"
+
+ENG_Boost_Whig:0 "Increase the Support of the Whigs."
+ENG_Boost_Whig_desc:0 "libdem SURGE"
+
+ENG_Boost_Fabian:0 "Increase the Support of the Fabians"
+ENG_Boost_Fabian_desc:0 "hurr durr me leftist"
+
+ENG_Parliament_Mana_Hold_Election:0 "Call for an Election!"
+ENG_Parliament_Mana_Hold_Election_desc:0 "The current situation in Parliament is not acceptable and must be dealt with."
+
+
+#####################
+##The George XI Tree##
+#####################
+
+ ENG_GeorgeVI_Peoples_King:0 "The People's King"
+ ENG_GeorgeVI_Peoples_King_desc:0 ""
+ 
+ ENG_GeorgeVI_Meet_With_Advisors:0 "Meet With the Advisors"
+ ENG_GeorgeVI_Meet_With_Advisors_desc:0 ""
+ 
+ ENG_GeorgeVI_Meet_With_Media:0 "Meet With the Media"
+ ENG_GeorgeVI_Meet_With_Media_desc:0 ""
+ 
+ ENG_GeorgeVI_Grand_Coronation:0 "The Grand Coronation"
+ ENG_GeorgeVI_Grand_Coronation_desc:0 ""
+ 
+ ENG_GeorgeVI_Toss_Out_YSK:0 "Toss Out the Coalition"
+ ENG_GeorgeVI_Toss_Out_YSK_desc:0 ""
+ 
+ ENG_GeorgeVI_Around_The_Isles:0 "Around the Isles"
+ ENG_GeorgeVI_Around_The_Isles_desc:0 ""
+ 
+ ENG_GeorgeVI_Call_For_Elections:0 "Call for Elections"
+ ENG_GeorgeVI_Call_For_Elections_desc:0 ""
+ 
+ ENG_GeorgeVI_Control_Economy:0 "Control the Economy"
+ ENG_GeorgeVI_Control_Economy_desc:0 ""
+ 
+ ENG_GeorgeVI_Reform_Imperialism:0 "Reform British Imperialism"
+ ENG_GeorgeVI_Reform_Imperialism_desc:0 ""
+ 
+ ENG_GeorgeVI_End_Of_Anarchronisms:0 "End Anarchronisms!"
+ ENG_GeorgeVI_End_Of_Anarchronisms_desc:0 ""
+ 
+ ENG_GeorgeVI_End_Unemployment_Through_Trade:0 "End Employment Through Trade"
+ ENG_GeorgeVI_End_Unemployment_Through_Trade_desc:0 ""
+ 
+ ENG_GeorgeVI_Support_The_Individual:0 "Support the Individual"
+ ENG_GeorgeVI_Support_The_Individual_desc:0 ""
+ 
+ ENG_GeorgeVI_Peace:0 "Keep Britain Out of War!"
+ ENG_GeorgeVI_Peace_desc:0 ""
+ 
+ ENG_GeorgeVI_Remember_British_Interests:0 "Remember British Interests"
+ ENG_GeorgeVI_Remember_British_Interests_desc:0 ""
+ 
+ ENG_GeorgeVI_Maintain_Our_Superiority:0 "Maintain Our Superiority"
+ ENG_GeorgeVI_Maintain_Our_Superiority_desc:0 ""
+ 
+ ENG_GeorgeVI_Safety_First:0 "Safety First!"
+ ENG_GeorgeVI_Safety_First_desc:0 ""
+ 
+ ENG_GeorgeVI_Swearing_In_A_Government:0 "Swear in a Government"
+ ENG_GeorgeVI_Swearing_In_A_Government_desc:0 ""
+
+ #### George VI Liberal Government Focuses ###
+
+ ENG_GeorgeVI_Liberal:0 "George VI Liberal Government Focus Tree"
+
+ ENG_GeorgeVI_The_Liberal_Government:0 "The Liberal Government"
+
+ ENG_GeorgeVI_The_Liberal_Agenda:0 "The Liberal Agenda"
+
+ ENG_GeorgeVI_Secure_Individual_Freedoms:0 "Secure Individual Freedoms"
+
+ ENG_GeorgeVI_Mandate_Religious_Freedom:0 "Mandate Religious Freedom"
+
+ ENG_GeorgeVI_Limited_Concessions_To_Trade_Unions:0 "Limited Concessions to Trade Unions"
+
+ ENG_GeorgeVI_Protect_Consumers:0 "Protect Consumers"
+
+ ENG_GeorgeVI_Education_Reform:0 "Education Reform"
+
+ ENG_GeorgeVI_Designate_New_Polling_Stations:0 "Designate New Polling Stations"
+
+ ENG_GeorgeVI_Progressive_Taxation:0 "Progressive Taxation"
+
+ ENG_GeorgeVI_Expand_Individual_Political_Power:0 "Expand Individual Political Power"
+
+ ENG_GeorgeVI_New_Opportunities_For_Women:0 "New Opportunities For Women"
+
+ ENG_GeorgeVI_Address_The_Catholic_Issue:0 "Address The Catholic Issue"
+
+ ENG_GeorgeVI_Repeal_The_Tax:0 "Repeal The Tax"
+
+ ENG_GeorgeVI_Found_Social_Organisations:0 "Found Social Organisations"
+
+ ENG_GeorgeVI_Legislate_Against_Discrimination:0 "Legislate Aganist Discrimination"
+
+ ENG_GeorgeVI_Host_Ecumenical_Dialogue:0 "Host Ecumenical Dialogue"
+
+ ENG_GeorgeVI_Ensure_Equal_Opportunity:0 "Ensure Equal Opportunity"
+
+ ENG_GeorgeVI_Respect_Their_Practices:0 "Respect Their Practices"
+
+ ENG_GeorgeVI_Appoint_Catholics_To_Government_Positions:0 "Appoint Catholics to Government Positions"
+
+ ENG_GeorgeVI_Foster_Unity:0 "Foster Unity"
+
+ ENG_GeorgeVI_Expand_Welfare:0 "Expand Welfare"
+
+ ENG_GeorgeVI_Bridge_The_Gap:0 "Bridge the Gap"
+
+ ENG_GeorgeVI_Expand_Unemployment_Insurance:0 "Expand Unemployment Insurance"
+
+ ENG_GeorgeVI_Public_Housing:0 "Public Housing"
+
+ ENG_GeorgeVI_Set_The_Minimum_Wage:0 "Set the Minimum Wage"
+
+ ENG_GeorgeVI_Increase_NHS_Funding:0 "Increase NHS Funding"
+
+ ENG_GeorgeVI_Give_To_Charities:0 "Give to Charities"
+
+ ENG_GeorgeVI_Open_Soup_Kitchens:0 "Open Soup Kitchens"
+
+ ENG_GeorgeVI_Homeless_Shelters:0 "Homelss Shelters"
+
+ ENG_GeorgeVI_Review_The_Military:0 "Review the Military"
+
+ ENG_GeorgeVI_His_Majestys_Army:0 "His Majesty's Army"
+
+ ENG_GeorgeVI_New_Guns_For_Our_Troops:0 "New Guns For Our Troops"
+
+ ENG_GeorgeVI_Invest_In_Tanks:0 "Invest In Tanks"
+
+ ENG_GeorgeVI_Expand_The_Special_Forces:0 "Expand the Special Forces"
+
+ ENG_GeorgeVI_Increase_Recruitment_Efforts:0 "Increase Recruitment Efforts"
+
+ ENG_GeorgeVI_Modern_Support_Equipment:0 "Modern Support Equipment"
+
+ ENG_GeorgeVI_Build_New_Artillery:0 "Build New Artillery"
+
+ ENG_GeorgeVI_Birmingham_Motors:0 "Birmingham Motors"
+
+ ENG_GeorgeVI_New_Tactics:0 "New Tactics"
+
+ ENG_GeorgeVI_His_Majestys_Airforce:0 "His Majesty's Airforce"
+
+ ENG_GeorgeVI_Train_New_Pilots:0 "Train New Pilots"
+
+ ENG_GeorgeVI_Concentrate_On_Fighters:0 "Concentrate on Fighters"
+
+ ENG_GeorgeVI_Expand_Paratroopers:0 "Expand Paratroopers"
+
+ ENG_GeorgeVI_Bomber_Modernisation:0 "Bomber Modernisation"
+
+ ENG_GeorgeVI_New_Radar_Stations:0 "New Radar Stations"
+
+ ENG_GeorgeVI_Protect_Our_Skies:0 "Protect Our Skies"
+
+ ENG_GeorgeVI_Develop_Air_Doctrine:0 "Develop Air Doctrine"
+
+ ENG_GeorgeVI_Recognize_Exceptional_Pilots:0 "Rceognise Exceptional Pilots"
+
+ ENG_GeorgeVI_His_Majestys_Navy:0 "His Majesty's Navy"
+
+ ENG_GeorgeVI_Build_New_Dockyards:0 "Build New Dockyards"
+
+ ENG_GeorgeVI_Expand_The_Royal_Marines:0 "Expand the Royal Marines"
+
+ ENG_GeorgeVI_Expand_The_Merchant_Marine:0 "Expand the Merchant Marine"
+
+ ENG_GeorgeVI_Submarine_Modernisation:0 "Submarine Modernisation"
+
+ ENG_GeorgeVI_Establish_A_Naval_Doctrine:0 "Establish A Naval Doctrine"
+
+ ENG_GeorgeVI_New_Landing_Crafts:0 "New Landing Crafts"
+
+ ENG_GeorgeVI_Construct_Coastal_Forts:0 "Construct Coastal Forts"
+
+ ENG_GeorgeVI_Build_Ships_Faster:0 "Build Ships Faster"
+
+ ENG_GeorgeVI_Steer_The_Economy:0 "Steer the Economy"
+
+ ENG_GeorgeVI_Build_Up_Civil_Industry:0 "Build Up Civil Industry"
+
+ ENG_GeorgeVI_Northern_Factories:0 "Northern Factories"
+
+ ENG_GeorgeVI_Sheffield_Steel:0 "Sheffield Steel"
+
+ ENG_GeorgeVI_Maximise_Production:0 "Maximise Production"
+
+ ENG_GeorgeVI_Southern_Factories:0 "Southern Factories"
+
+ ENG_GeorgeVI_New_Machine_Tools:0 "New Machine Tools"
+
+ ENG_GeorgeVI_Irish_Aluminum:0 "Irish Aluminum"
+
+ ENG_GeorgeVI_Modernise_Electronics:0 "Modernise Electronics"
+
+ ENG_GeorgeVI_Reform_Construction_Methods:0 "Reform Construction Methods"
+
+ ENG_GeorgeVI_Expand_Infrastructure:0 "Expand Infrastructure"
+
+ ENG_GeorgeVI_Roads_For_The_North:0 "Roads For the North"
+
+ ENG_GeorgeVI_Connect_The_Scottish_Highlands:0 "Connect the Scottish Highlands"
+
+ ENG_GeorgeVI_Renovate_Welsh_Roads:0 "Renovate Welsh Roads"
+
+ ENG_GeorgeVI_New_Roads_For_London:0 "New Roads For London"
+
+ ENG_GeorgeVI_Roads_For_The_South:0 "Roads For the South"
+
+ ENG_GeorgeVI_Connect_The_Countryside:0 "Connect the Countryside"
+
+ ENG_GeorgeVI_Expand_Ports:0 "Expand Ports"
+
+ ENG_GeorgeVI_Expand_Airports:0 "Expand Airports"
+
+ ENG_GeorgeVI_Build_Up_Military_Industry:0 "Build Up Military Industry"
+
+ ENG_GeorgeVI_Glasgow_Shipbuilding:0 "Glascow Shipbuilding"
+
+ ENG_GeorgeVI_London_Arms_Factories:0 "London Arms  Factories"
+
+ ENG_GeorgeVI_Synthetic_Oil:0 "Synthetic Oil"
+
+ ENG_GeorgeVI_Increase_Fuel_Reserves:0 "Increase Fuel Reserves"
+
+ ENG_GeorgeVI_Bristol_Aerospace:0 "Bristol Aerospace"
+
+ ENG_GeorgeVI_Welsh_Arms_Factories:0 "Welsh Arms Factories"
+
+ ENG_GeorgeVI_Construct_Forts:0 "Construct Forts"
+
+ ENG_GeorgeVI_Scottish_Oil:0 "Scottish Oil"
+
+ ### George VI Events ####
+
+ ukgeorge.0.t:0 "REPLACE_ME"
+ ukgeorge.0.desc:0 "REPLACE_ME"
+ ukgeorge.0.a:0 "REPLACE_ME"
+ ukgeorge.1.t:0 "REPLACE_ME"
+ ukgeorge.1.desc:0 "REPLACE_ME"
+ ukgeorge.1.a:0 "REPLACE_ME"
+ ukgeorge.2.t:0 "The Liberal Agenda"
+ ukgeorge.2.desc:0 "As a distinct and independent member of the storied Coalition for the King, the Liberal Party has developed its own agenda, advanced throughout the years with determination while maintaining the unity and internal discipline of the Coalition as a fundamental guide.\n\nAs things stand today, this program is focused on three key areas, including one of the most intense political debates of the today’s United Kingdom - this being the strong wave of discrimination faced by Catholics within the realm. Not new in and of itself, the contention has only come to be taken in serious consideration by the Monarchy recently as the issue has begun to poison our relations with Austria and Portugal.\n\nThe other two key issues of the Liberal program are individual rights and consumer protection, both fields in which Liberal legislators have distinguished themselves since the Party’s foundation. On the subject of individual rights, a relaxation of press censorship, lifting certain restrictions on the right of assembly and association and reducing the right of the police forces to use violence or act arbitrarily without mandate are often-discussed points. On the front of consumer protection, the promise of a struggle without quarter against cartels and trusts is the most common feature of Liberal pamphlets since the Rockefeller model has begun to pollute the wider British Empire."
+ ukgeorge.2.a:0 "Let's get to work!"
+ ukgeorge.3.t:0 "Reviewing the Military"
+ ukgeorge.3.desc:0 "The British Empire is without question the world’s premier power. Controlling directly or indirectly the entirety of Earth’s surface by land and sea, Britain has truly come to rule the waves - and then some. But this hegemony is enforced through alliances, treaties and the vast militaries of Dominions and Commonwealths far larger and more populous than the British Isles themselves, with the largest armies in our Empire being the Army of India - an entirely native force under the tenuous control of British officers - and the various Chinese armies - native, underequipped, and of dubious loyalty at best. Our best tools for hegemony have so far been the Royal Militaries of the Commonwealths of North America and California, and our good allies in Bavaria, Sweden, Austria and Portugal. Burgundy saps the resources of France and Austria to maintain its own powerful continental force - but where does this all leave us?\n\nOur remote fleets have become self-sustaining - entire territories and realms are their drydocks. But the British Isles must remain the heart of the Imperial machine, and our forces, certainly not the most numerous or the most theoretically innovative, must remain the cornerstone of the Imperial military. We must compensate numbers with firepower, mobility, global reach and projection. Our soldiers must have the most modern weapons, our mechanized forces must be the best, our fleet must make use of not only the largest guns and the heaviest of armours, but also of the finest technological advancements. We cannot be the most numerous on any given battlefield; it is therefore imperative that we strive to be the best."
+ ukgeorge.3.a:0 "We must maintain our hegemony"
+ ukgeorge.4.t:0 "Steering the Economy"
+ ukgeorge.4.desc:0 "The Liberal Party has always been in favor of free entrepreneurship - but in the British Empire, no government can hide from the responsibility of giving a modicum of direction to the economy. Particularly the British Government, the head of which holds the presidency of many intra-Imperial and pan-Commonwealth economic cooperation institutions.\n\nIndeed, a dose of statism is a necessary component of the Imperial edifice, and not even the Liberals are exempt. Instead of escaping this responsibility, the Party has welcomed it. A program of tax breaks has been drawn up to boost the growth of military heavy industry and light industry for the everyday civilian market, aided by new government contracts for the military and a number of more trivial renovations; lowered tariffs will restore the flow of trade within the Empire and the wider Commonwealth. To further this particular goal, the Party has also promised a vast public works program: new docks, roads, railways, bridges and even internal waterways will be built in the British Isles over the next few years. This program will create employment and business opportunities, with minimal governmental interference and offering many new opportunities to private enterprise."
+ ukgeorge.4.a:0 "The economy will be our hardest task yet"
+ ukgeorge.5.t:0 "The Meeting"
+ ukgeorge.5.desc:0 "Cosmo Lang checked himself one last time. If anything looked even the slightest bit out of place he would never hear the end of it. He could not let anything go wrong today. The eyes of the world were upon him, and he would show them the very image of perfection.\n\nHours later, in the library at Lambeth Palace, the Most Reverend and Right Honorable Archbishop of Canterbury and de facto head of the Anglican Communion, sat across from His Holiness Pope Pius XI, the two staring at each other not a little uncomfortably. The cameras around them continued to flash, only dying down after the man to the side in charge of press relations rushed them out of the room.\n\nThe photo op over, the two most powerful men in their respective religions and their translators got to business. At first hesitant, slowly the two opened up at least a little, culminating in some light laughter between the two. After an hour and a half of discussion, the summit was concluded with some closing words to the press, and then the Pope set off back to the Vatican.\n\nAs Lang returned to his quarters, he found himself walking with a bit of a smile on his face. The meeting had not been a complete failure; the King would be pleased with the result, and that meant he would be pleased with Lang. He had found that staying on the King’s good side was generally a good idea if one wished to stay in a position of power for long, and this was sure to help.\n\nThe papers quickly showed their pictures of the gathering, complete with headlines lauding the thaw of interfaith relations, or perhaps the turning of a new page between the Anglicans and the Catholics. Some of the more idealistic, perhaps too idealistic, observers even wondered if there was a chance the two might come to an agreement, mending the divide between them. Altogether the affair became a symbol of the progress that the British Order had brought to the world, showing the measures of peace that could be achieved under their benevolent hand."
+ ukgeorge.5.a:0 "A Most Pleasing Outcome!"
+
+ ### George VI Ideas ###
+
+ eng_limited_concessions_to_trade_unions:0 "Limited Concessions to Trade Unions"
+ eng_protect_consumers:0 "Consumer Protection"
+ eng_increase_individual_political_power:0 "Increased Individual Political Power"
+ eng_increased_nhs_funding:0 "Increased NHS Funding"
+ eng_found_social_organisations:0 "Catholic Social Organisations"
+ eng_ensure_equal_opportunity:0 "Ensuring Equal Opportunity"
+ eng_allow_catholics_in_government:0 "Catholics in the Government"
+ eng_bridge_the_gap:0 "Bridging the Gap"
+ eng_expand_unemployment_insurance:0 "Expanded Unemployment Insurance"
+ eng_soup_kitchens:0 "Soup Kitchens"
+ eng_homeless_shelters:0 "Homeless Shelters"
+ eng_expanded_special_forces:0 "Expanded Special Forces"
+ eng_increased_recruitment_efforts:0 "Increased Recruitment Efforts"
+ eng_new_pilots:0 "New Pilots"
+ eng_recognise_exceptional_pilots:0 "Recognising Exceptional Pilots"
+ eng_protect_our_skies:0 "AA Effort"
+ eng_constructing_coastal_forts:0 "Coastal Fort Effort"
+ eng_building_ships_faster:0 "Naval Effort"
+ eng_building_up_civilian_industry:0 "Building Up Civilian Industry"
+ eng_maximise_production:0 "Maximising Production"
+ eng_expand_infrastructure:0 "Expanding Infrastructure"
+ eng_increase_fuel_reserves:0 "Increasing Fuel Reserves"
+ eng_constructing_forts:0 "Constructing New Forts"
+ eng_synthetic_oil:0 "Synthetic Oil Effort"
+ eng_building_up_military_industry:0 "Building Up Military Industry"
+ eng_reform_construction_methods:0 "Reformed Construction Methods"
+
+ ### Opinion Modifiers ###
+
+ ENG_popeman_happy:0 "Met with the Pope"

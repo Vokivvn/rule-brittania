@@ -1,0 +1,44 @@
+
+state={
+	id=65
+	name="STATE_65"
+	manpower = 3592576
+	resources={
+		steel=53 # was: 90
+	}
+
+	state_category = metropolis
+
+
+	history={
+		owner = THR
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 7
+		}
+		victory_points = {
+			514 30 #dresden
+		}
+		victory_points = {
+			3535 30 #leibzig
+		}
+		victory_points = {
+			9471 20
+		}
+		victory_points = {
+			11481 2
+		}
+		victory_points = {
+			3514 2
+		}
+		victory_points = {
+			9535 3
+		}
+		add_core_of = THR
+	}
+
+	provinces={
+		514 573 3514 3535 6441 6559 9471 9535 11481
+	}
+}

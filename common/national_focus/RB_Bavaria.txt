@@ -1,0 +1,28 @@
+######################
+#### Bavaria tree ####
+######################
+
+focus_tree = {
+	id = bavaria
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAV
+		}
+	}
+	
+	focus = {
+		id = BAV_blankfocus
+		icon = GFX_generic_little_entente
+		x = 0
+		y = 2
+		cost = 5
+		allow_branch = {
+			has_country_flag = neversetthisflag
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAV_blankfocus"
+		}
+	}
+}

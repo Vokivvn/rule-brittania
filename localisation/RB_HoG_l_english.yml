@@ -1,0 +1,19 @@
+﻿l_english:
+ENG_HoG_Button_Loc:0 "Great Britain's Prime Minister"
+hog_gui_text_pop:0 "Great Britain's Prime Minister"
+hog_gui_text_pop_text:0 "Great Britain's Prime Minister"
+hog_gui_pop_tt:0 "Great Britain's Prime Minister"
+hog_gui_pop_long_tt:0 "The Head of Government of the United Kingdom of Great Britain and Ireland."
+
+#hog_gui_title_text_pop_text:0 "Douglas Hogg"
+
+#hog_gui_pop_Hogg_tt:0 "Douglas Hogg"
+#hog_gui_pop_long_Hogg_tt:0 "A Tory dedicated to serving in the King's Coalition."
+
+#Party Scripted Loc
+ENG_HoG_CK_Rule:0 "§WCoalition for the King§!"
+
+#PM Scripted Loc
+ENG_PM_Douglas_Hogg:0 "Douglas Hogg"
+ENG_PM_James_Gascoyne_Cecil:0 "James Gascoyne-Cecil"
+ENG_PM_John_Simon:0 "John Simon"

@@ -1,0 +1,23 @@
+
+state={
+	id=12
+	name="STATE_12"
+
+	history={
+		owner = LIV
+		add_core_of = LIV
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+
+	provinces={
+		3388 9501 10323 10493 
+	}
+	manpower=193428
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
